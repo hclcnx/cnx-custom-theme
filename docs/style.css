@@ -1,8 +1,57 @@
-//Heading
+/*Heading*/
 body {
   color:#000000;
   font-family:'IBM Plex Sans', "Helvetica Neue", Arial, sans-serif;
 }
 h1 {
-  color:#3c3df0;
+  font-size: 2.375rem;
+  line-height: 48px;
+  font-weight:600;
+  color:#3c6df0;
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 32px;
+  font-weight: 600;
+  border-bottom:1px solid #f1f1f1;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+p {
+  font-size:1.25rem;
+  font-weight:400;
+}
+.code {
+  background-color:#f1f1f1;
+  padding:20px 20px;
+  font-family: Courier, 'New Courier', monospace;
+}
+
+/*CLASSES*/
+/*HEADER*/
+.aboutHead {
+  background-color:#3c6df0;
+  padding:50px 100px;
+}
+.aboutHead h1 {
+  color:#ffffff;
+}
+/*CONTENT*/
+.aboutContent {
+  padding:50px 100px 70px 100px;
+}
+/*FOOTER*/
+.aboutFooter {
+  padding:10px 0px 30px 0px;
+  border-top:1px solid #f1f1f1;
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+.aboutFooter p {
+  font-size:0.875rem;
+  color:#777677;
 }

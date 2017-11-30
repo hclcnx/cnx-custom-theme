@@ -3,6 +3,67 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Coming soon</h1>
+<div class="aboutHead">
+  <h1>Visual update 1 for IBM Connections</h1>
+</div>
+<div class="aboutContent">
+  <h1>About Visual update 1 for IBM Connections (Preview)</h1>
+  <p>The Connections Design Team is crafting new design specifications for Connections to provide a more modern look and feel. You can preview the new visual styles by installing the application, from the IBM Connections App Catalog, which leverages the Connections Customizer technology.</p>
+  <p>The application can be enabled for a sub-set of users or your entire organization.</p>
+  <p>Note: Visual update 1 for IBM Connections is only a preview and is not fully supported.</p>
+
+  <h2>Limitations of this preview</h2>
+  <p>This release is considered a preview and therefore has some limitations that you should be aware of.</p>
+  <ul>
+    <li>Only works with the default theme, called "Verse Theme (Default)", which can be selected in the Theme section of Administration.</li>
+    <li>Does not support bi-directional languages</li>
+    <li>Might contain defects</li>
+  </ul>
+  <p>This preview applies to the following applications and pages:</p>
+<ul>
+  <li>Files</li>
+  <li>File viewer</li>
+  <li>Profiles</li>
+  <li>Contacts</li>
+  <li>Search results page</li>
+  <li>Meetings launch page, but not the meeting room</li>
+</ul>
+
+<h2>Get and Configure</h2>
+<p>Get and configure the application to be visible to a sub-set of users or all users in your organization.</p>
+
+<h4>Enable for a sub-set of users</h4>
+<p>After you have installed the application go to Organization Extensions. Locate and edit the extension called IBM Connections Design Customization. Add a "user-email" section within the "payload" "match" section as follows:</p>
+
+<pre class="code">
+  "application":"IBM Connections Design Modernization",
+"payload": {
+  "match": {
+    "user-email": [
+      "email1@address.com",
+      "email2@address.com"
+    ]
+  },
+  "include-files":[
+</pre>
+
+<h4>Enable for entire organization</h4>
+
+<h2>Application updates</h2>
+<p>Updates to this application will be pushed out to fix defects and add styling to more applications.</p>
+
+<h2>Support</h2>
+<p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
+
+<p>Due to the preview nature of the application, PMRs will not be accepted and resolved by IBM. Questions and support requests, however, can be posted directly on the support forum located here. IBM will not assist with making modifications to the open source code provided for this application nor modifications created to add additional customizations in lieu of the Visual Update 1 for IBM Connections.</p>
+
+<p>While the application is in preview, bi-directional language support will not be included. Visual updates will apply only to applications stated in official communications and will not extend to custom widgets added to Connections. IBM plans to regularly add new Connections applications to the visual update and will share communications accordingly.</p>
+
+</div>
+
+<div class="aboutFooter">
+  <p>Copyright 2017, IBM Corporation</p>
+</div>
+
 </body>
 </html>
