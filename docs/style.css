@@ -1,4 +1,4 @@
-/*Heading*/
+/*GENERAL STYLES*/
 body {
   color:#000000;
   font-family:'IBM Plex Sans', "Helvetica Neue", Arial, sans-serif;
@@ -23,11 +23,11 @@ h3 {
   font-weight: 600;
 }
 h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 20px;
   font-weight: 600;
 }
-p {
+p, li {
   font-size:1.25rem;
   font-weight:400;
 }
@@ -44,7 +44,7 @@ a:hover, a:focus {
   font-family: Courier, 'New Courier', monospace;
 }
 
-/*CLASSES*/
+/*SPECIFIC STYLES*/
 /*HEADER*/
 .aboutHead {
   background-color:#3c6df0;
@@ -72,9 +72,10 @@ a:hover, a:focus {
 }
 .breadcrumb p {
   margin:10px 0px 0px 0px;
+  font-size:0.875rem;
+  color:#777677;
 }
 .breadcrumb a {
-  font-size:0.875rem;
   color:#777677;
   text-decoration:none;
 }
@@ -97,4 +98,11 @@ a:hover, a:focus {
 .aboutFooter p {
   font-size:0.875rem;
   color:#777677;
+}
+/*TOC*/
+.toc {
+  float:right;
+  background-color:#f1f1f1;
+  padding:20px 30px 20px 20px;
+  margin:0px 0px 0px 20px;
 }
