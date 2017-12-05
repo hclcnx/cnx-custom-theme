@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Visual update 1 for IBM Connections in App Catalog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="aboutHead">
+  <a name="top"></a>
+  <div class="headText">
+  <h1>Visual update 1 for IBM Connections in App Catalog</h1>
+</div>
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a></p>
+</div>
+
+<div class="aboutContent">
+  <div class="toc">
+    <ul>
+      <li><a href="#about">About the App</a></li>
+      <li><a href="#preview">Preview Release</a></li>
+      <li><a href="#install">Install and Configure the App</a></li>
+      <li><a href="#updates">App Updates</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </div>
+  <h1><a name="about"></a>About the App</h1>
+  <p>The Connections Design Team is crafting new design specifications for Connections, which provide a more modern look and feel. You can preview the new visual styles by installing the application, from the IBM Connections App Catalog, which leverages the Connections Customizer technology.</p>
+
+  <h2><a name="preview"></a>Preview Release</h2>
+  <p>This release is a preview and has limitations that you need to be aware of. Because this is a Preview, it is recommended that you enable the application for a sub-set of users.</p>
+  <p>Current limitations:</p>
+  <ul>
+    <li>Only works with the default theme, called "Verse Theme (Default)".</li>
+    <li>Does not support bi-directional languages.</li>
+    <li>Might contain defects.</li>
+  </ul>
+  <p>This preview applies to the following applications and pages:</p>
+  <ul>
+  <li>Files</li>
+  <li>File viewer</li>
+  <li>Profiles</li>
+  <li>Contacts</li>
+  <li>Search results page</li>
+  <li>Meetings launch page, but not the meeting room</li>
+  </ul>
+
+
+  <h2><a name="install"></a>Install and Configure the App</h2>
+  <p>Find Visual update 1 for IBM Connections in the App Catalog. Get the app and configure it. </p>
+  <h4>Important notes before installing</h4>
+  <ul>
+  <li>This application is only intended to be used with the theme named Verse Theme (Default), which can be selected in the Theme section of Administration.</li>
+  <li>When the app is initially configured it is enabled for the entire organization. Because this is a Preview you might want to only enable it for a sub-set of users.</li>
+</ul>
+
+  <h4>Enable for a sub-set of users</h4>
+  <p>To enable for a sub-set of users, you need to customize the extension that was installed when you enabled the app.</p>
+  <ol>
+    <li>After installing the app, go to Organization Extensions.</li>
+    <li>At the top of the page, follow the new Apps Manager link.</li>
+    <li>Click on the name of the app to edit the extension.</li>
+    <li>Edit the json to add "user-email" matches to the payload section, as follows.</li>
+
+  <pre class="code">
+  "payload": {
+    "match": {
+      "user-email": [
+        "email1@address.com",
+        "email2@address.com"
+      ]
+    },
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"periscope"
+    }
+  },
+  </pre>
+</ol>
+
+  <h4>Enable for entire organization</h4>
+  <p>If you have previously enabled for a sub-set of users, edit the json again and remove the "user-email" matches in the payload section.</p>
+
+
+<h2><a name="updates"></a>App updates</h2>
+<p>Updates to this application will be pushed out to fix defects and add styling to more applications.</p>
+
+<h2><a name="support"></a>Support</h2>
+<p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
+
+<p>Due to the preview nature of the application, PMRs will not be accepted and resolved by IBM. Questions and support requests, however, can be posted directly on the support forum located here. IBM will not assist with making modifications to the open source code provided for this application nor modifications created to add additional customizations in lieu of the Visual Update 1 for IBM Connections.</p>
+
+<p>While the application is in preview, bi-directional language support will not be included. Visual updates will apply only to applications stated in official communications and will not extend to custom widgets added to Connections. IBM plans to regularly add new Connections applications to the visual update and will share communications accordingly.</p>
+
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
+</div>
+
+<div class="aboutFooter">
+  <p>Copyright 2017, IBM Corporation</p>
+</div>
+
+</body>
+</html>
