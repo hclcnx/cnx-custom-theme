@@ -45,12 +45,22 @@ a:hover, a:focus {
 }
 
 /*SPECIFIC STYLES*/
+/*SIDE PADDING*/
+.aboutHead .headText,
+.breadcrumb,
+.aboutContent {
+  padding-left:15%;
+  padding-right:15%;
+}
+
+
 /*HEADER*/
 .aboutHead {
   background-color:#3c6df0;
 }
 .aboutHead .headText {
-  padding:50px 100px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 .aboutHead .headHero {
   background-image: url(./img/intro.png);
@@ -68,7 +78,8 @@ a:hover, a:focus {
 
 /*BREADCRUMB*/
 .breadcrumb {
-  padding:10px 100px 10px 100px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 .breadcrumb p {
   margin:10px 0px 0px 0px;
@@ -85,8 +96,11 @@ a:hover, a:focus {
 
 /*CONTENT*/
 .aboutContent {
-  padding:30px 100px 70px 100px;
+  padding-top:30px;
+  padding-bottom:70px;
 }
+
+/*SPECIAL PLACEMENT*/
 /*FOOTER*/
 .aboutFooter {
   padding:10px 0px 30px 0px;
