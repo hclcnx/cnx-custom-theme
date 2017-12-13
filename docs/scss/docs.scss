@@ -2,6 +2,7 @@
 $color-black: #000000;
 $color-white: #ffffff;
 $brand-01: #3c6df0;
+$brand-02: #1D3458;
 $color-gray-60: #595859;
 $color-gray-50: #777677;
 $color-gray-20: #C0BFC0;
@@ -192,6 +193,23 @@ p.button {
     font-size:0.875rem;
     color:$color-gray-50;
   }
+}
+
+/*-------------VIDEOS--------------*/
+.video1:before,
+.video2:before {
+  position:relative;
+  top:116px;
+  left:500px;
+  font-size:1.2rem;
+  font-weight:400;
+  color:$color-white;
+}
+.video1:before {
+  content:"Part 1";
+}
+.video2:before {
+  content:"Part 2";
 }
 
 /*-------------NOT BEING USED--------------*/

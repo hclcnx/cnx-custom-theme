@@ -156,6 +156,22 @@ p.button {
     font-size: 0.875rem;
     color: #777677; }
 
+/*-------------VIDEOS--------------*/
+.video1:before,
+.video2:before {
+  position: relative;
+  top: 116px;
+  left: 500px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff; }
+
+.video1:before {
+  content: "Part 1"; }
+
+.video2:before {
+  content: "Part 2"; }
+
 /*-------------NOT BEING USED--------------*/
 /*-------------TABS-------------*/
 .fixednav {
