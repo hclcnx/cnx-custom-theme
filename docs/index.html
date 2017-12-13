@@ -1,42 +1,137 @@
 <html>
 <head>
-  <title>Visual update 1 for IBM Connections</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Visual Update 1 for IBM Connections</title>
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
 <body>
-<div class="aboutHead">
-  <div class="headText">
-  <h1>Visual update 1 for IBM Connections</h1>
-</div>
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer">
+  <div class="aboutHeader">
+    <div class="headText">
+      <a name="top"></a>
+      <h1>Visual Update 1 for IBM Connections</h1>
+    </div>
+    </div>
   <div class="headHero"></div>
 </div>
+<!--END HEADER CONTAINER-->
+
+<!--TAB CONTAINER-->
+<!--
+<div class="bx--tabs__nav">
+  <ul>
+    <li class="selected">Announcing</li>
+    <li><a href="#getting">Try It Out</a></li>
+    <li><a href="#moreinfo">Additional Resources</a></li>
+  </ul>
+</div>
+-->
+<!--END TAB CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li><a href="#announce">Announcing</a></li>
+    <li><a href="#try">Try it Out</a></li>
+    <li><a href="#moreinfo">Additional Resources</a></li>
+    <li><a href="./about.html">App in Catalog</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
 <div class="aboutContent">
-  <h1>Visual update 1 for IBM Connections (Preview)</h1>
-  <p>The IBM Collaboration Solution's Design team is crafting a new design language for IBM Connections. IBM developers will use this new design when building new Connections interfaces. The Connections design team is giving you a preview of the new design by leveraging IBM Connections Customizer to apply the visual updates to existing Connections interfaces. These updates also use the new IBM Plex Typeface.</p>
 
-  <h2>App Catalog</h2>
-  <p>The Connections design team has created an app, in the App Catalog, that leverages Connections Customizer to apply the new design as a configurable application to IBM Connections. The Customizer technology allows the new visual design to be layered on top of Connections, thus “overriding” the visual design prior to displaying it on the screen.</p>
-  <h3><a href="about.html">Learn more</a></h3>
+  <!--<h1>Visual Update 1 for IBM Connections (Preview)</h1>-->
+  <h2><a name="announce"></a>Announcing Visual Update 1 for IBM Connections (Preview)</h2>
+  <p>The IBM Collaboration Solution's Design team is crafting a new, modern, design language for IBM Connections in an effort to ensure that our solutions match the way we think, augment our performance, and grant us the confidence we need to get our jobs done.</p>
 
-  <h2>Example Files</h2>
-  <p>The Connections design team is using Customizer to override the visual design of existing Connections applications. They are doing this by tracking down existing classes and ids and assigning new visual styles to them.</p>
-  <h3>Coming soon</h3>
+  <p>We are opening up a preview of the new design, within IBM Connections. The new design creates a modern, airy, and less cluttered appearance by updating many items on a page, such as lists, forms, buttons, and icons. This preview applies to the following applications and pages:
+  <ul>
+  <li>Files</li>
+  <li>File viewer</li>
+  <li>Profiles</li>
+  <li>Contacts</li>
+  <li>Search results page</li>
+  <li>Meetings launch page, but not the meeting room</li>
+  </ul>
+</p>
+
+  <!--<p>IBM developers will use this new design when building new Connections interfaces. The Connections design team is giving you a preview of the new design by leveraging IBM Connections Customizer to apply the visual updates to existing Connections interfaces. These updates also use the new IBM Plex Typeface.</p>-->
+  <p>Files<br />
+    <img src="./img/files_catalogscreen.png" />
+    </p>
+  <p>Profiles<br />
+    <img src="./img/profiles_catalogscreen.png" /></p>
 
 <br />
-  <h2>Additional information</h2>
-  <p><a href="https://www.ibm.com/developerworks/collaboration/library/customizer-intro/index.html" target="_blank">Taking control of the IBM Connections user experience</a><br />
-  Introducing IBM Connections Customizer</p>
-  <p><a href="https://www.ibm.com/developerworks/collaboration/library/intro-customizer-video-1/index.html" target="_blank">Introduction to IBM Connections Customizer</a><br />
-  Tutorial Part 1</p>
-  <p><a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer</a><br />
-  Documentation in Github</p>
-  <p><a href="https://github.com/ibm/type" target="_blank">IBM Plex Typeface</a><br />
-  Find licensing and other details.</p>
+
+<h2><a name="try"></a>Try Out Visual Update 1 for IBM Connections</h2>
+
+  <p>We are making the Preview available as an app <a href="./about.html">in the Connections App Catalog</a> and as a set of example files to be used with Connections Customizer.</p>
+
+  <h3>In the Connections App Catalog</h3>
+  <p>The Connections design team has created an app, in the App Catalog, that leverages Connections Customizer to apply the new design as a configurable application to IBM Connections. The Customizer technology allows the new visual design to be layered on top of Connections, thus “overriding” the visual design prior to displaying it on the screen.</p>
+  <p class="button"><a href="about.html">Learn more</a></p>
+
+  <h3>As a Connections Customizer Example</h3>
+  <p>The Connections design team is using Customizer to override the visual design of existing Connections applications. They are doing this by tracking down existing classes and ids and assigning new visual styles to them.</p>
+  <p class="button disabled"><a href="example.html">Coming soon</a></p>
+
+<br />
+
+<h2><a name="moreinfo"></a>Additional Resources</h2>
+<h3>Videos</h3>
+<div class="videos">
+
+  <div class="video1">
+  <p>Part 1: Visual Update 1 and Customizer</p>
+<video width="560" height="350" controls>
+  <source src="./img/cnx-visual-update-part1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 </div>
 
-<div class="aboutFooter">
+<div class="video2">
+<p>Part 2: Visual Update 1 Side-by-Side</p>
+<video width="560" height="350" controls>
+  <source src="./img/cnx-visual-update-part2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+</div>
+
+<h3>IBM Plex typeface</h3>
+<p><a href="https://github.com/ibm/type" target="_blank">IBM Plex Typeface</a><br />
+Find licensing and other details</p>
+
+<h3>IBM Connections Customizer</h3>
+<p><a href="https://www.ibm.com/developerworks/collaboration/library/customizer-intro/index.html" target="_blank">Taking control of the IBM Connections user experience</a><br />
+Introducing IBM Connections Customizer</p>
+<p><a href="https://www.ibm.com/developerworks/collaboration/library/intro-customizer-video-1/index.html" target="_blank">Introduction to IBM Connections Customizer</a><br />
+Tutorial Part 1</p>
+<p><a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer</a><br />
+Documentation in Github</p>
+<p><a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer repository</a><br />
+  Detailed documentation on Customers</p>
+</div>
+
+<div class="breadcrumb">
+  <p><a href="#top">Back to top</a></p>
+</div>
+
+</div>
+
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
   <p>Copyright 2017, IBM Corporation</p>
 </div>
+<!--END FOOTER CONTAINER-->
 
 </body>
 </html>
