@@ -15,7 +15,8 @@ h2 {
   line-height: 32px;
   font-weight: 600;
   border-bottom: 1px solid #f1f1f1;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-top: 20px; }
 
 h3 {
   font-size: 1.5rem;
@@ -75,32 +76,32 @@ p.button {
 .aboutContent,
 .aboutHeader,
 .bx--tabs__nav {
-  padding-left: 15%;
-  padding-right: 18%; }
+  padding-left: 18%;
+  padding-right: 15%; }
 
 /*-------------TOC-------------*/
 .toc {
-  float: right;
+  float: left;
   position: sticky;
   position: -webkit-sticky;
   top: 10px;
-  background-color: #f1f1f1;
-  padding: 10px 30px;
-  margin: 0px 0px 20px 20px;
+  background-color: #ffffff;
+  padding: 40px 30px;
   max-width: 12%; }
   .toc ul {
     padding: 0px 0px; }
   .toc li {
     list-style-type: none;
     padding: 10px 0px;
-    border-top: 1px solid #C0BFC0; }
+    border-top: 1px solid #f1f1f1; }
     .toc li:first-of-type {
-      border-top: none; }
+      border-top: none;
+      border-bottom: 2px solid #C0BFC0; }
     .toc li:last-of-type {
-      border-top: 4px solid #C0BFC0; }
+      border-top: 2px solid #C0BFC0; }
     .toc li a {
       color: #595859;
-      font-weight: 300; }
+      font-weight: 400; }
 
 /*-------------HEADER-------------*/
 .headerContainer {
@@ -172,6 +173,15 @@ p.button {
 .video2:before {
   content: "Part 2"; }
 
+/*----------------RESOURCE COLUMNS---------------*/
+/*.customizerLinks {
+  vertical-align: top;
+  column-count:2;
+  column-gap:20px;
+  p {
+    margin-top:0px;
+  }
+}*/
 /*-------------NOT BEING USED--------------*/
 /*-------------TABS-------------*/
 .fixednav {
