@@ -93,19 +93,19 @@ p.button {
 .aboutContent,
 .aboutHeader,
 .bx--tabs__nav {
-  padding-left:15%;
-  padding-right:18%;
+  padding-left:18%;
+  padding-right:15%;
 }
 
 /*-------------TOC-------------*/
 .toc {
-  float:right;
+  float:left;
   position:sticky;
   position:-webkit-sticky;
   top:10px;
-  background-color:$color-gray-1;
-  padding:10px 30px;
-  margin:0px 0px 20px 20px;
+  background-color:$color-white;
+  padding:40px 30px;
+  //margin:0px 0px 20px 20px;
   max-width:12%;
   ul {
     padding:0px 0px;
@@ -113,17 +113,18 @@ p.button {
   li {
     list-style-type: none;
     padding:10px 0px;
-    border-top:1px solid $color-gray-20;
+    border-top:1px solid $color-gray-1;
     &:first-of-type {
       border-top:none;
+      border-bottom:2px solid $color-gray-20;
     }
     &:last-of-type {
-      border-top:4px solid $color-gray-20;
+      border-top:2px solid $color-gray-20;
       //border-bottom:1px solid $color-gray-20;
     }
     a {
       color:$color-gray-60;
-      font-weight:300;
+      font-weight:400;
     }
   }
 }
@@ -212,6 +213,16 @@ p.button {
 .video2:before {
   content:"Part 2";
 }
+
+/*----------------RESOURCE COLUMNS---------------*/
+/*.customizerLinks {
+  vertical-align: top;
+  column-count:2;
+  column-gap:20px;
+  p {
+    margin-top:0px;
+  }
+}*/
 
 /*-------------NOT BEING USED--------------*/
 /*-------------TABS-------------*/
