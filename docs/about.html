@@ -1,45 +1,74 @@
 <html>
 <head>
     <title>Visual Update 1 for IBM Connections in App Catalog</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="docs.css">
   <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
 <body>
-<div class="aboutHead">
+<!--TAB CONTAINER-->
+<!--
+<div class="fixednav">
   <a name="top"></a>
-  <div class="headText">
-  <h1>Visual Update 1 for IBM Connections in App Catalog</h1>
-</div>
-</div>
-
-<div class="breadcrumb">
-  <p><a href="./index.html">Back to main</a></p>
-</div>
-
-<div class="aboutContent">
-  <div class="toc">
+  <div class="bx--tabs__nav">
     <ul>
-      <li><a href="#about">About the App</a></li>
-      <li><a href="#preview">Preview Release</a></li>
-      <li><a href="#install">Install and Configure the App</a></li>
-      <li><a href="#updates">App Updates</a></li>
+      <li class="selected">About</li>
+      <li><a href="#preview">Preview</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="#updates">Updates</a></li>
       <li><a href="#support">Support</a></li>
+      <li><a href="./index.html">Back to Main</a></li>
     </ul>
   </div>
-  <h1><a name="about"></a>About the App</h1>
+</div>
+-->
+<!--END TAB CONTAINER-->
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer subpage">
+  <div class="aboutHeader">
+    <div class="headText">
+      <h1>Visual Update 1 for IBM Connections in App Catalog</h1>
+    </div>
+  </div>
+</div>
+<!--END HEADER CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li><a href="#about">About the App</a></li>
+    <li><a href="#preview">Preview Release</a></li>
+    <li><a href="#install">Install and Configure the App</a></li>
+    <li><a href="#updates">App Updates</a></li>
+    <li><a href="#support">Support</a></li>
+    <li><a href="./index.html">Back to Main</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
+<!--<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a></p>
+</div>-->
+
+<div class="aboutContent">
+
+
+  <h2><a class="anchor" name="about">About the App</a></h2>
   <p>The Connections Design Team is crafting new design specifications for Connections, which provide a more modern look and feel. You can preview the new visual styles by installing the application, from the IBM Connections App Catalog, which leverages the Connections Customizer technology.</p>
 
   <p>Customizer is available on IBM Connections Cloud for tenants of the North America and Europe data centres. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>
 
-  <h2><a name="preview"></a>Preview Release</h2>
+  <h2><a class="anchor" name="preview">Preview Release</a></h2>
   <p>This release is a preview and has limitations. Because this is a Preview, it is recommended that you enable the application for a sub-set of users.</p>
-  <p>Current limitations:</p>
+  <p>Current limitations of the preview:
   <ul>
     <li>Only works with the default theme, called "Verse Theme (Default)".</li>
     <li>Does not support bi-directional languages.</li>
     <li>Might contain defects.</li>
   </ul>
-  <p>This preview applies to the following applications and pages:</p>
+</p>
+  <p>This preview applies to the following applications and pages:
   <ul>
   <li>Files</li>
   <li>File viewer</li>
@@ -48,9 +77,10 @@
   <li>Search results page</li>
   <li>Meetings launch page, but not the meeting room</li>
   </ul>
+</p>
 
 
-  <h2><a name="install"></a>Install and Configure the App</h2>
+  <h2><a class="anchor" name="install">Install and Configure the App</a></h2>
   <p>Find Visual Update 1 for IBM Connections in the App Catalog. Get the app and configure it. </p>
   <h4>Important notes before installing</h4>
   <ul>
@@ -90,10 +120,10 @@
   <p>If you have previously enabled for a sub-set of users, edit the json again and remove the "user-email" matches in the payload section.</p>
 
 
-<h2><a name="updates"></a>App updates</h2>
+<h2><a class="anchor" name="updates">App updates</a></h2>
 <p>Updates to this application will be pushed out to fix defects and add styling to more applications.</p>
 
-<h2><a name="support"></a>Support</h2>
+<h2><a class="anchor" name="support">Support</a></h2>
 <h4>What is supported</h4>
 <p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
 
@@ -110,9 +140,14 @@
   <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
 </div>
 
-<div class="aboutFooter">
+</div>
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
   <p>Copyright 2017, IBM Corporation</p>
 </div>
+<!--END FOOTER CONTAINER-->
 
 </body>
 </html>
