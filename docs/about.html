@@ -91,18 +91,38 @@
   <p>Find Visual Update 1 for IBM Connections in the App Catalog. Get the app and configure it. </p>
   <h4>Important notes before installing</h4>
   <ul>
-  <li>This application is only intended to be used with the theme named Verse Theme (Default), which can be selected in the Theme section of Administration.</li>
-  <li>When the app is initially configured it is enabled for the entire organization. Because this is a Preview you might want to only enable it for a sub-set of users.</li>
+  <li>When first configured, the application is enabled for the entire organization. It is recommended that you first enable for a sub-set of users.</li>
+  <li>This application is only intended to be used with Verse Theme (Default), which can be selected in the Theme section of Administration.</li>
 </ul>
 
-  <h4>Enable for a sub-set of users</h4>
-  <p>To enable for a sub-set of users, you need to customize the extension that was installed when you enabled the app.</p>
+  <h4>Enable for no users or a sub-set of users</h4>
+  <p>You can install the application and enable it for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
+  <p>To enable for no users or a sub-set of users, customize the extension that was installed when you enabled the app.</p>
   <ol>
-    <li>After installing the app, go to Organization Extensions.</li>
+    <li>After installing the application, in Administration, go to Organization Extensions.</li>
     <li>At the top of the page, follow the new Apps Manager link.</li>
     <li>Click on the name of the app to edit the extension.</li>
-    <li>Edit the json to add "user-email" matches to the payload section, as follows.</li>
+    <li>Edit the json to add "match", "user-email", and values to the payload section, as follows.</li>
 
+    <p>Enable for no users by adding empty quotes inside "user-email":</p>
+
+    <pre class="code">
+    "payload": {
+      "match": {
+        "user-email": [
+          ""
+        ]
+      },
+      "include-files":[
+        "periscope.js"
+      ],
+      "include-repo": {
+        "name":"periscope"
+      }
+    },
+    </pre>
+
+<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
   <pre class="code">
   "payload": {
     "match": {
@@ -121,10 +141,37 @@
   </pre>
 </ol>
 
-<p><span style="font-weight:600;">Use caution before disabling a customized application.</span> If you disable the application, your customizations will be lost. Save the customized json to another location before disabling the application.</p>
+
+  <h4>Disable the application</h4>
+  <p><span style="color:red;">Use caution before disabling a customized application.</span> If you disable the application, your customizations will be lost. Save the customized json to another location before disabling the application.</p>
+<p>To disable the application:</p>
+<ol>
+  <li>After installing the application, in Administration, go to Apps.</li>
+  <li>Go to My Apps and locate Visual Update 1 for IBM Connections.</li>
+  <li>In the overflow menu select Disable.</li>
+  <li>Confirm that you want to disable the application because this will remove the Organization Extension and any customizations you made.</li>
+</ol>
 
   <h4>Enable for entire organization</h4>
-  <p>If you have previously enabled for a sub-set of users, edit the json again and remove the "user-email" matches in the payload section.</p>
+  <p>If you have previously enabled for a sub-set of users, edit the json again and remove the "match" and "user-email" matches in the payload section.</p>
+  <ol>
+    <li>Go to Organization Extensions.</li>
+    <li>At the top of the page, follow the new Apps Manager link.</li>
+    <li>Click on the name of the app to edit the extension.</li>
+    <li>Edit the json to remove "match", "user-email", and specific email addresses in the payload section, as follows.</li>
+
+  <pre class="code">
+  "payload": {
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"periscope"
+    }
+  },
+  </pre>
+</ol>
+
 
 
 <h2><a class="anchor" name="support">Support</a></h2>
