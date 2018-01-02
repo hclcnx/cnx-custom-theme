@@ -1,0 +1,335 @@
+<html>
+<head>
+    <title>Example - Visual Update 1 for IBM Connections</title>
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <link rel="shortcut icon" href="./img/cnx-theme.ico">
+</head>
+<!--
+	 * © Copyright IBM Corp. 2017, 2018
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+-->
+<body>
+
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer subpage">
+  <div class="aboutHeader">
+    <div class="headText">
+      <h1>Visual Update 1 for IBM Connections</h1>
+    </div>
+  </div>
+</div>
+<!--END HEADER CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li>CONTENTS</li>
+    <li><a href="#about">About Re-theme Example</a></li>
+    <li><a href="#test">View and Test Locally</a></li>
+    <li><a href="#included">What's Included</a></li>
+    <li><a href="#compile">How to Compile</a></li>
+    <li><a href="#exampleChanges">Example modifications</a></li>
+    <li><a href="#chrome">Create Chrome Extension</a></li>
+    <li><a href="#orgExt">Add to Connections</a></li>
+    <li><a href="#support">Support</a></li>
+    <li><a href="./index.html">Back to Main</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
+<!--<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a></p>
+</div>-->
+
+<div class="aboutContent">
+
+
+  <h1><a name="about"></a>Preview of Re-theme Example available!</h1>
+  <p>The release of Connections Customizer provides some great opportunities to customize Connections. For example, you can modify the existing appearance of Connections by overriding styles used on the site. </p>
+  <p>In this Connections re-theme example, we are using Customizer to apply the new design specification, to Connections. You will see how to change styles by only modifying CSS. The Connections re-theme example uses Sass to create CSS files and a script that instructs Customizer to send these CSS overrides with Connections URLs.</p>
+
+  <h4>Prerequisites</h4>
+  <p>Customizer is available on IBM Connections Cloud for tenants of the North America and Europe data centres. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>
+
+
+  <h4><a class="anchor" name="preview">What's included in the Preview</a></h4>
+  <p>This release is a preview and has limitations.</p>
+  <p>Current limitations of the preview:
+  <ul>
+    <li>Only works with the default theme, called "Verse Theme (Default)".</li>
+    <li>Does not support bi-directional languages.</li>
+    <li>Might contain defects.</li>
+  </ul>
+</p>
+  <p>This preview applies to the following applications and pages:
+  <ul>
+  <li>Files</li>
+  <li>File viewer</li>
+  <li>Profiles</li>
+  <li>Contacts</li>
+  <li>Search results page</li>
+  <li>Meetings launch page, but not the meeting room</li>
+  </ul>
+</p>
+
+<h4><a class="anchor" name="updates">Updates</a></h4>
+<p>Updates to these files will be pushed out to fix defects and add styling to more applications.</p>
+
+
+<h2><a class="anchor" name="test">View and Test Locally</a></h2>
+  <p>Use the TamperMonkey Chrome browser extension to view changes locally. This applies the CSS overrides to Connections so you can view them in the Chrome browser. </p>
+
+  <h4>1. Put Periscope files on your local system</h4>
+  <p>When files are stored in GitHub, it is recommended to create a personal fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
+  <p>Clone using GitHub Desktop</p>
+  <ol>
+    <li>Open the periscope GitHub repository on the web.</li>
+    <li>Go to the Code tab.</li>
+    <li>Click Clone or Download button.</li>
+    <li>Click Open in Desktop. If you don't have the GitHub desktop app, get it.</li>
+    <li>Open the link for GitHub Desktop and then Clone.</li>
+  </ol>
+
+<p>Once GitHub Desktop installs the Periscope Repository locally, you are set to go.</p>
+
+<p>Make sure you note the local path for the next step.</p>
+
+  <h4>2. Set up TamperMonkey (Chrome)</h4>
+  <p>We use the TamperMonkey browser extension to override the styles on the site on your local machine.</p>
+  <ol>
+    <li>Install the TamperMonkey extension in Chrome.</li>
+    <li>Enable scripts to be loaded from a local source. In Extensions, update TamperMonkey to make sure that the Allow access to file URLs checkbox is selected.</li>
+    <li>Go to the TamperMonkey dashboard and create a new script.</li>
+    <li>In the editor, just replace all the code with the code found in the /periscope/tmScript.js file.</li>
+    <li>Replace "YOURFILEPATHGOESHERE" with the path of the cloned files. (This is the path we just figured out in the previous section)
+    <ul>
+      <li>Note: file:/// has 3 slashes.</li>
+    </ul>
+  </li>
+
+  <pre class="code">
+  ...
+  // @require      file:///User/username/desktop/periscope/periscope.js
+  // @resource     files file:///User/username/desktop/periscope/css/files.css
+  // @resource     profiles file:///YOURFILEPATHGOESHERE/periscope/css/profiles.css
+  ...
+  </pre>
+  <li>After you replace the file paths, save the script.</li>
+  <li>Go to Connections Cloud and you should be able to see the changes.</li>
+</ol>
+
+<h4>3. Keep local Periscope files up to date</h4>
+<p>When using GitHub it is recommended to keep your local copy up to date to pick up changes made by your colleagues and to minimize merge conflicts. Pull updates into your local clone from master.</p>
+
+<h2><a class="anchor" name="included">What's Included in this Example</a></h2>
+<p>Complete folder structure</p>
+<pre class="code">
+  /periscope
+      /css -- contains output CSS files after compiling scss
+      /extension -- contains files used to create a Chrome extension
+      /scss -- scss files where style changes are made
+         /apps -- app specific style changes
+         /components -- common components used across apps, such as buttons and links
+         /global -- global style changes applied regardless of application
+         /prereqs -- style changes that are used by other scss files, such as color variables
+         files.scss -- references partial scss files used in this application
+         global.scss -- references partial scss files used globally
+         profiles.scss -- references partial scss files used in this application
+         settings.scss -- references partial scss files used in this application
+      /svg -- svg images used to replace existing images
+      manifest.json -- used to define Chrome extension
+      periscope.js -- javascript file that instruct Connections Customizer. URLs to apply changes to are in this file.
+</pre>
+
+<h2><a class="anchor" name="compile">How to Compile the Files</a></h2>
+  <p>To make CSS easier to manage, all of the styling is written is SCSS which needs to be compiled into CSS using a Sass Compiler. <a href="tbd" target="_blank">Follow these instructions to install Sass</a>. </p>
+  <p>Once that is done, Sass can watch for changes in your /scss/ directory and output the files to the /css/ directory. To be able to do this, you should have a process running in your terminal that is constantly doing this action, as the command below:</p>
+  <pre class="code">
+  sass --watch exactPathToThePeriscopeFolder/periscope/scss/.:exactPathToThePeriscopeFolder/periscope/css
+  </pre>
+  <p>Once this is set up, each time you update scss files and save, they are compiled and the appropriate CSS files are updated. As you may have noticed, there are a lot of scss files but there are only a few CSS files generated. The point of this is to send less requests to the server and make the load time as fast as possible. The way this is achieved is by placing a "_" before every .scss file that we don't want to create a CSS file for. So currently, only Files, Profiles, Settings, and Global etc. don't have a "_" in front of their file name. The main scss files import all these "partials" and compile them into large CSS files.</p>
+
+<h2><a class="anchor" name="exampleChanges">Example of modifications</a></h2>
+<h3>Change the colors of components</h3>
+<ul>
+<li>The colors are defined as variables and are centrally located in this file:
+  <pre class="code">
+/periscope/scss/prereqs/_colors.scss
+</pre>
+</li>
+<li>Brand color variables are defined and used on colorful components such as buttons, links, and the top navigation bar. In many cases you only need to change the brand colors to significantly update the user interface with the colors for your company.</li>
+<li>Additional neutral colors are defined for text, borders, separators, backgrounds, etc.</li>
+</ul>
+
+<h3>Add another application to style via a specific URL</h3>
+<ul>
+  <li>This example applies visual changes to specific applications within Connections. This allows us to complete the re-theming on an application-by-application basis rather leaving all of Connections in an incomplete state of re-theming.</li>
+  <li>We apply the re-theme changes to each application by matching part of the URL of the page. For example, the Files application pages always have "/files/" in the URL.</li>
+  <li>The mapping between an application and the URL is done in the periscope.js file.</li>
+</ul>
+<p>Let's say we are trying to add styling to the homepage that is currently not being styled. An overview of the steps are as follows:</p>
+<ol>
+  <li>Create the scss file that will have styling.</li>
+  <li>Create a main scss file that imports the partials we need.</li>
+  <li>Add the homepage url to the periscope.js to be able to apply the css files onto that url.</li>
+</ol>
+<h4>1. Creating the scss file that will have styling</h4>
+
+<p>The first task to decide on what type of styling this is going be. If its only going to be applied to homepage application(that consists of urls only under /homepage) it should be under a homepage folder in apps/. If it is a component that might later on be used on other pages except /homepage, it should go under components. Or if it's a styling that exists on every subURL of your Connections application, it would be logical to create the file under the global/ folder.</p>
+
+<h4>2. Creating a main scss file that imports the partials</h4>
+
+<p>In our case, a homepage.scss file should be created in the scss/ directory that should look something like this:</p>
+<pre class="code">
+  @import "prereqs/prereqs";
+
+  // Component Imports
+  @import "components/components";
+
+  // App Specific Imports
+  @import "apps/homepage/yourFileThatContainsStyling";
+</pre>
+
+<p>As you can see, we are not importing the global scss files in this folder as they are created in a global.scss file and gets added once it is specified in periscope.js.</p>
+
+<p>The first import will load up all predefined scss variables such as colors and mixins. The second import loads all the components that will be styled on the page. If you want to apply only some of them, you can cherry pick scss partial files from the components/ folder. The last import is the file you have created.</p>
+
+<h4>3. Adding the homepage url to the periscope.js</h4>
+
+<p>The main goal of periscope.js is to detect what method the user is using to load the css to Connections and load the relevant css files when the user is on certain URLs that were specified within the mappings object. Each key within the mappings object is a css file that for every url within the array corresponding to the key is going to load.</p>
+
+<pre class="code">
+  var mappings = {
+      //global is special case where the empty array applies to all the pages.
+      "global":[],
+      "files":["/files/"],
+      "profiles":["/profiles/",
+                  "/mycontacts/",
+                  "/contacts/"],
+      //"search":["/search/"],
+      "settings":["/manage/account/user/",
+                  "/news/web/",
+                  "/manage/subscribers/showInviteGuestDialog/"]
+    };
+</pre>
+<p>So if we want to add the url of homepage to load the homepage.css file, our mappings should look like the following.</p>
+<pre class="code">
+  var mappings = {
+    //global is special case where the empty array applies to all the pages.
+    "global":[],
+    "files":["/files/"],
+    "profiles":["/profiles/",
+                "/mycontacts/",
+                "/contacts/"],
+    //"search":["/search/"],
+    "settings":["/manage/account/user/",
+                "/news/web/",
+                "/manage/subscribers/showInviteGuestDialog/"],
+    "homepage":["/homepage/"]
+  };
+</pre>
+
+<h4>Change icons on a page</h4>
+<p>The way Connections was built, most icons are loaded via a sprite sheet as background and to show the certain icon, the developers used background-position and set x,y values to some specific value.</p>
+
+<p>If we want to replace an icon, we can add in an svg file. However since we can't modify the DOM to insert the svg, we can override the background and include the svg as encoded in base64. Since this example has many icons changed, we made this process as simple as possible.
+<ol>
+  <li>Edit the .svg in a text editor.
+    <ul>
+      <li>Remove any unnecessary comments or attributes.</li>
+      <li>Remove all the line returns so that the .svg markup is all on one line and save the file.</li>
+    </ul>
+  <li>Add the .svg as a variable to use in Connections. Find the scss/prereqs/_icons.scss file and add your icon as a variable:
+<pre class="code">
+$svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="blah blah"&gt;&lt/path&gt;&lt;/svg&gt;";
+</pre>
+</li>
+<li>Apply the icon variable to be used as a background-image for any element you need by doing the following:
+<pre class="code">
+.myElement{
+   background-image:svg-url-with-replaced-fill($svg-myIcon, '#000000', '#colorYouWant') !important;
+}
+</pre>
+</li>
+</ol>
+
+<h2><a class="anchor" name="chrome">How to create / update Chrome extension</a></h2>
+<p>Create a Chrome extension to share the changes you have made with others.</p>
+<ol>
+  <li>Create a new folder called /periscope-chrome-ext and put a copy of the /periscope folder inside of it.</li>
+  <li>In the copy, edit the /periscope-chrome-ext/periscope/manifest.json file if:
+    <ul>
+      <li>You want to modify the version number of the extension</li>
+      <li>You changed the name of the periscope.js file</li>
+    </ul></li>
+    <li>Remove the /periscope-chrome-ext/periscope/scss folder</li>
+    <li>Zip up only the /periscope folder</li>
+    <li>Share periscope.zip with others along with the following instructions to install it.</li>
+</ol>
+<h4>Instructions to install the Chrome extension</h4>
+<ol>
+  <li>Download this zip file and unzip it where you want.</li>
+  <li>Go to chrome://extensions</li>
+  <li>Check "Developer mode"</li>
+  <li>Click "Load unpacked extension..."</li>
+  <li>Locate and select the /periscope folder you unzipped. If you see /periscope/periscope select the nested folder.</li>
+</ol>
+<h4>Instructions to update the Chrome extension with an updated version</h4>
+<ol>
+  <li>Download and replace the zip and folder from before.</li>
+  <li>Go to chrome://extensions</li>
+  <li>Click "Reload" on your existing Periscope extension to get the updates.</li>
+</ol>
+
+<h2><a class="anchor" name="orgExt">Add to Connections as an Organization Extension</a></h2>
+<p>Refer to the documentation provided with <a href="https://github.com/ibmcnxdev/customizer/tree/master/docs" target="_blank">Connections Customizer</a>.</p>
+
+
+<h2><a class="anchor" name="support">Support</a></h2>
+<h3>FAQ</h3>
+<h4>Which customizations appear if both an org extension and app are enabled?</h4>
+<p><span style="font-weight:600;">Question:</span> Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p><span style="font-weight:600;">Answer:</span> Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
+
+<p>The App Registry includes the "Connections Pink: Theme Preview" application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The "Connections Pink: Theme Preview" is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS or JS overriding any of the "Connections Pink: Theme Preview" changes.</p>
+
+<h3>What is supported</h3>
+<p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
+
+<p>Due to the preview nature of the application, PMRs will not be accepted and resolved by IBM. Questions and support requests, however, can be posted directly on the support forum located here. IBM will not assist with making modifications to the open source code provided for this application nor modifications created to add additional customizations in lieu of the Visual Update 1 for IBM Connections.</p>
+
+<p>While the application is in preview, bi-directional language support will not be included. Visual updates will apply only to applications stated in official communications and will not extend to custom widgets added to Connections. IBM plans to regularly add new Connections applications to the visual update and will share communications accordingly.</p>
+
+<h3>Getting support</h3>
+<p>Ask questions and view answers tagged with <a href="https://developer.ibm.com/answers/topics/cnx-custom-theme.html" target="_blank">'cnx-custom-theme'</a> on dW Answers.</p>
+
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
+</div>
+
+</div>
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
+  <p>Copyright 2017, 2018, IBM Corporation</p>
+</div>
+<!--END FOOTER CONTAINER-->
+
+</body>
+</html>
