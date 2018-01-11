@@ -1,0 +1,51 @@
+//Wiki changes(mostly)
+.lotusContent{
+  padding-top:8px!important;
+  padding-left:48px!important;
+  .lotusBreadcrumbs,#wikiPageHeader{
+    margin-bottom:16px!important;
+  }
+}
+#lotusColLeft.lotusColLeft{
+  position:relative!important;
+  top:-24px!important;
+  padding-top:32px!important;
+}
+.lotusFooter{
+  height:51px!important;
+}
+.wikiHeader{
+  .lotusMeta,.lotusBtnContainer{
+    padding-top:0!important;
+    margin-top:0!important;
+  }
+}
+
+//Blog Changes overwrite the wiki counterpart
+.blog{
+  .lotusMain{
+    padding-top:0!important;
+  }
+  .lotusContent,#lotusColRight{
+    padding-top:32px!important;
+  }
+  #lotusColLeft{
+    position:relative!important;
+    top:4px!important;
+    padding-top:28px!important;
+  }
+  .lotusContent{
+    margin-left:234px!important;
+
+  }
+  .lotusHeader,
+  .lotusActionBar,
+  .lotusPaging,
+  .lotusSort{
+    margin-top:0!important;
+    margin-bottom:16px!important;
+  }
+  #lotusColRight{
+    margin-left:48px!important;
+  }
+}

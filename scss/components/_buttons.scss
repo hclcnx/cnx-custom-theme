@@ -1,0 +1,253 @@
+// Split button in file viewer
+.ics-viewer-splitbutton .actionLink,
+.ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
+.ics-viewer-action-splitmenu span.dijitButtonNode {
+  @include btnprimary;
+  span{
+    font-weight:500!important;
+    &:hover{
+      text-decoration: none!important;
+    }
+  }
+}
+.ics-viewer-action-splitmenu span.dijitButtonNode{
+  border-radius:0 2rem 2rem 0rem!important;
+  padding: .5rem 1rem .5rem .5rem !important;
+}
+.ics-viewer-splitbutton .actionLink,
+.ics-viewer-splitbutton.ics-viewer-action-upload .actionLink{
+  border-radius:2rem 0 0 2rem!important;
+  padding: .5rem .5rem .5rem 1rem !important;
+}
+.ics-viewer-splitbutton.ics-viewer-action-upload .actionLink {
+  #body &, & {
+    padding-top:7px!important;
+    padding-bottom:7px!important;
+    top:-1px!important;
+  }
+}
+.lotusBtn,
+.lotusFormButton,
+.ics-dialog-action #ok,
+.ics-dialog-action .cancel.neutral,
+.filesList .lotusDetails .lotusBtnSmallGray,
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost) {
+  @include btnsecondary;
+  &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
+    @include btnsecondarydisabled;
+  }
+}
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"].share-attachAction:not(.ublogPost):focus {
+  box-shadow: none !important;
+}
+#submit_button,
+#btn_actn__personCardSendEMail,
+#createPlaceButton a,
+.lotusRightCorner button,
+.lotusBtn[name="submitButton"],
+.ics-viewer-action-upload .actionLink,
+.lotusBtn.submit.lotusButtonSubmit,
+.filesList .lotusDetails .lotusBtnSmall {
+	@include btnprimary;
+  &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
+    @include btnprimarydisabled;
+  }
+  .lotusArrow.lotusDropDownSprite {
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $text-03) !important;
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+  &:hover {
+    .lotusArrow.lotusDropDownSprite {
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $brand-01) !important;
+    }
+  }
+}
+.lotusBtnDisabled,a.manualAdd[disabled="disabled"]{
+	cursor:not-allowed;
+	opacity:.5!important;
+}
+.lotusBtnDisabled:hover{
+	background-color:transparent!important;
+	color:$brand-01 !important;
+}
+// Fixing file focus view
+.ics-viewer-action-upload .actionLink{
+	font-weight:500!important;
+}
+.wikiHeader .lotusBtn a{
+	border:none!important;
+	box-shadow:none!important;
+	background-color:transparent!important;
+	padding:0!important;
+}
+.wikiHeader .lotusBtn a:hover{
+	background-color:transparent!important;
+	color: $text-03 !important;
+}
+.wikiHeader .lotusBtn:hover > a{
+	color: $text-03 !important;
+}
+.wikiHeader .lotusLike{
+	top:0!important;
+}
+//Fixing the "new" button in Files
+.lotusTitleBar .lotusPlaceBar .lotusBtn{
+	width:88px!important;
+	height:36px!important;
+}
+//Fixing the action buttons in Files to dissappear
+#lotusContentSceneActions{
+	min-height:40px;
+	.lotusBtnContainer{
+		padding-bottom:0!important;
+	}
+	.lotusBtnDisabled{
+		$z:0!important;
+		width:$z;
+		opacity:$z;
+		cursor:default!important;
+    pointer-events: none;
+		margin:$z;
+		padding:$z;
+		color: $text-03 !important;
+		border:none!important;
+	}
+	.lotusBtn:first-child{
+		display:inline-block!important;
+	}
+}
+// Fixing "We are unable to process your request" screen button
+.lotusErrorBox.lotusError{
+  .lotusBtnContainer{
+    .lotusBtn {
+      a{
+        color:$brand-01 !important;
+        background:transparent!important;
+      }
+      &:hover a{
+        color: $text-03 !important;
+      }
+    }
+  }
+}
+// Fix for "choose a file" image picker button in edit profile
+#photoUploadFileSelectFieldsDiv, 
+#audioUploadFileSelectFieldsDiv {
+	> span.lotusBtn {
+		border: none !important;
+		padding: 0 !important;
+		&, &:hover {
+			background: none !important;
+			color: $brand-01 !important;
+		}
+		a {
+			margin: 0;
+		}
+	}
+}
+body:not(.lotusImagesOff) {
+  button[id^="moreActionsBtn_lconn_profiles_actionBar_ActionBar"],
+  button[id^="com_ibm_sc_action_moreaction_"] {
+    text-indent: -9999px;
+    overflow: hidden;
+    &, &:hover {
+      background-image: svg-url-with-replaced-fill($svg-overflow-menu, '#000000', $icon-brand-01) !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: 1.25rem 1.25rem !important;
+      background-color: transparent !important;
+      border: none !important;
+    }
+    &:focus {
+      outline: 1px solid $brand-01;
+    }
+  }
+}
+// profiles/contacts ckeditor peripheral buttons
+.lotusStreamUpdate .lotusActions {
+  ul {
+    float: none !important;
+    margin-top: 1rem;
+  }
+  li {
+    border: none !important;
+    padding: 0 .5rem 0 0 !important;
+  }
+  a[role="button"] {
+    @include btnprimary;
+    display: inline-block;
+    font-weight: normal !important;
+    strong {
+      font-weight: inherit;
+    }
+    &[data-dojo-attach-event="onclick: doCancel"] {
+      @include btnsecondary;
+    }
+  }
+  &.lotusInactive {
+    a[role="button"],
+    a[role="button"]:hover {
+      @include btnprimarydisabled;
+    }
+  }
+}
+// share a file modal on a profile page:
+.filesList .lotusDetails  {
+  td:not(.lotusFirst) ul{
+    margin-top:12px!important;
+    margin-bottom:12px!important;
+  }
+  .lotusBtnSmall{
+    margin-left:8px!important;
+    margin-right:8px!important;
+  }
+  .lotusBtnSmallGray{
+    padding:6px 16px!important;
+    font-weight:500!important;
+    font-size:0.675rem!important;
+  }
+}
+
+/*
+// Communities Create Community Button Fix
+#createPlaceButton{
+	border:none!important;
+	padding:0!important;
+}
+#createPlaceButton a img{
+	filter:none!important;
+	position:relative!important;
+	top:2px;
+	background-image:url(data:image/svg+xml,%3Csvg%20width%3D%2212px%22%20height%3D%228px%22%20viewBox%3D%220%200%2012%208%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%09%3Cpolygon%20id%3D%22SVGID_1_%22%20stroke%3D%22none%22%20fill%3D%22%23FFFFFF%22%20%20points%3D%2210.6%200%206%204.7%201.4%200%200%201.4%206%207.5%2012%201.4%22%3E%3C/polygon%3E%0A%3C/svg%3E)!important;
+}
+#createPlaceButton:hover{
+	padding:0!important;
+	border:none!important;
+	background-color:transparent!important;
+}
+// Fixing communities
+.lotusCommunities{
+	#lotusColLeftContent{
+		.lotusBtn{
+			background-color:$brand-01 !important;
+			color: $text-03 !important;
+			transition:background-color 150ms ease-in!important;
+		}
+		.lotusBtn:hover{
+			background-color: $brand-02 !important;
+		}
+
+	}
+	#memberAddButton span a, #inviteButtons span a, .lotusBtnContainer span a{
+		border:none!important;
+		box-shadow:none!important;
+		background-color:transparent!important;
+		padding:0!important;
+	}
+	#memberAddButton span:hover a, #inviteButtons span:hover a, #forum .lotusBtnContainer span:hover a{
+		color: $text-03 !important;
+	}
+}
+*/
+

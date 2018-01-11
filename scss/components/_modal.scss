@@ -1,0 +1,345 @@
+// Underlay behind modal dialogs
+.dijitDialogUnderlay {
+	background:$background-underlay !important;
+	opacity:1 !important;
+}
+.lotusDialogBorder{
+	border:none!important;
+}
+.lotusDialogWrapper{
+	box-sizing:border-box!important;
+}
+.lconnPickerSourceArea{
+	margin:0!important;
+	padding-top:0!important;
+}
+.lotusFormTable tbody td{
+	margin-top:20px!important;
+}
+.lotusDialog, .slideDialog {
+	.lotusFormBody {
+		padding: 0 !important;
+	}
+	.lotusDialogFooter, .dialogFooter{
+		margin:0!important;
+		margin-top:16px!important;
+		background-color: $background-main !important;
+		padding: 1rem 3rem !important
+	}
+}
+.lconnPickerDialogBody .lotusRightSide.lotusForm,
+.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane,
+.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane .lconnPickerSourceArea,
+{
+	width:100%!important;
+}
+.lotusDialogBorder > .lotusDialog,
+.dijitDialogTitleBar{
+	box-shadow:0 12px 24px 0 $box-shadow-10 !important;
+	border-top: $background-main 4px solid!important;
+	padding-top:0!important;
+	box-sizing:border-box!important;
+	width:100%!important;
+	background-color: $background-main !important;
+}
+.lotusDialogClose img{
+	display:none!important;
+}
+.lotusDialogClose,.dijitDialogCloseIcon{
+	background-attachment: scroll!important;
+  background-clip: border-box!important;
+  background-color: transparent !important;
+	background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default)!important;
+  background-origin: padding-box!important;
+  background-position-x: center!important;
+  background-position-y: center!important;
+  background-repeat: no-repeat!important;
+  background-size: 12px 12px!important;
+  height: 12px!important;
+  width: 12px!important;
+  top:1rem!important;
+  right:1rem!important;
+	&:focus {
+		outline:1px solid $icon-default!important;
+		outline-offset: 1px!important;
+	}
+}
+.pickerDropfilesHorizentalPrompt{
+	width:100vw!important;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+}
+.lconnPickerSourceArea, .lotusUploadFile{
+	width:100%!important;
+}
+.lotusDialogHeader,
+.importHeader {
+	background-color: $background-main !important;
+	padding:0!important;
+	margin-bottom:1.5rem!important;
+	padding-top:2.75rem!important;
+	color: $text-01 !important;
+	h1 {
+		color: currentColor !important;
+	}
+}
+.lotusDialogBorder > .lotusForm > div,
+.lotusDialogBorder > .lotusDialog > div{
+	padding-right:3rem!important;
+	padding-left:3rem!important;
+}
+#lconn_btn_browse_files{
+	background-color:$brand-01 !important;
+	color: $text-03 !important;
+}
+#lconn_btn_browse_files:hover{
+	background-color: $brand-02 !important;
+	border-color: $brand-02 !important;
+}
+.lotusDialogHeader .lotusHeading,
+.dijitDialogTitleBar span,
+span[id^="lconn_share_widget_LotusDialog_"]
+{
+	color: $text-01 !important;
+	font-weight:500!important;
+	font-size:$title-font-size !important;
+}
+.lotusFormTable td img.lotusArrow{
+	color: $text-03 !important;
+}
+.lotusFormButton:last-of-type{
+	margin-right:0!important;
+}
+.lotusDialogContent._qkrDialogCompact{
+	overflow:initial!important;
+}
+.pickerDropfilesVerticalPrompt{
+	width:calc(100% - 4px)!important;
+}
+.lconnEmptyMsg{
+	border-top:none!important;
+}
+.lotusUploadFile{
+	tbody tr:nth-child(3) > td:not(.lotusFormLabel){
+		margin-bottom:20px!important;
+	}
+	.lotusArrow + a:focus{
+		outline:none!important;
+	}
+}
+form.lotusDialog.lotusForm{
+	.lconnPickerDialogBody > .lotusForm, .lconnPickerSourceArea, div:nth-child(2) > div:nth-child(1){
+		max-width:100%!important;
+	}
+	.lconnPickerSourceArea > div{
+		min-width:0px!important;
+		max-width:100%!important;
+	}
+}
+
+//fixes for File Preview -> About -> Get Links
+#body .dijitDialogTitleBar{
+	padding-bottom:0px!important;
+	padding-top:35px!important;
+	padding-left:32px!important;
+}
+
+// profile download v-card:
+#exportVcardDialog {
+	min-width: 400px;
+
+	.lotusFormFieldRow {
+		td {
+			display: table-cell !important;
+			padding: 0 0 10px !important;
+		}
+	}
+}
+
+// profile "share a file" modal
+.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
+	width: 100% !important;
+
+	.switchContainer, .tabbedSwitch {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+}
+
+// File Picker: Add Files and Share a File dialogs
+[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content"],
+[id^="lconn_share_widget_TreeWithBreadcrumb_"][id$="_containerNode"] {
+  height:280px !important;
+	.headerSelector {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    border-top: 1px solid transparent !important;
+    border-bottom: 1px solid transparent !important;
+    &:focus {
+      outline:none !important;
+      border-top:1px solid $border-selected !important;
+      border-bottom: 1px solid $border-selected !important;
+    }
+  }
+}
+
+// file upload sharing
+// #lconn_files_widget_UploadFile_0_shareWithLabel
+[id^="lconn_files_widget_UploadFile_"] {
+	display: inline-block !important;
+}
+
+// "remove contact" confirmation modal
+.scRemove.lotusForm2 .lotusIndent10 {
+  padding: 20px 0 !important;
+  position: relative;
+
+  &::before {
+    content: '\2022';
+    margin: 0 10px;
+  }
+}
+
+//Upload Files
+[id^="lconn_share_widget_Dialog_"] .lotusDialogContent._qkrDialogCompact {
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+
+// "import contacts" modal
+.sc {
+	.dialogImportList {
+		padding-right:3rem!important;
+		padding-left:3rem!important;
+		box-sizing: border-box;
+
+		.lotusStream .lotusPaging .lotusInlinelist .lotusFirst {
+			margin: 0 !important;
+		}
+	}
+	.slideDialog {
+		&,
+		.dialogBody,
+		.scImport .sourceIconHover {
+			background: $color-white !important;
+			box-shadow: none !important;
+		}
+		.scImport .sourceIconHover {
+			outline: 1px solid $brand-01;
+		}
+		.dialogPanel {
+			color: $text-01 !important;
+		}
+		#dialogPanel_5 .lotusLoading,
+		#dialogPanel_2 .lotusLoading {
+			position: relative !important;
+			margin: 0 auto;
+			left: auto !important;
+		}
+		.dialogFooter .lotusInlinelist {
+			margin-top: 4px;
+		}
+	}
+}
+
+// "invite to network"
+form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
+	.lotusFormTable {
+		max-width: 350px;
+	}
+	input[type="text"] {
+		@include textinput;
+		max-width: 240px;
+	}
+	textarea {
+		margin: .25rem 0 1rem 0 !important;
+		max-width: 240px;
+	}
+}
+
+// share file to a folder dialog
+div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchBar"] {
+	min-height: 3rem;
+	margin-bottom: 1rem;
+}
+div[id^="lconn_files_widget_CompactFolderPicker_"] {
+	+ .lotusDialogFooter {
+		padding: 0 !important;
+		background-color: transparent !important;
+		margin: 0 !important;
+		text-align: left !important;
+	}
+}
+
+// share folder dialog
+div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
+	> div > table > tbody > tr > td {
+		display: flex !important;
+	}
+	tr td,
+	td table td {
+		display: block !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		max-height: 350px !important;
+
+		> div, > span, > img, > input, > select, > fieldset {
+			margin-bottom: 1rem !important;
+		}
+		> img, > img + span {
+			display: inline-block;
+			vertical-align: top;
+		}
+		input[type="text"] {
+			width: 100% !important;
+		}
+		> div[id^="lconn_share_widget_MemberInput"] {
+			table td:nth-child(3) {
+				overflow: visible !important;
+			}
+		}
+	}
+	.lotusFormFieldRow:nth-child(3), .lotusFormFieldRow:nth-child(4) {
+		td:last-child {
+			position: relative;
+			overflow: visible;
+			a {
+				position: absolute;
+				right: 0;
+				top: -3.5rem;
+			}
+		}
+	}
+	.lotusUploadFile .lotusFormFieldRow:nth-child(3) td:last-child a {
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+	.BrowseGroups {
+		margin-bottom: -1.35rem !important;
+
+	}
+}
+
+// new group in contacts
+.dijitDialog div[id^="addPeopleLable_"] .dijitTextBox {
+	&, .sc & {
+		padding: 0 !important;
+		border: none !important;
+		&, &:focus {
+			outline: none !important;
+		}
+		.typeaheadInput {
+			padding: 0 !important;
+			width: 100% !important;
+			background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+			background-position: right top !important;
+			background-size: 20px 20px !important;
+
+			// .lotusText {
+			//
+			// }
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.lotusui30 {
+  .lotusSyncViewWelcomeBox {
+    background-color: transparent; //$brand-02;
+    background-image: none;
+    background-image:svg-url-with-replaced-fill($svg-welcome-back, '#000000', $color-gray-50) !important;
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-position-y:0px;
+    background-size: 300px 300px;
+    padding-top:300px;
+    .lotusSyncHeading {
+      color: $brand-01;
+    }
+    p {
+      font-weight:normal;
+      color: $text-01 !important;
+    }
+    .lotusSyncLinkSpan {
+      font-weight:normal;
+      color: $text-01 !important;
+      a {
+      //font-weight:bold;
+      color:$brand-01 !important;
+      margin-left:10px;
+      }
+    }
+
+    .lotusSyncButtonDiv .lotusSyncInstallButton {
+      @include btnbasics;
+      @include btnprimary;
+      &:hover, &:focus {
+        background-color:$brand-02 !important;
+        transition: background-color 150ms ease-in, color 150ms ease-in !important;
+        outline:none !important;
+      }
+    }
+    #lotusSyncPicBackground {
+      display:none;
+    }
+  }
+}

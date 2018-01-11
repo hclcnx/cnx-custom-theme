@@ -1,0 +1,456 @@
+// tags on a profile page:
+#socialTags {
+  #tagsYouAddedList_div, #tagsListTags_div {
+    max-height: 12.75rem;
+    overflow: auto;
+  }
+  #tagsYouAddedView, #tagsList {
+    h3 {
+      border: 0 !important;
+      font-weight: bold;
+      margin: 1rem 0 0;
+    }
+    .lotusTags {
+      > li {
+        display: flex !important;
+        margin: 0;
+        padding: 0 !important;
+        margin: .75rem 0;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        > span, > a {
+          float: none !important;
+        }
+        
+        a:focus {
+          outline: none !important;
+        }
+      }
+      .lotusCommentBubbleBody {
+        padding-top: 0 !important;
+        .lotusMeta {
+          font-size: $body-mini-font-size;
+        }
+        .lotusTags > li {
+          display: block !important;
+          margin: 0 !important;
+          text-align: left;
+          &:before {
+            content: '\2022';
+            margin: 0 .5rem;
+            display: inline-block;
+          }
+          a {
+            padding: 0 !important;
+            background: none !important;
+            font-weight: 500 !important;
+          }
+        }
+      }
+      a {
+        @include tags(white);
+      }
+      .profileTag {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        order: 1;
+        position: relative !important;
+        left: auto !important;
+        padding-right: .5rem !important;
+        max-width: calc(100% - 58px) !important;
+        box-sizing: border-box;
+        font-weight: 500 !important;
+      }
+      span.lotusRight {
+        order: 2;
+        .lotusDelete {
+          img {
+            background: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+            background-position:0px 0px!important;
+            height: 9px;
+            width: 9px;
+            opacity: 1;
+            background-size: contain !important;
+          }
+          &:hover img {
+            background: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
+          }
+        }
+        .lotusDelete, .lconnTagCount {
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+          padding-left: .5rem !important;
+          order: 2;
+          position: relative;
+          overflow: visible;
+          z-index: 2;
+          font-weight: 500 !important;
+          &:before {
+            content: '\2022';
+            display: block;
+            position: absolute;
+            left: -.15rem;
+            top: 0;
+          }
+        }
+        .lconnTagCount + .lotusDelete {
+          margin-left: -.45rem !important;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -.25rem;
+            z-index: -10;
+            width: 2em;
+            background: $color-white;
+            height: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #tagsYouAddedView .lotusTags span.lotusRight .lconnTagCount{
+    padding-left: 0 !important;
+    &:before {
+      display: none;
+    }
+  }
+  #tagCloud {
+    .lotusTagCloud.lotusChunk {
+      a {
+        font-weight: 500 !important;
+      }
+    }
+  }
+  #add-tag-view {
+    #tagInputForm > .lotusBtnImg {
+      padding: 0 !important;
+      height: auto !important;
+        padding: .75rem 0 !important;
+    }
+    #addTagButtonId {
+      display: block;
+      padding: 2px;
+      img {
+        background: svg-url-with-replaced-fill($svg-add, '#000000', $icon-brand-01) !important;
+        opacity: 1 !important;
+        margin: 0 !important;
+      }
+      &:hover img {
+        background: svg-url-with-replaced-fill($svg-add, '#000000', $icon-brand-02) !important;
+      }
+    }
+  }
+  div[id^="SocialTaggerList"] {
+    width: 100%;
+    order: 3;
+  }
+}
+
+
+// tags on a search page:
+// in the search field:
+.contactsSearch,
+#searchInfo,
+.lotusMeta,
+.lotusSearchFilterSection {
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: .25rem;
+    font-size: .75rem;
+  }
+  a.lotusFilter {
+    @include tags;
+    vertical-align: top !important;
+    max-width: 100rem !important;
+    margin: .5rem .5rem 0 0 !important;
+    span.name {
+      vertical-align: middle;
+      width: auto !important;
+    }
+    img.lotusDelete {
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      height: 9px;
+      width: 9px;
+      opacity: 1 !important;
+      margin: 0 5px !important;
+      vertical-align: middle !important;
+      background-size: contain !important;
+      background-position:0px 0px!important;
+      &:hover {
+        background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
+      }
+    }
+  }
+  .lotusFilters2 {
+    line-height: 1.5rem !important;
+    font-size: $body-mini-font-size !important;
+    width: 100% !important;
+  }
+}
+#searchInfo a.lotusFilter {
+  margin: 0 .5rem !important;
+}
+#lconnTagWidget_tagList,
+ul[id*="_tagList"] {
+  > li {
+    display: flex !important;
+    padding: 0 !important;
+    margin: .75rem 0 !important;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    wbr {
+      display: none !important;
+    }
+
+    > span, > a {
+      float: none !important;
+      @include tags(white);
+    }
+    .lotusLeft {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      order: 1;
+      position: relative !important;
+      left: auto !important;
+      padding-right: .5rem !important;
+      max-width: calc(100% - 58px) !important;
+      box-sizing: border-box;
+    }
+    .lotusRight {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      padding-left: .5rem !important;
+      order: 2;
+      position: relative;
+      overflow: visible;
+      z-index: 2;
+      &:before {
+        content: '\2022';
+        display: block;
+        position: absolute;
+        left: -.15rem;
+        top: 0;
+      }
+    }
+    .lotusDelete img {
+      margin: 6px 0;
+    }
+  }
+}
+
+// related tags in the left menu:
+ul.lotusRelatedTags a {
+  @include tags(white);
+  box-sizing: border-box;
+  wbr {
+    display: none !important;
+  }
+}
+// selected tags in the left menu:
+div[dojoattachpoint="_selectedTagsSection"],
+div[data-dojo-attach-point="_selectedTagsSection"] {
+  .lotusList {
+    > li {
+      display: flex !important;
+      margin: 0;
+      padding: 0 !important;
+      margin: .75rem 0 !important;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+
+      > span, > a {
+        float: none !important;
+      }
+
+      a {
+        @include tags(white);
+      }
+      span.lotusLeft {
+        @include tags(white);
+        display: inline-block;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        order: 1;
+        position: relative !important;
+        left: auto !important;
+        padding-right: .5rem !important;
+        max-width: calc(100% - 58px) !important;
+        box-sizing: border-box;
+      }
+      a.lotusDelete {
+        order: 2;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        padding-left: 0 !important;
+        img {
+          background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+          height: 9px;
+          width: 9px;
+          opacity: 1;
+          background-size: contain !important;
+          background-position:0px 0px!important;
+        }
+        &:hover img {
+          background-image:  svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
+        }
+      }
+    }
+  }
+}
+// headings in the left tag menu:
+#lconnTagWidget {
+  > div > div {
+    margin-bottom: 1rem;
+  }
+}
+// left tag menu search field:
+#lconnTagWidgetcommonTagsTypeAhead {
+  font-size: $body-sm-font-size !important
+}
+
+// chiclets in search all need to get out the way:
+.contactsSearch {
+  position: relative;
+  display: flex !important;
+  align-items: flex-start;
+  margin-bottom: 0 !important;
+  flex-direction: column;
+  float: none !important;
+  position: relative;
+  .contactsSearchIconDiv {
+    position: absolute;
+    top: .35rem;
+  }
+  .contactsSearchIcon {
+    margin: 0 !important;
+  }
+  .inputWrap {
+    min-width: 30rem !important;
+    padding-left: 0 !important;
+  }
+  .scSearchInput {
+    margin-left: 0 !important;
+  }
+  .lotusFilters2 {
+    order: 3;
+    padding: 0 !important;
+    margin: .25rem 0 0 0 !important;
+  }
+}
+
+.commonTags #lconnTagWidget ul.lotusList.lotusRelatedTags {
+  max-height: 12.75rem;
+  overflow: auto;
+}
+
+// FILES: fix search button to right of input when adding tags to query:
+input.lotusText.scTagTypeahead {
+  max-width: calc(100% - 24px);
+  min-width: 100px !important;
+  + span.lotusBtnImg {
+    margin: 6px 0;
+  }
+}
+
+// Tags in Files app
+.lotusHeader .lotusMeta  {
+  line-height:2.5rem;
+
+  .lotusFilter {
+    margin-top: 0 !important;
+    margin-bottom: .5rem !important;
+    vertical-align: middle !important;
+  }
+
+  ul {
+    line-height: 1.25em;
+  }
+}
+// Tags search field in Files
+.lotusChunk.lotusSearch {
+  width:100%;
+}
+.lotusList.lotusEditable.lotusMeta a {
+  font-weight: 500 !important;
+}
+
+// Tags in "Files -> More -> Add Tags"
+.lotusContent .lotusTags.lotusMeta{
+  span[role="list"]{
+    position:relative!important;
+    top:7px!important;
+  }
+  span[role="separator"]{
+    display:none!important;
+  }
+  span[role="listitem"]{
+    @include tags();
+    a.bidiAware{
+      color:$text-01!important;
+      font-weight:normal!important;
+    }
+    a.bidiAware:hover{
+      color:$brand-01!important;
+    }
+    a[role="button"]{
+      position:relative;
+      left:3px;
+    }
+    a[role="button"] img{
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+      background-position:0px 0px!important;
+      width:9px;
+      height:9px;
+      background-size: contain;
+    }
+    a[role="button"]:hover img{
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
+      opacity:1!important;
+    }
+    margin-left:4px!important;
+    margin-right:4px!important;
+  }
+  form[style="display: inline;"]{
+    display:block!important;
+    margin-top:14px!important;
+    margin-bottom:8px!important;
+  }
+}
+// Tags in "Files -> Dialog Boxes -> Share With"
+.lotusDialogContent{
+  div[class ^= "lotusFilters"]{
+    a.lotusFilter{
+      @include tags();
+      &:hover{
+        text-decoration:none!important;
+      }
+    }
+    a[role="button"] img{
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+      background-position:0px 0px!important;
+      width:9px;
+      height:9px;
+      background-size: contain !important;
+    }
+    a[role="button"]:hover img{
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
+      opacity:1!important;
+    }
+  }
+}
+
+// tags for contacts
+#contactsTagWidget_tagListView {
+  max-height: 12.75rem;
+  overflow: auto;
+}
