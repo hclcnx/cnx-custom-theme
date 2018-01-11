@@ -84,6 +84,7 @@
     </li>
   </ul>
 </p>
+
 <p>As long as Customizer is enabled, this example can be used with IBM Connections Cloud or IBM Connections on premises. However, there are some known visual styling issues when used with IBM Connections on premises.</p>
 
 <h4><a class="anchor" name="updates">Updates</a></h4>
@@ -318,6 +319,7 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </ol>
 
 <h2><a class="anchor" name="orgExt">Add to Connections as an Organization Extension</a></h2>
+
 <p>Add your customizations as an extension in the Connections application registry. An organization administrator can modify the application registry by adding an extension to Organization Extensions in the Admin interface. An application extension is defined in a JSON file which identifies the components that need to be targeted and the actions that need to be performed.</p>
 <p>This section includes:
   <ul>
@@ -394,6 +396,7 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </ol>
 
 
+
 <h2><a class="anchor" name="support">Support</a></h2>
 <h3>FAQ</h3>
 <h4>Why don't I see Visual Update 1 changes?</h4>
@@ -408,6 +411,7 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 <h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
 <p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
 <p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
+
 
 <p>The App Registry includes the "Connections Pink: Theme Preview" application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The "Connections Pink: Theme Preview" is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS or JS overriding any of the "Connections Pink: Theme Preview" changes.</p>
 
