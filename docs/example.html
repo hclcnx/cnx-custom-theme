@@ -393,6 +393,44 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </li>
 </ol>
 
+<h3>Enable for no users or a sub-set of users</h3>
+<p>You can enable the extension for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
+  <p>Enable for no users by adding a fake email address inside "user-email":</p>
+
+  <pre class="code">
+  "payload": {
+    "match": {
+      "user-email": [
+        "userid1@example.com"
+      ]
+    },
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"cnx-custom-theme"
+    }
+  },
+  </pre>
+
+<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
+<pre class="code">
+"payload": {
+  "match": {
+    "user-email": [
+      "userid1@example.com",
+      "userid2@example.com"
+    ]
+  },
+  "include-files":[
+    "periscope.js"
+  ],
+  "include-repo": {
+    "name":"cnx-custom-theme"
+  }
+},
+</pre>
+
 
 <h2><a class="anchor" name="support">Support</a></h2>
 <h3>FAQ</h3>
