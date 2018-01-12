@@ -1,0 +1,73 @@
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame{
+  .lotusWrapper{
+    position:relative;
+    z-index:940 !important;
+    margin-left:0px!important;
+    margin-right:0!important;
+    padding-left:39px!important;
+    max-width:100%;
+    box-shadow: 0 1px 4px 0 rgba(40,40,40,.2)!important;
+    background-color:white!important;
+    .lotusInner{
+      height:47px!important;
+      padding-top:18px!important;
+    }
+    .lotusHeading span{
+      color:$color-black!important;
+      padding-left:294px!important;
+      font-weight:900!important;
+      font-size:1.125rem!important;
+    }
+  }
+  .lotusColLeft{
+    position:relative!important;
+    top:-15px!important;
+    margin-left:0px!important;
+    .lotusMenu{
+      width:240px;
+      position:relative!important;
+      top:5px!important;
+      padding-top:1rem!important;
+    }
+    ul.searchFilter{
+      li{
+        box-sizing:border-box;
+        margin-top:0!important;
+        margin-bottom:0!important;
+        padding:14px 24px!important;
+        padding-left:39px!important;
+        border-color:$brand-01!important;
+
+        &.searchFilterSelected{
+          padding-left:35px!important;
+          transition:border 0.23s ease, padding 0.23s ease;
+          a{
+            font-weight:700!important;
+          }
+        }
+        a{
+          padding:0!important;
+          margin:0!important;
+          font-weight:400!important;
+          &:hover,&:focus{
+            border-color:transparent!important;
+          }
+        }
+        &:hover{
+          background-color:$background-side-hover!important;
+          cursor:pointer;
+        }
+      }
+    }
+    #facetsContainer{
+      padding-left:28px!important;
+      .lotusSection{
+        margin-bottom:21px!important;
+        span{
+          font-weight:400!important;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,69 @@
+.lotusTitleBar2 .lotusWrapper {
+  padding-left: $h-padding !important;
+}
+.lotusMain{
+  #lotusColLeft,
+  .lotusColLeft {
+    margin-left: 0 !important;
+    .dijitTreeNode {
+      position: relative;
+    }
+
+    .lotusMenuSection h3 {
+      margin-left:0!important;
+      padding-left:42px!important;
+      padding-right:$h-padding!important;
+      margin-bottom:0!important;
+      padding-top:calc(#{$v-padding} + 2px)!important;
+      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      font-size: .875rem !important;
+      font-weight: normal !important;
+    }
+    h3 + .lotusMenuSubsection > ul > li {
+        padding: 0 !important;
+        margin: 0!important;
+        a {
+          padding: $v-padding $h-padding !important;
+          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+          margin: 0 !important;
+          display: block;
+          border: none !important;
+          transition:$border-slide!important;
+          box-sizing: border-box;
+          font-weight: normal !important;
+          &:hover {
+            background-color:$background-side-hover !important;
+            border: none !important;
+          }
+        }
+        .dijitTreeNodeSelected {
+          border: none !important;
+          span {
+            border: none !important;
+            padding: 0 !important;
+          }
+        }
+        &.lotusSelected,
+        &:focus {
+          border: none !important;
+          a {
+            border: none !important;
+            border-left:$b-thickness solid $brand-01 !important;
+            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px - #{$b-thickness})!important;
+            font-weight: 700 !important;
+            span {
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+  }
+  .lotusContent{
+    padding-left:48px!important;
+  }
+}
+.lotusInner > .lotusMenuSection{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}

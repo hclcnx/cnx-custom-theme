@@ -1,0 +1,16 @@
+//Help popup tour
+div.hopscotch-bubble {
+	.hopscotch-bubble-container:focus {
+		border:2px solid $background-header;
+	}
+  .hopscotch-bubble-arrow-container {
+		color: $background-header;
+	}
+	.hopscotch-actions {
+	  background-color:$background-header;
+		border:1px solid $background-header;
+		.hopscotch-nav-arrow {
+			background-color:$background-header;
+		}
+	}
+}

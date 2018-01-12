@@ -1,0 +1,135 @@
+// search bar area
+.lotusHeader.lconnSearchHeader {
+  padding-top: 1rem !important;
+  margin-right: -1.5rem;
+  .lotusSearch {
+    border: 0 !important;
+    .icSearchInputBox input.lotusText {
+      font-size: 1rem !important;
+      color: $text-01 !important;
+    }
+    .icSearchBarButtons {
+      position: relative;
+      left: -1.5rem;
+    }
+  }
+  .lotusBtnImg.lotusClose:focus img {
+    outline:1px solid $icon-default !important;
+  }
+  .lotusBtn.icSubmitSearch {
+    @include btnprimary;
+    &:hover{
+      background-color:$brand-02 !important;
+      color: $text-03;
+    }
+  }
+}
+#contentContainer_results {
+  #filtersContainer {
+    > div, > span {
+      display: inline-block;
+      vertical-align: baseline;
+      float: none !important;
+
+      a {
+        @include btnbasics;
+        @include btnsecondary;
+        padding: .25rem .75rem !important;
+          font-weight: normal !important;
+        &:hover {
+          @include btnprimary;
+          padding: .25rem .75rem !important;
+        }
+      }
+    }
+    div[id^="contentContainer_results_FiltersForm_"] {
+      margin-right: 1rem !important;
+    }
+    div:empty[id^="contentContainer_results_FiltersForm_"] {
+      display:none;
+    }
+    > div:last-child {
+      margin-left: 0 !important;
+    }
+  }
+  .icFiltersRight {
+    text-align: right;
+    > div {
+      padding: 0 !important;
+      display: block !important;
+    }
+  }
+  #contentContainer_results_View_Sorting {
+    a {
+      color: $text-01 !important;
+    }
+  }
+  #contentContainer_results_View_CenterPaging {
+    a {
+      color: $text-01 !important;
+    }
+    .icSelected {
+      color: $text-02 !important;
+      text-decoration: underline !important;
+    }
+  }
+}
+
+//Focus and hover on result
+.icSearchResultsPage {
+  .lotusMeta {
+    color:$text-02 !important;
+  }
+  tr.icSearchResultSelected,
+  tr:focus {
+    border-color:$border-selected !important;
+    border-top:1px solid $border-selected !important;
+    border-bottom:1px solid $border-selected !important;
+    outline:none !important;
+  }
+  tr:hover {
+    background-color:$background-main-hover !important;
+    border-left-color:$border-selected !important;
+    color:$text-02 !important;
+  }
+}
+.lconnApplicationLoading{
+  img{
+    width:40px!important;
+    height:40px!important;
+    left:calc(50% - 20px)!important
+  }
+  div{
+    display:none!important;
+  }
+}
+
+// main content alignment
+.lotusui30_layout .lotusMain .lotusContent {
+  padding: 0 28px !important;
+}
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
+  padding-left: 248px !important;
+}
+
+// advanced search left nav
+.lotusColLeft .lotusInfoBox {
+  &, h3 {
+    background: transparent !important;
+    border: none !important;
+  }
+  & {
+    margin: 0 -20px 0 0 !important;
+    padding: 2rem;
+  }
+}
+
+// advanced search form
+#everythingForm {
+  .lconnSearchInputContainer {
+    padding:15px 10px 15px 0px !important;
+  }
+}
+#advancedSearchForm1 .lotusBtn{
+  @include btnprimary;
+}
