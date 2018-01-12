@@ -1,0 +1,46 @@
+.ics-scbanner {
+  div,a{
+		-webkit-font-smoothing:antialiased!important;
+	}
+  background-color: $brand-02 !important;
+  .navsimplelist {
+    &> li a:focus {
+      border-bottom: 0.0625rem solid $brand-01 !important;
+      border-top: 0.0625rem solid $brand-01 !important;
+    }
+    &> li a.selected {
+      border-left:4px solid $brand-01 !important;
+    }
+  }
+}
+.ics-scbanner > a:hover::after,
+.ics-scbanner > button:hover::after,
+.ics-scbanner > .navmenu:hover::after {
+  border-bottom: 0.125rem solid $brand-03 !important;
+}
+.ics-scbanner .user .avatar{
+	height:1.75rem!important;
+	width:1.75rem!important;
+}
+//help icon
+.help{
+  background-position:4px 10px!important;
+  background-repeat:no-repeat!important;
+  background-image:svg-url-with-replaced-fill($svg-help-icon, '#000000', '#FFFFFF') !important;
+  background-size:20px 20px;
+  .help-image{
+    visibility: hidden!important;
+  }
+}
+//alert Icon
+.notifications{
+  .navmenu-button{
+    background-position:center;
+    background-repeat:no-repeat!important;
+    background-image:svg-url-with-replaced-fill($svg-notification-icon, '#000000', '#FFFFFF') !important;
+    background-size:20px 20px;
+    .nav-icon{
+      visibility:hidden!important;
+    }
+  }
+}

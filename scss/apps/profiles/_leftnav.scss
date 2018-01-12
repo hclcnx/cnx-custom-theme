@@ -1,0 +1,156 @@
+.lotusMain{
+  #lotusColLeft{
+    .dijitTreeNode {
+      position: relative;
+    }
+    .lotusMenuSection > ul > li,
+    .lotusSection .dijitTreeNode {
+        padding: 0 !important;
+        margin: 0!important;
+        a {
+          padding: $v-padding $h-padding !important;
+          padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+          margin: 0 !important;
+          display: block;
+          border: none !important;
+          transition:$border-slide!important;
+          &:hover, &:focus {
+            background-color:$background-side-hover !important;
+            border: none !important;
+          }
+        }
+        .dijitTreeNodeSelected {
+          border: none !important;
+          span {
+            border: none !important;
+            padding: 0 !important;
+          }
+        }
+        &.lotusSelected,
+        &:focus {
+          border: none !important;
+          a {
+            border: none !important;
+            border-left:$b-thickness solid $brand-01 !important;
+            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            font-weight: 700 !important;
+            span {
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+  }
+  .lotusContent{
+    padding-left:48px!important;
+  }
+}
+.lotusInner > .lotusMenuSection{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+//Changing tags, groups
+.sc.hikari.lotusui30 #lotusColLeft {
+  .lotusSection,
+  div[id^="scGroupTree"] {
+    margin: 0 !important;
+    h2 {
+      margin-left:0!important;
+      padding-left:42px!important;
+      padding-right:$h-padding!important;
+      margin-bottom:0!important;
+      padding-top:calc(#{$v-padding} + 2px)!important;
+      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
+        background-color:$background-side-hover !important;
+      }
+      span {
+        font-size: $body-sm-font-size !important;
+        font-weight: normal !important;
+      }
+    }
+    .lotusSectionBody {
+      padding: 0 !important;
+      max-width: 100%;
+      margin: 0 !important;
+      #contactsTagWidget {
+        //padding: $v-padding $h-padding !important;
+        padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+      }
+      > div {
+        *:focus, *:active {
+          outline: 0 !important;
+        }
+        padding: 0 !important;
+      }
+    }
+    .lotusSprite:focus {
+      outline: 1px solid $brand-01 !important;
+    }
+    .dijitTreeNode .dijitTreeRow {
+      padding-top:$v-padding!important;
+      padding-bottom:$v-padding!important;
+      padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+      border:none!important;
+      transition: font-weight .23s ease;
+      &.dijitTreeNodeSelected {
+        padding-left:calc(((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness}) + 21px)!important;
+        transition:$border-slide;
+        border-left:4px solid $brand-01 !important;
+        a{
+          margin-left:0!important;
+        }
+      }
+      span,
+      &.dijitTreeNodeSelected span {
+        &:focus, &:active {
+          outline: 0 !important;
+        }
+      }
+      span.dijitTreeContent {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .groupActionBar,
+  div[id^="scGroupTree"] .lotusSectionBody .groupActionBar {
+    padding-top:$v-padding!important;
+    padding-bottom:$v-padding!important;
+    padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+
+    a {
+      @include link-color('dark');
+      font-weight: 500 !important;
+
+      &:visited {
+        @include link-color('dark');
+      }
+
+      &:active,
+      &:hover,
+      &:focus {
+        @include link-underline('dark');
+        text-decoration: underline !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+#profilePaneLeft {
+  padding: $v-padding $h-padding !important;
+  width: 264px !important;
+  box-sizing: border-box;
+}
+.sc.hikari.lotusui30 #lotusColLeft .lotusSection .lotusSectionBody#lconnTagCloudContent {
+  padding: $v-padding $h-padding !important;
+  padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+  >div {
+    padding-left: $h-padding !important;
+  }
+  #contactsTagWidget {
+    padding-left: 0 !important;
+  }
+}

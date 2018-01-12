@@ -1,0 +1,188 @@
+// normal tabs
+.lotusTabContainer {
+  border-bottom: 1px solid $color-gray-10 !important;
+  font-size: $tab-font-size !important;
+  font-weight: 500 !important;
+
+  .lotusTabs li {
+    margin: 0 !important;
+    padding: 0.625rem 0 0.375rem !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+
+    &:hover, &:hover a, &:focus, &:focus a, &:active, &:active a {
+      text-decoration: none !important;
+    }
+    
+    a {
+      transition: none !important;
+    }
+
+    #about_link,
+    #share_link,
+    a._linkHolder.lotusLeft {
+      &:hover {
+        color: $text-03 !important;
+      }
+      &:hover, &:active, &:focus {
+        font-weight: 500 !important;
+      }
+    }
+
+    + li {
+      margin-left: 1rem !important;
+    }
+
+    &.lotusSelected {
+      border-bottom: 4px solid $brand-01 !important;  
+      a {
+        color: $text-01 !important;
+        &:hover {
+          color: $text-03 !important;
+          background-color: $brand-01 !important;
+          border-color: $brand-01 !important;
+          font-weight: 500 !important;
+          text-decoration: none !important;
+        }
+        &:focus {
+          color: $text-01 !important;
+          background-color: transparent !important;
+          border-color: $brand-01 !important;
+        }
+        &:active, &:focus {
+          text-decoration: none !important;
+        }
+      }
+      #about_link,
+      #share_link,
+      a._linkHolder.lotusLeft {
+        &:focus {
+          color: $text-01 !important;
+        }
+      }
+    }
+
+    &:focus {
+      outline: none !important;
+      a {
+        color: $text-01 !important;
+        background-color: transparent !important;
+        border: 1px solid $brand-01 !important;
+      }
+    }
+
+    a {
+      padding: 0.5rem 1rem !important;
+      margin: 0 !important;
+      font-size: inherit !important;
+      color: $text-02 !important;
+      border-radius: 2px;
+      border: 1px solid transparent !important;
+      font-weight: 500 !important;
+      &:hover {
+        color: $text-03 !important;
+        background-color: $brand-01 !important;
+        border-color: $brand-01 !important;
+        font-weight: 500 !important;
+      }
+      &:focus {
+        color: $text-01 !important;
+        background-color: transparent !important;
+        border-color: $brand-01 !important;
+      }
+    }
+  }
+}
+
+// share a file
+div[id^="lconn_share_widget_Dialog_"] {
+  .switchPane { margin-bottom: 1rem !important; }
+  .switchContainer {
+    border-bottom: 1px solid $color-gray-10 !important;
+    font-size: $tab-font-size !important;
+    font-weight: 500 !important;
+    height: auto !important;
+
+    .lconnPickerSourceSwitchingContentArea, fieldset {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .tablist, .lconnPickerSourceToCheck, .lconnPickerSourceLabel, .lconnPickerSourceToCheck span {
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+    }
+    > div {
+      height: auto !important;
+    }
+    .tablist > div {
+      display: inline-block !important;
+    }
+    // li
+    .lconnPickerSourceToCheck {
+        margin: 0 !important;
+        padding: 0.625rem 0 0.375rem !important;
+        font-size: inherit !important;
+        font-weight: inherit !important;
+        display: inline-block !important;
+
+        + .lconnPickerSourceToCheck {
+          margin-left: 1rem !important;
+        }
+
+    }
+    // tab list items styling (a):
+    .lconnPickerSourceToCheck .lconnPickerSourceLabel {
+      display: inline-block !important;
+      position: relative;
+      padding: 0.5rem 1rem 0.5rem 2.25rem !important;
+      margin: 0 !important;
+      font-size: inherit !important;
+      color: $text-02 !important;
+      border-radius: 2px;
+      border: 1px solid transparent !important;
+      font-weight: 500 !important;
+      width: auto !important;
+      .lconnPickerSourceLabelSpan {
+        color: inherit !important;
+      }
+      &:hover {
+        color: $text-03 !important;
+        background-color: $brand-01 !important;
+        border-color: $brand-01 !important;
+        font-weight: 500 !important;
+      }
+      &:focus {
+        color: $text-01 !important;
+        background-color: transparent !important;
+        border-color: $brand-01 !important;
+        outline: none !important;
+      }
+      img {
+        left: .75rem;
+        position: absolute;
+      }
+    }
+    // selected styling:
+    .pickerSourceChecked {
+      border-bottom: 4px solid $brand-01 !important;
+      .lconnPickerSourceLabel {
+        color: $text-01 !important;
+        &:hover {
+          color: $text-03 !important;
+          background-color: $brand-01 !important;
+          border-color: $brand-01 !important;
+          font-weight: 500 !important;
+        }
+        &:focus {
+          color: $text-01 !important;
+          background-color: transparent !important;
+          border-color: $brand-01 !important;
+        }
+      }
+    }
+  }
+}

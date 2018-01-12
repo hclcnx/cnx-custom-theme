@@ -1,0 +1,27 @@
+#profilePaneLeft {
+  margin: 0 !important;
+}
+#profilePaneRight {
+  width: 300px;
+  margin-left: 3.25rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+.lotusWidget2 {
+  margin-bottom: 3rem !important;
+  h2 {
+    border-bottom: 1px solid $color-gray-10 !important;
+    margin-bottom: .75rem !important;
+  }
+}
+div[id^="tabsWidget"] .lotusWidget2 h2 {
+  border-bottom: none !important;
+}
+#socialTagsSubArea {
+  padding-top: 0 !important;
+}
+#sand_thingsInCommon {
+  li.lotusBorderBottom:before {
+    display: none !important;
+  }
+}

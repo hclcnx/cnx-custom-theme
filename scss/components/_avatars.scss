@@ -1,0 +1,39 @@
+// Styles for People Avatars
+
+//Avatars for people on search results page
+.lconnStatusUpdatePhotoContainer,
+.lconnProfilesPhotoContainer {
+  &.otherPeople64,
+  &.otherPeople64.otherPeople64-NoPhotoPerson55,
+  img {
+    border-radius:$border-radius-avatar;
+  }
+}
+//Round community icons in search panel
+.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
+  border-radius:$border-radius-avatar;
+}
+
+//Profiles Directory Search Results avatars
+#searchResultsTable img.photo {
+  width:56px !important;
+  height:56px !important;
+  border-radius:$border-radius-avatar;
+}
+//Directory search
+.lconn_profileImage {
+  img {
+    border-radius: $border-radius-avatar;
+  }
+}
+
+// "invite to network"
+form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
+	.profilePhoto {
+		padding-right: .75rem;
+	 	img {
+			border-radius: $border-radius-avatar;
+		}
+	}
+}
+//Contacts cards - still some styling in _contactcards.scss

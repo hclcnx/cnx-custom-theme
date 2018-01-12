@@ -1,0 +1,28 @@
+//Organization page
+
+//Title of the page
+.claro.scloud3 .lotusTitleBar2 .lotusTitleBarContent {
+  padding-left:256px;
+  a {
+    color: $text-01 !important;
+  }
+}
+
+//Left navigation
+#partnerPageBody {
+  .lotusColLeft {
+    padding:14px 20px 14px 0px;
+    margin:0px !important;
+    width:240px;
+    #showPhoto {
+      margin:0 0 20px 0;
+      padding-left:18px;
+    }
+    li a {
+      padding:14px 24px;
+    }
+    li.lotusSelected a {
+      border-left: 4px solid $brand-01 !important;
+    }
+  }
+}
