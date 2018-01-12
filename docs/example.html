@@ -84,6 +84,7 @@
     </li>
   </ul>
 </p>
+<p>As long as Customizer is enabled, this example can be used with IBM Connections Cloud or IBM Connections on premises. However, there are some known visual styling issues when used with IBM Connections on premises.</p>
 
 <p>As long as Customizer is enabled, this example can be used with IBM Connections Cloud or IBM Connections on premises. However, there are some known visual styling issues when used with IBM Connections on premises.</p>
 
@@ -395,6 +396,43 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </li>
 </ol>
 
+<h3>Enable for no users or a sub-set of users</h3>
+<p>You can enable the extension for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
+  <p>Enable for no users by adding a fake email address inside "user-email":</p>
+
+  <pre class="code">
+  "payload": {
+    "match": {
+      "user-email": [
+        "userid1@example.com"
+      ]
+    },
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"cnx-custom-theme"
+    }
+  },
+  </pre>
+
+<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
+<pre class="code">
+"payload": {
+  "match": {
+    "user-email": [
+      "userid1@example.com",
+      "userid2@example.com"
+    ]
+  },
+  "include-files":[
+    "periscope.js"
+  ],
+  "include-repo": {
+    "name":"cnx-custom-theme"
+  }
+},
+</pre>
 
 
 <h2><a class="anchor" name="support">Support</a></h2>
@@ -411,7 +449,6 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 <h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
 <p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
 <p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
-
 
 <p>The App Registry includes the "Connections Pink: Theme Preview" application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The "Connections Pink: Theme Preview" is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS or JS overriding any of the "Connections Pink: Theme Preview" changes.</p>
 
