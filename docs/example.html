@@ -58,16 +58,15 @@
 
 
   <h1><a name="about"></a>Visual Update Example - Preview Available!</h1>
+  <h2>About this Example</h2>
   <p>The release of Connections Customizer provides some great opportunities to customize Connections. For example, you can modify the existing appearance of Connections by overriding styles used on the site. </p>
   <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. This example uses Sass to create CSS files and a script that instructs Customizer to return these CSS overrides with responses.</p>
 
   <h4>Prerequisites</h4>
-  <p>Customizer is available on IBM Connections Cloud for tenants of the North America and Europe data centres. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>
-
+  <p>Customizer is available on IBM Connections Cloud for tenants of the North America and Europe data centers. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>
 
   <h4><a class="anchor" name="preview">What's included in the Preview</a></h4>
-  <p>This release is a preview and has limitations.</p>
-  <p>Current limitations of the preview:
+  <p>This release is a preview and has limitations, which include:
   <ul>
     <li>Only works with the default theme, called "Verse Theme (Default)".</li>
     <li>Does not support bi-directional languages.</li>
@@ -85,6 +84,7 @@
     </li>
   </ul>
 </p>
+<p>As long as Customizer is enabled, this example can be used with IBM Connections Cloud or IBM Connections on premises. However, there are some known visual styling issues when used with IBM Connections on premises.</p>
 
 <h4><a class="anchor" name="updates">Updates</a></h4>
 <p>Updates to these files will be pushed out to fix defects and add styling to more applications and pages.</p>
@@ -95,15 +95,6 @@
 
   <h4>1. Fork and clone ibmcnxdev/cnx-custom-theme files on your local system</h4>
   <p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
-  <!--STEPS FOR CREATING A CLONE-->
-  <!--<p>Clone using GitHub Desktop</p>
-  <ol>
-    <li>Open the periscope GitHub repository on the web.</li>
-    <li>Go to the Code tab.</li>
-    <li>Click Clone or Download button.</li>
-    <li>Click Open in Desktop. If you don't have the GitHub desktop app, get it.</li>
-    <li>Open the link for GitHub Desktop and then Clone.</li>
-  </ol>-->
 
   <p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
 
@@ -327,14 +318,134 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </ol>
 
 <h2><a class="anchor" name="orgExt">Add to Connections as an Organization Extension</a></h2>
-<p>Refer to the documentation provided with <a href="https://github.com/ibmcnxdev/customizer/tree/master/docs" target="_blank">Connections Customizer</a>.</p>
+<p>Add your customizations as an extension in the Connections application registry. An organization administrator can modify the application registry by adding an extension to Organization Extensions in the Admin interface. An application extension is defined in a JSON file which identifies the components that need to be targeted and the actions that need to be performed.</p>
+<p>This section includes:
+  <ul>
+    <li>Instructions for adding this example to Connections</li>
+    <li>Instructions for adding your own customizations to Connections</li>
+  </ul>
+
+<h3>Add this Visual Update example as an extension in Organization Extensions</h3>
+<p>Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer documentation</a> for more information.</p>
+<ol>
+  <li>As an adminstrator, locate <strong>Admin</strong> in the top navigation and select <strong>Manage Organization</strong>.</li>
+  <li>Go to <strong>Organization Extensions</strong>.</li>
+  <li>Click the "new App Manager" link at the top of the page.</li>
+  <li>Click the <strong>New App</strong> button and you will see the following JSON template.
+<pre class="code">
+{
+  "name": "",
+  "title": "",
+  "description": "",
+  "services": [],
+  "extensions": []
+}
+</pre>
+</li>
+<li>Replace the JSON template with the following JSON content:
+<pre class="code">
+{
+  "name": "Visual Update 1 for IBM Connections",
+  "title": "Visual Update 1 for IBM Connections",
+  "description": "Customizer extension to re-theme IBM Connections.",
+  "services": [
+     "Customizer"
+  ],
+  "extensions": [
+    {
+      "name": "Visual Update 1 for IBM Connections",
+      "type": "com.ibm.customizer.ui",
+      "path": "global",
+      "payload": {
+        "include-files": [
+          "periscope.js"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      }
+    }
+  ]
+}
+</pre>
+</li>
+<li>The include-repo property in this example points to the cnx-custom-theme repository in the ibmcnxdev GitHub organization. Update the include-repo: name property to identify the repository where the include-files are stored. By default any repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev) are available for use by Customizer apps. Refer to IBM Connections Customizer documenation for more information about using a private repository.</li>
+<li>Save the changes.</li>
+</ol>
+
+<h3>Add your own visual customizations as an extension in Organization Extensions</h3>
+<p>Follow the same steps as above but make modifications to reference your own customized files.</p>
+<p><strong>Important:</strong> Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer documentation</a> as you complete this step.</p>
+<ol>
+  <li>Store your customizations in a GitHub repository that can be accessed by Customizer.
+    <ul>
+      <li>By default Customizer, via the include-repo property, looks for customizations in a repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev). Refer to the IBM Connections Customizer documentation for instructions to create or share a repository.</li>
+      <li>You can use a private GitHub repository. Refer to IBM Connections Customizer documenation for instructions.</li>
+    </ul>
+  </li>
+  <li>Once your files are in a GitHub repository, modify the include-files and include-repo properties.
+<dl>
+<dt>include-files</dt>
+<dd>If you renamed periscope.js, change it here.</dd>
+<dt>include-repo</dt>
+<dd>Change the include-repo: name property to be the repository where your customizations are stored.</dd>
+</dl>
+</li>
+</ol>
+
+<h3>Enable for no users or a sub-set of users</h3>
+<p>You can enable the extension for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
+  <p>Enable for no users by adding a fake email address inside "user-email":</p>
+
+  <pre class="code">
+  "payload": {
+    "match": {
+      "user-email": [
+        "userid1@example.com"
+      ]
+    },
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"cnx-custom-theme"
+    }
+  },
+  </pre>
+
+<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
+<pre class="code">
+"payload": {
+  "match": {
+    "user-email": [
+      "userid1@example.com",
+      "userid2@example.com"
+    ]
+  },
+  "include-files":[
+    "periscope.js"
+  ],
+  "include-repo": {
+    "name":"cnx-custom-theme"
+  }
+},
+</pre>
 
 
 <h2><a class="anchor" name="support">Support</a></h2>
 <h3>FAQ</h3>
-<h4>Which customizations appear if both an org extension and app are enabled?</h4>
-<p><span style="font-weight:600;">Question:</span> Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
-<p><span style="font-weight:600;">Answer:</span> Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
+<h4>Why don't I see Visual Update 1 changes?</h4>
+<p><span style="font-weight:600;">Question: </span>Why don't I see any visual updates after I enable Visual Update 1?</p>
+<p><span style="font-weight:600;">Answer: </span>Check the following things:
+  <ul>
+    <li>Make sure you have Customizer enabled. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
+    <li>Visual updates are only applied to a sub-set of Connections applications at this time. Look for changes in Files and Profiles. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
+  </ul>
+</p>
+
+<h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
+<p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
 
 <p>The App Registry includes the "Connections Pink: Theme Preview" application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The "Connections Pink: Theme Preview" is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS or JS overriding any of the "Connections Pink: Theme Preview" changes.</p>
 
