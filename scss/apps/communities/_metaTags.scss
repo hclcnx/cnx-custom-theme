@@ -1,0 +1,53 @@
+.lotusMeta{
+  .lotusDivider{
+    margin-bottom:0!important;
+  }
+  .lotusPerson.vcard{
+    a.menu_drop_icon{
+      margin-left:3px!important;
+      position:relative;
+      top:3px!important;
+    }
+  }
+  .lotusLikeCount{
+    padding:0!important;
+    margin:0!important;
+    border:none!important;
+    &:hover{
+      text-decoration: none!important;
+      outline:none!important;
+      border:none!important;
+    }
+    *{
+      display:inline-block!important;
+      position:relative!important;
+      top:4px!important;
+    }
+    .lotusAltText:hover{
+      text-decoration:underline;
+      cursor:pointer!important;
+    }
+    img{
+      top:1px!important;
+      left:0!important;
+    }
+  }
+  span[dojoattachpoint="inlineLikeActions"] *{
+    position:relative;
+    top:4px!important;
+  }
+}
+.blog{
+  .lotusTable{
+    .lotusMeta{
+      *{
+        margin-bottom:0!important;
+      }
+      .vcard a.menu_drop_icon{
+          margin-left:3px!important;
+          position:relative;
+          top:3px!important;
+      }
+    }
+  }
+}

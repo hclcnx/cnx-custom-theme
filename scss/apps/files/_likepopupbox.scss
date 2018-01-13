@@ -1,0 +1,36 @@
+div[id^="com_ibm_oneui_controls_internal__MasterPopup_"] {
+  > div {
+    border: 0 !important;
+    box-shadow: 0 0 4px $box-shadow-30 !important;
+  }
+  .lotusLikeLightBox {
+    .lotusLikeHeader {
+      background-color: $background-header !important;
+      border: none !important;
+      .lotusLike a {
+        color: $text-03 !important;
+      }
+    }
+    ul {
+      height: auto !important;
+      max-height: 360px;
+      li {
+        padding: .5rem 1rem !important;
+        &:hover {
+          background-color: $background-side !important;
+        }
+        a:hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+  .lotusPopupLeft .lotusPopupConnector  {
+    background-image: none !important;
+    width: 0;
+    height: 0;
+    border: .5rem solid transparent;
+    border-left: .5rem solid $background-header;
+    margin: 0 -0.25rem 0 0;
+  }
+}

@@ -1,0 +1,11 @@
+//Fixing 532
+#lotusFooter.lotusFooter a,
+#footer > .lotusFooter > ul > li > a,
+.meetingBody .lotusFooter a {
+    font-weight:400!important;
+    color:$text-02 !important;
+}
+//this is for the feed
+.lotusFeeds a {
+  font-weight:400!important;
+}

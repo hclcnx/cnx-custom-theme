@@ -1,0 +1,28 @@
+// Drop down, select, combo boxes
+select {
+	@include select;
+}
+// Workaround for ComboBox in Create Contact
+.profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer [id^="dijit_form_ComboBox_"] {
+	&:focus {
+		border-bottom: 2px solid $border-field-focus !important;
+	}
+}
+
+// Share file
+[id^="lconn_share_widget_MemberInput_"] {
+	// Files > Upload > Advanced Options > People or Communities
+	// Share folder select
+	[id*="_searchSourceDropdown"],
+	[id*="_roleDropdown"] {
+		@include select;
+	}
+}
+
+// share a file (from somebody else's profile page)
+.dijitComboBoxMenuPopup .dijitMenuItem {
+	//font-size: $body-font-size !important;
+}
+select[id^="compactpicker_select_"] {
+	min-width: 0 !important;
+}

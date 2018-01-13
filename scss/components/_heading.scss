@@ -1,0 +1,10 @@
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner {
+  max-width: 100% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  
+  .lotusColLeft:after {
+    left: 0;
+  }
+}

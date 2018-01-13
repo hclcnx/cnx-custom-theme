@@ -1,0 +1,350 @@
+// Basic button styling
+@mixin btnbasics {
+  border-radius:$border-radius-buttons;
+  border-width: 1px!important;
+  border-style: solid!important;
+  box-shadow:none!important;
+  transform: translateZ(0)!important;
+  -webkit-font-smoothing: antialiased!important;
+  cursor: pointer!important;
+  -webkit-box-align: center!important;
+  -webkit-box-pack: center!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap!important;
+  padding: 9px 20px!important;
+  font-weight: 500;
+  &:hover, &:active {
+    text-decoration: none !important;
+    outline:none;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-primary-fill-hover, 0 0 0 2px $btn-primary-outline !important;
+    outline: none !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-primary-outline !important;
+    outline-offset: 1px;
+  }
+}
+// Add btnprimary mixin with btnbasics for a primary button
+@mixin btnprimary {
+  @include btnbasics;
+  background-color: $btn-primary-fill !important;
+  border-color: $btn-primary-outline !important;
+  color: $btn-primary-text !important;
+  &:active, &:hover {
+    background-color: $btn-primary-fill-hover !important;
+    color: $btn-primary-text-hover !important;
+    border-color: $btn-primary-outline-hover !important;
+  }
+}
+// Add btnsecondary (Secondary) with btnbasics for a secondar button
+@mixin btnsecondary {
+  @include btnbasics;
+  background-color: $btn-secondary-fill !important;
+  border-color: $btn-secondary-outline !important;
+  color: $btn-secondary-text !important;
+  &:active, &:hover {
+    background-color: $btn-secondary-fill-hover !important;
+    color: $btn-secondary-text-hover !important;
+    border-color: $btn-secondary-outline-hover !important;
+  }
+}
+@mixin btnprimarydisabled {
+  &, &:hover, &:active {
+    cursor: not-allowed !important;
+    background-color: $btn-primary-fill-disabled !important;
+    color: $btn-primary-text-disabled !important;
+    border-color: $btn-primary-outline-disabled !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-primary-text-disabled, 0 0 0 2px $btn-primary-outline-disabled !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-primary-text-disabled !important;
+    outline-offset: 1px;
+  }
+}
+@mixin btnsecondarydisabled {
+  &, &:hover, &:active {
+    cursor: not-allowed;
+    color: $btn-secondary-text-disabled !important;
+    border-color: $btn-secondary-outline-disabled !important;
+    background-color: $btn-secondary-fill-disabled !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-secondary-fill-disabled, 0 0 0 2px $btn-secondary-outline-disabled !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-secondary-outline-disabled !important;
+    outline-offset: 1px;
+  }
+}
+
+@mixin background-opacity($color, $opacity: 1) {
+    background: $color!important; /* The fallback */
+    background: rgba($color, $opacity)!important;
+}
+
+@mixin select {
+		font-size: $input-size !important;
+		-webkit-appearance: none !important;
+		display: block !important;
+		width: auto !important;
+		min-width: 50% !important;
+		max-width: 100% !important;
+		padding: 0 2.75rem 0.75rem 0 !important;
+		color: $text-01 !important;
+		background-color: transparent !important;
+		border: none !important;
+		border-bottom: 1px solid $border-field !important;
+		border-radius: 0 !important;
+		cursor: pointer !important;
+		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+		background-size: 0.75rem !important;
+		background-position: right !important;
+		background-repeat: no-repeat !important;
+		height: auto !important;
+
+		&:focus {
+			border-bottom: 2px solid $border-field-focus !important;
+			//box-shadow: 0 1px 0 $border-field-focus !important;
+			outline: none !important;
+		}
+}
+
+// Text area input field
+@mixin textarea {
+	background-color:$background-side !important;
+	border:none!important;
+	border-bottom:1px solid $color-gray-10 !important;
+	padding:1rem!important;
+	//font-size:$body-font-size !important;
+	min-height: 3rem !important;
+	box-sizing: border-box !important;
+	&:focus {
+		outline:none!important;
+		border-color: $border-field-focus !important;
+    box-shadow: 0 1px 0 $border-field-focus !important;
+	}
+}
+
+// Field
+@mixin textinput {
+	//height:2.5rem!important;
+  line-height: 1.5 !important;
+	min-width:10rem!important;
+	padding:0!important;
+	background:none!important;
+	border:none!important;
+	border-bottom:1px solid $color-gray-10 !important;
+	font-size: $input-size !important;
+	padding-right:2rem!important;
+  padding-bottom: .375rem !important;
+	box-sizing: border-box !important;
+	&:focus, .dijitTextBoxFocused {
+		outline:none!important;
+		border-color:$border-field-focus !important;
+    box-shadow: 0 1px 0 $border-field-focus !important;
+	}
+}
+
+@mixin fileinput {
+	@include textinput;
+	cursor: pointer;
+	.dj_webkit &::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+	  @include btnprimary;
+		padding: .575rem 1.15rem;
+		font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif !important;
+	}
+}
+
+
+/* Link Mix-ins */
+@mixin link-color($color) {
+  @if       $color == inherit { color: inherit !important; }
+  @else if  $color == light   { color: $text-03 !important; }
+  @else if  $color == dark    { color: $text-01 !important; }
+  @else                       { color: $brand-01 !important; }
+}
+
+@mixin link-underline($color) {
+  @if       $color == none    { text-decoration: none !important; }
+  @else if  $color == inherit { text-decoration: inherit !important; }
+  @else if  $color == light   { text-decoration-line: underline !important;
+                                text-decoration-color: $text-03 !important; }
+  @else if  $color == dark    { text-decoration-line: underline !important;
+                                text-decoration-color: $text-01 !important; }
+  @else if  $color == currentColor
+                              { text-decoration-line: underline !important;
+                                text-decoration-color: currentColor !important; }
+  @else                       { text-decoration-line: underline !important;
+                                text-decoration-color: $brand-01 !important; }
+}
+
+@mixin link-override() {
+  @include link-color('inherit');
+  @include link-underline('none');
+  font-weight: inherit !important;
+}
+
+@mixin bx--link-default() {
+  @include link-color('brand01');
+
+  &:visited {
+    @include link-color('brand01');
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include link-underline('currentColor');
+    outline: none !important;
+  }
+}
+
+@mixin bx--link-dark() {
+  @include link-color('dark');
+
+  &:visited {
+    @include link-color('dark');
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include link-underline('currentColor');
+    outline: none !important;
+  }
+}
+
+@mixin bx--link-dark-alt() {
+  @include link-color('dark');
+
+  &:visited {
+    @include link-color('dark');
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include link-color('blue');
+    @include link-underline('currentColor');
+    outline: none !important;
+  }
+}
+
+@mixin bx--link-light() {
+  @include link-color('light');
+
+  &:visited {
+    @include link-color('light');
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include link-underline('light');
+    outline: none !important;
+  }
+}
+
+/* Tag mixin */
+@mixin tags($color: gray) {
+  color: $text-01 !important;
+  border-radius: $border-radius-tags !important;
+  line-height: 1.5rem !important;
+  font-size: $body-mini-font-size !important;
+  height: 1.5rem !important;
+  padding: 0 1rem !important;
+  width: auto !important;
+  max-width: 100%;
+  display: inline-block !important;
+  margin: 0 !important;
+  font-weight: normal !important;
+  border: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $color == white {
+    background: $background-main !important;
+  }
+  @if $color == gray {
+    background: $background-side !important;
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+  &:focus {
+    text-decoration: underline !important;
+    img {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
+
+
+/* ------------------------------------------------- */
+/* ==from https://codepen.io/jakob-e/pen/doMoML       */
+/* ------------------------------------------------- */
+@function svg-url($svg){
+    //
+    //  Chunk up string in order to avoid
+    //  "stack level too deep" error
+    //
+    $encoded:'';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(str-length($svg)/$slice);
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+        //
+        //   Encode (may need a few extra replacements)
+        //
+        $chunk: str-replace($chunk,'"','%22');
+        $chunk: str-replace($chunk,'<','%3C');
+        $chunk: str-replace($chunk,'>','%3E');
+        $chunk: str-replace($chunk,'&','%26');
+        $chunk: str-replace($chunk,'#','%23');
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+    @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}
+
+
+//  Helper function to replace characters in a string
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace +
+            str-replace(str-slice($string, $index +
+            str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+
+// custom mixin to replace a defined fill color with another one
+@function svg-url-with-replaced-fill($svg, $fill-to-replace, $new-fill) {
+  $replaced-svg: str-replace($svg, $fill-to-replace, $new-fill);
+  $replaced-svg-url: svg-url('#{$replaced-svg}');
+  @return $replaced-svg-url;
+}
+
+// insert the svg code in a variable IN THE ICON FILE
+// make sure the svg only contains double quotes and surround the whole code with single quotes
+// SVG CODE SHOULD INCLUDE A FILL OF #000000 to make our lives easier
+// DO NOT INCLUDE LINE BREAKS
+// $example-svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path fill="#000000" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,2A13,13,0,1,0,28,15,13,13,0,0,0,15,2Z" transform="translate(0 0.02)"/><polygon fill="#000000" points="21.98 14.02 15.97 14.02 15.97 8.02 13.97 8.02 13.97 14.02 8.02 14.02 8.02 16.02 13.97 16.02 13.97 21.98 15.97 21.98 15.97 16.02 21.98 16.02 21.98 14.02"/></svg>';
+
+//how to use:
+// body {
+//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-brand-01) !important;
+// }

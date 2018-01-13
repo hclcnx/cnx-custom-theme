@@ -1,0 +1,10 @@
+//Styles used for success, warning, error, and info messages
+.lotusui30 .lotusMessage2 {
+	border-radius:$border-radius-message-blocks;
+  .lotusIcon {
+	border-radius:$border-radius-message-icon;
+  }
+	a.lotusDelete:focus img {
+		outline: 1px solid $text-01 !important;
+	}
+}
