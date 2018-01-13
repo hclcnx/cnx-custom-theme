@@ -3243,25 +3243,25 @@ ul[data-dojo-attach-point="tagList"] li a:hover {
 .ics-viewer .panelContent.panelFeed {
   margin-bottom: 32px !important; }
 
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton, body.ics-viewer-open .ics-viewer-action-upload.ics-viewer-splitbutton {
+#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton {
   margin-top: 9px !important; }
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton,
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink,
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode, body.ics-viewer-open .ics-viewer-action-edit.ics-viewer-splitbutton,
-body.ics-viewer-open .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink,
-body.ics-viewer-open .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode {
+#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton,
+body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink,
+body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode {
   height: 14px !important; }
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton span.dijitButtonContents:focus,
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink span.dijitButtonContents:focus,
-  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode span.dijitButtonContents:focus, body.ics-viewer-open .ics-viewer-action-edit.ics-viewer-splitbutton span.dijitButtonContents:focus,
-  body.ics-viewer-open .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink span.dijitButtonContents:focus,
-  body.ics-viewer-open .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode span.dijitButtonContents:focus {
+  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode span.dijitButtonContents:focus, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton span.dijitButtonContents:focus,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-edit.ics-viewer-splitbutton a.actionLink span.dijitButtonContents:focus,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-splitmenu.dropdown-menu .dijitButtonNode span.dijitButtonContents:focus {
     outline: none !important; }
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
 .actionLink,
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
 .actionLink,
-body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton {
+body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton {
   display: inline-block;
   position: relative;
   top: -4px !important;
@@ -3272,11 +3272,11 @@ body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.d
   .actionLink:focus, #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink.dijitDropDownButtonFocused,
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton:focus,
-  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton.dijitDropDownButtonFocused, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
-  .actionLink:focus, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton.dijitDropDownButtonFocused, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  .actionLink:focus, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink.dijitDropDownButtonFocused,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton:focus,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton.dijitDropDownButtonFocused {
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton:focus,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton.dijitDropDownButtonFocused {
     outline: 1px solid #3C6DF0 !important; }
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink img, #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
@@ -3286,15 +3286,15 @@ body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.d
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton img,
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitButtonNode,
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitDownArrowButton,
-  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
-  .actionLink img, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
-  .actionLink .dijitButtonNode, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
-  .actionLink .dijitDownArrowButton, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  .actionLink img, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  .actionLink .dijitButtonNode, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  .actionLink .dijitDownArrowButton, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink .dropdown-menu-icon,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton img,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitButtonNode,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitDownArrowButton,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon {
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton img,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitButtonNode,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dijitDownArrowButton,
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon {
     height: 100% !important;
     width: 100% !important;
     background-size: contain !important;
@@ -3307,12 +3307,12 @@ body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.d
     bottom: 0 !important; }
   #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink .dropdown-menu-icon,
-  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon, body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
+  #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload):not(.ics-viewer-splitbutton)
   .actionLink .dropdown-menu-icon,
-  body.ics-viewer-open .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon {
+  body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-splitmenu) span.dijitDropDownButton .dropdown-menu-icon {
     background-position: center !important;
     background-size: 85% 85% !important; }
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-like:not(.ics-viewer-action-upload) .actionLink img, body.ics-viewer-open .ics-viewer-action-like:not(.ics-viewer-action-upload) .actionLink img {
+#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-like:not(.ics-viewer-action-upload) .actionLink img, body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-like:not(.ics-viewer-action-upload) .actionLink img {
   background-size: 20px 20px !important;
   background-position: center !important; }
 

@@ -101,13 +101,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 	img{
 		background-position:0px 0px!important;
 		background-repeat:no-repeat!important;
-		// width:18px!important;
 	}
-	// .ics-viewer-action{
-	// 	:focus{
-	// 		outline:none!important;
-	// 	}
-	// }
   .ics-viewer-action-download{
     	img{
 				background-image: svg-url-with-replaced-fill($svg-download, '#000000', $icon-black) !important;
@@ -471,7 +465,7 @@ ul[data-dojo-attach-point="tagList"]{
 
 //Styling for viewer nav bar icons
 
-#body .ics-viewer .ics-viewer-toolbar, body.ics-viewer-open {
+#body .ics-viewer .ics-viewer-toolbar, body.ics-viewer-open .ics-viewer-toolbar {
 	.ics-viewer-action-upload.ics-viewer-splitbutton{
 		margin-top:9px!important;
 	}
@@ -507,7 +501,7 @@ ul[data-dojo-attach-point="tagList"]{
 			right:0!important;
 			bottom:0!important;
 		}
-		//this icon looks to large next to the others
+		//this icon looks too large next to the others
 		.dropdown-menu-icon{
 			background-position:center!important;
 			background-size:85% 85%!important;
