@@ -125,28 +125,34 @@
 <p>Periodically pull updates from ibmcnxdev/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from ibmcnxdev/cnx-custom-theme master branch.</p>
 
 <h2><a class="anchor" name="included">What's Included in this Example</a></h2>
-<h4>Complete folder structure</h4>
+<h4>Folder structure and Files</h4>
 <ul>
   <li>/periscope
     <ul>
-      <li>/css -- contains output CSS files after compiling scss</li>
-      <li>/extension -- contains files used to create Tampermonkey extension</li>
-      <li>/scss -- scss files where you make style changes
+      <li>/css -- Contains output CSS files after compiling scss</li>
+      <li>/docs -- Documentation about this example and the Visual Update 1 application</li>
+      <li>/extension -- Contains files used to create Tampermonkey extension</li>
+      <li>/fonts -- Contains IBM Plex font files</li>
+      <li>/scss -- SCSS files that contain the style changes
         <ul>
-         <li>/apps -- scss files for app specific style changes</li>
-         <li>/components -- scss files for common components used across apps, such as buttons and links</li>
-         <li>/global -- scss files for global style changes applied regardless of application</li>
-         <li>/prereqs -- scss files for style changes that are used by other scss files, such as color variables</li>
-         <li>files.scss -- scss file that references partial scss files used in this application</li>
-         <li>global.scss -- scss file that references partial scss files used globally</li>
-         <li>profiles.scss -- scss file that references partial scss files used in this application</li>
-         <li>search.scss -- scss file that references partial scss files used in this application</li>
-         <li>settings.scss -- scss file that references partial scss files used in this application</li>
+         <li>/apps -- SCSS files for app specific style changes</li>
+         <li>/components -- SCSS files for common components used across apps, such as buttons and links</li>
+         <li>/global -- SCSS files for global style changes applied regardless of application</li>
+         <li>/prereqs -- SCSS files for style changes that are used by other scss files, such as color variables</li>
+         <li>files.scss -- SCSS file that references partial scss files used in the Files application</li>
+         <li>global.scss -- SCSS file that references partial scss files used globally</li>
+         <li>meetings.scss -- SCSS file that references partial scss files used in the Meetings application</li>
+         <li>profiles.scss -- SCSS file that references partial scss files used in the Profiles and Contacts applications</li>
+         <li>search.scss -- SCSS file that references partial scss files used in the Search application</li>
+         <li>settings.scss -- SCSS file that references partial scss files used in the Settings pages</li>
        </ul>
      </li>
-      <li>/svg -- svg images used to replace existing images</li>
-      <li>manifest.json -- used to define Chrome extension</li>
-      <li>periscope.js -- javascript file that instruct Connections Customizer. URLs to apply changes to are in this file.</li>
+      <li>/svg -- Copy of SVG images that are streamlined and stored in _icons.scss as variables</li>
+      <li>manifest.json -- Used to define Chrome extension</li>
+      <li>org-ext.json -- Sample JSON file used when adding your customizations as an Organization Extension</li>
+      <li>periscope.js -- Javascript file that instruct Connections Customizer. URLs to apply changes to are in this file</li>
+      <li>readme.md -- Points to where you can find complete documentation</li>
+      <li>tmScript.js -- Tampermonkey script</li>
     </li>
   </ul>
 
@@ -368,6 +374,7 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
   ]
 }
 </pre>
+  <p>Note: This sample JSON can also be found in cnx-custom-theme/org-ext.json.</p>
 </li>
 <li>The include-repo property in this example points to the cnx-custom-theme repository in the ibmcnxdev GitHub organization. Update the include-repo: name property to identify the repository where the include-files are stored. By default any repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev) are available for use by Customizer apps. Refer to IBM Connections Customizer documenation for more information about using a private repository.</li>
 <li>Save the changes.</li>
@@ -444,10 +451,10 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </p>
 
 <h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
-<p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Connections Pink: Theme Preview application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for IBM Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
 <p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
 
-<p>The App Registry includes the "Connections Pink: Theme Preview" application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The "Connections Pink: Theme Preview" is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS or JS overriding any of the "Connections Pink: Theme Preview" changes.</p>
+<p>The App Registry includes the Visual Update 1 for IBM Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for IBM Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for IBM Connections changes.</p>
 
 <h3>What is supported</h3>
 <p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>

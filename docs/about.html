@@ -183,6 +183,12 @@
   </ul>
 </p>
 
+<h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
+<p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for IBM Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
+
+<p>The App Registry includes the Visual Update 1 for IBM Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for IBM Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for IBM Connections changes.</p>
+
 <h3>What is supported</h3>
 <p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
 
