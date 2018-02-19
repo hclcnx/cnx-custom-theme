@@ -1342,33 +1342,28 @@ tbody .lotusFirstCell {
   position: relative !important;
   top: -3px !important; }
 
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #595859 !important; }
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:lang(en) {
+    text-transform: uppercase !important; }
 div#list .lotusTable.lotusFixedTable.qkrFixedWidth th {
-  border-bottom: 1px solid #3C6DF0;
-  color: #595859;
-  font-weight: 500; }
+  border-bottom: 1px solid #3C6DF0; }
   div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a {
-    color: #595859 !important;
-    font-weight: 500 !important;
     text-decoration: none; }
     div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:hover {
       text-decoration: underline; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th:lang(en) {
-    text-transform: uppercase !important; }
 div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort {
   border-bottom: 1px solid #3C6DF0; }
   div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics {
     padding: 28px 16px 0 46px !important;
     border: 1px solid transparent !important;
-    border-bottom: 1px solid #3C6DF0 !important;
-    text-transform: uppercase;
-    color: #595859 !important; }
+    border-bottom: 1px solid #3C6DF0 !important; }
   div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
-    text-transform: uppercase;
     padding: 8px 16px !important;
     border: 1px solid transparent !important;
-    background-position: calc(100% - 7px) 13px !important;
-    color: #595859 !important;
-    font-weight: 400 !important; }
+    background-position: calc(100% - 7px) 13px !important; }
     div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:focus {
       text-decoration: none !important;
       border-radius: 2px !important;
@@ -1425,33 +1420,28 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
 div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
   border-bottom: 1px solid #d8d8d8; }
 
+.blog.admin .blogsFixedTable th, .blog.admin .blogsFixedTable th a, .blog.admin .blogsFixedTable tr.lotusSort #topics, .blog.admin .blogsFixedTable tr.lotusSort td a, .blog.admin .lotusTable th, .blog.admin .lotusTable th a, .blog.admin .lotusTable tr.lotusSort #topics, .blog.admin .lotusTable tr.lotusSort td a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #595859 !important; }
+  .blog.admin .blogsFixedTable th:lang(en), .blog.admin .blogsFixedTable th a:lang(en), .blog.admin .blogsFixedTable tr.lotusSort #topics:lang(en), .blog.admin .blogsFixedTable tr.lotusSort td a:lang(en), .blog.admin .lotusTable th:lang(en), .blog.admin .lotusTable th a:lang(en), .blog.admin .lotusTable tr.lotusSort #topics:lang(en), .blog.admin .lotusTable tr.lotusSort td a:lang(en) {
+    text-transform: uppercase !important; }
 .blog.admin .blogsFixedTable th, .blog.admin .lotusTable th {
-  border-bottom: 1px solid #3C6DF0;
-  color: #595859;
-  font-weight: 500; }
+  border-bottom: 1px solid #3C6DF0; }
   .blog.admin .blogsFixedTable th a, .blog.admin .lotusTable th a {
-    color: #595859 !important;
-    font-weight: 500 !important;
     text-decoration: none; }
     .blog.admin .blogsFixedTable th a:hover, .blog.admin .lotusTable th a:hover {
       text-decoration: underline; }
-  .blog.admin .blogsFixedTable th:lang(en), .blog.admin .lotusTable th:lang(en) {
-    text-transform: uppercase !important; }
 .blog.admin .blogsFixedTable tr.lotusSort, .blog.admin .lotusTable tr.lotusSort {
   border-bottom: 1px solid #3C6DF0; }
   .blog.admin .blogsFixedTable tr.lotusSort #topics, .blog.admin .lotusTable tr.lotusSort #topics {
     padding: 28px 16px 0 46px !important;
     border: 1px solid transparent !important;
-    border-bottom: 1px solid #3C6DF0 !important;
-    text-transform: uppercase;
-    color: #595859 !important; }
+    border-bottom: 1px solid #3C6DF0 !important; }
   .blog.admin .blogsFixedTable tr.lotusSort td a, .blog.admin .lotusTable tr.lotusSort td a {
-    text-transform: uppercase;
     padding: 8px 16px !important;
     border: 1px solid transparent !important;
-    background-position: calc(100% - 7px) 13px !important;
-    color: #595859 !important;
-    font-weight: 400 !important; }
+    background-position: calc(100% - 7px) 13px !important; }
     .blog.admin .blogsFixedTable tr.lotusSort td a:hover, .blog.admin .blogsFixedTable tr.lotusSort td a:focus, .blog.admin .lotusTable tr.lotusSort td a:hover, .blog.admin .lotusTable tr.lotusSort td a:focus {
       text-decoration: none !important;
       border-radius: 2px !important;
@@ -1565,33 +1555,28 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
 .blog .lotusViewControl .lotusSummaryOff {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cdefs%3E%3Cpolygon id=%22path-1%22 points=%220 6 0 0 8.99985 0 17.9997 0 17.9997 6%22%3E%3C/polygon%3E%3Cpolygon id=%22path-3%22 points=%220 22 18 22 18 4 18 0 0 0%22%3E%3C/polygon%3E%3C/defs%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22list-view_24-copy-8%22%3E%3Cg id=%22list-view%22 transform=%22translate(3.000000, 1.000000)%22%3E%3Cg id=%22Group-3%22%3E%3Cmask id=%22mask-2%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-1%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-2%22%3E%3C/g%3E%3Cpath d=%22M15.9987,0 L2.0017,0 C0.8957,0 -0.0003,0.896 -0.0003,2.001 L-0.0003,6 L17.9997,6 L17.9997,2.001 C17.9997,0.896 17.1037,0 15.9987,0 M15.9987,1 C16.5507,1 16.9997,1.449 16.9997,2.001 L16.9997,5 L0.9997,5 L0.9997,2.001 C0.9997,1.449 1.4497,1 2.0017,1 L15.9987,1%22 id=%22Fill-1%22 fill=%22%23595859%22 mask=%22url(%23mask-2)%22%3E%3C/path%3E%3C/g%3E%3Cmask id=%22mask-4%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-3%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-5%22%3E%3C/g%3E%3Cpath d=%22M0,14 L18,14 L18,8 L0,8 L0,14 Z M1,13 L17,13 L17,9 L1,9 L1,13 Z%22 id=%22Fill-4%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3Cpath d=%22M18,16 L0,16 L0,19.999 C0,21.104 0.896,22 2.001,22 L15.999,22 C17.104,22 18,21.104 18,19.999 L18,16 Z M17,17 L17,19.999 C17,20.551 16.551,21 15.999,21 L2.001,21 C1.449,21 1,20.551 1,19.999 L1,17 L17,17 L17,17 Z%22 id=%22Fill-6%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
 
+#topicList .lotusTable th, #topicList .lotusTable th a, #topicList .lotusTable tr.lotusSort #topics, #topicList .lotusTable tr.lotusSort td a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #595859 !important; }
+  #topicList .lotusTable th:lang(en), #topicList .lotusTable th a:lang(en), #topicList .lotusTable tr.lotusSort #topics:lang(en), #topicList .lotusTable tr.lotusSort td a:lang(en) {
+    text-transform: uppercase !important; }
 #topicList .lotusTable th {
-  border-bottom: 1px solid #3C6DF0;
-  color: #595859;
-  font-weight: 500; }
+  border-bottom: 1px solid #3C6DF0; }
   #topicList .lotusTable th a {
-    color: #595859 !important;
-    font-weight: 500 !important;
     text-decoration: none; }
     #topicList .lotusTable th a:hover {
       text-decoration: underline; }
-  #topicList .lotusTable th:lang(en) {
-    text-transform: uppercase !important; }
 #topicList .lotusTable tr.lotusSort {
   border-bottom: 1px solid #3C6DF0; }
   #topicList .lotusTable tr.lotusSort #topics {
     padding: 28px 16px 0 46px !important;
     border: 1px solid transparent !important;
-    border-bottom: 1px solid #3C6DF0 !important;
-    text-transform: uppercase;
-    color: #595859 !important; }
+    border-bottom: 1px solid #3C6DF0 !important; }
   #topicList .lotusTable tr.lotusSort td a {
-    text-transform: uppercase;
     padding: 8px 16px !important;
     border: 1px solid transparent !important;
-    background-position: calc(100% - 7px) 13px !important;
-    color: #595859 !important;
-    font-weight: 400 !important; }
+    background-position: calc(100% - 7px) 13px !important; }
     #topicList .lotusTable tr.lotusSort td a:hover, #topicList .lotusTable tr.lotusSort td a:focus {
       text-decoration: none !important;
       border-radius: 2px !important;
@@ -3262,9 +3247,9 @@ input.lotusText.scTagTypeahead {
 .lotusChunk.lotusSearch {
   width: 100%; }
 
-.lotusContent .lotusTags.lotusMeta > ul, .lotusContent .lotusTags.lotusMeta > span, .lotusContent .lotusTags.lotusMeta > form,
+.lotusContent .lotusTags.lotusMeta > ul, .lotusContent .lotusTags.lotusMeta > span:not(.lotusHidden), .lotusContent .lotusTags.lotusMeta > form,
 .lotusContent .lotusTags > ul,
-.lotusContent .lotusTags > span,
+.lotusContent .lotusTags > span:not(.lotusHidden),
 .lotusContent .lotusTags > form {
   display: inline-block;
   vertical-align: middle; }
@@ -3454,15 +3439,19 @@ input.lotusText.scTagTypeahead {
     background-color: #FFFFFF; }
 
 #forum .lotusPostContent .lotusMeta .lotusTags span,
-#topicList #forumTagEditer > span {
+#topicList #forumTagEditer > span,
+.lotusContent span[id^="lconn_forums_TagEditor_"] > span {
   font-size: 0; }
   #forum .lotusPostContent .lotusMeta .lotusTags span > span[role="listitem"],
-  #topicList #forumTagEditer > span > span[role="listitem"] {
+  #topicList #forumTagEditer > span > span[role="listitem"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span > span[role="listitem"] {
     cursor: default !important; }
   #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText),
   #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"],
   #topicList #forumTagEditer > span span:not(.lotusAltText),
-  #topicList #forumTagEditer > span a[role="listitem"] {
+  #topicList #forumTagEditer > span a[role="listitem"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText),
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] {
     color: #000000 !important;
     border-radius: 0.75rem !important;
     line-height: 1.5rem !important;
@@ -3483,29 +3472,39 @@ input.lotusText.scTagTypeahead {
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText) a,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] a,
     #topicList #forumTagEditer > span span:not(.lotusAltText) a,
-    #topicList #forumTagEditer > span a[role="listitem"] a {
+    #topicList #forumTagEditer > span a[role="listitem"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText) a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] a {
       color: #000000 !important;
       font-weight: normal !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):hover,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:hover,
     #topicList #forumTagEditer > span span:not(.lotusAltText):hover,
-    #topicList #forumTagEditer > span a[role="listitem"]:hover {
+    #topicList #forumTagEditer > span a[role="listitem"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:hover {
       text-decoration: none !important;
       color: #000000 !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus,
     #topicList #forumTagEditer > span span:not(.lotusAltText):focus,
-    #topicList #forumTagEditer > span a[role="listitem"]:focus {
+    #topicList #forumTagEditer > span a[role="listitem"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus {
       text-decoration: underline !important; }
       #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus img,
       #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus img,
       #topicList #forumTagEditer > span span:not(.lotusAltText):focus img,
-      #topicList #forumTagEditer > span a[role="listitem"]:focus img {
+      #topicList #forumTagEditer > span a[role="listitem"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus img {
         border-bottom: 1px solid currentColor; }
   #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"],
   #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"],
   #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"],
-  #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] {
+  #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] {
     color: #000000 !important;
     border-radius: 0.75rem !important;
     line-height: 1.5rem !important;
@@ -3530,29 +3529,39 @@ input.lotusText.scTagTypeahead {
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] a,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] a,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] a,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] a {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] a {
       color: #000000 !important;
       font-weight: normal !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:hover,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:hover,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:hover,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:hover {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:hover {
       text-decoration: none !important;
       color: #000000 !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus {
       text-decoration: underline !important; }
       #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus img,
       #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus img,
       #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus img,
-      #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus img {
+      #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus img {
         border-bottom: 1px solid currentColor; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] img,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] img,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] img,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] img {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] img,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] img,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] img {
       height: 100% !important;
       width: 12px !important;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
@@ -5098,9 +5107,9 @@ input.lotusText.scTagTypeahead {
 .lotusChunk.lotusSearch {
   width: 100%; }
 
-.lotusContent .lotusTags.lotusMeta > ul, .lotusContent .lotusTags.lotusMeta > span, .lotusContent .lotusTags.lotusMeta > form,
+.lotusContent .lotusTags.lotusMeta > ul, .lotusContent .lotusTags.lotusMeta > span:not(.lotusHidden), .lotusContent .lotusTags.lotusMeta > form,
 .lotusContent .lotusTags > ul,
-.lotusContent .lotusTags > span,
+.lotusContent .lotusTags > span:not(.lotusHidden),
 .lotusContent .lotusTags > form {
   display: inline-block;
   vertical-align: middle; }
@@ -5290,15 +5299,19 @@ input.lotusText.scTagTypeahead {
     background-color: #FFFFFF; }
 
 #forum .lotusPostContent .lotusMeta .lotusTags span,
-#topicList #forumTagEditer > span {
+#topicList #forumTagEditer > span,
+.lotusContent span[id^="lconn_forums_TagEditor_"] > span {
   font-size: 0; }
   #forum .lotusPostContent .lotusMeta .lotusTags span > span[role="listitem"],
-  #topicList #forumTagEditer > span > span[role="listitem"] {
+  #topicList #forumTagEditer > span > span[role="listitem"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span > span[role="listitem"] {
     cursor: default !important; }
   #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText),
   #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"],
   #topicList #forumTagEditer > span span:not(.lotusAltText),
-  #topicList #forumTagEditer > span a[role="listitem"] {
+  #topicList #forumTagEditer > span a[role="listitem"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText),
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] {
     color: #000000 !important;
     border-radius: 0.75rem !important;
     line-height: 1.5rem !important;
@@ -5319,29 +5332,39 @@ input.lotusText.scTagTypeahead {
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText) a,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] a,
     #topicList #forumTagEditer > span span:not(.lotusAltText) a,
-    #topicList #forumTagEditer > span a[role="listitem"] a {
+    #topicList #forumTagEditer > span a[role="listitem"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText) a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] a {
       color: #000000 !important;
       font-weight: normal !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):hover,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:hover,
     #topicList #forumTagEditer > span span:not(.lotusAltText):hover,
-    #topicList #forumTagEditer > span a[role="listitem"]:hover {
+    #topicList #forumTagEditer > span a[role="listitem"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:hover {
       text-decoration: none !important;
       color: #000000 !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus,
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus,
     #topicList #forumTagEditer > span span:not(.lotusAltText):focus,
-    #topicList #forumTagEditer > span a[role="listitem"]:focus {
+    #topicList #forumTagEditer > span a[role="listitem"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus {
       text-decoration: underline !important; }
       #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus img,
       #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus img,
       #topicList #forumTagEditer > span span:not(.lotusAltText):focus img,
-      #topicList #forumTagEditer > span a[role="listitem"]:focus img {
+      #topicList #forumTagEditer > span a[role="listitem"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus img {
         border-bottom: 1px solid currentColor; }
   #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"],
   #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"],
   #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"],
-  #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] {
+  #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"],
+  .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] {
     color: #000000 !important;
     border-radius: 0.75rem !important;
     line-height: 1.5rem !important;
@@ -5366,29 +5389,39 @@ input.lotusText.scTagTypeahead {
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] a,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] a,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] a,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] a {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] a,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] a {
       color: #000000 !important;
       font-weight: normal !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:hover,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:hover,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:hover,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:hover {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:hover,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:hover {
       text-decoration: none !important;
       color: #000000 !important; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus {
       text-decoration: underline !important; }
       #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus img,
       #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus img,
       #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus img,
-      #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus img {
+      #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus img,
+      .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus img {
         border-bottom: 1px solid currentColor; }
     #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] img,
     #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] img,
     #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] img,
-    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] img {
+    #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] img,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] img,
+    .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] img {
       height: 100% !important;
       width: 12px !important;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
