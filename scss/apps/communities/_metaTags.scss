@@ -18,25 +18,25 @@
       outline:none!important;
       border:none!important;
     }
-    *{
+    *:not(.lotusAltText){
       display:inline-block!important;
       position:relative!important;
-      top:4px!important;
     }
     .lotusAltText:hover{
       text-decoration:underline;
       cursor:pointer!important;
     }
     img{
-      top:1px!important;
+      top:-2px!important;
       left:0!important;
     }
   }
   span[dojoattachpoint="inlineLikeActions"] *{
     position:relative;
-    top:4px!important;
   }
 }
+
+//Blogs
 .blog{
   .lotusTable{
     .lotusMeta{
@@ -51,3 +51,96 @@
     }
   }
 }
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta,
+.lotusContent .lotusTags,
+.lotusFilters2 {
+  span[role="listitem"] a,
+  li.lotusTag a.bidiAware {
+      font-weight: inherit !important;
+      &:hover {
+        color: $text-01 !important;
+      }
+  }
+  .lotusFilter {
+    @include tags();
+  }
+  .blogsPaddingRight {
+    &:after {
+      content: ":";
+    }
+  }
+}
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta {
+  span.vcard, span.lotusDivider, span[role="listitem"] {
+    padding-bottom:3px;
+  }
+}
+
+//Wiki Page Meta
+.wikiHeader {
+   .lotusMeta, .lotusLike, .lotusLike a, .lotusLikeCount span, .lotusTags a {
+    @include font-size($caption...);
+  }
+  .lotusLike {
+    .lotusLikeCount, .lotusLikeAction {
+      top:3px;
+    }
+    .lotusLikeCount img {
+      margin-right:0px;
+    }
+  }
+}
+
+//Wiki Index List Meta under More
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+  tr.lotusDetails {
+    td {
+      .lotusMeta, .lotusMeta a, .lotusMeta span,
+      .lotusTags span, .lotusTags a.qkrAdd {
+        @include font-size($caption...);
+      }
+      .lotusLike .lotusLikeDescription, .lotusTags span {
+        color:$text-02;
+      }
+    }
+  }
+}
+
+// Wiki index page tags in pages list 
+.lconnWikis table.lotusTable.qkrFixedWidth tr {
+  .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
+    float: none;
+    display: inline-block !important;
+    margin-bottom: 1rem;
+  }
+  .lotusTags {
+    .qkrInlineList {
+      display: inline-block !important;
+    }
+    form {
+      input[type="submit"] {
+        @include btnprimary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+      a[role="button"] {
+        @include btnsecondary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+    }
+  }
+  .lotusMeta + .lotusTags > *:not(.lotusFormError) {
+    margin-top: 1rem;
+    vertical-align: text-bottom;
+    
+    &.qkrEmpty {
+      margin-left: .5rem;
+    }
+  }
+}
+

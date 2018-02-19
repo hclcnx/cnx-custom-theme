@@ -1,3 +1,8 @@
+label {
+	font-weight: 500 !important;
+	color: $text-02 !important;
+}
+
 :not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow{
 	td {
 		display:block!important;
@@ -18,10 +23,6 @@
 	}
 	td:nth-child(3),td:nth-child(2){
 		margin-top:8px!important;
-	}
-	label{
-		color: $text-02 !important;
-		//font-size:$body-mini-font-size !important;
 	}
 }
 
@@ -111,7 +112,6 @@
 }
 div[id^="lconn_files_widget_ui_FileField_"]{
 	position:relative!important;
-	width:548px!important;
 }
 a[id^="lconn_share_widget_HelpLauncher_"] {
 	&:focus {

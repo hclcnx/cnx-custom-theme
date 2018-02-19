@@ -6,20 +6,27 @@ $brand-01: #3C6DF0; //Ultramarine 50
 $brand-02: #1D3458; //Blue 80
 // Accent color used for selection on top navigation bar
 $brand-03: #40D5BB; //Teal 20
+$brand-04: #FF509E; //Magenta40
+// Accent used in gradients with $brand-01
+$brand-05: #2E3F8F; //Ultramarine 70
+// Accent background for pinned items
+$brand-06: #E7E9F7; //Ultramarine 10
 
 // -----NEUTRAL COLORS-----
 $color-white: #FFFFFF; //White
 $color-black: #000000; //Black
 // Secondary text and text on gray background
 $color-gray-60: #595859; //Gray 60
-// Icons
+// Labels
 $color-gray-50: #777677; //Gray 50
+// Disabled states
+$color-gray-30: #969696; //Gray 30
 // Primary divider lines / separators, for example between files
 $color-gray-10: #d8d8d8; //Gray 10
 // Light colored backgrounds, borders, separator lines
 $color-gray-1: #F3F3F3; //Neutral white 4
 // Disabled / non-active color used to indicate something is not available or functioning
-$disabled: #969696; //Gray 30
+$disabled: $color-gray-30; //Gray 30
 
 // -----NOTIFICATION INDICATOR COLORS-----
 // Use these colors for notification indicators. Continue to use text colors above for the messages.
@@ -47,9 +54,14 @@ $background-side-hover: $color-gray-10; // Hover on secondary background color
 $background-header: $brand-02;
 // Background color and opacity used behind modal dialog and file preview
 $background-underlay: rgba($color-black,0.6);
+// Background accent colors
+$background-table-header-hover: $brand-01; //Background color for hovering on table header elements.
+$background-pinned-row: $brand-06; //Background color for pinned topics in list
 
 // -----BORDER COLORS-----
 $border-selected: $brand-01; // Selected, focus border color
+$border-focus: $brand-01; // Used for focus styling
+$border-separator: $color-gray-10; // Used for separator lines
 $border-field: $color-gray-10; // Field border color
 $border-field-focus: $brand-01; // Field border focus color
 
@@ -95,7 +107,7 @@ $icon-black: $text-01; // Text-colored icons
 // File type icons
 $icon-file-type-default: #777677;
 $icon-file-type-image: #40D5BB;
-$icon-file-type-word: #2D74DA;
+$icon-file-type-document: #2D74DA;
 $icon-file-type-spreadsheet: #00AA5E;
 $icon-file-type-presentation: #FE8500;
 $icon-file-type-pdf: #E62325;

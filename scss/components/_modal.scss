@@ -64,12 +64,77 @@
 		outline-offset: 1px!important;
 	}
 }
-.pickerDropfilesHorizentalPrompt{
-	width:100vw!important;
-	display: flex !important;
-	flex-direction: column;
-	justify-content: center;
+
+//File Picker Dialogs (add a file, upload, share a file, link to a file)
+//Files tab in file picker
+img.lconnPickerSourceLabelIconCloud{
+  background-image:svg-url-with-replaced-fill($svg-icon-files, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
 }
+//My Computer tab in file picker
+img.lconnPickerSourceLabelIconUpload{
+  background-image:svg-url-with-replaced-fill($svg-icon-upload, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
+}
+//This Community tab in file picker
+img.lconnPickerSourceLabelIconCommunity{
+  background-image:svg-url-with-replaced-fill($svg-icon-community, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
+}
+//Hover on tab icon color changes
+.lconnPickerSourceToCheck > div:hover {
+  img.lconnPickerSourceLabelIconCloud{
+    background-image:svg-url-with-replaced-fill($svg-icon-files, '#000000', $icon-white) !important;
+  }
+  img.lconnPickerSourceLabelIconUpload{
+    background-image:svg-url-with-replaced-fill($svg-icon-upload, '#000000', $icon-white) !important;
+  }
+  img.lconnPickerSourceLabelIconCommunity{
+    background-image:svg-url-with-replaced-fill($svg-icon-community, '#000000', $icon-white) !important;
+  }
+}
+
+//Upload File from My Computer Browse and Drop Zone
+.lconnPicker {
+  .pickerDropfilesHorizentalPrompt {
+    width:100% !important;
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+  }
+  .pickerDropfilesVerticalPrompt {
+    height:100% !important;
+    max-height:300px !important;
+  }
+  .lconnUploadContainer.pickerInputSpan.pickerBrowserContainer {
+    padding-top:10px;
+  }
+  .lotusDialogBorder .lconnUploadRectangle {
+    background:none;
+  }
+  .pickerDnDLabelRow {
+    margin-bottom:10px;
+  }
+  .pickerDropfilesList {
+    margin-bottom:20px;
+  }
+}
+
+//This community tab updates
+div[id^="lconn_files_widget_CompactFilePicker"][id$="desp"] {
+	margin-bottom:5px !important;
+}
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] {
+	height:32px !important;
+}
+div[dojoattachpoint="streamNode"] {
+	padding-top:1rem !important;
+}
+
+//Other file picker updates
 .lconnPickerSourceArea, .lotusUploadFile{
 	width:100%!important;
 }
@@ -133,25 +198,6 @@ form.lotusDialog.lotusForm{
 	}
 }
 
-//fixes for File Preview -> About -> Get Links
-#body .dijitDialogTitleBar{
-	padding-bottom:0px!important;
-	padding-top:35px!important;
-	padding-left:32px!important;
-}
-
-// profile download v-card:
-#exportVcardDialog {
-	min-width: 400px;
-
-	.lotusFormFieldRow {
-		td {
-			display: table-cell !important;
-			padding: 0 0 10px !important;
-		}
-	}
-}
-
 // profile "share a file" modal
 .lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
 	width: 100% !important;
@@ -183,6 +229,25 @@ form.lotusDialog.lotusForm{
 // #lconn_files_widget_UploadFile_0_shareWithLabel
 [id^="lconn_files_widget_UploadFile_"] {
 	display: inline-block !important;
+}
+
+//fixes for File Preview -> About -> Get Links
+#body .dijitDialogTitleBar{
+	padding-bottom:0px!important;
+	padding-top:35px!important;
+	padding-left:32px!important;
+}
+
+// profile download v-card:
+#exportVcardDialog {
+	min-width: 400px;
+
+	.lotusFormFieldRow {
+		td {
+			display: table-cell !important;
+			padding: 0 0 10px !important;
+		}
+	}
 }
 
 // "remove contact" confirmation modal

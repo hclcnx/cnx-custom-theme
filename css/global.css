@@ -28,62 +28,62 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 200;
-  src: url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 200;
-  src: url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/IBMPlexSans-Light-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-Light-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-Light-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-Light-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Light-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Light-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 300;
-  src: url("../fonts/IBMPlexSans-LightItalic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-LightItalic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-LightItalic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-LightItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-LightItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-LightItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/IBMPlexSans-Regular-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-Regular-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-Regular-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-Regular-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Regular-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Regular-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/IBMPlexSans-Italic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-Italic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-Italic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-Italic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Italic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Italic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/IBMPlexSans-Medium-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-Medium-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-Medium-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-Medium-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Medium-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Medium-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 500;
-  src: url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/IBMPlexSans-SemiBold-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-SemiBold-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-SemiBold-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-SemiBold-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-SemiBold-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-SemiBold-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 600;
-  src: url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/IBMPlexSans-Bold-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-Bold-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-Bold-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-Bold-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Bold-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Bold-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 700;
-  src: url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff2?repoName=periscope") format("woff2"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff?repoName=periscope") format("woff"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.eot?repoName=periscope") format("eot"); }
+  src: url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot"); }
 /*Globalization Changes*/
 .ics-viewer .manualCancel:hover span {
   color: #3C6DF0 !important; }
@@ -143,7 +143,11 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer #notificationsMenu .header-left {
     font-weight: 700 !important;
     padding: 0px !important;
-    font-size: 1rem; }
+    font-size: 1rem;
+    width: 63%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .ics-viewer #notificationsMenu .header-right span, .ics-viewer #notificationsMenu .header-right a {
     color: #3C6DF0 !important;
     padding: 0px !important;
@@ -162,7 +166,12 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer #notificationsMenu .header-right span.icBanner-popover-notificationReadAll {
       position: absolute !important;
       right: 24px;
-      top: 22px; }
+      top: 22px;
+      text-align: right;
+      width: 32%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
   .ics-viewer #notificationsMenu .icBanner-popover-header {
     border-bottom: 1px solid #F3F3F3; }
   .ics-viewer #notificationsMenu .icBanner-popover-footer {
@@ -184,10 +193,29 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
         border-color: #3C6DF0 !important; }
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body.selected .bluedot {
       display: none !important; }
-    .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body {
-      margin-left: 56px !important; }
+    .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body.selected .icNote-title, .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body.selected .icNote-title a {
+      font-weight: 400 !important; }
+      .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body.selected .icNote-title.fn.url, .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-body.selected .icNote-title a.fn.url {
+        color: #595859 !important; }
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-summary {
-      display: none !important; }
+      text-overflow: ellipsis !important; }
+      .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-summary img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        clear: both;
+        float: left; }
+      .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-summary p:lang(en):after {
+        content: 'No comment provided';
+        color: #595859;
+        font-weight: 400;
+        position: relative;
+        bottom: 0;
+        left: -13px;
+        width: 400px;
+        height: 10px;
+        background: #FFFFFF;
+        display: inline-block; }
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .bluedot {
       border-color: #3C6DF0 !important;
       top: 19px !important;
@@ -195,7 +223,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       width: 8px !important;
       height: 8px !important; }
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title {
-      font-weight: normal !important; }
+      font-weight: 600 !important; }
       .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a {
         color: #3C6DF0 !important;
         font-weight: bold !important; }
@@ -216,7 +244,9 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post:before {
       width: 100% !important; }
     .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post:hover {
-      background-color: #f1f1f1 !important; }
+      background-color: #F3F3F3 !important; }
+      .ics-viewer #notificationsMenu .icBanner-popover-content .icNotification-post:hover .icNote-summary p:after {
+        background-color: #F3F3F3 !important; }
   .ics-viewer .navsimplelist.notificationCenterContainer {
     height: auto;
     right: -129px !important;
@@ -236,9 +266,24 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer .lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55,
   .ics-viewer .lconnProfilesPhotoContainer img {
     border-radius: 50% !important; }
+  .ics-viewer #section_relatedblogs td:first-of-type, .ics-viewer #section_relatedideationblogs td:first-of-type, .ics-viewer #section_relatedentries td:first-of-type, .ics-viewer #section_relatedideas tr td:first-of-type {
+    width: 48px;
+    padding: 0 5px; }
+    .ics-viewer #section_relatedblogs td:first-of-type img, .ics-viewer #section_relatedideationblogs td:first-of-type img, .ics-viewer #section_relatedentries td:first-of-type img, .ics-viewer #section_relatedideas tr td:first-of-type img {
+      border-radius: 50% !important;
+      width: 48px;
+      height: 48px; }
+  .ics-viewer #forum .lotusPostAuthorInfo .lotusPostAvatar img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px; }
   .ics-viewer .lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
     border-radius: 50% !important; }
   .ics-viewer #searchResultsTable img.photo {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 50% !important; }
+  .ics-viewer #lotusReportingStructure #reportStructureArea img.photo {
     width: 56px !important;
     height: 56px !important;
     border-radius: 50% !important; }
@@ -248,6 +293,8 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     padding-right: .75rem; }
     .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img {
       border-radius: 50% !important; }
+  .ics-viewer a.lotusPerson, .ics-viewer a:visited.lotusPerson, .ics-viewer .vcard a.fn.url {
+    color: #000000 !important; }
   .ics-viewer .vcard a.menu_drop_icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
     background-size: 0.65rem !important;
@@ -315,7 +362,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -358,6 +405,9 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer .ics-viewer-action-splitmenu span.dijitButtonNode {
     border-radius: 0 2rem 2rem 0rem !important;
     padding: .5rem 1rem .5rem .5rem !important; }
+  .ics-viewer .ics-viewer-action-splitmenu .dijitDropDownButtonFocused span.dijitButtonNode {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
   .ics-viewer .ics-viewer-splitbutton .actionLink,
   .ics-viewer .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink {
     border-radius: 2rem 0 0 2rem !important;
@@ -371,6 +421,16 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer .ics-dialog-action #ok,
   .ics-viewer .ics-dialog-action .cancel.neutral,
   .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray,
+  .ics-viewer .qkrEdit .lotusBtnSmall,
+  .ics-viewer .entryEditTable .lotusBtnSmall,
+  .ics-viewer .entryEditTable .lotusBtnSmallGray,
+  .ics-viewer .wikiHeader .lotusBtnSmall,
+  .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction,
+  .ics-viewer .blog .lotusBtn a,
+  .ics-viewer .wikiHeader .lotusBtn a,
+  .ics-viewer #topicList .lotusBtn a,
+  .ics-viewer #forum .lotusBtn a,
+  .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a,
   .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost) {
     border-radius: 2rem !important;
     border-width: 1px !important;
@@ -386,7 +446,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #FFFFFF !important;
     border-color: #3C6DF0 !important;
     color: #3C6DF0 !important; }
@@ -399,6 +459,26 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .ics-dialog-action .cancel.neutral:active,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:hover,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:active,
+    .ics-viewer .qkrEdit .lotusBtnSmall:hover,
+    .ics-viewer .qkrEdit .lotusBtnSmall:active,
+    .ics-viewer .entryEditTable .lotusBtnSmall:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmall:active,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:active,
+    .ics-viewer .wikiHeader .lotusBtnSmall:hover,
+    .ics-viewer .wikiHeader .lotusBtnSmall:active,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:hover,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:active,
+    .ics-viewer .blog .lotusBtn a:hover,
+    .ics-viewer .blog .lotusBtn a:active,
+    .ics-viewer .wikiHeader .lotusBtn a:hover,
+    .ics-viewer .wikiHeader .lotusBtn a:active,
+    .ics-viewer #topicList .lotusBtn a:hover,
+    .ics-viewer #topicList .lotusBtn a:active,
+    .ics-viewer #forum .lotusBtn a:hover,
+    .ics-viewer #forum .lotusBtn a:active,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:hover,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:active,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):hover,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):active {
       text-decoration: none !important;
@@ -408,6 +488,16 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .ics-dialog-action #ok:focus,
     .ics-viewer .ics-dialog-action .cancel.neutral:focus,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:focus,
+    .ics-viewer .qkrEdit .lotusBtnSmall:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmall:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:focus,
+    .ics-viewer .wikiHeader .lotusBtnSmall:focus,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:focus,
+    .ics-viewer .blog .lotusBtn a:focus,
+    .ics-viewer .wikiHeader .lotusBtn a:focus,
+    .ics-viewer #topicList .lotusBtn a:focus,
+    .ics-viewer #forum .lotusBtn a:focus,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:focus,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):focus {
       box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
       outline: none !important; }
@@ -420,6 +510,26 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .dijit_a11y .ics-viewer .ics-dialog-action .cancel.neutral:focus,
     .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:focus,
     .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:focus,
+    .dj_a11y .ics-viewer .qkrEdit .lotusBtnSmall:focus,
+    .dijit_a11y .ics-viewer .qkrEdit .lotusBtnSmall:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmall:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmall:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtnSmall:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtnSmall:focus,
+    .dj_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:focus,
+    .dijit_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:focus,
+    .dj_a11y .ics-viewer .blog .lotusBtn a:focus,
+    .dijit_a11y .ics-viewer .blog .lotusBtn a:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtn a:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtn a:focus,
+    .dj_a11y .ics-viewer #topicList .lotusBtn a:focus,
+    .dijit_a11y .ics-viewer #topicList .lotusBtn a:focus,
+    .dj_a11y .ics-viewer #forum .lotusBtn a:focus,
+    .dijit_a11y .ics-viewer #forum .lotusBtn a:focus,
+    .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:focus,
+    .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:focus,
     .dj_a11y .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):focus,
     .dijit_a11y .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):focus {
       box-shadow: none !important;
@@ -434,6 +544,26 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .ics-dialog-action .cancel.neutral:hover,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:active,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:hover,
+    .ics-viewer .qkrEdit .lotusBtnSmall:active,
+    .ics-viewer .qkrEdit .lotusBtnSmall:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmall:active,
+    .ics-viewer .entryEditTable .lotusBtnSmall:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:active,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:hover,
+    .ics-viewer .wikiHeader .lotusBtnSmall:active,
+    .ics-viewer .wikiHeader .lotusBtnSmall:hover,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:active,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:hover,
+    .ics-viewer .blog .lotusBtn a:active,
+    .ics-viewer .blog .lotusBtn a:hover,
+    .ics-viewer .wikiHeader .lotusBtn a:active,
+    .ics-viewer .wikiHeader .lotusBtn a:hover,
+    .ics-viewer #topicList .lotusBtn a:active,
+    .ics-viewer #topicList .lotusBtn a:hover,
+    .ics-viewer #forum .lotusBtn a:active,
+    .ics-viewer #forum .lotusBtn a:hover,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:active,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:hover,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):active,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):hover {
       background-color: #3C6DF0 !important;
@@ -476,6 +606,96 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled:hover,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled:active,
+    .ics-viewer .qkrEdit .lotusBtnSmall:disabled,
+    .ics-viewer .qkrEdit .lotusBtnSmall:disabled:hover,
+    .ics-viewer .qkrEdit .lotusBtnSmall:disabled:active,
+    .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"],
+    .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"]:hover,
+    .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"]:active,
+    .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled,
+    .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled:hover,
+    .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled:active,
+    .ics-viewer .entryEditTable .lotusBtnSmall:disabled,
+    .ics-viewer .entryEditTable .lotusBtnSmall:disabled:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmall:disabled:active,
+    .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"],
+    .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"]:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"]:active,
+    .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled,
+    .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled:active,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled:active,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"],
+    .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"]:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"]:active,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled:hover,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled:active,
+    .ics-viewer .wikiHeader .lotusBtnSmall:disabled,
+    .ics-viewer .wikiHeader .lotusBtnSmall:disabled:hover,
+    .ics-viewer .wikiHeader .lotusBtnSmall:disabled:active,
+    .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"],
+    .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"]:hover,
+    .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"]:active,
+    .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled,
+    .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled:hover,
+    .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled:active,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled:hover,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled:active,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"],
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"]:hover,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"]:active,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled:hover,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled:active,
+    .ics-viewer .blog .lotusBtn a:disabled,
+    .ics-viewer .blog .lotusBtn a:disabled:hover,
+    .ics-viewer .blog .lotusBtn a:disabled:active,
+    .ics-viewer .blog .lotusBtn a[disabled="disabled"],
+    .ics-viewer .blog .lotusBtn a[disabled="disabled"]:hover,
+    .ics-viewer .blog .lotusBtn a[disabled="disabled"]:active,
+    .ics-viewer .blog .lotusBtn a.lotusBtnDisabled,
+    .ics-viewer .blog .lotusBtn a.lotusBtnDisabled:hover,
+    .ics-viewer .blog .lotusBtn a.lotusBtnDisabled:active,
+    .ics-viewer .wikiHeader .lotusBtn a:disabled,
+    .ics-viewer .wikiHeader .lotusBtn a:disabled:hover,
+    .ics-viewer .wikiHeader .lotusBtn a:disabled:active,
+    .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"],
+    .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"]:hover,
+    .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"]:active,
+    .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled,
+    .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled:hover,
+    .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled:active,
+    .ics-viewer #topicList .lotusBtn a:disabled,
+    .ics-viewer #topicList .lotusBtn a:disabled:hover,
+    .ics-viewer #topicList .lotusBtn a:disabled:active,
+    .ics-viewer #topicList .lotusBtn a[disabled="disabled"],
+    .ics-viewer #topicList .lotusBtn a[disabled="disabled"]:hover,
+    .ics-viewer #topicList .lotusBtn a[disabled="disabled"]:active,
+    .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled,
+    .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled:hover,
+    .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled:active,
+    .ics-viewer #forum .lotusBtn a:disabled,
+    .ics-viewer #forum .lotusBtn a:disabled:hover,
+    .ics-viewer #forum .lotusBtn a:disabled:active,
+    .ics-viewer #forum .lotusBtn a[disabled="disabled"],
+    .ics-viewer #forum .lotusBtn a[disabled="disabled"]:hover,
+    .ics-viewer #forum .lotusBtn a[disabled="disabled"]:active,
+    .ics-viewer #forum .lotusBtn a.lotusBtnDisabled,
+    .ics-viewer #forum .lotusBtn a.lotusBtnDisabled:hover,
+    .ics-viewer #forum .lotusBtn a.lotusBtnDisabled:active,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled:hover,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled:active,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"],
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"]:hover,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"]:active,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled:hover,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled:active,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled:hover,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled:active,
@@ -502,6 +722,36 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray:disabled:focus,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray[disabled="disabled"]:focus,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled:focus,
+    .ics-viewer .qkrEdit .lotusBtnSmall:disabled:focus,
+    .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"]:focus,
+    .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmall:disabled:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"]:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"]:focus,
+    .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled:focus,
+    .ics-viewer .wikiHeader .lotusBtnSmall:disabled:focus,
+    .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"]:focus,
+    .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled:focus,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled:focus,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"]:focus,
+    .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled:focus,
+    .ics-viewer .blog .lotusBtn a:disabled:focus,
+    .ics-viewer .blog .lotusBtn a[disabled="disabled"]:focus,
+    .ics-viewer .blog .lotusBtn a.lotusBtnDisabled:focus,
+    .ics-viewer .wikiHeader .lotusBtn a:disabled:focus,
+    .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"]:focus,
+    .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled:focus,
+    .ics-viewer #topicList .lotusBtn a:disabled:focus,
+    .ics-viewer #topicList .lotusBtn a[disabled="disabled"]:focus,
+    .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled:focus,
+    .ics-viewer #forum .lotusBtn a:disabled:focus,
+    .ics-viewer #forum .lotusBtn a[disabled="disabled"]:focus,
+    .ics-viewer #forum .lotusBtn a.lotusBtnDisabled:focus,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled:focus,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"]:focus,
+    .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled:focus,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled:focus,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost)[disabled="disabled"]:focus,
     .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost).lotusBtnDisabled:focus {
@@ -531,6 +781,66 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray[disabled="disabled"]:focus,
     .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled:focus,
     .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmallGray.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .qkrEdit .lotusBtnSmall:disabled:focus,
+    .dijit_a11y .ics-viewer .qkrEdit .lotusBtnSmall:disabled:focus,
+    .dj_a11y .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .qkrEdit .lotusBtnSmall[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .qkrEdit .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmall:disabled:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmall:disabled:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmall[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray:disabled:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .entryEditTable .lotusBtnSmallGray.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtnSmall:disabled:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtnSmall:disabled:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtnSmall[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled:focus,
+    .dijit_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction:disabled:focus,
+    .dj_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .blog .lotusBtn a:disabled:focus,
+    .dijit_a11y .ics-viewer .blog .lotusBtn a:disabled:focus,
+    .dj_a11y .ics-viewer .blog .lotusBtn a[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .blog .lotusBtn a[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .blog .lotusBtn a.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .blog .lotusBtn a.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtn a:disabled:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtn a:disabled:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtn a[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer .wikiHeader .lotusBtn a.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer #topicList .lotusBtn a:disabled:focus,
+    .dijit_a11y .ics-viewer #topicList .lotusBtn a:disabled:focus,
+    .dj_a11y .ics-viewer #topicList .lotusBtn a[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer #topicList .lotusBtn a[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer #topicList .lotusBtn a.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer #forum .lotusBtn a:disabled:focus,
+    .dijit_a11y .ics-viewer #forum .lotusBtn a:disabled:focus,
+    .dj_a11y .ics-viewer #forum .lotusBtn a[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer #forum .lotusBtn a[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer #forum .lotusBtn a.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer #forum .lotusBtn a.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled:focus,
+    .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a:disabled:focus,
+    .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a.lotusBtnDisabled:focus,
     .dj_a11y .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled:focus,
     .dijit_a11y .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):disabled:focus,
     .dj_a11y .ics-viewer div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost)[disabled="disabled"]:focus,
@@ -564,7 +874,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -796,18 +1106,6 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     color: #3C6DF0 !important; }
   .ics-viewer .ics-viewer-action-upload .actionLink {
     font-weight: 500 !important; }
-  .ics-viewer .wikiHeader .lotusBtn a {
-    border: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    padding: 0 !important; }
-  .ics-viewer .wikiHeader .lotusBtn a:hover {
-    background-color: transparent !important;
-    color: #FFFFFF !important; }
-  .ics-viewer .wikiHeader .lotusBtn:hover > a {
-    color: #FFFFFF !important; }
-  .ics-viewer .wikiHeader .lotusLike {
-    top: 0 !important; }
   .ics-viewer .lotusTitleBar .lotusPlaceBar .lotusBtn {
     width: 88px !important;
     height: 36px !important; }
@@ -880,7 +1178,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -917,7 +1215,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
       white-space: nowrap !important;
       padding: 9px 20px !important;
-      font-weight: 500;
+      font-weight: 500 !important;
       background-color: #FFFFFF !important;
       border-color: #3C6DF0 !important;
       color: #3C6DF0 !important; }
@@ -962,6 +1260,57 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     padding: 6px 16px !important;
     font-weight: 500 !important;
     font-size: 0.675rem !important; }
+  .ics-viewer .blog .lotusActionBar .lotusBtn {
+    border: none !important;
+    padding: 2px 0 0 2px !important;
+    margin: 0 !important; }
+    .ics-viewer .blog .lotusActionBar .lotusBtn:hover {
+      padding: 2px 0 0 2px !important;
+      background-color: white !important;
+      border: none !important; }
+  .ics-viewer .blog form[name="bookmarksForm"] .lotusActionBar {
+    margin-top: 12px !important; }
+  .ics-viewer .wikiHeader .lotusBtn, .ics-viewer #topicList .lotusBtn, .ics-viewer #forum .lotusBtn {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important; }
+    .ics-viewer .wikiHeader .lotusBtn:hover, .ics-viewer #topicList .lotusBtn:hover, .ics-viewer #forum .lotusBtn:hover {
+      padding: 0px !important;
+      background-color: white !important;
+      border: none !important; }
+    .ics-viewer .wikiHeader .lotusBtn a:hover img.lotusArrow, .ics-viewer #topicList .lotusBtn a:hover img.lotusArrow, .ics-viewer #forum .lotusBtn a:hover img.lotusArrow {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer .wikiHeader .lotusBtn img.lotusArrow, .ics-viewer #topicList .lotusBtn img.lotusArrow, .ics-viewer #forum .lotusBtn img.lotusArrow {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+      background-position: 0 0 !important;
+      opacity: 1 !important; }
+  .ics-viewer .wikiHeader input.lotusBtnSmall, .ics-viewer #topicList input.lotusBtnSmall, .ics-viewer #forum input.lotusBtnSmall {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: 35px !important;
+    position: relative !important;
+    top: -1px !important; }
+  .ics-viewer .wikiHeader .lotusBtnSmall, .ics-viewer #topicList .lotusBtnSmall, .ics-viewer #forum .lotusBtnSmall {
+    font-weight: 500 !important; }
+  .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a {
+    margin: 12px 0 !important;
+    display: inline-block !important; }
+  .ics-viewer .entryEditTable .lotusBtnSmall {
+    height: 34px !important; }
+  .ics-viewer .entryEditTable .lotusBtnSmall, .ics-viewer .entryEditTable .lotusBtnSmallGray {
+    font-weight: 500 !important; }
+  .ics-viewer .entryEditTable #addtagwidgetAddTagsTypeAhead {
+    margin-top: 9px !important; }
+  .ics-viewer .entryEditTable span {
+    vertical-align: middle !important; }
+  .ics-viewer .lotusForm.qkrEdit .lotusBtnSmall {
+    font-weight: 500 !important; }
+  .ics-viewer .lotusForm.qkrEdit input.lotusBtnSmall {
+    margin: 0 8px 4px 12px !important;
+    height: 34px !important; }
+  .ics-viewer #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction {
+    display: inline-block !important;
+    margin: 8px 0 !important; }
   .ics-viewer input[type=checkbox] {
     height: 16px !important;
     width: 20px !important;
@@ -1020,6 +1369,285 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer .lotusLeft.lconnSelectAllContainer {
     position: relative !important;
     top: -3px !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #595859 !important; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th:lang(en), .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:lang(en), .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics:lang(en), .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:lang(en) {
+      text-transform: uppercase !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a {
+      text-decoration: none; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:hover {
+        text-decoration: underline; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort #topics {
+      padding: 28px 16px 0 46px !important;
+      border: 1px solid transparent !important;
+      border-bottom: 1px solid #3C6DF0 !important; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
+      padding: 8px 16px !important;
+      border: 1px solid transparent !important;
+      background-position: calc(100% - 7px) 13px !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:focus {
+        text-decoration: none !important;
+        border-radius: 2px !important;
+        border-color: #3C6DF0 !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover {
+        background-color: #3C6DF0 !important;
+        color: #FFFFFF !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a a.lotusAscending {
+        background-size: 8px 8px !important;
+        padding: 8px 20px 8px 16px !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort tr.lotusFirst {
+      border-top: 1px solid #3C6DF0 !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(even):not(.normalTopic):not(.lotusMore) th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(even):not(.normalTopic):not(.lotusMore) td {
+    background-color: #F3F3F3; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child {
+      padding-left: 10px !important; }
+      .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child input, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child input {
+        margin: 0px 0px; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:last-child, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:last-child {
+      padding-right: 10px !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+2) th,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+2) td, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+3) th,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+3) td,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+2) th,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+2) td,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+3) th,
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+3) td {
+    background-color: #F3F3F3; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic td {
+    padding-bottom: 12px !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td .lotusMeta > span {
+      vertical-align: baseline !important;
+      margin-bottom: 0 !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:not(.lotusDetails):not(.lotusSort) {
+    border-top: 1px solid #d8d8d8; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td {
+    padding-top: 0px !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
+    background-color: #FFFFFF !important; }
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
+    border-bottom: 1px solid #d8d8d8; }
+  .ics-viewer .blog.admin .blogsFixedTable th, .ics-viewer .blog.admin .blogsFixedTable th a, .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort #topics, .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a, .ics-viewer .blog.admin .lotusTable th, .ics-viewer .blog.admin .lotusTable th a, .ics-viewer .blog.admin .lotusTable tr.lotusSort #topics, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #595859 !important; }
+    .ics-viewer .blog.admin .blogsFixedTable th:lang(en), .ics-viewer .blog.admin .blogsFixedTable th a:lang(en), .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort #topics:lang(en), .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a:lang(en), .ics-viewer .blog.admin .lotusTable th:lang(en), .ics-viewer .blog.admin .lotusTable th a:lang(en), .ics-viewer .blog.admin .lotusTable tr.lotusSort #topics:lang(en), .ics-viewer .blog.admin .lotusTable tr.lotusSort td a:lang(en) {
+      text-transform: uppercase !important; }
+  .ics-viewer .blog.admin .blogsFixedTable th, .ics-viewer .blog.admin .lotusTable th {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer .blog.admin .blogsFixedTable th a, .ics-viewer .blog.admin .lotusTable th a {
+      text-decoration: none; }
+      .ics-viewer .blog.admin .blogsFixedTable th a:hover, .ics-viewer .blog.admin .lotusTable th a:hover {
+        text-decoration: underline; }
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort, .ics-viewer .blog.admin .lotusTable tr.lotusSort {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort #topics, .ics-viewer .blog.admin .lotusTable tr.lotusSort #topics {
+      padding: 28px 16px 0 46px !important;
+      border: 1px solid transparent !important;
+      border-bottom: 1px solid #3C6DF0 !important; }
+    .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a {
+      padding: 8px 16px !important;
+      border: 1px solid transparent !important;
+      background-position: calc(100% - 7px) 13px !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a:hover, .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a:focus, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a:hover, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a:focus {
+        text-decoration: none !important;
+        border-radius: 2px !important;
+        border-color: #3C6DF0 !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a:hover, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a:hover {
+        background-color: #3C6DF0 !important;
+        color: #FFFFFF !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a.lotusDescending, .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a a.lotusAscending, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a.lotusDescending, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a a.lotusAscending {
+        background-size: 8px 8px !important;
+        padding: 8px 20px 8px 16px !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a.lotusDescending, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a.lotusDescending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a.lotusDescending:hover, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a.lotusDescending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a.lotusAscending, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a.lotusAscending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort td a.lotusAscending:hover, .ics-viewer .blog.admin .lotusTable tr.lotusSort td a.lotusAscending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort tr.lotusFirst, .ics-viewer .blog.admin .lotusTable tr.lotusSort tr.lotusFirst {
+      border-top: 1px solid #3C6DF0 !important; }
+  .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) th, .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) td, .ics-viewer .blog.admin .lotusTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) th, .ics-viewer .blog.admin .lotusTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) td {
+    background-color: #F3F3F3; }
+  .ics-viewer .blog.admin .blogsFixedTable tr th, .ics-viewer .blog.admin .blogsFixedTable tr td, .ics-viewer .blog.admin .lotusTable tr th, .ics-viewer .blog.admin .lotusTable tr td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer .blog.admin .blogsFixedTable tr th:first-child, .ics-viewer .blog.admin .blogsFixedTable tr td:first-child, .ics-viewer .blog.admin .lotusTable tr th:first-child, .ics-viewer .blog.admin .lotusTable tr td:first-child {
+      padding-left: 10px !important; }
+      .ics-viewer .blog.admin .blogsFixedTable tr th:first-child input, .ics-viewer .blog.admin .blogsFixedTable tr td:first-child input, .ics-viewer .blog.admin .lotusTable tr th:first-child input, .ics-viewer .blog.admin .lotusTable tr td:first-child input {
+        margin: 0px 0px; }
+    .ics-viewer .blog.admin .blogsFixedTable tr th:last-child, .ics-viewer .blog.admin .blogsFixedTable tr td:last-child, .ics-viewer .blog.admin .lotusTable tr th:last-child, .ics-viewer .blog.admin .lotusTable tr td:last-child {
+      padding-right: 10px !important; }
+  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+2) th,
+  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+3) th,
+  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+3) td,
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+2) th,
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+2) td,
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+3) th,
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+3) td, .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+2) th,
+  .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+3) th,
+  .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+3) td,
+  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+2) th,
+  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+2) td,
+  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+3) th,
+  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+3) td {
+    background-color: #F3F3F3; }
+  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic td, .ics-viewer .blog.admin .lotusTable tr.normalTopic td {
+    padding-bottom: 12px !important; }
+  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore td, .ics-viewer .blog.admin .lotusTable tr.lotusMore td {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore td .lotusMeta > span, .ics-viewer .blog.admin .lotusTable tr.lotusMore td .lotusMeta > span {
+      vertical-align: baseline !important;
+      margin-bottom: 0 !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOff, .ics-viewer .blog .lotusViewControl .lotusTileOn,
+  .ics-viewer .blog .lotusViewControl .lotusTileOff,
+  .ics-viewer .blog .lotusViewControl .lotusDetailsOn,
+  .ics-viewer .blog .lotusViewControl .lotusDetailsOff,
+  .ics-viewer .blog .lotusViewControl .lotusSummaryOn,
+  .ics-viewer .blog .lotusViewControl .lotusSummaryOff {
+    padding-bottom: 2px !important;
+    background-size: 18px 18px !important;
+    background-position: 2px 2px !important;
+    border: 1px solid transparent !important;
+    border-bottom: 2px solid transparent !important;
+    padding: 2px !important;
+    margin: 3px !important; }
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOn:focus,
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOff:focus,
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOn:focus,
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOff:focus,
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOn:focus,
+    .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOff:focus, .ics-viewer .blog .lotusViewControl .lotusTileOn:focus,
+    .ics-viewer .blog .lotusViewControl .lotusTileOff:focus,
+    .ics-viewer .blog .lotusViewControl .lotusDetailsOn:focus,
+    .ics-viewer .blog .lotusViewControl .lotusDetailsOff:focus,
+    .ics-viewer .blog .lotusViewControl .lotusSummaryOn:focus,
+    .ics-viewer .blog .lotusViewControl .lotusSummaryOff:focus {
+      outline: 1px solid #3C6DF0 !important;
+      outline-width: 1px !important;
+      outline-style: solid !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusView.lotusTileOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusView.lotusDetailsOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusView.lotusSummaryOff, .ics-viewer .blog .lotusViewControl .lotusView.lotusTileOff,
+  .ics-viewer .blog .lotusViewControl .lotusView.lotusDetailsOff,
+  .ics-viewer .blog .lotusViewControl .lotusView.lotusSummaryOff {
+    border-color: transparent !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOn, .ics-viewer .blog .lotusViewControl .lotusTileOn,
+  .ics-viewer .blog .lotusViewControl .lotusDetailsOn,
+  .ics-viewer .blog .lotusViewControl .lotusSummaryOn {
+    border-bottom: 2px solid #3C6DF0 !important;
+    top: 0 !important;
+    bottom: 0 !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusTileOn, .ics-viewer .blog .lotusViewControl .lotusTileOff,
+  .ics-viewer .blog .lotusViewControl .lotusTileOn {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cdefs%3E%3Cpolygon id=%22path-1%22 points=%225.0001 0 10 0 10 10 0.0002 10 0.0002 0%22%3E%3C/polygon%3E%3C/defs%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22grid-view_24-copy-3%22%3E%3Cg id=%22grid-view%22 transform=%22translate(1.000000, 1.000000)%22%3E%3Cpath d=%22M10,0 L2.002,0 C0.896,0 0,0.896 0,2.002 L0,10 L10,10 L10,0 Z M9,1 L9,9 L1,9 L1,2.002 C1,1.449 1.449,1 2.002,1 L9,1 L9,1 Z%22 id=%22Fill-1%22 fill=%22%23595859%22%3E%3C/path%3E%3Cg id=%22Group-5%22 transform=%22translate(12.000000, 0.000000)%22%3E%3Cmask id=%22mask-2%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-1%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-4%22%3E%3C/g%3E%3Cpath d=%22M7.9982,0 L0.0002,0 L0.0002,10 L10.0002,10 L10.0002,2.002 C10.0002,0.896 9.1042,0 7.9982,0 M7.9982,1 C8.5502,1 9.0002,1.449 9.0002,2.002 L9.0002,9 L1.0002,9 L1.0002,1 L7.9982,1%22 id=%22Fill-3%22 fill=%22%23595859%22 mask=%22url(%23mask-2)%22%3E%3C/path%3E%3C/g%3E%3Cpath d=%22M10,12 L0,12 L0,19.998 C0,21.104 0.896,22 2.002,22 L10,22 L10,12 Z M9,13 L9,21 L2.002,21 C1.449,21 1,20.551 1,19.998 L1,13 L9,13 L9,13 Z%22 id=%22Fill-6%22 fill=%22%23595859%22%3E%3C/path%3E%3Cpath d=%22M22,12 L12,12 L12,22 L19.998,22 C21.104,22 22,21.104 22,19.998 L22,12 Z M21,13 L21,19.998 C21,20.551 20.551,21 19.998,21 L13,21 L13,13 L21,13 L21,13 Z%22 id=%22Fill-8%22 fill=%22%23595859%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOff,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusDetailsOn, .ics-viewer .blog .lotusViewControl .lotusDetailsOff,
+  .ics-viewer .blog .lotusViewControl .lotusDetailsOn {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22list-view_24-copy-9%22%3E%3Crect id=%22Rectangle-Copy-3%22 fill=%22%23595859%22 x=%221%22 y=%2210%22 width=%2220%22 height=%221%22%3E%3C/rect%3E%3Crect id=%22Rectangle-Copy-4%22 fill=%22%23595859%22 x=%221%22 y=%2220%22 width=%2220%22 height=%221%22%3E%3C/rect%3E%3Crect id=%22Rectangle-12%22 stroke=%22%23595859%22 x=%221.5%22 y=%223.5%22 width=%2221%22 height=%224%22%3E%3C/rect%3E%3Crect id=%22Rectangle-12-Copy%22 stroke=%22%23595859%22 x=%221.5%22 y=%2213.5%22 width=%2221%22 height=%224%22%3E%3C/rect%3E%3C/g%3E%3Crect id=%22Rectangle-14%22 stroke=%22%23D5D5D5%22 stroke-width=%220.5%22 x=%22-1.75%22 y=%22-40.75%22 width=%2227.5%22 height=%22142.5%22%3E%3C/rect%3E%3C/g%3E%3C/svg%3E") !important; }
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOn,
+  .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOff, .ics-viewer .blog .lotusViewControl .lotusSummaryOn,
+  .ics-viewer .blog .lotusViewControl .lotusSummaryOff {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cdefs%3E%3Cpolygon id=%22path-1%22 points=%220 6 0 0 8.99985 0 17.9997 0 17.9997 6%22%3E%3C/polygon%3E%3Cpolygon id=%22path-3%22 points=%220 22 18 22 18 4 18 0 0 0%22%3E%3C/polygon%3E%3C/defs%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22list-view_24-copy-8%22%3E%3Cg id=%22list-view%22 transform=%22translate(3.000000, 1.000000)%22%3E%3Cg id=%22Group-3%22%3E%3Cmask id=%22mask-2%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-1%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-2%22%3E%3C/g%3E%3Cpath d=%22M15.9987,0 L2.0017,0 C0.8957,0 -0.0003,0.896 -0.0003,2.001 L-0.0003,6 L17.9997,6 L17.9997,2.001 C17.9997,0.896 17.1037,0 15.9987,0 M15.9987,1 C16.5507,1 16.9997,1.449 16.9997,2.001 L16.9997,5 L0.9997,5 L0.9997,2.001 C0.9997,1.449 1.4497,1 2.0017,1 L15.9987,1%22 id=%22Fill-1%22 fill=%22%23595859%22 mask=%22url(%23mask-2)%22%3E%3C/path%3E%3C/g%3E%3Cmask id=%22mask-4%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-3%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-5%22%3E%3C/g%3E%3Cpath d=%22M0,14 L18,14 L18,8 L0,8 L0,14 Z M1,13 L17,13 L17,9 L1,9 L1,13 Z%22 id=%22Fill-4%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3Cpath d=%22M18,16 L0,16 L0,19.999 C0,21.104 0.896,22 2.001,22 L15.999,22 C17.104,22 18,21.104 18,19.999 L18,16 Z M17,17 L17,19.999 C17,20.551 16.551,21 15.999,21 L2.001,21 C1.449,21 1,20.551 1,19.999 L1,17 L17,17 L17,17 Z%22 id=%22Fill-6%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
+  .ics-viewer #topicList .lotusTable th, .ics-viewer #topicList .lotusTable th a, .ics-viewer #topicList .lotusTable tr.lotusSort #topics, .ics-viewer #topicList .lotusTable tr.lotusSort td a {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #595859 !important; }
+    .ics-viewer #topicList .lotusTable th:lang(en), .ics-viewer #topicList .lotusTable th a:lang(en), .ics-viewer #topicList .lotusTable tr.lotusSort #topics:lang(en), .ics-viewer #topicList .lotusTable tr.lotusSort td a:lang(en) {
+      text-transform: uppercase !important; }
+  .ics-viewer #topicList .lotusTable th {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #topicList .lotusTable th a {
+      text-decoration: none; }
+      .ics-viewer #topicList .lotusTable th a:hover {
+        text-decoration: underline; }
+  .ics-viewer #topicList .lotusTable tr.lotusSort {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #topicList .lotusTable tr.lotusSort #topics {
+      padding: 28px 16px 0 46px !important;
+      border: 1px solid transparent !important;
+      border-bottom: 1px solid #3C6DF0 !important; }
+    .ics-viewer #topicList .lotusTable tr.lotusSort td a {
+      padding: 8px 16px !important;
+      border: 1px solid transparent !important;
+      background-position: calc(100% - 7px) 13px !important; }
+      .ics-viewer #topicList .lotusTable tr.lotusSort td a:hover, .ics-viewer #topicList .lotusTable tr.lotusSort td a:focus {
+        text-decoration: none !important;
+        border-radius: 2px !important;
+        border-color: #3C6DF0 !important; }
+      .ics-viewer #topicList .lotusTable tr.lotusSort td a:hover {
+        background-color: #3C6DF0 !important;
+        color: #FFFFFF !important; }
+      .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusDescending, .ics-viewer #topicList .lotusTable tr.lotusSort td a a.lotusAscending {
+        background-size: 8px 8px !important;
+        padding: 8px 20px 8px 16px !important; }
+      .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusDescending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusDescending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+      .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusAscending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusAscending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer #topicList .lotusTable tr.lotusSort tr.lotusFirst {
+      border-top: 1px solid #3C6DF0 !important; }
+  .ics-viewer #topicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) th, .ics-viewer #topicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.lotusMore) td {
+    background-color: #F3F3F3; }
+  .ics-viewer #topicList .lotusTable tr th, .ics-viewer #topicList .lotusTable tr td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer #topicList .lotusTable tr th:first-child, .ics-viewer #topicList .lotusTable tr td:first-child {
+      padding-left: 10px !important; }
+      .ics-viewer #topicList .lotusTable tr th:first-child input, .ics-viewer #topicList .lotusTable tr td:first-child input {
+        margin: 0px 0px; }
+    .ics-viewer #topicList .lotusTable tr th:last-child, .ics-viewer #topicList .lotusTable tr td:last-child {
+      padding-right: 10px !important; }
+  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+2) th,
+  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+3) th,
+  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+3) td,
+  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+2) th,
+  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+2) td,
+  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+3) th,
+  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+3) td {
+    background-color: #F3F3F3; }
+  .ics-viewer #topicList .lotusTable tr.normalTopic td {
+    padding-bottom: 12px !important; }
+  .ics-viewer #topicList .lotusTable tr.lotusMore td {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer #topicList .lotusTable tr.lotusMore td .lotusMeta > span {
+      vertical-align: baseline !important;
+      margin-bottom: 0 !important; }
   .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostHover, .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
     background-color: #F3F3F3; }
   .ics-viewer .lotusui30 .lotusFlyout .lotusFlyoutHeader {
@@ -1034,6 +1662,9 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     border: .5rem solid transparent;
     border-right: 0.5rem solid #1D3458;
     margin: -1rem 0 0 -1.15rem; }
+  .ics-viewer label {
+    font-weight: 500 !important;
+    color: #595859 !important; }
   .ics-viewer :not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow td {
     display: block !important;
     margin: 0 !important;
@@ -1048,8 +1679,6 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     margin-top: 20px !important; }
   .ics-viewer :not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow td:nth-child(3), .ics-viewer :not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow td:nth-child(2) {
     margin-top: 8px !important; }
-  .ics-viewer :not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow label {
-    color: #595859 !important; }
   .ics-viewer #newCommunityForm .lotusFormTitle h2 label {
     font-weight: 300 !important;
     color: #595859 !important;
@@ -1088,8 +1717,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer [id^="lconn_share_widget_Dialog_"] > div:nth-child(2) > div > form div:nth-child(2) > div > table > tbody tr:nth-child(4) > td:nth-child(2) {
     overflow: hidden !important; }
   .ics-viewer div[id^="lconn_files_widget_ui_FileField_"] {
-    position: relative !important;
-    width: 548px !important; }
+    position: relative !important; }
   .ics-viewer a[id^="lconn_share_widget_HelpLauncher_"]:focus {
     outline: none !important; }
   .ics-viewer [id^="lconn_share_widget_MemberInput_"] table > tbody > tr > td:nth-child(3) {
@@ -1165,15 +1793,44 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     color: #595859 !important; }
   .ics-viewer .lotusFeeds a {
     font-weight: 400 !important; }
-  .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container:focus {
-    border: 2px solid #1D3458; }
-  .ics-viewer div.hopscotch-bubble .hopscotch-bubble-arrow-container {
-    color: #1D3458; }
-  .ics-viewer div.hopscotch-bubble .hopscotch-actions {
-    background-color: #1D3458;
-    border: 1px solid #1D3458; }
-    .ics-viewer div.hopscotch-bubble .hopscotch-actions .hopscotch-nav-arrow {
-      background-color: #1D3458; }
+  .ics-viewer div.hopscotch-bubble {
+    border-radius: 10px; }
+    .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container {
+      border-radius: 10px;
+      width: 300px !important; }
+      .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container:focus {
+        border: 2px solid #3C6DF0; }
+      .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-content {
+        padding-bottom: 60px; }
+        .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-content h3, .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-content .hopscotch-content {
+          color: #000000; }
+        .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-content h3 {
+          padding: 40px 30px 0px 30px;
+          text-align: center; }
+        .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-content .hopscotch-content {
+          text-align: center;
+          line-height: 1.4; }
+      .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions {
+        background-color: #1D3458;
+        background: linear-gradient(to bottom right, #3C6DF0, #2E3F8F);
+        border: 1px solid #1D3458;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px; }
+        .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .hopscotch-nav-arrow {
+          background-color: transparent; }
+          .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .hopscotch-nav-arrow.prev {
+            left: 18px; }
+          .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .hopscotch-nav-arrow.next {
+            right: 18px; }
+        .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .progress-nums {
+          font-weight: 400; }
+      .ics-viewer div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-close {
+        fill: #595859; }
+    .ics-viewer div.hopscotch-bubble .hopscotch-bubble-arrow-container {
+      color: #FFFFFF;
+      fill: #FFFFFF; }
   .ics-viewer .lotusMain {
     padding-left: 0 !important; }
     .ics-viewer .lotusMain #lotusColLeft {
@@ -1185,6 +1842,11 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       .ics-viewer .lotusMain #lotusColLeft #menu_allfolders,
       .ics-viewer .lotusMain #lotusColLeft #menu_allfiles {
         margin-top: 0 !important; }
+      .ics-viewer .lotusMain #lotusColLeft * {
+        max-width: 100% !important; }
+    .ics-viewer .lotusMain .lotusContent {
+      padding-left: 48px !important;
+      margin-left: 0px !important; }
   @media screen and (min-width: 1250px) {
     .ics-viewer .files-independent-scrollbars-compatible,
     .ics-viewer .lotusui30_body,
@@ -1407,12 +2069,38 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       position: relative !important;
       top: -30px !important;
       left: 69px !important; }
-  .ics-viewer .lotusui30 .lotusMessage2 {
-    border-radius: 20px !important; }
-    .ics-viewer .lotusui30 .lotusMessage2 .lotusIcon {
+  .ics-viewer .lotusui30 .lotusMessage2, .ics-viewer .lotusMessage, .ics-viewer .lotusMessage.lotusMeta,
+  .ics-viewer .template-homepage .alert-container {
+    border-radius: 20px !important;
+    border: 2px solid rgba(119, 118, 119, 0.3) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1) !important;
+    background-color: #FFFFFF !important;
+    padding: 0rem 0.5rem !important; }
+    .ics-viewer .lotusui30 .lotusMessage2 img, .ics-viewer .lotusMessage img, .ics-viewer .lotusMessage.lotusMeta img,
+    .ics-viewer .template-homepage .alert-container img {
       border-radius: 50% !important; }
-    .ics-viewer .lotusui30 .lotusMessage2 a.lotusDelete:focus img {
-      outline: 1px solid #000000 !important; }
+  .ics-viewer .template-homepage .alert-container .ic-notification {
+    background-color: transparent !important; }
+    .ics-viewer .template-homepage .alert-container .ic-notification .leftIcon {
+      border-radius: 50% !important; }
+      .ics-viewer .template-homepage .alert-container .ic-notification .leftIcon svg {
+        height: 20px !important;
+        width: 20px !important; }
+  .ics-viewer .template-homepage .alert-container .close span {
+    outline: 1px solid #000000 !important; }
+  .ics-viewer .lotusMessage span[id$="Message"] {
+    padding: 16px 40px 10px 45px !important; }
+  .ics-viewer .lotusMessage .lotusTable {
+    padding-top: 4px !important; }
+    .ics-viewer .lotusMessage .lotusTable span {
+      margin-right: 0px !important;
+      margin-left: 2px !important; }
+  .ics-viewer .lotusMessage img {
+    margin: 10px 10px 5px 10px !important; }
+  .ics-viewer .lotusMessage .lotusDelete img {
+    margin: 10px 15px 0 0 !important; }
+  .ics-viewer .lconnCompactMessage.lotusMessageContainer {
+    width: auto !important; }
   .ics-viewer .dijitDialogUnderlay {
     background: rgba(0, 0, 0, 0.6) !important;
     opacity: 1 !important; }
@@ -1450,7 +2138,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     background-attachment: scroll !important;
     background-clip: border-box !important;
     background-color: transparent !important;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
     background-origin: padding-box !important;
     background-position-x: center !important;
     background-position-y: center !important;
@@ -1463,11 +2151,46 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .lotusDialogClose:focus, .ics-viewer .dijitDialogCloseIcon:focus {
       outline: 1px solid #595859 !important;
       outline-offset: 1px !important; }
-  .ics-viewer .pickerDropfilesHorizentalPrompt {
-    width: 100vw !important;
+  .ics-viewer img.lconnPickerSourceLabelIconCloud {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23595859%22 d=%22M21,12L21,12l0-10c0-1.1-0.9-2-2-2H5C3.9,0,3,0.9,3,2v20c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-9h0V12z M5,1h14 c0.5,0,1,0.4,1,1v10H4V2C4,1.4,4.4,1,5,1z M20,22c0,0.5-0.4,1-1,1H5c-0.5,0-1-0.4-1-1v-9h16V22z%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%226%22 width=%226%22 height=%221%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%2217%22 width=%226%22 height=%221%22/%3E%3C/svg%3E") !important;
+    background-size: 16px 16px !important;
+    background-position: 0px 0px !important; }
+  .ics-viewer img.lconnPickerSourceLabelIconUpload {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpolygon fill=%22%23595859%22 points=%2212,0 5,7 5.7,7.7 11.5,1.9 11.5,14 12.5,14 12.5,1.9 18.3,7.7 19,7 %22/%3E%3Cpath fill=%22%23595859%22 d=%22M21,9h-5v1h5c0.6,0,1,0.4,1,1v10c0,0.6-0.4,1-1,1H3c-0.6,0-1-0.4-1-1V11c0-0.6,0.4-1,1-1h5V9H3	c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V11C23,9.9,22.1,9,21,9%22/%3E%3C/svg%3E") !important;
+    background-size: 16px 16px !important;
+    background-position: 0px 0px !important; }
+  .ics-viewer img.lconnPickerSourceLabelIconCommunity {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23595859%22 d=%22M38,10l-6,6V2H14v6H2v34c0,2.2,1.8,4,4,4h8h2h14h2h10c2.2,0,4-1.8,4-4V18L38,10z M14,44H6c-1.1,0-2-0.9-2-2V10h10V44z M30,44H16V8V4h14v14V44z M44,42c0,1.1-0.9,2-2,2H32V18.8l6-6l6,6V42z%22/%3E%3Cpath fill=%22%23595859%22 d=%22M34,24c0,2.2,1.8,4,4,4s4-1.8,4-4s-1.8-4-4-4S34,21.8,34,24z M40,24c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S40,22.9,40,24z%22/%3E%3Cpath fill=%22%23595859%22 d=%22M18,28h10V18H18V28z M20,20h6v6h-6V20z%22/%3E%3Cpath fill=%22%23595859%22 d=%22M18,16h10V6H18V16z M20,8h6v6h-6V8z%22/%3E%3Crect fill=%22%23595859%22 x=%226%22 y=%2214%22 width=%226%22 height=%222%22/%3E%3Crect fill=%22%23595859%22 x=%226%22 y=%2218%22 width=%226%22 height=%222%22/%3E%3Crect fill=%22%23595859%22 x=%226%22 y=%2222%22 width=%226%22 height=%222%22/%3E%3C/svg%3E") !important;
+    background-size: 16px 16px !important;
+    background-position: 0px 0px !important; }
+  .ics-viewer .lconnPickerSourceToCheck > div:hover img.lconnPickerSourceLabelIconCloud {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M21,12L21,12l0-10c0-1.1-0.9-2-2-2H5C3.9,0,3,0.9,3,2v20c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-9h0V12z M5,1h14 c0.5,0,1,0.4,1,1v10H4V2C4,1.4,4.4,1,5,1z M20,22c0,0.5-0.4,1-1,1H5c-0.5,0-1-0.4-1-1v-9h16V22z%22/%3E%3Crect fill=%22%23FFFFFF%22 x=%229%22 y=%226%22 width=%226%22 height=%221%22/%3E%3Crect fill=%22%23FFFFFF%22 x=%229%22 y=%2217%22 width=%226%22 height=%221%22/%3E%3C/svg%3E") !important; }
+  .ics-viewer .lconnPickerSourceToCheck > div:hover img.lconnPickerSourceLabelIconUpload {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpolygon fill=%22%23FFFFFF%22 points=%2212,0 5,7 5.7,7.7 11.5,1.9 11.5,14 12.5,14 12.5,1.9 18.3,7.7 19,7 %22/%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M21,9h-5v1h5c0.6,0,1,0.4,1,1v10c0,0.6-0.4,1-1,1H3c-0.6,0-1-0.4-1-1V11c0-0.6,0.4-1,1-1h5V9H3	c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V11C23,9.9,22.1,9,21,9%22/%3E%3C/svg%3E") !important; }
+  .ics-viewer .lconnPickerSourceToCheck > div:hover img.lconnPickerSourceLabelIconCommunity {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M38,10l-6,6V2H14v6H2v34c0,2.2,1.8,4,4,4h8h2h14h2h10c2.2,0,4-1.8,4-4V18L38,10z M14,44H6c-1.1,0-2-0.9-2-2V10h10V44z M30,44H16V8V4h14v14V44z M44,42c0,1.1-0.9,2-2,2H32V18.8l6-6l6,6V42z%22/%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M34,24c0,2.2,1.8,4,4,4s4-1.8,4-4s-1.8-4-4-4S34,21.8,34,24z M40,24c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S40,22.9,40,24z%22/%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M18,28h10V18H18V28z M20,20h6v6h-6V20z%22/%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M18,16h10V6H18V16z M20,8h6v6h-6V8z%22/%3E%3Crect fill=%22%23FFFFFF%22 x=%226%22 y=%2214%22 width=%226%22 height=%222%22/%3E%3Crect fill=%22%23FFFFFF%22 x=%226%22 y=%2218%22 width=%226%22 height=%222%22/%3E%3Crect fill=%22%23FFFFFF%22 x=%226%22 y=%2222%22 width=%226%22 height=%222%22/%3E%3C/svg%3E") !important; }
+  .ics-viewer .lconnPicker .pickerDropfilesHorizentalPrompt {
+    width: 100% !important;
     display: flex !important;
     flex-direction: column;
     justify-content: center; }
+  .ics-viewer .lconnPicker .pickerDropfilesVerticalPrompt {
+    height: 100% !important;
+    max-height: 300px !important; }
+  .ics-viewer .lconnPicker .lconnUploadContainer.pickerInputSpan.pickerBrowserContainer {
+    padding-top: 10px; }
+  .ics-viewer .lconnPicker .lotusDialogBorder .lconnUploadRectangle {
+    background: none; }
+  .ics-viewer .lconnPicker .pickerDnDLabelRow {
+    margin-bottom: 10px; }
+  .ics-viewer .lconnPicker .pickerDropfilesList {
+    margin-bottom: 20px; }
+  .ics-viewer div[id^="lconn_files_widget_CompactFilePicker"][id$="desp"] {
+    margin-bottom: 5px !important; }
+  .ics-viewer div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] {
+    height: 32px !important; }
+  .ics-viewer div[dojoattachpoint="streamNode"] {
+    padding-top: 1rem !important; }
   .ics-viewer .lconnPickerSourceArea, .ics-viewer .lotusUploadFile {
     width: 100% !important; }
   .ics-viewer .lotusDialogHeader,
@@ -1499,7 +2222,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -1542,15 +2265,6 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer form.lotusDialog.lotusForm .lconnPickerSourceArea > div {
     min-width: 0px !important;
     max-width: 100% !important; }
-  .ics-viewer #body .dijitDialogTitleBar {
-    padding-bottom: 0px !important;
-    padding-top: 35px !important;
-    padding-left: 32px !important; }
-  .ics-viewer #exportVcardDialog {
-    min-width: 400px; }
-    .ics-viewer #exportVcardDialog .lotusFormFieldRow td {
-      display: table-cell !important;
-      padding: 0 0 10px !important; }
   .ics-viewer .lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
     width: 100% !important; }
     .ics-viewer .lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] .switchContainer, .ics-viewer .lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] .tabbedSwitch {
@@ -1572,6 +2286,15 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
         border-bottom: 1px solid #3C6DF0 !important; }
   .ics-viewer [id^="lconn_files_widget_UploadFile_"] {
     display: inline-block !important; }
+  .ics-viewer #body .dijitDialogTitleBar {
+    padding-bottom: 0px !important;
+    padding-top: 35px !important;
+    padding-left: 32px !important; }
+  .ics-viewer #exportVcardDialog {
+    min-width: 400px; }
+    .ics-viewer #exportVcardDialog .lotusFormFieldRow td {
+      display: table-cell !important;
+      padding: 0 0 10px !important; }
   .ics-viewer .scRemove.lotusForm2 .lotusIndent10 {
     padding: 20px 0 !important;
     position: relative; }
@@ -1793,12 +2516,15 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     cursor: pointer !important;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
     background-size: 0.75rem !important;
-    background-position: right !important;
+    background-position: right .4rem !important;
     background-repeat: no-repeat !important;
     height: auto !important; }
     .ics-viewer select:focus {
       border-bottom: 2px solid #3C6DF0 !important;
       outline: none !important; }
+    .ics-viewer select[disabled] {
+      cursor: not-allowed !important;
+      color: #969696 !important; }
   .ics-viewer .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer [id^="dijit_form_ComboBox_"]:focus {
     border-bottom: 2px solid #3C6DF0 !important; }
   .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_searchSourceDropdown"],
@@ -1818,13 +2544,17 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     cursor: pointer !important;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
     background-size: 0.75rem !important;
-    background-position: right !important;
+    background-position: right .4rem !important;
     background-repeat: no-repeat !important;
     height: auto !important; }
     .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_searchSourceDropdown"]:focus,
     .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_roleDropdown"]:focus {
       border-bottom: 2px solid #3C6DF0 !important;
       outline: none !important; }
+    .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_searchSourceDropdown"][disabled],
+    .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_roleDropdown"][disabled] {
+      cursor: not-allowed !important;
+      color: #969696 !important; }
   .ics-viewer select[id^="compactpicker_select_"] {
     min-width: 0 !important; }
   .ics-viewer .lotusTabContainer {
@@ -1885,7 +2615,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
         margin: 0 !important;
         font-size: inherit !important;
         color: #595859 !important;
-        border-radius: 2px;
+        border-radius: 2px !important;
         border: 1px solid transparent !important;
         font-weight: 500 !important; }
         .ics-viewer .lotusTabContainer .lotusTabs li a:hover {
@@ -1998,8 +2728,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
         display: inline-block; }
       .ics-viewer #socialTags #tagsYouAddedView .lotusTags .lotusCommentBubbleBody .lotusTags > li a, .ics-viewer #socialTags #tagsList .lotusTags .lotusCommentBubbleBody .lotusTags > li a {
         padding: 0 !important;
-        background: none !important;
-        font-weight: 500 !important; }
+        background: none !important; }
   .ics-viewer #socialTags #tagsYouAddedView .lotusTags a, .ics-viewer #socialTags #tagsList .lotusTags a {
     color: #000000 !important;
     border-radius: 0.75rem !important;
@@ -2017,8 +2746,12 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     overflow: hidden;
     text-overflow: ellipsis;
     background: #FFFFFF !important; }
+    .ics-viewer #socialTags #tagsYouAddedView .lotusTags a a, .ics-viewer #socialTags #tagsList .lotusTags a a {
+      color: #000000 !important;
+      font-weight: normal !important; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags a:hover, .ics-viewer #socialTags #tagsList .lotusTags a:hover {
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      color: #000000 !important; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags a:focus, .ics-viewer #socialTags #tagsList .lotusTags a:focus {
       text-decoration: underline !important; }
       .ics-viewer #socialTags #tagsYouAddedView .lotusTags a:focus img, .ics-viewer #socialTags #tagsList .lotusTags a:focus img {
@@ -2031,19 +2764,16 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     left: auto !important;
     padding-right: .5rem !important;
     max-width: calc(100% - 58px) !important;
-    box-sizing: border-box;
-    font-weight: 500 !important; }
+    box-sizing: border-box; }
   .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight {
     order: 2; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete img, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete img {
-      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
       background-position: 0px 0px !important;
       height: 9px;
       width: 9px;
       opacity: 1;
       background-size: contain !important; }
-    .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete:hover img, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete:hover img {
-      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete, .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lconnTagCount, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lconnTagCount {
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
@@ -2051,8 +2781,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       order: 2;
       position: relative;
       overflow: visible;
-      z-index: 2;
-      font-weight: 500 !important; }
+      z-index: 2; }
       .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete:before, .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lconnTagCount:before, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete:before, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lconnTagCount:before {
         content: '\2022';
         display: block;
@@ -2075,8 +2804,6 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     padding-left: 0 !important; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lconnTagCount:before {
       display: none; }
-  .ics-viewer #socialTags #tagCloud .lotusTagCloud.lotusChunk a {
-    font-weight: 500 !important; }
   .ics-viewer #socialTags #add-tag-view #tagInputForm > .lotusBtnImg {
     padding: 0 !important;
     height: auto !important;
@@ -2124,11 +2851,18 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     vertical-align: top !important;
     max-width: 100rem !important;
     margin: .5rem .5rem 0 0 !important; }
+    .ics-viewer .contactsSearch a.lotusFilter a,
+    .ics-viewer #searchInfo a.lotusFilter a,
+    .ics-viewer .lotusMeta a.lotusFilter a,
+    .ics-viewer .lotusSearchFilterSection a.lotusFilter a {
+      color: #000000 !important;
+      font-weight: normal !important; }
     .ics-viewer .contactsSearch a.lotusFilter:hover,
     .ics-viewer #searchInfo a.lotusFilter:hover,
     .ics-viewer .lotusMeta a.lotusFilter:hover,
     .ics-viewer .lotusSearchFilterSection a.lotusFilter:hover {
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      color: #000000 !important; }
     .ics-viewer .contactsSearch a.lotusFilter:focus,
     .ics-viewer #searchInfo a.lotusFilter:focus,
     .ics-viewer .lotusMeta a.lotusFilter:focus,
@@ -2149,7 +2883,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer #searchInfo a.lotusFilter img.lotusDelete,
     .ics-viewer .lotusMeta a.lotusFilter img.lotusDelete,
     .ics-viewer .lotusSearchFilterSection a.lotusFilter img.lotusDelete {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
       height: 9px;
       width: 9px;
       opacity: 1 !important;
@@ -2157,11 +2891,6 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       vertical-align: middle !important;
       background-size: contain !important;
       background-position: 0px 0px !important; }
-      .ics-viewer .contactsSearch a.lotusFilter img.lotusDelete:hover,
-      .ics-viewer #searchInfo a.lotusFilter img.lotusDelete:hover,
-      .ics-viewer .lotusMeta a.lotusFilter img.lotusDelete:hover,
-      .ics-viewer .lotusSearchFilterSection a.lotusFilter img.lotusDelete:hover {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important; }
   .ics-viewer .contactsSearch .lotusFilters2,
   .ics-viewer #searchInfo .lotusFilters2,
   .ics-viewer .lotusMeta .lotusFilters2,
@@ -2203,10 +2932,16 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       overflow: hidden;
       text-overflow: ellipsis;
       background: #FFFFFF !important; }
+      .ics-viewer #lconnTagWidget_tagList > li > span a, .ics-viewer #lconnTagWidget_tagList > li > a a,
+      .ics-viewer ul[id*="_tagList"] > li > span a,
+      .ics-viewer ul[id*="_tagList"] > li > a a {
+        color: #000000 !important;
+        font-weight: normal !important; }
       .ics-viewer #lconnTagWidget_tagList > li > span:hover, .ics-viewer #lconnTagWidget_tagList > li > a:hover,
       .ics-viewer ul[id*="_tagList"] > li > span:hover,
       .ics-viewer ul[id*="_tagList"] > li > a:hover {
-        text-decoration: none !important; }
+        text-decoration: none !important;
+        color: #000000 !important; }
       .ics-viewer #lconnTagWidget_tagList > li > span:focus, .ics-viewer #lconnTagWidget_tagList > li > a:focus,
       .ics-viewer ul[id*="_tagList"] > li > span:focus,
       .ics-viewer ul[id*="_tagList"] > li > a:focus {
@@ -2262,8 +2997,12 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     text-overflow: ellipsis;
     background: #FFFFFF !important;
     box-sizing: border-box; }
+    .ics-viewer ul.lotusRelatedTags a a {
+      color: #000000 !important;
+      font-weight: normal !important; }
     .ics-viewer ul.lotusRelatedTags a:hover {
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      color: #000000 !important; }
     .ics-viewer ul.lotusRelatedTags a:focus {
       text-decoration: underline !important; }
       .ics-viewer ul.lotusRelatedTags a:focus img {
@@ -2302,9 +3041,14 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       overflow: hidden;
       text-overflow: ellipsis;
       background: #FFFFFF !important; }
+      .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li a a,
+      .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li a a {
+        color: #000000 !important;
+        font-weight: normal !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li a:hover,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li a:hover {
-        text-decoration: none !important; }
+        text-decoration: none !important;
+        color: #000000 !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li a:focus,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li a:focus {
         text-decoration: underline !important; }
@@ -2338,9 +3082,14 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       padding-right: .5rem !important;
       max-width: calc(100% - 58px) !important;
       box-sizing: border-box; }
+      .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li span.lotusLeft a,
+      .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li span.lotusLeft a {
+        color: #000000 !important;
+        font-weight: normal !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li span.lotusLeft:hover,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li span.lotusLeft:hover {
-        text-decoration: none !important; }
+        text-decoration: none !important;
+        color: #000000 !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li span.lotusLeft:focus,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li span.lotusLeft:focus {
         text-decoration: underline !important; }
@@ -2355,15 +3104,12 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       padding-left: 0 !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li a.lotusDelete img,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li a.lotusDelete img {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
         height: 9px;
         width: 9px;
         opacity: 1;
         background-size: contain !important;
         background-position: 0px 0px !important; }
-      .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li a.lotusDelete:hover img,
-      .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li a.lotusDelete:hover img {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important; }
   .ics-viewer #lconnTagWidget > div > div {
     margin-bottom: 1rem; }
   .ics-viewer #lconnTagWidgetcommonTagsTypeAhead {
@@ -2408,14 +3154,27 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
       line-height: 1.25em; }
   .ics-viewer .lotusChunk.lotusSearch {
     width: 100%; }
-  .ics-viewer .lotusList.lotusEditable.lotusMeta a {
-    font-weight: 500 !important; }
-  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="list"] {
-    position: relative !important;
-    top: 7px !important; }
-  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="separator"] {
+  .ics-viewer .lotusContent .lotusTags.lotusMeta > ul, .ics-viewer .lotusContent .lotusTags.lotusMeta > span:not(.lotusHidden), .ics-viewer .lotusContent .lotusTags.lotusMeta > form,
+  .ics-viewer .lotusContent .lotusTags > ul,
+  .ics-viewer .lotusContent .lotusTags > span:not(.lotusHidden),
+  .ics-viewer .lotusContent .lotusTags > form {
+    display: inline-block;
+    vertical-align: middle; }
+  .ics-viewer .lotusContent .lotusTags.lotusMeta ul,
+  .ics-viewer .lotusContent .lotusTags ul {
+    margin-top: -1px; }
+  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="list"],
+  .ics-viewer .lotusContent .lotusTags.lotusMeta ul[role="listbox"],
+  .ics-viewer .lotusContent .lotusTags span[role="list"],
+  .ics-viewer .lotusContent .lotusTags ul[role="listbox"] {
+    position: relative !important; }
+  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="separator"],
+  .ics-viewer .lotusContent .lotusTags span[role="separator"] {
     display: none !important; }
-  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] {
+  .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"],
+  .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag,
+  .ics-viewer .lotusContent .lotusTags span[role="listitem"],
+  .ics-viewer .lotusContent .lotusTags li.lotusTag {
     color: #000000 !important;
     border-radius: 0.75rem !important;
     line-height: 1.5rem !important;
@@ -2434,30 +3193,99 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     background: #F3F3F3 !important;
     margin-left: 4px !important;
     margin-right: 4px !important; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:hover {
-      text-decoration: none !important; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:focus {
-      text-decoration: underline !important; }
-      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:focus img {
-        border-bottom: 1px solid currentColor; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.bidiAware {
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"] a,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag a {
       color: #000000 !important;
       font-weight: normal !important; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.bidiAware:hover {
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:hover,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag:hover,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"]:hover,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag:hover {
+      text-decoration: none !important;
+      color: #000000 !important; }
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:focus,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag:focus,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"]:focus,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag:focus {
+      text-decoration: underline !important; }
+      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"]:focus img,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag:focus img,
+      .ics-viewer .lotusContent .lotusTags span[role="listitem"]:focus img,
+      .ics-viewer .lotusContent .lotusTags li.lotusTag:focus img {
+        border-bottom: 1px solid currentColor; }
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.bidiAware,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a.bidiAware,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"] a.bidiAware,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag a.bidiAware {
+      color: #000000 !important;
+      font-weight: normal !important; }
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.bidiAware:hover,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a.bidiAware:hover,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"] a.bidiAware:hover,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag a.bidiAware:hover {
       color: #3C6DF0 !important; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"] {
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"],
+    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.qkrRemove,
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a[role="button"],
+    .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a.qkrRemove,
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"] a[role="button"],
+    .ics-viewer .lotusContent .lotusTags span[role="listitem"] a.qkrRemove,
+    .ics-viewer .lotusContent .lotusTags li.lotusTag a[role="button"],
+    .ics-viewer .lotusContent .lotusTags li.lotusTag a.qkrRemove {
       position: relative;
-      left: 3px; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"] img {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23000000%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
-      background-position: 0px 0px !important;
-      width: 9px;
-      height: 9px;
-      background-size: contain; }
-    .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"]:hover img {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
-      opacity: 1 !important; }
-  .ics-viewer .lotusContent .lotusTags.lotusMeta form[style="display: inline;"] {
+      height: 100%;
+      margin: 0 3px;
+      padding: .45rem 0;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle; }
+      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"] img,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.qkrRemove img,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a[role="button"] img,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a.qkrRemove img,
+      .ics-viewer .lotusContent .lotusTags span[role="listitem"] a[role="button"] img,
+      .ics-viewer .lotusContent .lotusTags span[role="listitem"] a.qkrRemove img,
+      .ics-viewer .lotusContent .lotusTags li.lotusTag a[role="button"] img,
+      .ics-viewer .lotusContent .lotusTags li.lotusTag a.qkrRemove img {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23000000%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+        background-position: 0px 0px !important;
+        width: 9px;
+        height: 9px;
+        background-size: contain; }
+      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a[role="button"]:after,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a.qkrRemove:after,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a[role="button"]:after,
+      .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a.qkrRemove:after,
+      .ics-viewer .lotusContent .lotusTags span[role="listitem"] a[role="button"]:after,
+      .ics-viewer .lotusContent .lotusTags span[role="listitem"] a.qkrRemove:after,
+      .ics-viewer .lotusContent .lotusTags li.lotusTag a[role="button"]:after,
+      .ics-viewer .lotusContent .lotusTags li.lotusTag a.qkrRemove:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 13px;
+        height: 60%;
+        background-color: #F3F3F3; }
+  .ics-viewer .lotusContent .lotusTags.lotusMeta:not([aria-expanded="true"]) li.lotusTag a,
+  .ics-viewer .lotusContent .lotusTags:not([aria-expanded="true"]) li.lotusTag a {
+    display: block;
+    position: relative; }
+    .ics-viewer .lotusContent .lotusTags.lotusMeta:not([aria-expanded="true"]) li.lotusTag a:after,
+    .ics-viewer .lotusContent .lotusTags:not([aria-expanded="true"]) li.lotusTag a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20%;
+      left: 100%;
+      width: 5px;
+      height: 60%;
+      background-color: #F3F3F3; }
+  .ics-viewer .lotusContent .lotusTags.lotusMeta form[style="display: inline;"],
+  .ics-viewer .lotusContent .lotusTags form[style="display: inline;"] {
     display: block !important;
     margin-top: 14px !important;
     margin-bottom: 8px !important; }
@@ -2478,8 +3306,12 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     overflow: hidden;
     text-overflow: ellipsis;
     background: #F3F3F3 !important; }
+    .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a.lotusFilter a {
+      color: #000000 !important;
+      font-weight: normal !important; }
     .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a.lotusFilter:hover {
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      color: #000000 !important; }
     .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a.lotusFilter:focus {
       text-decoration: underline !important; }
       .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a.lotusFilter:focus img {
@@ -2487,17 +3319,195 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a.lotusFilter:hover {
       text-decoration: none !important; }
   .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a[role="button"] img {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%23000000%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23000000%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
     background-position: 0px 0px !important;
     width: 9px;
     height: 9px;
     background-size: contain !important; }
-  .ics-viewer .lotusDialogContent div[class^="lotusFilters"] a[role="button"]:hover img {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22 style=%22enable-background:new 0 0 12 12;%22 xml:space=%22preserve%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
-    opacity: 1 !important; }
   .ics-viewer #contactsTagWidget_tagListView {
     max-height: 12.75rem;
     overflow: auto; }
+  .ics-viewer .lotusContent form#entryform .lotusTags span[role="listitem"] {
+    overflow: visible !important;
+    position: relative; }
+    .ics-viewer .lotusContent form#entryform .lotusTags span[role="listitem"] a, .ics-viewer .lotusContent form#entryform .lotusTags span[role="listitem"] a:hover, .ics-viewer .lotusContent form#entryform .lotusTags span[role="listitem"] a:focus {
+      color: #595859 !important; }
+    .ics-viewer .lotusContent form#entryform .lotusTags span[role="listitem"]:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 100%;
+      height: 100%;
+      width: 7px;
+      background-color: #FFFFFF; }
+  .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span,
+  .ics-viewer #topicList #forumTagEditer > span,
+  .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span {
+    font-size: 0; }
+    .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span > span[role="listitem"],
+    .ics-viewer #topicList #forumTagEditer > span > span[role="listitem"],
+    .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span > span[role="listitem"] {
+      cursor: default !important; }
+    .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText),
+    .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"],
+    .ics-viewer #topicList #forumTagEditer > span span:not(.lotusAltText),
+    .ics-viewer #topicList #forumTagEditer > span a[role="listitem"],
+    .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText),
+    .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] {
+      color: #000000 !important;
+      border-radius: 0.75rem !important;
+      line-height: 1.5rem !important;
+      font-size: 0.75rem !important;
+      height: 1.5rem !important;
+      padding: 0 1rem !important;
+      width: auto !important;
+      max-width: 100%;
+      display: inline-block !important;
+      margin: 0 !important;
+      font-weight: normal !important;
+      border: none !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: #F3F3F3 !important;
+      margin: .15rem !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText) a,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] a,
+      .ics-viewer #topicList #forumTagEditer > span span:not(.lotusAltText) a,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] a,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText) a,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] a {
+        color: #000000 !important;
+        font-weight: normal !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):hover,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:hover,
+      .ics-viewer #topicList #forumTagEditer > span span:not(.lotusAltText):hover,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"]:hover,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):hover,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:hover {
+        text-decoration: none !important;
+        color: #000000 !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus,
+      .ics-viewer #topicList #forumTagEditer > span span:not(.lotusAltText):focus,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"]:focus,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus {
+        text-decoration: underline !important; }
+        .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span:not(.lotusAltText):focus img,
+        .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"]:focus img,
+        .ics-viewer #topicList #forumTagEditer > span span:not(.lotusAltText):focus img,
+        .ics-viewer #topicList #forumTagEditer > span a[role="listitem"]:focus img,
+        .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span:not(.lotusAltText):focus img,
+        .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"]:focus img {
+          border-bottom: 1px solid currentColor; }
+    .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"],
+    .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"],
+    .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"],
+    .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"],
+    .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"],
+    .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] {
+      color: #000000 !important;
+      border-radius: 0.75rem !important;
+      line-height: 1.5rem !important;
+      font-size: 0.75rem !important;
+      height: 1.5rem !important;
+      padding: 0 1rem !important;
+      width: auto !important;
+      max-width: 100%;
+      display: inline-block !important;
+      margin: 0 !important;
+      font-weight: normal !important;
+      border: none !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: #F3F3F3 !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      margin: .15rem !important;
+      margin-left: -.75rem !important;
+      padding: 0 1rem 0 0 !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] a,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] a,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] a,
+      .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] a,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] a,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] a {
+        color: #000000 !important;
+        font-weight: normal !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:hover,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:hover,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:hover,
+      .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:hover,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:hover,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:hover {
+        text-decoration: none !important;
+        color: #000000 !important; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus,
+      .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus {
+        text-decoration: underline !important; }
+        .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"]:focus img,
+        .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"]:focus img,
+        .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"]:focus img,
+        .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"]:focus img,
+        .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"]:focus img,
+        .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"]:focus img {
+          border-bottom: 1px solid currentColor; }
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span a[role="listitem"] + a[role="button"] img,
+      .ics-viewer #forum .lotusPostContent .lotusMeta .lotusTags span span[role="listitem"] + a[role="button"] img,
+      .ics-viewer #topicList #forumTagEditer > span a[role="listitem"] + a[role="button"] img,
+      .ics-viewer #topicList #forumTagEditer > span span[role="listitem"] + a[role="button"] img,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span a[role="listitem"] + a[role="button"] img,
+      .ics-viewer .lotusContent span[id^="lconn_forums_TagEditor_"] > span span[role="listitem"] + a[role="button"] img {
+        height: 100% !important;
+        width: 12px !important;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+        background-position: center center !important;
+        background-size: 9px 9px; }
+  .ics-viewer #topicList .lotusFilters a {
+    color: #000000 !important;
+    border-radius: 0.75rem !important;
+    line-height: 1.5rem !important;
+    font-size: 0.75rem !important;
+    height: 1.5rem !important;
+    padding: 0 1rem !important;
+    width: auto !important;
+    max-width: 100%;
+    display: inline-block !important;
+    margin: 0 !important;
+    font-weight: normal !important;
+    border: none !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #F3F3F3 !important;
+    cursor: default !important; }
+    .ics-viewer #topicList .lotusFilters a a {
+      color: #000000 !important;
+      font-weight: normal !important; }
+    .ics-viewer #topicList .lotusFilters a:hover {
+      text-decoration: none !important;
+      color: #000000 !important; }
+    .ics-viewer #topicList .lotusFilters a:focus {
+      text-decoration: underline !important; }
+      .ics-viewer #topicList .lotusFilters a:focus img {
+        border-bottom: 1px solid currentColor; }
+    .ics-viewer #topicList .lotusFilters a .lotusClose {
+      cursor: pointer !important;
+      text-indent: -999px;
+      display: inline-block;
+      height: 100% !important;
+      width: 12px !important;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+      background-position: center center !important;
+      background-size: 9px 9px;
+      background-repeat: no-repeat; }
   .ics-viewer textarea {
     background-color: #F3F3F3 !important;
     border: none !important;
@@ -2521,6 +3531,7 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer #concordnewfilesheet,
   .ics-viewer #concordnewfilepres,
   .ics-viewer input.lotusText,
+  .ics-viewer .blog input[type="text"],
   .ics-viewer .dijitTextBox .typeaheadInput input {
     line-height: 1.5 !important;
     min-width: 10rem !important;
@@ -2555,6 +3566,8 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
     .ics-viewer #concordnewfilepres .dijitTextBoxFocused,
     .ics-viewer input.lotusText:focus,
     .ics-viewer input.lotusText .dijitTextBoxFocused,
+    .ics-viewer .blog input[type="text"]:focus,
+    .ics-viewer .blog input[type="text"] .dijitTextBoxFocused,
     .ics-viewer .dijitTextBox .typeaheadInput input:focus,
     .ics-viewer .dijitTextBox .typeaheadInput input .dijitTextBoxFocused {
       outline: none !important;
@@ -2725,10 +3738,13 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer #appPasswordInfoHelp img,
   .ics-viewer #appPasswordNameHelp img,
   .ics-viewer #enableBiDiInfoHelp img,
+  .ics-viewer #tagsHelpLink img,
+  .ics-viewer a[id*="HelpLink"] img,
   .ics-viewer a[id*="_HelpLauncher_"] img,
   .ics-viewer a[id*="_helpLink"] img,
   .ics-viewer a[class*="_help_link"] img,
-  .ics-viewer .mtgHelp img {
+  .ics-viewer .mtgHelp img,
+  .ics-viewer #tagHelper img {
     height: 12px !important;
     width: 12px !important;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath fill=%22%23595859%22 d=%22M12,0 C5.373,0 0,5.364 0,11.98 C0,18.596 5.373,23.96 12,23.96 C18.627,23.96 24,18.596 24,11.98 C24,5.364 18.627,0 12,0 M12,1 C18.065,1 23,5.926 23,11.98 C23,18.034 18.065,22.96 12,22.96 C5.935,22.96 1,18.034 1,11.98 C1,5.926 5.935,1 12,1%22%3E%3C/path%3E%3Cpath fill=%22%23595859%22 d=%22M10.6582,18.003 L10.6582,17.711 C10.6582,17.01 11.0482,16.504 11.9452,16.504 C12.8422,16.504 13.2322,17.01 13.2322,17.711 L13.2322,18.003 C13.2322,18.704 12.8422,19.21 11.9452,19.21 C11.0482,19.21 10.6582,18.704 10.6582,18.003 L10.6582,18.003 Z M11.1062,14.83 L11.1062,11.675 C13.2122,11.597 14.4602,10.702 14.4602,9.105 L14.4602,8.833 C14.4602,7.567 13.5832,6.769 12.2962,6.769 C10.8922,6.769 10.0342,7.684 9.7212,8.93 L8.1032,8.307 C8.5912,6.652 9.8782,5.153 12.3542,5.153 C14.8112,5.153 16.3912,6.632 16.3912,8.891 C16.3912,11.325 14.5772,12.532 12.8422,12.863 L12.8422,14.83 L11.1062,14.83 Z%22%3E%3C/path%3E%3C/svg%3E") !important;
@@ -2738,14 +3754,19 @@ html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([l
   .ics-viewer #appPasswordInfoHelp:focus img,
   .ics-viewer #appPasswordNameHelp:focus img,
   .ics-viewer #enableBiDiInfoHelp:focus img,
+  .ics-viewer #tagsHelpLink:focus img,
+  .ics-viewer a[id*="HelpLink"]:focus img,
   .ics-viewer a[id*="_HelpLauncher_"]:focus img,
   .ics-viewer a[id*="_helpLink"]:focus img,
   .ics-viewer a[class*="_help_link"]:focus img,
-  .ics-viewer .mtgHelp:focus img {
+  .ics-viewer .mtgHelp:focus img,
+  .ics-viewer #tagHelper:focus img {
     outline: 1px solid #595859 !important;
     outline-offset: 2px; }
   .ics-viewer #enableBiDiInfoHelp img {
     vertical-align: top !important; }
+  .ics-viewer #tagHelper {
+    margin-top: .25rem; }
   .ics-viewer .dijitComboBoxMenuPopup {
     margin-top: 2px !important; }
   .ics-viewer .dijitComboBoxMenu.bhcPeopleTypeAheadMenu {
@@ -2883,10 +3904,10 @@ body#body .ics-viewer .ics-shelf .moreButton.select, .ics-viewer .ics-shelf .mor
 #body .ics-viewer-toolbar .ics-viewer-action-like .checked img, .lotusProfiles .ics-viewer-toolbar .ics-viewer-action-like .checked img, .lotusui.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-like .checked img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath d=%22M17.3,1c-2.2,0-4.1,1-5.3,2.7C10.8,2,8.9,1,6.7,1C3,1,0,4.1,0,7.9c0,1.6,0.6,3.1,1.5,4.3l-0.1-0.1l0.1,0.1 c0.3,0.4,0.7,0.8,1,1.1L12,23l9.5-9.7c0.4-0.3,0.7-0.7,1-1.1l0.1-0.1l-0.1,0.1C23.4,11,24,9.5,24,7.9C24,4.1,21,1,17.3,1%22/%3E%3C/svg%3E") !important; }
 #body .ics-viewer-toolbar .ics-viewer-action-favorite .checked img, .lotusProfiles .ics-viewer-toolbar .ics-viewer-action-favorite .checked img, .lotusui.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-favorite .checked img {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cpath d=%22M19.49,6.64,17.36,4.51a2,2,0,0,0-2.83,0L10.29,8.76a2,2,0,0,0-2.83,0L6.05,10.17l1.41,1.41,2.12,2.12L3.93,19.36l.71.71,5.66-5.66,2.12,2.12,1.41,1.41,1.41-1.41a2,2,0,0,0,0-2.83l4.24-4.24A2,2,0,0,0,19.49,6.64Z%22/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23000000%22 d=%22M19.49,6.64,17.36,4.51a2,2,0,0,0-2.83,0L10.29,8.76a2,2,0,0,0-2.83,0L6.05,10.17l1.41,1.41,2.12,2.12L3.93,19.36l.71.71,5.66-5.66,2.12,2.12,1.41,1.41,1.41-1.41a2,2,0,0,0,0-2.83l4.24-4.24A2,2,0,0,0,19.49,6.64Z%22/%3E%3C/svg%3E") !important;
   background-position: 0px !important; }
 #body .ics-viewer-toolbar .ics-viewer-action-favorite div:not(.checked) img, .lotusProfiles .ics-viewer-toolbar .ics-viewer-action-favorite div:not(.checked) img, .lotusui.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-favorite div:not(.checked) img {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath d=%22M15.9,4.9c0.3,0,0.5,0.1,0.7,0.3l2.1,2.1c0.4,0.4,0.4,1,0,1.4L14.5,13l-0.7,0.7l0.7,0.7c0.2,0.2,0.3,0.4,0.3,0.7 c0,0.3-0.1,0.5-0.3,0.7l-0.7,0.7l-0.7-0.7L11,13.7L10.3,13l0,0l0,0l-2.1-2.1l-0.7-0.7l0.7-0.7c0.2-0.2,0.4-0.3,0.7-0.3 c0.3,0,0.5,0.1,0.7,0.3l0.7,0.7L11,9.5l4.2-4.3C15.4,5,15.7,4.9,15.9,4.9 M15.9,3.9c-0.5,0-1,0.2-1.4,0.6c0,0,0,0,0,0l-4.2,4.2 C9.9,8.4,9.4,8.2,8.9,8.2c-0.5,0-1,0.2-1.4,0.6c0,0,0,0,0,0l-1.4,1.4l1.4,1.4l2.1,2.1l-5.6,5.7l0.7,0.7l5.7-5.7l2.1,2.1l1.4,1.4 l1.4-1.4c0.8-0.8,0.8-2,0-2.8c0,0,0,0,0,0l4.2-4.2c0.8-0.8,0.8-2,0-2.8l-2.1-2.1C17,4.1,16.5,3.9,15.9,3.9L15.9,3.9z%22/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23000000%22 d=%22M15.9,4.9c0.3,0,0.5,0.1,0.7,0.3l2.1,2.1c0.4,0.4,0.4,1,0,1.4L14.5,13l-0.7,0.7l0.7,0.7c0.2,0.2,0.3,0.4,0.3,0.7 c0,0.3-0.1,0.5-0.3,0.7l-0.7,0.7l-0.7-0.7L11,13.7L10.3,13l0,0l0,0l-2.1-2.1l-0.7-0.7l0.7-0.7c0.2-0.2,0.4-0.3,0.7-0.3 c0.3,0,0.5,0.1,0.7,0.3l0.7,0.7L11,9.5l4.2-4.3C15.4,5,15.7,4.9,15.9,4.9 M15.9,3.9c-0.5,0-1,0.2-1.4,0.6c0,0,0,0,0,0l-4.2,4.2 C9.9,8.4,9.4,8.2,8.9,8.2c-0.5,0-1,0.2-1.4,0.6c0,0,0,0,0,0l-1.4,1.4l1.4,1.4l2.1,2.1l-5.6,5.7l0.7,0.7l5.7-5.7l2.1,2.1l1.4,1.4 l1.4-1.4c0.8-0.8,0.8-2,0-2.8c0,0,0,0,0,0l4.2-4.2c0.8-0.8,0.8-2,0-2.8l-2.1-2.1C17,4.1,16.5,3.9,15.9,3.9L15.9,3.9z%22/%3E%3C/svg%3E") !important;
   background-position: 0px !important; }
 #body .ics-viewer-toolbar .ics-viewer-action-close img, .lotusProfiles .ics-viewer-toolbar .ics-viewer-action-close img, .lotusui.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action-close img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23000000%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
@@ -3158,7 +4179,7 @@ ul[data-dojo-attach-point="tagList"] li a:hover {
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -3219,7 +4240,7 @@ ul[data-dojo-attach-point="tagList"] li a:hover {
     transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
     white-space: nowrap !important;
     padding: 9px 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -3458,6 +4479,36 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class*="Activities"],
 .qkrDropAvatar img[class*="Forums"],
 .qkrDropAvatar img[class*="Bookmarks"],
+#pageDetails #wikiContentDiv .lconn-ftype16,
+#pageDetails #wikiContentDiv .lconn-ftype32,
+#pageDetails #wikiContentDiv .lconn-ftype64,
+#pageDetails #wikiContentDiv .ics-viewer-banner .ics-viewer-title .iconsFileTypes16,
+#pageDetails #wikiContentDiv .iconsFileTypes32
+.iconsFileTypes64,
+#pageDetails #wikiContentDiv .lconnSprite-iconFolderClose32,
+#pageDetails #wikiContentDiv .lconnSprite-iconFolderPrivate32,
+#pageDetails #wikiContentDiv .ic-thumb-folder,
+#pageDetails #wikiContentDiv img[class*="Presentation"],
+#pageDetails #wikiContentDiv img[class*="Wikis"],
+#pageDetails #wikiContentDiv img[class*="Blogs"],
+#pageDetails #wikiContentDiv img[class*="Activities"],
+#pageDetails #wikiContentDiv img[class*="Forums"],
+#pageDetails #wikiContentDiv img[class*="Bookmarks"],
+.blog .lconn-ftype16,
+.blog .lconn-ftype32,
+.blog .lconn-ftype64,
+.blog .ics-viewer-banner .ics-viewer-title .iconsFileTypes16,
+.blog .iconsFileTypes32
+.iconsFileTypes64,
+.blog .lconnSprite-iconFolderClose32,
+.blog .lconnSprite-iconFolderPrivate32,
+.blog .ic-thumb-folder,
+.blog img[class*="Presentation"],
+.blog img[class*="Wikis"],
+.blog img[class*="Blogs"],
+.blog img[class*="Activities"],
+.blog img[class*="Forums"],
+.blog img[class*="Bookmarks"],
 .lconnPicker .lconn-ftype16,
 .lconnPicker .lconn-ftype32,
 .lconnPicker .lconn-ftype64,
@@ -3483,6 +4534,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane .ic-thumb-folder,
 .icSearchResultsPage .ic-thumb-folder,
 .qkrDropAvatar .ic-thumb-folder,
+#pageDetails #wikiContentDiv .ic-thumb-folder,
+.blog .ic-thumb-folder,
 .lconnPicker .ic-thumb-folder {
   background-repeat: no-repeat;
   background-size: cover; }
@@ -3499,6 +4552,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage .iconsFileTypes16,
 .qkrDropAvatar .lconn-ftype16,
 .qkrDropAvatar .iconsFileTypes16,
+#pageDetails #wikiContentDiv .lconn-ftype16,
+#pageDetails #wikiContentDiv .iconsFileTypes16,
+.blog .lconn-ftype16,
+.blog .iconsFileTypes16,
 .lconnPicker .lconn-ftype16,
 .lconnPicker .iconsFileTypes16 {
   background-size: 16px 16px !important; }
@@ -3515,6 +4572,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage .ics-viewer-title .iconsFileTypes16,
 .qkrDropAvatar .ics-viewer-title .lconn-ftype16,
 .qkrDropAvatar .ics-viewer-title .iconsFileTypes16,
+#pageDetails #wikiContentDiv .ics-viewer-title .lconn-ftype16,
+#pageDetails #wikiContentDiv .ics-viewer-title .iconsFileTypes16,
+.blog .ics-viewer-title .lconn-ftype16,
+.blog .ics-viewer-title .iconsFileTypes16,
 .lconnPicker .ics-viewer-title .lconn-ftype16,
 .lconnPicker .ics-viewer-title .iconsFileTypes16 {
   background-size: 24px 24px !important;
@@ -3550,6 +4611,14 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .iconsFileTypes32,
 .qkrDropAvatar .lconnSprite-iconFolderClose32,
 .qkrDropAvatar .lconnSprite-iconFolderPrivate32,
+#pageDetails #wikiContentDiv .lconn-ftype32,
+#pageDetails #wikiContentDiv .iconsFileTypes32,
+#pageDetails #wikiContentDiv .lconnSprite-iconFolderClose32,
+#pageDetails #wikiContentDiv .lconnSprite-iconFolderPrivate32,
+.blog .lconn-ftype32,
+.blog .iconsFileTypes32,
+.blog .lconnSprite-iconFolderClose32,
+.blog .lconnSprite-iconFolderPrivate32,
 .lconnPicker .lconn-ftype32,
 .lconnPicker .iconsFileTypes32,
 .lconnPicker .lconnSprite-iconFolderClose32,
@@ -3568,6 +4637,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage .iconsFileTypes64,
 .qkrDropAvatar .lconn-ftype64,
 .qkrDropAvatar .iconsFileTypes64,
+#pageDetails #wikiContentDiv .lconn-ftype64,
+#pageDetails #wikiContentDiv .iconsFileTypes64,
+.blog .lconn-ftype64,
+.blog .iconsFileTypes64,
 .lconnPicker .lconn-ftype64,
 .lconnPicker .iconsFileTypes64 {
   background-size: 64px 64px !important; }
@@ -3592,6 +4665,12 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .lconn-ftype32-docx,
 .qkrDropAvatar .lconn-ftype32-xlsx,
 .qkrDropAvatar .lconn-ftype32-pptx,
+#pageDetails #wikiContentDiv .lconn-ftype32-docx,
+#pageDetails #wikiContentDiv .lconn-ftype32-xlsx,
+#pageDetails #wikiContentDiv .lconn-ftype32-pptx,
+.blog .lconn-ftype32-docx,
+.blog .lconn-ftype32-xlsx,
+.blog .lconn-ftype32-pptx,
 .lconnPicker .lconn-ftype32-docx,
 .lconnPicker .lconn-ftype32-xlsx,
 .lconnPicker .lconn-ftype32-pptx {
@@ -3622,6 +4701,12 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .lconn-ftype16-docx,
 .qkrDropAvatar .lconn-ftype16-xlsx,
 .qkrDropAvatar .lconn-ftype16-pptx,
+#pageDetails #wikiContentDiv .lconn-ftype16-docx,
+#pageDetails #wikiContentDiv .lconn-ftype16-xlsx,
+#pageDetails #wikiContentDiv .lconn-ftype16-pptx,
+.blog .lconn-ftype16-docx,
+.blog .lconn-ftype16-xlsx,
+.blog .lconn-ftype16-pptx,
 .lconnPicker .lconn-ftype16-docx,
 .lconnPicker .lconn-ftype16-xlsx,
 .lconnPicker .lconn-ftype16-pptx {
@@ -3645,6 +4730,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Default"],
 .qkrDropAvatar img[class*="ftype"],
 .qkrDropAvatar img[class*="Default"],
+#pageDetails #wikiContentDiv img[class*="ftype"],
+#pageDetails #wikiContentDiv img[class*="Default"],
+.blog img[class*="ftype"],
+.blog img[class*="Default"],
 .lconnPicker img[class*="ftype"],
 .lconnPicker img[class*="Default"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22Unknown%22%3E%3Cpath d=%22M24,12 C24,18.62775 18.62775,24 12,24 C5.37225,24 0,18.62775 0,12 C0,5.37225 5.37225,0 12,0 C18.62775,0 24,5.37225 24,12%22 id=%22Fill-1%22 fill=%22%23777677%22%3E%3C/path%3E%3Cg id=%22file_24%22 transform=%22translate(8.000000, 6.000000)%22 fill=%22%23FFFFFF%22%3E%3Cpath d=%22M7.9869,11.48435 L1.0014,11.48435 C0.7249,11.48435 0.4999,11.25935 0.4999,10.98285 L0.4999,1.00135 C0.4999,0.72485 0.7249,0.49985 1.0014,0.49985 L5.4944,0.49985 L5.4944,3.51535 L8.4884,3.51535 L8.4884,10.98285 C8.4884,11.25935 8.2634,11.48435 7.9869,11.48435 L7.9869,11.48435 Z M5.9944,0.70885 L8.3009,3.01585 L5.9944,3.01585 L5.9944,0.70885 Z M5.9924,-0.00015 L1.0014,-0.00015 C0.4484,-0.00015 -0.0001,0.44835 -0.0001,1.00135 L-0.0001,10.98285 C-0.0001,11.53585 0.4484,11.98435 1.0014,11.98435 L7.9869,11.98435 C8.5399,11.98435 8.9884,11.53585 8.9884,10.98285 L8.9884,2.99585 L5.9924,-0.00015 Z%22 id=%22Fill-1%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
@@ -3746,6 +4835,34 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="Graphic16"],
 .qkrDropAvatar img[class$="Graphic32"],
 .qkrDropAvatar img[class$="Graphic64"],
+#pageDetails #wikiContentDiv img[class$="bmp"],
+#pageDetails #wikiContentDiv img[class$="eps"],
+#pageDetails #wikiContentDiv img[class$="gif"],
+#pageDetails #wikiContentDiv img[class$="ico"],
+#pageDetails #wikiContentDiv img[class$="jpg"],
+#pageDetails #wikiContentDiv img[class$="jpeg"],
+#pageDetails #wikiContentDiv img[class$="png"],
+#pageDetails #wikiContentDiv img[class$="psd"],
+#pageDetails #wikiContentDiv img[class$="svg"],
+#pageDetails #wikiContentDiv img[class$="tif"],
+#pageDetails #wikiContentDiv img[class$="tiff"],
+#pageDetails #wikiContentDiv img[class$="Graphic16"],
+#pageDetails #wikiContentDiv img[class$="Graphic32"],
+#pageDetails #wikiContentDiv img[class$="Graphic64"],
+.blog img[class$="bmp"],
+.blog img[class$="eps"],
+.blog img[class$="gif"],
+.blog img[class$="ico"],
+.blog img[class$="jpg"],
+.blog img[class$="jpeg"],
+.blog img[class$="png"],
+.blog img[class$="psd"],
+.blog img[class$="svg"],
+.blog img[class$="tif"],
+.blog img[class$="tiff"],
+.blog img[class$="Graphic16"],
+.blog img[class$="Graphic32"],
+.blog img[class$="Graphic64"],
 .lconnPicker img[class$="bmp"],
 .lconnPicker img[class$="eps"],
 .lconnPicker img[class$="gif"],
@@ -3810,6 +4927,20 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="rtf"],
 .qkrDropAvatar img[class$="txt"],
 .qkrDropAvatar img[class*="WordProcessingDocs"],
+#pageDetails #wikiContentDiv img[class$="docx"],
+#pageDetails #wikiContentDiv img[class$="doc"],
+#pageDetails #wikiContentDiv img[class$="dot"],
+#pageDetails #wikiContentDiv img[class$="odt"],
+#pageDetails #wikiContentDiv img[class$="rtf"],
+#pageDetails #wikiContentDiv img[class$="txt"],
+#pageDetails #wikiContentDiv img[class*="WordProcessingDocs"],
+.blog img[class$="docx"],
+.blog img[class$="doc"],
+.blog img[class$="dot"],
+.blog img[class$="odt"],
+.blog img[class$="rtf"],
+.blog img[class$="txt"],
+.blog img[class*="WordProcessingDocs"],
 .lconnPicker img[class$="docx"],
 .lconnPicker img[class$="doc"],
 .lconnPicker img[class$="dot"],
@@ -3853,6 +4984,16 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="xlt"],
 .qkrDropAvatar img[class$="ods"],
 .qkrDropAvatar img[class*="DataDocs"],
+#pageDetails #wikiContentDiv img[class$="xlsx"],
+#pageDetails #wikiContentDiv img[class$="xls"],
+#pageDetails #wikiContentDiv img[class$="xlt"],
+#pageDetails #wikiContentDiv img[class$="ods"],
+#pageDetails #wikiContentDiv img[class*="DataDocs"],
+.blog img[class$="xlsx"],
+.blog img[class$="xls"],
+.blog img[class$="xlt"],
+.blog img[class$="ods"],
+.blog img[class*="DataDocs"],
 .lconnPicker img[class$="xlsx"],
 .lconnPicker img[class$="xls"],
 .lconnPicker img[class$="xlt"],
@@ -3894,6 +5035,16 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="key"],
 .qkrDropAvatar img[class$="odp"],
 .qkrDropAvatar img[class*="Presentation"],
+#pageDetails #wikiContentDiv img[class$="pptx"],
+#pageDetails #wikiContentDiv img[class$="ppt"],
+#pageDetails #wikiContentDiv img[class$="key"],
+#pageDetails #wikiContentDiv img[class$="odp"],
+#pageDetails #wikiContentDiv img[class*="Presentation"],
+.blog img[class$="pptx"],
+.blog img[class$="ppt"],
+.blog img[class$="key"],
+.blog img[class$="odp"],
+.blog img[class*="Presentation"],
 .lconnPicker img[class$="pptx"],
 .lconnPicker img[class$="ppt"],
 .lconnPicker img[class$="key"],
@@ -3914,6 +5065,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Pdf"],
 .qkrDropAvatar img[class$="pdf"],
 .qkrDropAvatar img[class*="Pdf"],
+#pageDetails #wikiContentDiv img[class$="pdf"],
+#pageDetails #wikiContentDiv img[class*="Pdf"],
+.blog img[class$="pdf"],
+.blog img[class*="Pdf"],
 .lconnPicker img[class$="pdf"],
 .lconnPicker img[class*="Pdf"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22PDF%22%3E%3Cg id=%22Page-1%22%3E%3Cpath d=%22M24,12 C24,18.627 18.627,24 12,24 C5.373,24 0,18.627 0,12 C0,5.373 5.373,0 12,0 C18.627,0 24,5.373 24,12%22 id=%22Fill-1%22 fill=%22%23E62325%22%3E%3C/path%3E%3Cpath d=%22M8.645,12.5684 L8.645,11.6754 C8.645,10.7414 8.076,10.1114 7.163,10.1114 C6.421,10.1114 5.812,10.5384 5.812,11.1164 L5.812,13.0664 C5.812,13.7464 6.421,14.1324 7.163,14.1324 C8.076,14.1324 8.645,13.5024 8.645,12.5684 L8.645,12.5684 Z M5,9.5024 L5.812,9.5024 L5.812,10.3554 L5.853,10.3554 C6.127,9.6954 6.665,9.3804 7.386,9.3804 C8.696,9.3804 9.518,10.4464 9.518,12.1214 C9.518,13.7974 8.696,14.8634 7.386,14.8634 C6.665,14.8634 6.167,14.5384 5.853,13.8884 L5.812,13.8884 L5.812,16.7724 L5,16.7724 L5,9.5024 Z%22 id=%22Fill-3%22 fill=%22%23FFFFFF%22%3E%3C/path%3E%3Cpath d=%22M14.2388,13.0659 L14.2388,11.1169 C14.2388,10.5379 13.6298,10.1109 12.8888,10.1109 C11.9748,10.1109 11.4058,10.7409 11.4058,11.6749 L11.4058,12.5679 C11.4058,13.5029 11.9748,14.1319 12.8888,14.1319 C13.6298,14.1319 14.2388,13.7459 14.2388,13.0659 L14.2388,13.0659 Z M14.2388,13.8889 L14.1978,13.8889 C13.8838,14.5379 13.3858,14.8629 12.6648,14.8629 C11.3558,14.8629 10.5328,13.7969 10.5328,12.1219 C10.5328,10.4469 11.3558,9.3799 12.6648,9.3799 C13.3858,9.3799 13.9238,9.6949 14.1978,10.3549 L14.2388,10.3549 L14.2388,7.2279 L15.0508,7.2279 L15.0508,14.7409 L14.2388,14.7409 L14.2388,13.8889 Z%22 id=%22Fill-5%22 fill=%22%23FFFFFF%22%3E%3C/path%3E%3Cpath d=%22M17.061,10.2129 L16.208,10.2129 L16.208,9.5029 L17.061,9.5029 L17.061,8.4459 C17.061,7.7259 17.436,7.2279 18.208,7.2279 L19,7.2279 L19,7.9389 L17.873,7.9389 L17.873,9.5029 L19,9.5029 L19,10.2129 L17.873,10.2129 L17.873,14.7409 L17.061,14.7409 L17.061,10.2129 Z%22 id=%22Fill-7%22 fill=%22%23FFFFFF%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
@@ -3938,6 +5093,12 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="jar"],
 .qkrDropAvatar img[class$="zip"],
 .qkrDropAvatar img[class*="Compressed"],
+#pageDetails #wikiContentDiv img[class$="jar"],
+#pageDetails #wikiContentDiv img[class$="zip"],
+#pageDetails #wikiContentDiv img[class*="Compressed"],
+.blog img[class$="jar"],
+.blog img[class$="zip"],
+.blog img[class*="Compressed"],
 .lconnPicker img[class$="jar"],
 .lconnPicker img[class$="zip"],
 .lconnPicker img[class*="Compressed"] {
@@ -3956,6 +5117,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="folder"]:not(.ic-thumb-folder),
 .qkrDropAvatar img[class*="Folder"],
 .qkrDropAvatar img[class*="folder"]:not(.ic-thumb-folder),
+#pageDetails #wikiContentDiv img[class*="Folder"],
+#pageDetails #wikiContentDiv img[class*="folder"]:not(.ic-thumb-folder),
+.blog img[class*="Folder"],
+.blog img[class*="folder"]:not(.ic-thumb-folder),
 .lconnPicker img[class*="Folder"],
 .lconnPicker img[class*="folder"]:not(.ic-thumb-folder) {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2218px%22 viewBox=%220 0 24 18%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22folder_24%22 transform=%22translate(0.000000, -3.000000)%22 fill=%22%23000000%22%3E%3Cpath d=%22M9,3 L1.999,3 C0.895,3 0,3.895 0,4.999 L0,19.001 C0,20.105 0.895,21 1.999,21 L22.001,21 C23.105,21 24,20.105 24,19.001 L24,7.999 C24,6.895 23.105,6 22.001,6 L9,6 L9,3 Z M8,4 L8,6 L8,7 L9,7 L22.001,7 C22.552,7 23,7.448 23,7.999 L23,19.001 C23,19.552 22.552,20 22.001,20 L1.999,20 C1.448,20 1,19.552 1,19.001 L1,4.999 C1,4.448 1.448,4 1.999,4 L8,4 L8,4 Z%22 id=%22folder%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
@@ -3987,6 +5152,14 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="wav"],
 .qkrDropAvatar img[class$="wma"],
 .qkrDropAvatar img[class*="Audio"],
+#pageDetails #wikiContentDiv img[class$="mp3"],
+#pageDetails #wikiContentDiv img[class$="wav"],
+#pageDetails #wikiContentDiv img[class$="wma"],
+#pageDetails #wikiContentDiv img[class*="Audio"],
+.blog img[class$="mp3"],
+.blog img[class$="wav"],
+.blog img[class$="wma"],
+.blog img[class*="Audio"],
 .lconnPicker img[class$="mp3"],
 .lconnPicker img[class$="wav"],
 .lconnPicker img[class$="wma"],
@@ -4034,6 +5207,18 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="wmv"],
 .qkrDropAvatar img[class$="m4v"],
 .qkrDropAvatar img[class*="Video"],
+#pageDetails #wikiContentDiv img[class$="avi"],
+#pageDetails #wikiContentDiv img[class$="mp4"],
+#pageDetails #wikiContentDiv img[class$="mov"],
+#pageDetails #wikiContentDiv img[class$="wmv"],
+#pageDetails #wikiContentDiv img[class$="m4v"],
+#pageDetails #wikiContentDiv img[class*="Video"],
+.blog img[class$="avi"],
+.blog img[class$="mp4"],
+.blog img[class$="mov"],
+.blog img[class$="wmv"],
+.blog img[class$="m4v"],
+.blog img[class*="Video"],
 .lconnPicker img[class$="avi"],
 .lconnPicker img[class$="mp4"],
 .lconnPicker img[class$="mov"],
@@ -4111,6 +5296,26 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class$="scss"],
 .qkrDropAvatar img[class$="xml"],
 .qkrDropAvatar img[class*="Code"],
+#pageDetails #wikiContentDiv img[class$="css"],
+#pageDetails #wikiContentDiv img[class$="dmg"],
+#pageDetails #wikiContentDiv img[class$="exe"],
+#pageDetails #wikiContentDiv img[class$="html"],
+#pageDetails #wikiContentDiv img[class$="java"],
+#pageDetails #wikiContentDiv img[class$="js"],
+#pageDetails #wikiContentDiv img[class$="json"],
+#pageDetails #wikiContentDiv img[class$="scss"],
+#pageDetails #wikiContentDiv img[class$="xml"],
+#pageDetails #wikiContentDiv img[class*="Code"],
+.blog img[class$="css"],
+.blog img[class$="dmg"],
+.blog img[class$="exe"],
+.blog img[class$="html"],
+.blog img[class$="java"],
+.blog img[class$="js"],
+.blog img[class$="json"],
+.blog img[class$="scss"],
+.blog img[class$="xml"],
+.blog img[class*="Code"],
 .lconnPicker img[class$="css"],
 .lconnPicker img[class$="dmg"],
 .lconnPicker img[class$="exe"],
@@ -4129,6 +5334,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane img[class*="Wikis"],
 .icSearchResultsPage img[class*="Wikis"],
 .qkrDropAvatar img[class*="Wikis"],
+#pageDetails #wikiContentDiv img[class*="Wikis"],
+.blog img[class*="Wikis"],
 .lconnPicker img[class*="Wikis"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-48-x-48px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22wiki_48%22 fill=%22%23000000%22%3E%3Cg id=%22wiki%22 transform=%22translate(0.000000, 10.000000)%22%3E%3Cpath d=%22M14,9.8288 C11.79,9.8288 10,11.6188 10,13.8288 C10,16.0388 11.79,17.8288 14,17.8288 C16.21,17.8288 18,16.0388 18,13.8288 C18,11.6188 16.21,9.8288 14,9.8288 M14,11.8288 C15.102,11.8288 16,12.7268 16,13.8288 C16,14.9308 15.102,15.8288 14,15.8288 C12.898,15.8288 12,14.9308 12,13.8288 C12,12.7268 12.898,11.8288 14,11.8288%22 id=%22Fill-1%22%3E%3C/path%3E%3Cpath d=%22M24,9.8288 C21.79,9.8288 20,11.6188 20,13.8288 C20,16.0388 21.79,17.8288 24,17.8288 C26.21,17.8288 28,16.0388 28,13.8288 C28,11.6188 26.21,9.8288 24,9.8288 M24,11.8288 C25.102,11.8288 26,12.7268 26,13.8288 C26,14.9308 25.102,15.8288 24,15.8288 C22.898,15.8288 22,14.9308 22,13.8288 C22,12.7268 22.898,11.8288 24,11.8288%22 id=%22Fill-3%22%3E%3C/path%3E%3Cpath d=%22M34,9.8288 C31.79,9.8288 30,11.6188 30,13.8288 C30,16.0388 31.79,17.8288 34,17.8288 C36.21,17.8288 38,16.0388 38,13.8288 C38,11.6188 36.21,9.8288 34,9.8288 M34,11.8288 C35.102,11.8288 36,12.7268 36,13.8288 C36,14.9308 35.102,15.8288 34,15.8288 C32.898,15.8288 32,14.9308 32,13.8288 C32,12.7268 32.898,11.8288 34,11.8288%22 id=%22Fill-5%22%3E%3C/path%3E%3Cpath d=%22M13.5858,26.2428 L2.5858,15.2428 C1.8058,14.4628 1.8058,13.1948 2.5858,12.4148 L13.5858,1.4148 L12.1718,0.0008 L1.1718,10.9988 C-0.3902,12.5628 -0.3902,15.0948 1.1718,16.6568 L12.1718,27.6568 L13.5858,26.2428 Z%22 id=%22Fill-7%22%3E%3C/path%3E%3Cpath d=%22M34.4142,26.2428 L45.4142,15.2428 C46.1942,14.4628 46.1942,13.1948 45.4142,12.4148 L34.4142,1.4148 L35.8282,0.0008 L46.8282,10.9988 C48.3902,12.5628 48.3902,15.0948 46.8282,16.6568 L35.8282,27.6568 L34.4142,26.2428 Z%22 id=%22Fill-9%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
 .filesList img[class*="Blogs"],
@@ -4138,6 +5345,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane img[class*="Blogs"],
 .icSearchResultsPage img[class*="Blogs"],
 .qkrDropAvatar img[class*="Blogs"],
+#pageDetails #wikiContentDiv img[class*="Blogs"],
+.blog img[class*="Blogs"],
 .lconnPicker img[class*="Blogs"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-48-x-48px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22blog_48%22%3E%3Cg id=%22blog%22 transform=%22translate(2.000000, 2.000000)%22%3E%3Cpath d=%22M39.9986,0 L4.0006,0 C1.7906,0 0.0006,1.792 0.0006,4.002 L0.0006,39.998 C0.0006,42.208 1.7906,44 4.0006,44 L39.9986,44 C42.2086,44 44.0006,42.208 44.0006,39.998 L44.0006,4.002 C44.0006,1.792 42.2086,0 39.9986,0 M39.9986,2 C41.1026,2 42.0006,2.898 42.0006,4.002 L42.0006,39.998 C42.0006,41.102 41.1026,42 39.9986,42 L4.0006,42 C2.8986,42 2.0006,41.102 2.0006,39.998 L2.0006,4.002 C2.0006,2.898 2.8986,2 4.0006,2 L39.9986,2%22 id=%22Fill-1%22 fill=%22%23000000%22%3E%3C/path%3E%3Crect id=%22Rectangle%22 stroke=%22%23000000%22 stroke-width=%222%22 x=%2211%22 y=%2211%22 width=%2222%22 height=%2210%22%3E%3C/rect%3E%3Crect id=%22Rectangle-2%22 fill=%22%23000000%22 x=%2210%22 y=%2226%22 width=%2224%22 height=%222%22%3E%3C/rect%3E%3Crect id=%22Rectangle-2-Copy%22 fill=%22%23000000%22 x=%2210%22 y=%2232%22 width=%2212%22 height=%222%22%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
 .filesList img[class*="Activities"],
@@ -4147,6 +5356,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane img[class*="Activities"],
 .icSearchResultsPage img[class*="Activities"],
 .qkrDropAvatar img[class*="Activities"],
+#pageDetails #wikiContentDiv img[class*="Activities"],
+.blog img[class*="Activities"],
 .lconnPicker img[class*="Activities"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M44,10H32V4H16v6H4c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h40c2.2,0,4-1.8,4-4V14C48,11.8,46.2,10,44,10z M46,42 c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2V28h6v4h10v-4h12v4h10v-4h6V42z M10,30v-2v-2v-2h6v2v2v2H10z M32,30v-2v-2v-2h6v2v2v2H32z M46,26h-6v-4H30v4H18v-4H8v4H2V14c0-1.1,0.9-2,2-2h12h16h12c1.1,0,2,0.9,2,2V26z%22/%3E%3C/svg%3E") !important; }
 .filesList img[class*="Forums"],
@@ -4156,6 +5367,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane img[class*="Forums"],
 .icSearchResultsPage img[class*="Forums"],
 .qkrDropAvatar img[class*="Forums"],
+#pageDetails #wikiContentDiv img[class*="Forums"],
+.blog img[class*="Forums"],
 .lconnPicker img[class*="Forums"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M42,2H6C2.7,2,0,4.7,0,8v24c0,3.3,2.7,6,6,6h33l9,9V8C48,4.7,45.3,2,42,2 M42,4c2.2,0,4,1.8,4,4v34.2l-5.6-5.6 L39.8,36H39H6c-2.2,0-4-1.8-4-4V8c0-2.2,1.8-4,4-4H42%22/%3E%3Cpath fill=%22%23000000%22 d=%22M12,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S14.2,16,12,16 M12,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S10.9,18,12,18%22/%3E%3Cpath fill=%22%23000000%22 d=%22M24,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S26.2,16,24,16 M24,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S22.9,18,24,18%22/%3E%3Cpath fill=%22%23000000%22 d=%22M36,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S38.2,16,36,16 M36,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S34.9,18,36,18%22/%3E%3C/svg%3E") !important; }
 .filesList img[class*="Bookmarks"],
@@ -4165,6 +5378,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchPane img[class*="Bookmarks"],
 .icSearchResultsPage img[class*="Bookmarks"],
 .qkrDropAvatar img[class*="Bookmarks"],
+#pageDetails #wikiContentDiv img[class*="Bookmarks"],
+.blog img[class*="Bookmarks"],
 .lconnPicker img[class*="Bookmarks"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M35.966,0 L12.034,0 C8.702,0 6,2.68 6,5.986 L6,48 L23.952,30 L42,48 L42,5.986 C42,2.68 39.298,0 35.966,0 M35.966,2 C38.19,2 40,3.788 40,5.986 L40,43.18 L25.366,28.584 L23.95,27.172 L22.536,28.588 L8,43.162 L8,5.986 C8,3.788 9.81,2 12.034,2 L35.966,2%22%3E%3C/path%3E%3C/svg%3E") !important; }
 
@@ -4200,6 +5415,12 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 
 #body .lconnFileUpload img.lconnFileUploadIcon {
   background-position: 0px !important; }
+
+#pageDetails #wikiContentDiv .lconn-ftype16,
+.blog .lconn-ftype16 {
+  margin-right: 4px !important;
+  position: relative !important;
+  top: -1px !important; }
 
 .lotusui30_layout .lotusColLeft:after {
   position: fixed !important; }

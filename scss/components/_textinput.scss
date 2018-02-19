@@ -10,6 +10,7 @@ input[id^="lconn_share_widget_Dialog_"][id$="_name"],
 #concordnewfilesheet,
 #concordnewfilepres,
 input.lotusText,
+.blog input[type="text"],
 .dijitTextBox .typeaheadInput input {
 	@include textinput;
 }

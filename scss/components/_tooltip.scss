@@ -7,12 +7,18 @@ a[id^="bssui_tooltip_"],
 #appPasswordInfoHelp,
 #appPasswordNameHelp,
 #enableBiDiInfoHelp,
+//Tags _help
+#tagsHelpLink,
+//Blog help links
+a[id*="HelpLink"],
 //Notification settings, share file/folder
 a[id*="_HelpLauncher_"],
 a[id*="_helpLink"],
 a[class*="_help_link"],
 //Meetings landing page
-.mtgHelp {
+.mtgHelp,
+// forum tag tooltip
+#tagHelper {
   img {
     height:12px !important;
     width:12px !important;
@@ -30,4 +36,8 @@ a[class*="_help_link"],
 // Account settings - bidi
 #enableBiDiInfoHelp img {
   vertical-align:top !important;
+}
+
+#tagHelper {
+  margin-top: .25rem;
 }

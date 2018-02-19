@@ -1,6 +1,25 @@
 //Description - Document all font-sizes used here and include a usage comment
 //****PREVIEW NOTE: FONT SIZES NOT BEING WIDELY USED UNTIL WE CAN LOOK AT THE WHOLE SYSTEM
 
+//---NEW---
+//size and weight of each font style
+//$name: font-size, font-weight
+$head1: 38px, 600;
+$head2: 28px, 500;
+$title: 21px, 600;
+$apptitle:21px, 400;
+$header: 16px, 600;
+$body: 16px, 400;
+$caption: 12px, 500;
+
+//mixin usage: @include font-size($style...) -- ... is required to pass in the list
+@mixin font-size($size, $weight) {
+  font-size:$size !important;
+  font-weight:$weight !important;
+}
+
+
+//--OLD WAY - DEPRECATED---
 // Heading font-sizes
 $head0-font-size:2.375rem;
 $head1-font-size:1.75rem;

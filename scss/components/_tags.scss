@@ -46,7 +46,6 @@
           a {
             padding: 0 !important;
             background: none !important;
-            font-weight: 500 !important;
           }
         }
       }
@@ -62,7 +61,6 @@
         padding-right: .5rem !important;
         max-width: calc(100% - 58px) !important;
         box-sizing: border-box;
-        font-weight: 500 !important;
       }
       span.lotusRight {
         order: 2;
@@ -75,9 +73,6 @@
             opacity: 1;
             background-size: contain !important;
           }
-          &:hover img {
-            background: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
-          }
         }
         .lotusDelete, .lconnTagCount {
           border-top-left-radius: 0 !important;
@@ -87,7 +82,6 @@
           position: relative;
           overflow: visible;
           z-index: 2;
-          font-weight: 500 !important;
           &:before {
             content: '\2022';
             display: block;
@@ -117,13 +111,6 @@
     padding-left: 0 !important;
     &:before {
       display: none;
-    }
-  }
-  #tagCloud {
-    .lotusTagCloud.lotusChunk {
-      a {
-        font-weight: 500 !important;
-      }
     }
   }
   #add-tag-view {
@@ -182,9 +169,6 @@
       vertical-align: middle !important;
       background-size: contain !important;
       background-position:0px 0px!important;
-      &:hover {
-        background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
-      }
     }
   }
   .lotusFilters2 {
@@ -300,9 +284,6 @@ div[data-dojo-attach-point="_selectedTagsSection"] {
           background-size: contain !important;
           background-position:0px 0px!important;
         }
-        &:hover img {
-          background-image:  svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
-        }
       }
     }
   }
@@ -380,21 +361,31 @@ input.lotusText.scTagTypeahead {
 .lotusChunk.lotusSearch {
   width:100%;
 }
-.lotusList.lotusEditable.lotusMeta a {
-  font-weight: 500 !important;
-}
 
 // Tags in "Files -> More -> Add Tags"
-.lotusContent .lotusTags.lotusMeta{
-  span[role="list"]{
+// and in blog -> entry, wiki -> entry
+.lotusContent .lotusTags.lotusMeta,
+.lotusContent .lotusTags {
+  > ul, > span:not(.lotusHidden), > form {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul {
+    margin-top: -1px;
+  }
+  span[role="list"],
+  ul[role="listbox"]{
     position:relative!important;
-    top:7px!important;
+    //top:7px!important;
   }
   span[role="separator"]{
     display:none!important;
   }
-  span[role="listitem"]{
+  span[role="listitem"],
+  li.lotusTag {
     @include tags();
+    margin-left:4px!important;
+    margin-right:4px!important;
     a.bidiAware{
       color:$text-01!important;
       font-weight:normal!important;
@@ -402,23 +393,49 @@ input.lotusText.scTagTypeahead {
     a.bidiAware:hover{
       color:$brand-01!important;
     }
-    a[role="button"]{
+    a[role="button"],
+    a.qkrRemove{
       position:relative;
-      left:3px;
+      height: 100%;
+      margin: 0 3px;
+      padding: .45rem 0;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+      img{
+        background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+        background-position:0px 0px!important;
+        width:9px;
+        height:9px;
+        background-size: contain;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 13px;
+        height: 60%;
+        background-color: $background-side;
+      }
     }
-    a[role="button"] img{
-      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
-      background-position:0px 0px!important;
-      width:9px;
-      height:9px;
-      background-size: contain;
+  }
+  &:not([aria-expanded="true"]) {
+    li.lotusTag a {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 5px;
+        height: 60%;
+        background-color: $background-side;
+      }
     }
-    a[role="button"]:hover img{
-      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
-      opacity:1!important;
-    }
-    margin-left:4px!important;
-    margin-right:4px!important;
   }
   form[style="display: inline;"]{
     display:block!important;
@@ -442,10 +459,6 @@ input.lotusText.scTagTypeahead {
       height:9px;
       background-size: contain !important;
     }
-    a[role="button"]:hover img{
-      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-brand-01) !important;
-      opacity:1!important;
-    }
   }
 }
 
@@ -453,4 +466,74 @@ input.lotusText.scTagTypeahead {
 #contactsTagWidget_tagListView {
   max-height: 12.75rem;
   overflow: auto;
+}
+.lotusContent form#entryform {
+  .lotusTags {
+    span[role="listitem"] {
+      overflow: visible !important;
+      position: relative;
+      a, a:hover, a:focus {
+        color: $text-02 !important;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 100%;
+        height: 100%;
+        width: 7px;
+        background-color: $background-main;
+      }
+    }
+  }
+}
+
+// tags in forum  
+#forum .lotusPostContent .lotusMeta .lotusTags span,
+#topicList #forumTagEditer > span,
+.lotusContent span[id^="lconn_forums_TagEditor_"] > span  {
+  // hide commas: 
+  font-size: 0;
+  > span[role="listitem"] {
+    cursor: default !important;
+  }
+  span:not(.lotusAltText), 
+  a[role="listitem"] {
+    @include tags;
+    margin: .15rem !important;
+  }
+  a[role="listitem"] + a[role="button"],
+  span[role="listitem"] + a[role="button"] {
+    @include tags;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    margin: .15rem !important;
+    margin-left: -.75rem !important;
+    padding: 0 1rem 0 0 !important;
+    
+    img {
+      height: 100% !important;
+      width: 12px !important;
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      background-position: center center !important;
+      background-size: 9px 9px;
+    }
+  }
+} 
+#topicList .lotusFilters a {
+  @include tags;
+  cursor: default !important;
+  
+  .lotusClose {
+    cursor: pointer !important;
+    text-indent: -999px;
+    display: inline-block;
+    height: 100% !important;
+    width: 12px !important;
+    background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+    background-position: center center !important;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+  }
 }

@@ -36,10 +36,10 @@
   <ul>
     <li>CONTENTS</li>
     <li><a href="#about">About this Example</a></li>
-    <li><a href="#test">View and Test Locally</a></li>
-    <li><a href="#included">What's Included</a></li>
-    <li><a href="#compile">How to Compile</a></li>
-    <li><a href="#exampleChanges">Example modifications</a></li>
+    <li><a href="#steps">Recommended Steps</a></li>
+    <li><a href="#included">Files and Folders</a></li>
+    <li><a href="#test">View Visual Updates</a></li>
+    <li><a href="#exampleChanges">Try Making Modifications</a></li>
     <li><a href="#chrome">Create Chrome Extension</a></li>
     <li><a href="#orgExt">Add to Connections</a></li>
     <li><a href="#support">Support</a></li>
@@ -49,10 +49,6 @@
 
 <!--CONTENT CONTAINER-->
 <div class="contentContainer">
-
-<!--<div class="breadcrumb">
-  <p><a href="./index.html">Back to main</a></p>
-</div>-->
 
 <div class="aboutContent">
 
@@ -71,63 +67,32 @@
     <li>Only works with the default theme, called "Verse Theme (Default)".</li>
     <li>Does not support bi-directional languages.</li>
     <li>Might contain defects.</li>
-    <li>Only applies to the following applications and pages:
-      <ul>
-        <li>Files</li>
-        <li>File viewer</li>
-        <li>Profiles</li>
-        <li>Contacts</li>
-        <li>Search results page</li>
-        <li>Meetings launch page, but not meeting rooms</li>
-        <li>Global elements, such as navigation and search, only updated on apps in the preview.</li>
-      </ul>
-    </li>
+    <li>Only applies to a sub-set of applications and pages. Read <a href="./updatehistory.html">Update History</a> for a complete list of applications and page.</li>
   </ul>
 </p>
 <p>As long as Customizer is enabled, this example can be used with IBM Connections Cloud or IBM Connections on premises. However, there are some known visual styling issues when used with IBM Connections on premises.</p>
 
 <h4><a class="anchor" name="updates">Updates</a></h4>
-<p>Updates to these files will be pushed out to fix defects and add styling to more applications and pages.</p>
+<p>We periodically release updates to fix defects and add styling to more applications and pages.</p>
+<p class="button"><a href="./updatehistory.html">Review what's new and update history</a></p>
 
 
-<h2><a class="anchor" name="test">View and Test Locally</a></h2>
-  <p>Use a browser extension that allows you to override elements and CSS of a page with local files, such as Tampermonkey for Chrome. The extension allows you to see the changes you make in your local files. This document includes instructions for using Tampermonkey for Chrome to view changes locally.  </p>
-
-  <h4>1. Fork and clone ibmcnxdev/cnx-custom-theme files on your local system</h4>
-  <p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
-
-  <p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
-
-  <h4>2. Set up Tampermonkey</h4>
-  <p>We use Tampermonkey for Chrome to override the styles on the site with the styles defined in the files on your local machine.</p>
-  <ol>
-    <li>Install the Tampermonkey extension in Chrome.</li>
-    <li>On the Extensions page, locate Tampermonkey and select the box to "Allow access to file URLs".</li>
-    <li>Access Tampermonkey and go to the Dashboard to create a new script.</li>
-    <li>In the editor, replace all the code with the code found in the /periscope/tmScript.js file.</li>
-    <li>Replace "YOURFILEPATHGOESHERE" with the full path to the cloned /periscope directory.</li>
-    <ul>
-      <li>Note: file:/// has 3 slashes.</li>
-      <li>See these examples:</li>
-    </ul>
-  </li>
-  <pre class="code">
-...
-// @require      file:///User/username/desktop/periscope/periscope.js
-// @resource     files file:///User/username/desktop/periscope/css/files.css
-// @resource     profiles file:///YOURFILEPATHGOESHERE/periscope/css/profiles.css
-...</pre>
-  <li>After you replace the file paths, save the script.</li>
-  <li>Go to Connections Cloud and Files to see the changes included in this example.</li>
+<!-----RECOMMENDED STEPS----->
+<h1><a name="steps">Recommended Steps to Get Started</a></h1>
+<ol>
+  <li>Become familar with the Files and Folders in this example.</li>
+  <li>View the visual updates using Tampermonkey.</li>
+  <li>Make a small modification, such as changing the brand colors and test using Tampermonkey.</li>
+  <li>Create a Chrome extension to share your modifications with others.</li>
+  <li>Add your modifications to Connections for more people to see.</li>
 </ol>
 
-<h4>3. Keep your local clone up to date</h4>
-<p>Periodically pull updates from ibmcnxdev/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from ibmcnxdev/cnx-custom-theme master branch.</p>
-
-<h2><a class="anchor" name="included">What's Included in this Example</a></h2>
-<h4>Folder structure and Files</h4>
-<ul>
-  <li>/periscope
+<!-----FILES AND FOLDERS----->
+<h2><a class="anchor" name="included">Files and Folders</a></h2>
+<h4>1. Fork and clone ibmcnxdev/cnx-custom-theme files on your local system</h4>
+<p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
+<p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
+<h4>2. Browse the files and folders to become familiar.</h4>
     <ul>
       <li>/css -- Contains output CSS files after compiling scss</li>
       <li>/docs -- Documentation about this example and the Visual Update 1 application</li>
@@ -135,10 +100,30 @@
       <li>/fonts -- Contains IBM Plex font files</li>
       <li>/scss -- SCSS files that contain the style changes
         <ul>
-         <li>/apps -- SCSS files for app specific style changes</li>
-         <li>/components -- SCSS files for common components used across apps, such as buttons and links</li>
-         <li>/global -- SCSS files for global style changes applied regardless of application</li>
-         <li>/prereqs -- SCSS files for style changes that are used by other scss files, such as color variables</li>
+         <li>/apps -- Contains app specific folders
+           <ul>
+             <li>/profiles and more -- Contains app specific SCSS partial file
+               <ul>
+                 <li>_contactcards.scss and more -- SCSS partial file</li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+         <li>/components -- SCSS files for common components used across apps, such as buttons and links
+           <ul>
+             <li>_buttons.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
+         <li>/global -- SCSS files for global style changes applied regardless of application
+           <ul>
+             <li>_repoName.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
+         <li>/prereqs -- SCSS files for style changes that are used by other scss files, such as color variables
+           <ul>
+             <li>_colors.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
          <li>files.scss -- SCSS file that references partial scss files used in the Files application</li>
          <li>global.scss -- SCSS file that references partial scss files used globally</li>
          <li>meetings.scss -- SCSS file that references partial scss files used in the Meetings application</li>
@@ -153,17 +138,48 @@
       <li>periscope.js -- Javascript file that instruct Connections Customizer. URLs to apply changes to are in this file</li>
       <li>readme.md -- Points to where you can find complete documentation</li>
       <li>tmScript.js -- Tampermonkey script</li>
-    </li>
   </ul>
 
-  <h4>Why do some scss files start with a "_" (underscore)?</h4>
+  <h4>3. Understand why some scss files start with a "_" (underscore)?</h4>
     <p>You may have noticed, there are a lot of scss files but there are only a few CSS files generated. The point of this is to send less requests to the server and make the load time as fast as possible. The way this is achieved is by placing a "_" (underscore) before every .scss file that we don't want to create a CSS file for. We refer to these "_.scss" files as "partials". The main scss files, such as files, global, meetings, profiles, search, and settings don't have a "_" in front of their file name. The main scss files import "partials" and compile them into large CSS files.</p>
 
-<h2><a class="anchor" name="compile">How to Compile the Scss Files</a></h2>
-  <p>To make CSS easier to manage, all of the styling is written is Scss which needs to be compiled into CSS using a Sass Compiler. You can use Koala which is an open source compiler. <a href="http://sass-lang.com/" target="_blank">Learn more and install a Sass compiler.</a></p>
-  <p>After you install a Sass compiler you can set it to watch the /periscope directory for changes to files in /scss and it will automatically compile and output files to /css. The easiest way to do this is to run a watch command in a terminal window.</p>
+    <h4>4. Keep your local clone up to date</h4>
+    <p>Periodically pull updates from ibmcnxdev/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from ibmcnxdev/cnx-custom-theme master branch.</p>
+
+<!-----VIEW VISUAL UPDATES----->
+<h2><a class="anchor" name="test">View Visual Updates with a Browser Extension</a></h2>
+  <p>Use a browser extension that allows you to override elements and CSS of a page with local files, such as Tampermonkey for Chrome. The extension allows you to see the changes you make in your local files.</p>
+
+  <p>Follow these steps to use Tampermonkey for Chrome to override the styles on the site with the styles defined in the files on your local machine.</p>
   <ol>
-    <li>Open terminal and navigate to the /periscope folder.</li>
+    <li>Install the Tampermonkey extension in Chrome.</li>
+    <li>On the Extensions page, locate Tampermonkey and select the box to "Allow access to file URLs".</li>
+    <li>Access Tampermonkey and go to the Dashboard to create a new script.</li>
+    <li>In the editor, replace all the code with the code found in the /tmScript.js file.</li>
+    <li>Replace "YOURFILEPATHGOESHERE" with the full path to the cloned /cnx-custom-theme directory.</li>
+    <ul>
+      <li>Note: file:/// has 3 slashes.</li>
+      <li>See these examples:</li>
+    </ul>
+  </li>
+  <pre class="code">
+...
+// @require      file:///User/username/desktop/cnx-custom-theme/periscope.js
+// @resource     files file:///User/username/desktop/cnx-custom-theme/css/files.css
+// @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
+...</pre>
+  <li>After you replace the file paths, save the script.</li>
+  <li>Go to Connections Cloud and Files to see the changes included in this example.</li>
+</ol>
+
+<!-----MAKE MODIFICATIONS----->
+<h2><a class="anchor" name="exampleChanges">Try Making Modifications</a></h2>
+  <p>To make CSS easier to manage, all of the styling is written is Scss which needs to be compiled into CSS using a Sass Compiler.</p>
+<h3><a class="anchor" name="compile">How to Compile the Scss Files</a></h3>
+  <p>You can use Koala, which is an open source compiler, to compile Scss into CSS. <a href="http://sass-lang.com/" target="_blank">Learn more and install a Sass compiler.</a></p>
+  <p>After you install a Sass compiler you can set it to watch the /cnx-custom-theme directory for changes to files in /scss and it will automatically compile and output files to /css. The easiest way to do this is to run a watch command in a terminal window.</p>
+  <ol>
+    <li>Open terminal and navigate to the /cnx-custom-theme folder.</li>
     <li>Run this command:
   <pre class="code">
   sass --watch scss:css</pre>
@@ -171,12 +187,11 @@
   <li>Now when you make changes to scss files and save, they are compiled and the appropriate CSS files are updated in the /css folder.</li>
 </ol>
 
-<h2><a class="anchor" name="exampleChanges">Example of modifications</a></h2>
-<h3>Change the colors of components</h3>
+<h3>Change the brand colors</h3>
 <ul>
 <li>The colors are defined as variables and are centrally located in this file:
 <pre class="code">
-/periscope/scss/prereqs/_colors.scss
+/scss/prereqs/_colors.scss
 </pre>
 </li>
 <li>Brand color variables are defined and used on colorful components such as buttons, links, and the top navigation bar. In many cases you only need to change the brand colors to significantly update the user interface with the colors for your company.</li>
@@ -184,7 +199,7 @@
 </ul>
 <h4>Try to change the colors</h4>
 <ol>
-  <li>Locate /periscope/scss/prereqs/_colors.scss</li>
+  <li>Locate /scss/prereqs/_colors.scss</li>
   <li>Change the primary brand colors, $brand-01, $brand-02, and $brand-03, with different hex values.</li>
   <li>Save the changes and if the compiler is watching it will generate all the css files because _colors.scss is used in all of them.</li>
   <li>Reload the web page to see the changes.</li>
@@ -242,7 +257,7 @@ var mappings = {
 //  "blogs":["/blogs/"],
 //  "activities":["/activities/"],
 //  "communities":["/communities/"],
-//  "homepage":["/homepage/"],
+//  "home":["/homepage/"],
 //  "wikis":["/wikis/"],
   "settings":["/manage/account/user/",
               "/news/web/",
@@ -263,7 +278,7 @@ var mappings = {
 //  "blogs":["/blogs/"],
 //  "activities":["/activities/"],
 //  "communities":["/communities/"],
-  "homepage":["/homepage/"],
+  "home":["/homepage/"],
 //  "wikis":["/wikis/"],
   "settings":["/manage/account/user/",
               "/news/web/",
@@ -295,18 +310,28 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 </li>
 </ol>
 
+<!-----CREATE CHROME EXTENSION----->
 <h2><a class="anchor" name="chrome">How to create / update Chrome extension</a></h2>
-<p>Create a Chrome extension to share the changes you have made with others.</p>
+<p>Create a Chrome extension to share your changes with others.</p>
 <ol>
-  <li>Create a new folder called /periscope-chrome-ext and put a copy of the /periscope folder inside of it.</li>
-  <li>In the copy, edit the /periscope-chrome-ext/periscope/manifest.json file if:
+  <li>Create a new folder for the extension, such as /theme-extension, and put a copy of the /cnx-custom-theme folder inside of it.</li>
+  <li>In the extension, edit the /manifest.json file if:
     <ul>
       <li>You want to modify the version number of the extension</li>
       <li>You changed the name of the periscope.js file</li>
-    </ul></li>
-    <li>Remove the /periscope-chrome-ext/periscope/scss folder</li>
-    <li>Zip up only the /periscope folder</li>
-    <li>Share periscope.zip with others along with the following instructions to install it.</li>
+    </ul>
+  </li>
+  <li>In the extension folder, remove the following folders that aren't needed and to save space:
+    <ul>
+      <li>/.git</li>
+      <li>/.sass-cache</li>
+      <li>/docs</li>
+      <li>/scss</li>
+      <li>/svg</li>
+    </ul>
+  </li>
+  <li>Zip up only the /theme-extension folder.</li>
+  <li>Share theme-extension.zip with others along with the following instructions to install it.</li>
 </ol>
 <h4>Instructions to install the Chrome extension</h4>
 <ol>
@@ -314,17 +339,18 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
   <li>Go to chrome://extensions</li>
   <li>Check "Developer mode"</li>
   <li>Click "Load unpacked extension..."</li>
-  <li>Locate and select the /periscope folder you unzipped. If you see /periscope/periscope select the nested folder.</li>
+  <li>Locate and select the /theme-extension folder you unzipped. If you see /theme-extension/theme-extension select the nested folder.</li>
 </ol>
 <h4>Instructions to update the Chrome extension with an updated version</h4>
 <ol>
   <li>Download and replace the zip and folder from before.</li>
   <li>Go to chrome://extensions</li>
-  <li>Click "Reload" on your existing Periscope extension to get the updates.</li>
+  <li>Click "Reload" on your existing Chrome extension to get the updates.</li>
 </ol>
 
+<!-----ADD TO CONNECTIONS----->
 <h2><a class="anchor" name="orgExt">Add to Connections as an Organization Extension</a></h2>
-<p>Add your customizations as an extension in the Connections application registry. An organization administrator can modify the application registry by adding an extension to Organization Extensions in the Admin interface. An application extension is defined in a JSON file which identifies the components that need to be targeted and the actions that need to be performed.</p>
+<p>An organization administrator can add a Customizer application containing visual updates. The Customizer application is added as an Organization Extension in the admin interface. The Customizer application is defined in a JSON file which identifies the components that need to be targeted and the actions that need to be performed.</p>
 <p>This section includes:
   <ul>
     <li>Instructions for adding this example to Connections</li>
@@ -336,7 +362,7 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
 <ol>
   <li>As an adminstrator, locate <strong>Admin</strong> in the top navigation and select <strong>Manage Organization</strong>.</li>
   <li>Go to <strong>Organization Extensions</strong>.</li>
-  <li>Click the "new App Manager" link at the top of the page.</li>
+  <li>Click the <strong>new App Manager</strong> link at the top of the page.</li>
   <li>Click the <strong>New App</strong> button and you will see the following JSON template.
 <pre class="code">
 {
@@ -374,13 +400,15 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
   ]
 }
 </pre>
-  <p>Note: This sample JSON can also be found in cnx-custom-theme/org-ext.json.</p>
+  <p>Notes: This sample JSON can also be found in cnx-custom-theme/org-ext.json.</p>
 </li>
-<li>The include-repo property in this example points to the cnx-custom-theme repository in the ibmcnxdev GitHub organization. Update the include-repo: name property to identify the repository where the include-files are stored. By default any repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev) are available for use by Customizer apps. Refer to IBM Connections Customizer documenation for more information about using a private repository.</li>
+<li>The include-repo property in this example points to the cnx-custom-theme repository in the ibmcnxdev GitHub organization so no changes are needed to review the example. See the next section for how to add your own customized files to Connections.
+<!--Update the include-repo: name property to identify the repository where the include-files are stored. By default any repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev) are available for use by Customizer apps. Refer to IBM Connections Customizer documenation for more information about using a private repository.-->
+</li>
 <li>Save the changes.</li>
 </ol>
 
-<h3>Add your own visual customizations as an extension in Organization Extensions</h3>
+<h3>Add your visual customizations as an extension in Organization Extensions</h3>
 <p>Follow the same steps as above but make modifications to reference your own customized files.</p>
 <p><strong>Important:</strong> Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer documentation</a> as you complete this step.</p>
 <ol>
@@ -390,13 +418,15 @@ $svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="bla
       <li>You can use a private GitHub repository. Refer to IBM Connections Customizer documenation for instructions.</li>
     </ul>
   </li>
-  <li>Once your files are in a GitHub repository, modify the include-files and include-repo properties.
-<dl>
-<dt>include-files</dt>
-<dd>If you renamed periscope.js, change it here.</dd>
-<dt>include-repo</dt>
-<dd>Change the include-repo: name property to be the repository where your customizations are stored.</dd>
-</dl>
+  <li>Update Scss variables to reference your GitHub repository. Open /global/_repoName.scss and update the value of repo-name. Compile the Scss changes.
+<pre class="code">$repo-name: 'cnx-custom-theme';</pre>
+  </li>
+  <li>Update the application JSON to reference the correct GitHub repository.
+<pre class="code">
+"include-repo": {
+  "name":"cnx-custom-theme"
+}
+</pre>
 </li>
 </ol>
 

@@ -13,6 +13,10 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
+//
+var repoNameValue = getParams('periscope.js');
+//console.log('Repository name is ' + repoNameValue);
+
 function periscope(){
   //Instead of adding in code, all we need to change is the mapping object
   //which tells the function which stylesheet should be applied onto which
@@ -26,15 +30,18 @@ function periscope(){
                 "/mycontacts/",
                 "/contacts/"],
     "search":["/search/"],
-//    "blogs":["/blogs/"],
+    "blogs":["/blogs/"],
 //    "activities":["/activities/"],
 //    "communities":["/communities/"],
-//    "homepage":["/homepage/"],
-//   "wikis":["/wikis/"],
+    "home":["/social/home"],
+    "forums":["/forums/"],
+    "metrics":["/metricssc/"],
+    "wikis":["/wikis/"],
     "settings":["/manage/account/user/",
                 "/news/web/",
                 "/manage/subscribers/showInviteGuestDialog/"]
   };
+
   //This is the function that applies the style
   var addStyle;
   //We need to determine "how" we will be applying the style.
@@ -42,7 +49,7 @@ function periscope(){
       typeof GM_getResourceText == 'undefined'){
     if(typeof chrome != 'undefined' && chrome.extension){
     //We are in the Chrome Extension so lets use their API.
-      console.log('Periscope: using Chrome extension method.');
+      console.log('Periscope: Using Chrome extension method.');
       addStyle = function(filename){
         var link = document.createElement("link");
         link.href = chrome.extension.getURL('./css/' + filename + '.css');
@@ -54,12 +61,12 @@ function periscope(){
       }
     }
     else{
-      // We are using Muse so lets do find the relative path to our files.
-      console.log('Periscope: using Customizer method.');
+      // We are using Customizer so lets find the relative path to our files.
+      console.log('Periscope: Using Customizer method.');
       addStyle = function(filename){
         var link = document.createElement("link");
         path = "/files/customizer/css/";
-        link.href = path+filename+".css?repoName=periscope";
+        link.href = path+filename+".css?repoName=" + repoNameValue;
         link.type = "text/css";
         link.rel = "stylesheet";
         document.head.appendChild(link);
@@ -68,15 +75,15 @@ function periscope(){
     }
   }
   else{
-    //We are in TM so lets use TamperMonkey API.
+    //We are in Tampermonkey so lets use Tampermonkey API.
     addStyle = function(filename){
-      console.log('Periscope: using TamperMonkey method.');
+      console.log('Periscope: Using Tampermonkey method.');
       console.log(filename);
       GM_addStyle(GM_getResourceText(filename));
       return;
     }
   }
-  console.log("Periscope: Launching Periscope Styling...");
+  console.log("Periscope: Launching Visual Styling...");
   Object.keys(mappings).map(function(filename){
     // make sure it's not an error page or a log-in page:
     if ( (!document.URL.includes("error")) && (document.querySelector('#joinBox') == null)) {
@@ -105,3 +112,28 @@ if (!String.prototype.includes) {
 }
 console.log('Periscope: periscope.js loaded.');
 periscope();
+
+//Get GitHub repoName from script tag url
+// Extract "GET" parameters from a JS include querystring
+function getParams(script_name) {
+  //console.log('getParams function running - find script tags');
+  // Find all script tags
+  var scripts = document.getElementsByTagName("script");
+  // Look through script tags trying to find script_name
+  for(var i=0; i<scripts.length; i++) {
+    if(scripts[i].src.indexOf("/" + script_name) > -1) {
+      // Identifies first instance of script_name
+      // Get an array of key=value strings of params
+      var pa = scripts[i].src.split("?").pop().split("&");
+      // Split each key=value into array, the construct js object
+      var p = {};
+      for(var j=0; j<pa.length; j++) {
+        var kv = pa[j].split("=");
+        p[kv[0]] = kv[1];
+      }
+      return p.repoName;
+    }
+  }
+  // No scripts match
+  return {};
+}

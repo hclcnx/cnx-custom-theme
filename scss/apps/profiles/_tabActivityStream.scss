@@ -66,11 +66,11 @@
   a.timeago {
     text-decoration: none !important;
     font-weight: normal !important;
-    
+
     &:hover {
       text-decoration: underline !important;
     }
-    
+
     + img {
       display: none;
     }
@@ -78,7 +78,7 @@
 }
 
 #centerWidgetContainer {
-  &:focus, div:focus, li:focus {
+  &:focus, div:focus, ul:not(.lotusTabs) > li:focus {
     outline: 1px solid $brand-01 !important;
   }
 }

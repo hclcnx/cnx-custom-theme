@@ -10,9 +10,15 @@
     }
   }
 }
-.ics-viewer-action-splitmenu span.dijitButtonNode{
-  border-radius:0 2rem 2rem 0rem!important;
-  padding: .5rem 1rem .5rem .5rem !important;
+.ics-viewer-action-splitmenu {
+  span.dijitButtonNode{
+    border-radius:0 2rem 2rem 0rem!important;
+    padding: .5rem 1rem .5rem .5rem !important;
+  }
+  .dijitDropDownButtonFocused span.dijitButtonNode {
+    box-shadow: 0 0 0 1px $btn-primary-fill-hover, 0 0 0 2px $btn-primary-outline !important;
+    outline: none !important;
+  }
 }
 .ics-viewer-splitbutton .actionLink,
 .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink{
@@ -31,6 +37,16 @@
 .ics-dialog-action #ok,
 .ics-dialog-action .cancel.neutral,
 .filesList .lotusDetails .lotusBtnSmallGray,
+.qkrEdit .lotusBtnSmall,
+.entryEditTable .lotusBtnSmall,
+.entryEditTable .lotusBtnSmallGray,
+.wikiHeader .lotusBtnSmall,
+#blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction,
+.blog .lotusBtn a,
+.wikiHeader .lotusBtn a,
+#topicList .lotusBtn a,
+#forum .lotusBtn a,
+#pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a,
 div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost) {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
@@ -47,7 +63,8 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 .lotusBtn[name="submitButton"],
 .ics-viewer-action-upload .actionLink,
 .lotusBtn.submit.lotusButtonSubmit,
-.filesList .lotusDetails .lotusBtnSmall {
+.filesList .lotusDetails .lotusBtnSmall
+{
 	@include btnprimary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
     @include btnprimarydisabled;
@@ -74,22 +91,6 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 // Fixing file focus view
 .ics-viewer-action-upload .actionLink{
 	font-weight:500!important;
-}
-.wikiHeader .lotusBtn a{
-	border:none!important;
-	box-shadow:none!important;
-	background-color:transparent!important;
-	padding:0!important;
-}
-.wikiHeader .lotusBtn a:hover{
-	background-color:transparent!important;
-	color: $text-03 !important;
-}
-.wikiHeader .lotusBtn:hover > a{
-	color: $text-03 !important;
-}
-.wikiHeader .lotusLike{
-	top:0!important;
 }
 //Fixing the "new" button in Files
 .lotusTitleBar .lotusPlaceBar .lotusBtn{
@@ -132,7 +133,7 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
   }
 }
 // Fix for "choose a file" image picker button in edit profile
-#photoUploadFileSelectFieldsDiv, 
+#photoUploadFileSelectFieldsDiv,
 #audioUploadFileSelectFieldsDiv {
 	> span.lotusBtn {
 		border: none !important;
@@ -209,6 +210,90 @@ body:not(.lotusImagesOff) {
   }
 }
 
+// Blog Buttons
+.blog .lotusActionBar{
+  .lotusBtn{
+    border:none!important;
+    // This is to fix the cropping
+    padding:2px 0 0 2px!important;
+    margin:0!important;
+    &:hover{
+      padding:2px 0 0 2px!important;
+      background-color:white!important;
+      border:none!important;
+    }
+  }
+}
+//Blog > Links
+.blog form[name="bookmarksForm"]{
+  .lotusActionBar{
+    margin-top:12px!important;
+  }
+}
+//Wiki Main page & Forum
+.wikiHeader, #topicList, #forum {
+  .lotusBtn{
+    border:none!important;
+    padding:0!important;
+    margin:0!important;
+    &:hover{
+      padding:0px!important;
+      background-color:white!important;
+      border:none!important;
+    }
+    a:hover{
+      img.lotusArrow{
+        background-image:svg-url-with-replaced-fill(      $svg-chevron-down, '#000000', $icon-white) !important;
+      }
+    }
+    img.lotusArrow{
+      background-image:svg-url-with-replaced-fill(      $svg-chevron-down, '#000000', $icon-default) !important;
+      background-position:0 0!important;
+      opacity:1!important;
+    }
+  }
+  input.lotusBtnSmall{
+    margin-top:0!important;
+    margin-bottom:0!important;
+    height: 35px!important;
+    position: relative!important;
+    top: -1px!important;
+  }
+  .lotusBtnSmall{
+    font-weight:500!important;
+  }
+}
+#pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a{
+  margin:12px 0!important;
+  display:inline-block!important;
+}
+.entryEditTable{
+  .lotusBtnSmall{
+    height:34px!important;
+  }
+  .lotusBtnSmall, .lotusBtnSmallGray{
+    font-weight:500!important;
+  }
+  #addtagwidgetAddTagsTypeAhead{
+    margin-top:9px!important;
+  }
+  span{
+    vertical-align: middle!important;
+  }
+}
+.lotusForm.qkrEdit{
+  .lotusBtnSmall{
+    font-weight:500!important;
+  }
+  input.lotusBtnSmall{
+    margin: 0 8px 4px 12px!important;
+    height:34px!important;
+  }
+}
+#blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction{
+  display:inline-block!important;
+  margin:8px 0!important;
+}
 /*
 // Communities Create Community Button Fix
 #createPlaceButton{
@@ -250,4 +335,3 @@ body:not(.lotusImagesOff) {
 	}
 }
 */
-

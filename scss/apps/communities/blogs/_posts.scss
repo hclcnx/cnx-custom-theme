@@ -1,0 +1,138 @@
+//Style blog posts
+//Border on each post
+.blog {
+  #entries {
+    table.lotusTable.blogsFixedTable {
+      border-spacing:0px 30px;
+      border-collapse:separate;
+    }
+    .lotusTable.blogsFixedTable {
+      td {
+        box-shadow:0 4px 8px 0 rgba($color-black, 0.1);
+        padding:20px 30px;
+        border:1px solid $color-gray-10;
+        position:relative;
+        // Title of the post
+        h4, h4 a {
+            font-size:$title-font-size;
+            color:$text-01 !important;
+            text-decoration:none;
+        }
+        //meta info
+        .lotusMeta, .lotusMeta a {
+          font-size: $body-mini-font-size !important;
+          font-weight:500 !important;
+          color:$text-02 !important;
+        }
+        .lotusMeta {
+          margin:10px 0px;
+        }
+        //Move like to align with meta by making their parent containers inline
+        .lotusMeta.lotusLeft, 
+        .lotusMeta.lotusLeft + .lotusRight {
+          display: inline !important;
+          float: none !important;
+        }
+        .rating.lotusRating .lotusLike {
+          font-size: .75rem;
+          .lotusLikeCount {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .entryContentContainer {
+    margin-bottom:10px;
+    img:not(.lconn-ftype16) {
+      max-width:100%;
+      width:auto;
+      height:auto;
+    }
+  }
+}
+
+//Style ideation blog voting on posts
+.blog #entries {
+  //General styling for enabled and disabled voting
+  .ideaVotingDiv, .ideaVotingDivDisabled {
+    background:transparent !important;
+    border:none !important;
+    width:auto;
+    padding:0px 0px;
+    .ideaVotingNumber {
+      @include font-size($head1...);
+      padding:0px 0px;
+      cursor:default;
+      color:$text-02;
+    }
+    .ideaVotingButtonDiv, .ideaVotingButtonDivDisabled {
+      background-color:transparent !important;
+      padding-top:10px;
+      .ideaVotingButton, .ideaVotingButtonDisabled {
+        @include font-size($title...);
+        [dojoattachpoint="voteText"] {
+          display:block;
+        }
+      }
+    }
+  }
+  .lotusMeta > * {
+    vertical-align: baseline !important;
+  }
+  //Style voting link
+  .ideaVotingDiv {
+    .ideaVotingButtonDiv {
+      .ideaVotingButton {
+        @include bx--link-default;
+      }
+    }
+  }
+  //Voting is disabled
+  .ideaVotingDivDisabled {
+    .ideaVotingButtonDivDisabled {
+      a[aria-pressed="false"] {
+        display:none !important;
+      }
+      .ideaVotingButtonDisabled {
+        color:$text-02 !important;
+        &:hover, &:focus, &:active, &:visited {
+          text-decoration:none !important;
+        }
+      }
+    }
+  }
+  //Idea has Graducated flag
+  .ideaVotingDiv + div, .ideaVotingDivDisabled + div {
+    text-align:center;
+    position:relative;
+    .ideaGraduated {
+      padding:8px 12px !important;
+      width:auto !important;
+      display:inline-block;
+      border-color:$brand-03;
+      background-color:$brand-03;
+      color:$brand-02;
+      font-weight:500;
+      max-width:70px;
+      @include font-size($caption...);
+      &:before,&:after {
+        content:'';
+        position:absolute;
+        border-bottom:40px solid $brand-03;
+        border-left:30px solid transparent;
+        border-right:30px solid transparent;
+        top:16px;
+        left:-14px;
+        transform:rotate(-142deg);
+        z-index:-1;
+      }
+      &:after {
+        left:auto;
+        right:-14px;
+        transform:rotate(142deg);
+      }
+    }
+  }
+}

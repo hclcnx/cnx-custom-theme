@@ -13,7 +13,7 @@
     &:hover, &:hover a, &:focus, &:focus a, &:active, &:active a {
       text-decoration: none !important;
     }
-    
+
     a {
       transition: none !important;
     }
@@ -33,21 +33,21 @@
       margin-left: 1rem !important;
     }
 
-    &.lotusSelected {
-      border-bottom: 4px solid $brand-01 !important;  
+    &.lotusSelected  {
+      border-bottom: 4px solid $border-selected !important;
       a {
         color: $text-01 !important;
         &:hover {
           color: $text-03 !important;
-          background-color: $brand-01 !important;
-          border-color: $brand-01 !important;
+          background-color: $btn-secondary-fill-hover !important;
+          border-color: $btn-secondary-outline-hover !important;
           font-weight: 500 !important;
           text-decoration: none !important;
         }
         &:focus {
           color: $text-01 !important;
           background-color: transparent !important;
-          border-color: $brand-01 !important;
+          border-color: $btn-secondary-outline-hover !important;
         }
         &:active, &:focus {
           text-decoration: none !important;
@@ -67,7 +67,7 @@
       a {
         color: $text-01 !important;
         background-color: transparent !important;
-        border: 1px solid $brand-01 !important;
+        border: 1px solid $btn-secondary-outline-hover !important;
       }
     }
 
@@ -76,19 +76,19 @@
       margin: 0 !important;
       font-size: inherit !important;
       color: $text-02 !important;
-      border-radius: 2px;
+      border-radius: $border-radius-tabs !important;
       border: 1px solid transparent !important;
       font-weight: 500 !important;
       &:hover {
         color: $text-03 !important;
-        background-color: $brand-01 !important;
-        border-color: $brand-01 !important;
+        background-color: $btn-secondary-fill-hover !important;
+        border-color: $btn-secondary-outline-hover !important;
         font-weight: 500 !important;
       }
       &:focus {
         color: $text-01 !important;
         background-color: transparent !important;
-        border-color: $brand-01 !important;
+        border-color: $btn-secondary-outline-hover !important;
       }
     }
   }
@@ -151,14 +151,14 @@ div[id^="lconn_share_widget_Dialog_"] {
       }
       &:hover {
         color: $text-03 !important;
-        background-color: $brand-01 !important;
-        border-color: $brand-01 !important;
+        background-color: $btn-secondary-fill-hover !important;
+        border-color: $btn-secondary-outline-hover !important;
         font-weight: 500 !important;
       }
       &:focus {
         color: $text-01 !important;
         background-color: transparent !important;
-        border-color: $brand-01 !important;
+        border-color: $btn-secondary-outline-hover !important;
         outline: none !important;
       }
       img {
@@ -168,21 +168,24 @@ div[id^="lconn_share_widget_Dialog_"] {
     }
     // selected styling:
     .pickerSourceChecked {
-      border-bottom: 4px solid $brand-01 !important;
+      border-bottom: 4px solid $border-selected !important;
       .lconnPickerSourceLabel {
         color: $text-01 !important;
         &:hover {
           color: $text-03 !important;
-          background-color: $brand-01 !important;
-          border-color: $brand-01 !important;
+          background-color: $btn-secondary-fill-hover !important;
+          border-color: $btn-secondary-outline-hover !important;
           font-weight: 500 !important;
         }
         &:focus {
           color: $text-01 !important;
           background-color: transparent !important;
-          border-color: $brand-01 !important;
+          border-color: $btn-secondary-outline-hover !important;
         }
       }
     }
   }
 }
+
+//Orient Me tabs found in apps/home/_tabs.scss
+//Communities tabs found in apps/communities/_appNavigator.scss

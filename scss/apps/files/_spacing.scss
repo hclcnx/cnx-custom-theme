@@ -68,7 +68,7 @@
 }
 
 .lotusPaging[dojoattachpoint="bottomPageNode"]{
-  border-top:1px solid $color-gray-10!important;
+  border-top:1px solid $border-separator!important;
   padding-top:40px!important;
 }
 .card-back{
@@ -90,7 +90,7 @@
 .lotusTable{
   tr[id^="dojoUnique"],
   &#filesByUserFeedContentContainerFeedTableContainer tr{
-    border-top:1px solid $color-gray-10!important;
+    border-top:1px solid $border-separator!important;
     td{
       padding-top:12px!important;
       padding-bottom:12px!important;
@@ -128,7 +128,7 @@ div[dojoattachpoint="streamNode"]{
 }
 .lotusTable{
   tr.hentry:nth-child(2){
-    border-top: 1px solid $brand-01!important;
+    border-top: 1px solid $border-focus!important;
   }
 }
 tr.lotusSort{
@@ -158,12 +158,13 @@ tr.lotusSort{
   a:hover{
     background-color:$brand-01!important;
     color:white!important;
-    border-radius: 2px!important;
+    border-radius:$border-radius-tabs!important;
     text-decoration: none!important;
   }
   a:focus{
     text-decoration:none!important;
     border:1px solid $brand-01!important;
+    border-radius:$border-radius-tabs!important;
   }
   a.lotusDescending,a.lotusAscending{
     background-size:8px 8px!important;

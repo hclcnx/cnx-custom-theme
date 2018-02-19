@@ -6,6 +6,10 @@
     font-weight:700!important;
     padding:0px!important;
     font-size:1rem;
+    width:63%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
   }
   .header-right span, .header-right a{
     color:$brand-01!important;
@@ -31,6 +35,11 @@
      position:absolute!important;
      right:24px;
      top:22px;
+     text-align:right;
+     width:32%;
+     overflow:hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
    }
   }
   .icBanner-popover-header {
@@ -58,15 +67,40 @@
         }
       }
       //bluedot hidden when we have read the notif.
-      .icNote-body.selected .bluedot{
-        display:none!important
+      .icNote-body.selected {
+        .bluedot{
+          display:none!important
+        }
+        .icNote-title, .icNote-title a {
+          &.fn.url {
+            color:$text-02 !important;
+          }
+          font-weight:400 !important;
+        }
       }
-      .icNote-body{
-        margin-left:56px!important;
-      }
+
       //do we need this? Not a part of the sketches?
       .icNote-summary{
-        display:none!important;
+        img {
+          height:auto;
+          width:auto;
+          max-width:100%;
+          clear:both;
+          float:left;
+        }
+        text-overflow:ellipsis !important;
+        p:lang(en):after {
+          content:'No comment provided';
+          color:$text-02;
+          font-weight:400;
+          position:relative;
+          bottom:0;
+          left:-13px;
+          width:400px;
+          height:10px;
+          background:$background-main;
+          display:inline-block;
+        }
       }
       .bluedot{
         border-color:$brand-01!important;
@@ -76,7 +110,7 @@
         height:8px!important;
       }
       .icNote-title{
-        font-weight:normal!important;
+        font-weight:600 !important;
         a{
           @include link-color('blue');
           font-weight:bold!important;
@@ -108,8 +142,10 @@
         width:100%!important;
       }
       &:hover{
-        // What color is this?
-        background-color:rgb(241,241,241)!important;
+        background-color:$background-side !important;
+        .icNote-summary p:after {
+          background-color:$background-side !important;
+        }
       }
     }
   }
