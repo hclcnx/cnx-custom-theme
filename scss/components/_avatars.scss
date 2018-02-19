@@ -6,24 +6,58 @@
   &.otherPeople64,
   &.otherPeople64.otherPeople64-NoPhotoPerson55,
   img {
-    border-radius:$border-radius-avatar;
+    border-radius:$border-radius-avatar !important;
   }
 }
+//Similar blogs and ideation blogs widgets
+#section_relatedblogs, #section_relatedideationblogs, #section_relatedentries, #section_relatedideas tr {
+  td:first-of-type {
+    width: 48px;
+    padding:0 5px;
+    img {
+      border-radius:$border-radius-avatar !important;
+      width:48px;
+      height:48px;
+    }
+  }
+}
+
+//Avatars on forum posts
+#forum {
+  .lotusPostAuthorInfo {
+    .lotusPostAvatar {
+      img {
+        border-radius:$border-radius-avatar;
+        width:48px;
+        height:48px;
+      }
+    }
+  }
+}
+
 //Round community icons in search panel
 .lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
-  border-radius:$border-radius-avatar;
+  border-radius:$border-radius-comm-icon !important;
 }
 
 //Profiles Directory Search Results avatars
 #searchResultsTable img.photo {
   width:56px !important;
   height:56px !important;
-  border-radius:$border-radius-avatar;
+  border-radius:$border-radius-avatar !important;
+}
+//Reporting structure
+#lotusReportingStructure #reportStructureArea {
+  img.photo {
+    width:56px !important;
+    height:56px !important;
+    border-radius:$border-radius-avatar !important;
+  }
 }
 //Directory search
 .lconn_profileImage {
   img {
-    border-radius: $border-radius-avatar;
+    border-radius: $border-radius-avatar !important;
   }
 }
 
@@ -32,8 +66,14 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 	.profilePhoto {
 		padding-right: .75rem;
 	 	img {
-			border-radius: $border-radius-avatar;
+			border-radius: $border-radius-avatar !important;
 		}
 	}
 }
+
+// Style person name
+a.lotusPerson, a:visited.lotusPerson, .vcard a.fn.url {
+  color:$text-01 !important;
+}
+
 //Contacts cards - still some styling in _contactcards.scss

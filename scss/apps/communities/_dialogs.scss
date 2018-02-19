@@ -1,0 +1,20 @@
+//Changes for the Insert Link to Files in Wiki Edit page
+#body .lconnPickerSourceArea .headerSelector {
+  .checkbox{
+    margin-top:5px!important;
+  }
+  .icon img.lconn-ftype16{
+    background-position:0 0!important;
+    position:relative;
+    top:5px;
+  }
+}
+//Help icon in Insert Link to Files dialog
+div[id^="lconn_files_widget_CompactFilePicker"]{
+  margin:20px 0!important;
+  a[id^="lconn_share_widget_HelpLauncher"]{
+    position:relative!important;
+    bottom:3px!important;
+    margin-left:5px!important;
+  }
+}

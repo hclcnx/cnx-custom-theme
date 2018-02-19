@@ -135,26 +135,10 @@
     }
   }
 }
-
+//Table
 .responsesNotifications {
-   table {
-     border-collapse:collapse;
-   }
-   th {
-    padding: 1.5rem 5px 10px;
-    border-bottom:1px solid $color-gray-1;
-    //font-size:$body-mini-font-size;
-    font-weight:500;
-    color: $text-02;
+  table {
+    border-collapse:collapse;
   }
-  // Only upper case in English
-  th:lang(en) {
-    text-transform: uppercase;
-  }
-  td {
-    padding: 1.0rem 5px;
-  }
-  tr:nth-child(even) {
-    background-color:$background-side;
-  }
+  @include datatable;
 }

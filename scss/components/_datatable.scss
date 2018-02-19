@@ -1,0 +1,87 @@
+//Wiki list of pages
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+  @include datatable;
+  tr:not(.lotusDetails):not(.lotusSort) {
+    border-top:1px solid $border-separator;
+  }
+  tr.lotusDetails {
+    td {
+      padding-top:0px !important;
+    }
+  }
+  tr td {
+    background-color:$background-main !important;
+  }
+  tr:last-of-type {
+    border-bottom:1px solid $border-separator;
+  }
+}
+
+//Blog list of entries
+.blog.admin {
+
+  .blogsFixedTable, .lotusTable {
+    @include datatable;
+  }
+
+}
+
+//This is the icons that appear for organizing the information in the Data Tables.
+#qkrViewControl.lotusViewControl, .blog .lotusViewControl {
+
+  .lotusTileOn,
+  .lotusTileOff,
+  .lotusDetailsOn,
+  .lotusDetailsOff,
+  .lotusSummaryOn,
+  .lotusSummaryOff {
+
+    padding-bottom: 2px!important;
+    background-size: 18px 18px!important;
+    background-position: 2px 2px !important;
+    border: 1px solid transparent!important;
+    border-bottom: 2px solid transparent!important;
+    padding: 2px!important;
+    margin:3px!important;
+
+    &:focus {
+      outline:1px solid $border-selected!important;
+      outline-width:1px!important;
+      outline-style:solid!important;
+    }
+
+  }
+
+  .lotusView.lotusTileOff,
+  .lotusView.lotusDetailsOff,
+  .lotusView.lotusSummaryOff {
+    border-color: transparent!important;
+  }
+
+  .lotusTileOn,
+  .lotusDetailsOn,
+  .lotusSummaryOn {
+    border-bottom: 2px solid $border-selected!important;
+    top:0!important;
+    bottom:0!important;
+  }
+  .lotusTileOff,
+  .lotusTileOn {
+    background-image: svg-url-with-replaced-fill($svg-tile-view, '#000000', $icon-default) !important;
+  }
+  .lotusDetailsOff,
+  .lotusDetailsOn {
+    background-image: svg-url-with-replaced-fill($svg-details-view, '#000000', $icon-default) !important;
+  }
+  .lotusSummaryOn,
+  .lotusSummaryOff {
+    background-image: svg-url-with-replaced-fill($svg-summary-view, '#000000', $icon-default) !important;
+  }
+}
+
+
+//Forums
+
+#topicList .lotusTable{
+  @include datatable;
+}

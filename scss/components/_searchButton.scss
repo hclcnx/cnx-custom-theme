@@ -1,6 +1,6 @@
 //Floating search button
 .icSearchPaneButton {
-  border-radius:$border-radius-search-button;
+  border-radius:$border-radius-search-button !important;
   background-color: $btn-primary-fill !important;
   border: 1px solid $btn-primary-outline !important;
   outline: none !important;

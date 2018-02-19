@@ -14,6 +14,11 @@
   .lotusBtn {
     @include btnprimary;
   }
+  //Host meeting ID
+  #meetingSection #upperSection #code:focus {
+    outline:none !important;
+  }
+
   //Join drop down menu
   #widget_joinMenu {
     &.dijitComboBox, &.dijitComboBoxHover {
@@ -37,11 +42,9 @@
   .dijitComboBoxMenuPopup .dijitMenuItem {
     padding: 0.6em !important;
   }
-  // Recently joined meetings
+  // Recently joined meetings table
   #recentjoin_section {
-    tr:nth-child(even):not(.verseHead) {
-      background-color:$background-side !important;
-    }
+    @include datatable;
   }
   // Link hover
   &.verseTheme .lotusFrame a:hover,

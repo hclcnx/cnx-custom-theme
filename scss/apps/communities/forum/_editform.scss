@@ -1,0 +1,44 @@
+.lotusDialog {
+  .lotusTags {
+    span[dojoattachpoint="_tagItems"] {
+      display: block;
+      margin-bottom: 1rem;
+      // hide commas: 
+      font-size: 0;
+      span[role="listitem"] {
+        @include tags;
+        margin: .15rem !important;
+      }
+      span[role="listitem"] + a[role="button"] {
+        @include tags;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        margin: .15rem !important;
+        margin-left: -.75rem !important;
+        padding: 0 1rem 0 0 !important;  
+        
+        img {
+          height: 100% !important;
+          width: 12px !important;
+          background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+          background-position: center center !important;
+          background-size: 9px 9px;
+        }
+      }
+    }
+    form {
+      input[type="submit"] {
+        @include btnprimary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+      a[role="button"] {
+        @include btnsecondary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+    }
+  }
+}

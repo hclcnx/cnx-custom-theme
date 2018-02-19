@@ -27,15 +27,10 @@
       }
     }
   }
-  // List of numbers
+  // Global access numbers list
   #accessListFullListDiv {
     .lotusTable {
-      tr.lotusFirst {
-        text-transform:uppercase !important;
-      }
-      tr.lotusAltRow:nth-child(even) {
-        background-color:$background-side;
-      }
+      @include datatable;
     }
     .lotusTitle {
       font-weight:400 !important;

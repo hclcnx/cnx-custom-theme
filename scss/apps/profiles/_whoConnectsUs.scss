@@ -1,7 +1,7 @@
 // who connects us?
 div[id^="lconn_sand_ImageStream_"] {
   img {
-    border-radius: $border-radius-avatar;
+    border-radius: $border-radius-avatar !important;
   }
   > div {
     padding-top: 4px !important;
@@ -29,7 +29,7 @@ div[id^="lconn_sand_ImageStream_"] {
 }
 #sand_socialPath {
   img {
-    border-radius: $border-radius-avatar;
+    border-radius: $border-radius-avatar !important;
   }
   // font sizes for names in "who connects us"
   div[dojoattachpoint="msgPersonSelf"],

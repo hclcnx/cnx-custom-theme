@@ -5,6 +5,8 @@
 .icSearchPane,
 .icSearchResultsPage,
 .qkrDropAvatar,
+#pageDetails #wikiContentDiv,
+.blog,
 .lconnPicker {
   .lconn-ftype16,
   .lconn-ftype32,
@@ -99,7 +101,7 @@
   img[class$="rtf"],
   img[class$="txt"],
   img[class*="WordProcessingDocs"]{
-    background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-file-type-word) !important;
+    background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-file-type-document) !important;
   }
   // Spreadsheet type
   img[class$="xlsx"],
@@ -228,4 +230,12 @@
 //Fix for issue 605, Files upload files
 #body .lconnFileUpload img.lconnFileUploadIcon{
   background-position:0px!important;
+}
+
+//Fix for the spacing within file type icons in a Wiki page
+#pageDetails #wikiContentDiv .lconn-ftype16,
+.blog .lconn-ftype16{
+  margin-right:4px!important;
+  position:relative!important;
+  top:-1px!important;
 }

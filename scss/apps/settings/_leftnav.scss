@@ -8,6 +8,8 @@
     .dijitTreeNode {
       position: relative;
     }
+    padding-right:0px !important;
+    margin-right:0px !important;
 
     .lotusMenuSection h3 {
       margin-left:0!important;
@@ -58,9 +60,6 @@
           }
         }
       }
-  }
-  .lotusContent{
-    padding-left:48px!important;
   }
 }
 .lotusInner > .lotusMenuSection{

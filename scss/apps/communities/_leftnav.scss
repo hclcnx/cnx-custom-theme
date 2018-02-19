@@ -3,6 +3,14 @@
     .dijitTreeNode {
       position: relative;
     }
+    .lotusMenu {
+      margin: 0 !important;
+    }
+    .lotusArrow:focus,
+    .lotusSprite:focus,
+    a[widgetid="tagsHelpLink"]:focus {
+      outline: 1px solid $icon-default !important;
+    }
     .lconnWikisNavTree {
       .dijitTreeRow {
         padding: 0 !important;
@@ -23,26 +31,79 @@
         }
       }
     }
+    #sideNav, #lconnTagCloudFilter {
+      margin: 0 !important;
+    }
+
     .lotusMenuSection > ul > li,
     .lotusMenuSection > div > div > ul,
     .lotusMenuSection > div > div > ul > li,
+    .lotusMenuSubsection > ul > li,
     > .lotusSection:not(#lconnTagCloudFilter) ul li,
-    .lotusSection .dijitTreeNode {
+    #sideNav .lotusMenuSection .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode,
+    #sideNav > div > ul > li,
+    .lotusChunk.lotusTiny.lotusRight,
+    > .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li,
+    .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div #allPagesList li + li {
         padding: 0 !important;
-        margin: 0!important;
-        a {
+        margin: 0 !important;
+        a, div.dijitTreeRow {
           padding: $v-padding $h-padding !important;
           padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
           margin: 0 !important;
-          display: block;
+          // display: block;
           border: none !important;
           transition:$border-slide!important;
           font-weight: normal !important;
+          font-size: $body-sm-font-size;
+          width: 100% !important;
+          box-sizing: border-box;
           &:hover, &:focus {
             background-color:$background-side-hover !important;
             border: none !important;
             text-decoration: none !important;
           }
+          &.dijitTreeRowSelected {
+            border: none !important;
+            border-left:$b-thickness solid $brand-01 !important;
+            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            font-weight: 700 !important;
+          }
+        }
+        &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
+        &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
+          > .dijitTreeRow {
+            padding-left:calc( (2 * #{$initial-l-padding}) + #{$h-padding} )!important;
+          }
+          &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
+          &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
+            > .dijitTreeRow {
+              padding-left:calc( (3 * #{$initial-l-padding}) + #{$h-padding} )!important;
+            }
+            &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
+            &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
+              > .dijitTreeRow {
+                padding-left:calc( (4 * #{$initial-l-padding}) + #{$h-padding} )!important;
+              }
+            }
+            &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
+            &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
+              > .dijitTreeRow {
+                padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} )!important;
+              }
+              &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
+              &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
+                > .dijitTreeRow {
+                  padding-left:calc( (6 * #{$initial-l-padding}) + #{$h-padding} )!important;
+                }
+              }
+            }
+          }
+        }
+        .dijitTreeRow span > a {
+          padding: 0 !important;
+          margin: 0 !important;
+          display: inline !important;
         }
         .dijitTreeNodeSelected {
           border: none !important;
@@ -50,6 +111,9 @@
             border: none !important;
             padding: 0 !important;
           }
+        }
+        .lotusDragHandle {
+          margin-left: -28px !important;
         }
         &.lotusSelected,
         &:focus {
@@ -66,9 +130,47 @@
           }
         }
       }
-  }
-  .lotusContent{
-    padding-left:48px!important;
+      > .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li {
+        line-height: 0 !important;
+        font-size: 0 !important;
+        a {
+          font-size: $body-sm-font-size !important;
+          line-height: 1.2em !important;
+        }
+      }
+      .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div #allPagesList {
+        li:first-child {
+          a, form {
+            padding: $v-padding $h-padding !important;
+            padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+            margin: 0 !important;
+            font-weight: 500 !important;
+            &:hover {
+              background-color: transparent !important;
+              text-decoration: underline !important;
+            }
+          }
+          form {
+            display: block !important;
+            text-align: left !important;
+            input[type="text"] {
+              max-width: 85%;
+            }
+          }
+        }
+      }
+      .lotusChunk.lotusTiny.lotusRight {
+        display: block;
+        text-align: left;
+        float: none !important;
+        a {
+          font-weight: bold !important;
+          &:hover, &:focus {
+            text-decoration: underline !important;
+            background-color: transparent !important;
+          }
+        }
+      }
   }
 }
 .lotusInner > .lotusMenuSection{
@@ -77,16 +179,35 @@
 }
 //Changing tags, groups
 .lotusMain #lotusColLeft {
-  #lconnTagCloudFilter {
-    > h2, > h3 {
+  & {
+    #lconnTagCloudFilter > h2,
+    #lconnTagCloudFilter > h3,
+    #lconnTagCloudFilter > div > h2 {
       padding-left:42px!important;
       padding-right:$h-padding!important;
+      padding-top:calc(#{$v-padding} + 2px)!important;
+      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      a, span {
+        font-weight: normal !important;
+      }
     }
   }
-  .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter), 
-  .lotusMenuSection {
+  #lconnTagCloudContent {
     margin: 0 !important;
-    h2, h3 {
+    padding: 0 1.5rem 0 0 !important;
+    a:focus, span:focus {
+      outline: none !important;
+    }
+  }
+  .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter),
+  .lotusMenuSection,
+  #lotusSidenav.lotusMenu,
+  span.X-community-display-inline {
+    margin: 0 !important;
+    h2, h3,
+    + div .lotusMenuSection > div h2,
+    + div .lotusMenuSection > div h3,
+    #section_memberPermissionsHelp {
       margin-left:0!important;
       padding-left:42px!important;
       padding-right:$h-padding!important;
@@ -97,9 +218,6 @@
       &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
         background-color:$background-side-hover !important;
       }
-      a.lotusArrow {
-        margin-left: -($h-padding * .75);
-      }
       a {
         font-weight: normal !important;
       }
@@ -107,7 +225,7 @@
         font-size: $body-sm-font-size !important;
         font-weight: normal !important;
       }
-      
+
       > div {
         *:focus, *:active {
           outline: 0 !important;
@@ -115,9 +233,16 @@
         padding: 0 !important;
       }
     }
+    #section_memberPermissionsHelp,
+    #memberPermissionsHelp_section_hint_label + h2 {
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
+        background-color: transparent !important;
+      }
+    }
     > div > .lotusMenuSubsection,
     > div > div,
-    > div {
+    > div :not(.personinlinemenu) {
       padding: 0 !important;
       max-width: 100%;
       margin: 0 !important;
@@ -125,17 +250,29 @@
         padding-top:$v-padding!important;
         padding-bottom:$v-padding!important;
         padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
-        font-style: italic;
+        position: relative;
+        min-height: 21px;
+        font-size: $body-sm-font-size;
         a {
-          padding: 0 !important;
+          padding-top:$v-padding!important;
+          padding-bottom:$v-padding!important;
+          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
           margin: 0 !important;
-          font-style: normal;
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-sizing: border-box;
+          width: 100%;
+        }
+        &.lotusSelected a {
+          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 17px)!important;
         }
       }
     }
     .lotusSprite:focus {
-      outline: 1px solid $brand-01 !important;
+      outline: 1px solid $icon-default !important;
     }
+
     .dijitTreeNode .dijitTreeRow {
       padding-top:$v-padding!important;
       padding-bottom:$v-padding!important;
@@ -185,10 +322,15 @@
       }
     }
   }
+  > .lotusSection #lconnTagWidget > div > div[dojoattachpoint="_relatedTagsSection"] {
+    margin-top: 1rem !important;
+  }
+}
+.lotusSectionBody {
+  padding: 0 !important;
 }
 .sc.hikari.lotusui30 #lotusColLeft .lotusSection .lotusSectionBody#lconnTagCloudContent,
 .lotusMain #lotusColLeft > .lotusSection #lconnTagWidget {
-  padding: $v-padding $h-padding !important;
   padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
   > div > div {
     margin: 0 !important;
@@ -207,6 +349,58 @@
   .lotusInlinelist.lotusActions {
     span, a:hover {
       text-decoration: underline !important;
+    }
+  }
+}
+.lotusMain #lotusColLeft {
+  #admin_menu.lotusArrow {
+    margin-left: -($h-padding * .75) !important;
+  }
+}
+#lotusColLeft .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
+  margin-bottom: .5rem !important;
+}
+.lotusMain #lotusColLeft .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div {
+  &#section_entrymanagement,
+  &#section_dateFilter {
+    padding-top:$v-padding!important;
+    padding-bottom:$v-padding!important;
+    padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+
+    input[type="text"]:not(.dijitArrowButtonInner):not(.personinlinemenu),
+    .dijitReset.dijitInputInner {
+      @include textinput();
+      padding-right: 0 !important;
+      width: 120px !important;
+      min-width: 120px !important;
+      height: 1.5rem !important;
+    }
+    .dijitArrowButtonContainer,
+    .dijitArrowButtonInner {
+      min-width: 20px !important;
+      width: 20px !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    #widget_startDate,
+    #widget_endDate {
+      position: relative;
+
+      &, div {
+        background: transparent !important;
+        border: none !important;
+      }
+      .dijitDownArrowButton {
+        position: absolute;
+        right: 0;
+        background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+        background-repeat: no-repeat !important;
+        background-size: 10px 10px !important;
+        background-position: center center !important;
+        cursor: pointer;
+        z-index: 10;
+      }
     }
   }
 }

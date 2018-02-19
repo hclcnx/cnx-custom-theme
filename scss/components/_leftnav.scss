@@ -18,6 +18,13 @@ $border-slide:border .23s ease, padding .23s ease;
     #menu_allfiles{
       margin-top:0!important;
     }
+    * {
+      max-width: 100% !important;
+    }
+  }
+  .lotusContent{
+    padding-left:48px!important;
+    margin-left:0px !important;
   }
 }
 

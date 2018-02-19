@@ -50,9 +50,6 @@
       }
     }
   }
-  .lotusContent{
-    padding-left:48px!important;
-  }
 }
 
 .files-independent-scrollbars-compatible,
@@ -229,6 +226,22 @@
     outline:none!important;
     & > .header .title span{
       text-decoration: underline!important;
+    }
+  }
+}
+
+// long folder name fix:
+.lotusMain #lotusColLeft {
+  #menu_fileSync_childContainer,
+  #menu_allfolders {
+    .tree .header .title {
+      display: inline-block;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: calc(100% - 40px) !important;
+      box-sizing: border-box;
     }
   }
 }

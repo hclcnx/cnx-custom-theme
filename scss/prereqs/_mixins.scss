@@ -1,6 +1,6 @@
 // Basic button styling
 @mixin btnbasics {
-  border-radius:$border-radius-buttons;
+  border-radius:$border-radius-buttons !important;
   border-width: 1px!important;
   border-style: solid!important;
   box-shadow:none!important;
@@ -14,7 +14,7 @@
   transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
   white-space: nowrap!important;
   padding: 9px 20px!important;
-  font-weight: 500;
+  font-weight: 500!important;
   &:hover, &:active {
     text-decoration: none !important;
     outline:none;
@@ -107,7 +107,7 @@
 		cursor: pointer !important;
 		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
 		background-size: 0.75rem !important;
-		background-position: right !important;
+		background-position: right .4rem !important;
 		background-repeat: no-repeat !important;
 		height: auto !important;
 
@@ -116,6 +116,11 @@
 			//box-shadow: 0 1px 0 $border-field-focus !important;
 			outline: none !important;
 		}
+
+    &[disabled] {
+      cursor: not-allowed !important;
+      color: $disabled !important;
+    }
 }
 
 // Text area input field
@@ -273,6 +278,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  a {
+    color: $text-01 !important;
+    font-weight: normal !important;
+  }
   @if $color == white {
     background: $background-main !important;
   }
@@ -281,6 +290,7 @@
   }
   &:hover {
     text-decoration: none !important;
+    color: $text-01 !important;
   }
   &:focus {
     text-decoration: underline !important;
@@ -288,6 +298,176 @@
       border-bottom: 1px solid currentColor;
     }
   }
+}
+
+//Datatable
+@mixin datatable() {
+  //Table header
+  //Table header text size, weight, color, transform
+  th, th a, tr.lotusSort #topics, tr.lotusSort td a {
+    @include font-size($caption...);
+    color:$text-02!important;
+    &:lang(en) {
+      text-transform:uppercase !important;
+    }
+  }
+  //Table header spacing and alignment
+  th {
+    border-bottom:1px solid $border-focus;
+
+    a {
+      text-decoration:none;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+  tr.lotusSort {
+    border-bottom:1px solid $border-selected;
+
+    #topics{
+      padding:28px 16px 0 46px!important;
+      border:1px solid transparent!important;
+      border-bottom:1px solid $border-selected!important;
+    }
+
+    //header
+    td a{
+      padding:8px 16px!important;
+      border:1px solid transparent!important;
+      $distance-x: calc(100% - 7px);
+      background-position: $distance-x 13px!important;
+
+      &:hover,&:focus{
+        text-decoration:none!important;
+        border-radius:$border-radius-tabs!important;
+        border-color:$border-selected!important;
+      }
+
+      &:hover{
+        background-color:$background-table-header-hover!important;
+        color:$text-03!important;
+      }
+
+      &.lotusDescending,a.lotusAscending{
+        background-size:8px 8px!important;
+        padding:8px 20px 8px 16px!important;
+      }
+
+      &.lotusDescending{
+        background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+        &:hover{
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+        }
+      }
+
+      &.lotusAscending{
+        background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+        &:hover{
+          background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white) !important;
+        }
+      }
+
+    }
+    tr.lotusFirst{
+      border-top:1px solid $border-selected!important;
+    }
+  }
+  //Alternating rows
+  tr {
+
+    &:nth-child(even):not(.normalTopic):not(.lotusMore) {
+      th, td { background-color:$background-side; }
+    }
+
+    th, td {
+      padding-top:20px !important;
+      padding-bottom:20px !important;
+
+      &:first-child {
+        padding-left:10px !important;
+
+        input {
+          margin:0px 0px;
+        }
+
+      }
+
+      &:last-child {
+        padding-right:10px !important;
+      }
+
+    }
+  }
+
+  tr.normalTopic,
+  tr.lotusMore {
+
+    &:nth-child(4n+2),
+    &:nth-child(4n+3) {
+
+      th,
+      td {
+        background-color:$background-side;
+      }
+    }
+
+  }
+
+  tr.normalTopic {
+
+    td {
+      padding-bottom:12px!important;
+    }
+
+  }
+
+  tr.lotusMore {
+
+    td {
+      padding-top:0px!important;
+      padding-bottom:20px!important;
+
+      .lotusMeta > span {
+        vertical-align:baseline!important;
+        margin-bottom:0!important;
+      }
+
+    }
+  }
+}
+
+// Style of notification message for warnings, success, errors, info
+@mixin message {
+	border-radius:$border-radius-message !important;
+	border:2px solid rgba($color-gray-50, 0.3) !important;
+	box-shadow:0 4px 8px 0 rgba($color-black, 0.1) !important;
+	background-color:$background-main !important;
+	padding:0rem 0.5rem !important;
+	img {
+		border-radius: $border-radius-message-icon !important;
+	}
+}
+
+@mixin tableHeader {
+
+  color:$text-02!important;
+  border:1px solid transparent;
+  border-radius:$border-radius-tabs;
+
+  &:active, &:focus {
+    border-color:$border-selected!important;
+    text-decoration:none!important;
+  }
+
+  &:hover {
+    cursor:pointer;
+    text-decoration:none!important;
+    border-color:$border-selected!important;
+    background-color:$border-selected!important;
+    color:$text-03!important;
+  }
+
 }
 
 
