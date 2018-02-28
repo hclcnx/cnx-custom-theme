@@ -1,0 +1,26 @@
+#comments{
+  .qkrAddComment.lotusForm{
+    .cke_contents{
+      width:50%!important;
+      min-width:240px!important;
+      background-color: $background-side !important;
+      border: none !important;
+      border-bottom: 2px solid $border-selected !important;
+    }
+  }
+  .lconnRTE ,
+  .lotusFormFooter{
+    padding-left:0!important;
+  }
+}
+
+#blogCommentPanel{
+  .cke_contents{
+    outline:none!important;
+    padding:0!important;
+    min-width:240px!important;
+    background-color: $background-side !important;
+    border: none !important;
+    border-bottom: 2px solid $border-selected !important;
+  }
+}

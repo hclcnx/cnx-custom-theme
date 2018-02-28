@@ -1,0 +1,241 @@
+.filesList,
+.ics-viewer,
+#filesReader,
+.lotusStream,
+.icSearchPane,
+.icSearchResultsPage,
+.qkrDropAvatar,
+#pageDetails #wikiContentDiv,
+.blog,
+.lconnPicker {
+  .lconn-ftype16,
+  .lconn-ftype32,
+  .lconn-ftype64,
+  .ics-viewer-banner .ics-viewer-title .iconsFileTypes16,
+  .iconsFileTypes32
+  .iconsFileTypes64,
+  .lconnSprite-iconFolderClose32,
+  .lconnSprite-iconFolderPrivate32,
+  .ic-thumb-folder,
+  img[class*="Presentation"],
+  img[class*="Wikis"],
+  img[class*="Blogs"],
+  img[class*="Activities"],
+  img[class*="Forums"],
+  img[class*="Bookmarks"]{
+    background-position: 0 0!important;
+    border-radius: 0px !important;
+    background-size: contain;
+  }
+  .ic-thumb-folder{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .lconn-ftype16, .iconsFileTypes16{
+    background-size: 16px 16px!important;
+  }
+  .ics-viewer-title{
+    .lconn-ftype16, .iconsFileTypes16{
+      background-size: 24px 24px!important;
+      position:relative!important;
+      top:-4px!important;
+      left:-4px!important;
+      width:24px!important;
+      height:24px!important;
+    }
+  }
+  .lconn-ftype32, .iconsFileTypes32,
+  .lconnSprite-iconFolderClose32,
+  .lconnSprite-iconFolderPrivate32{
+    background-size: 32px 32px!important;
+  }
+  .lconn-ftype64, .iconsFileTypes64{
+    background-size: 64px 64px!important;
+  }
+  .lconn-ftype32-docx,
+  .lconn-ftype32-xlsx,
+  .lconn-ftype32-pptx{
+    position: relative;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    padding: 32px 32px 0 0;
+    box-sizing: border-box;
+  }
+  .lconn-ftype16-docx,
+  .lconn-ftype16-xlsx,
+  .lconn-ftype16-pptx{
+    position: relative;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    padding: 16px 16px 0 0;
+    box-sizing: border-box;
+  }
+  img[class*="ftype"],
+  img[class*="Default"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-unknown, '#000000', $icon-file-type-default) !important;
+  }
+  // Image types
+  img[class$="bmp"],
+  img[class$="eps"],
+  img[class$="gif"],
+  img[class$="ico"],
+  img[class$="jpg"],
+  img[class$="jpeg"],
+  img[class$="png"],
+  img[class$="psd"],
+  img[class$="svg"],
+  img[class$="tif"],
+  img[class$="tiff"],
+  img[class$="Graphic16"],
+  img[class$="Graphic32"],
+  img[class$="Graphic64"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-image, '#000000', $icon-file-type-image) !important;
+  }
+  // Word processing document type
+  img[class$="docx"],
+  img[class$="doc"],
+  img[class$="dot"],
+  img[class$="odt"],
+  img[class$="rtf"],
+  img[class$="txt"],
+  img[class*="WordProcessingDocs"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-file-type-document) !important;
+  }
+  // Spreadsheet type
+  img[class$="xlsx"],
+  img[class$="xls"],
+  img[class$="xlt"],
+  img[class$="ods"],
+  img[class*="DataDocs"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-spreadsheet, '#000000', $icon-file-type-spreadsheet) !important;
+  }
+  // Presentation type
+  img[class$="pptx"],
+  img[class$="ppt"],
+  img[class$="key"],
+  img[class$="odp"],
+  img[class*="Presentation"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-file-type-presentation) !important;
+  }
+  // PDF type
+  img[class$="pdf"],
+  img[class*="Pdf"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-pdf, '#000000', $icon-file-type-pdf) !important;
+  }
+  // Archive type
+  img[class$="jar"],
+  img[class$="zip"],
+  img[class*="Compressed"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-compressed, '#000000', $icon-file-type-archive) !important;
+  }
+  // Folder type
+  img[class*="Folder"],
+  img[class*="folder"]:not(.ic-thumb-folder){
+    background-image:svg-url-with-replaced-fill($svg-icon-folder, '#000000', $icon-file-type-folder) !important;
+  }
+  // Audio type
+  img[class$="mp3"],
+  img[class$="wav"],
+  img[class$="wma"],
+  img[class*="Audio"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-audio, '#000000', $icon-file-type-audio) !important;
+  }
+  // Video type
+  img[class$="avi"],
+  img[class$="mp4"],
+  img[class$="mov"],
+  img[class$="wmv"],
+  img[class$="m4v"],
+  img[class*="Video"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-video, '#000000', $icon-file-type-video) !important;
+  }
+  // Code type
+  img[class$="css"],
+  img[class$="dmg"],
+  img[class$="exe"],
+  img[class$="html"],
+  img[class$="java"],
+  img[class$="js"],
+  img[class$="json"],
+  img[class$="scss"],
+  img[class$="xml"],
+  img[class*="Code"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-code, '#000000', $icon-file-type-code) !important;
+  }
+  img[class*="Wikis"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-wiki, '#000000', $icon-file-type-wiki) !important;
+  }
+  img[class*="Blogs"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-blog, '#000000', $icon-file-type-blog) !important;
+  }
+  img[class*="Activities"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-activity, '#000000', $icon-file-type-activity) !important;
+  }
+  img[class*="Forums"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-forum, '#000000', $icon-file-type-forum) !important;
+  }
+  img[class*="Bookmarks"]{
+    background-image:svg-url-with-replaced-fill($svg-icon-bookmark, '#000000', $icon-file-type-bookmark) !important;
+  }
+
+}
+//Fixing size of the icons that show up on search results
+.icSearchResultsPage{
+  .iconsFileTypes64,
+  .lconn-ftype64{
+    background-position:12px 12px!important;
+  }
+  .otherPeople64{
+    background-image:none!important;
+  }
+  .iconsFileTypes64,
+  .lconn-ftype64,
+  img[class*="Wikis"],
+  img[class*="Blogs"],
+  img[class*="Activities"],
+  img[class*="Forums"],
+  img[class*="Bookmarks"]{
+    background-size:40px 40px!important;
+  }
+}
+//Fixing size of the icons that show up search pane results
+.icSearchPane{
+  img[class*="Wikis"],
+  img[class*="Blogs"],
+  img[class*="Activities"],
+  img[class*="Forums"],
+  img[class*="Bookmarks"]{
+    //the svgs get cut off if they are 32 px?
+    background-size:30px 30px!important;
+  }
+}
+//Fix for issue 519, Files add files to a folder dialog having messed up
+// file type icons.
+.lconnPicker .lconnPickerSourceArea,
+.lconnPickerSourceArea{
+  img[class*="Folder"]{
+    background-position-y:0px!important;
+    background-size:20px 20px!important;
+    background-repeat:no-repeat!important;
+  }
+}
+//This is for files only since the small icons are offset in the picker dialog
+#body .lconnPickerSourceArea{
+  .lconn-ftype16{
+    background-position:3px 3px!important;
+  }
+}
+//Fix for issue 605, Files upload files
+#body .lconnFileUpload img.lconnFileUploadIcon{
+  background-position:0px!important;
+}
+
+//Fix for the spacing within file type icons in a Wiki page
+#pageDetails #wikiContentDiv .lconn-ftype16,
+.blog .lconn-ftype16{
+  margin-right:4px!important;
+  position:relative!important;
+  top:-1px!important;
+}

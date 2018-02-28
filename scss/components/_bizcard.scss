@@ -1,0 +1,75 @@
+//Change bizcard drop down icon
+.vcard a.menu_drop_icon {
+	background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+	background-size:0.65rem !important;
+	background-position:2px !important;
+	background-repeat:no-repeat !important;
+	margin-left:0px !important;
+	margin-right:5px !important;
+}
+
+#javlinDiv{
+	.personMenu{
+		width:320px!important;
+		.photoCard{
+			height:75px!important;
+			width:75px!important;
+		}
+		img{
+			height:75px!important;
+			width:75px!important;
+		}
+		.businessCard{
+			margin-left:0rem!important;
+			width:180px!important;
+			margin-right:1.2rem!important;
+			margin-bottom:1rem!important;
+		}
+		li.lotusBreakWord:nth-child(4){
+			margin-top:1rem!important;
+		}
+		ul.topActionHolder{
+			background-color:white!important;
+			border-bottom:1px solid $color-gray-10!important;
+			margin:0 1rem 1rem 1rem!important;
+			// padding-left:0!important;
+			// padding-right:0!important;
+			// padding-bottom:0.5rem!important;
+			// padding-top:0.5rem!important;
+			padding:0.5rem 0!important;
+			li.topAction a{
+				color:$brand-01!important;
+				&:hover{
+					text-decoration-color:$brand-01!important;
+				}
+				&::after{
+					content:"";
+					padding-left:1px;
+					margin-left:8px!important;
+					background-color:$color-gray-10!important;
+					margin-top:3px!important;
+				}
+			}
+			li.topAction::before{
+				padding:0!important;
+			}
+			li.topAction:nth-child(2),li.topAction:last-child{
+				a::after{
+					margin-left:0!important;
+					padding-left:0!important;
+				}
+			}
+			li.topActionClose{
+				padding-right:0!important;
+			}
+		}
+		.personMenuActionsCompact{
+			border-top:1px solid $color-gray-10!important;
+			padding:0.5rem 0!important;
+			margin:0 1rem!important;
+			span{
+				color:$color-gray-10!important;
+			}
+		}
+	}
+}

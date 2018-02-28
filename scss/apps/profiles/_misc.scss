@@ -1,0 +1,18 @@
+// some button changes that are too general (no good trustworthy selectors/IDs) to put in _buttons.scss
+div[id^="com_ibm_sc_widget_SlideDialog_"] {
+  .lotusBtn {
+    &.lotusBtnDisabled:hover {
+      @include btnprimary;
+    }
+
+    &[data-dojo-attach-point="cancelBtn"],
+    &[data-dojo-attach-point="previousBtn"] {
+      // secondary btn styling
+      @include btnsecondary();
+
+      &:not([disabled]):hover {
+        @include btnprimary;
+      }
+    }
+  }
+}

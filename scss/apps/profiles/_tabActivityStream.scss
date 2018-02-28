@@ -1,0 +1,84 @@
+// activity stream
+#activityStream {
+  &:focus {
+    outline: none !important;
+  }
+  .filterArea {
+    border-top: 1px solid $color-gray-10;
+    border-color: $color-gray-10;
+    padding: 0 !important;
+    select {
+      display: inline-block !important;
+      margin-left: .25rem;
+    }
+    .filterAreaInner {
+      padding: .75rem !important;
+    }
+  }
+  .lotusPostHover {
+    background: $background-side !important;
+  }
+  .activityStreamNewsItemContainer {
+    //padding-right: 0 !important;
+    &:focus {
+      outline: 1px solid $brand-01 !important;
+    }
+  }
+  .lotusCommentList {
+    margin-right: 0 !important;
+    li.lotusCommentItem {
+      background: $background-side !important;
+      .lotusPost {
+        padding: 1rem !important;
+      }
+    }
+    .lotusPostAuthorInfo {
+      padding: 0 .5rem 0 0 !important;
+      .lotusPostAvatar {
+        padding: 0 !important;
+      }
+    }
+    .lotusCommentItem {
+      .lotusActions a {
+        font-weight: normal !important;
+      }
+    }
+  }
+  .lotusPostContent {
+    .lotusPostAction {
+      padding-right: 2rem;
+    }
+    div[dojoattachpoint="footerSummary"] .lotusActions {
+      a {
+        font-weight: normal !important;
+        color: $text-02 !important;
+      }
+    }
+  }
+  .lotusPostContent,
+  .lotusCommentList {
+    font-size: $body-sm-font-size;
+    .vcard a {
+      color: $text-01 !important;
+    }
+  }
+  abbr[id*="timeago"],
+  a.timeago {
+    text-decoration: none !important;
+    font-weight: normal !important;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+
+    + img {
+      display: none;
+    }
+  }
+}
+
+#centerWidgetContainer {
+  &:focus, div:focus, ul:not(.lotusTabs) > li:focus {
+    outline: 1px solid $brand-01 !important;
+  }
+}

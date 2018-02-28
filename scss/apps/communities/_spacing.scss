@@ -1,0 +1,99 @@
+//Communities app name in top left
+#lotusTitleBar h2, #lotusTitleBar h2 a{
+  @include font-size($apptitle...);
+  color:$text-01 !important;
+}
+//Name of community in main area
+#pagePlaceBar .lotusInner h2, //Blog
+.lotusPlaceBar .lotusInner h2, //Forum
+.pagePlaceBar .lotusInner h2, //Ideation blog
+#lotusPlaceBar .lotusInner h2 { //Wiki page
+  @include font-size($apptitle...);
+  color:$text-01 !important;
+  margin-left:260px !important;
+}
+
+//Wiki changes(mostly)
+.lotusContent{
+  padding-top:8px!important;
+  padding-left:48px!important;
+  .lotusBreadcrumbs,#wikiPageHeader{
+    margin-bottom:16px!important;
+  }
+}
+#lotusColLeft.lotusColLeft{
+  position:relative!important;
+  top:-24px!important;
+  padding-top:32px!important;
+}
+.lotusFooter{
+  height:51px!important;
+}
+.wikiHeader{
+  .lotusMeta,.lotusBtnContainer{
+    padding-top:0!important;
+    margin-top:0!important;
+  }
+  .lotusMeta {
+    margin-bottom: 10px !important;
+  }
+}
+
+//Blog Changes overwrite the wiki counterpart
+.blog{
+  .lotusMain{
+    padding-top:0!important;
+  }
+  .lotusContent,#lotusColRight{
+    padding-top:32px!important;
+  }
+  #lotusColLeft{
+    position:relative!important;
+    top:4px!important;
+    padding-top:28px!important;
+  }
+  .lotusContent{
+    margin-left:234px!important;
+  }
+  .lotusHeader,
+  .lotusActionBar,
+  .lotusPaging,
+  .lotusSort{
+    margin-top:0!important;
+    margin-bottom:16px!important;
+  }
+  #lotusColRight{
+    margin-left:48px!important;
+  }
+}
+//Blog jump to page override textinput
+.blog input[type="text"]#jumpToPage_text {
+  min-width:46px !important;
+  padding-right:0 !important;
+}
+
+//Wiki, images in pages
+.qkrWikiPreview {
+  img:not(.lconn-ftype16) {
+    max-width:100%;
+    width:auto;
+    height:auto;
+  }
+}
+
+//Wiki Index Page right side gutter
+.qkrQuota{
+  margin-right:0!important;
+}
+.qkrViewControl{
+  position:relative!important;
+  left:9px!important
+}
+
+//Forum form footer
+div[id^="lconn_forums_PostForm_"] {
+  .lotusFormTitle, .lotusFormBody, .lotusFormFooter {
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+}

@@ -1,0 +1,49 @@
+//Styles used for success, warning, error, and info messages
+.lotusui30 .lotusMessage2, .lotusMessage, .lotusMessage.lotusMeta,
+.template-homepage .alert-container {
+	@include message;
+}
+
+//messages in Orient me
+.template-homepage .alert-container {
+	.ic-notification {
+		.leftIcon {
+			border-radius:$border-radius-message-icon !important;
+			svg {
+				height:20px !important;
+				width:20px !important;
+			}
+		}
+		background-color:transparent !important;
+	}
+	.close span {
+		outline: 1px solid $text-01 !important;
+	}
+}
+
+//messages in Blogs and Ideation Blogs
+.lotusMessage {
+  //first line of message
+	span[id$="Message"] {
+		padding:16px 40px 10px 45px !important;
+	}
+  //second line of message
+	.lotusTable{
+		padding-top:4px !important;
+		span {
+			margin-right:0px !important;
+			margin-left:2px !important;
+		}
+	}
+	img {
+		margin:10px 10px 5px 10px !important;
+	}
+	.lotusDelete img {
+			margin:10px 15px 0 0 !important;
+	}
+}
+
+//Messages in Files dialogs
+.lconnCompactMessage.lotusMessageContainer {
+	width:auto !important;
+}

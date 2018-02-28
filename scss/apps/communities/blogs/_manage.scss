@@ -1,0 +1,26 @@
+.blog.admin #websiteForm {
+  td {
+    padding: 1rem 0 !important;
+    &.label {
+      text-align: left !important;
+    }
+    &[colspan="3"] {
+      padding: 1rem 0 0 !important;
+    }
+  }
+}
+
+.blog.admin #entry_detail_table {
+  th, td {
+    background-color: white;
+  }
+  tr:nth-child(4n - 1):not(:first-child),
+  tr:nth-child(4n - 2) {
+    th, td {
+      background-color: $background-side;
+    }
+  }
+  tr.lotusDetails td {
+    padding-top: 0 !important;
+  }
+}

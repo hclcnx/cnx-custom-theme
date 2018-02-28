@@ -1,0 +1,42 @@
+$h-padding:24px;
+$b-thickness:4px;
+$v-padding:14px;
+$initial-l-padding:15px;
+$p1:24px;
+$border-slide:border .23s ease, padding .23s ease;
+
+.lotusMain{
+  padding-left:0!important;
+  #lotusColLeft{
+    width:240px;
+    padding: 1rem 0 0 !important;
+    margin:0!important;
+    #lotusSidenav{
+      margin:0!important;
+    }
+    #menu_allfolders,
+    #menu_allfiles{
+      margin-top:0!important;
+    }
+    * {
+      max-width: 100% !important;
+    }
+  }
+  .lotusContent{
+    padding-left:48px!important;
+    margin-left:0px !important;
+  }
+}
+
+//Making the content as wide as we need it
+@media screen and (min-width: 1250px){
+  .files-independent-scrollbars-compatible,
+  .lotusui30_body,
+  .lotusMain,
+  .lconnFiles,
+  .lotusTopNav,
+  .lotusTitleBar,
+  .lotusRightCorner{
+    max-width:100%!important;
+  }
+}

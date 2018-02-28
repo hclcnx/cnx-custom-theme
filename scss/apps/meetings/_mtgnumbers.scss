@@ -1,0 +1,40 @@
+// Glogal Access Numbers List for Meetings
+.verseTheme {
+  // Banner
+  div.lotusBanner .lotusRightCorner {
+    background-color: $background-header !important;
+  }
+  // Heading
+  &.lotusui30 .lotusTitleBar2 .lotusHeading {
+    color:$text-01 !important;
+  }
+  // Body
+  .lotusFrame .lotusMain {
+    padding:0px 50px !important;
+  }
+  // Search
+  #accessListSearchDiv {
+    #searchBoxP {
+      margin-left:0px !important;
+    }
+    .lotusSearch {
+      table.lotusLayout{
+        background-color: $background-main !important;
+        border:transparent !important;
+        td {
+          border-bottom:none !important;
+        }
+      }
+    }
+  }
+  // Global access numbers list
+  #accessListFullListDiv {
+    .lotusTable {
+      @include datatable;
+    }
+    .lotusTitle {
+      font-weight:400 !important;
+      font-size:$body-sm-font-size !important;
+    }
+  }
+}
