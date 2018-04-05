@@ -537,3 +537,8 @@ input.lotusText.scTagTypeahead {
     background-repeat: no-repeat;
   }
 }
+
+// wiki tags 
+.lconnWikis .lotusContent .lotusTags li.lotusTag {
+  margin: .15rem !important;
+}

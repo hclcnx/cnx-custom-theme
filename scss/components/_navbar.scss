@@ -1,7 +1,12 @@
-.ics-scbanner {
+.ics-scbanner{
   div,a{
 		-webkit-font-smoothing:antialiased!important;
+    font-weight:400 !important;
 	}
+  a {
+    @include link-color(dark);
+    text-decoration:none !important;
+  }
   background-color: $brand-02 !important;
   .navsimplelist {
     &> li a:focus {
@@ -22,12 +27,24 @@
 	height:1.75rem!important;
 	width:1.75rem!important;
 }
+
+.lotusNavMenu {
+  a {
+    @include link-color(dark);
+    text-decoration:none !important;
+  }
+}
+
+#headerHelpLi {
+  height: 42px;
+}
+
 //help icon
-.help{
+.help, #headerHelpLi a {
   background-position:4px 10px!important;
   background-repeat:no-repeat!important;
   background-image:svg-url-with-replaced-fill($svg-help-icon, '#000000', '#FFFFFF') !important;
-  background-size:20px 20px;
+  background-size:20px 20px !important;
   .help-image{
     visibility: hidden!important;
   }

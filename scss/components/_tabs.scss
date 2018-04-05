@@ -95,25 +95,35 @@
 }
 
 // share a file
+.dijitTabContainer,
 div[id^="lconn_share_widget_Dialog_"] {
   .switchPane { margin-bottom: 1rem !important; }
+  .dijitTabListContainer-top,
   .switchContainer {
     border-bottom: 1px solid $color-gray-10 !important;
     font-size: $tab-font-size !important;
     font-weight: 500 !important;
     height: auto !important;
+    background: none !important;
+
+    .dijitTabListWrapper {
+      position: relative !important;
+      left: auto !important;
+    }
 
     .lconnPickerSourceSwitchingContentArea, fieldset {
       padding: 0 !important;
       margin: 0 !important;
     }
 
+    div[role="tablist"],
     .tablist, .lconnPickerSourceToCheck, .lconnPickerSourceLabel, .lconnPickerSourceToCheck span {
       font-size: inherit !important;
       font-weight: inherit !important;
       margin: 0 !important;
       padding: 0 !important;
       border: 0 !important;
+      position: relative !important;
     }
     > div {
       height: auto !important;
@@ -135,6 +145,7 @@ div[id^="lconn_share_widget_Dialog_"] {
 
     }
     // tab list items styling (a):
+    .dijitTabInner.dijitTabContent,
     .lconnPickerSourceToCheck .lconnPickerSourceLabel {
       display: inline-block !important;
       position: relative;
@@ -169,6 +180,7 @@ div[id^="lconn_share_widget_Dialog_"] {
     // selected styling:
     .pickerSourceChecked {
       border-bottom: 4px solid $border-selected !important;
+      background-image: none !important;
       .lconnPickerSourceLabel {
         color: $text-01 !important;
         &:hover {
@@ -181,6 +193,51 @@ div[id^="lconn_share_widget_Dialog_"] {
           color: $text-01 !important;
           background-color: transparent !important;
           border-color: $btn-secondary-outline-hover !important;
+        }
+      }
+    }
+  }
+}
+
+// forum reply -> insert image -> file picker dialog
+// these tabs hide the icons already so we should fix the left padding
+.dijitTabContainer .dijitTabListContainer-top {
+  padding: 0 !important;
+  div[role="tablist"] {
+    padding-bottom: calc(.375rem + 3px) !important;
+    .dijitTabInner.dijitTabContent {
+      padding-left: 1rem !important;
+
+      + .dijitTabInner.dijitTabContent {
+        margin-left: 1rem !important;
+      }
+      &.dijitTabChecked {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          border-bottom: 4px solid $border-selected !important;
+          top: 100%;
+          margin-top: .375rem;
+          left: -1px;
+          width: calc(100% + 2px);
+          height: 0;
+        }
+        background-image: none !important;
+        .lconnPickerSourceLabel {
+          color: $text-01 !important;
+          &:hover {
+            color: $text-03 !important;
+            background-color: $btn-secondary-fill-hover !important;
+            border-color: $btn-secondary-outline-hover !important;
+            font-weight: 500 !important;
+          }
+          &:focus {
+            color: $text-01 !important;
+            background-color: transparent !important;
+            border-color: $btn-secondary-outline-hover !important;
+          }
         }
       }
     }

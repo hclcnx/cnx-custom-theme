@@ -1,5 +1,5 @@
 // Drop down, select, combo boxes
-select {
+select:not([style="display:none"]) {
 	@include select;
 }
 // Workaround for ComboBox in Create Contact

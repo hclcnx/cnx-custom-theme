@@ -1,7 +1,59 @@
-html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([lang="ja"]):not([lang="ko"]):not([lang="ru"]):not([lang="th"])  {
-	&, h1, h2, h3, h4, h5, h6, p, a, button, textarea, input, span, div {
-		font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif !important;
-	}
+// apply font, but not for languages it doesn't support
+html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([lang="ja"]):not([lang="ko"]):not([lang="ru"]):not([lang="th"]) {
+  font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+}
+// override old font on body and inherit everywhere else
+body {
+  font-family: inherit !important;
+  * {
+    font-family: inherit;
+  }
+}
+// some elements have the font family set again on them
+// copy the selector affecting it and nest it in here
+// the selector here will override without using !important
+html {
+  .lotusui30 .lotusDialog .lotusHeading,
+  .lotusui30 .lotusTitleBar2 .lotusHeading, 
+  .lotusui30 .lotusTitleBar2 .lotusHeading a,
+  .lotusui30 div.lotusTitleBar h2, 
+  .lotusui30 div.lotusPlaceBar h2,
+  .lotusui30 .lotusPlaceBar .lotusBtn,
+  .lotusui30 .dijitTitlePaneTitle,
+  .lotusui30 .lotusSection h2,
+  .lotusui30 .lotusWidget h2,
+  .lotusui30 .lotusWidget2 h2,
+  .lotusui30 .lotusMeta, 
+  .lotusui30 .lotusWidget2 .lotusTable h4,
+  .lotusui30 .lotusTable h4,
+  .lotusui30 .lotusMeta,
+  .lotusui30 .lotusWidget2 .lotusTable h4
+  .ics-viewer .ics-panel-entry-container,
+  .lotusui30 .lotusBtn,
+  .lotusui30 button, 
+  .lotusui30 input, 
+  .lotusui30 select,
+  .lotusui30 .lotusBtnSmallGray,
+  .lotusui30 button.lotusFormButton,
+  .lotusui30 .lconnUploadContainer .lotusBtn,
+  .lotusui30 input.lotusFormButton,
+  .ics-viewer .ics-panel-entry-container,
+  .ics-viewer .ics-viewer-details .ics-viewer-details-shelf,
+  .scloud3,
+  .lotusui30_fonts,
+  .lotusui30 .lotusSymbol,
+  .lotusui30 .lotusFlyoutInner .lotusStatus,
+  .lotusui30dojo textarea,
+  .lotusui30_fonts,
+  .lotusui30 .lotusMain span.lotusBtn a,
+  .lotusui30 .lotusBtnSmall,
+  .lotusui30 .lotusPaletteHeader ul.lotusTabs li a strong,
+  .lotusui30 .lotusWelcomeBox li,
+  .lotusui30 .lotusWelcomeBox p,
+  .lotusui30 .lotusWelcomeBox .lotusHeading,
+  .lotusui30_layout .lotusWelcomeBox h2 {
+    font-family: inherit;
+  }
 }
 
 $font-path: '../fonts/IBMPlexSans-' !default;

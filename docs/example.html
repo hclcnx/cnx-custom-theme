@@ -80,7 +80,7 @@
 <!-----RECOMMENDED STEPS----->
 <h1><a name="steps">Recommended Steps to Get Started</a></h1>
 <ol>
-  <li>Become familar with the Files and Folders in this example.</li>
+  <li>Become familiar with the Files and Folders in this example.</li>
   <li>View the visual updates using Tampermonkey.</li>
   <li>Make a small modification, such as changing the brand colors and test using Tampermonkey.</li>
   <li>Create a Chrome extension to share your modifications with others.</li>
@@ -254,13 +254,14 @@ var mappings = {
               "/mycontacts/",
               "/contacts/"],
   "search":["/search/"],
-//  "blogs":["/blogs/"],
+  "blogs":["/blogs/"],
 //  "activities":["/activities/"],
 //  "communities":["/communities/"],
 //  "home":["/homepage/"],
-//  "wikis":["/wikis/"],
+  "forums":["/forums/"],
+  "wikis":["/wikis/"],
   "settings":["/manage/account/user/",
-              "/news/web/",
+              "/news/",
               "/manage/subscribers/showInviteGuestDialog/"]
 };
 </pre>
@@ -275,13 +276,14 @@ var mappings = {
               "/mycontacts/",
               "/contacts/"],
   "search":["/search/"],
-//  "blogs":["/blogs/"],
+  "blogs":["/blogs/"],
 //  "activities":["/activities/"],
 //  "communities":["/communities/"],
   "home":["/homepage/"],
-//  "wikis":["/wikis/"],
+  "forums":["/forums/"],
+  "wikis":["/wikis/"],
   "settings":["/manage/account/user/",
-              "/news/web/",
+              "/news/",
               "/manage/subscribers/showInviteGuestDialog/"]
 };
 </pre>
@@ -295,16 +297,18 @@ var mappings = {
     <ul>
       <li>Remove any unnecessary comments or attributes.</li>
       <li>Remove all the line returns so that the .svg markup is all on one line and save the file.</li>
+      <li>Include fill="#000000" on parts of the SVG where you want to be able to change the color. The logic used in this example looks for fill="#000000" and replaces it with the color you specify.<br />
+      Note: This only supports changing one color at this time.</li>
     </ul>
   <li>Add the .svg as a variable to use in Connections. Find the scss/prereqs/_icons.scss file and add your icon as a variable:
 <pre class="code">
-$svg-myIcon:"&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path d="blah blah"&gt;&lt/path&gt;&lt;/svg&gt;";
+$svg-myIcon:'&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path fill="#000000" d="blah blah"&gt;&lt/path&gt;&lt;/svg&gt;';
 </pre>
 </li>
 <li>Apply the icon variable to be used as a background-image for any element you need by doing the following:
 <pre class="code">
 .myElement{
-   background-image:svg-url-with-replaced-fill($svg-myIcon, '#000000', '#colorYouWant') !important;
+   background-image:svg-url-with-replaced-fill($svg-myIcon, '#000000', $colorVariable) !important;
 }
 </pre>
 </li>

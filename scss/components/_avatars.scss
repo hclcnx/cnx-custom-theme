@@ -38,6 +38,15 @@
 //Round community icons in search panel
 .lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
   border-radius:$border-radius-comm-icon !important;
+
+}
+//Community icons in Communities landing page
+.lotusContent {
+  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
+    .placeRow td[dojoattachpoint="communityIcon"] img {
+      border:1px solid $border-separator;
+    }
+  }
 }
 
 //Profiles Directory Search Results avatars
@@ -72,7 +81,10 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 }
 
 // Style person name
-a.lotusPerson, a:visited.lotusPerson, .vcard a.fn.url {
+a.lotusPerson, 
+a:visited.lotusPerson, 
+.vcard a.fn.url,
+.panelContent .header1 a.lotusPerson, {
   color:$text-01 !important;
 }
 
