@@ -1,0 +1,125 @@
+// onprem navbar uses lotusBanner
+.lotusui30 div.lotusBanner .lotusRightCorner {
+  //Background color
+  background-color: $background-header !important;
+  height: 40px;
+  //Links on the navigation bar
+  ul.lotusInlinelist li {
+    &.lotusHover a {
+      background-color:transparent !important;
+    }
+    &.lotusSelected {
+      &::after {
+        border-bottom: 14px solid $color-white !important;
+      }
+      &:hover::after {
+        border-bottom: 12px solid $background-header-hover !important;
+      }
+    }
+    a {
+      @include link-color(light);
+      text-decoration: none !important;
+      background-color: transparent !important;
+      font-weight:400 !important;
+      &:hover {
+        background:none !important;
+        &:after {
+          content:'';
+          bottom: 0px;
+          border-bottom:0.25rem solid $background-header-hover;
+          height:100%;
+          left:50%;
+          transform: translateX(-50%);
+          position:absolute;
+          width:100%;
+        }
+        &:before {
+          border: none !important;
+        }
+      }
+      &:focus {
+        background:none !important;
+      }
+    }
+  }
+
+
+  //Right side of navigation bar
+  .lotusInlinelist.lotusUtility {
+    #lotusBannerNotifications a {
+      &:before {
+        left:28px;
+        height: 32px !important;
+        top: 20px !important;
+      }
+      &:hover:after {
+        bottom: 5px;
+      }
+    }
+    #lotusPerson a {
+      &:before {
+        left:38px;
+        height: 33px !important;
+        top: 20px !important;
+      }
+      &:hover:after {
+        bottom: 2px;
+      }
+      &:focus {
+        border-color: $color-white !important;
+      }
+    }
+    #headerHelpLi {
+      height: 42px;
+      a:focus::before {
+        height: 33px !important;
+        left: 15px !important;
+      }
+    }
+    //Share button
+    #headerSharebox a {
+      border: 1px solid transparent !important;
+      padding-top: 8px !important;
+      margin-top: 4px !important;
+      &:hover {
+        border: 1px solid transparent !important;
+        background:none !important;
+      }
+      &:hover:after {
+        background:none !important;
+        bottom: -5px;
+        width: 80%;
+      }
+      &:focus {
+        border: 1px solid $color-white !important;
+      }
+    }
+  }
+}
+
+//Style navigation bar menus, not in banner section
+div[id^="lotusBanner"][id$="_dropdown"],
+#logoutLabel_dropdown {
+  top:44px !important;
+  a {
+    @include link-color(dark);
+    font-weight:400 !important;
+    text-decoration: none !important;
+    strong {
+      font-weight:400;
+    }
+  }
+  //Update recent communities heading in menu
+  #recentCommunities {
+    padding-left:12px;
+    padding-right:11px;
+    margin-left:0px;
+    margin-right:0px;
+    color:$text-01;
+    font-weight:700;
+  }
+  //Improve spacing in Apps menu
+  .lotusNavMenuLarge th {
+    padding-right:20px;
+  }
+}

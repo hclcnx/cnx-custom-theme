@@ -11,6 +11,8 @@ $brand-04: #FF509E; //Magenta40
 $brand-05: #2E3F8F; //Ultramarine 70
 // Accent background for pinned items
 $brand-06: #E7E9F7; //Ultramarine 10
+// Accent background used for badges
+$brand-07: #E62325; //red50
 
 // -----NEUTRAL COLORS-----
 $color-white: #FFFFFF; //White
@@ -42,6 +44,7 @@ $error: #FF5C49; //Red 40
 $text-01: $color-black; // Primary text color on all backgrounds
 $text-02: $color-gray-60; // Secondary text color
 $text-03: $color-white; // Light color on dark background
+$text-04: $brand-01; // links
 
 // -----BACKGROUND COLORS-----
 // Background colors used in the main body of most pages
@@ -52,11 +55,14 @@ $background-side: $color-gray-1; //Light gray Note: Use text-01 on this backgrou
 $background-side-hover: $color-gray-10; // Hover on secondary background color
 // Background color of global navigation and headers
 $background-header: $brand-02;
+$background-header-hover: $brand-03; //Accent color on hover
 // Background color and opacity used behind modal dialog and file preview
 $background-underlay: rgba($color-black,0.6);
 // Background accent colors
 $background-table-header-hover: $brand-01; //Background color for hovering on table header elements.
 $background-pinned-row: $brand-06; //Background color for pinned topics in list
+$background-chart-header: $color-gray-50; //Chart headers in community metrics
+$background-badge: $brand-07; //red50
 
 // -----BORDER COLORS-----
 $border-selected: $brand-01; // Selected, focus border color
@@ -64,6 +70,7 @@ $border-focus: $brand-01; // Used for focus styling
 $border-separator: $color-gray-10; // Used for separator lines
 $border-field: $color-gray-10; // Field border color
 $border-field-focus: $brand-01; // Field border focus color
+$border-header-focus: $color-white; // Focus border in navigation bar
 
 // -----CHECK BOXES-----
 $checkbox-border: $color-gray-60; // Checkbox border color, unchecked
@@ -110,7 +117,7 @@ $icon-file-type-image: #40D5BB;
 $icon-file-type-document: #2D74DA;
 $icon-file-type-spreadsheet: #00AA5E;
 $icon-file-type-presentation: #FE8500;
-$icon-file-type-pdf: #E62325;
+$icon-file-type-pdf: #E62325; //red50
 $icon-file-type-archive: #6F7878;
 $icon-file-type-folder: #000000;
 $icon-file-type-audio: #FF509E;
@@ -121,3 +128,13 @@ $icon-file-type-blog: #000000;
 $icon-file-type-activity: #000000;
 $icon-file-type-forum: #000000;
 $icon-file-type-bookmark: #000000;
+
+// Metrics data COLORS
+$data-bookmarks: #dc267f; // Bookmarks; Magenta 50
+$data-forums: #9753e1; // Forums; Violet 50
+$data-wikis: #5d1a38; // Wikis; Magenta 80
+$data-ideationblog: #db7c00; // IDEATIONBLOG; Orange 40
+$data-blogs: #00884b; // Blogs; Green 50
+$data-files: $brand-01; // Files; Ultramarine 50
+$data-activities: #e62325; // Activities; Red 50
+$data-overall: $color-gray-50; // Overall; Cool Gray 50

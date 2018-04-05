@@ -6,8 +6,7 @@ form.lotusForm.qkrEdit {
     }
   }
   #title, #name {
-    font-size: $head1-font-size !important;
-    font-weight: 600;
+    @include font-size($title...);
     margin-bottom: .5em;
     width: 32em !important;
     text-overflow: ellipsis;

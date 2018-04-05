@@ -81,7 +81,32 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 
 
 //Forums
-
-#topicList .lotusTable{
-  @include datatable;
+#dfTopicList, //List of forum topics in community
+#dfOpenQuestionList, //List of open forum questions in community
+#dfAnsweredQuestionList, //List of answered forum questions in community
+#topicList { //List of forum topics inside forum
+  .lotusTable{
+    @include datatable;
+  }
+}
+//Align labels on not sorting columns on list of forum topics inside forum
+#topicList .lotusTable tr.lotusSort {
+  #topics { //Topic table header on forum list inside forum
+    padding:28px 16px 20px 46px!important;
+    border:1px solid transparent!important;
+    border-bottom:1px solid $border-selected!important;
+  }
+}
+//Align labels on not sorting columns on list of forum topics in community
+#dfTopicList
+,#dfOpenQuestionList,
+#dfAnsweredQuestionList {
+  .lotusTable tr.lotusSort {
+    td:first-of-type { //Topic table header in forum list in community
+      padding:28px 16px 20px 46px!important;
+    }
+    td:nth-of-type(2) { //Forum table header in forum list in community
+      padding:28px 16px 20px 0px !important;
+    }
+  }
 }

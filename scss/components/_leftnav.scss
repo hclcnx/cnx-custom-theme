@@ -7,7 +7,7 @@ $border-slide:border .23s ease, padding .23s ease;
 
 .lotusMain{
   padding-left:0!important;
-  #lotusColLeft{
+  #lotusColLeft:not(.wpthemeNarrow){
     width:240px;
     padding: 1rem 0 0 !important;
     margin:0!important;
@@ -22,9 +22,12 @@ $border-slide:border .23s ease, padding .23s ease;
       max-width: 100% !important;
     }
   }
-  .lotusContent{
+  .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow){
     padding-left:48px!important;
     margin-left:0px !important;
+  }
+  .lotusWidget_3columnLayoutWithBanner & .lotusContent.wpthemeWide:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 0 !important;
   }
 }
 

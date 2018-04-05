@@ -7,16 +7,17 @@
       border-collapse:separate;
     }
     .lotusTable.blogsFixedTable {
-      td {
-        box-shadow:0 4px 8px 0 rgba($color-black, 0.1);
+      td[style="width:95px"],
+      td.entryContentContainerTD {
+        box-shadow:0 4px 8px 0 $box-shadow-10;
         padding:20px 30px;
         border:1px solid $color-gray-10;
         position:relative;
         // Title of the post
         h4, h4 a {
-            font-size:$title-font-size;
             color:$text-01 !important;
             text-decoration:none;
+            @include font-size($title...);
         }
         //meta info
         .lotusMeta, .lotusMeta a {
@@ -40,6 +41,10 @@
             margin-bottom: 0 !important;
           }
         }
+      }
+      // ideation vote td... prevent double border
+      td[style="width:95px"] {
+        border-right: none !important;
       }
     }
   }
@@ -134,5 +139,47 @@
         transform:rotate(142deg);
       }
     }
+  }
+}
+
+// archive list 
+#section_archive {
+  max-height: 300px;
+  overflow: auto;
+  padding: 0 1.2rem !important;
+  border: 1px solid $border-separator;
+}
+
+#NotificationFormEx {
+  box-shadow:0 4px 8px 0 $box-shadow-10;
+  border:1px solid $border-field;
+  margin-bottom: 1rem;
+  
+  .lotusTabContent {
+    border: none !important;
+  }
+  .fieldborder {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .fieldborder .fieldcontent {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  .notifyList label {
+    float: none;
+    display: inline-block;
+    position: static;
+    @include font-size($body...);
+  }
+  #notificationForm_typeahead,
+  #notificationForm_filteringcheckboxFilterTextbox {
+    margin: 1rem 0 !important;
+    width: 22rem !important;
+  }
+  .peopleList .lconnNotify {
+    padding: .15rem;
   }
 }

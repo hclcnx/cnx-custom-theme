@@ -15,6 +15,7 @@
   white-space: nowrap!important;
   padding: 9px 20px!important;
   font-weight: 500!important;
+  background-image: none !important;
   &:hover, &:active {
     text-decoration: none !important;
     outline:none;
@@ -304,7 +305,7 @@
 @mixin datatable() {
   //Table header
   //Table header text size, weight, color, transform
-  th, th a, tr.lotusSort #topics, tr.lotusSort td a {
+  th, th a, tr.lotusSort td, tr.lotusSort td a {
     @include font-size($caption...);
     color:$text-02!important;
     &:lang(en) {
@@ -324,12 +325,6 @@
   }
   tr.lotusSort {
     border-bottom:1px solid $border-selected;
-
-    #topics{
-      padding:28px 16px 0 46px!important;
-      border:1px solid transparent!important;
-      border-bottom:1px solid $border-selected!important;
-    }
 
     //header
     td a{
@@ -373,10 +368,11 @@
       border-top:1px solid $border-selected!important;
     }
   }
+
   //Alternating rows
   tr {
 
-    &:nth-child(even):not(.normalTopic):not(.lotusMore) {
+    &:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) {
       th, td { background-color:$background-side; }
     }
 
@@ -471,9 +467,9 @@
 }
 
 
-/* ------------------------------------------------- */
-/* ==from https://codepen.io/jakob-e/pen/doMoML       */
-/* ------------------------------------------------- */
+// ------------------------------------------------- //
+// ==from https://codepen.io/jakob-e/pen/doMoML      //
+// ------------------------------------------------- //
 @function svg-url($svg){
     //
     //  Chunk up string in order to avoid

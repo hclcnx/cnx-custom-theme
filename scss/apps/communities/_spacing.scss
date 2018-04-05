@@ -14,20 +14,20 @@
 }
 
 //Wiki changes(mostly)
-.lotusContent{
+.lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide){
   padding-top:8px!important;
   padding-left:48px!important;
   .lotusBreadcrumbs,#wikiPageHeader{
     margin-bottom:16px!important;
   }
+  #wikiPageHeader {
+    @include font-size($title...);
+  }
 }
-#lotusColLeft.lotusColLeft{
+#lotusColLeft.lotusColLeft:not(.wpthemeNarrow){
   position:relative!important;
   top:-24px!important;
   padding-top:32px!important;
-}
-.lotusFooter{
-  height:51px!important;
 }
 .wikiHeader{
   .lotusMeta,.lotusBtnContainer{
@@ -38,6 +38,9 @@
     margin-bottom: 10px !important;
   }
 }
+.lconnWikis .lotusHeader h1 {
+  @include font-size($title...);
+}
 
 //Blog Changes overwrite the wiki counterpart
 .blog{
@@ -47,7 +50,7 @@
   .lotusContent,#lotusColRight{
     padding-top:32px!important;
   }
-  #lotusColLeft{
+  #lotusColLeft:not(.wpthemeNarrow){
     position:relative!important;
     top:4px!important;
     padding-top:28px!important;
@@ -96,4 +99,66 @@ div[id^="lconn_forums_PostForm_"] {
     padding-left:0px !important;
     padding-right:0px !important;
   }
+}
+
+// community actions
+%headreset {
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+}
+#lotusTitleBar .lotusWrapper .lotusRightCorner .lotusInner {
+  padding-top: 22px !important;
+
+  .lotusTitleBarContent h2 {
+      line-height: 1.5;
+  }
+}
+#lotusFrame .lotusPlaceBar {
+@extend %headreset;
+  .lotusRightCorner {
+    @extend %headreset;
+    .lotusInner {
+      @extend %headreset;
+      h2 {
+        @extend %headreset;
+        margin-left: 288px !important;
+        margin-top: -47px !important;
+      }
+    }
+  }
+}
+h2 + div.lotusTitleBarExt > ul.lotusInlinelist.lotusActions:not(#communityActions) {
+  padding: 1rem 1.75rem 0 !important;
+}
+h2 + div#communityActionBar,
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  display: block !important;
+  right: 2.5rem !important;
+  padding-top: 1rem !important;
+}
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  right: 1.75rem !important;
+}
+.lotusPlaceBar .lotusRightCorner {
+  .lotusActions, #communityActions {
+    li a {
+      @include font-size($bodylink...)
+    }
+  }
+}
+
+// three column community layout
+.lotusMain #lotusColLeft.wpthemeNarrow {
+  width: 432px !important;
+  padding: 0;
+  margin: 0 2rem 0 0 !important;
+}
+.lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow {
+  width: 370px !important;
+  margin: 0 30px 0 0 !important;
 }

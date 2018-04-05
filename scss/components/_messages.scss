@@ -22,7 +22,7 @@
 }
 
 //messages in Blogs and Ideation Blogs
-.lotusMessage {
+.blog .lotusMessage {
   //first line of message
 	span[id$="Message"] {
 		padding:16px 40px 10px 45px !important;
@@ -36,7 +36,7 @@
 		}
 	}
 	img {
-		margin:10px 10px 5px 10px !important;
+		margin:10px !important;
 	}
 	.lotusDelete img {
 			margin:10px 15px 0 0 !important;

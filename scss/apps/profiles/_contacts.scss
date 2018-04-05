@@ -31,16 +31,3 @@ div:not(#_profileEditScene_div) .profileDataTable {
 .lotusPaging span.endWithSpace + a img {
   margin-left: .25rem;
 }
-
-// add a contact drop down options
-body.lotusui30 .dijitMenuPopup .dijitMenuTable {
-  .dijitMenuItemFocused td,
-  .dijitMenuItemSelected td {
-    &,
-    &.dijitMenuItemIconCell,
-    &.dijitMenuItemLabel {
-      border-color: $brand-01 !important;
-      color: $brand-01 !important;
-    }
-  }
-}
