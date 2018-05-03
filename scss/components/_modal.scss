@@ -45,8 +45,13 @@
 .lotusDialogClose img{
 	display:none!important;
 }
-.lotusDialogClose,.dijitDialogCloseIcon{
-	background-attachment: scroll!important;
+.lotusDialogClose,
+.dijitDialogCloseIcon
+.lotusPaletteClose {
+	// need to check if this works in all cases;
+	@include bx--modal-close;
+	// if above works, then remove the commented section below
+  /* background-attachment: scroll!important;
   background-clip: border-box!important;
   background-color: transparent !important;
 	background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default)!important;
@@ -62,7 +67,7 @@
 	&:focus {
 		outline:1px solid $icon-default!important;
 		outline-offset: 1px!important;
-	}
+	} */
 }
 
 //File Picker Dialogs (add a file, upload, share a file, link to a file)
@@ -151,16 +156,56 @@ div[dojoattachpoint="streamNode"] {
 }
 .lotusDialogBorder > .lotusForm > div,
 .lotusDialogBorder > .lotusDialog > div{
-	padding-right:3rem!important;
-	padding-left:3rem!important;
+	padding-right:2rem!important;
+	padding-left:2rem!important;
 }
+
+// fix for right col too wide in Wiki Move Page dlg
+.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
+	padding-left:2rem!important;
+	padding-top:1rem!important;
+	+ div {
+		padding-left:2rem!important;
+	}
+}
+
+// Move page checkbox alignment
+input.moveCheckBox {
+	vertical-align: middle !important;
+	label {
+		vertical-align: middle !important;
+	}
+}
+
+// right box on move dialog
+div.qkrMovePageList {
+  width: 296px !important;
+}
+
+.lotusui30 div.lconnMovePageColLeft,
+.lotusui30 div.lconnMovePageColRight {
+  // display:inline-block !important;
+  // width:260px;
+}
+.lotusui30 div.lconnMovePageColRight {
+  // margin-left:20px !important;
+}
+div.qkrMovePageList,
+tr.qkrMovePageList,
+input[id="lconn_share0_widget_Dialog_0mysearchbox"] {
+  // width:260px !important;
+}
+
 #lconn_btn_browse_files{
   @include btnprimary
 }
+
 .lotusDialogHeader .lotusHeading,
+.lotusDialogHeader span.dijitDialogTitle,
 .dijitDialogTitleBar span,
-span[id^="lconn_share_widget_LotusDialog_"]
-{
+.cke_dialog_title,
+span[id^="lconn_share_widget_LotusDialog_"],
+.app_palette_modal_header_title {
 	color: $text-01 !important;
 	font-weight:500!important;
 	font-size:$title-font-size !important;
@@ -168,8 +213,26 @@ span[id^="lconn_share_widget_LotusDialog_"]
 .lotusFormTable td img.lotusArrow{
 	color: $text-03 !important;
 }
-.lotusFormButton:last-of-type{
-	margin-right:0!important;
+
+// Survey settings dialog
+div.lconn-survey_dialog {
+  div.lotusDialogHeader {
+    padding-top: 1.25rem !important;
+    margin-bottom: 0 !important;
+    span.dijitDialogTitle {
+       padding-bottom: 1rem !important;
+       padding-left: 2rem !important;
+     }
+  }
+  .lotusForm2 .lotusText {
+    width: 100% !important;
+  }
+  input[type="radio"] {
+    margin-left: 2px !important;
+  }
+  .lotusui30 img {
+    vertical-align: top !important;
+  }
 }
 .lotusDialogContent._qkrDialogCompact{
 	overflow:initial!important;
@@ -337,6 +400,9 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 	> div > table > tbody > tr > td {
 		display: flex !important;
 	}
+	col[width="100%"] {
+    width: auto !important;
+	}
 	tr td,
 	td table td {
 		display: block !important;
@@ -380,6 +446,70 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 		margin-bottom: -1.35rem !important;
 
 	}
+}
+
+// Add app popup styles
+.app_palette_modal {
+  .app_palette_modal_header {
+    background-color: #ffffff;
+    height: 90px;
+    border: 0 !important;
+
+    // display applications added message after adding app
+    p[data-dojo-attach-point='itemAddedTextHolder'] {
+      position: absolute;
+      left: 30px;
+      top: 110px;
+      font-size: $tab-font-size !important;
+      font-weight: 500 !important;
+      color: $text-01 !important;
+    }
+
+    .app_palette_modal_tabs_ul {
+      border-bottom: 1px solid $color-gray-10 !important;
+      padding: 10px 0px 0px 0px !important;
+      width: 85% !important;
+    }
+  }
+
+	// display for name of the current layout
+  h4 {
+    a.homepageUnclickable {
+      &:active, &:hover, &:focus {
+        text-decoration: none !important;
+      }
+    }
+    .titleNodeSpanSelected {
+      color: $text-01 !important;
+      white-space: normal;
+    }
+    .lotusAltText {
+      color: $text-01 !important;
+      display: block !important;
+      &:before {
+        content: " [";
+      }
+      &:after {
+        content: "]";
+      }
+    }
+  }
+  .lotusPaletteWidget {
+    padding: 6px 4px !important;
+    &:focus {
+      outline: $btn-secondary-outline-hover auto 2px;
+    }
+  }
+  .lotusIcon {
+    background-position-x: 2px !important;
+  }
+  // use larger close icon
+  .lotusPaletteClose {
+		@include bx--modal-close;
+  }
+  .app_palette_modal_close_button img {
+    display:none!important;
+  }
 }
 
 // new group in contacts

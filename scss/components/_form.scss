@@ -15,7 +15,7 @@ label {
 	.lotusText{
 		width:calc(100% - 2rem)!important;
 	}
-	td:nth-child(3){
+	html:not(.dj_safari) & td:nth-child(3){
 		display:none!important;
 	}
 	td:nth-child(1){
@@ -238,4 +238,113 @@ li.addressFormLi {
 // edit profile
 #tableEditProfileContactInfo td {
 	display: block !important;
+}
+
+// community add members group search pop-up
+.lotusui30 .lotusDialogBorder form.lotusDialog {
+	border: none;
+}
+
+// community import members
+form[id^="importMembersForm"] {
+	input[type="radio"] {
+		margin-bottom: .75rem;
+	}
+	select[id^="selectRoleimportMembersForm"] {
+		margin: .75rem 0 1.5rem;
+	}
+	textarea[disabled],
+	input[type="file"][disabled] {
+		display: none;
+	}
+}
+form[id^="exportMembersForm"] {
+	.lotusui30 .lotusDialog & .lotusFormFieldRow {
+		padding-left: 2px;
+	}
+	input[type="checkbox"] {
+		vertical-align: middle;
+	}
+}
+
+// community filter by members
+#Members #MembersPanel .lotusForm {
+	tr#controlsRow > td + td {
+		padding-bottom: 3.5rem;
+	}
+	tr#findRow {
+    position: absolute;
+    right: 0;
+    top: 40%;
+	}
+	#findLabel,
+	#filterLabel {
+		@include font-size($body...);
+	}
+	#filterLabel,
+	span.lotusIndent10 {
+		display: inline-block;
+	}
+	#roleFilter {
+		width: 10rem !important;
+	}
+}
+
+// calendar edit event form
+#calendar_event_editor {
+	.dijitTextBox .dijitInputField input,
+	input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] {
+		@include textinput;
+	}
+	div#widget_calendar_event_editor-subject,
+	div#widget_calendar_event_editor-location,
+	div#widget_calendar_event_editor-sdate,
+	div#widget_calendar_event_editor-stime,
+	div#widget_calendar_event_editor-edate,
+	div#widget_calendar_event_editor-etime,
+  div#widget_calendar_event_editor_rec-until {
+		border: none !important;
+	}
+
+	label[id^="lconn_calendar_FilteringCheckbox"] {
+		width: 130px !important;
+	}
+
+	div.lconnNotify {
+		height: 24px !important;
+		label {
+			line-height: 22px !important;
+		}
+	}
+
+	.person_picker {
+		.menu_drop_icon {
+			margin-bottom: 6px !important;
+		}
+		.lotusDelete {
+			margin-bottom: 8px !important;
+		}
+	}
+}
+
+// Create survey Form
+form[name="surveysCreateForm"] {
+	max-width: 800px;
+  fieldset {
+    width: 100% !important;
+    table {
+      width: 100% !important;
+      input.lotusText,
+      textarea.lotusText {
+        width: 100% !important;
+      }
+      td {
+        padding: 4px 0px !important;
+        margin-top: 5px !important;
+      }
+      input.lotusBtn {
+        margin-top: 20px !important;
+      }
+    }
+  }
 }

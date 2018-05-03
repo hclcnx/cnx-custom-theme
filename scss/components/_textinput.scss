@@ -10,8 +10,12 @@ input[id^="lconn_share_widget_Dialog_"][id$="_name"],
 #concordnewfilesheet,
 #concordnewfilepres,
 input.lotusText,
-.blog input[type="text"],
-.dijitTextBox .typeaheadInput input {
+.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"]),
+.dijitTextBox .typeaheadInput input,
+#communityTypeAhead,
+#editbookmarkTagTypeAheadContainer input.dijitTextBox,
+#bookmarkAddForm input.dijitTextBox
+ {
 	@include textinput;
 }
 
@@ -112,12 +116,15 @@ div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchBar"] 
 }
 
 // profiles tags are an exception right now
-#socialTagName, #lconnTagWidgetcommonTagsTypeAhead, #contactsTagWidgetcommonTagsTypeAhead, [id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
+#socialTagName,
+#lconnTagWidgetcommonTagsTypeAhead,
+#contactsTagWidgetcommonTagsTypeAhead,
+input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
 	@include textinput;
 	padding: 0 !important;
 	//font-size: $body-sm-font-size !important;
 	width: calc(100% - 30px) !important;
-	min-width: 7rem !important;
+	min-width: 1rem !important;
 	height: 36px;
 }
 
@@ -183,5 +190,41 @@ div[id^="widget_bhc_PeopleTypeAhead_"] {
 			width: 100% !important;
 			box-sizing: content-box !important;
 		}
+	}
+}
+
+// communities add members
+#Members {
+	#addGroupsWidgetPeopleTypeAhead,
+	#bhc_lconn_core_PeopleTypeAhead,
+	#addMembersWidgetPeopleTypeAhead {
+		padding-bottom: .75rem !important;
+	}
+	#widget_bhc_lconn_core_PeopleTypeAhead {
+		border: none !important;
+		vertical-align: top;
+		margin-left: 0;
+
+		div.typeaheadInput {
+			padding-left: 0 !important;
+			padding-bottom: 1px;
+			background-image: none !important;
+		}
+	}
+	#bhc_lconn_core_PeopleTypeAhead,
+	#addMembersWidgetPeopleTypeAhead {
+		padding-left: 1.5rem !important;
+		padding-right: 0 !important;
+		background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+		background-repeat: no-repeat !important;
+		background-position: left top !important;
+		background-size: 1rem !important;
+		height: auto !important;
+		margin-left: .75rem;
+	}
+}
+#MembersPanel .lotusForm {
+	#filterString {
+		@include textinput;
 	}
 }

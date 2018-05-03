@@ -25,12 +25,20 @@ div[id^="com_ibm_oneui_controls_internal__MasterPopup_"] {
       }
     }
   }
-  .lotusPopupLeft .lotusPopupConnector  {
+  .lotusPopupLeft .lotusPopupConnector,
+  .lotusPopupRight .lotusPopupConnector  {
     background-image: none !important;
     width: 0;
     height: 0;
     border: .5rem solid transparent;
+    top:8px !important;
+  }
+  .lotusPopupLeft .lotusPopupConnector  {
     border-left: .5rem solid $background-header;
     margin: 0 -0.25rem 0 0;
+  }
+  .lotusPopupRight .lotusPopupConnector  {
+    border-right: .5rem solid $background-header;
+    margin: 0 0 0 -0.25rem;
   }
 }

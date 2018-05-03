@@ -24,3 +24,13 @@
     border-bottom: 2px solid $border-selected !important;
   }
 }
+
+//Fix typography for commnents in a Wiki page
+#comments div[id^="lconn_wikis_widget_CommentsMentions_"] {
+  div.lotusMeta, .lotusMeta > a, .lotusMeta > span {
+    @include font-size($caption...);
+  }
+  .lotusMeta > span {
+    margin-bottom: 0px !important;
+  }
+}

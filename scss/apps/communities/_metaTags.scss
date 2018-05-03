@@ -125,12 +125,17 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
         padding: 6px 16px !important;
         font-weight: 500 !important;
         font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
       }
       a[role="button"] {
+        display: inline-block;
         @include btnsecondary;
         padding: 6px 16px !important;
         font-weight: 500 !important;
         font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
       }
     }
   }

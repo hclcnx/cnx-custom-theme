@@ -1,10 +1,21 @@
+.lotusWidget_3columnsWithBannerTopMenuLayout .lotusMain,
+.lotusWidget_3columnsTopMenuLayout .lotusMain {
+  padding-left: 40px !important;
+}
 .lotusMain{
-  #lotusColLeft{
+  &[role="tabpanel"] {
+    padding: 40px 40px 24px 0 !important;
+  }
+  #lotusColLeft, .lotusColLeft {
+    margin-left: 0 !important;
+  }
+  #lotusColLeft:not(.wpthemeNarrow),
+  .lotusColLeft:not(.wpthemeNarrow) {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 240px;
     .dijitTreeNode {
       position: relative;
-    }
-    .lotusMenu {
-      margin: 0 !important;
     }
     .lotusArrow:focus,
     .lotusSprite:focus,
@@ -34,12 +45,13 @@
     #sideNav, #lconnTagCloudFilter {
       margin: 0 !important;
     }
-
+    div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li,
     .lotusMenuSection > ul > li,
     .lotusMenuSection > div > div > ul,
     .lotusMenuSection > div > div > ul > li,
-    .lotusMenuSubsection > ul > li,
-    > .lotusSection:not(#lconnTagCloudFilter) ul li,
+    .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li,
+    #viewAllMetricsDivID > ul > li,
+    > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li,
     #sideNav .lotusMenuSection .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode,
     #sideNav > div > ul > li,
     .lotusChunk.lotusTiny.lotusRight,
@@ -58,6 +70,10 @@
           font-size: $body-sm-font-size;
           width: 100% !important;
           box-sizing: border-box;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: block;
           &:hover, &:focus {
             background-color:$background-side-hover !important;
             border: none !important;
@@ -91,12 +107,6 @@
               > .dijitTreeRow {
                 padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} )!important;
               }
-              &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
-              &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
-                > .dijitTreeRow {
-                  padding-left:calc( (6 * #{$initial-l-padding}) + #{$h-padding} )!important;
-                }
-              }
             }
           }
         }
@@ -126,6 +136,22 @@
             span {
               border: none !important;
               padding: 0 !important;
+            }
+          }
+        }
+      }
+      > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) {
+        #section_comments,
+        #section_pendingEntries,
+        #section_draftEntries,
+        #section_publishedEntries {
+          &.lotusSectionBody ul li {
+            padding-left: calc((#{$initial-l-padding} + #{$h-padding}))!important;
+
+            > a {
+              width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
+              max-width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
+              margin-left: calc( -1 * (#{$initial-l-padding} + #{$h-padding}))!important;
             }
           }
         }
@@ -171,6 +197,9 @@
           }
         }
       }
+    .lotusMenu {
+      margin: 0 !important;
+    }
   }
 }
 .lotusInner > .lotusMenuSection{
@@ -178,7 +207,8 @@
   padding-bottom:0!important;
 }
 //Changing tags, groups
-.lotusMain #lotusColLeft {
+.lotusMain #lotusColLeft:not(.wpthemeNarrow),
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) {
   & {
     #lconnTagCloudFilter > h2,
     #lconnTagCloudFilter > h3,
@@ -189,6 +219,9 @@
       padding-bottom:calc(#{$v-padding} - 2px)!important;
       a, span {
         font-weight: normal !important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
   }
@@ -204,7 +237,7 @@
   #lotusSidenav.lotusMenu,
   span.X-community-display-inline {
     margin: 0 !important;
-    h2, h3,
+    > h2, > h3,
     + div .lotusMenuSection > div h2,
     + div .lotusMenuSection > div h3,
     #section_memberPermissionsHelp {
@@ -214,6 +247,9 @@
       margin-bottom:0!important;
       padding-top:calc(#{$v-padding} + 2px)!important;
       padding-bottom:calc(#{$v-padding} - 2px)!important;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
       &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
         background-color:$background-side-hover !important;
@@ -242,7 +278,7 @@
     }
     > div > .lotusMenuSubsection,
     > div > div,
-    > div :not(.personinlinemenu) {
+    > div :not(.personinlinemenu):not(ul[role="listbox"]) {
       padding: 0 !important;
       max-width: 100%;
       margin: 0 !important;
@@ -328,10 +364,13 @@
 }
 .lotusSectionBody {
   padding: 0 !important;
+  margin: 0 !important;
 }
-.sc.hikari.lotusui30 #lotusColLeft .lotusSection .lotusSectionBody#lconnTagCloudContent,
-.lotusMain #lotusColLeft > .lotusSection #lconnTagWidget {
+.sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent,
+.lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget,
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 {
   padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+  padding-right: $h-padding;
   > div > div {
     margin: 0 !important;
   }
@@ -340,6 +379,7 @@
     margin-right: 5px !important;
     ul li a {
       font-weight: 500 !important;
+      padding: 0 !important;
       &:hover {
         background: transparent !important;
         text-decoration: underline !important;
@@ -352,15 +392,15 @@
     }
   }
 }
-.lotusMain #lotusColLeft {
+.lotusMain #lotusColLeft:not(.wpthemeNarrow) {
   #admin_menu.lotusArrow {
     margin-left: -($h-padding * .75) !important;
   }
 }
-#lotusColLeft .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
+#lotusColLeft:not(.wpthemeNarrow) .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
   margin-bottom: .5rem !important;
 }
-.lotusMain #lotusColLeft .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div {
+.lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div {
   &#section_entrymanagement,
   &#section_dateFilter {
     padding-top:$v-padding!important;
@@ -403,4 +443,143 @@
       }
     }
   }
+}
+.lotusMain[style*="padding-top: 0px;"] {
+  padding-top: 0 !important;
+}
+
+// for files
+#navTreeMain {
+  padding: 0 !important;
+  #navTreeContainer {
+    margin: 0 !important;
+  }
+}
+#navCommunityFilesOuter,
+div[id^="lconn_share_widget_Tree_"] {
+  border: 0 !important;
+  margin: 0 !important;
+
+  .twisty {
+    width: auto !important;
+    padding: 0 !important;
+  }
+  .lconnNavTreeSelector,
+  .headerSelector {
+    padding: $v-padding $h-padding !important;
+    padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+    border: none !important;
+    transition:$border-slide!important;
+    font-weight: normal !important;
+    font-size: $body-sm-font-size;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0 !important;
+    > span {
+      padding: 0 !important;
+      line-height: 1.25rem;
+    }
+    &:hover, &:focus {
+      background-color:$background-side-hover !important;
+      border: none !important;
+      text-decoration: none !important;
+    }
+    &.lotusSelected {
+      border: none !important;
+      border-left:$b-thickness solid $brand-01 !important;
+      padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+      font-weight: 700 !important;
+    }
+  }
+}
+.lotusMain #lotusColLeft #navTreeContainer {
+  .node {
+    margin: 0;
+    > .headerOuter {
+      margin-top:0!important;
+      border:none!important;
+    }
+  }
+  .headerSelector{
+    padding-top:$v-padding!important;
+    padding-bottom:$v-padding!important;
+    &:focus{
+      outline:none!important;
+      .title > span{
+        text-decoration:underline!important;
+      }
+    }
+    .header{
+      height:20px!important;
+      line-height: 1.25em;
+      display: flex;
+      flex-direction: row;
+    }
+    .icon{
+      span img{
+        height:20px!important;
+        width:20px!important;
+      }
+    }
+    .twisty + .icon {
+      min-width: 24px;
+    }
+  }
+  //A11y Fixes: Left Navigation Fixing folders that don't get an underline when focused.
+  .lotusMenuSubsection{
+    .headerSelector:focus{
+      outline:none!important;
+      & > .header .title span{
+        text-decoration: underline!important;
+      }
+    }
+  }
+  // long folder name fix:
+  #menu_fileSync_childContainer,
+  #menu_allfolders {
+    .tree .header .title {
+      display: inline-block;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: calc(100% - 40px) !important;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.lotusMain #lotusColLeft #mainActions {
+  padding: $v-padding $h-padding;
+  margin: 0 !important;
+  width: auto !important;
+  button {
+    margin: 0 !important;
+  }
+}
+
+#lconnTagCloudContent-widget-tagcloud,
+#lconnTagWidget {
+  padding: $v-padding $h-padding !important;
+  padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+}
+
+.lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter):not([id^="event"]) > h2 {
+  margin-left: 0 !important;
+  padding-left: 42px !important;
+  padding-right: 24px !important;
+  margin-bottom: 0 !important;
+  padding-top: calc(14px + 2px) !important;
+  padding-bottom: calc(14px - 2px) !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#lotusCollapseBar {
+  margin: 0 !important;
+  cursor: ew-resize;
 }

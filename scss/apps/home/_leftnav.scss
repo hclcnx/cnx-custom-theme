@@ -1,0 +1,57 @@
+//left nav on classic home page
+$h-padding:24px;
+$b-thickness:4px;
+$v-padding:14px;
+$initial-l-padding:15px;
+$p1:24px;
+$border-slide:border .23s ease, padding .23s ease;
+
+.lotusMain{
+  padding-left:0!important;
+  #lotusColLeft{
+    width:240px;
+    padding: 1rem 0 0 !important;
+    margin:0!important;
+    #homepageLeftNavigationMenuContainer {
+      //padding:0px $h-padding;
+      li {
+        margin:0px 0px;
+        a {
+          padding-left:calc(#{$initial-l-padding} + #{$h-padding})!important;
+          padding-right:$h-padding;
+          padding-top:$v-padding;
+          padding-bottom:$v-padding;
+          @include font-size($body...);
+          border:none !important;
+          text-decoration:none !important;
+          margin:0px 0px;
+          &:hover, &:focus {
+            background-color:$background-side-hover;
+            text-decoration:none !important;
+            border:none !important;
+          }
+          span.lotusUnreadBadge {
+            background-color:$background-badge;
+            color:$text-03;
+            float:right;
+            width:20px;
+            text-align:center;
+            border-radius:10px;
+          }
+        }
+        &.lotusSelected {
+          border:none !important;
+          a {
+            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            font-weight:700 !important;
+            border-left:4px solid $border-selected !important;
+          }
+        }
+      }
+    }
+  }
+}
+//Avatar at the top of left navigation
+#lotusFrame .lotusTitleBar2 #hpUserPhoto {
+  margin-left:37px;
+}

@@ -1,3 +1,6 @@
+//======MIXINS=========
+
+//======BUTTONS=========
 // Basic button styling
 @mixin btnbasics {
   border-radius:$border-radius-buttons !important;
@@ -15,6 +18,8 @@
   white-space: nowrap!important;
   padding: 9px 20px!important;
   font-weight: 500!important;
+  background-image: none !important;
+  margin:2px 4px 3px 2px !important; //Important so that focus styling doesn't get cut off
   &:hover, &:active {
     text-decoration: none !important;
     outline:none;
@@ -86,11 +91,13 @@
   }
 }
 
+//======BACKGROUND OPACITY=========
 @mixin background-opacity($color, $opacity: 1) {
     background: $color!important; /* The fallback */
     background: rgba($color, $opacity)!important;
 }
 
+//======SELECT=========
 @mixin select {
 		font-size: $input-size !important;
 		-webkit-appearance: none !important;
@@ -123,7 +130,7 @@
     }
 }
 
-// Text area input field
+//======TEXTAREA=========
 @mixin textarea {
 	background-color:$background-side !important;
 	border:none!important;
@@ -139,7 +146,7 @@
 	}
 }
 
-// Field
+//======TEXTINPUT=========
 @mixin textinput {
 	//height:2.5rem!important;
   line-height: 1.5 !important;
@@ -159,6 +166,7 @@
 	}
 }
 
+//======FILEINPUT=========
 @mixin fileinput {
 	@include textinput;
 	cursor: pointer;
@@ -171,7 +179,7 @@
 	}
 }
 
-
+//======LINKS=========
 /* Link Mix-ins */
 @mixin link-color($color) {
   @if       $color == inherit { color: inherit !important; }
@@ -261,6 +269,22 @@
   }
 }
 
+/* Large close icon */
+/* Note - May also need to include a display:none on an existing button img */
+@mixin bx--modal-close() {
+  background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default)!important;
+  background-position-x: center!important;
+  background-position-y: center!important;
+  height: 24px!important;
+  width: 24px!important;
+  top: 1rem!important;
+  right: 1rem!important;
+  padding: 0.25rem 0.25rem 0.125rem 0.25rem !important;
+  &:focus {
+    outline:1px solid $icon-brand-01!important;
+  }
+}
+
 /* Tag mixin */
 @mixin tags($color: gray) {
   color: $text-01 !important;
@@ -301,10 +325,10 @@
 }
 
 //Datatable
-@mixin datatable() {
+@mixin datatable($multiplier: 1) {
   //Table header
   //Table header text size, weight, color, transform
-  th, th a, tr.lotusSort #topics, tr.lotusSort td a {
+  th, th a, tr.lotusSort td, tr.lotusSort td a {
     @include font-size($caption...);
     color:$text-02!important;
     &:lang(en) {
@@ -324,12 +348,6 @@
   }
   tr.lotusSort {
     border-bottom:1px solid $border-selected;
-
-    #topics{
-      padding:28px 16px 0 46px!important;
-      border:1px solid transparent!important;
-      border-bottom:1px solid $border-selected!important;
-    }
 
     //header
     td a{
@@ -373,13 +391,20 @@
       border-top:1px solid $border-selected!important;
     }
   }
-  //Alternating rows
+
   tr {
-
-    &:nth-child(even):not(.normalTopic):not(.lotusMore) {
-      th, td { background-color:$background-side; }
+    // Alternating rows where each "row/entry" is 1 tr
+    @if $multiplier == 1 {
+      &:nth-child(even) {
+        &, th, td { background-color:$background-side; }
+      }
+    // Alternating rows where each "row/entry" is really 2 consecutive trs
+    } @else if $multiplier == 2 {
+      &:nth-child(4n+2),
+      &:nth-child(4n+3) {
+        &, th, td { background-color:$background-side; }
+      }
     }
-
     th, td {
       padding-top:20px !important;
       padding-bottom:20px !important;
@@ -390,40 +415,20 @@
         input {
           margin:0px 0px;
         }
-
       }
-
       &:last-child {
         padding-right:10px !important;
       }
-
     }
-  }
-
-  tr.normalTopic,
-  tr.lotusMore {
-
-    &:nth-child(4n+2),
-    &:nth-child(4n+3) {
-
-      th,
-      td {
-        background-color:$background-side;
-      }
-    }
-
   }
 
   tr.normalTopic {
-
     td {
       padding-bottom:12px!important;
     }
-
   }
 
   tr.lotusMore {
-
     td {
       padding-top:0px!important;
       padding-bottom:20px!important;
@@ -432,7 +437,6 @@
         vertical-align:baseline!important;
         margin-bottom:0!important;
       }
-
     }
   }
 }
@@ -471,9 +475,9 @@
 }
 
 
-/* ------------------------------------------------- */
-/* ==from https://codepen.io/jakob-e/pen/doMoML       */
-/* ------------------------------------------------- */
+// ------------------------------------------------- //
+// ==from https://codepen.io/jakob-e/pen/doMoML      //
+// ------------------------------------------------- //
 @function svg-url($svg){
     //
     //  Chunk up string in order to avoid

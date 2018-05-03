@@ -104,31 +104,24 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 	}
   .ics-viewer-action-download{
     	img{
-				background-image: svg-url-with-replaced-fill($svg-download, '#000000', $icon-black) !important;
+				background-image: svg-url-with-replaced-fill($svg-download, '#000000', $icon-default) !important;
 				background-position:0px!important;
 			}
   }
-	.ics-viewer-action-like{
-		.unchecked img{
-			background-image: svg-url-with-replaced-fill($svg-heart-outline, '#000000', $icon-black) !important;
-		}
-		.checked img{
-			background-image:svg-url-with-replaced-fill($svg-heart-filled, '#000000', '#000000') !important;
-		}
-	}
+	@import './components/likebtn';
 	.ics-viewer-action-favorite{
 		.checked img{
-			background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
+			background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-default) !important;
 			background-position:0px!important;
 		}
 		div:not(.checked) img{
-			background-image: svg-url-with-replaced-fill($svg-pin-unchecked, '#000000', $icon-black) !important;
+			background-image: svg-url-with-replaced-fill($svg-pin-unchecked, '#000000', $icon-default) !important;
 			background-position:0px!important;
 		}
 	}
 	.ics-viewer-action-close{
 		img{
-			background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-black) !important;
+			background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default) !important;
 			background-position:0px!important;
 		}
 	}
@@ -137,7 +130,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 			outline:none !important;
 		  span.dropdown-menu-icon{
 			  background-position:0px 0px!important;
-			  background-image: svg-url-with-replaced-fill($svg-more, '#000000', $icon-black) !important;
+			  background-image: svg-url-with-replaced-fill($svg-more, '#000000', $icon-default) !important;
 			  top:7px!important;
 			  }
 			}
@@ -146,7 +139,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 		.ics-viewer-action-panel{
 			img{
 				top:1px;
-				background-image: svg-url-with-replaced-fill($svg-expand, '#000000', $icon-black) !important;
+				background-image: svg-url-with-replaced-fill($svg-expand, '#000000', $icon-default) !important;
 				background-position:0px 0px!important;
 			}
 		}
@@ -157,7 +150,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 		img{
 			top:1px;
 			background-position:0px 0px!important;
-			background-image: svg-url-with-replaced-fill($svg-collapse, '#000000', $icon-black) !important;
+			background-image: svg-url-with-replaced-fill($svg-collapse, '#000000', $icon-default) !important;
 		}
 	}
 }
@@ -165,7 +158,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 	padding-left:0px!important;
 }
 .dijitArrowButtonInner{
-	background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-black) !important;
+	background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
 }
 //Editing the comment tool
 #body .newCommentBox,.newCommentBox,
@@ -518,7 +511,7 @@ ul[data-dojo-attach-point="tagList"]{
 	position:relative;
 	top:0px!important;
 }
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) {
+.lotusui30_body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) {
 	.dropdown-menu-icon {
 		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
 		background-position: 3px 1px !important;
@@ -532,6 +525,16 @@ ul[data-dojo-attach-point="tagList"]{
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton a:focus{
 	border-radius: 2rem 0 0 2rem!important;
 }
+//Placement of Upload button
+.ics-viewer .ics-viewer-banner .ics-viewer-toolbar {
+	.ics-viewer-action-upload:not(.ics-viewer-splitbutton) {
+		a {
+			top: -3px !important;
+			margin:0px 0px !important;
+		}
+	}
+}
+//File name
 .ics-viewer-title-name-container{
 	input:focus,
 	.ics-viewer-cancel:focus{
