@@ -19,11 +19,11 @@ form.lotusForm.qkrEdit {
     tr:nth-child(3), tr:nth-child(4) {
       display: inline-block;
       vertical-align: middle;
-      
+
       td {
         padding-top: 0 !important;
         padding-bottom: 0;
-        
+
         label {
           line-height: 38px;
         }
@@ -54,11 +54,11 @@ form.lotusForm.qkrEdit {
     #widget_publishDate {
       position: relative;
       margin-right: 1rem;
-      
+
       &.dijitTextBoxDisabled {
         background: transparent;
         opacity: 1;
-        
+
         &, *, ~ select {
           color: $disabled !important;
           cursor: not-allowed !important;
@@ -108,20 +108,27 @@ form.lotusForm.qkrEdit {
       border-bottom: 0 !important;
       margin-bottom: 0 !important;
     }
+    // width for on-prem community wikis
+    .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
+      width: 50% !important;
+    }
+
+    // both cloud and on-prem, except width is specific to cloud
     ul.lotusTabs#qkrEditorTabs {
+      // width specific to cloud
       width: 100% !important;
       text-align: right;
-      
+
       li {
         float: none;
         display: inline-block;
-        
+
         &#qkrRefHide + li {
           margin-left: 0 !important;
         }
       }
     }
-  } 
+  }
   .qkrWikiPreview {
     border-top: 1px solid $border-separator;
   }

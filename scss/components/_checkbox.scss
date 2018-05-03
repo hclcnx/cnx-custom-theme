@@ -8,6 +8,8 @@ input[type=checkbox]{
 	transition:none!important;
   -webkit-appearance: none;
   border: none !important;
+  // to address issue 1185
+  vertical-align: bottom;
   &::after{
 		content:""!important;
 		// added for Safari Issue
@@ -77,4 +79,14 @@ tbody .lotusFirstCell{
 .lotusLeft.lconnSelectAllContainer{
 	position:relative!important;
 	top:-3px!important;
+}
+
+// sub community add members form
+#memberAddFormDiv #addAllParentMembersRow > td {
+  padding-left: 2px;
+
+  input[type="checkbox"], label {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

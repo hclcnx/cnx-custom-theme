@@ -1,6 +1,6 @@
 //Wiki list of pages
 div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
-  @include datatable;
+  @include datatable(2);
   tr:not(.lotusDetails):not(.lotusSort) {
     border-top:1px solid $border-separator;
   }
@@ -81,12 +81,13 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 
 
 //Forums
+#dfForumList,// list of forums
 #dfTopicList, //List of forum topics in community
 #dfOpenQuestionList, //List of open forum questions in community
 #dfAnsweredQuestionList, //List of answered forum questions in community
 #topicList { //List of forum topics inside forum
   .lotusTable{
-    @include datatable;
+    @include datatable(2);
   }
 }
 //Align labels on not sorting columns on list of forum topics inside forum
@@ -108,5 +109,89 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
     td:nth-of-type(2) { //Forum table header in forum list in community
       padding:28px 16px 20px 0px !important;
     }
+  }
+}
+
+// communities wiki versions
+#versionHistory .lotusVersions .lotusTable,
+#attachments .lotusTable {
+  @include datatable();
+}
+
+// bookmarks list
+#bookmarkContentAreaSub {
+  .lotusTable {
+    > tbody > tr:nth-child(3n-2):not(:first-child),
+    form[name="bookmarkEditForm"] fieldset {
+      border-top: 1px solid $border-separator !important;
+
+      .lotusFormFooter {
+        border: 0 !important;
+      }
+    }
+    .commFocusML {
+      &, & span { color: $text-01 !important; }
+    }
+    .lotusFirstCell,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
+    }
+    .lotusDetails .lotusFirstCell {
+      padding-top: 0 !important;
+    }
+    form {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+// calendar events list
+#calendar_view div[id$="listView"] {
+  .lotusTable {
+    margin-top: 1rem;
+
+    > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+    .lotusTitle a {
+      color: $text-01 !important;
+    }
+    .lotusFirstCell,
+    .lotusFirstCell + td,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
+    }
+    tr.lotusDetail td {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+// ideation blog lists
+#ideatoins_main {
+  .lotusTable {
+    margin-top: 1rem;
+
+    > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+  }
+  .lotusFirstCell,
+  .lotusAlignRight.lotusLastCell {
+    padding: 1rem 0 !important;
+  }
+}
+
+// surveys list
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] {
+  .lotusTable {
+    margin-top: 1rem;
+
+    > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+  }
+  td {
+    padding: 1rem 0 !important;
   }
 }

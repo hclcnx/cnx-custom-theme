@@ -40,6 +40,10 @@
 .lotusColLeft{
   margin-right:0!important;
   width:240px!important;
+  padding: 0 !important;
+}
+.widgetContainer[style] + div .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+  padding-left: 48px !important;
 }
 .lotusRightCorner{
   padding-left:0!important;
@@ -222,3 +226,12 @@ a#withme{
 }
 
 //Finished addressing #288
+
+
+// override a style from files 
+.filesList .lotusPaging + div[dojoattachpoint="streamNode"] {
+  > div,
+  table.lotusTable {
+    margin-left: 0 !important;
+  }
+}

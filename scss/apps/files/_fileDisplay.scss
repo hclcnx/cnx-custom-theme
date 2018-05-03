@@ -1,6 +1,6 @@
 #body{
   //pin
-  .lconnPinnedToggle{
+  .lconnPinnedToggle {
     display:inline-block!important;
     img{
       background-position:0!important;
@@ -81,6 +81,16 @@
       img{
         background-image: svg-url-with-replaced-fill($svg-down-arrow-filled, '#000000', $icon-default);
       }
+    }
+  }
+}
+
+// focus for the share / globe icon
+#scene-body {
+  a[href$="section=share"] {
+    &:focus {
+      outline: 1px solid black !important;
+      outline-offset: 1px !important;
     }
   }
 }

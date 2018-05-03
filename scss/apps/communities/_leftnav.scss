@@ -3,12 +3,17 @@
   padding-left: 40px !important;
 }
 .lotusMain{
-  padding: 40px 40px 24px 0 !important;
+  &[role="tabpanel"] {
+    padding: 40px 40px 24px 0 !important;
+  }
+  #lotusColLeft, .lotusColLeft {
+    margin-left: 0 !important;
+  }
   #lotusColLeft:not(.wpthemeNarrow),
   .lotusColLeft:not(.wpthemeNarrow) {
     padding: 0 !important;
     margin: 0 !important;
-    width: 240px !important;
+    width: 240px;
     .dijitTreeNode {
       position: relative;
     }
@@ -142,7 +147,7 @@
         #section_publishedEntries {
           &.lotusSectionBody ul li {
             padding-left: calc((#{$initial-l-padding} + #{$h-padding}))!important;
-            
+
             > a {
               width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
               max-width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
@@ -438,4 +443,143 @@
       }
     }
   }
+}
+.lotusMain[style*="padding-top: 0px;"] {
+  padding-top: 0 !important;
+}
+
+// for files
+#navTreeMain {
+  padding: 0 !important;
+  #navTreeContainer {
+    margin: 0 !important;
+  }
+}
+#navCommunityFilesOuter,
+div[id^="lconn_share_widget_Tree_"] {
+  border: 0 !important;
+  margin: 0 !important;
+
+  .twisty {
+    width: auto !important;
+    padding: 0 !important;
+  }
+  .lconnNavTreeSelector,
+  .headerSelector {
+    padding: $v-padding $h-padding !important;
+    padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+    border: none !important;
+    transition:$border-slide!important;
+    font-weight: normal !important;
+    font-size: $body-sm-font-size;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0 !important;
+    > span {
+      padding: 0 !important;
+      line-height: 1.25rem;
+    }
+    &:hover, &:focus {
+      background-color:$background-side-hover !important;
+      border: none !important;
+      text-decoration: none !important;
+    }
+    &.lotusSelected {
+      border: none !important;
+      border-left:$b-thickness solid $brand-01 !important;
+      padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+      font-weight: 700 !important;
+    }
+  }
+}
+.lotusMain #lotusColLeft #navTreeContainer {
+  .node {
+    margin: 0;
+    > .headerOuter {
+      margin-top:0!important;
+      border:none!important;
+    }
+  }
+  .headerSelector{
+    padding-top:$v-padding!important;
+    padding-bottom:$v-padding!important;
+    &:focus{
+      outline:none!important;
+      .title > span{
+        text-decoration:underline!important;
+      }
+    }
+    .header{
+      height:20px!important;
+      line-height: 1.25em;
+      display: flex;
+      flex-direction: row;
+    }
+    .icon{
+      span img{
+        height:20px!important;
+        width:20px!important;
+      }
+    }
+    .twisty + .icon {
+      min-width: 24px;
+    }
+  }
+  //A11y Fixes: Left Navigation Fixing folders that don't get an underline when focused.
+  .lotusMenuSubsection{
+    .headerSelector:focus{
+      outline:none!important;
+      & > .header .title span{
+        text-decoration: underline!important;
+      }
+    }
+  }
+  // long folder name fix:
+  #menu_fileSync_childContainer,
+  #menu_allfolders {
+    .tree .header .title {
+      display: inline-block;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: calc(100% - 40px) !important;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.lotusMain #lotusColLeft #mainActions {
+  padding: $v-padding $h-padding;
+  margin: 0 !important;
+  width: auto !important;
+  button {
+    margin: 0 !important;
+  }
+}
+
+#lconnTagCloudContent-widget-tagcloud,
+#lconnTagWidget {
+  padding: $v-padding $h-padding !important;
+  padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+}
+
+.lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter):not([id^="event"]) > h2 {
+  margin-left: 0 !important;
+  padding-left: 42px !important;
+  padding-right: 24px !important;
+  margin-bottom: 0 !important;
+  padding-top: calc(14px + 2px) !important;
+  padding-bottom: calc(14px - 2px) !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#lotusCollapseBar {
+  margin: 0 !important;
+  cursor: ew-resize;
 }

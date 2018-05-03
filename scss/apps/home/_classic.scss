@@ -103,10 +103,9 @@
       .lotusPostAuthorInfo {
         padding-right: 25px !important;
         .lotusPostAvatar img.activityStreamPhotoOf {
-          width:90px !important;
-          height:90px !important;
+          @include avatarSize($size4);
           border:1px solid $border-separator;
-          border-radius:50%;
+          border-radius:$border-radius-avatar;
         }
       }
       //Move comment list over because avatar is larger
@@ -119,8 +118,7 @@
         .lotusPostAuthorInfo {
           padding:0px 8px !important;
           .lotusPostAvatar img.activityStreamPhotoOf {
-            width:32px !important;
-            height:32px !important;
+            @include avatarSize($size1);
           }
         }
       }

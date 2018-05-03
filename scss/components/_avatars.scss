@@ -1,45 +1,54 @@
 // Styles for People Avatars
 
 //Avatars for people on search results page
-.lconnStatusUpdatePhotoContainer,
-.lconnProfilesPhotoContainer {
-  &.otherPeople64,
-  &.otherPeople64.otherPeople64-NoPhotoPerson55,
-  img {
-    border-radius:$border-radius-avatar !important;
-  }
+.lconnStatusUpdatePhotoContainer img,
+.lconnProfilesPhotoContainer.otherPeople64 img,
+.lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55 img,
+.lconn_profileImage img, //Directory search
+#forum .lotusPostAuthorInfo .lotusPostAvatar img, //On forum posts
+form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img, //Invite to network
+#lotusReportingStructure #reportStructureArea img.photo, //Reporting structure on profiles
+#searchResultsTable img.photo, //Profiles Directory Search Results avatars
+div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comments
+{
+  border-radius:$border-radius-avatar !important;
 }
+
+//Round community icons in search panel - special case
+.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
+  border-radius:$border-radius-comm-icon !important;
+}
+
+//Size of some avatars
+#searchResultsTable img.photo, //Profiles Directory Search Results avatars
+#lotusReportingStructure #reportStructureArea img.photo, //Reporting structure
+#forum .lotusPostAuthorInfo .lotusPostAvatar img //Avatars on forum posts
+{
+  @include avatarSize($size3);
+}
+
 //Similar blogs and ideation blogs widgets
-#section_relatedblogs, #section_relatedideationblogs, #section_relatedentries, #section_relatedideas tr {
+#section_relatedblogs,
+#section_relatedideationblogs,
+#section_relatedentries,
+#section_relatedideas tr {
   td:first-of-type {
     width: 48px;
     padding:0 5px;
     img {
       border-radius:$border-radius-avatar !important;
-      width:48px;
-      height:48px;
+      @include avatarSize($size2);
     }
   }
 }
 
-//Avatars on forum posts
-#forum {
-  .lotusPostAuthorInfo {
-    .lotusPostAvatar {
-      img {
-        border-radius:$border-radius-avatar;
-        width:48px;
-        height:48px;
-      }
-    }
-  }
+// "invite to network"
+form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
+	.profilePhoto {
+		padding-right: .75rem;
+	}
 }
 
-//Round community icons in search panel
-.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
-  border-radius:$border-radius-comm-icon !important;
-
-}
 //Community icons in Communities landing page
 .lotusContent {
   div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
@@ -49,40 +58,9 @@
   }
 }
 
-//Profiles Directory Search Results avatars
-#searchResultsTable img.photo {
-  width:56px !important;
-  height:56px !important;
-  border-radius:$border-radius-avatar !important;
-}
-//Reporting structure
-#lotusReportingStructure #reportStructureArea {
-  img.photo {
-    width:56px !important;
-    height:56px !important;
-    border-radius:$border-radius-avatar !important;
-  }
-}
-//Directory search
-.lconn_profileImage {
-  img {
-    border-radius: $border-radius-avatar !important;
-  }
-}
-
-// "invite to network"
-form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
-	.profilePhoto {
-		padding-right: .75rem;
-	 	img {
-			border-radius: $border-radius-avatar !important;
-		}
-	}
-}
-
 // Style person name
-a.lotusPerson, 
-a:visited.lotusPerson, 
+a.lotusPerson,
+a:visited.lotusPerson,
 .vcard a.fn.url,
 .panelContent .header1 a.lotusPerson, {
   color:$text-01 !important;

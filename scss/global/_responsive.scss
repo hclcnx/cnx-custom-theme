@@ -1,0 +1,180 @@
+body,
+body.meetingBody,
+.lotusui30_body .lotusFrame,
+.lotusui30_body .lotusMain,
+.lotusui30_body .lotusMain,
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner {
+  min-width: 800px !important;
+  max-width: 100%;
+}
+
+.lotusui30_body .lotusMain:not([role="tabpanel"]),
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner,
+.lotusui30 .lotusFooter,
+#lotusFrame #lotusFooter.lotusFooter, 
+.lotusFrame #lotusFooter.lotusFooter {
+  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.lotusui30 .lotusFooter,
+#footer,
+#lotusFooter {
+  max-width: 100%;
+  min-width: 500px !important;
+}
+
+@media (max-width: 1360px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusMain[role="tabpanel"],
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMain[role="tabpanel"] {
+    padding-left: 40px !important;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .lotusui30 .lotusBanner .lotusInner, 
+  .lotusui30 .lotusBannerExt .lotusWrapper, 
+  .lotusui30 .lotusPlaceBar .lotusRightCorner, 
+  .lotusui30 .lotusTitleBar .lotusRightCorner, 
+  .lotusui30 .lotusTitleBar2 .lotusWrapper, 
+  .lotusui30 .lotusTitleBarExt .lotusWrapper {
+    min-width: 800px !important;
+  }
+  .lotusui30_layout .lotusMain .lotusContent:before {
+    right: 0 !important;
+    width: auto !important;
+  }
+  .lotusMain .lotusColRight,
+  #lotusContent.wpthemeWide {
+    width: calc(100% - 270px - 1rem) !important;
+    margin-left: 1rem !important;
+    float: right;
+  }
+  #lotusMain {
+    .lotusMain & .lotusColRight,
+    #lotusContent.wpthemeWide {
+      width: 100% !important;
+      min-width: 100% !important;
+    }
+    #lotusColLeft ~ #lotusContent.wpthemeWide {
+      width: calc(100% - 288px) !important;
+      min-width: calc(100% - 288px) !important;
+    }
+  }
+  body.blog #lotusMain {
+    .lotusColRight {
+      width: 200px !important;
+      min-width: 200px !important;
+      box-sizing: border-box;
+    }
+    #lotusMain + #lotusContent {
+      width: calc(100% - 488px) !important;
+      min-width: calc(100% - 488px) !important;
+      float: right;
+      box-sizing: border-box;
+    }
+  }
+  #profileBody {
+    width: calc(100% - 430px) !important;
+    min-width: calc(100% - 430px) !important;
+    float: right;
+    box-sizing: border-box;
+  }
+  #profilePaneRight {
+    width: 150px !important;
+    min-width: 150px !important;
+    box-sizing: border-box;
+    
+    #recent-friends-container .lotusChunk .lotusNetworkPerson {
+      width: 50%;
+    }
+  }
+  .scloud3 .lotusMain .lotusContent.lotusContentST:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 0 !important;
+  }
+  .verseTheme .stmeetingCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100% !important;
+    
+    > div.verseStMeetings,
+    > div.verseContentInfo {
+      float: none !important;
+      width: 50% !important;
+    }
+    
+    #joinUrl {
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    
+    .verseColsRight {
+      margin-left: 5% !important;
+    }
+  }
+}
+@media (min-width: 1061px) and (max-width: 1360px) {
+  .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig {
+    width: 35% !important;
+  }
+}
+@media (max-width: 1030px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+    #contentArea {
+      float: none !important;
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100%;
+    }
+    #tabNavBar {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 1031px) and (max-width: 1415px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+      float: none !important;
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100%;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      float: none !important;
+      margin: 0 !important;
+      width: 50% !important;
+      max-width: 50%;
+      vertical-align: top;
+      display: inline-block !important;
+      box-sizing: border-box;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+      margin-right: -4px !important;
+      padding-right: 20px !important;
+    }
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      padding-left: 20px !important;
+    }
+    #contentArea {
+      width: 100% !important;
+    }
+    #tabNavBar {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}

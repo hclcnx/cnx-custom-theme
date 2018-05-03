@@ -53,9 +53,10 @@ $background-main-hover: $color-gray-1; // Background gray hover on white backgro
 // Background colors used in the side navigation on most pages
 $background-side: $color-gray-1; //Light gray Note: Use text-01 on this background to pass color contrast tests. //***$color-gray-1
 $background-side-hover: $color-gray-10; // Hover on secondary background color
-// Background color of global navigation and headers
-$background-header: $brand-02;
-$background-header-hover: $brand-03; //Accent color on hover
+// Background color of navigation bar -- See prereqs/_navbar.scss
+// Background color of headers
+$background-header: $brand-02; //Background color of some headers
+$background-header-hover: $brand-03; //Accent color on headers
 // Background color and opacity used behind modal dialog and file preview
 $background-underlay: rgba($color-black,0.6);
 // Background accent colors

@@ -14,11 +14,15 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
-/* Global style sheet */
+/*GLOBAL STYLE SHEET*/
+/* Variable and mixin Imports*/
 /* Border radius */
 /* Box Shadows */
 /* Link Mix-ins */
+/* Large close icon */
+/* Note - May also need to include a display:none on an existing button img */
 /* Tag mixin */
+/* Global imports*/
 html:not([lang="ar"]):not([lang*="zh"]):not([lang="el"]):not([lang="he"]):not([lang="ja"]):not([lang="ko"]):not([lang="ru"]):not([lang="th"]) {
   font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif; }
 
@@ -65,7 +69,9 @@ html .lotusui30 .lotusPaletteHeader ul.lotusTabs li a strong,
 html .lotusui30 .lotusWelcomeBox li,
 html .lotusui30 .lotusWelcomeBox p,
 html .lotusui30 .lotusWelcomeBox .lotusHeading,
-html .lotusui30_layout .lotusWelcomeBox h2 {
+html .lotusui30_layout .lotusWelcomeBox h2,
+html .lotusliveui, html .lotusliveui30, html .scloud3,
+html .ic-orient, html .ic-orient button, html .ic-orient input, html .ic-orient select, html .ic-orient textarea, html .ocs-nav-bar-wrapper {
   font-family: inherit; }
 
 @font-face {
@@ -263,41 +269,40 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       border: 0px solid rgba(0, 0, 0, 0.38); }
     .ics-viewer .navsimplelist.notificationCenterContainer .icBanner-popover-content {
       height: calc(100vh - 158px); }
-  .ics-viewer .lconnStatusUpdatePhotoContainer.otherPeople64, .ics-viewer .lconnStatusUpdatePhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55,
   .ics-viewer .lconnStatusUpdatePhotoContainer img,
-  .ics-viewer .lconnProfilesPhotoContainer.otherPeople64,
-  .ics-viewer .lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55,
-  .ics-viewer .lconnProfilesPhotoContainer img {
+  .ics-viewer .lconnProfilesPhotoContainer.otherPeople64 img,
+  .ics-viewer .lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55 img,
+  .ics-viewer .lconn_profileImage img,
+  .ics-viewer #forum .lotusPostAuthorInfo .lotusPostAvatar img,
+  .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img,
+  .ics-viewer #lotusReportingStructure #reportStructureArea img.photo,
+  .ics-viewer #searchResultsTable img.photo,
+  .ics-viewer div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img {
     border-radius: 50% !important; }
-  .ics-viewer #section_relatedblogs td:first-of-type, .ics-viewer #section_relatedideationblogs td:first-of-type, .ics-viewer #section_relatedentries td:first-of-type, .ics-viewer #section_relatedideas tr td:first-of-type {
-    width: 48px;
-    padding: 0 5px; }
-    .ics-viewer #section_relatedblogs td:first-of-type img, .ics-viewer #section_relatedideationblogs td:first-of-type img, .ics-viewer #section_relatedentries td:first-of-type img, .ics-viewer #section_relatedideas tr td:first-of-type img {
-      border-radius: 50% !important;
-      width: 48px;
-      height: 48px; }
-  .ics-viewer #forum .lotusPostAuthorInfo .lotusPostAvatar img {
-    border-radius: 50%;
-    width: 48px;
-    height: 48px; }
   .ics-viewer .lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
     border-radius: 50% !important; }
-  .ics-viewer .lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
-    border: 1px solid #d8d8d8; }
-  .ics-viewer #searchResultsTable img.photo {
-    width: 56px !important;
-    height: 56px !important;
-    border-radius: 50% !important; }
-  .ics-viewer #lotusReportingStructure #reportStructureArea img.photo {
-    width: 56px !important;
-    height: 56px !important;
-    border-radius: 50% !important; }
-  .ics-viewer .lconn_profileImage img {
-    border-radius: 50% !important; }
+  .ics-viewer #searchResultsTable img.photo,
+  .ics-viewer #lotusReportingStructure #reportStructureArea img.photo,
+  .ics-viewer #forum .lotusPostAuthorInfo .lotusPostAvatar img {
+    width: 56px;
+    height: 56px; }
+  .ics-viewer #section_relatedblogs td:first-of-type,
+  .ics-viewer #section_relatedideationblogs td:first-of-type,
+  .ics-viewer #section_relatedentries td:first-of-type,
+  .ics-viewer #section_relatedideas tr td:first-of-type {
+    width: 48px;
+    padding: 0 5px; }
+    .ics-viewer #section_relatedblogs td:first-of-type img,
+    .ics-viewer #section_relatedideationblogs td:first-of-type img,
+    .ics-viewer #section_relatedentries td:first-of-type img,
+    .ics-viewer #section_relatedideas tr td:first-of-type img {
+      border-radius: 50% !important;
+      width: 40px;
+      height: 40px; }
   .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto {
     padding-right: .75rem; }
-    .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img {
-      border-radius: 50% !important; }
+  .ics-viewer .lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
+    border: 1px solid #d8d8d8; }
   .ics-viewer a.lotusPerson,
   .ics-viewer a:visited.lotusPerson,
   .ics-viewer .vcard a.fn.url,
@@ -372,9 +377,11 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
-    color: #FFFFFF !important; }
+    color: #FFFFFF !important;
+    margin: 0px 1px !important; }
     .ics-viewer .ics-viewer-splitbutton .actionLink:hover, .ics-viewer .ics-viewer-splitbutton .actionLink:active,
     .ics-viewer .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink:hover,
     .ics-viewer .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink:active,
@@ -457,6 +464,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #FFFFFF !important;
     border-color: #3C6DF0 !important;
     color: #3C6DF0 !important; }
@@ -869,7 +877,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer .lotusBtn[name="submitButton"],
   .ics-viewer .ics-viewer-action-upload .actionLink,
   .ics-viewer .lotusBtn.submit.lotusButtonSubmit,
-  .ics-viewer .filesList .lotusDetails .lotusBtnSmall {
+  .ics-viewer .filesList .lotusDetails .lotusBtnSmall,
+  .ics-viewer #mainActions .lotusBtn {
     border-radius: 2rem !important;
     border-width: 1px !important;
     border-style: solid !important;
@@ -886,6 +895,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -903,7 +913,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:hover,
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:active,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:active {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:active,
+    .ics-viewer #mainActions .lotusBtn:hover,
+    .ics-viewer #mainActions .lotusBtn:active {
       text-decoration: none !important;
       outline: none; }
     .ics-viewer #submit_button:focus,
@@ -913,7 +925,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn[name="submitButton"]:focus,
     .ics-viewer .ics-viewer-action-upload .actionLink:focus,
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:focus,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:focus {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:focus,
+    .ics-viewer #mainActions .lotusBtn:focus {
       box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
       outline: none !important; }
     .dj_a11y .ics-viewer #submit_button:focus, .dijit_a11y .ics-viewer #submit_button:focus,
@@ -930,7 +943,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .dj_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit:focus,
     .dijit_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit:focus,
     .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall:focus,
-    .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall:focus {
+    .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall:focus,
+    .dj_a11y .ics-viewer #mainActions .lotusBtn:focus,
+    .dijit_a11y .ics-viewer #mainActions .lotusBtn:focus {
       box-shadow: none !important;
       outline: 1px solid #3C6DF0 !important;
       outline-offset: 1px; }
@@ -948,7 +963,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:active,
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:hover,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall:active,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover,
+    .ics-viewer #mainActions .lotusBtn:active,
+    .ics-viewer #mainActions .lotusBtn:hover {
       background-color: #FFFFFF !important;
       color: #3C6DF0 !important;
       border-color: #3C6DF0 !important; }
@@ -1015,7 +1032,16 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled="disabled"]:active,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:hover,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:active {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:active,
+    .ics-viewer #mainActions .lotusBtn:disabled,
+    .ics-viewer #mainActions .lotusBtn:disabled:hover,
+    .ics-viewer #mainActions .lotusBtn:disabled:active,
+    .ics-viewer #mainActions .lotusBtn[disabled="disabled"],
+    .ics-viewer #mainActions .lotusBtn[disabled="disabled"]:hover,
+    .ics-viewer #mainActions .lotusBtn[disabled="disabled"]:active,
+    .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled,
+    .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:hover,
+    .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:active {
       cursor: not-allowed !important;
       background-color: #969696 !important;
       color: #FFFFFF !important;
@@ -1041,7 +1067,10 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:focus,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:focus,
     .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled="disabled"]:focus,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
+    .ics-viewer #mainActions .lotusBtn:disabled:focus,
+    .ics-viewer #mainActions .lotusBtn[disabled="disabled"]:focus,
+    .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus {
       box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
     .dj_a11y .ics-viewer #submit_button:disabled:focus, .dijit_a11y .ics-viewer #submit_button:disabled:focus, .dj_a11y .ics-viewer #submit_button[disabled="disabled"]:focus, .dijit_a11y .ics-viewer #submit_button[disabled="disabled"]:focus, .dj_a11y .ics-viewer #submit_button.lotusBtnDisabled:focus, .dijit_a11y .ics-viewer #submit_button.lotusBtnDisabled:focus,
     .dj_a11y .ics-viewer #btn_actn__personCardSendEMail:disabled:focus,
@@ -1085,7 +1114,13 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled="disabled"]:focus,
     .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled="disabled"]:focus,
     .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
-    .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus {
+    .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
+    .dj_a11y .ics-viewer #mainActions .lotusBtn:disabled:focus,
+    .dijit_a11y .ics-viewer #mainActions .lotusBtn:disabled:focus,
+    .dj_a11y .ics-viewer #mainActions .lotusBtn[disabled="disabled"]:focus,
+    .dijit_a11y .ics-viewer #mainActions .lotusBtn[disabled="disabled"]:focus,
+    .dj_a11y .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus,
+    .dijit_a11y .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus {
       box-shadow: none !important;
       outline: 1px solid #FFFFFF !important;
       outline-offset: 1px; }
@@ -1096,7 +1131,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn[name="submitButton"] .lotusArrow.lotusDropDownSprite,
     .ics-viewer .ics-viewer-action-upload .actionLink .lotusArrow.lotusDropDownSprite,
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit .lotusArrow.lotusDropDownSprite,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall .lotusArrow.lotusDropDownSprite {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall .lotusArrow.lotusDropDownSprite,
+    .ics-viewer #mainActions .lotusBtn .lotusArrow.lotusDropDownSprite {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
       background-size: contain !important;
       background-position: center center !important; }
@@ -1107,7 +1143,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusBtn[name="submitButton"]:hover .lotusArrow.lotusDropDownSprite,
     .ics-viewer .ics-viewer-action-upload .actionLink:hover .lotusArrow.lotusDropDownSprite,
     .ics-viewer .lotusBtn.submit.lotusButtonSubmit:hover .lotusArrow.lotusDropDownSprite,
-    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover .lotusArrow.lotusDropDownSprite {
+    .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover .lotusArrow.lotusDropDownSprite,
+    .ics-viewer #mainActions .lotusBtn:hover .lotusArrow.lotusDropDownSprite {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
   .ics-viewer .lotusBtnDisabled, .ics-viewer a.manualAdd[disabled="disabled"] {
     cursor: not-allowed;
@@ -1191,6 +1228,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -1212,7 +1250,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       border-color: #3C6DF0 !important; }
     .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"] strong {
       font-weight: inherit; }
-    .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"] {
+    .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"], .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"] {
       border-radius: 2rem !important;
       border-width: 1px !important;
       border-style: solid !important;
@@ -1229,20 +1267,21 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       padding: 9px 20px !important;
       font-weight: 500 !important;
       background-image: none !important;
+      margin: 2px 4px 3px 2px !important;
       background-color: #FFFFFF !important;
       border-color: #3C6DF0 !important;
       color: #3C6DF0 !important; }
-      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active {
+      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:active {
         text-decoration: none !important;
         outline: none; }
-      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus {
+      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:focus {
         box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
         outline: none !important; }
-      .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus {
+      .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:focus {
         box-shadow: none !important;
         outline: 1px solid #3C6DF0 !important;
         outline-offset: 1px; }
-      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover {
+      .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role="button"][dojoattachevent="onclick:cancel"]:hover {
         background-color: #3C6DF0 !important;
         color: #FFFFFF !important;
         border-color: #3C6DF0 !important; }
@@ -1283,27 +1322,45 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       border: none !important; }
   .ics-viewer .blog form[name="bookmarksForm"] .lotusActionBar {
     margin-top: 12px !important; }
-  .ics-viewer .wikiHeader .lotusBtn, .ics-viewer #topicList .lotusBtn, .ics-viewer #forum .lotusBtn {
+  .ics-viewer .wikiHeader .lotusBtn,
+  .ics-viewer #topicList .lotusBtn,
+  .ics-viewer #forum .lotusBtn,
+  .ics-viewer #calendarViews .lotusBtn {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important; }
-    .ics-viewer .wikiHeader .lotusBtn:hover, .ics-viewer #topicList .lotusBtn:hover, .ics-viewer #forum .lotusBtn:hover {
+    .ics-viewer .wikiHeader .lotusBtn:hover,
+    .ics-viewer #topicList .lotusBtn:hover,
+    .ics-viewer #forum .lotusBtn:hover,
+    .ics-viewer #calendarViews .lotusBtn:hover {
       padding: 0px !important;
       background-color: white !important;
       border: none !important; }
-    .ics-viewer .wikiHeader .lotusBtn a:hover img.lotusArrow, .ics-viewer #topicList .lotusBtn a:hover img.lotusArrow, .ics-viewer #forum .lotusBtn a:hover img.lotusArrow {
+    .ics-viewer .wikiHeader .lotusBtn a:hover img.lotusArrow,
+    .ics-viewer #topicList .lotusBtn a:hover img.lotusArrow,
+    .ics-viewer #forum .lotusBtn a:hover img.lotusArrow,
+    .ics-viewer #calendarViews .lotusBtn a:hover img.lotusArrow {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
-    .ics-viewer .wikiHeader .lotusBtn img.lotusArrow, .ics-viewer #topicList .lotusBtn img.lotusArrow, .ics-viewer #forum .lotusBtn img.lotusArrow {
+    .ics-viewer .wikiHeader .lotusBtn img.lotusArrow,
+    .ics-viewer #topicList .lotusBtn img.lotusArrow,
+    .ics-viewer #forum .lotusBtn img.lotusArrow,
+    .ics-viewer #calendarViews .lotusBtn img.lotusArrow {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
       background-position: 0 0 !important;
       opacity: 1 !important; }
-  .ics-viewer .wikiHeader input.lotusBtnSmall, .ics-viewer #topicList input.lotusBtnSmall, .ics-viewer #forum input.lotusBtnSmall {
+  .ics-viewer .wikiHeader input.lotusBtnSmall,
+  .ics-viewer #topicList input.lotusBtnSmall,
+  .ics-viewer #forum input.lotusBtnSmall,
+  .ics-viewer #calendarViews input.lotusBtnSmall {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     height: 35px !important;
     position: relative !important;
     top: -1px !important; }
-  .ics-viewer .wikiHeader .lotusBtnSmall, .ics-viewer #topicList .lotusBtnSmall, .ics-viewer #forum .lotusBtnSmall {
+  .ics-viewer .wikiHeader .lotusBtnSmall,
+  .ics-viewer #topicList .lotusBtnSmall,
+  .ics-viewer #forum .lotusBtnSmall,
+  .ics-viewer #calendarViews .lotusBtnSmall {
     font-weight: 500 !important; }
   .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a {
     margin: 12px 0 !important;
@@ -1354,6 +1411,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       padding: 9px 20px !important;
       font-weight: 500 !important;
       background-image: none !important;
+      margin: 2px 4px 3px 2px !important;
       background-color: #FFFFFF !important;
       border-color: #3C6DF0 !important;
       color: #3C6DF0 !important; }
@@ -1384,6 +1442,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer .lotusCommunities #startActivity,
   .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"],
   .ics-viewer .lotusCommunities #calendar_view,
+  .ics-viewer .lotusCommunities #calendarViews,
   .ics-viewer .lotusCommunities #fullRecomm,
   .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content {
     padding-top: 1rem; }
@@ -1393,6 +1452,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusCommunities #startActivity .lotusBtnContainer,
     .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] .lotusBtnContainer,
     .ics-viewer .lotusCommunities #calendar_view .lotusBtnContainer,
+    .ics-viewer .lotusCommunities #calendarViews .lotusBtnContainer,
     .ics-viewer .lotusCommunities #fullRecomm .lotusBtnContainer,
     .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content .lotusBtnContainer {
       margin: 0 !important; }
@@ -1417,6 +1477,10 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusCommunities #calendar_view span.lotusBtn:hover,
     .ics-viewer .lotusCommunities #calendar_view span.lotusBtn:focus,
     .ics-viewer .lotusCommunities #calendar_view span.lotusBtn:active,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn:hover,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn:focus,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn:active,
     .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn,
     .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn:hover,
     .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn:focus,
@@ -1435,6 +1499,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusCommunities #startActivity span.lotusBtn a,
     .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a,
     .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a,
     .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a,
     .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a {
       border-radius: 2rem !important;
@@ -1453,6 +1518,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       padding: 9px 20px !important;
       font-weight: 500 !important;
       background-image: none !important;
+      margin: 2px 4px 3px 2px !important;
       background-color: #3C6DF0 !important;
       border-color: #3C6DF0 !important;
       color: #FFFFFF !important; }
@@ -1467,6 +1533,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a:active,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:hover,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:active,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:hover,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:active,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:hover,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:active,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:hover,
@@ -1479,6 +1547,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:focus,
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a:focus,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:focus,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:focus,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:focus,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:focus {
         box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
@@ -1494,6 +1563,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .dijit_a11y .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:focus,
       .dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:focus,
+      .dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:focus,
+      .dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:focus,
       .dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:focus,
@@ -1512,6 +1583,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a:hover,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:active,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:hover,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:active,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:hover,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:active,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:hover,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:active,
@@ -1525,6 +1598,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .lotusCommunities #startActivity span.lotusBtn + .lotusBtn a,
     .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a,
     .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a,
+    .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a,
     .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a,
     .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a {
       border-radius: 2rem !important;
@@ -1543,6 +1617,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       padding: 9px 20px !important;
       font-weight: 500 !important;
       background-image: none !important;
+      margin: 2px 4px 3px 2px !important;
       background-color: #FFFFFF !important;
       border-color: #3C6DF0 !important;
       color: #3C6DF0 !important; }
@@ -1557,6 +1632,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a:active,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:hover,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:active,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:hover,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:active,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:hover,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:active,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a:hover,
@@ -1569,6 +1646,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities #startActivity span.lotusBtn + .lotusBtn a:focus,
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a:focus,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:focus,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:focus,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:focus,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a:focus {
         box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
@@ -1584,6 +1662,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .dijit_a11y .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:focus,
       .dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:focus,
+      .dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:focus,
+      .dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:focus,
       .dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:focus,
       .dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a:focus,
@@ -1602,6 +1682,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a:hover,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:active,
       .ics-viewer .lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a:hover,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:active,
+      .ics-viewer .lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a:hover,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:active,
       .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a:hover,
       .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a:active,
@@ -1631,6 +1713,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -1651,13 +1734,86 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer .lotusCommunities #fullRecomm .lotusBtnContainer,
   .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content .lotusBtnContainer {
     padding-top: 1rem; }
+  .ics-viewer .lotusCommunities ~ .dijitDialog input[type="image"].lotusSearchButton {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 25 25%22%3E%3Cpath fill=%22%23595859%22 d=%22M24.7,23.3l-9.4-9.4c0,0,0,0-0.1,0c1.2-1.5,1.9-3.3,1.9-5.3c0-4.7-3.8-8.6-8.6-8.6S0,3.8,0,8.6s3.8,8.6,8.6,8.6c2,0,3.9-0.7,5.3-1.9c0,0,0,0,0,0.1l9.4,9.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C25.1,24.3,25.1,23.7,24.7,23.3zM8.6,15.4c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9C15.4,12.4,12.4,15.4,8.6,15.4z%22/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important; }
+    .ics-viewer .lotusCommunities ~ .dijitDialog input[type="image"].lotusSearchButton:focus {
+      outline: 1px solid #3C6DF0;
+      outline-offset: 2px; }
+  .ics-viewer #memberAddForm #saveButton,
+  .ics-viewer #memberInviteForm .lotusFormButton[name="submit"],
+  .ics-viewer .dijitDialog .lotusFormButton.submit,
+  .ics-viewer div[id^="editBookmark"] input[type="submit"] {
+    border-radius: 2rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    box-shadow: none !important;
+    transform: translateZ(0) !important;
+    -webkit-font-smoothing: antialiased !important;
+    cursor: pointer !important;
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+    white-space: nowrap !important;
+    padding: 9px 20px !important;
+    font-weight: 500 !important;
+    background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    margin-left: 2px !important; }
+    .ics-viewer #memberAddForm #saveButton:hover, .ics-viewer #memberAddForm #saveButton:active,
+    .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:hover,
+    .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:active,
+    .ics-viewer .dijitDialog .lotusFormButton.submit:hover,
+    .ics-viewer .dijitDialog .lotusFormButton.submit:active,
+    .ics-viewer div[id^="editBookmark"] input[type="submit"]:hover,
+    .ics-viewer div[id^="editBookmark"] input[type="submit"]:active {
+      text-decoration: none !important;
+      outline: none; }
+    .ics-viewer #memberAddForm #saveButton:focus,
+    .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:focus,
+    .ics-viewer .dijitDialog .lotusFormButton.submit:focus,
+    .ics-viewer div[id^="editBookmark"] input[type="submit"]:focus {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+      outline: none !important; }
+    .dj_a11y .ics-viewer #memberAddForm #saveButton:focus, .dijit_a11y .ics-viewer #memberAddForm #saveButton:focus,
+    .dj_a11y .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:focus,
+    .dijit_a11y .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:focus,
+    .dj_a11y .ics-viewer .dijitDialog .lotusFormButton.submit:focus,
+    .dijit_a11y .ics-viewer .dijitDialog .lotusFormButton.submit:focus,
+    .dj_a11y .ics-viewer div[id^="editBookmark"] input[type="submit"]:focus,
+    .dijit_a11y .ics-viewer div[id^="editBookmark"] input[type="submit"]:focus {
+      box-shadow: none !important;
+      outline: 1px solid #3C6DF0 !important;
+      outline-offset: 1px; }
+    .ics-viewer #memberAddForm #saveButton:active, .ics-viewer #memberAddForm #saveButton:hover,
+    .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:active,
+    .ics-viewer #memberInviteForm .lotusFormButton[name="submit"]:hover,
+    .ics-viewer .dijitDialog .lotusFormButton.submit:active,
+    .ics-viewer .dijitDialog .lotusFormButton.submit:hover,
+    .ics-viewer div[id^="editBookmark"] input[type="submit"]:active,
+    .ics-viewer div[id^="editBookmark"] input[type="submit"]:hover {
+      background-color: #FFFFFF !important;
+      color: #3C6DF0 !important;
+      border-color: #3C6DF0 !important; }
+  .ics-viewer li[id^="com_ibm_social_as_item_comment"] .lotusStreamUpdate .lotusActions ul {
+    margin-top: 0 !important; }
+    .ics-viewer li[id^="com_ibm_social_as_item_comment"] .lotusStreamUpdate .lotusActions ul.lotusLeft {
+      padding-bottom: 18px !important; }
   .ics-viewer input[type=checkbox] {
     height: 16px !important;
     width: 20px !important;
     position: relative;
     transition: none !important;
     -webkit-appearance: none;
-    border: none !important; }
+    border: none !important;
+    vertical-align: bottom; }
     .ics-viewer input[type=checkbox]::after {
       content: "" !important;
       position: absolute;
@@ -1709,6 +1865,168 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer .lotusLeft.lconnSelectAllContainer {
     position: relative !important;
     top: -3px !important; }
+  .ics-viewer #memberAddFormDiv #addAllParentMembersRow > td {
+    padding-left: 2px; }
+    .ics-viewer #memberAddFormDiv #addAllParentMembersRow > td input[type="checkbox"], .ics-viewer #memberAddFormDiv #addAllParentMembersRow > td label {
+      display: inline-block;
+      vertical-align: middle; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_title {
+    background-color: #FFFFFF; }
+  .ics-viewer .cke_dialog .cke_dialog_body [id^="cke_dialog_close_button"].cke_dialog_close_button {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23595859%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+    background-position-x: center !important;
+    background-position-y: center !important;
+    height: 24px !important;
+    width: 24px !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    padding: 0.25rem 0.25rem 0.125rem 0.25rem !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body [id^="cke_dialog_close_button"].cke_dialog_close_button:focus {
+      outline: 1px solid #3C6DF0 !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs {
+    border-bottom: 1px solid #d8d8d8 !important;
+    padding: 20px 10px 12px 20px;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab {
+      padding: 0.5rem 1rem !important;
+      line-height: 20px;
+      margin: 0 !important;
+      font-size: inherit !important;
+      color: #595859 !important;
+      border-radius: 2px !important;
+      border: 1px solid transparent !important;
+      font-weight: 500 !important;
+      text-transform: none !important; }
+      .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab:hover {
+        color: #FFFFFF !important;
+        background-color: #3C6DF0 !important;
+        border-color: #3C6DF0 !important;
+        font-weight: 500 !important; }
+      .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab:focus {
+        color: #000000 !important;
+        background-color: transparent !important;
+        border-color: #3C6DF0 !important; }
+      .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab.cke_dialog_tab_selected {
+        border-bottom: 4px solid #3C6DF0 !important;
+        color: #000000 !important; }
+        .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab.cke_dialog_tab_selected:hover {
+          color: #FFFFFF !important;
+          background-color: #3C6DF0 !important;
+          border-color: #3C6DF0 !important;
+          font-weight: 500 !important; }
+        .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab.cke_dialog_tab_selected:focus {
+          border-color: #3C6DF0 !important; }
+        .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab.cke_dialog_tab_selected:active, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab.cke_dialog_tab_selected:focus {
+          text-decoration: none !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_tabs .cke_dialog_tab[id^="cke_advanced_"] {
+      margin-left: 0.5rem !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text div.cke_dialog_ui_input_text {
+    border: none; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text {
+    line-height: 1.5 !important;
+    min-width: 10rem !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+    font-size: 12.8px !important;
+    padding-right: 2rem !important;
+    padding-bottom: .375rem !important;
+    box-sizing: border-box !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text:focus, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text .dijitTextBoxFocused {
+      outline: none !important;
+      border-color: #3C6DF0 !important;
+      box-shadow: 0 1px 0 #3C6DF0 !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text.cke_disabled {
+    background: transparent !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text.cke_disabled div.cke_dialog_ui_input_text {
+      background-color: #F3F3F3 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text.cke_disabled input.cke_dialog_ui_input_text {
+      background: transparent !important;
+      color: #969696 !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_input_select {
+    padding-bottom: .6rem !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_input_select:focus {
+      padding-bottom: .5375rem !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok {
+    border-radius: 2rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    box-shadow: none !important;
+    transform: translateZ(0) !important;
+    -webkit-font-smoothing: antialiased !important;
+    cursor: pointer !important;
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+    white-space: nowrap !important;
+    padding: 9px 20px !important;
+    font-weight: 500 !important;
+    background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important;
+    color: #FFFFFF !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:hover, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:active {
+      text-decoration: none !important;
+      outline: none; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:focus {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+      outline: none !important; }
+    .dj_a11y .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:focus, .dijit_a11y .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:focus {
+      box-shadow: none !important;
+      outline: 1px solid #3C6DF0 !important;
+      outline-offset: 1px; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:active, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:hover {
+      background-color: #FFFFFF !important;
+      color: #3C6DF0 !important;
+      border-color: #3C6DF0 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok span {
+      color: #FFFFFF !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_ok:hover span {
+      color: #3C6DF0 !important; }
+  .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel {
+    border-radius: 2rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    box-shadow: none !important;
+    transform: translateZ(0) !important;
+    -webkit-font-smoothing: antialiased !important;
+    cursor: pointer !important;
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+    white-space: nowrap !important;
+    padding: 9px 20px !important;
+    font-weight: 500 !important;
+    background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
+    background-color: #FFFFFF !important;
+    border-color: #3C6DF0 !important;
+    color: #3C6DF0 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:hover, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:active {
+      text-decoration: none !important;
+      outline: none; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:focus {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+      outline: none !important; }
+    .dj_a11y .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:focus, .dijit_a11y .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:focus {
+      box-shadow: none !important;
+      outline: 1px solid #3C6DF0 !important;
+      outline-offset: 1px; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:active, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:hover {
+      background-color: #3C6DF0 !important;
+      color: #FFFFFF !important;
+      border-color: #3C6DF0 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel span {
+      color: #3C6DF0 !important; }
+    .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_button.cke_dialog_ui_button_cancel:hover span {
+      color: #FFFFFF !important; }
   .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
     font-size: 12px !important;
     font-weight: 500 !important;
@@ -1747,7 +2065,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
     .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort tr.lotusFirst {
       border-top: 1px solid #3C6DF0 !important; }
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td {
+  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2), .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) td, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3), .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) td {
     background-color: #F3F3F3; }
   .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
     padding-top: 20px !important;
@@ -1758,14 +2076,6 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
         margin: 0px 0px; }
     .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:last-child, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:last-child {
       padding-right: 10px !important; }
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+2) td, .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore:nth-child(4n+3) td {
-    background-color: #F3F3F3; }
   .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic td {
     padding-bottom: 12px !important; }
   .ics-viewer div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td {
@@ -1820,7 +2130,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
     .ics-viewer .blog.admin .blogsFixedTable tr.lotusSort tr.lotusFirst, .ics-viewer .blog.admin .lotusTable tr.lotusSort tr.lotusFirst {
       border-top: 1px solid #3C6DF0 !important; }
-  .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th, .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td, .ics-viewer .blog.admin .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th, .ics-viewer .blog.admin .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td {
+  .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even), .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even) th, .ics-viewer .blog.admin .blogsFixedTable tr:nth-child(even) td, .ics-viewer .blog.admin .lotusTable tr:nth-child(even), .ics-viewer .blog.admin .lotusTable tr:nth-child(even) th, .ics-viewer .blog.admin .lotusTable tr:nth-child(even) td {
     background-color: #F3F3F3; }
   .ics-viewer .blog.admin .blogsFixedTable tr th, .ics-viewer .blog.admin .blogsFixedTable tr td, .ics-viewer .blog.admin .lotusTable tr th, .ics-viewer .blog.admin .lotusTable tr td {
     padding-top: 20px !important;
@@ -1831,20 +2141,6 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
         margin: 0px 0px; }
     .ics-viewer .blog.admin .blogsFixedTable tr th:last-child, .ics-viewer .blog.admin .blogsFixedTable tr td:last-child, .ics-viewer .blog.admin .lotusTable tr th:last-child, .ics-viewer .blog.admin .lotusTable tr td:last-child {
       padding-right: 10px !important; }
-  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore:nth-child(4n+3) td, .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer .blog.admin .lotusTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer .blog.admin .lotusTable tr.lotusMore:nth-child(4n+3) td {
-    background-color: #F3F3F3; }
   .ics-viewer .blog.admin .blogsFixedTable tr.normalTopic td, .ics-viewer .blog.admin .lotusTable tr.normalTopic td {
     padding-bottom: 12px !important; }
   .ics-viewer .blog.admin .blogsFixedTable tr.lotusMore td, .ics-viewer .blog.admin .lotusTable tr.lotusMore td {
@@ -1911,7 +2207,11 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer #qkrViewControl.lotusViewControl .lotusSummaryOff, .ics-viewer .blog .lotusViewControl .lotusSummaryOn,
   .ics-viewer .blog .lotusViewControl .lotusSummaryOff {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cdefs%3E%3Cpolygon id=%22path-1%22 points=%220 6 0 0 8.99985 0 17.9997 0 17.9997 6%22%3E%3C/polygon%3E%3Cpolygon id=%22path-3%22 points=%220 22 18 22 18 4 18 0 0 0%22%3E%3C/polygon%3E%3C/defs%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22list-view_24-copy-8%22%3E%3Cg id=%22list-view%22 transform=%22translate(3.000000, 1.000000)%22%3E%3Cg id=%22Group-3%22%3E%3Cmask id=%22mask-2%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-1%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-2%22%3E%3C/g%3E%3Cpath d=%22M15.9987,0 L2.0017,0 C0.8957,0 -0.0003,0.896 -0.0003,2.001 L-0.0003,6 L17.9997,6 L17.9997,2.001 C17.9997,0.896 17.1037,0 15.9987,0 M15.9987,1 C16.5507,1 16.9997,1.449 16.9997,2.001 L16.9997,5 L0.9997,5 L0.9997,2.001 C0.9997,1.449 1.4497,1 2.0017,1 L15.9987,1%22 id=%22Fill-1%22 fill=%22%23595859%22 mask=%22url(%23mask-2)%22%3E%3C/path%3E%3C/g%3E%3Cmask id=%22mask-4%22 fill=%22white%22%3E%3Cuse xlink:href=%22%23path-3%22%3E%3C/use%3E%3C/mask%3E%3Cg id=%22Clip-5%22%3E%3C/g%3E%3Cpath d=%22M0,14 L18,14 L18,8 L0,8 L0,14 Z M1,13 L17,13 L17,9 L1,9 L1,13 Z%22 id=%22Fill-4%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3Cpath d=%22M18,16 L0,16 L0,19.999 C0,21.104 0.896,22 2.001,22 L15.999,22 C17.104,22 18,21.104 18,19.999 L18,16 Z M17,17 L17,19.999 C17,20.551 16.551,21 15.999,21 L2.001,21 C1.449,21 1,20.551 1,19.999 L1,17 L17,17 L17,17 Z%22 id=%22Fill-6%22 fill=%22%23595859%22 mask=%22url(%23mask-4)%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
-  .ics-viewer #dfTopicList .lotusTable th, .ics-viewer #dfTopicList .lotusTable th a, .ics-viewer #dfTopicList .lotusTable tr.lotusSort td, .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a,
+  .ics-viewer #dfForumList .lotusTable th, .ics-viewer #dfForumList .lotusTable th a, .ics-viewer #dfForumList .lotusTable tr.lotusSort td, .ics-viewer #dfForumList .lotusTable tr.lotusSort td a,
+  .ics-viewer #dfTopicList .lotusTable th,
+  .ics-viewer #dfTopicList .lotusTable th a,
+  .ics-viewer #dfTopicList .lotusTable tr.lotusSort td,
+  .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a,
   .ics-viewer #dfOpenQuestionList .lotusTable th,
   .ics-viewer #dfOpenQuestionList .lotusTable th a,
   .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td,
@@ -1927,7 +2227,11 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     font-size: 12px !important;
     font-weight: 500 !important;
     color: #595859 !important; }
-    .ics-viewer #dfTopicList .lotusTable th:lang(en), .ics-viewer #dfTopicList .lotusTable th a:lang(en), .ics-viewer #dfTopicList .lotusTable tr.lotusSort td:lang(en), .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:lang(en),
+    .ics-viewer #dfForumList .lotusTable th:lang(en), .ics-viewer #dfForumList .lotusTable th a:lang(en), .ics-viewer #dfForumList .lotusTable tr.lotusSort td:lang(en), .ics-viewer #dfForumList .lotusTable tr.lotusSort td a:lang(en),
+    .ics-viewer #dfTopicList .lotusTable th:lang(en),
+    .ics-viewer #dfTopicList .lotusTable th a:lang(en),
+    .ics-viewer #dfTopicList .lotusTable tr.lotusSort td:lang(en),
+    .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:lang(en),
     .ics-viewer #dfOpenQuestionList .lotusTable th:lang(en),
     .ics-viewer #dfOpenQuestionList .lotusTable th a:lang(en),
     .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td:lang(en),
@@ -1941,26 +2245,31 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer #topicList .lotusTable tr.lotusSort td:lang(en),
     .ics-viewer #topicList .lotusTable tr.lotusSort td a:lang(en) {
       text-transform: uppercase !important; }
+  .ics-viewer #dfForumList .lotusTable th,
   .ics-viewer #dfTopicList .lotusTable th,
   .ics-viewer #dfOpenQuestionList .lotusTable th,
   .ics-viewer #dfAnsweredQuestionList .lotusTable th,
   .ics-viewer #topicList .lotusTable th {
     border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #dfForumList .lotusTable th a,
     .ics-viewer #dfTopicList .lotusTable th a,
     .ics-viewer #dfOpenQuestionList .lotusTable th a,
     .ics-viewer #dfAnsweredQuestionList .lotusTable th a,
     .ics-viewer #topicList .lotusTable th a {
       text-decoration: none; }
+      .ics-viewer #dfForumList .lotusTable th a:hover,
       .ics-viewer #dfTopicList .lotusTable th a:hover,
       .ics-viewer #dfOpenQuestionList .lotusTable th a:hover,
       .ics-viewer #dfAnsweredQuestionList .lotusTable th a:hover,
       .ics-viewer #topicList .lotusTable th a:hover {
         text-decoration: underline; }
+  .ics-viewer #dfForumList .lotusTable tr.lotusSort,
   .ics-viewer #dfTopicList .lotusTable tr.lotusSort,
   .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort,
   .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort,
   .ics-viewer #topicList .lotusTable tr.lotusSort {
     border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #dfForumList .lotusTable tr.lotusSort td a,
     .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a,
     .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a,
     .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a,
@@ -1968,7 +2277,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       padding: 8px 16px !important;
       border: 1px solid transparent !important;
       background-position: calc(100% - 7px) 13px !important; }
-      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:hover, .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:focus,
+      .ics-viewer #dfForumList .lotusTable tr.lotusSort td a:hover, .ics-viewer #dfForumList .lotusTable tr.lotusSort td a:focus,
+      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:hover,
+      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:focus,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a:hover,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a:focus,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a:hover,
@@ -1978,13 +2289,16 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
         text-decoration: none !important;
         border-radius: 2px !important;
         border-color: #3C6DF0 !important; }
+      .ics-viewer #dfForumList .lotusTable tr.lotusSort td a:hover,
       .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a:hover,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a:hover,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a:hover,
       .ics-viewer #topicList .lotusTable tr.lotusSort td a:hover {
         background-color: #3C6DF0 !important;
         color: #FFFFFF !important; }
-      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusDescending, .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a a.lotusAscending,
+      .ics-viewer #dfForumList .lotusTable tr.lotusSort td a.lotusDescending, .ics-viewer #dfForumList .lotusTable tr.lotusSort td a a.lotusAscending,
+      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusDescending,
+      .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a a.lotusAscending,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a.lotusDescending,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a a.lotusAscending,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a.lotusDescending,
@@ -1993,40 +2307,65 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer #topicList .lotusTable tr.lotusSort td a a.lotusAscending {
         background-size: 8px 8px !important;
         padding: 8px 20px 8px 16px !important; }
+      .ics-viewer #dfForumList .lotusTable tr.lotusSort td a.lotusDescending,
       .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusDescending,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a.lotusDescending,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a.lotusDescending,
       .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusDescending {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #dfForumList .lotusTable tr.lotusSort td a.lotusDescending:hover,
         .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusDescending:hover,
         .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a.lotusDescending:hover,
         .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a.lotusDescending:hover,
         .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusDescending:hover {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+      .ics-viewer #dfForumList .lotusTable tr.lotusSort td a.lotusAscending,
       .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusAscending,
       .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a.lotusAscending,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a.lotusAscending,
       .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusAscending {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #dfForumList .lotusTable tr.lotusSort td a.lotusAscending:hover,
         .ics-viewer #dfTopicList .lotusTable tr.lotusSort td a.lotusAscending:hover,
         .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td a.lotusAscending:hover,
         .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td a.lotusAscending:hover,
         .ics-viewer #topicList .lotusTable tr.lotusSort td a.lotusAscending:hover {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer #dfForumList .lotusTable tr.lotusSort tr.lotusFirst,
     .ics-viewer #dfTopicList .lotusTable tr.lotusSort tr.lotusFirst,
     .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort tr.lotusFirst,
     .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort tr.lotusFirst,
     .ics-viewer #topicList .lotusTable tr.lotusSort tr.lotusFirst {
       border-top: 1px solid #3C6DF0 !important; }
-  .ics-viewer #dfTopicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th, .ics-viewer #dfTopicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td,
-  .ics-viewer #topicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) th,
-  .ics-viewer #topicList .lotusTable tr:nth-child(even):not(.normalTopic):not(.pinnedTopic):not(.lotusMore) td {
+  .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+2), .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+2) th, .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+2) td, .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+3), .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+3) th, .ics-viewer #dfForumList .lotusTable tr:nth-child(4n+3) td,
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+2),
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+2) th,
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+2) td,
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+3),
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+3) th,
+  .ics-viewer #dfTopicList .lotusTable tr:nth-child(4n+3) td,
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+2),
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+2) th,
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+2) td,
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+3),
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+3) th,
+  .ics-viewer #dfOpenQuestionList .lotusTable tr:nth-child(4n+3) td,
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+2),
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+2) th,
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+2) td,
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+3),
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+3) th,
+  .ics-viewer #dfAnsweredQuestionList .lotusTable tr:nth-child(4n+3) td,
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+2),
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+2) th,
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+2) td,
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+3),
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+3) th,
+  .ics-viewer #topicList .lotusTable tr:nth-child(4n+3) td {
     background-color: #F3F3F3; }
-  .ics-viewer #dfTopicList .lotusTable tr th, .ics-viewer #dfTopicList .lotusTable tr td,
+  .ics-viewer #dfForumList .lotusTable tr th, .ics-viewer #dfForumList .lotusTable tr td,
+  .ics-viewer #dfTopicList .lotusTable tr th,
+  .ics-viewer #dfTopicList .lotusTable tr td,
   .ics-viewer #dfOpenQuestionList .lotusTable tr th,
   .ics-viewer #dfOpenQuestionList .lotusTable tr td,
   .ics-viewer #dfAnsweredQuestionList .lotusTable tr th,
@@ -2035,7 +2374,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer #topicList .lotusTable tr td {
     padding-top: 20px !important;
     padding-bottom: 20px !important; }
-    .ics-viewer #dfTopicList .lotusTable tr th:first-child, .ics-viewer #dfTopicList .lotusTable tr td:first-child,
+    .ics-viewer #dfForumList .lotusTable tr th:first-child, .ics-viewer #dfForumList .lotusTable tr td:first-child,
+    .ics-viewer #dfTopicList .lotusTable tr th:first-child,
+    .ics-viewer #dfTopicList .lotusTable tr td:first-child,
     .ics-viewer #dfOpenQuestionList .lotusTable tr th:first-child,
     .ics-viewer #dfOpenQuestionList .lotusTable tr td:first-child,
     .ics-viewer #dfAnsweredQuestionList .lotusTable tr th:first-child,
@@ -2043,7 +2384,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer #topicList .lotusTable tr th:first-child,
     .ics-viewer #topicList .lotusTable tr td:first-child {
       padding-left: 10px !important; }
-      .ics-viewer #dfTopicList .lotusTable tr th:first-child input, .ics-viewer #dfTopicList .lotusTable tr td:first-child input,
+      .ics-viewer #dfForumList .lotusTable tr th:first-child input, .ics-viewer #dfForumList .lotusTable tr td:first-child input,
+      .ics-viewer #dfTopicList .lotusTable tr th:first-child input,
+      .ics-viewer #dfTopicList .lotusTable tr td:first-child input,
       .ics-viewer #dfOpenQuestionList .lotusTable tr th:first-child input,
       .ics-viewer #dfOpenQuestionList .lotusTable tr td:first-child input,
       .ics-viewer #dfAnsweredQuestionList .lotusTable tr th:first-child input,
@@ -2051,7 +2394,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer #topicList .lotusTable tr th:first-child input,
       .ics-viewer #topicList .lotusTable tr td:first-child input {
         margin: 0px 0px; }
-    .ics-viewer #dfTopicList .lotusTable tr th:last-child, .ics-viewer #dfTopicList .lotusTable tr td:last-child,
+    .ics-viewer #dfForumList .lotusTable tr th:last-child, .ics-viewer #dfForumList .lotusTable tr td:last-child,
+    .ics-viewer #dfTopicList .lotusTable tr th:last-child,
+    .ics-viewer #dfTopicList .lotusTable tr td:last-child,
     .ics-viewer #dfOpenQuestionList .lotusTable tr th:last-child,
     .ics-viewer #dfOpenQuestionList .lotusTable tr td:last-child,
     .ics-viewer #dfAnsweredQuestionList .lotusTable tr th:last-child,
@@ -2059,49 +2404,20 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer #topicList .lotusTable tr th:last-child,
     .ics-viewer #topicList .lotusTable tr td:last-child {
       padding-right: 10px !important; }
-  .ics-viewer #dfTopicList .lotusTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer #dfTopicList .lotusTable tr.normalTopic:nth-child(4n+2) td, .ics-viewer #dfTopicList .lotusTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer #dfTopicList .lotusTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer #dfTopicList .lotusTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer #dfTopicList .lotusTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer #dfTopicList .lotusTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer #dfTopicList .lotusTable tr.lotusMore:nth-child(4n+3) td,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.normalTopic:nth-child(4n+2) td,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore:nth-child(4n+3) td,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.normalTopic:nth-child(4n+2) td,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore:nth-child(4n+3) td,
-  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+2) th,
-  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+2) td,
-  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+3) th,
-  .ics-viewer #topicList .lotusTable tr.normalTopic:nth-child(4n+3) td,
-  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+2) th,
-  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+2) td,
-  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+3) th,
-  .ics-viewer #topicList .lotusTable tr.lotusMore:nth-child(4n+3) td {
-    background-color: #F3F3F3; }
+  .ics-viewer #dfForumList .lotusTable tr.normalTopic td,
   .ics-viewer #dfTopicList .lotusTable tr.normalTopic td,
   .ics-viewer #dfOpenQuestionList .lotusTable tr.normalTopic td,
   .ics-viewer #dfAnsweredQuestionList .lotusTable tr.normalTopic td,
   .ics-viewer #topicList .lotusTable tr.normalTopic td {
     padding-bottom: 12px !important; }
+  .ics-viewer #dfForumList .lotusTable tr.lotusMore td,
   .ics-viewer #dfTopicList .lotusTable tr.lotusMore td,
   .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore td,
   .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore td,
   .ics-viewer #topicList .lotusTable tr.lotusMore td {
     padding-top: 0px !important;
     padding-bottom: 20px !important; }
+    .ics-viewer #dfForumList .lotusTable tr.lotusMore td .lotusMeta > span,
     .ics-viewer #dfTopicList .lotusTable tr.lotusMore td .lotusMeta > span,
     .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusMore td .lotusMeta > span,
     .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusMore td .lotusMeta > span,
@@ -2120,6 +2436,140 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .lotusTable tr.lotusSort td:nth-of-type(2), .ics-viewer #dfOpenQuestionList .lotusTable tr.lotusSort td:nth-of-type(2),
   .ics-viewer #dfAnsweredQuestionList .lotusTable tr.lotusSort td:nth-of-type(2) {
     padding: 28px 16px 20px 0px !important; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable th, .ics-viewer #versionHistory .lotusVersions .lotusTable th a, .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td, .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a,
+  .ics-viewer #attachments .lotusTable th,
+  .ics-viewer #attachments .lotusTable th a,
+  .ics-viewer #attachments .lotusTable tr.lotusSort td,
+  .ics-viewer #attachments .lotusTable tr.lotusSort td a {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #595859 !important; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable th:lang(en), .ics-viewer #versionHistory .lotusVersions .lotusTable th a:lang(en), .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td:lang(en), .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a:lang(en),
+    .ics-viewer #attachments .lotusTable th:lang(en),
+    .ics-viewer #attachments .lotusTable th a:lang(en),
+    .ics-viewer #attachments .lotusTable tr.lotusSort td:lang(en),
+    .ics-viewer #attachments .lotusTable tr.lotusSort td a:lang(en) {
+      text-transform: uppercase !important; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable th,
+  .ics-viewer #attachments .lotusTable th {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable th a,
+    .ics-viewer #attachments .lotusTable th a {
+      text-decoration: none; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable th a:hover,
+      .ics-viewer #attachments .lotusTable th a:hover {
+        text-decoration: underline; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort,
+  .ics-viewer #attachments .lotusTable tr.lotusSort {
+    border-bottom: 1px solid #3C6DF0; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a,
+    .ics-viewer #attachments .lotusTable tr.lotusSort td a {
+      padding: 8px 16px !important;
+      border: 1px solid transparent !important;
+      background-position: calc(100% - 7px) 13px !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a:hover, .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a:focus,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a:hover,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a:focus {
+        text-decoration: none !important;
+        border-radius: 2px !important;
+        border-color: #3C6DF0 !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a:hover,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a:hover {
+        background-color: #3C6DF0 !important;
+        color: #FFFFFF !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a.lotusDescending, .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a a.lotusAscending,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a.lotusDescending,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a a.lotusAscending {
+        background-size: 8px 8px !important;
+        padding: 8px 20px 8px 16px !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a.lotusDescending,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a.lotusDescending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a.lotusDescending:hover,
+        .ics-viewer #attachments .lotusTable tr.lotusSort td a.lotusDescending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a.lotusAscending,
+      .ics-viewer #attachments .lotusTable tr.lotusSort td a.lotusAscending {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+        .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort td a.lotusAscending:hover,
+        .ics-viewer #attachments .lotusTable tr.lotusSort td a.lotusAscending:hover {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusSort tr.lotusFirst,
+    .ics-viewer #attachments .lotusTable tr.lotusSort tr.lotusFirst {
+      border-top: 1px solid #3C6DF0 !important; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable tr:nth-child(even), .ics-viewer #versionHistory .lotusVersions .lotusTable tr:nth-child(even) th, .ics-viewer #versionHistory .lotusVersions .lotusTable tr:nth-child(even) td,
+  .ics-viewer #attachments .lotusTable tr:nth-child(even),
+  .ics-viewer #attachments .lotusTable tr:nth-child(even) th,
+  .ics-viewer #attachments .lotusTable tr:nth-child(even) td {
+    background-color: #F3F3F3; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable tr th, .ics-viewer #versionHistory .lotusVersions .lotusTable tr td,
+  .ics-viewer #attachments .lotusTable tr th,
+  .ics-viewer #attachments .lotusTable tr td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable tr th:first-child, .ics-viewer #versionHistory .lotusVersions .lotusTable tr td:first-child,
+    .ics-viewer #attachments .lotusTable tr th:first-child,
+    .ics-viewer #attachments .lotusTable tr td:first-child {
+      padding-left: 10px !important; }
+      .ics-viewer #versionHistory .lotusVersions .lotusTable tr th:first-child input, .ics-viewer #versionHistory .lotusVersions .lotusTable tr td:first-child input,
+      .ics-viewer #attachments .lotusTable tr th:first-child input,
+      .ics-viewer #attachments .lotusTable tr td:first-child input {
+        margin: 0px 0px; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable tr th:last-child, .ics-viewer #versionHistory .lotusVersions .lotusTable tr td:last-child,
+    .ics-viewer #attachments .lotusTable tr th:last-child,
+    .ics-viewer #attachments .lotusTable tr td:last-child {
+      padding-right: 10px !important; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable tr.normalTopic td,
+  .ics-viewer #attachments .lotusTable tr.normalTopic td {
+    padding-bottom: 12px !important; }
+  .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusMore td,
+  .ics-viewer #attachments .lotusTable tr.lotusMore td {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important; }
+    .ics-viewer #versionHistory .lotusVersions .lotusTable tr.lotusMore td .lotusMeta > span,
+    .ics-viewer #attachments .lotusTable tr.lotusMore td .lotusMeta > span {
+      vertical-align: baseline !important;
+      margin-bottom: 0 !important; }
+  .ics-viewer #bookmarkContentAreaSub .lotusTable > tbody > tr:nth-child(3n-2):not(:first-child),
+  .ics-viewer #bookmarkContentAreaSub .lotusTable form[name="bookmarkEditForm"] fieldset {
+    border-top: 1px solid #d8d8d8 !important; }
+    .ics-viewer #bookmarkContentAreaSub .lotusTable > tbody > tr:nth-child(3n-2):not(:first-child) .lotusFormFooter,
+    .ics-viewer #bookmarkContentAreaSub .lotusTable form[name="bookmarkEditForm"] fieldset .lotusFormFooter {
+      border: 0 !important; }
+  .ics-viewer #bookmarkContentAreaSub .lotusTable .commFocusML, .ics-viewer #bookmarkContentAreaSub .lotusTable .commFocusML span {
+    color: #000000 !important; }
+  .ics-viewer #bookmarkContentAreaSub .lotusTable .lotusFirstCell,
+  .ics-viewer #bookmarkContentAreaSub .lotusTable .lotusAlignRight.lotusLastCell {
+    padding: 1rem 0 !important; }
+  .ics-viewer #bookmarkContentAreaSub .lotusTable .lotusDetails .lotusFirstCell {
+    padding-top: 0 !important; }
+  .ics-viewer #bookmarkContentAreaSub .lotusTable form {
+    margin-top: 0 !important; }
+  .ics-viewer #calendar_view div[id$="listView"] .lotusTable {
+    margin-top: 1rem; }
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid #d8d8d8 !important; }
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable .lotusTitle a {
+      color: #000000 !important; }
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable .lotusFirstCell,
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable .lotusFirstCell + td,
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important; }
+    .ics-viewer #calendar_view div[id$="listView"] .lotusTable tr.lotusDetail td {
+      padding-top: 0 !important; }
+  .ics-viewer #ideatoins_main .lotusTable {
+    margin-top: 1rem; }
+    .ics-viewer #ideatoins_main .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid #d8d8d8 !important; }
+  .ics-viewer #ideatoins_main .lotusFirstCell,
+  .ics-viewer #ideatoins_main .lotusAlignRight.lotusLastCell {
+    padding: 1rem 0 !important; }
+  .ics-viewer div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable {
+    margin-top: 1rem; }
+    .ics-viewer div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid #d8d8d8 !important; }
+  .ics-viewer div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] td {
+    padding: 1rem 0 !important; }
   .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostHover, .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
     background-color: #F3F3F3; }
   .ics-viewer .lotusui30 .lotusFlyout .lotusFlyoutHeader {
@@ -2306,6 +2756,84 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       color: inherit !important; }
   .ics-viewer #tableEditProfileContactInfo td {
     display: block !important; }
+  .ics-viewer .lotusui30 .lotusDialogBorder form.lotusDialog {
+    border: none; }
+  .ics-viewer form[id^="importMembersForm"] input[type="radio"] {
+    margin-bottom: .75rem; }
+  .ics-viewer form[id^="importMembersForm"] select[id^="selectRoleimportMembersForm"] {
+    margin: .75rem 0 1.5rem; }
+  .ics-viewer form[id^="importMembersForm"] textarea[disabled],
+  .ics-viewer form[id^="importMembersForm"] input[type="file"][disabled] {
+    display: none; }
+  .lotusui30 .lotusDialog .ics-viewer form[id^="exportMembersForm"] .lotusFormFieldRow {
+    padding-left: 2px; }
+  .ics-viewer form[id^="exportMembersForm"] input[type="checkbox"] {
+    vertical-align: middle; }
+  .ics-viewer #Members #MembersPanel .lotusForm tr#controlsRow > td + td {
+    padding-bottom: 3.5rem; }
+  .ics-viewer #Members #MembersPanel .lotusForm tr#findRow {
+    position: absolute;
+    right: 0;
+    top: 40%; }
+  .ics-viewer #Members #MembersPanel .lotusForm #findLabel,
+  .ics-viewer #Members #MembersPanel .lotusForm #filterLabel {
+    font-size: 14px !important;
+    font-weight: 400 !important; }
+  .ics-viewer #Members #MembersPanel .lotusForm #filterLabel,
+  .ics-viewer #Members #MembersPanel .lotusForm span.lotusIndent10 {
+    display: inline-block; }
+  .ics-viewer #Members #MembersPanel .lotusForm #roleFilter {
+    width: 10rem !important; }
+  .ics-viewer #calendar_event_editor .dijitTextBox .dijitInputField input,
+  .ics-viewer #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] {
+    line-height: 1.5 !important;
+    min-width: 10rem !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+    font-size: 12.8px !important;
+    padding-right: 2rem !important;
+    padding-bottom: .375rem !important;
+    box-sizing: border-box !important; }
+    .ics-viewer #calendar_event_editor .dijitTextBox .dijitInputField input:focus, .ics-viewer #calendar_event_editor .dijitTextBox .dijitInputField input .dijitTextBoxFocused,
+    .ics-viewer #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"]:focus,
+    .ics-viewer #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] .dijitTextBoxFocused {
+      outline: none !important;
+      border-color: #3C6DF0 !important;
+      box-shadow: 0 1px 0 #3C6DF0 !important; }
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-subject,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-location,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-sdate,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-stime,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-edate,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor-etime,
+  .ics-viewer #calendar_event_editor div#widget_calendar_event_editor_rec-until {
+    border: none !important; }
+  .ics-viewer #calendar_event_editor label[id^="lconn_calendar_FilteringCheckbox"] {
+    width: 130px !important; }
+  .ics-viewer #calendar_event_editor div.lconnNotify {
+    height: 24px !important; }
+    .ics-viewer #calendar_event_editor div.lconnNotify label {
+      line-height: 22px !important; }
+  .ics-viewer #calendar_event_editor .person_picker .menu_drop_icon {
+    margin-bottom: 6px !important; }
+  .ics-viewer #calendar_event_editor .person_picker .lotusDelete {
+    margin-bottom: 8px !important; }
+  .ics-viewer form[name="surveysCreateForm"] {
+    max-width: 800px; }
+    .ics-viewer form[name="surveysCreateForm"] fieldset {
+      width: 100% !important; }
+      .ics-viewer form[name="surveysCreateForm"] fieldset table {
+        width: 100% !important; }
+        .ics-viewer form[name="surveysCreateForm"] fieldset table input.lotusText,
+        .ics-viewer form[name="surveysCreateForm"] fieldset table textarea.lotusText {
+          width: 100% !important; }
+        .ics-viewer form[name="surveysCreateForm"] fieldset table td {
+          padding: 4px 0px !important;
+          margin-top: 5px !important; }
+        .ics-viewer form[name="surveysCreateForm"] fieldset table input.lotusBtn {
+          margin-top: 20px !important; }
   .ics-viewer html {
     height: 100%; }
   .ics-viewer body {
@@ -2803,23 +3331,38 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     background-color: #FFFFFF !important; }
   .ics-viewer .lotusDialogClose img {
     display: none !important; }
-  .ics-viewer .lotusDialogClose, .ics-viewer .dijitDialogCloseIcon {
-    background-attachment: scroll !important;
-    background-clip: border-box !important;
-    background-color: transparent !important;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
-    background-origin: padding-box !important;
+  .ics-viewer .lotusDialogClose,
+  .ics-viewer .dijitDialogCloseIcon
+  .lotusPaletteClose {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23595859%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
     background-position-x: center !important;
     background-position-y: center !important;
-    background-repeat: no-repeat !important;
-    background-size: 12px 12px !important;
-    height: 12px !important;
-    width: 12px !important;
+    height: 24px !important;
+    width: 24px !important;
     top: 1rem !important;
-    right: 1rem !important; }
-    .ics-viewer .lotusDialogClose:focus, .ics-viewer .dijitDialogCloseIcon:focus {
-      outline: 1px solid #595859 !important;
-      outline-offset: 1px !important; }
+    right: 1rem !important;
+    padding: 0.25rem 0.25rem 0.125rem 0.25rem !important;
+  /* background-attachment: scroll!important;
+  background-clip: border-box!important;
+  background-color: transparent !important;
+	background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default)!important;
+  background-origin: padding-box!important;
+  background-position-x: center!important;
+  background-position-y: center!important;
+  background-repeat: no-repeat!important;
+  background-size: 12px 12px!important;
+  height: 12px!important;
+  width: 12px!important;
+  top:1rem!important;
+  right:1rem!important;
+	&:focus {
+		outline:1px solid $icon-default!important;
+		outline-offset: 1px!important;
+	} */ }
+    .ics-viewer .lotusDialogClose:focus,
+    .ics-viewer .dijitDialogCloseIcon
+    .lotusPaletteClose:focus {
+      outline: 1px solid #3C6DF0 !important; }
   .ics-viewer img.lconnPickerSourceLabelIconCloud {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23595859%22 d=%22M21,12L21,12l0-10c0-1.1-0.9-2-2-2H5C3.9,0,3,0.9,3,2v20c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-9h0V12z M5,1h14 c0.5,0,1,0.4,1,1v10H4V2C4,1.4,4.4,1,5,1z M20,22c0,0.5-0.4,1-1,1H5c-0.5,0-1-0.4-1-1v-9h16V22z%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%226%22 width=%226%22 height=%221%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%2217%22 width=%226%22 height=%221%22/%3E%3C/svg%3E") !important;
     background-size: 16px 16px !important;
@@ -2874,8 +3417,19 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       color: currentColor !important; }
   .ics-viewer .lotusDialogBorder > .lotusForm > div,
   .ics-viewer .lotusDialogBorder > .lotusDialog > div {
-    padding-right: 3rem !important;
-    padding-left: 3rem !important; }
+    padding-right: 2rem !important;
+    padding-left: 2rem !important; }
+  .ics-viewer .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
+    padding-left: 2rem !important;
+    padding-top: 1rem !important; }
+    .ics-viewer .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
+      padding-left: 2rem !important; }
+  .ics-viewer input.moveCheckBox {
+    vertical-align: middle !important; }
+    .ics-viewer input.moveCheckBox label {
+      vertical-align: middle !important; }
+  .ics-viewer div.qkrMovePageList {
+    width: 296px !important; }
   .ics-viewer #lconn_btn_browse_files {
     border-radius: 2rem !important;
     border-width: 1px !important;
@@ -2893,6 +3447,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important; }
@@ -2911,15 +3466,28 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       color: #3C6DF0 !important;
       border-color: #3C6DF0 !important; }
   .ics-viewer .lotusDialogHeader .lotusHeading,
+  .ics-viewer .lotusDialogHeader span.dijitDialogTitle,
   .ics-viewer .dijitDialogTitleBar span,
-  .ics-viewer span[id^="lconn_share_widget_LotusDialog_"] {
+  .ics-viewer .cke_dialog_title,
+  .ics-viewer span[id^="lconn_share_widget_LotusDialog_"],
+  .ics-viewer .app_palette_modal_header_title {
     color: #000000 !important;
     font-weight: 500 !important;
     font-size: 1.3125rem !important; }
   .ics-viewer .lotusFormTable td img.lotusArrow {
     color: #FFFFFF !important; }
-  .ics-viewer .lotusFormButton:last-of-type {
-    margin-right: 0 !important; }
+  .ics-viewer div.lconn-survey_dialog div.lotusDialogHeader {
+    padding-top: 1.25rem !important;
+    margin-bottom: 0 !important; }
+    .ics-viewer div.lconn-survey_dialog div.lotusDialogHeader span.dijitDialogTitle {
+      padding-bottom: 1rem !important;
+      padding-left: 2rem !important; }
+  .ics-viewer div.lconn-survey_dialog .lotusForm2 .lotusText {
+    width: 100% !important; }
+  .ics-viewer div.lconn-survey_dialog input[type="radio"] {
+    margin-left: 2px !important; }
+  .ics-viewer div.lconn-survey_dialog .lotusui30 img {
+    vertical-align: top !important; }
   .ics-viewer .lotusDialogContent._qkrDialogCompact {
     overflow: initial !important; }
   .ics-viewer .pickerDropfilesVerticalPrompt {
@@ -3027,6 +3595,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     text-align: left !important; }
   .ics-viewer div[id^="lconn_share_widget_Dialog_"] .lotusDialog > div > table > tbody > tr > td {
     display: flex !important; }
+  .ics-viewer div[id^="lconn_share_widget_Dialog_"] .lotusDialog col[width="100%"] {
+    width: auto !important; }
   .ics-viewer div[id^="lconn_share_widget_Dialog_"] .lotusDialog tr td,
   .ics-viewer div[id^="lconn_share_widget_Dialog_"] .lotusDialog td table td {
     display: block !important;
@@ -3065,6 +3635,52 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     right: auto; }
   .ics-viewer div[id^="lconn_share_widget_Dialog_"] .lotusDialog .BrowseGroups {
     margin-bottom: -1.35rem !important; }
+  .ics-viewer .app_palette_modal .app_palette_modal_header {
+    background-color: #ffffff;
+    height: 90px;
+    border: 0 !important; }
+    .ics-viewer .app_palette_modal .app_palette_modal_header p[data-dojo-attach-point='itemAddedTextHolder'] {
+      position: absolute;
+      left: 30px;
+      top: 110px;
+      font-size: 0.875rem !important;
+      font-weight: 500 !important;
+      color: #000000 !important; }
+    .ics-viewer .app_palette_modal .app_palette_modal_header .app_palette_modal_tabs_ul {
+      border-bottom: 1px solid #d8d8d8 !important;
+      padding: 10px 0px 0px 0px !important;
+      width: 85% !important; }
+  .ics-viewer .app_palette_modal h4 a.homepageUnclickable:active, .ics-viewer .app_palette_modal h4 a.homepageUnclickable:hover, .ics-viewer .app_palette_modal h4 a.homepageUnclickable:focus {
+    text-decoration: none !important; }
+  .ics-viewer .app_palette_modal h4 .titleNodeSpanSelected {
+    color: #000000 !important;
+    white-space: normal; }
+  .ics-viewer .app_palette_modal h4 .lotusAltText {
+    color: #000000 !important;
+    display: block !important; }
+    .ics-viewer .app_palette_modal h4 .lotusAltText:before {
+      content: " ["; }
+    .ics-viewer .app_palette_modal h4 .lotusAltText:after {
+      content: "]"; }
+  .ics-viewer .app_palette_modal .lotusPaletteWidget {
+    padding: 6px 4px !important; }
+    .ics-viewer .app_palette_modal .lotusPaletteWidget:focus {
+      outline: #3C6DF0 auto 2px; }
+  .ics-viewer .app_palette_modal .lotusIcon {
+    background-position-x: 2px !important; }
+  .ics-viewer .app_palette_modal .lotusPaletteClose {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23595859%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+    background-position-x: center !important;
+    background-position-y: center !important;
+    height: 24px !important;
+    width: 24px !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    padding: 0.25rem 0.25rem 0.125rem 0.25rem !important; }
+    .ics-viewer .app_palette_modal .lotusPaletteClose:focus {
+      outline: 1px solid #3C6DF0 !important; }
+  .ics-viewer .app_palette_modal .app_palette_modal_close_button img {
+    display: none !important; }
   .ics-viewer .dijitDialog div[id^="addPeopleLable_"] .dijitTextBox, .sc .ics-viewer .dijitDialog div[id^="addPeopleLable_"] .dijitTextBox {
     padding: 0 !important;
     border: none !important; }
@@ -3076,128 +3692,164 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 25 25%22%3E%3Cpath fill=%22%23595859%22 d=%22M24.7,23.3l-9.4-9.4c0,0,0,0-0.1,0c1.2-1.5,1.9-3.3,1.9-5.3c0-4.7-3.8-8.6-8.6-8.6S0,3.8,0,8.6s3.8,8.6,8.6,8.6c2,0,3.9-0.7,5.3-1.9c0,0,0,0,0,0.1l9.4,9.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C25.1,24.3,25.1,23.7,24.7,23.3zM8.6,15.4c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9C15.4,12.4,12.4,15.4,8.6,15.4z%22/%3E%3C/svg%3E") !important;
       background-position: right top !important;
       background-size: 20px 20px !important; }
+  .ics-viewer .lotusui30_body.scloud3 {
+    margin-top: 40px !important; }
   .ics-viewer .ics-scbanner {
-    background-color: #1D3458 !important; }
-    .ics-viewer .ics-scbanner div, .ics-viewer .ics-scbanner a {
-      -webkit-font-smoothing: antialiased !important;
-      font-weight: 400 !important; }
-    .ics-viewer .ics-scbanner a {
-      color: #000000 !important;
-      text-decoration: none !important; }
-    .ics-viewer .ics-scbanner .navsimplelist > li a:focus {
-      border-bottom: 0.0625rem solid #3C6DF0 !important;
-      border-top: 0.0625rem solid #3C6DF0 !important; }
-    .ics-viewer .ics-scbanner .navsimplelist > li a.selected {
-      border-left: 4px solid #3C6DF0 !important; }
-  .ics-viewer .ics-scbanner > a:hover::after,
-  .ics-viewer .ics-scbanner > button:hover::after,
-  .ics-viewer .ics-scbanner > .navmenu:hover::after {
-    border-bottom: 0.125rem solid #40D5BB !important; }
+    background-color: #1D3458 !important;
+    height: 40px !important; }
+    .ics-viewer .ics-scbanner > div.navmenu, .ics-viewer .ics-scbanner > a {
+      font-size: 12px;
+      font-weight: 400 !important;
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased !important; }
+      .ics-viewer .ics-scbanner > div.navmenu.selected:after, .ics-viewer .ics-scbanner > a.selected:after {
+        border-bottom: 4px solid #FFFFFF; }
+      .ics-viewer .ics-scbanner > div.navmenu:focus:before, .ics-viewer .ics-scbanner > a:focus:before {
+        border: 1px solid #FFFFFF !important; }
+    .ics-viewer .ics-scbanner div.navmenu .navsimplelist {
+      top: 40px !important; }
+      .ics-viewer .ics-scbanner div.navmenu .navsimplelist li a,
+      .ics-viewer .ics-scbanner div.navmenu .navsimplelist li div.submenu {
+        color: #000000 !important;
+        text-decoration: none !important;
+        font-size: 12px;
+        font-weight: 400 !important; }
+      .ics-viewer .ics-scbanner div.navmenu .navsimplelist > li a:focus, .ics-viewer .ics-scbanner div.navmenu .navsimplelist > li div.submenu:focus {
+        border-bottom: 1px solid #3C6DF0 !important;
+        border-top: 1px solid #3C6DF0 !important; }
+      .ics-viewer .ics-scbanner div.navmenu .navsimplelist > li a.selected {
+        border-left: 4px solid #3C6DF0 !important; }
+      .ics-viewer .ics-scbanner div.navmenu .navsimplelist div.submenu ul {
+        top: 0px !important; }
+    .ics-viewer .ics-scbanner > a:hover::after, .ics-viewer .ics-scbanner > button:hover::after, .ics-viewer .ics-scbanner > .navmenu:hover::after {
+      border-bottom: 2px solid #40D5BB !important; }
   .ics-viewer .ics-scbanner .user .avatar {
     height: 1.75rem !important;
     width: 1.75rem !important; }
-  .ics-viewer .lotusNavMenu a {
-    color: #000000 !important;
-    text-decoration: none !important; }
-  .ics-viewer #headerHelpLi {
-    height: 42px; }
-  .ics-viewer .help, .ics-viewer #headerHelpLi a {
-    background-position: 4px 10px !important;
+  .ics-viewer .ics-scbanner .help, .ics-viewer .ics-scbanner #headerHelpLi a {
+    background-position: center !important;
     background-repeat: no-repeat !important;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22helo_24%22 fill=%22%23FFFFFF%22%3E%3Cg id=%22help%22%3E%3Cpath d=%22M12,0 C5.373,0 0,5.364 0,11.98 C0,18.596 5.373,23.96 12,23.96 C18.627,23.96 24,18.596 24,11.98 C24,5.364 18.627,0 12,0 M12,1 C18.065,1 23,5.926 23,11.98 C23,18.034 18.065,22.96 12,22.96 C5.935,22.96 1,18.034 1,11.98 C1,5.926 5.935,1 12,1%22 id=%22Fill-1%22%3E%3C/path%3E%3Cpath d=%22M10.6582,18.003 L10.6582,17.711 C10.6582,17.01 11.0482,16.504 11.9452,16.504 C12.8422,16.504 13.2322,17.01 13.2322,17.711 L13.2322,18.003 C13.2322,18.704 12.8422,19.21 11.9452,19.21 C11.0482,19.21 10.6582,18.704 10.6582,18.003 L10.6582,18.003 Z M11.1062,14.83 L11.1062,11.675 C13.2122,11.597 14.4602,10.702 14.4602,9.105 L14.4602,8.833 C14.4602,7.567 13.5832,6.769 12.2962,6.769 C10.8922,6.769 10.0342,7.684 9.7212,8.93 L8.1032,8.307 C8.5912,6.652 9.8782,5.153 12.3542,5.153 C14.8112,5.153 16.3912,6.632 16.3912,8.891 C16.3912,11.325 14.5772,12.532 12.8422,12.863 L12.8422,14.83 L11.1062,14.83 Z%22 id=%22Fill-4%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg id=%22labels%22 transform=%22translate(-88.000000, -334.000000)%22%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
     background-size: 20px 20px !important; }
-    .ics-viewer .help .help-image, .ics-viewer #headerHelpLi a .help-image {
+    .ics-viewer .ics-scbanner .help .help-image, .ics-viewer .ics-scbanner #headerHelpLi a .help-image {
       visibility: hidden !important; }
-  .ics-viewer .notifications .navmenu-button {
+    .ics-viewer .ics-scbanner .help .menu-image, .ics-viewer .ics-scbanner #headerHelpLi a .menu-image {
+      position: relative;
+      left: 6px; }
+  .ics-viewer .ics-scbanner .notifications .navmenu-button {
     background-position: center;
     background-repeat: no-repeat !important;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22notification_24%22 fill=%22%23FFFFFF%22%3E%3Cg id=%22notification%22 transform=%22translate(2.000000, 1.000000)%22%3E                %3Cpath d=%22M10,18 C8.895,18 8,18.895 8,20 C8,21.105 8.895,22 10,22 C11.105,22 12,21.105 12,20 C12,18.895 11.105,18 10,18 M10,19 C10.551,19 11,19.449 11,20 C11,20.551 10.551,21 10,21 C9.449,21 9,20.551 9,20 C9,19.449 9.449,19 10,19%22 id=%22Fill-4%22%3E%3C/path%3E%3Cpath d=%22M10.0113,0 C6.1513,0 3.0223,3.129 3.0223,6.989 C3.0223,6.992 3.0233,6.996 3.0233,7 L3.0003,7 L3.0003,10 C1.3433,10 0.0003,11.343 0.0003,13 C0.0003,14.657 1.3433,16 3.0003,16 L17.0003,16 C18.6573,16 20.0003,14.657 20.0003,13 C20.0003,11.343 18.6573,10 17.0003,10 L17.0003,7 L16.9993,7 C16.9993,6.996 17.0003,6.992 17.0003,6.989 C17.0003,3.129 13.8713,0 10.0113,0 M10.0113,1 C13.3133,1 16.0003,3.687 16.0013,6.944 L15.9963,7.048 L16.0003,7.072 L16.0003,10 L16.0003,11 L17.0003,11 C18.1033,11 19.0003,11.897 19.0003,13 C19.0003,14.103 18.1033,15 17.0003,15 L3.0003,15 C1.8973,15 1.0003,14.103 1.0003,13 C1.0003,11.897 1.8973,11 3.0003,11 L4.0003,11 L4.0003,10 L4.0003,8 L4.0233,8 L4.0233,7 L4.0223,6.958 L4.0223,6.955 C4.0403,3.668 6.7203,1 10.0113,1%22 id=%22Fill-1%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
     background-size: 20px 20px; }
-    .ics-viewer .notifications .navmenu-button .nav-icon {
+    .ics-viewer .ics-scbanner .notifications .navmenu-button .nav-icon {
       visibility: hidden !important; }
   .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner {
-    background-color: #1D3458 !important;
+    background: #1D3458;
     height: 40px; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li.lotusHover a {
-      background-color: transparent !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li.lotusSelected::after {
-      border-bottom: 14px solid #FFFFFF !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li.lotusSelected:hover::after {
-      border-bottom: 12px solid #40D5BB !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li a {
-      color: #FFFFFF !important;
-      text-decoration: none !important;
-      background-color: transparent !important;
-      font-weight: 400 !important; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li a:hover {
-        background: none !important; }
-        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li a:hover:after {
-          content: '';
-          bottom: 0px;
-          border-bottom: 0.25rem solid #40D5BB;
-          height: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          position: absolute;
-          width: 100%; }
-        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li a:hover:before {
-          border: none !important; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist li a:focus {
-        background: none !important; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInner {
+      top: 50%;
+      transform: translateY(-50%);
+      position: relative; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner div.lotusLogo {
+      height: 40px; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner div.lotusLogo span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 8px;
+        padding-top: 8px; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li {
+      height: 40px; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li.lotusHover a {
+        background-color: transparent !important; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li.lotusSelected a {
+        border-bottom: 4px solid #FFFFFF; }
+        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li.lotusSelected a:hover {
+          border-bottom: 2px solid #40D5BB; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li.lotusSelected::after {
+        display: none; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li a {
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        background-color: transparent !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        padding: 9px 12px 8px 12px !important;
+        border: 1px solid transparent; }
+        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li a:hover {
+          background: none !important;
+          border-bottom: 2px solid #40D5BB; }
+          .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li a:hover:before {
+            border: none !important; }
+        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li a:focus:before {
+          display: none; }
+        .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner ul.lotusInlinelist.lotusLinks li a:focus {
+          border: 1px solid #FFFFFF; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility li {
+      height: 40px; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility a {
+      padding: 9px 12px 8px 12px !important;
+      background: transparent;
+      border: 1px solid transparent;
+      border-color: transparent !important; }
     .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusBannerNotifications a:before {
-      left: 28px;
-      height: 32px !important;
-      top: 20px !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusBannerNotifications a:hover:after {
-      bottom: 5px; }
+      display: none; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusBannerNotifications a:hover {
+      border-bottom: 2px solid #40D5BB; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusBannerNotifications a:focus {
+      border-color: #FFFFFF; }
     .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusPerson a:before {
-      left: 38px;
-      height: 33px !important;
-      top: 20px !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusPerson a:hover:after {
-      bottom: 2px; }
+      display: none; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusPerson a:hover {
+      border-bottom: 2px solid #40D5BB; }
     .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #lotusPerson a:focus {
       border-color: #FFFFFF !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi {
-      height: 42px; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi a:focus::before {
-        height: 33px !important;
-        left: 15px !important; }
-    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a {
-      border: 1px solid transparent !important;
-      padding-top: 8px !important;
-      margin-top: 4px !important; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a:hover {
-        border: 1px solid transparent !important;
-        background: none !important; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a:hover:after {
-        background: none !important;
-        bottom: -5px;
-        width: 80%; }
-      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a:focus {
-        border: 1px solid #FFFFFF !important; }
-  .ics-viewer div[id^="lotusBanner"][id$="_dropdown"],
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a.lotusBannerBtn {
+      color: #FFFFFF !important;
+      font-size: 12px;
+      font-weight: 400;
+      text-decoration: none !important;
+      margin: 0px 20px 0px 0px; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a.lotusBannerBtn:hover {
+        border-bottom: 2px solid #40D5BB;
+        background: transparent; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerSharebox a.lotusBannerBtn:focus {
+        border-color: #FFFFFF !important; }
+    .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi a {
+      height: 40px;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi a img {
+        display: none; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi a:hover {
+        border-bottom: 2px solid #40D5BB; }
+      .ics-viewer .lotusui30 div.lotusBanner .lotusRightCorner .lotusInlinelist.lotusUtility #headerHelpLi a:focus {
+        border-color: #FFFFFF; }
   .ics-viewer #logoutLabel_dropdown {
-    top: 44px !important; }
-    .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] a,
-    .ics-viewer #logoutLabel_dropdown a {
-      color: #000000 !important;
-      font-weight: 400 !important;
-      text-decoration: none !important; }
-      .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] a strong,
-      .ics-viewer #logoutLabel_dropdown a strong {
-        font-weight: 400; }
-    .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] #recentCommunities,
-    .ics-viewer #logoutLabel_dropdown #recentCommunities {
-      padding-left: 12px;
-      padding-right: 11px;
-      margin-left: 0px;
-      margin-right: 0px;
-      color: #000000;
-      font-weight: 700; }
-    .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenuLarge th,
-    .ics-viewer #logoutLabel_dropdown .lotusNavMenuLarge th {
-      padding-right: 20px; }
+    top: 40px !important; }
+  .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenu a,
+  .ics-viewer #logoutLabel_dropdown .lotusNavMenu a {
+    color: #000000 !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    text-decoration: none !important; }
+    .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenu a strong,
+    .ics-viewer #logoutLabel_dropdown .lotusNavMenu a strong {
+      font-weight: 400; }
+  .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenu table.lotusNavMenuLarge img,
+  .ics-viewer #logoutLabel_dropdown .lotusNavMenu table.lotusNavMenuLarge img {
+    margin-top: 15px; }
+  .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenu #recentCommunities,
+  .ics-viewer #logoutLabel_dropdown .lotusNavMenu #recentCommunities {
+    padding-left: 12px;
+    padding-right: 11px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #000000;
+    font-weight: 700; }
+  .ics-viewer div[id^="lotusBanner"][id$="_dropdown"] .lotusNavMenu .lotusNavMenuLarge th,
+  .ics-viewer #logoutLabel_dropdown .lotusNavMenu .lotusNavMenuLarge th {
+    padding-right: 20px; }
   .ics-viewer .bhcNotice, .ics-viewer .bhcNoticePicker {
     background-color: #FFFFFF !important;
     background: #FFFFFF !important; }
@@ -3268,7 +3920,7 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     border-color: #3C6DF0 !important; }
     .ics-viewer .search-history-view-ui .icSearchPane .pfEntry:hover .lconn_gray, .ics-viewer .search-history-view-ui .icSearchPane .pfEntry.spSelected .lconn_gray {
       color: #595859 !important; }
-  .ics-viewer select:not([style="display:none"]) {
+  .ics-viewer select:not([style="display:none"]):not([style="display: none;"]) {
     font-size: 12.8px !important;
     -webkit-appearance: none !important;
     display: block !important;
@@ -3287,12 +3939,14 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     background-position: right .4rem !important;
     background-repeat: no-repeat !important;
     height: auto !important; }
-    .ics-viewer select:not([style="display:none"]):focus {
+    .ics-viewer select:not([style="display:none"]):not([style="display: none;"]):focus {
       border-bottom: 2px solid #3C6DF0 !important;
       outline: none !important; }
-    .ics-viewer select:not([style="display:none"])[disabled] {
+    .ics-viewer select:not([style="display:none"]):not([style="display: none;"])[disabled] {
       cursor: not-allowed !important;
       color: #969696 !important; }
+  .ics-viewer .lotusDialogWrapper.lconnPicker .lconnPickerSourceArea select {
+    min-width: 1px !important; }
   .ics-viewer .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer [id^="dijit_form_ComboBox_"]:focus {
     border-bottom: 2px solid #3C6DF0 !important; }
   .ics-viewer [id^="lconn_share_widget_MemberInput_"] [id*="_searchSourceDropdown"],
@@ -3325,22 +3979,62 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       color: #969696 !important; }
   .ics-viewer select[id^="compactpicker_select_"] {
     min-width: 0 !important; }
-  .ics-viewer .lotusTabContainer {
+  .ics-viewer #addMembersRow #addPeopleOrGroupsSelect,
+  .ics-viewer #addMembersRow #addMembersSelectBox:not([style="display: block"]) {
+    display: inline-block !important; }
+  .ics-viewer #versionHistory .lotusVersions select {
+    min-width: 1px !important;
+    margin: 0 .5rem .5rem !important;
+    display: inline-block !important; }
+  .ics-viewer #versionHistory .lotusVersions div[dojoattachpoint="compareNode"] a,
+  .ics-viewer #versionHistory .lotusVersions div[dojoattachpoint="deleteNode"] a {
+    display: block;
+    margin-bottom: 1rem; }
+  .ics-viewer .lotusTabContainer,
+  .ics-viewer .app_palette_modal_header {
     border-bottom: 1px solid #d8d8d8 !important;
     font-size: 0.875rem !important;
     font-weight: 500 !important; }
-    .ics-viewer .lotusTabContainer .lotusTabs li {
+    .ics-viewer .lotusTabContainer .lotusTabs li,
+    .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li,
+    .ics-viewer .app_palette_modal_header .lotusTabs li,
+    .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li {
       margin: 0 !important;
       padding: 0.625rem 0 0.375rem !important;
       font-size: inherit !important;
       font-weight: inherit !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li:hover, .ics-viewer .lotusTabContainer .lotusTabs li:hover a, .ics-viewer .lotusTabContainer .lotusTabs li:focus, .ics-viewer .lotusTabContainer .lotusTabs li:focus a, .ics-viewer .lotusTabContainer .lotusTabs li:active, .ics-viewer .lotusTabContainer .lotusTabs li:active a {
+      .ics-viewer .lotusTabContainer .lotusTabs li:hover, .ics-viewer .lotusTabContainer .lotusTabs li:hover a, .ics-viewer .lotusTabContainer .lotusTabs li:focus, .ics-viewer .lotusTabContainer .lotusTabs li:focus a, .ics-viewer .lotusTabContainer .lotusTabs li:active, .ics-viewer .lotusTabContainer .lotusTabs li:active a,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:hover a,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:focus,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:focus a,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:active,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:active a,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:hover a,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:focus,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:focus a,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:active,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:active a,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:hover a,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:focus,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:focus a,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:active,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:active a {
         text-decoration: none !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li a {
-        transition: none !important; }
       .ics-viewer .lotusTabContainer .lotusTabs li #about_link:hover,
       .ics-viewer .lotusTabContainer .lotusTabs li #share_link:hover,
-      .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:hover {
+      .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #about_link:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #share_link:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #about_link:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #share_link:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #about_link:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #share_link:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:hover {
         color: #FFFFFF !important; }
       .ics-viewer .lotusTabContainer .lotusTabs li #about_link:hover, .ics-viewer .lotusTabContainer .lotusTabs li #about_link:active, .ics-viewer .lotusTabContainer .lotusTabs li #about_link:focus,
       .ics-viewer .lotusTabContainer .lotusTabs li #share_link:hover,
@@ -3348,53 +4042,112 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
       .ics-viewer .lotusTabContainer .lotusTabs li #share_link:focus,
       .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:hover,
       .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:active,
-      .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:focus {
+      .ics-viewer .lotusTabContainer .lotusTabs li a._linkHolder.lotusLeft:focus,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #about_link:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #about_link:active,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #about_link:focus,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #share_link:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #share_link:active,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li #share_link:focus,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:active,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:focus,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #about_link:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #about_link:active,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #about_link:focus,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #share_link:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #share_link:active,
+      .ics-viewer .app_palette_modal_header .lotusTabs li #share_link:focus,
+      .ics-viewer .app_palette_modal_header .lotusTabs li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .app_palette_modal_header .lotusTabs li a._linkHolder.lotusLeft:active,
+      .ics-viewer .app_palette_modal_header .lotusTabs li a._linkHolder.lotusLeft:focus,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #about_link:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #about_link:active,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #about_link:focus,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #share_link:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #share_link:active,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li #share_link:focus,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:hover,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:active,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:focus {
         font-weight: 500 !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li + li {
+      .ics-viewer .lotusTabContainer .lotusTabs li + li,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li + li,
+      .ics-viewer .app_palette_modal_header .lotusTabs li + li,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li + li {
         margin-left: 1rem !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected {
+      .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li.lotusSelected,
+      .ics-viewer .app_palette_modal_header .lotusTabs li.lotusSelected,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li.lotusSelected {
         border-bottom: 4px solid #3C6DF0 !important; }
-        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a {
+        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a strong,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li.lotusSelected a strong,
+        .ics-viewer .app_palette_modal_header .lotusTabs li.lotusSelected a strong,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li.lotusSelected a strong {
           color: #000000 !important; }
-          .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:hover {
-            color: #FFFFFF !important;
-            background-color: #3C6DF0 !important;
-            border-color: #3C6DF0 !important;
-            font-weight: 500 !important;
-            text-decoration: none !important; }
-          .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:focus {
-            color: #000000 !important;
-            background-color: transparent !important;
-            border-color: #3C6DF0 !important; }
-          .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:active, .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:focus {
-            text-decoration: none !important; }
-        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected #about_link:focus,
-        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected #share_link:focus,
-        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a._linkHolder.lotusLeft:focus {
-          color: #000000 !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li:focus {
+        .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:active, .ics-viewer .lotusTabContainer .lotusTabs li.lotusSelected a:focus,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li.lotusSelected a:active,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li.lotusSelected a:focus,
+        .ics-viewer .app_palette_modal_header .lotusTabs li.lotusSelected a:active,
+        .ics-viewer .app_palette_modal_header .lotusTabs li.lotusSelected a:focus,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li.lotusSelected a:active,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li.lotusSelected a:focus {
+          text-decoration: none !important; }
+      .ics-viewer .lotusTabContainer .lotusTabs li:focus,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li:focus,
+      .ics-viewer .app_palette_modal_header .lotusTabs li:focus,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li:focus {
         outline: none !important; }
-        .ics-viewer .lotusTabContainer .lotusTabs li:focus a {
-          color: #000000 !important;
-          background-color: transparent !important;
-          border: 1px solid #3C6DF0 !important; }
-      .ics-viewer .lotusTabContainer .lotusTabs li a {
+      .ics-viewer .lotusTabContainer .lotusTabs li a,
+      .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a,
+      .ics-viewer .app_palette_modal_header .lotusTabs li a,
+      .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a {
         padding: 0.5rem 1rem !important;
         margin: 0 !important;
         font-size: inherit !important;
-        color: #595859 !important;
         border-radius: 2px !important;
-        border: 1px solid transparent !important;
-        font-weight: 500 !important; }
-        .ics-viewer .lotusTabContainer .lotusTabs li a:hover {
-          color: #FFFFFF !important;
-          background-color: #3C6DF0 !important;
-          border-color: #3C6DF0 !important;
-          font-weight: 500 !important; }
-        .ics-viewer .lotusTabContainer .lotusTabs li a:focus {
-          color: #000000 !important;
+        border: 1px solid transparent !important; }
+        .ics-viewer .lotusTabContainer .lotusTabs li a, .ics-viewer .lotusTabContainer .lotusTabs li a strong, .ics-viewer .lotusTabContainer .lotusTabs li a:visited, .ics-viewer .lotusTabContainer .lotusTabs li a:visited strong,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a strong,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a:visited,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a:visited strong,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a strong,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a:visited,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a:visited strong,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a strong,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a:visited,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a:visited strong {
+          color: #595859 !important; }
+        .ics-viewer .lotusTabContainer .lotusTabs li a strong,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a strong,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a strong,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a strong {
+          font-weight: 500 !important;
+          color: #595859 !important;
+          padding-bottom: 0px !important; }
+        .ics-viewer .lotusTabContainer .lotusTabs li a:focus,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a:focus,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a:focus,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a:focus {
+          color: #595859 !important;
           background-color: transparent !important;
           border-color: #3C6DF0 !important; }
+        .ics-viewer .lotusTabContainer .lotusTabs li a:hover,
+        .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a:hover,
+        .ics-viewer .app_palette_modal_header .lotusTabs li a:hover,
+        .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a:hover {
+          background-color: #3C6DF0 !important;
+          border-color: #3C6DF0 !important;
+          color: #FFFFFF !important; }
+          .ics-viewer .lotusTabContainer .lotusTabs li a:hover strong,
+          .ics-viewer .lotusTabContainer .app_palette_modal_tabs_ul li a:hover strong,
+          .ics-viewer .app_palette_modal_header .lotusTabs li a:hover strong,
+          .ics-viewer .app_palette_modal_header .app_palette_modal_tabs_ul li a:hover strong {
+            color: #FFFFFF !important; }
   .ics-viewer .dijitTabContainer .switchPane,
   .ics-viewer div[id^="lconn_share_widget_Dialog_"] .switchPane {
     margin-bottom: 1rem !important; }
@@ -3588,6 +4341,35 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
               color: #000000 !important;
               background-color: transparent !important;
               border-color: #3C6DF0 !important; }
+  .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top {
+    padding: 0 !important; }
+    .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
+      padding-bottom: calc(.375rem + 3px) !important; }
+      .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
+        padding-left: 1rem !important;
+        background-image: none !important;
+        color: #000000 !important; }
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
+          margin-left: .5rem !important; }
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
+          position: relative; }
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
+          color: #FFFFFF !important;
+          background-color: #3C6DF0 !important;
+          border-color: #3C6DF0 !important;
+          font-weight: 500 !important; }
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
+          color: #000000 !important;
+          background-color: transparent !important;
+          border-color: #3C6DF0 !important; }
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
+          color: inherit !important;
+          border: none !important;
+          font-weight: 500 !important; }
+          .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
+            outline: 0 !important; }
+  .ics-viewer div.lconn-survey_dialog .lotusDialogFooter {
+    padding: 1rem 1rem !important; }
   .ics-viewer #socialTags #tagsYouAddedList_div, .ics-viewer #socialTags #tagsListTags_div {
     max-height: 12.75rem;
     overflow: auto; }
@@ -4086,7 +4868,8 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     text-overflow: ellipsis;
     background: #F3F3F3 !important;
     margin-left: 4px !important;
-    margin-right: 4px !important; }
+    margin-right: 4px !important;
+    vertical-align: middle; }
     .ics-viewer .lotusContent .lotusTags.lotusMeta span[role="listitem"] a,
     .ics-viewer .lotusContent .lotusTags.lotusMeta li.lotusTag a,
     .ics-viewer .lotusContent .lotusTags span[role="listitem"] a,
@@ -4429,7 +5212,9 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
   .ics-viewer input.lotusText,
   .ics-viewer .blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"]),
   .ics-viewer .dijitTextBox .typeaheadInput input,
-  .ics-viewer #communityTypeAhead {
+  .ics-viewer #communityTypeAhead,
+  .ics-viewer #editbookmarkTagTypeAheadContainer input.dijitTextBox,
+  .ics-viewer #bookmarkAddForm input.dijitTextBox {
     line-height: 1.5 !important;
     min-width: 10rem !important;
     padding: 0 !important;
@@ -4468,7 +5253,11 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
     .ics-viewer .dijitTextBox .typeaheadInput input:focus,
     .ics-viewer .dijitTextBox .typeaheadInput input .dijitTextBoxFocused,
     .ics-viewer #communityTypeAhead:focus,
-    .ics-viewer #communityTypeAhead .dijitTextBoxFocused {
+    .ics-viewer #communityTypeAhead .dijitTextBoxFocused,
+    .ics-viewer #editbookmarkTagTypeAheadContainer input.dijitTextBox:focus,
+    .ics-viewer #editbookmarkTagTypeAheadContainer input.dijitTextBox .dijitTextBoxFocused,
+    .ics-viewer #bookmarkAddForm input.dijitTextBox:focus,
+    .ics-viewer #bookmarkAddForm input.dijitTextBox .dijitTextBoxFocused {
       outline: none !important;
       border-color: #3C6DF0 !important;
       box-shadow: 0 1px 0 #3C6DF0 !important; }
@@ -4642,6 +5431,43 @@ html .lotusui30_layout .lotusWelcomeBox h2 {
         padding-right: 0 !important;
         width: 100% !important;
         box-sizing: content-box !important; }
+  .ics-viewer #Members #addGroupsWidgetPeopleTypeAhead,
+  .ics-viewer #Members #bhc_lconn_core_PeopleTypeAhead,
+  .ics-viewer #Members #addMembersWidgetPeopleTypeAhead {
+    padding-bottom: .75rem !important; }
+  .ics-viewer #Members #widget_bhc_lconn_core_PeopleTypeAhead {
+    border: none !important;
+    vertical-align: top;
+    margin-left: 0; }
+    .ics-viewer #Members #widget_bhc_lconn_core_PeopleTypeAhead div.typeaheadInput {
+      padding-left: 0 !important;
+      padding-bottom: 1px;
+      background-image: none !important; }
+  .ics-viewer #Members #bhc_lconn_core_PeopleTypeAhead,
+  .ics-viewer #Members #addMembersWidgetPeopleTypeAhead {
+    padding-left: 1.5rem !important;
+    padding-right: 0 !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 25 25%22%3E%3Cpath fill=%22%23595859%22 d=%22M24.7,23.3l-9.4-9.4c0,0,0,0-0.1,0c1.2-1.5,1.9-3.3,1.9-5.3c0-4.7-3.8-8.6-8.6-8.6S0,3.8,0,8.6s3.8,8.6,8.6,8.6c2,0,3.9-0.7,5.3-1.9c0,0,0,0,0,0.1l9.4,9.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C25.1,24.3,25.1,23.7,24.7,23.3zM8.6,15.4c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9C15.4,12.4,12.4,15.4,8.6,15.4z%22/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: left top !important;
+    background-size: 1rem !important;
+    height: auto !important;
+    margin-left: .75rem; }
+  .ics-viewer #MembersPanel .lotusForm #filterString {
+    line-height: 1.5 !important;
+    min-width: 10rem !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+    font-size: 12.8px !important;
+    padding-right: 2rem !important;
+    padding-bottom: .375rem !important;
+    box-sizing: border-box !important; }
+    .ics-viewer #MembersPanel .lotusForm #filterString:focus, .ics-viewer #MembersPanel .lotusForm #filterString .dijitTextBoxFocused {
+      outline: none !important;
+      border-color: #3C6DF0 !important;
+      box-shadow: 0 1px 0 #3C6DF0 !important; }
   .ics-viewer a[id^="bssui_tooltip_"] img,
   .ics-viewer #appPasswordInfoHelp img,
   .ics-viewer #appPasswordNameHelp img,
@@ -5140,6 +5966,7 @@ ul[data-dojo-attach-point="tagList"] li a:hover {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -5202,6 +6029,7 @@ ul[data-dojo-attach-point="tagList"] li a:hover {
     padding: 9px 20px !important;
     font-weight: 500 !important;
     background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
     background-color: #3C6DF0 !important;
     border-color: #3C6DF0 !important;
     color: #FFFFFF !important;
@@ -5302,16 +6130,20 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
   position: relative;
   top: 0px !important; }
 
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) .dropdown-menu-icon {
+.lotusui30_body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) .dropdown-menu-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
   background-position: 3px 1px !important;
   background-size: 9px 9px !important; }
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions):hover .dropdown-menu-icon {
+.lotusui30_body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions):hover .dropdown-menu-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
 
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload).ics-viewer-action-edit a:focus,
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton a:focus {
   border-radius: 2rem 0 0 2rem !important; }
+
+.ics-viewer .ics-viewer-banner .ics-viewer-toolbar .ics-viewer-action-upload:not(.ics-viewer-splitbutton) a {
+  top: -3px !important;
+  margin: 0px 0px !important; }
 
 .ics-viewer-title-name-container {
   overflow: auto !important;
@@ -5470,6 +6302,21 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class*="Activities"],
 #pageDetails #wikiContentDiv img[class*="Forums"],
 #pageDetails #wikiContentDiv img[class*="Bookmarks"],
+#wikiPageAttachments .lconn-ftype16,
+#wikiPageAttachments .lconn-ftype32,
+#wikiPageAttachments .lconn-ftype64,
+#wikiPageAttachments .ics-viewer-banner .ics-viewer-title .iconsFileTypes16,
+#wikiPageAttachments .iconsFileTypes32
+.iconsFileTypes64,
+#wikiPageAttachments .lconnSprite-iconFolderClose32,
+#wikiPageAttachments .lconnSprite-iconFolderPrivate32,
+#wikiPageAttachments .ic-thumb-folder,
+#wikiPageAttachments img[class*="Presentation"],
+#wikiPageAttachments img[class*="Wikis"],
+#wikiPageAttachments img[class*="Blogs"],
+#wikiPageAttachments img[class*="Activities"],
+#wikiPageAttachments img[class*="Forums"],
+#wikiPageAttachments img[class*="Bookmarks"],
 .blog .lconn-ftype16,
 .blog .lconn-ftype32,
 .blog .lconn-ftype64,
@@ -5512,6 +6359,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage .ic-thumb-folder,
 .qkrDropAvatar .ic-thumb-folder,
 #pageDetails #wikiContentDiv .ic-thumb-folder,
+#wikiPageAttachments .ic-thumb-folder,
 .blog .ic-thumb-folder,
 .lconnPicker .ic-thumb-folder {
   background-repeat: no-repeat;
@@ -5533,6 +6381,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .iconsFileTypes16,
 #pageDetails #wikiContentDiv .lconn-ftype16,
 #pageDetails #wikiContentDiv .iconsFileTypes16,
+#wikiPageAttachments .lconn-ftype16,
+#wikiPageAttachments .iconsFileTypes16,
 .blog .lconn-ftype16,
 .blog .iconsFileTypes16,
 .lconnPicker .lconn-ftype16,
@@ -5555,6 +6405,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .ics-viewer-title .iconsFileTypes16,
 #pageDetails #wikiContentDiv .ics-viewer-title .lconn-ftype16,
 #pageDetails #wikiContentDiv .ics-viewer-title .iconsFileTypes16,
+#wikiPageAttachments .ics-viewer-title .lconn-ftype16,
+#wikiPageAttachments .ics-viewer-title .iconsFileTypes16,
 .blog .ics-viewer-title .lconn-ftype16,
 .blog .ics-viewer-title .iconsFileTypes16,
 .lconnPicker .ics-viewer-title .lconn-ftype16,
@@ -5600,6 +6452,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv .iconsFileTypes32,
 #pageDetails #wikiContentDiv .lconnSprite-iconFolderClose32,
 #pageDetails #wikiContentDiv .lconnSprite-iconFolderPrivate32,
+#wikiPageAttachments .lconn-ftype32,
+#wikiPageAttachments .iconsFileTypes32,
+#wikiPageAttachments .lconnSprite-iconFolderClose32,
+#wikiPageAttachments .lconnSprite-iconFolderPrivate32,
 .blog .lconn-ftype32,
 .blog .iconsFileTypes32,
 .blog .lconnSprite-iconFolderClose32,
@@ -5626,6 +6482,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar .iconsFileTypes64,
 #pageDetails #wikiContentDiv .lconn-ftype64,
 #pageDetails #wikiContentDiv .iconsFileTypes64,
+#wikiPageAttachments .lconn-ftype64,
+#wikiPageAttachments .iconsFileTypes64,
 .blog .lconn-ftype64,
 .blog .iconsFileTypes64,
 .lconnPicker .lconn-ftype64,
@@ -5658,6 +6516,9 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv .lconn-ftype32-docx,
 #pageDetails #wikiContentDiv .lconn-ftype32-xlsx,
 #pageDetails #wikiContentDiv .lconn-ftype32-pptx,
+#wikiPageAttachments .lconn-ftype32-docx,
+#wikiPageAttachments .lconn-ftype32-xlsx,
+#wikiPageAttachments .lconn-ftype32-pptx,
 .blog .lconn-ftype32-docx,
 .blog .lconn-ftype32-xlsx,
 .blog .lconn-ftype32-pptx,
@@ -5697,6 +6558,9 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv .lconn-ftype16-docx,
 #pageDetails #wikiContentDiv .lconn-ftype16-xlsx,
 #pageDetails #wikiContentDiv .lconn-ftype16-pptx,
+#wikiPageAttachments .lconn-ftype16-docx,
+#wikiPageAttachments .lconn-ftype16-xlsx,
+#wikiPageAttachments .lconn-ftype16-pptx,
 .blog .lconn-ftype16-docx,
 .blog .lconn-ftype16-xlsx,
 .blog .lconn-ftype16-pptx,
@@ -5727,6 +6591,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class*="Default"],
 #pageDetails #wikiContentDiv img[class*="ftype"],
 #pageDetails #wikiContentDiv img[class*="Default"],
+#wikiPageAttachments img[class*="ftype"],
+#wikiPageAttachments img[class*="Default"],
 .blog img[class*="ftype"],
 .blog img[class*="Default"],
 .lconnPicker img[class*="ftype"],
@@ -5858,6 +6724,20 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="Graphic16"],
 #pageDetails #wikiContentDiv img[class$="Graphic32"],
 #pageDetails #wikiContentDiv img[class$="Graphic64"],
+#wikiPageAttachments img[class$="bmp"],
+#wikiPageAttachments img[class$="eps"],
+#wikiPageAttachments img[class$="gif"],
+#wikiPageAttachments img[class$="ico"],
+#wikiPageAttachments img[class$="jpg"],
+#wikiPageAttachments img[class$="jpeg"],
+#wikiPageAttachments img[class$="png"],
+#wikiPageAttachments img[class$="psd"],
+#wikiPageAttachments img[class$="svg"],
+#wikiPageAttachments img[class$="tif"],
+#wikiPageAttachments img[class$="tiff"],
+#wikiPageAttachments img[class$="Graphic16"],
+#wikiPageAttachments img[class$="Graphic32"],
+#wikiPageAttachments img[class$="Graphic64"],
 .blog img[class$="bmp"],
 .blog img[class$="eps"],
 .blog img[class$="gif"],
@@ -5950,6 +6830,13 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="rtf"],
 #pageDetails #wikiContentDiv img[class$="txt"],
 #pageDetails #wikiContentDiv img[class*="WordProcessingDocs"],
+#wikiPageAttachments img[class$="docx"],
+#wikiPageAttachments img[class$="doc"],
+#wikiPageAttachments img[class$="dot"],
+#wikiPageAttachments img[class$="odt"],
+#wikiPageAttachments img[class$="rtf"],
+#wikiPageAttachments img[class$="txt"],
+#wikiPageAttachments img[class*="WordProcessingDocs"],
 .blog img[class$="docx"],
 .blog img[class$="doc"],
 .blog img[class$="dot"],
@@ -6010,6 +6897,11 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="xlt"],
 #pageDetails #wikiContentDiv img[class$="ods"],
 #pageDetails #wikiContentDiv img[class*="DataDocs"],
+#wikiPageAttachments img[class$="xlsx"],
+#wikiPageAttachments img[class$="xls"],
+#wikiPageAttachments img[class$="xlt"],
+#wikiPageAttachments img[class$="ods"],
+#wikiPageAttachments img[class*="DataDocs"],
 .blog img[class$="xlsx"],
 .blog img[class$="xls"],
 .blog img[class$="xlt"],
@@ -6066,6 +6958,11 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="key"],
 #pageDetails #wikiContentDiv img[class$="odp"],
 #pageDetails #wikiContentDiv img[class*="Presentation"],
+#wikiPageAttachments img[class$="pptx"],
+#wikiPageAttachments img[class$="ppt"],
+#wikiPageAttachments img[class$="key"],
+#wikiPageAttachments img[class$="odp"],
+#wikiPageAttachments img[class*="Presentation"],
 .blog img[class$="pptx"],
 .blog img[class$="ppt"],
 .blog img[class$="key"],
@@ -6095,6 +6992,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class*="Pdf"],
 #pageDetails #wikiContentDiv img[class$="pdf"],
 #pageDetails #wikiContentDiv img[class*="Pdf"],
+#wikiPageAttachments img[class$="pdf"],
+#wikiPageAttachments img[class*="Pdf"],
 .blog img[class$="pdf"],
 .blog img[class*="Pdf"],
 .lconnPicker img[class$="pdf"],
@@ -6127,6 +7026,9 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="jar"],
 #pageDetails #wikiContentDiv img[class$="zip"],
 #pageDetails #wikiContentDiv img[class*="Compressed"],
+#wikiPageAttachments img[class$="jar"],
+#wikiPageAttachments img[class$="zip"],
+#wikiPageAttachments img[class*="Compressed"],
 .blog img[class$="jar"],
 .blog img[class$="zip"],
 .blog img[class*="Compressed"],
@@ -6152,6 +7054,8 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .qkrDropAvatar img[class*="folder"]:not(.ic-thumb-folder),
 #pageDetails #wikiContentDiv img[class*="Folder"],
 #pageDetails #wikiContentDiv img[class*="folder"]:not(.ic-thumb-folder),
+#wikiPageAttachments img[class*="Folder"],
+#wikiPageAttachments img[class*="folder"]:not(.ic-thumb-folder),
 .blog img[class*="Folder"],
 .blog img[class*="folder"]:not(.ic-thumb-folder),
 .lconnPicker img[class*="Folder"],
@@ -6193,6 +7097,10 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="wav"],
 #pageDetails #wikiContentDiv img[class$="wma"],
 #pageDetails #wikiContentDiv img[class*="Audio"],
+#wikiPageAttachments img[class$="mp3"],
+#wikiPageAttachments img[class$="wav"],
+#wikiPageAttachments img[class$="wma"],
+#wikiPageAttachments img[class*="Audio"],
 .blog img[class$="mp3"],
 .blog img[class$="wav"],
 .blog img[class$="wma"],
@@ -6256,6 +7164,12 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="wmv"],
 #pageDetails #wikiContentDiv img[class$="m4v"],
 #pageDetails #wikiContentDiv img[class*="Video"],
+#wikiPageAttachments img[class$="avi"],
+#wikiPageAttachments img[class$="mp4"],
+#wikiPageAttachments img[class$="mov"],
+#wikiPageAttachments img[class$="wmv"],
+#wikiPageAttachments img[class$="m4v"],
+#wikiPageAttachments img[class*="Video"],
 .blog img[class$="avi"],
 .blog img[class$="mp4"],
 .blog img[class$="mov"],
@@ -6359,6 +7273,16 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 #pageDetails #wikiContentDiv img[class$="scss"],
 #pageDetails #wikiContentDiv img[class$="xml"],
 #pageDetails #wikiContentDiv img[class*="Code"],
+#wikiPageAttachments img[class$="css"],
+#wikiPageAttachments img[class$="dmg"],
+#wikiPageAttachments img[class$="exe"],
+#wikiPageAttachments img[class$="html"],
+#wikiPageAttachments img[class$="java"],
+#wikiPageAttachments img[class$="js"],
+#wikiPageAttachments img[class$="json"],
+#wikiPageAttachments img[class$="scss"],
+#wikiPageAttachments img[class$="xml"],
+#wikiPageAttachments img[class*="Code"],
 .blog img[class$="css"],
 .blog img[class$="dmg"],
 .blog img[class$="exe"],
@@ -6389,6 +7313,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Wikis"],
 .qkrDropAvatar img[class*="Wikis"],
 #pageDetails #wikiContentDiv img[class*="Wikis"],
+#wikiPageAttachments img[class*="Wikis"],
 .blog img[class*="Wikis"],
 .lconnPicker img[class*="Wikis"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-48-x-48px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22wiki_48%22 fill=%22%23000000%22%3E%3Cg id=%22wiki%22 transform=%22translate(0.000000, 10.000000)%22%3E%3Cpath d=%22M14,9.8288 C11.79,9.8288 10,11.6188 10,13.8288 C10,16.0388 11.79,17.8288 14,17.8288 C16.21,17.8288 18,16.0388 18,13.8288 C18,11.6188 16.21,9.8288 14,9.8288 M14,11.8288 C15.102,11.8288 16,12.7268 16,13.8288 C16,14.9308 15.102,15.8288 14,15.8288 C12.898,15.8288 12,14.9308 12,13.8288 C12,12.7268 12.898,11.8288 14,11.8288%22 id=%22Fill-1%22%3E%3C/path%3E%3Cpath d=%22M24,9.8288 C21.79,9.8288 20,11.6188 20,13.8288 C20,16.0388 21.79,17.8288 24,17.8288 C26.21,17.8288 28,16.0388 28,13.8288 C28,11.6188 26.21,9.8288 24,9.8288 M24,11.8288 C25.102,11.8288 26,12.7268 26,13.8288 C26,14.9308 25.102,15.8288 24,15.8288 C22.898,15.8288 22,14.9308 22,13.8288 C22,12.7268 22.898,11.8288 24,11.8288%22 id=%22Fill-3%22%3E%3C/path%3E%3Cpath d=%22M34,9.8288 C31.79,9.8288 30,11.6188 30,13.8288 C30,16.0388 31.79,17.8288 34,17.8288 C36.21,17.8288 38,16.0388 38,13.8288 C38,11.6188 36.21,9.8288 34,9.8288 M34,11.8288 C35.102,11.8288 36,12.7268 36,13.8288 C36,14.9308 35.102,15.8288 34,15.8288 C32.898,15.8288 32,14.9308 32,13.8288 C32,12.7268 32.898,11.8288 34,11.8288%22 id=%22Fill-5%22%3E%3C/path%3E%3Cpath d=%22M13.5858,26.2428 L2.5858,15.2428 C1.8058,14.4628 1.8058,13.1948 2.5858,12.4148 L13.5858,1.4148 L12.1718,0.0008 L1.1718,10.9988 C-0.3902,12.5628 -0.3902,15.0948 1.1718,16.6568 L12.1718,27.6568 L13.5858,26.2428 Z%22 id=%22Fill-7%22%3E%3C/path%3E%3Cpath d=%22M34.4142,26.2428 L45.4142,15.2428 C46.1942,14.4628 46.1942,13.1948 45.4142,12.4148 L34.4142,1.4148 L35.8282,0.0008 L46.8282,10.9988 C48.3902,12.5628 48.3902,15.0948 46.8282,16.6568 L35.8282,27.6568 L34.4142,26.2428 Z%22 id=%22Fill-9%22%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
@@ -6401,6 +7326,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Blogs"],
 .qkrDropAvatar img[class*="Blogs"],
 #pageDetails #wikiContentDiv img[class*="Blogs"],
+#wikiPageAttachments img[class*="Blogs"],
 .blog img[class*="Blogs"],
 .lconnPicker img[class*="Blogs"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-48-x-48px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22blog_48%22%3E%3Cg id=%22blog%22 transform=%22translate(2.000000, 2.000000)%22%3E%3Cpath d=%22M39.9986,0 L4.0006,0 C1.7906,0 0.0006,1.792 0.0006,4.002 L0.0006,39.998 C0.0006,42.208 1.7906,44 4.0006,44 L39.9986,44 C42.2086,44 44.0006,42.208 44.0006,39.998 L44.0006,4.002 C44.0006,1.792 42.2086,0 39.9986,0 M39.9986,2 C41.1026,2 42.0006,2.898 42.0006,4.002 L42.0006,39.998 C42.0006,41.102 41.1026,42 39.9986,42 L4.0006,42 C2.8986,42 2.0006,41.102 2.0006,39.998 L2.0006,4.002 C2.0006,2.898 2.8986,2 4.0006,2 L39.9986,2%22 id=%22Fill-1%22 fill=%22%23000000%22%3E%3C/path%3E%3Crect id=%22Rectangle%22 stroke=%22%23000000%22 stroke-width=%222%22 x=%2211%22 y=%2211%22 width=%2222%22 height=%2210%22%3E%3C/rect%3E%3Crect id=%22Rectangle-2%22 fill=%22%23000000%22 x=%2210%22 y=%2226%22 width=%2224%22 height=%222%22%3E%3C/rect%3E%3Crect id=%22Rectangle-2-Copy%22 fill=%22%23000000%22 x=%2210%22 y=%2232%22 width=%2212%22 height=%222%22%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important; }
@@ -6413,6 +7339,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Activities"],
 .qkrDropAvatar img[class*="Activities"],
 #pageDetails #wikiContentDiv img[class*="Activities"],
+#wikiPageAttachments img[class*="Activities"],
 .blog img[class*="Activities"],
 .lconnPicker img[class*="Activities"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M44,10H32V4H16v6H4c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h40c2.2,0,4-1.8,4-4V14C48,11.8,46.2,10,44,10z M46,42 c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2V28h6v4h10v-4h12v4h10v-4h6V42z M10,30v-2v-2v-2h6v2v2v2H10z M32,30v-2v-2v-2h6v2v2v2H32z M46,26h-6v-4H30v4H18v-4H8v4H2V14c0-1.1,0.9-2,2-2h12h16h12c1.1,0,2,0.9,2,2V26z%22/%3E%3C/svg%3E") !important; }
@@ -6425,6 +7352,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Forums"],
 .qkrDropAvatar img[class*="Forums"],
 #pageDetails #wikiContentDiv img[class*="Forums"],
+#wikiPageAttachments img[class*="Forums"],
 .blog img[class*="Forums"],
 .lconnPicker img[class*="Forums"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M42,2H6C2.7,2,0,4.7,0,8v24c0,3.3,2.7,6,6,6h33l9,9V8C48,4.7,45.3,2,42,2 M42,4c2.2,0,4,1.8,4,4v34.2l-5.6-5.6 L39.8,36H39H6c-2.2,0-4-1.8-4-4V8c0-2.2,1.8-4,4-4H42%22/%3E%3Cpath fill=%22%23000000%22 d=%22M12,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S14.2,16,12,16 M12,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S10.9,18,12,18%22/%3E%3Cpath fill=%22%23000000%22 d=%22M24,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S26.2,16,24,16 M24,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S22.9,18,24,18%22/%3E%3Cpath fill=%22%23000000%22 d=%22M36,16c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S38.2,16,36,16 M36,18c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2 S34.9,18,36,18%22/%3E%3C/svg%3E") !important; }
@@ -6437,6 +7365,7 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 .icSearchResultsPage img[class*="Bookmarks"],
 .qkrDropAvatar img[class*="Bookmarks"],
 #pageDetails #wikiContentDiv img[class*="Bookmarks"],
+#wikiPageAttachments img[class*="Bookmarks"],
 .blog img[class*="Bookmarks"],
 .lconnPicker img[class*="Bookmarks"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M35.966,0 L12.034,0 C8.702,0 6,2.68 6,5.986 L6,48 L23.952,30 L42,48 L42,5.986 C42,2.68 39.298,0 35.966,0 M35.966,2 C38.19,2 40,3.788 40,5.986 L40,43.18 L25.366,28.584 L23.95,27.172 L22.536,28.588 L8,43.162 L8,5.986 C8,3.788 9.81,2 12.034,2 L35.966,2%22%3E%3C/path%3E%3C/svg%3E") !important; }
@@ -6482,5 +7411,160 @@ body.ics-viewer-open .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-acti
 
 .lotusui30_layout .lotusColLeft:after {
   position: fixed !important; }
+
+body,
+body.meetingBody,
+.lotusui30_body .lotusFrame,
+.lotusui30_body .lotusMain,
+.lotusui30_body .lotusMain,
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner {
+  min-width: 800px !important;
+  max-width: 100%; }
+
+.lotusui30_body .lotusMain:not([role="tabpanel"]),
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner,
+.lotusui30 .lotusFooter,
+#lotusFrame #lotusFooter.lotusFooter,
+.lotusFrame #lotusFooter.lotusFooter {
+  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.lotusui30 .lotusFooter,
+#footer,
+#lotusFooter {
+  max-width: 100%;
+  min-width: 500px !important; }
+
+@media (max-width: 1360px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusMain[role="tabpanel"],
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMain[role="tabpanel"] {
+    padding-left: 40px !important;
+    box-sizing: border-box; } }
+@media screen and (max-width: 1060px) {
+  .lotusui30 .lotusBanner .lotusInner,
+  .lotusui30 .lotusBannerExt .lotusWrapper,
+  .lotusui30 .lotusPlaceBar .lotusRightCorner,
+  .lotusui30 .lotusTitleBar .lotusRightCorner,
+  .lotusui30 .lotusTitleBar2 .lotusWrapper,
+  .lotusui30 .lotusTitleBarExt .lotusWrapper {
+    min-width: 800px !important; }
+
+  .lotusui30_layout .lotusMain .lotusContent:before {
+    right: 0 !important;
+    width: auto !important; }
+
+  .lotusMain .lotusColRight,
+  #lotusContent.wpthemeWide {
+    width: calc(100% - 270px - 1rem) !important;
+    margin-left: 1rem !important;
+    float: right; }
+
+  .lotusMain #lotusMain .lotusColRight,
+  #lotusMain #lotusContent.wpthemeWide {
+    width: 100% !important;
+    min-width: 100% !important; }
+  #lotusMain #lotusColLeft ~ #lotusContent.wpthemeWide {
+    width: calc(100% - 288px) !important;
+    min-width: calc(100% - 288px) !important; }
+
+  body.blog #lotusMain .lotusColRight {
+    width: 200px !important;
+    min-width: 200px !important;
+    box-sizing: border-box; }
+  body.blog #lotusMain #lotusMain + #lotusContent {
+    width: calc(100% - 488px) !important;
+    min-width: calc(100% - 488px) !important;
+    float: right;
+    box-sizing: border-box; }
+
+  #profileBody {
+    width: calc(100% - 430px) !important;
+    min-width: calc(100% - 430px) !important;
+    float: right;
+    box-sizing: border-box; }
+
+  #profilePaneRight {
+    width: 150px !important;
+    min-width: 150px !important;
+    box-sizing: border-box; }
+    #profilePaneRight #recent-friends-container .lotusChunk .lotusNetworkPerson {
+      width: 50%; }
+
+  .scloud3 .lotusMain .lotusContent.lotusContentST:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 0 !important; }
+
+  .verseTheme .stmeetingCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100% !important; }
+    .verseTheme .stmeetingCenter > div.verseStMeetings,
+    .verseTheme .stmeetingCenter > div.verseContentInfo {
+      float: none !important;
+      width: 50% !important; }
+    .verseTheme .stmeetingCenter #joinUrl {
+      width: 100% !important;
+      box-sizing: border-box; }
+    .verseTheme .stmeetingCenter .verseColsRight {
+      margin-left: 5% !important; } }
+@media (min-width: 1061px) and (max-width: 1360px) {
+  .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig {
+    width: 35% !important; } }
+@media (max-width: 1030px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #contentArea,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #tabNavBar,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #tabNavBar {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+@media (min-width: 1031px) and (max-width: 1415px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColLeft.wpthemeNarrow,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+    float: none !important;
+    margin: 0 !important;
+    width: 50% !important;
+    max-width: 50%;
+    vertical-align: top;
+    display: inline-block !important;
+    box-sizing: border-box; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+    margin-right: -4px !important;
+    padding-right: 20px !important; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+    padding-left: 20px !important; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #contentArea,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
+    width: 100% !important; }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #tabNavBar,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #tabNavBar {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,6 +1,10 @@
 // Drop down, select, combo boxes
-select:not([style="display:none"]) {
+select:not([style="display:none"]):not([style="display: none;"]) {
 	@include select;
+}
+// selects in file picker dialogs
+.lotusDialogWrapper.lconnPicker .lconnPickerSourceArea select {
+	min-width: 1px !important;
 }
 // Workaround for ComboBox in Create Contact
 .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer [id^="dijit_form_ComboBox_"] {
@@ -25,4 +29,26 @@ select:not([style="display:none"]) {
 }
 select[id^="compactpicker_select_"] {
 	min-width: 0 !important;
+}
+
+// selects on add members form
+#addMembersRow {
+	#addPeopleOrGroupsSelect,
+	#addMembersSelectBox:not([style="display: block"]) {
+		display: inline-block !important;
+	}
+}
+
+// communities wiki versions compare
+#versionHistory .lotusVersions {
+	select {
+		min-width: 1px !important;
+		margin: 0 .5rem .5rem !important;
+		display: inline-block !important;
+	}
+	div[dojoattachpoint="compareNode"] a,
+	div[dojoattachpoint="deleteNode"] a {
+		display: block;
+		margin-bottom: 1rem;
+	}
 }

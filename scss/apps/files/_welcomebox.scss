@@ -1,13 +1,13 @@
 .lotusui30 {
   .lotusSyncViewWelcomeBox {
-    background-color: transparent; //$brand-02;
+    background-color: transparent !important;
     background-image: none;
     background-image:svg-url-with-replaced-fill($svg-welcome-back, '#000000', $color-gray-50) !important;
     background-repeat: no-repeat!important;
     background-position: center;
     background-position-y:0px;
     background-size: 300px 300px;
-    padding-top:300px;
+    padding-top:300px !important;
     .lotusSyncHeading {
       color: $brand-01;
     }

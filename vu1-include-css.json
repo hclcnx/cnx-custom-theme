@@ -1,0 +1,196 @@
+{
+    "app_id": "com.ibm.connections.vu1css",
+    "name": "Visual Update 1 - Direct CSS",
+    "title": "Visual Update 1 - Direct CSS",
+    "description": "Customizer extension to re-theme Connections for Pink.",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Blogs",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/blogs.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "blogs",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Communities Landing",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+                    "url": "ownedcommunities|mycommunities|followedcommunities|communityinvites|allcommunities|trashedcommunities|communitycreate|communityedit"
+                },
+                "include-files": [
+                    "css/communities.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "communities",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Files",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/files.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "files",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Forums",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/forums.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "forums",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Global Ex",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/global.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "global",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Homepage New",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "social",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Homepage Old",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "homepage",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Meetings",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/meetings.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "meetings",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "MyContacts",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "mycontacts",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Notification Settings",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/settings.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "news",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Profiles",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "profiles",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Search",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/search.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "search",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Wikis",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/wikis.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "wikis",
+            "application": "Visual Update 1 for IBM Connections"
+        }
+    ]
+}

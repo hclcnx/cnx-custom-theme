@@ -1,0 +1,108 @@
+// syling for cke editor elements
+
+// starting from the table properties cke dialog, but a lot of this looks pretty general
+.cke_dialog {
+  // the title bar; includes the title text
+  .cke_dialog_body {
+    .cke_dialog_title {
+      background-color: $background-main;
+    }
+    [id^="cke_dialog_close_button"].cke_dialog_close_button {
+      @include bx--modal-close;
+    }
+    .cke_dialog_tabs {
+      border-bottom: 1px solid $color-gray-10 !important;
+      padding: 20px 10px 12px 20px;
+      font-size: $tab-font-size !important;
+      font-weight: 500 !important;
+
+      .cke_dialog_tab {
+        padding: 0.5rem 1rem !important;
+        line-height: 20px;
+        margin: 0 !important;
+        font-size: inherit !important;
+        color: $text-02 !important;
+        border-radius: $border-radius-tabs !important;
+        border: 1px solid transparent !important;
+        font-weight: 500 !important;
+        text-transform: none !important;
+        &:hover {
+          color: $text-03 !important;
+          background-color: $btn-secondary-fill-hover !important;
+          border-color: $btn-secondary-outline-hover !important;
+          font-weight: 500 !important;
+        }
+        &:focus {
+          color: $text-01 !important;
+          background-color: transparent !important;
+          border-color: $btn-secondary-outline-hover !important;
+        }
+        &.cke_dialog_tab_selected {
+          border-bottom: 4px solid $border-selected !important;
+          color: $text-01 !important;
+          &:hover {
+            color: $text-03 !important;
+            background-color: $btn-secondary-fill-hover !important;
+            border-color: $btn-secondary-outline-hover !important;
+            font-weight: 500 !important;
+          }
+          &:focus {
+            border-color: $btn-secondary-outline-hover !important;
+          }
+          &:active, &:focus {
+            text-decoration: none !important;
+          }
+        }
+      }
+      .cke_dialog_tab[id^="cke_advanced_"] {
+        margin-left: 0.5rem !important;
+      }
+    }
+    .cke_dialog_contents {
+      .cke_dialog_ui_text {
+        div.cke_dialog_ui_input_text {
+          border: none;
+        }
+        input.cke_dialog_ui_input_text {
+          @include textinput;
+        }
+        &.cke_disabled {
+          background:transparent !important;
+          div.cke_dialog_ui_input_text {
+            background-color:$color-gray-1 !important;
+          }
+          input.cke_dialog_ui_input_text {
+            background:transparent !important;
+            color:$disabled !important;
+          }
+        }
+      }
+      .cke_dialog_ui_input_select {
+        padding-bottom: .6rem !important;
+        &:focus {
+          padding-bottom: .5375rem !important;
+        }
+      }
+      .cke_dialog_ui_button {
+        &.cke_dialog_ui_button_ok {
+          @include btnprimary;
+          span {
+            color: $btn-primary-text !important;
+          }
+          &:hover span {
+            color: $btn-primary-text-hover !important;
+          }
+        }
+        &.cke_dialog_ui_button_cancel {
+          @include btnsecondary;
+          span {
+            color: $btn-secondary-text !important;
+          }
+          &:hover span {
+            color: $btn-secondary-text-hover !important;
+          }
+        }
+      }
+    }
+  }
+}

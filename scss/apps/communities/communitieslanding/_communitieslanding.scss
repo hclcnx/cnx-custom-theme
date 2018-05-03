@@ -67,7 +67,7 @@ input[type="submit"]#addCommunityButton {
 }
 
 div[dojoattachpoint="zeroResultsNode"] {
-  // there is no #000000 in the svg so I'm using that as a way not to really change the colors 
+  // there is no #000000 in the svg so I'm using that as a way not to really change the colors
   background-image: svg-url-with-replaced-fill($svg-empty-state-communities, '#000000', $icon-default) !important;
   background-repeat: no-repeat;
   background-position: center 40px;

@@ -386,6 +386,7 @@ input.lotusText.scTagTypeahead {
     @include tags();
     margin-left:4px!important;
     margin-right:4px!important;
+    vertical-align: middle;
     a.bidiAware{
       color:$text-01!important;
       font-weight:normal!important;

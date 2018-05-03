@@ -13,9 +13,12 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
-/* Global style sheet */
+/*GLOBAL STYLE SHEET*/
+/* Variable and mixin Imports*/
 @import "prereqs/prereqs";
+/* Global imports*/
 @import "global/font";
 @import "global/fileViewer";
 @import "global/fileTypeIcons";
 @import "global/leftNav";
+@import "global/responsive";

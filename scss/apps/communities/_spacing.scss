@@ -15,7 +15,6 @@
 
 //Wiki changes(mostly)
 .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide){
-  padding-top:8px!important;
   padding-left:48px!important;
   .lotusBreadcrumbs,#wikiPageHeader{
     margin-bottom:16px!important;
@@ -153,12 +152,37 @@ h2 + div#communityActionBar,
 }
 
 // three column community layout
-.lotusMain #lotusColLeft.wpthemeNarrow {
+.lotusMain #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
   width: 432px !important;
   padding: 0;
   margin: 0 2rem 0 0 !important;
 }
+.lotusMain #lotusColBanner[style*="display: none;"] ~ #lotusColLeft.wpthemeNarrow {
+  width: 240px !important;
+}
 .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow {
   width: 370px !important;
   margin: 0 30px 0 0 !important;
+}
+
+//Overview page widget styling
+//Widget headers and padding
+.widgetContainer .lotusWidget2 {
+  padding:0 30px !important;
+  h2:first-child {
+    padding:20px 30px !important;
+    margin:0 -30px !important;
+  }
+}
+//Rich content widget
+#showRichContent #pageDetails .lotusBtnContainer {
+  padding-bottom:26px;
+}
+#commonSearchControlContainer.icSearchBarMode {
+  top: 12px !important;
+  right: 0 !important;
+}
+//Featured survey widget
+.lotusWidget2 div[id^="com_ibm_form_integrations_formiwidget_widget_SingleSurveyViewMode_"] {
+  padding-bottom: 30px;
 }

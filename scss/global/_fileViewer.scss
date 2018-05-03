@@ -511,7 +511,7 @@ ul[data-dojo-attach-point="tagList"]{
 	position:relative;
 	top:0px!important;
 }
-#body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) {
+.lotusui30_body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) {
 	.dropdown-menu-icon {
 		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
 		background-position: 3px 1px !important;
@@ -525,6 +525,16 @@ ul[data-dojo-attach-point="tagList"]{
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action-upload.ics-viewer-splitbutton a:focus{
 	border-radius: 2rem 0 0 2rem!important;
 }
+//Placement of Upload button
+.ics-viewer .ics-viewer-banner .ics-viewer-toolbar {
+	.ics-viewer-action-upload:not(.ics-viewer-splitbutton) {
+		a {
+			top: -3px !important;
+			margin:0px 0px !important;
+		}
+	}
+}
+//File name
 .ics-viewer-title-name-container{
 	input:focus,
 	.ics-viewer-cancel:focus{

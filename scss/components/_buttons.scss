@@ -3,6 +3,7 @@
 .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
 .ics-viewer-action-splitmenu span.dijitButtonNode {
   @include btnprimary;
+  margin:0px 1px !important;
   span{
     font-weight:500!important;
     &:hover{
@@ -53,6 +54,7 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
     @include btnsecondarydisabled;
   }
 }
+
 div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"].share-attachAction:not(.ublogPost):focus {
   box-shadow: none !important;
 }
@@ -63,7 +65,8 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 .lotusBtn[name="submitButton"],
 .ics-viewer-action-upload .actionLink,
 .lotusBtn.submit.lotusButtonSubmit,
-.filesList .lotusDetails .lotusBtnSmall
+.filesList .lotusDetails .lotusBtnSmall,
+#mainActions .lotusBtn,
 {
 	@include btnprimary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
@@ -182,7 +185,8 @@ body:not(.lotusImagesOff) {
     strong {
       font-weight: inherit;
     }
-    &[data-dojo-attach-event="onclick: doCancel"] {
+    &[data-dojo-attach-event="onclick: doCancel"],
+    &[dojoattachevent="onclick:cancel"] {
       @include btnsecondary;
     }
   }
@@ -231,7 +235,11 @@ body:not(.lotusImagesOff) {
   }
 }
 //Wiki Main page & Forum
-.wikiHeader, #topicList, #forum {
+// Calendar event arrows
+.wikiHeader,
+#topicList,
+#forum,
+#calendarViews {
   .lotusBtn{
     border:none!important;
     padding:0!important;
@@ -300,7 +308,7 @@ body:not(.lotusImagesOff) {
 	#memberAddButton,
   #inviteButtons {
     padding-top: 3px;
-    
+
     span.lotusBtn {
       &, &:hover, &:focus, &:active {
     		border:none!important;
@@ -308,7 +316,7 @@ body:not(.lotusImagesOff) {
     		background-color:transparent!important;
     		padding:0!important;
       }
-      
+
       a {
         @include btnsecondary;
       }
@@ -320,14 +328,16 @@ body:not(.lotusImagesOff) {
   #startActivity,
   div[id$="_FULLPAGE_listSection_controllerSection"],
   #calendar_view,
+  #calendarViews,
   #fullRecomm,
-  #bookmarkContentAreaSub #headline-content {
+  #bookmarkContentAreaSub #headline-content
+  {
     padding-top: 1rem;
-    
+
     .lotusBtnContainer {
       margin: 0 !important;
-    } 
-    
+    }
+
     span.lotusBtn {
       &, &:hover, &:focus, &:active {
         border:none!important;
@@ -335,16 +345,16 @@ body:not(.lotusImagesOff) {
         background-color:transparent!important;
         padding:0!important;
       }
-      
+
       a {
         @include btnprimary;
       }
-      
+
       + .lotusBtn a {
         @include btnsecondary;
       }
     }
-  } 
+  }
   ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn {
     &, &:hover, &:focus, &:active {
       border:none!important;
@@ -359,5 +369,33 @@ body:not(.lotusImagesOff) {
   #fullRecomm .lotusBtnContainer,
   #bookmarkContentAreaSub #headline-content .lotusBtnContainer {
     padding-top: 1rem;
+  }
+  ~ .dijitDialog input[type="image"].lotusSearchButton {
+		background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		background-size: contain !important;
+
+    &:focus {
+      outline: 1px solid $border-focus;
+      outline-offset: 2px;
+    }
+  }
+}
+#memberAddForm #saveButton,
+#memberInviteForm .lotusFormButton[name="submit"],
+.dijitDialog .lotusFormButton.submit,
+div[id^="editBookmark"] input[type="submit"] {
+  @include btnprimary;
+  margin-left: 2px !important;
+}
+
+// Status updates Post button
+li[id^="com_ibm_social_as_item_comment"] {
+  .lotusStreamUpdate .lotusActions ul {
+      margin-top: 0 !important;
+      &.lotusLeft {
+        padding-bottom: 18px !important;
+      }
   }
 }
