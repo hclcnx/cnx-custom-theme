@@ -2,7 +2,7 @@
 select:not([style="display:none"]):not([style="display: none;"]) {
 	@include select;
 }
-// selects in file picker dialogs 
+// selects in file picker dialogs
 .lotusDialogWrapper.lconnPicker .lconnPickerSourceArea select {
 	min-width: 1px !important;
 }
@@ -39,7 +39,7 @@ select[id^="compactpicker_select_"] {
 	}
 }
 
-// communities wiki versions compare 
+// communities wiki versions compare
 #versionHistory .lotusVersions {
 	select {
 		min-width: 1px !important;

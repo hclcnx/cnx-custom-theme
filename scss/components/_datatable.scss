@@ -81,7 +81,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 
 
 //Forums
-#dfForumList,// list of forums 
+#dfForumList,// list of forums
 #dfTopicList, //List of forum topics in community
 #dfOpenQuestionList, //List of open forum questions in community
 #dfAnsweredQuestionList, //List of answered forum questions in community
@@ -124,7 +124,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
     > tbody > tr:nth-child(3n-2):not(:first-child),
     form[name="bookmarkEditForm"] fieldset {
       border-top: 1px solid $border-separator !important;
-      
+
       .lotusFormFooter {
         border: 0 !important;
       }
@@ -145,11 +145,11 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 }
 
-// calendar events list 
+// calendar events list
 #calendar_view div[id$="listView"] {
   .lotusTable {
-    margin-top: 1rem; 
-    
+    margin-top: 1rem;
+
     > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid $border-separator !important;
     }
@@ -167,11 +167,11 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 }
 
-// ideation blog lists 
+// ideation blog lists
 #ideatoins_main {
   .lotusTable {
-    margin-top: 1rem; 
-    
+    margin-top: 1rem;
+
     > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid $border-separator !important;
     }
@@ -185,8 +185,8 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 // surveys list
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] {
   .lotusTable {
-    margin-top: 1rem; 
-    
+    margin-top: 1rem;
+
     > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid $border-separator !important;
     }
