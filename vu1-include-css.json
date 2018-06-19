@@ -15,7 +15,7 @@
                     "css/blogs.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "blogs",
@@ -29,7 +29,7 @@
                     "css/communities.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "communities",
@@ -43,7 +43,7 @@
                     "css/files.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "files",
@@ -57,7 +57,7 @@
                     "css/forums.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "forums",
@@ -71,7 +71,7 @@
                     "css/global.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "global",
@@ -85,7 +85,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "social",
@@ -99,7 +99,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "homepage",
@@ -113,7 +113,7 @@
                     "css/meetings.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "meetings",
@@ -127,7 +127,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "mycontacts",
@@ -141,7 +141,7 @@
                     "css/settings.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "news",
@@ -155,7 +155,7 @@
               "css/settings.css"
             ],
             "include-repo": {
-              "name": "periscope"
+              "name": "cnx-custom-theme"
             }
           },
           "path": "manage",
@@ -169,7 +169,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "profiles",
@@ -183,7 +183,7 @@
                     "css/search.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "search",
@@ -197,7 +197,7 @@
                     "css/wikis.css"
                 ],
                 "include-repo": {
-                    "name": "periscope"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "wikis",
