@@ -1,6 +1,12 @@
-#topicList {
+#dfTopicList, //List of forum topics in community
+#dfOpenQuestionList, //List of open forum questions in community
+#dfAnsweredQuestionList, //List of answered forum questions in community
+#topicList,
+#dfForumList,
+#forum { //List of forum topics inside forum
   //Forum topics list
-  .forumPagedList {
+  .forumPagedList,
+  .lotusPagedContent {
     //pinned rows
     tr.lotusPinnedRow {
       &.lotusMore {
@@ -12,7 +18,7 @@
       td.lotusFirstCell {
         //border-left:5px solid $brand-01;
         .lconnSprite-iconPin16 {
-          background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $brand-01) !important;
+          background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
           background-position: center;
           height:24px;
           width:24px;
@@ -20,12 +26,19 @@
         }
       }
     }
+    > .lotusTable > colgroup > col:nth-child(2) {
+      width: 52px !important;
+    }
     //spacing around forum topic icons
     .normalTopic td:first-of-type {
       padding-top:18px !important;
     }
     //Style forum topic icons
-    .lconnSprite-iconQuestion16, .lconnSprite-iconComment16, .lconnSprite-iconAnswered16 {
+    .lconnSprite-iconQuestion16,
+    .lconnSprite-iconComment16,
+    .lconnSprite-iconAnswered16,
+    .lconnSprite-iconForumsItem16,
+    .lconnSprite-iconPin16 {
       background-position:center;
       height:24px;
       width:24px;
@@ -34,11 +47,15 @@
     .lconnSprite-iconQuestion16 {
       background-image: svg-url-with-replaced-fill($svg-forum-question, '#000000', $icon-default) !important;
     }
-    .lconnSprite-iconComment16 {
+    .lconnSprite-iconComment16,
+    .lconnSprite-iconForumsItem16 {
       background-image: svg-url-with-replaced-fill($svg-forum-comment, '#000000', $icon-default) !important;
     }
     .lconnSprite-iconAnswered16 {
-    background-image: svg-url-with-replaced-fill($svg-forum-answered, '#000000', $success) !important;
+      background-image: svg-url-with-replaced-fill($svg-forum-answered, '#000000', $success) !important;
+    }
+    .lconnSprite-iconPin16 {
+      background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
     }
   }
   //space around start a topic button

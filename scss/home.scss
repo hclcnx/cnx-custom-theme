@@ -13,12 +13,16 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
+/*HOME STYLE SHEET*/
+/* Variable and mixin Imports*/
 @import "prereqs/prereqs";
 // Component Imports
 @import "components/components";
 // App Specific Imports
-@import "apps/home/orientme";
 @import "apps/home/cards";
+@import "apps/home/classic";
 @import "apps/home/itm";
+@import "apps/home/leftnav";
+@import "apps/home/orientme";
 @import "apps/home/tabs";
 @import "apps/home/tags";

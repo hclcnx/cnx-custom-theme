@@ -9,8 +9,11 @@ $head2: 28px, 500;
 $title: 21px, 600;
 $apptitle:21px, 400;
 $header: 16px, 600;
-$body: 16px, 400;
+$body: 14px, 400; //Guide has 16px but that is too large for the overall site right now
+$bodylink: 14px, 600;
+$tabs: 14px, 500; //Used on tabs
 $caption: 12px, 500;
+$footer:10px, 400;
 
 //mixin usage: @include font-size($style...) -- ... is required to pass in the list
 @mixin font-size($size, $weight) {

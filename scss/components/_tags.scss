@@ -136,6 +136,19 @@
     width: 100%;
     order: 3;
   }
+  #tagsList .lotusChunk10.lotusTiny {
+    li {
+      border: none !important;
+      padding: 0 !important;
+      
+      a {
+        @include font-size($bodylink...);
+      }
+      span {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -181,7 +194,7 @@
   margin: 0 .5rem !important;
 }
 #lconnTagWidget_tagList,
-ul[id*="_tagList"] {
+ul[id*="_tagList"]:not(#tagsDiv_tagList) {
   > li {
     display: flex !important;
     padding: 0 !important;
@@ -357,6 +370,18 @@ input.lotusText.scTagTypeahead {
     line-height: 1.25em;
   }
 }
+.lconnFiles #lconnTagCloudContent {
+  .lotusInlinelist.lotusActions li {
+    border: none !important;
+    padding: 0 !important;
+  }
+  div[dojoattachpoint="_tagCloudLink"],
+  div[dojoattachpoint="_tagListLink"] {
+    span.lotusBold {      
+      display:none;
+    }
+  }
+}
 // Tags search field in Files
 .lotusChunk.lotusSearch {
   width:100%;
@@ -386,6 +411,7 @@ input.lotusText.scTagTypeahead {
     @include tags();
     margin-left:4px!important;
     margin-right:4px!important;
+    vertical-align: middle;
     a.bidiAware{
       color:$text-01!important;
       font-weight:normal!important;
@@ -535,5 +561,70 @@ input.lotusText.scTagTypeahead {
     background-position: center center !important;
     background-size: 9px 9px;
     background-repeat: no-repeat;
+  }
+}
+
+// wiki tags 
+.lconnWikis .lotusContent .lotusTags li.lotusTag {
+  margin: .15rem !important;
+}
+
+// communities invert colors 
+.lotusCommunities .widgetContainer #tagsContainer {
+  #tagsDiv_tagList li {
+    @include tags;
+    margin: 0 .5rem .5rem 0 !important;
+    display: inline-flex !important;
+    flex-direction: row;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    
+    a {
+      background-color: transparent !important;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      order: 1;
+      float: none;
+    }
+    
+    .lotusRight {
+      flex-grow: 0;
+      flex-shrink: 1;
+      order: 2;
+      float: none !important;
+      &:before {
+        content: '\2022';
+        display: inline-block;
+        margin: 0 .25rem;
+      }
+      #addMembersWidget #memberList {
+        border: none;
+        
+        .member {
+          border: none;
+          @include tags;
+          float: left;
+          margin-bottom: .5rem !important;
+          
+          > .P {
+            display: none;
+          }
+          
+          .nameContent {
+            padding-left: 0;
+          }
+          
+          .type {
+            color: $text-01;
+            margin-right: 1rem;
+          }
+          
+          img.lotusDelete {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 }

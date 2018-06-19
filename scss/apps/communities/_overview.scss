@@ -1,0 +1,115 @@
+//Overview page widget styling
+//Widget headers and padding
+.widgetContainer .lotusWidget2 {
+  padding:0 30px !important;
+  h2:first-child {
+    padding:20px 30px !important;
+    margin:0 -30px !important;
+  }
+}
+
+// subcommunity widget
+#subcommunityNavWidgetContainer {
+  .lotusTable .lotusFirst + tr {
+    > td > .lconnSubcomImageDiv {
+      margin-right: 1.75rem;
+      margin-bottom: 1.75rem;
+      height: auto !important;
+    }
+    td.flushLeft, a {
+      color: $text-01 !important;
+      text-align: center;
+    }
+  }
+}
+
+// right content widget tabs
+#showRichContent,
+#editRichContent {
+  #pageDetails .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  #pageDetails .lotusBtnContainer {
+    padding-bottom: 26px;}
+}
+
+// 1457: better spacing above and below content in rich content widget
+#showRichContent {padding: 20px 0}
+
+// rich content insert / edit image dialog spacing
+div[id^="lconn_share0_widget_Dialog_"] {
+  form .lotusDialogContent._qkrDialogCompact {
+    padding: 15px 0 !important;
+  }
+}
+
+// related communities widget
+.lotusContent #recomm .rc_recomm_item {
+  height: auto !important;
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 1.75rem 1.75rem 0;
+  &.lotusHidden {
+    display: none;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+  .rc_icon,
+  .rc_text a {
+    text-align: center;
+    display: block;
+  }
+  .rc_text {
+    &, div, a {
+      display: block;
+      width: 100%;
+    }
+  }
+  .rc_icon {
+    padding-right: 0px;
+  }
+}
+
+//Featured survey widget
+.lotusWidget2 div[id^="com_ibm_form_integrations_formiwidget_widget_SingleSurveyViewMode_"] {
+  padding-bottom: 30px;
+}
+
+// gallery widget set up
+div[id^="lconn_files_widget_CompactFolderPicker_"] {
+  width: 100% !important;
+}
+
+// email community
+#emailForm {
+  .rte {
+    border: none !important;
+  }
+}
+
+// members widget 
+div#membersdiv {
+  .lotusChunk.lconnMemberSummary {
+    max-height: none;
+    overflow: auto;
+  }
+  .communities-widget-appearance .lotusui30 .lotusWidget2 & div#membersInHikari {
+    padding: 2rem .5rem !important;
+  }
+  .vcard {
+    position: relative;
+    display: block;
+    width: 90px;
+    text-align: center;
+  }
+  .x-lconn-displayname {
+    display: block !important;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

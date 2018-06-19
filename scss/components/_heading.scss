@@ -1,10 +1,38 @@
 .lotusui30 .lotusTitleBar2 .lotusWrapper,
 .lotusui30 .lotusTitleBar .lotusRightCorner {
   max-width: 100% !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-  
+  padding-left: 2.35rem !important;
+  padding-right: 2.35rem !important;
+
   .lotusColLeft:after {
     left: 0;
+  }
+
+  a {
+    padding: 0 !important;
+  }
+}
+
+//Community lists
+#activityList h4, //activities list
+#bookmarkContentAreaSub h4, //bookmarks list
+#calendar_view h4, //events list
+#dfForumList h4, //forums list
+#dfTopicList h4, //forum topics list
+#dfOpenQuestionList h4, //forum open topics list
+#dfAnsweredQuestionList h4, //forum answered topics list
+#ideatoins_main h4, //ideation blog list
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysListFullpage_"] h4, //surveys list
+#fullRecomm h4 { //recommended communities list
+  @include font-size($header...);
+}
+
+// members titles
+#Members #fullmembersdiv {
+  h1 {
+    display: block !important;
+  }
+  span.cnxnsType {
+    margin-left: 0 !important;
   }
 }

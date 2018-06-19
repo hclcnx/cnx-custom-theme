@@ -1,0 +1,14 @@
+.lotusMain .lotusColLeft #lconn_communities_catalog_widgets_PlacesNavigation_0 {
+  .lotusMenu li a {
+    white-space: pre-line;
+  }
+}
+
+.lotusMain .lotusColLeft #lconn_communities_catalog_widgets_TagFilter_0 {
+  margin: 0 !important;
+  
+  h2 {
+    padding: $v-padding $h-padding !important;
+    padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+  }
+}

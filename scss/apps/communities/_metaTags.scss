@@ -36,6 +36,17 @@
   }
 }
 
+//Community files
+#lotusFrame.lotusCommunities {
+  .filesListFilled {
+    #scene-body {
+      span.lotusDivider {
+        margin-bottom: 0.25rem !important;
+      }
+    }
+  }
+}
+
 //Blogs
 .blog{
   .lotusTable{
@@ -55,6 +66,7 @@
 .blog #entries .lotusTable.blogsFixedTable td .lotusMeta,
 .lotusContent .lotusTags,
 .lotusFilters2 {
+  @include font-size($body...);
   span[role="listitem"] a,
   li.lotusTag a.bidiAware {
       font-weight: inherit !important;
@@ -64,6 +76,7 @@
   }
   .lotusFilter {
     @include tags();
+    vertical-align: middle;
   }
   .blogsPaddingRight {
     &:after {
@@ -108,7 +121,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 }
 
-// Wiki index page tags in pages list 
+// Wiki index page tags in pages list
 .lconnWikis table.lotusTable.qkrFixedWidth tr {
   .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
     float: none;
@@ -125,22 +138,48 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
         padding: 6px 16px !important;
         font-weight: 500 !important;
         font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
       }
       a[role="button"] {
+        display: inline-block;
         @include btnsecondary;
         padding: 6px 16px !important;
         font-weight: 500 !important;
         font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
       }
     }
   }
   .lotusMeta + .lotusTags > *:not(.lotusFormError) {
     margin-top: 1rem;
     vertical-align: text-bottom;
-    
+
     &.qkrEmpty {
       margin-left: .5rem;
     }
   }
 }
 
+// bookmark details - 1165
+#bookmarkContentAreaSub {
+  .lotusMeta span {
+    vertical-align: top !important;
+    line-height: 18px !important;
+    height: 18px !important;
+    &.lotusTags {
+      vertical-align: top !important;
+    }
+  }
+  .lotusMeta .lotusDivider {
+    margin-bottom: 4px !important;
+  }
+}
+
+// ideation blog - 1317
+#ideationsListContainer {
+  .lotusDivider {
+    padding: 5px !important;
+  }
+}

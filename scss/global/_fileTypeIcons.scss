@@ -1,4 +1,5 @@
 .filesList,
+.filesListFilled, //Community Files
 .ics-viewer,
 #filesReader,
 .lotusStream,
@@ -6,8 +7,13 @@
 .icSearchResultsPage,
 .qkrDropAvatar,
 #pageDetails #wikiContentDiv,
+#wikiPageAttachments,
 .blog,
-.lconnPicker {
+.lconnPicker,
+.lconnCommLanding,
+.lotusForum,
+#calendar_event_viewer,
+.widgetContainer {
   .lconn-ftype16,
   .lconn-ftype32,
   .lconn-ftype64,
@@ -16,13 +22,16 @@
   .iconsFileTypes64,
   .lconnSprite-iconFolderClose32,
   .lconnSprite-iconFolderPrivate32,
+  .lconnSprite-iconFolderShared32,
+  .lconnSprite-iconFolderPublic32,
   .ic-thumb-folder,
   img[class*="Presentation"],
   img[class*="Wikis"],
   img[class*="Blogs"],
   img[class*="Activities"],
   img[class*="Forums"],
-  img[class*="Bookmarks"]{
+  img[class*="Bookmarks"],
+  img[class*="Calendar"] {
     background-position: 0 0!important;
     border-radius: 0px !important;
     background-size: contain;
@@ -33,6 +42,11 @@
   }
   .lconn-ftype16, .iconsFileTypes16{
     background-size: 16px 16px!important;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    padding: 16px 16px 0 0;
+    box-sizing: border-box;
   }
   .ics-viewer-title{
     .lconn-ftype16, .iconsFileTypes16{
@@ -44,10 +58,24 @@
       height:24px!important;
     }
   }
+  .lconnSprite-iconFolderClose24,
+  .lconnSprite-iconFolderPrivate24,
+  .lconnSprite-iconFolderShared24,
+  .lconnSprite-iconFolderPublic24 {
+    background-repeat: no-repeat !important;
+  }
   .lconn-ftype32, .iconsFileTypes32,
   .lconnSprite-iconFolderClose32,
-  .lconnSprite-iconFolderPrivate32{
+  .lconnSprite-iconFolderPrivate32,
+  .lconnSprite-iconFolderShared32,
+  .lconnSprite-iconFolderPublic32 {
     background-size: 32px 32px!important;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    padding-left: 32px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
   }
   .lconn-ftype64, .iconsFileTypes64{
     background-size: 64px 64px!important;
@@ -90,7 +118,21 @@
   img[class$="tiff"],
   img[class$="Graphic16"],
   img[class$="Graphic32"],
-  img[class$="Graphic64"]{
+  img[class$="Graphic64"],
+  span[class$="bmp"],
+  span[class$="eps"],
+  span[class$="gif"],
+  span[class$="ico"],
+  span[class$="jpg"],
+  span[class$="jpeg"],
+  span[class$="png"],
+  span[class$="psd"],
+  span[class$="svg"],
+  span[class$="tif"],
+  span[class$="tiff"],
+  span[class$="Graphic16"],
+  span[class$="Graphic32"],
+  span[class$="Graphic64"] {
     background-image:svg-url-with-replaced-fill($svg-icon-image, '#000000', $icon-file-type-image) !important;
   }
   // Word processing document type
@@ -100,7 +142,15 @@
   img[class$="odt"],
   img[class$="rtf"],
   img[class$="txt"],
-  img[class*="WordProcessingDocs"]{
+  img[class*="WordProcessingDocs"],
+  img[src*="ibmdocs_wordprocessing_16.png"],
+  span[class$="docx"],
+  span[class$="doc"],
+  span[class$="dot"],
+  span[class$="odt"],
+  span[class$="rtf"],
+  span[class$="txt"],
+  span[class*="WordProcessingDocs"] {
     background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-file-type-document) !important;
   }
   // Spreadsheet type
@@ -108,7 +158,13 @@
   img[class$="xls"],
   img[class$="xlt"],
   img[class$="ods"],
-  img[class*="DataDocs"]{
+  img[class*="DataDocs"],
+  img[src*="ibmdocs_spreadsheets_16.png"],
+  span[class$="xlsx"],
+  span[class$="xls"],
+  span[class$="xlt"],
+  span[class$="ods"],
+  span[class*="DataDocs"] {
     background-image:svg-url-with-replaced-fill($svg-icon-spreadsheet, '#000000', $icon-file-type-spreadsheet) !important;
   }
   // Presentation type
@@ -116,30 +172,51 @@
   img[class$="ppt"],
   img[class$="key"],
   img[class$="odp"],
-  img[class*="Presentation"]{
+  img[class*="Presentation"],
+  img[src*="ibmdocs_presentations_16.png"],
+  span[class$="pptx"],
+  span[class$="ppt"],
+  span[class$="key"],
+  span[class$="odp"],
+  span[class*="Presentation"] {
     background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-file-type-presentation) !important;
   }
   // PDF type
   img[class$="pdf"],
-  img[class*="Pdf"]{
+  img[class*="Pdf"],
+  span[class$="pdf"],
+  span[class*="Pdf"]{
     background-image:svg-url-with-replaced-fill($svg-icon-pdf, '#000000', $icon-file-type-pdf) !important;
   }
   // Archive type
   img[class$="jar"],
   img[class$="zip"],
-  img[class*="Compressed"]{
+  img[class*="Compressed"],
+  span[class$="jar"],
+  span[class$="zip"],
+  span[class*="Compressed"] {
     background-image:svg-url-with-replaced-fill($svg-icon-compressed, '#000000', $icon-file-type-archive) !important;
   }
+
   // Folder type
   img[class*="Folder"],
-  img[class*="folder"]:not(.ic-thumb-folder){
+  img[class*="folder"]:not(.ic-thumb-folder),
+  span[class*="Folder"]:not(.lconnCommunityFolder),
+  span[class*="folder"]:not(.ic-thumb-folder) {
     background-image:svg-url-with-replaced-fill($svg-icon-folder, '#000000', $icon-file-type-folder) !important;
+    background-position: 0 0 !important;
+    min-width: 1.5rem !important;
+    min-height: 1.15rem !important;
   }
   // Audio type
   img[class$="mp3"],
   img[class$="wav"],
   img[class$="wma"],
-  img[class*="Audio"]{
+  img[class*="Audio"],
+  span[class$="mp3"],
+  span[class$="wav"],
+  span[class$="wma"],
+  span[class*="Audio"] {
     background-image:svg-url-with-replaced-fill($svg-icon-audio, '#000000', $icon-file-type-audio) !important;
   }
   // Video type
@@ -148,7 +225,13 @@
   img[class$="mov"],
   img[class$="wmv"],
   img[class$="m4v"],
-  img[class*="Video"]{
+  img[class*="Video"],
+  span[class$="avi"],
+  span[class$="mp4"],
+  span[class$="mov"],
+  span[class$="wmv"],
+  span[class$="m4v"],
+  span[class*="Video"] {
     background-image:svg-url-with-replaced-fill($svg-icon-video, '#000000', $icon-file-type-video) !important;
   }
   // Code type
@@ -161,23 +244,42 @@
   img[class$="json"],
   img[class$="scss"],
   img[class$="xml"],
-  img[class*="Code"]{
+  img[class*="Code"],
+  span[class$="css"],
+  span[class$="dmg"],
+  span[class$="exe"],
+  span[class$="html"],
+  span[class$="java"],
+  span[class$="js"],
+  span[class$="json"],
+  span[class$="scss"],
+  span[class$="xml"],
+  span[class*="Code"] {
     background-image:svg-url-with-replaced-fill($svg-icon-code, '#000000', $icon-file-type-code) !important;
   }
-  img[class*="Wikis"]{
+  img[class*="Wikis"],
+  span[class*="Wikis"] {
     background-image:svg-url-with-replaced-fill($svg-icon-wiki, '#000000', $icon-file-type-wiki) !important;
   }
-  img[class*="Blogs"]{
+  img[class*="Blogs"],
+  span[class*="Blogs"] {
     background-image:svg-url-with-replaced-fill($svg-icon-blog, '#000000', $icon-file-type-blog) !important;
   }
-  img[class*="Activities"]{
+  img[class*="Activities"],
+  span[class*="Activities"] {
     background-image:svg-url-with-replaced-fill($svg-icon-activity, '#000000', $icon-file-type-activity) !important;
   }
-  img[class*="Forums"]{
+  img[class*="Forums"],
+  span[class*="Forums"] {
     background-image:svg-url-with-replaced-fill($svg-icon-forum, '#000000', $icon-file-type-forum) !important;
   }
-  img[class*="Bookmarks"]{
+  img[class*="Bookmarks"],
+  span[class*="Bookmarks"] {
     background-image:svg-url-with-replaced-fill($svg-icon-bookmark, '#000000', $icon-file-type-bookmark) !important;
+  }
+  img[class*="Calendar"],
+  span[class*="Calendar"] {
+    background-image:svg-url-with-replaced-fill($svg-icon-calendar, '#000000', $icon-file-type-calendar) !important;
   }
 
 }
@@ -196,7 +298,8 @@
   img[class*="Blogs"],
   img[class*="Activities"],
   img[class*="Forums"],
-  img[class*="Bookmarks"]{
+  img[class*="Bookmarks"],
+  img[class*="Calendar"] {
     background-size:40px 40px!important;
   }
 }
@@ -206,7 +309,8 @@
   img[class*="Blogs"],
   img[class*="Activities"],
   img[class*="Forums"],
-  img[class*="Bookmarks"]{
+  img[class*="Bookmarks"],
+  img[class*="Calendar"] {
     //the svgs get cut off if they are 32 px?
     background-size:30px 30px!important;
   }
@@ -216,7 +320,7 @@
 .lconnPicker .lconnPickerSourceArea,
 .lconnPickerSourceArea{
   img[class*="Folder"]{
-    background-position-y:0px!important;
+    background-position: center center!important;
     background-size:20px 20px!important;
     background-repeat:no-repeat!important;
   }
@@ -238,4 +342,11 @@
   margin-right:4px!important;
   position:relative!important;
   top:-1px!important;
+}
+
+// Add right margin for file icons in event viewer - 1285
+#calendar_event_viewer {
+  img.lconn-ftype16 {
+    margin-right: 4px !important;
+  }
 }
