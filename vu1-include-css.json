@@ -1,0 +1,207 @@
+{
+    "app_id": "com.ibm.connections.vu1css",
+    "name": "Visual Update 1 - Direct CSS",
+    "title": "Visual Update 1 - Direct CSS",
+    "description": "Customizer extension to re-theme Connections",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Blogs",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/blogs.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "blogs",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Communities",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/communities.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "communities",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Files",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/files.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "files",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Forums",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/forums.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "forums",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "AAGlobal Ex",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/global.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "global",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Homepage New",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "social",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Homepage Old",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "homepage",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Meetings",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/meetings.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "meetings",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "MyContacts",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "mycontacts",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Notification Settings",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/settings.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "news",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+          "name":"Account Settings",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/settings.css"
+            ],
+            "include-repo": {
+              "name": "periscope"
+            }
+          },
+          "path": "manage",
+          "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Profiles",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "profiles",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Search",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/search.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "search",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Wikis",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/wikis.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "wikis",
+            "application": "Visual Update 1 for IBM Connections"
+        }
+    ]
+}

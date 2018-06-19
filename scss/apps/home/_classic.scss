@@ -1,0 +1,140 @@
+//Classic home page
+
+//Status update sticky field
+.lotusStream .lotusWidgetBody#activityStreamMain .streamHeaderWrapper.isSticky {
+  width:687px !important;
+  @media screen and (min-width: 1300px) {
+    width: calc(100% - 596px) !important;
+  }
+  @media screen and (min-width: 1433px) {
+    width:calc(100% - 660px) !important;
+  }
+  @media screen and (min-width: 1600px) {
+    width:calc(100% - 724px) !important;
+  }
+  .streamHeaderInner {
+    background:$background-pinned-row;
+  }
+}
+
+//Status update tabs
+.lotusStream .lotusWidgetBody#activityStreamMain {
+  .streamHeaderWrapper {
+    .lotusPaging.lotusPagingTop {
+      background:$background-main !important;
+      border:none;
+      border-bottom:1px solid $border-separator !important;
+      margin-top:8px !important;
+      margin-bottom:10px;
+      padding-bottom:3px;
+      .lotusInlinelist li {
+        &.lotusFirst {
+          margin-left:0px;
+        }
+        border-left:none !important;
+        margin-left:16px;
+        padding-top:10px;
+        padding-bottom:6px;
+      }
+      a {
+        @include font-size($body...);
+        font-weight:500 !important;
+        color:$text-02 !important;
+        padding:8px 16px !important;
+        margin:0px 0px !important;
+        border-radius: $border-radius-tabs!important;
+        border: 1px solid transparent!important;
+        line-height: 1 !important;
+        text-decoration: none !important;
+        position:relative;
+        overflow:visible;
+        &:hover {
+          color: $text-03!important;
+          background-color: $btn-secondary-fill-hover;
+          border-color: $btn-secondary-outline-hover;
+        }
+        &:focus {
+          color: $text-01!important;
+          border-color: $btn-secondary-outline-hover !important;
+        }
+        &.filterSelected {
+          color:$text-01 !important;
+          //border-bottom:4px solid $border-selected !important;
+          &:before {
+            content:'';
+            position:absolute;
+            bottom:-12px;
+            left:0px;
+            height:4px;
+            width:100%;
+            background:$btn-secondary-outline-hover;
+          }
+          &:hover {
+            color:$text-03 !important;
+          }
+        }
+      }
+    }
+  }
+  .headerFins {
+    display:none;
+  }
+}
+
+//Stream
+.lotusStream {
+  .filterArea {
+    padding:0px 0px !important;
+  }
+  ul.lotusStream > li {
+    border:1px solid $border-separator !important;
+    box-shadow:0 4px 8px 0 $box-shadow-10;
+    margin:16px 0px 16px 0px;
+    .activityStreamNewsItemContainer {
+      &.lotusPostHover {
+        background-color:$background-side;
+      }
+      border:2px solid transparent !important;
+      &:focus {
+        outline:none;
+        border:2px solid $border-selected !important;
+      }
+      //Primary avatar
+      .lotusPostAuthorInfo {
+        padding-right: 25px !important;
+        .lotusPostAvatar img.activityStreamPhotoOf {
+          @include avatarSize($size4);
+          border:1px solid $border-separator;
+          border-radius:$border-radius-avatar;
+        }
+      }
+      //Move comment list over because avatar is larger
+      .lotusCommentList {
+        margin-left:118px;
+      }
+      //Secondary avatars
+      .lotusCommentItem,
+      .activityStreamSummary {
+        .lotusPostAuthorInfo {
+          padding:0px 8px !important;
+          .lotusPostAvatar img.activityStreamPhotoOf {
+            @include avatarSize($size1);
+          }
+        }
+      }
+      .lotusPostContent {
+        .fileBody {
+          margin-left:50px !important;
+          padding:10px 6px 0px 6px !important;
+        }
+      }
+    }
+  }
+}
+
+//Right side - Recommendations widget
+div[dojoattachpoint="recommendContainer"] {
+  a {
+    @include link-color(dark);
+  }
+}

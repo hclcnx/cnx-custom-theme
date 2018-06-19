@@ -8,6 +8,8 @@ input[type=checkbox]{
 	transition:none!important;
   -webkit-appearance: none;
   border: none !important;
+  // to address issue 1185
+  vertical-align: bottom;
   &::after{
 		content:""!important;
 		// added for Safari Issue
@@ -77,4 +79,30 @@ tbody .lotusFirstCell{
 .lotusLeft.lconnSelectAllContainer{
 	position:relative!important;
 	top:-3px!important;
+}
+
+#scene-body {
+  // general fix for checkbox hover cut-off - 1138
+  padding-left: 2px !important;
+  // icon alignment in files list
+  .filesList {
+    .lconnSelectAllContainer {
+//      padding-left: 10px !important; 1372: Prevent unwanted padding in Community files feature select all checkbox.
+    }
+  }
+}
+
+// 1372: Restrict padding to select all checkbox in Files component, prevent it in Community files feature.
+#lotusContent > #scene-body .filesList .lconnSelectAllContainer {
+    padding-left: 10px !important;
+}
+
+// sub community add members form
+#memberAddFormDiv #addAllParentMembersRow > td {
+  padding-left: 2px;
+
+  input[type="checkbox"], label {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

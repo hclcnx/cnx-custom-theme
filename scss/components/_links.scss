@@ -2,7 +2,7 @@
 a {
   @include bx--link-default();
   -webkit-font-smoothing: antialiased !important;
-  font-weight: bold !important;
+  font-weight: 600 !important;
   transition: color 250ms ease, text-decoration 250ms ease !important;
   text-decoration: none !important;
 }
@@ -66,8 +66,6 @@ a._linkHolder.lotusLeft {
   }
 }
 
-// Navbar
-#nav_bar_include a,
 // Files left nav
 [id^="menu_"] a,
 #lotusTitleBar > div > div > h2 > span > a,
@@ -92,5 +90,40 @@ a.lotusAdd,
 div.lotusPostIndicator a {
   &:focus {
     outline: 1px solid currentColor !important;
+  }
+}
+//Sort list links - active sort is dark
+.lotusContent {
+  .lotusSort {
+    a[aria-pressed="true"]:not(:hover) {
+      @include link-color(dark);
+    }
+  }
+}
+
+// allow ckeditor links to be not bold
+#wikiContentDiv.qkrWikiPreview,
+.entryContentContainer.blogsWrapText,
+#forum .entry-content.lotusPostDetails,
+.entryContent div[id^="activityPageNodeContainer"] {
+  a {
+    font-weight: normal !important;
+  }
+  strong * {
+    font-weight: 600 !important;
+  }
+}
+
+// Status updates like - comment - repost alignment
+div.activityStreamNewsItemContainer {
+  div.lotusLikeConnector {
+    margin-bottom: 0 !important;
+    padding-right: 3px !important;
+  }
+  ul.lotusInlinelist li {
+    vertical-align: unset !important;
+    &:before {
+      margin-top: 4px !important;
+    }
   }
 }

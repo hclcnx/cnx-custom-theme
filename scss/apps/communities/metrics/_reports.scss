@@ -1,0 +1,172 @@
+// People / Participation chart summary section
+#statisticHeadDivId {
+  & .LineChartHeaderRectClz {
+    fill: $background-chart-header !important;
+  }
+  & .LineChartBodyRectClz {
+    fill: $background-side !important;
+  }
+  & text.LineChartHeaderRectDespClz {
+    alignment-baseline: middle;
+    font-size: 16px !important;
+  }
+  & text.LineChartBodyRectDespClz {
+    font-style: italic;
+  }
+}
+
+// People / Participation chart details
+#appFilterDivId {
+  & .data-Total > rect {
+    fill: $background-chart-header !important;
+  }
+  & .appflitertext {
+    font-weight:bold !important;
+  }
+}
+
+// People / Participation table
+#statisticHeaderTableID {
+  & tbody {
+    & tr > th {
+      background: $background-chart-header !important;
+      font-size: 16px !important;
+      height: 2.4em !important;
+    }
+    & tr > td {
+      background: $background-side !important;
+    }
+    & tr:nth-child(3) {
+      font-style: italic;
+    }
+  }
+}
+#lineChartTableID {
+  & tbody > tr:nth-child(1) > th {
+    background: $background-side !important;
+  }
+}
+
+// Top users
+#topUsersSvgID {
+  & .topUHeaderRect {
+    fill: $background-chart-header !important;
+  }
+  & .TopUHeaderRectDespClz {
+    font-size: 16px !important;
+  }
+}
+
+// Content metrics
+#reportContainerDivID,
+#hBarTableDiv,
+#lineChartTableID,
+#hBarAppFilterDivId {
+  & td span:before,
+    th span:before {
+    width: 8px !important;
+  }
+  & td, th {
+    padding-left: 1.6em !important;
+  }
+  & g[name="hBBottomBar"] {
+    rect {
+      fill: $background-main !important;
+    }
+  }
+  & .data-OVERALL > rect {
+    fill: $data-overall !important;
+    stroke: $data-overall !important;
+  }
+  & .data-BOOKMARKS {
+    & rect {
+      fill: $data-bookmarks !important;
+      stroke: $data-bookmarks !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-bookmarks !important;
+    }
+  }
+  & .data-FORUMS {
+    & rect {
+      fill: $data-forums !important;
+      stroke: $data-forums !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-forums !important;
+    }
+  }
+  & .data-WIKIS {
+    & rect {
+      fill: $data-wikis !important;
+      stroke: $data-wikis !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-wikis !important;
+    }
+  }
+  & .data-IDEATIONBLOG {
+    & rect {
+      fill: $data-ideationblog !important;
+      stroke: $data-ideationblog !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-ideationblog !important;
+    }
+  }
+  & .data-BLOGS {
+    & rect {
+      fill: $data-blogs !important;
+      stroke: $data-blogs !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-blogs !important;
+    }
+  }
+  & .data-FILES {
+    & rect {
+      fill: $data-files !important;
+      stroke: $data-files !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-files !important;
+    }
+  }
+  & .data-ACTIVITIES {
+    & rect {
+      fill: $data-activities !important;
+      stroke: $data-activities !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-activities !important;
+    }
+  }
+}
+.metricsReport {
+  outline: none !important;
+}
+#hBarChartBodyDivId {
+    border: none !important;
+}
+// slider dot on metrics reports (sp of id does = moveCirleId !)
+#moveCirleId {
+  fill: $color-gray-50 !important;
+}
+// text under slider
+#HorizontalRuleLabelsContain a {
+  @include link-color('dark');
+}

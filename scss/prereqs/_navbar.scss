@@ -1,0 +1,20 @@
+//Navigation bar variables
+//navbar = horizontal bar on top of pages
+//navmenu = menus opened from the navbar
+
+//Colors - navbar
+$navbar-bg-color: $brand-02; //Background color of the navbar
+$navbar-selected: $color-white; //Color of bar that shows selected app
+$navbar-hover: $brand-03; //Color of bar that appears on hover of an app
+$navbar-focus: $color-white; //Color of border shown when an app has focus
+//$navbar-text-color:$text-03; //Fixed to white for now - Color of text and icons on navbar
+//Colors - navbar menus
+$navmenu-text-color: $text-01; //Color of links in navbar menus
+
+//Sizes & weights - navbar
+$navbar-height: 40px; //Height of the navbar
+$navbar-font-size: 12px; //Font size of text in the navbar
+$navbar-font-weight: 400; //Font weight of text in the navbar
+//Sizes & weights - navbar menus
+$navmenu-font-size: 12px; //Font size of text in navbar menus
+$navmenu-font-weight: 400; //Font weight of links in navbar menus
