@@ -189,11 +189,11 @@ h2 + div#communityActionBar,
   }
 }
 
-// events 
+// events
 #calendar_event_viewer .eventHeader + .lotusActionBar.lotusBtnContainer {
   height: auto !important;
   float: none;
-  
+
   > span {
     float: none;
     display: inline-block;
@@ -210,7 +210,7 @@ h2 + div#communityActionBar,
   #wai_memberInviteFormDiv {
     .lotusFormLabel {
       width: auto !important;
-      
+
       label {
         white-space: nowrap;
       }
@@ -230,7 +230,7 @@ h2 + div#communityActionBar,
       #addMembersWidgetTD {
         width: 100%;
       }
-      
+
       div.memberList {
         white-space: normal;
       }

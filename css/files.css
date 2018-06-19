@@ -205,6 +205,9 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img {
 form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto {
   padding-right: .75rem; }
 
+.lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
+  border: 1px solid #d8d8d8; }
+
 a.lotusPerson,
 a.fn.person,
 a:visited.lotusPerson,

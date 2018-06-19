@@ -317,6 +317,8 @@ html .ic-orient, html .ic-orient button, html .ic-orient input, html .ic-orient 
       height: 40px; }
   .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto {
     padding-right: .75rem; }
+  .ics-viewer .lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
+    border: 1px solid #d8d8d8; }
   .ics-viewer a.lotusPerson,
   .ics-viewer a.fn.person,
   .ics-viewer a:visited.lotusPerson,

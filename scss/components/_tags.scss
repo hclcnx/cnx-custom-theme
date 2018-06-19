@@ -24,7 +24,7 @@
         > span, > a {
           float: none !important;
         }
-        
+
         a:focus {
           outline: none !important;
         }
@@ -140,7 +140,7 @@
     li {
       border: none !important;
       padding: 0 !important;
-      
+
       a {
         @include font-size($bodylink...);
       }
@@ -377,7 +377,7 @@ input.lotusText.scTagTypeahead {
   }
   div[dojoattachpoint="_tagCloudLink"],
   div[dojoattachpoint="_tagListLink"] {
-    span.lotusBold {      
+    span.lotusBold {
       display:none;
     }
   }
@@ -515,16 +515,16 @@ input.lotusText.scTagTypeahead {
   }
 }
 
-// tags in forum  
+// tags in forum
 #forum .lotusPostContent .lotusMeta .lotusTags span,
 #topicList #forumTagEditer > span,
 .lotusContent span[id^="lconn_forums_TagEditor_"] > span  {
-  // hide commas: 
+  // hide commas:
   font-size: 0;
   > span[role="listitem"] {
     cursor: default !important;
   }
-  span:not(.lotusAltText), 
+  span:not(.lotusAltText),
   a[role="listitem"] {
     @include tags;
     margin: .15rem !important;
@@ -537,7 +537,7 @@ input.lotusText.scTagTypeahead {
     margin: .15rem !important;
     margin-left: -.75rem !important;
     padding: 0 1rem 0 0 !important;
-    
+
     img {
       height: 100% !important;
       width: 12px !important;
@@ -546,11 +546,11 @@ input.lotusText.scTagTypeahead {
       background-size: 9px 9px;
     }
   }
-} 
+}
 #topicList .lotusFilters a {
   @include tags;
   cursor: default !important;
-  
+
   .lotusClose {
     cursor: pointer !important;
     text-indent: -999px;
@@ -564,12 +564,12 @@ input.lotusText.scTagTypeahead {
   }
 }
 
-// wiki tags 
+// wiki tags
 .lconnWikis .lotusContent .lotusTags li.lotusTag {
   margin: .15rem !important;
 }
 
-// communities invert colors 
+// communities invert colors
 .lotusCommunities .widgetContainer #tagsContainer {
   #tagsDiv_tagList li {
     @include tags;
@@ -578,7 +578,7 @@ input.lotusText.scTagTypeahead {
     flex-direction: row;
     white-space: nowrap;
     flex-wrap: nowrap;
-    
+
     a {
       background-color: transparent !important;
       white-space: nowrap;
@@ -587,7 +587,7 @@ input.lotusText.scTagTypeahead {
       order: 1;
       float: none;
     }
-    
+
     .lotusRight {
       flex-grow: 0;
       flex-shrink: 1;
@@ -600,26 +600,26 @@ input.lotusText.scTagTypeahead {
       }
       #addMembersWidget #memberList {
         border: none;
-        
+
         .member {
           border: none;
           @include tags;
           float: left;
           margin-bottom: .5rem !important;
-          
+
           > .P {
             display: none;
           }
-          
+
           .nameContent {
             padding-left: 0;
           }
-          
+
           .type {
             color: $text-01;
             margin-right: 1rem;
           }
-          
+
           img.lotusDelete {
             margin-right: 0;
           }
