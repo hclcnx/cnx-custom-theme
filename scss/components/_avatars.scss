@@ -85,6 +85,15 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 	}
 }
 
+//Community icons in Communities landing page
+.lotusContent {
+  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
+    .placeRow td[dojoattachpoint="communityIcon"] img {
+      border:1px solid $border-separator;
+    }
+  }
+}
+
 // Style person name
 a.lotusPerson,
 a.fn.person, //Names on community events list

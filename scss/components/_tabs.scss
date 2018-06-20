@@ -87,7 +87,7 @@
 .tabbedSwitch,
 div[id^="lconn_share_widget_Dialog_"],
 div[id^="lconn_files_widget_CompactFilePicker_"] {
-  .switchPane { 
+  .switchPane {
     margin-bottom: 1rem !important;
     max-width: 100%;
   }
@@ -169,7 +169,7 @@ div[id^="lconn_files_widget_CompactFilePicker_"] {
       img {
         left: .75rem;
         position: absolute;
-        
+
         &[class*="Folder"] {
           left: .25rem;
         }
@@ -202,12 +202,12 @@ div[id^="lconn_files_widget_CompactFilePicker_"] {
 .dijitTabContainer .dijitTabListContainer-top {
   padding: 0 !important;
   background: transparent !important;
-  
+
   .dijitTabContainerTopStrip {
     height: 3rem !important;
     border-bottom: 1px solid $color-gray-10;
   }
-  
+
   div[role="tablist"] {
     padding-bottom: calc(.375rem + 3px) !important;
     .dijitTabInner.dijitTabContent {
@@ -217,7 +217,7 @@ div[id^="lconn_files_widget_CompactFilePicker_"] {
       + .dijitTabInner.dijitTabContent {
         margin-left: 1rem !important;
       }
-      
+
       .tabLabel {
         position: relative;
         color: $text-01 !important;
@@ -305,7 +305,7 @@ div.lconn-survey_dialog {
   }
 }
 
-// profile tabs 
+// profile tabs
 ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
   min-width: 1px !important;
   padding-right: 2rem;
