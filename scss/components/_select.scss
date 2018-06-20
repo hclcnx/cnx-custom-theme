@@ -13,6 +13,14 @@ select:not([style="display:none"]):not([style="display: none;"]) {
 	}
 }
 
+// select in survey main page
+div[id*="SurveysList"] {
+  span.asFilterMenu select {
+    display: inline !important;
+    min-width: 1px !important;
+  }
+}
+
 // Share file
 [id^="lconn_share_widget_MemberInput_"] {
 	// Files > Upload > Advanced Options > People or Communities
@@ -27,8 +35,13 @@ select:not([style="display:none"]):not([style="display: none;"]) {
 .dijitComboBoxMenuPopup .dijitMenuItem {
 	//font-size: $body-font-size !important;
 }
-select[id^="compactpicker_select_"] {
+select[id^="compactpicker_select_"]:not([style="display:none"]):not([style="display: none;"]) {
 	min-width: 0 !important;
+}
+
+// share file from community landing overview page widget
+select[id^="compactpicker_select_"] {
+	min-width: 45% !important;
 }
 
 // selects on add members form
@@ -36,6 +49,8 @@ select[id^="compactpicker_select_"] {
 	#addPeopleOrGroupsSelect,
 	#addMembersSelectBox:not([style="display: block"]) {
 		display: inline-block !important;
+		min-width: 40% !important;
+		margin: 0 .5rem 0 .25rem !important;
 	}
 }
 

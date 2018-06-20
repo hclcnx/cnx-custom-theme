@@ -2,7 +2,7 @@
     "app_id": "com.ibm.connections.vu1css",
     "name": "Visual Update 1 - Direct CSS",
     "title": "Visual Update 1 - Direct CSS",
-    "description": "Customizer extension to re-theme Connections for Pink.",
+    "description": "Customizer extension to re-theme Connections",
     "services": [
         "Customizer"
     ],
@@ -22,12 +22,9 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
-            "name": "Communities Landing",
+            "name": "Communities",
             "type": "com.ibm.customizer.ui",
             "payload": {
-                "match": {
-                    "url": "ownedcommunities|mycommunities|followedcommunities|communityinvites|allcommunities|trashedcommunities|communitycreate|communityedit"
-                },
                 "include-files": [
                     "css/communities.css"
                 ],
@@ -67,7 +64,7 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
-            "name": "Global Ex",
+            "name": "AAGlobal Ex",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
@@ -149,6 +146,20 @@
             },
             "path": "news",
             "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+          "name":"Account Settings",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/settings.css"
+            ],
+            "include-repo": {
+              "name": "cnx-custom-theme"
+            }
+          },
+          "path": "manage",
+          "application": "Visual Update 1 for IBM Connections"
         },
         {
             "name": "Profiles",

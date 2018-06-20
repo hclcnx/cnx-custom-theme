@@ -22,6 +22,7 @@
 
 // App Specific Imports
 @import "apps/communities/appNavigator";
+@import "apps/communities/calendarView";
 @import "apps/communities/dialogs";
 @import "apps/communities/leftnav";
 @import "apps/communities/metaTags";
@@ -34,6 +35,8 @@
 @import "apps/communities/communitieslanding/communitieslanding";
 @import "apps/communities/communitieslanding/leftnav";
 @import "apps/communities/communitieslanding/createnew";
+@import "apps/communities/overview";
+@import "apps/communities/statusupdates";
 
 // Forum specific imports
 @import "apps/communities/forum/responses";

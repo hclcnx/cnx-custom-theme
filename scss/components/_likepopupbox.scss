@@ -7,6 +7,7 @@ div[id^="com_ibm_oneui_controls_internal__MasterPopup_"] {
     .lotusLikeHeader {
       background-color: $background-header !important;
       border: none !important;
+      height: 16px !important;
       .lotusLike a {
         color: $text-03 !important;
       }

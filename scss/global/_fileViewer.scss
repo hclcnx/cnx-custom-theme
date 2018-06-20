@@ -27,26 +27,43 @@ ul.ics-viewer-tabs{
 	z-index:100;
 	//taller
 	height:56px!important;
-	li{
-		margin-top:18px!important;
-	}
-	li a{
-		color: $text-02 !important;
-	}
-	li.selected a{
-		padding: 0px 5px 11px!important;
-		color: $text-01 !important;
-	}
-	a{
-		color: $text-01 !important;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		border-color:$brand-01 !important;
-	}
-	li:focus{
-		outline:none!important;
+	li {
+		margin-top:1px!important;
+		padding: 0.375rem 0;
+		a {
+			padding: 0.5rem 0.5rem !important;
+			color: $text-02 !important;
+			text-transform: none !important;
+			@include font-size($tabs...);
+			border: 1px solid transparent!important;
+			border-radius: $border-radius-tabs!important;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			&:hover {
+				color: $text-03!important;
+				background-color: $btn-secondary-fill-hover !important;
+				border-color: $btn-secondary-outline-hover !important;
+				text-decoration: none!important;
+			}
+		}
+		&.selected {
+			border-bottom: 4px solid $border-selected!important;
+			a {
+				color: $text-01 !important;
+				&:hover {
+					color: $text-03!important;
+				}
+			}
+		}
+		&:focus {
+			outline: none !important;
+			a {
+				border-color: $btn-secondary-outline-hover !important;
+				border-radius: $border-radius-tabs!important;
+			}
+		}
 	}
 }
 .ics-viewer-title-name-container{
@@ -65,32 +82,59 @@ ul.ics-viewer-tabs{
 	opacity:1 !important;
 	//opacity:.6!important;
 }
-body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
+//body#body .ics-viewer .ics-shelf,
+.ics-viewer .ics-shelf {
 	h3.active-panels{
 		background-color: $background-main !important;
 		border-top:none!important;
 		position:relative!important;
 		z-index:200!important;
 		box-shadow:0px 1px 3px 0px $box-shadow-15 !important;
-	}
-	.moreButton{
-		background-color: $background-main !important;
-		padding:21px 1px 20px 12px!important;
-		z-index:100!important;
-		margin:0!important;
-		margin-right:55px!important;
-		span{
-			color: $text-02 !important;
-			:focus{
-				outline:none!important;
-			}
+		> div {
+			background-color: $background-main;
 		}
 	}
-	.moreButton.select{
-		padding-bottom:14px!important;
-		border-bottom:6px solid $brand-01 !important;
-		span{
-			color: $text-01 !important;
+	.moreButton {
+		background-color: $background-main !important;
+		z-index:100!important;
+		margin-right:55px!important;
+		margin-top:1px!important;
+		height: 39px;
+		padding: 0.375rem 0;
+		span.dijitButtonContents {
+			border: 1px solid transparent;
+			padding: 0.5rem 0.5rem 0.9rem 0.5rem !important;
+			border: 1px solid transparent!important;
+			border-radius: $border-radius-tabs!important;
+			&:hover {
+				background-color: $btn-secondary-fill-hover !important;
+				border-color: $btn-secondary-outline-hover !important;
+			}
+			&:focus {
+				outline: none;
+				border-color: $btn-secondary-outline-hover !important;
+			}
+			span[id^="dijit_form_DropDownButton_"][id$="_label"] {
+				text-transform: none;
+				@include font-size($tabs...);
+				color: $text-02 !important;
+			}
+			&:hover {
+				span[id^="dijit_form_DropDownButton_"][id$="_label"] {
+					color: $text-03!important;
+					text-decoration: none!important;
+				}
+				span.dijitArrowButtonInner {
+					background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
+				}
+			}
+		}
+		&.select {
+			padding: 0.375rem 0 !important;
+			border-bottom:4px solid $border-selected !important;
+			span[id^="dijit_form_DropDownButton_"][id$="_label"] {
+				color: $text-01 !important;
+			}
 		}
 	}
 }
@@ -145,7 +189,7 @@ body#body .ics-viewer .ics-shelf, .ics-viewer .ics-shelf{
 		}
 }
 //expanded mode - show collapse icon
-#body, .lotusProfiles{
+#body, .lotusProfiles, .lotusui.ics-viewer-open {
 	.ics-viewer-details-expanded .ics-viewer-action-panel{
 		img{
 			top:1px;
@@ -513,12 +557,12 @@ ul[data-dojo-attach-point="tagList"]{
 }
 .lotusui30_body .ics-viewer .ics-viewer-toolbar .ics-viewer-action.dropdown-menu:not(.ics-viewer-more-actions) {
 	.dropdown-menu-icon {
-		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
 		background-position: 3px 1px !important;
 		background-size: 9px 9px !important;
 	}
 	&:hover .dropdown-menu-icon {
-		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $brand-01) !important;
+		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon-hover) !important;
 	}
 }
 #body .ics-viewer .ics-viewer-toolbar .ics-viewer-action:not(.ics-viewer-action-upload).ics-viewer-action-edit a:focus,
@@ -547,11 +591,11 @@ ul[data-dojo-attach-point="tagList"]{
 		margin-left:5px!important;
 	}
 }
-#body .ics-viewer .ics-viewer-tabs > li:focus{
+/*#body .ics-viewer .ics-viewer-tabs > li:focus{
 	a{
 		outline:1px solid $border-selected!important;
 	}
-}
+}*/
 #body .header1 .ics-viewer .ics-viewer-tabs > li{
 	margin-top:12px!important;
 	a{

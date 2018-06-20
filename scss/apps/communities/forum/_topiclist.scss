@@ -2,9 +2,11 @@
 #dfOpenQuestionList, //List of open forum questions in community
 #dfAnsweredQuestionList, //List of answered forum questions in community
 #topicList,
-#dfForumList { //List of forum topics inside forum
+#dfForumList,
+#forum { //List of forum topics inside forum
   //Forum topics list
-  .forumPagedList {
+  .forumPagedList,
+  .lotusPagedContent {
     //pinned rows
     tr.lotusPinnedRow {
       &.lotusMore {
@@ -16,7 +18,7 @@
       td.lotusFirstCell {
         //border-left:5px solid $brand-01;
         .lconnSprite-iconPin16 {
-          background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $brand-01) !important;
+          background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
           background-position: center;
           height:24px;
           width:24px;
@@ -53,7 +55,7 @@
       background-image: svg-url-with-replaced-fill($svg-forum-answered, '#000000', $success) !important;
     }
     .lconnSprite-iconPin16 {
-      background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-default) !important;
+      background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
     }
   }
   //space around start a topic button

@@ -5,7 +5,7 @@
 [id^="lconn_core_AddGroups_"][id$="PeopleTypeAhead"],
 input[id^="lconn_share_widget_TagTypeAhead_"],
 input[id^="lconn_share_widget_Dialog_"][id$="_name"],
-.lotusFieldWrapper input:not(#generateAppPassword):not(#enableBiDi),
+.lotusFieldWrapper input:not(#generateAppPassword):not(#enableBiDi):not([type="radio"]),
 #concordnewfiledoc,
 #concordnewfilesheet,
 #concordnewfilepres,
@@ -37,7 +37,7 @@ input.lotusText,
 		margin-top: .5rem;
 	}
 	.dijitPlaceHolder {
-		margin: .5rem 0 0 2rem;
+		margin: 0 0 10px 30px;
 		//font-size: $body-font-size;
 	}
 	.lconn_searchBox {
@@ -93,16 +93,17 @@ div[id^="lconn_files_widget_FilePickerCompactInner_"] input.lotusText {
 	padding: 0 !important;
 }
 div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="content_ViewMenuAndSearchBar"] {
-	height: auto !important;
-	span.lotusBtnImg {
-		height: 2.25rem !important;
-		input {
-			display: block;
-			width: 1rem !important;
-			height: 1rem !important;
-			margin: .75rem 0;
-		}
-	}
+  height: auto !important;
+  span.lotusBtnImg {
+    height: 2.25rem !important;
+    width: auto !important;
+    input {
+      display: block;
+      width: 1rem !important;
+      height: 1rem !important;
+      margin: .75rem 0;
+    }
+  }
 }
 div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_ViewMenuAndSearchBar"],
 div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchBar"] {

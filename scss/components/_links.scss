@@ -101,7 +101,7 @@ div.lotusPostIndicator a {
   }
 }
 
-// allow ckeditor links to be not bold 
+// allow ckeditor links to be not bold
 #wikiContentDiv.qkrWikiPreview,
 .entryContentContainer.blogsWrapText,
 #forum .entry-content.lotusPostDetails,
@@ -111,5 +111,19 @@ div.lotusPostIndicator a {
   }
   strong * {
     font-weight: 600 !important;
+  }
+}
+
+// Status updates like - comment - repost alignment
+div.activityStreamNewsItemContainer {
+  div.lotusLikeConnector {
+    margin-bottom: 0 !important;
+    padding-right: 3px !important;
+  }
+  ul.lotusInlinelist li {
+    vertical-align: unset !important;
+    &:before {
+      margin-top: 4px !important;
+    }
   }
 }

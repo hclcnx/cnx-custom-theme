@@ -13,15 +13,16 @@
   -webkit-box-align: center!important;
   -webkit-box-pack: center!important;
   text-align: center!important;
-  text-decoration: none!important;
   transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
   white-space: nowrap!important;
   padding: 9px 20px!important;
-  font-weight: 500!important;
   background-image: none !important;
   margin:2px 4px 3px 2px !important; //Important so that focus styling doesn't get cut off
-  &:hover, &:active {
+  &, &:hover, &:active, &:focus {
     text-decoration: none !important;
+    font-weight: 500!important;
+  }
+  &:hover, &:active {
     outline:none;
   }
   &:focus {

@@ -69,12 +69,19 @@
   & td, th {
     padding-left: 1.6em !important;
   }
+  & g[name="hBBottomBar"] {
+    rect {
+      fill: $background-main !important;
+    }
+  }
   & .data-OVERALL > rect {
     fill: $data-overall !important;
+    stroke: $data-overall !important;
   }
   & .data-BOOKMARKS {
     & rect {
       fill: $data-bookmarks !important;
+      stroke: $data-bookmarks !important;
     }
     & td span:before,
       th span:before,
@@ -85,6 +92,7 @@
   & .data-FORUMS {
     & rect {
       fill: $data-forums !important;
+      stroke: $data-forums !important;
     }
     & td span:before,
       th span:before,
@@ -95,6 +103,7 @@
   & .data-WIKIS {
     & rect {
       fill: $data-wikis !important;
+      stroke: $data-wikis !important;
     }
     & td span:before,
       th span:before,
@@ -105,6 +114,7 @@
   & .data-IDEATIONBLOG {
     & rect {
       fill: $data-ideationblog !important;
+      stroke: $data-ideationblog !important;
     }
     & td span:before,
       th span:before,
@@ -115,6 +125,7 @@
   & .data-BLOGS {
     & rect {
       fill: $data-blogs !important;
+      stroke: $data-blogs !important;
     }
     & td span:before,
       th span:before,
@@ -125,6 +136,7 @@
   & .data-FILES {
     & rect {
       fill: $data-files !important;
+      stroke: $data-files !important;
     }
     & td span:before,
       th span:before,
@@ -135,6 +147,7 @@
   & .data-ACTIVITIES {
     & rect {
       fill: $data-activities !important;
+      stroke: $data-activities !important;
     }
     & td span:before,
       th span:before,

@@ -28,14 +28,7 @@
       float: none !important;
 
       a {
-        @include btnbasics;
         @include btnsecondary;
-        padding: .25rem .75rem !important;
-          font-weight: normal !important;
-        &:hover {
-          @include btnprimary;
-          padding: .25rem .75rem !important;
-        }
       }
     }
     div[id^="contentContainer_results_FiltersForm_"] {

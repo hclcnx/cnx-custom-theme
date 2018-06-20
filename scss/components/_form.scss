@@ -267,29 +267,6 @@ form[id^="exportMembersForm"] {
 	}
 }
 
-// community filter by members
-#Members #MembersPanel .lotusForm {
-	tr#controlsRow > td + td {
-		padding-bottom: 3.5rem;
-	}
-	tr#findRow {
-    position: absolute;
-    right: 0;
-    top: 40%;
-	}
-	#findLabel,
-	#filterLabel {
-		@include font-size($body...);
-	}
-	#filterLabel,
-	span.lotusIndent10 {
-		display: inline-block;
-	}
-	#roleFilter {
-		width: 10rem !important;
-	}
-}
-
 // calendar edit event form
 #calendar_event_editor {
 	.dijitTextBox .dijitInputField input,
@@ -327,6 +304,28 @@ form[id^="exportMembersForm"] {
 	}
 }
 
+// Event notification filter
+div[id^="lconn_calendar_Notification"] {
+  input[id^="lconn_calendar_FilteringCheckbox"]{
+    @include textinput;
+		min-width: initial !important;
+		padding-right: 0 !important;
+		padding-bottom: 0 !important;
+  }
+  label[id^="lconn_calendar_FilteringCheckbox"] {
+		width: 130px !important;
+	}
+	.lconnNotify {
+		overflow: visible !important;
+	}
+	.vcard a.menu_drop_icon {
+		margin-bottom: 6px !important;
+	}
+	img.lotusDelete {
+		margin-bottom: 8px !important;
+	}
+}
+
 // Create survey Form
 form[name="surveysCreateForm"] {
 	max-width: 800px;
@@ -347,4 +346,5 @@ form[name="surveysCreateForm"] {
       }
     }
   }
+
 }

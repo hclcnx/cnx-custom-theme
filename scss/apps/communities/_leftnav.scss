@@ -32,7 +32,7 @@
           margin: 0 !important;
           display: block;
           border: none !important;
-          transition:$border-slide!important;
+          transition:none!important;
           font-weight: normal !important;
           &:hover, &:focus {
             background-color:$background-side-hover !important;
@@ -55,8 +55,8 @@
     #sideNav .lotusMenuSection .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode,
     #sideNav > div > ul > li,
     .lotusChunk.lotusTiny.lotusRight,
-    > .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li,
-    .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div #allPagesList li + li {
+    > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li,
+    .lotusSection:not([id*="Tag"]) > div #allPagesList li + li {
         padding: 0 !important;
         margin: 0 !important;
         a, div.dijitTreeRow {
@@ -65,7 +65,7 @@
           margin: 0 !important;
           // display: block;
           border: none !important;
-          transition:$border-slide!important;
+          transition:none!important;
           font-weight: normal !important;
           font-size: $body-sm-font-size;
           width: 100% !important;
@@ -90,22 +90,34 @@
         &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
           > .dijitTreeRow {
             padding-left:calc( (2 * #{$initial-l-padding}) + #{$h-padding} )!important;
+            &.dijitTreeRowSelected {
+              padding-left:calc( (2 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
+            }
           }
           &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
           &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
             > .dijitTreeRow {
               padding-left:calc( (3 * #{$initial-l-padding}) + #{$h-padding} )!important;
+              &.dijitTreeRowSelected {
+                padding-left:calc( (3 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
+              }
             }
             &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
             &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
               > .dijitTreeRow {
                 padding-left:calc( (4 * #{$initial-l-padding}) + #{$h-padding} )!important;
+                &.dijitTreeRowSelected {
+                  padding-left:calc( (4 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
+                }
               }
             }
             &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
             &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
               > .dijitTreeRow {
                 padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} )!important;
+                &.dijitTreeRowSelected {
+                  padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
+                }
               }
             }
           }
@@ -156,7 +168,7 @@
           }
         }
       }
-      > .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li {
+      > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li {
         line-height: 0 !important;
         font-size: 0 !important;
         a {
@@ -164,7 +176,7 @@
           line-height: 1.2em !important;
         }
       }
-      .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div #allPagesList {
+      .lotusSection:not([id*="Tag"]) > div #allPagesList {
         li:first-child {
           a, form {
             padding: $v-padding $h-padding !important;
@@ -199,6 +211,10 @@
       }
     .lotusMenu {
       margin: 0 !important;
+      // Fix for issue 1387, long app name drop-down arrow
+      #dropdownNavMenuSelection {
+        max-width: 140px !important;
+      }
     }
   }
 }
@@ -219,9 +235,7 @@
       padding-bottom:calc(#{$v-padding} - 2px)!important;
       a, span {
         font-weight: normal !important;
-        overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis;
       }
     }
   }
@@ -232,7 +246,7 @@
       outline: none !important;
     }
   }
-  .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter),
+  .lotusSection:not([id*="Tag"]),
   .lotusMenuSection,
   #lotusSidenav.lotusMenu,
   span.X-community-display-inline {
@@ -317,7 +331,7 @@
       transition: font-weight .23s ease;
       &.dijitTreeNodeSelected {
         padding-left:calc(((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness}) + 21px)!important;
-        transition:$border-slide;
+        transition:none;
         border-left:4px solid $brand-01 !important;
         a{
           margin-left:0!important;
@@ -397,10 +411,10 @@
     margin-left: -($h-padding * .75) !important;
   }
 }
-#lotusColLeft:not(.wpthemeNarrow) .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
+#lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
   margin-bottom: .5rem !important;
 }
-.lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter) > div {
+.lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]):not(#lconnTagCloudFilter) > div {
   &#section_entrymanagement,
   &#section_dateFilter {
     padding-top:$v-padding!important;
@@ -469,7 +483,7 @@ div[id^="lconn_share_widget_Tree_"] {
     padding: $v-padding $h-padding !important;
     padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
     border: none !important;
-    transition:$border-slide!important;
+    transition:none!important;
     font-weight: normal !important;
     font-size: $body-sm-font-size;
     box-sizing: border-box;
@@ -479,8 +493,15 @@ div[id^="lconn_share_widget_Tree_"] {
     display: block;
     margin: 0 !important;
     > span {
-      padding: 0 !important;
+      padding: 6px !important;
       line-height: 1.25rem;
+      border: 1px solid transparent !important;
+      &:focus {
+        background-color: transparent !important;
+        border: 1px solid $border-selected !important;
+        text-decoration: none !important;
+        outline: none !important;
+      }
     }
     &:hover, &:focus {
       background-color:$background-side-hover !important;
@@ -567,7 +588,7 @@ div[id^="lconn_share_widget_Tree_"] {
   padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
 }
 
-.lotusSection:not(#lconnTagCloudContent):not(#lconnTagCloudFilter):not([id^="event"]) > h2 {
+.lotusSection:not([id*="Tag"]):not([id^="event"]) > h2 {
   margin-left: 0 !important;
   padding-left: 42px !important;
   padding-right: 24px !important;
@@ -582,4 +603,25 @@ div[id^="lconn_share_widget_Tree_"] {
 #lotusCollapseBar {
   margin: 0 !important;
   cursor: ew-resize;
+
+  + #lotusCollapseBar {
+    display: none;
+  }
+}
+
+// tag view toggle links
+.lotusWidget2 span#tagsContainer {
+  ul[role="listbox"] a {
+    color: $text-01 !important;
+  }
+  ul.lotusInlinelist.lotusActions > li {
+    border: none !important;
+    padding: 0 !important;
+    > span {
+      display: none;
+    }
+    > a {
+      @include font-size($bodylink...);
+    }
+  }
 }

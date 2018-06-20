@@ -77,9 +77,7 @@
 //Wiki, images in pages
 .qkrWikiPreview {
   img:not(.lconn-ftype16) {
-    max-width:100%;
-    width:auto;
-    height:auto;
+    max-width:100;
   }
 }
 
@@ -165,24 +163,101 @@ h2 + div#communityActionBar,
   margin: 0 30px 0 0 !important;
 }
 
-//Overview page widget styling
-//Widget headers and padding
-.widgetContainer .lotusWidget2 {
-  padding:0 30px !important;
-  h2:first-child {
-    padding:20px 30px !important;
-    margin:0 -30px !important;
-  }
-}
-//Rich content widget
-#showRichContent #pageDetails .lotusBtnContainer {
-  padding-bottom:26px;
-}
 #commonSearchControlContainer.icSearchBarMode {
   top: 12px !important;
   right: 0 !important;
 }
-//Featured survey widget
-.lotusWidget2 div[id^="com_ibm_form_integrations_formiwidget_widget_SingleSurveyViewMode_"] {
-  padding-bottom: 30px;
+
+// invite entries spacing - issue 1214
+#inviteEntriesFullMembers {
+  .lotusCheckbox {
+    margin: 0 4px !important;
+    vertical-align: middle !important;
+  }
+}
+
+// margins on recent updates - issue 1146
+#RecentUpdatesSection,
+#widget-container-col2statusposts div {
+  padding-left: 0 !important;
+  h2 {
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+  .activityStreamNewsItemContainer {
+    padding-left: 25px !important;
+  }
+}
+
+// events
+#calendar_event_viewer .eventHeader + .lotusActionBar.lotusBtnContainer {
+  height: auto !important;
+  float: none;
+
+  > span {
+    float: none;
+    display: inline-block;
+  }
+}
+
+// left nav layout tweaks
+.communities-widget-appearance .lotusWidget_3columnLayoutWithBanner #lotusMainColumns {
+  margin-left: 240px !important;
+}
+
+// community members
+#Members {
+  #wai_memberInviteFormDiv {
+    .lotusFormLabel {
+      width: auto !important;
+
+      label {
+        white-space: nowrap;
+      }
+    }
+    .lotusFormTable .lotusTable {
+      width: 100% !important;
+    }
+  }
+  #memberAddFormDiv .lotusFormTable > tbody > tr > td {
+    &.lotusFormLabel {
+      width: auto !important;
+    }
+    > .lotusTable {
+      width: 100% !important;
+      table-layout: fixed;
+
+      #addMembersWidgetTD {
+        width: 100%;
+      }
+
+      div.memberList {
+        white-space: normal;
+      }
+    }
+  }
+  #MembersPanel .lotusForm {
+  	tr#controlsRow > td + td {
+  		padding-bottom: 3.5rem;
+  	}
+  	tr#findRow {
+      position: absolute;
+      right: 0;
+      top: 40%;
+  	}
+  	#findLabel,
+  	#filterLabel {
+  		@include font-size($body...);
+  	}
+  	#filterLabel,
+  	span.lotusIndent10 {
+  		display: inline-block;
+  	}
+  	#roleFilter {
+  		width: 10rem !important;
+  	}
+    #widget_bhc_lconn_core_PeopleTypeAhead {
+      width: 48% !important;
+    }
+  }
 }

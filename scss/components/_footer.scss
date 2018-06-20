@@ -4,7 +4,7 @@
 html {
   height:100%;
 }
-body {
+body:not(.cke_editable) {
   min-height:100%;
 }
 #lotusFrame, .lotusFrame {

@@ -1,10 +1,10 @@
 // Styles for People Avatars
 
-//Avatars for people on search results page
+//People avatars on search results page
 .lconnStatusUpdatePhotoContainer img,
 .lconnProfilesPhotoContainer.otherPeople64 img,
 .lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55 img,
-.lconn_profileImage img, //Directory search
+div[id^="com_ibm_social_personcard_widget_PersonWidget_"] .lconn_profileImage img, //Directory search
 #forum .lotusPostAuthorInfo .lotusPostAvatar img, //On forum posts
 form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img, //Invite to network
 #lotusReportingStructure #reportStructureArea img.photo, //Reporting structure on profiles
@@ -14,10 +14,46 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comm
   border-radius:$border-radius-avatar !important;
 }
 
-//Round community icons in search panel - special case
+//Community icons in search history panel - special case
 .lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
   border-radius:$border-radius-comm-icon !important;
 }
+//Community icons in Communities landing page
+.lotusContent {
+  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
+    .placeRow td[dojoattachpoint="communityIcon"] img {
+      border:1px solid $border-separator;
+    }
+  }
+}
+//Community icons on Related communities list
+#fullRecomm .lotusTable td img,
+//Community icons in Related communities widget on overview page
+#recomm img,
+//Community icons in search results page
+.icSearchResultsPage .lotusTable td img[src*="/communities/service/html/"] {
+  border-radius: $border-radius-comm-icon !important;
+  border:1px solid $border-separator;
+}
+//Community icons in Related communities widget on overview page
+.lotusContent .lotusWidget2 #recomm {
+  .rc_icon {
+    width: 100%;
+    height: auto;
+    float: none;
+    //padding-right: 1rem !important;
+    img {
+      @include avatarSize($size4);
+    }
+  }
+}
+
+.lotusColRight, .lotusColLeft {
+  .lotusWidget2 #recomm .rc_icon {
+    padding-right: 1rem !important;
+  }
+}
+
 
 //Size of some avatars
 #searchResultsTable img.photo, //Profiles Directory Search Results avatars
@@ -27,7 +63,7 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comm
   @include avatarSize($size3);
 }
 
-//Similar blogs and ideation blogs widgets
+//People on Similar blogs and ideation blogs widgets
 #section_relatedblogs,
 #section_relatedideationblogs,
 #section_relatedentries,
@@ -60,6 +96,7 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 
 // Style person name
 a.lotusPerson,
+a.fn.person, //Names on community events list
 a:visited.lotusPerson,
 .vcard a.fn.url,
 .panelContent .header1 a.lotusPerson, {

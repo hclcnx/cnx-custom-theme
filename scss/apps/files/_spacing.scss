@@ -1,3 +1,6 @@
+.lconnFiles .lconnNonVerticalScrollableBody #lotusTopNav .lotusRightCorner {
+  padding-left: 0 !important;
+}
 .lotusui30 .lotusContent .lotusHeader .lotusMeta{
   padding-top:0px!important;
   ul li{
@@ -29,7 +32,8 @@
     }
   }
 }
-.lotusPlaceBar{
+.lotusPlaceBar,
+.lotusPlaceBar.lotusGlobalActionBar {
   margin-right:0!important;
   width:100%!important;
   div[role="toolbar"]{
@@ -106,7 +110,7 @@ div[dojoattachpoint="streamNode"]{
     padding-bottom:12px!important;
   }
   position:relative;
-  top:1px;
+  top: 0;
 }
 #listcustomizer > div{
   padding-left:0px!important;
@@ -228,10 +232,35 @@ a#withme{
 //Finished addressing #288
 
 
-// override a style from files 
+// override a style from files
 .filesList .lotusPaging + div[dojoattachpoint="streamNode"] {
   > div,
   table.lotusTable {
     margin-left: 0 !important;
+  }
+}
+
+// set up gallery modal
+div[id^="lconn_files_widget_PersonalFolderPicker_"] {
+  .lconnRightSide.lconnPickerCompact {
+    height: auto !important;
+  }
+  div[dojoattachpoint="streamNode"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  &[id$="_content_searchBar"] {
+    div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchDiv"] {
+      margin-top: 0 !important;
+      span.lotusBtnImg {
+        margin-right: 5px;
+        margin-top: 4px;
+      }
+    }
+  }
+  div[id^="lconn_share_widget_Breadcrumb"] {
+    div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
+      outline: 1px solid $brand-01;
+    }
   }
 }

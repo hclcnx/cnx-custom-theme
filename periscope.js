@@ -14,6 +14,7 @@
 	 * permissions and limitations under the License.
 */
 //
+
 var repoNameValue = getParams('periscope.js');
 //console.log('Repository name is ' + repoNameValue);
 
@@ -30,14 +31,7 @@ function periscope(){
                 "/mycontacts/",
                 "/contacts/"],
     "search":["/search/"],
-    "communities":["/ownedcommunities",
-                   "/mycommunities",
-                   "/followedcommunities",
-                   "/communityinvites",
-                   "/allcommunities",
-                   "/trashedcommunities",
-                   "/communitycreate",
-                   "/communityedit"],
+    "communities":["/communities/"],
     "blogs":["/blogs/"],
 //    "activities":["/activities/"],
     "home":["/social/",
@@ -45,9 +39,9 @@ function periscope(){
     "forums":["/forums/"],
     "metrics":["/metricssc/"],
     "wikis":["/wikis/"],
-    "settings":["/manage/account/user/",
+    "settings":["/manage/account/user",
                 "/news/",
-                "/manage/subscribers/showInviteGuestDialog/"]
+                "/manage/subscribers/showInviteGuestDialog/input"]
   };
 
   //This is the function that applies the style

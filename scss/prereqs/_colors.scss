@@ -20,7 +20,7 @@ $color-black: #000000; //Black
 // Secondary text and text on gray background
 $color-gray-60: #595859; //Gray 60
 // Labels
-$color-gray-50: #777677; //Gray 50
+$color-gray-50: #777677; //Gray 50 - does not pass contrast on gray backgrounds
 // Disabled states
 $color-gray-30: #969696; //Gray 30
 // Primary divider lines / separators, for example between files
@@ -53,7 +53,7 @@ $background-main-hover: $color-gray-1; // Background gray hover on white backgro
 // Background colors used in the side navigation on most pages
 $background-side: $color-gray-1; //Light gray Note: Use text-01 on this background to pass color contrast tests. //***$color-gray-1
 $background-side-hover: $color-gray-10; // Hover on secondary background color
-// Background color of navigation bar -- See prereqs/_navbar.scss
+// Background color of navigation bar -- See global/_navbar.scss
 // Background color of headers
 $background-header: $brand-02; //Background color of some headers
 $background-header-hover: $brand-03; //Accent color on headers
@@ -82,29 +82,35 @@ $checkbox-background-checked: $brand-01; // Checkbox background, checked
 // -----BUTTONS-----
 // Primary button - main call to action - Filled color button
 $btn-primary-fill: $brand-01; //Fill color
-$btn-primary-outline: $brand-01; //Outline color
-$btn-primary-text: $text-03; //Text color on filled button
+$btn-primary-outline: $brand-01; //Border color
+$btn-primary-text: $text-03; //Text color
+$btn-primary-icon: $color-white; //Icon color that appears on button, match text
 
-$btn-primary-fill-hover: $color-white; //Hover fill color
-$btn-primary-outline-hover: $brand-01; //Hover outline color
-$btn-primary-text-hover: $brand-01; //Hover text color
+$btn-primary-fill-hover: $color-white; //Fill color on hover
+$btn-primary-outline-hover: $brand-01; //Border color on hover
+$btn-primary-text-hover: $brand-01; //Text color on hover
+$btn-primary-icon-hover: $brand-01; //Icon color on hover, match text
 
 $btn-primary-fill-disabled: $disabled; //Disabled fill color
 $btn-primary-outline-disabled: $disabled; //Disabled fill color
 $btn-primary-text-disabled: $text-03; //Disabled text color on filled button
+$btn-primary-icon-disabled: $color-white; //Disabled icon color, match text
 
 // Secondary button - secondary call to action - Outlined button
 $btn-secondary-fill: $color-white; //Fill color
-$btn-secondary-outline: $brand-01; //Outline color
-$btn-secondary-text: $brand-01; //Text color on outline button
+$btn-secondary-outline: $brand-01; //Border color
+$btn-secondary-text: $brand-01; //Text color
+$btn-secondary-icon: $brand-01; //Icon color, match text
 
-$btn-secondary-fill-hover: $brand-01; //Hover fill color
-$btn-secondary-outline-hover: $brand-01; //Hover outline color
-$btn-secondary-text-hover: $text-03; //Text on filled hover
+$btn-secondary-fill-hover: $brand-01; //Fill color on hover
+$btn-secondary-outline-hover: $brand-01; //Border color on hover
+$btn-secondary-text-hover: $text-03; //Text color on hover
+$btn-secondary-icon-hover: $color-white; //Icon color on hover, match text
 
 $btn-secondary-fill-disabled: $color-white; //Disabled fill color
-$btn-secondary-outline-disabled: $disabled; //Disabled outline color
-$btn-secondary-text-disabled: $disabled; //Disabled text color on outline button
+$btn-secondary-outline-disabled: $disabled; //Disabled border color
+$btn-secondary-text-disabled: $disabled; //Disabled text color
+$btn-secondary-icon-disabled: $disabled; //Disabled icon color, match text
 
 //-----ICON COLORS-----
 $icon-default: $color-gray-60; // Primary icon color
@@ -112,6 +118,7 @@ $icon-brand-01: $brand-01; // Brand-01 colored icons
 $icon-brand-02: $brand-02; // Brand-02 colored icons
 $icon-white: $text-03; // Icons on dark backgrounds
 $icon-black: $text-01; // Text-colored icons
+
 // File type icons
 $icon-file-type-default: #777677;
 $icon-file-type-image: #40D5BB;
@@ -129,6 +136,7 @@ $icon-file-type-blog: #000000;
 $icon-file-type-activity: #000000;
 $icon-file-type-forum: #000000;
 $icon-file-type-bookmark: #000000;
+$icon-file-type-calendar: #000000;
 
 // Metrics data COLORS
 $data-bookmarks: #dc267f; // Bookmarks; Magenta 50

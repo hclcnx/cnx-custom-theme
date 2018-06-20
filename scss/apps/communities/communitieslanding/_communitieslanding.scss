@@ -9,26 +9,6 @@
 .lotusActionBar.lotusBtnContainer {
   overflow: visible !important;
 }
-span#createPlaceButton.lotusBtn.lotusBtnAction {
-  &, &:hover, &:focus {
-    border: none !important;
-    background: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  a img {
-    filter: none !important;
-    text-indent: -999px;
-    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
-    width: .5rem !important;
-    height: .5rem !important;
-    background-position: center center;
-    margin: 0 0 .25rem .25rem !important;
-  }
-  &:hover a img {
-    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-brand-01) !important;
-  }
-}
 
 input[type="submit"]#addCommunityButton {
   @include btnprimary;

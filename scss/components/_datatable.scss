@@ -88,6 +88,9 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 #topicList { //List of forum topics inside forum
   .lotusTable{
     @include datatable(2);
+    td.lotusFirstCell {
+      top: 0 !important;
+    }
   }
 }
 //Align labels on not sorting columns on list of forum topics inside forum
@@ -104,10 +107,10 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 #dfAnsweredQuestionList {
   .lotusTable tr.lotusSort {
     td:first-of-type { //Topic table header in forum list in community
-      padding:28px 16px 20px 46px!important;
+      padding:31px 16px 20px 46px!important;
     }
     td:nth-of-type(2) { //Forum table header in forum list in community
-      padding:28px 16px 20px 0px !important;
+      padding:31px 16px 20px 0px !important;
     }
   }
 }
@@ -129,9 +132,9 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
         border: 0 !important;
       }
     }
-    .commFocusML {
-      &, & span { color: $text-01 !important; }
-    }
+//    .commFocusML {
+//      &, & span { color: $text-01 !important; }
+//    }
     .lotusFirstCell,
     .lotusAlignRight.lotusLastCell {
       padding: 1rem 0 !important;
@@ -167,31 +170,51 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 }
 
-// ideation blog lists
-#ideatoins_main {
+//Various lists in communities
+#ideatoins_main, //ideation blogs list
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //survey list
+div#fullRecomm, //related communities list
+div#activityList { //activities list
   .lotusTable {
     margin-top: 1rem;
 
     > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid $border-separator !important;
     }
-  }
-  .lotusFirstCell,
-  .lotusAlignRight.lotusLastCell {
-    padding: 1rem 0 !important;
   }
 }
 
-// surveys list
-div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] {
+//ideation blog list specifics
+#ideatoins_main {
   .lotusTable {
-    margin-top: 1rem;
-
-    > tbody > tr:nth-child(2n-1):not(:first-child) {
-      border-top: 1px solid $border-separator !important;
+    .lotusFirstCell,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
     }
   }
-  td {
-    padding: 1rem 0 !important;
+}
+
+//Related communities and survey list specifics
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //survey list
+div#fullRecomm { //related communities list
+  .lotusTable {
+    td {
+      padding: 1rem 0 !important;
+    }
+  }
+}
+//Related communities - more space between comm avatar and content
+div#fullRecomm {
+  .lotusTable .lotusFirstCell {
+    width:48px !important;
+  }
+}
+
+//Activities list specifics
+div#activityList {
+  .lotusTable {
+    tr:not(.lotusDetails) td {
+      padding: 1rem 0 !important;
+    }
   }
 }

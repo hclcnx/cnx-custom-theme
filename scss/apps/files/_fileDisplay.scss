@@ -94,3 +94,11 @@
     }
   }
 }
+
+// File viewer dropdown arrow - 1174
+.ics-viewer .ics-viewer-details .ics-viewer-details-shelf h3 div.moreButton span.dijitArrowButtonInner {
+  background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+  background-position:100% 5px!important;
+  background-size:8px 8px!important;
+  background-repeat: no-repeat !important;
+ }

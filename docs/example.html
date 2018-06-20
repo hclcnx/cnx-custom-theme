@@ -21,7 +21,6 @@
 -->
 <body>
 
-
 <!--HEADER CONTAINER-->
 <div class="headerContainer subpage">
   <div class="aboutHeader">
@@ -138,6 +137,7 @@
       <li>periscope.js -- Javascript file that instruct Connections Customizer. URLs to apply changes to are in this file</li>
       <li>readme.md -- Points to where you can find complete documentation</li>
       <li>tmScript.js -- Tampermonkey script</li>
+      <li>vu1-include-css.json -- Sample JSON file that includes css files directly without use of Javascript</li>
   </ul>
 
   <h4>3. Understand why some scss files start with a "_" (underscore)?</h4>
@@ -159,15 +159,23 @@
     <li>Replace "YOURFILEPATHGOESHERE" with the full path to the cloned /cnx-custom-theme directory.</li>
     <ul>
       <li>Note: file:/// has 3 slashes.</li>
-      <li>See these examples:</li>
-    </ul>
-  </li>
-  <pre class="code">
+      <li>Mac example:
+        <pre class="code">
 ...
-// @require      file:///User/username/desktop/cnx-custom-theme/periscope.js
-// @resource     files file:///User/username/desktop/cnx-custom-theme/css/files.css
+// @require      file:///User/username/folder/cnx-custom-theme/periscope.js
+// @resource     files file:///User/username/folder/cnx-custom-theme/css/files.css
 // @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
 ...</pre>
+    </li>
+    <li>Windows example:
+      <pre class="code">
+...
+// @require      file:///C:/folder/cnx-custom-theme/periscope.js
+// @resource     files file:///C:/folder/cnx-custom-theme/css/files.css
+// @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
+...</pre>
+    </li>
+  </ul>
   <li>After you replace the file paths, save the script.</li>
   <li>Go to Connections Cloud and Files to see the changes included in this example.</li>
 </ol>

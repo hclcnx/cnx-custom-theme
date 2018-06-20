@@ -129,8 +129,13 @@ img.lconnPickerSourceLabelIconCommunity{
 }
 
 //This community tab updates
-div[id^="lconn_files_widget_CompactFilePicker"][id$="desp"] {
-	margin-bottom:5px !important;
+div[id^="lconn_files_widget_CompactFilePicker"] {
+  &[id$="desp"] {
+	  margin-bottom:5px !important;
+	}
+	input[type="checkbox"] {
+    margin-left: 2px !important;
+	}
 }
 div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] {
 	height:32px !important;
@@ -182,18 +187,28 @@ div.qkrMovePageList {
   width: 296px !important;
 }
 
+div.lconnMovePage {
+ 	display: inline-block;
+}
+
 .lotusui30 div.lconnMovePageColLeft,
 .lotusui30 div.lconnMovePageColRight {
-  // display:inline-block !important;
-  // width:260px;
+   display:inline-block !important;
+   width: 296px !important;
 }
 .lotusui30 div.lconnMovePageColRight {
-  // margin-left:20px !important;
+   margin-left: 20px !important;
 }
 div.qkrMovePageList,
 tr.qkrMovePageList,
 input[id="lconn_share0_widget_Dialog_0mysearchbox"] {
-  // width:260px !important;
+  width: 296px !important;
+}
+
+div[id="lconn_share0_widget_Dialog_0"] {
+  .lotusDialogBorder > .lotusForm > div {
+    padding-right: 1rem !important;
+  }
 }
 
 #lconn_btn_browse_files{
@@ -244,9 +259,9 @@ div.lconn-survey_dialog {
 	border-top:none!important;
 }
 .lotusUploadFile{
-	tbody tr:nth-child(3) > td:not(.lotusFormLabel){
-		margin-bottom:20px!important;
-	}
+  tbody tr:nth-child(3) > td:not(.lotusFormLabel){
+    margin-bottom:20px!important;
+  }
 	.lotusArrow + a:focus{
 		outline:none!important;
 	}
@@ -262,13 +277,28 @@ form.lotusDialog.lotusForm{
 }
 
 // profile "share a file" modal
-.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
-	width: 100% !important;
+div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
+  width: 100% !important;
+  font-weight: 400 !important;
+  [id^="lconn_files_widget_CompactFilePicker_"],
+  div.title,
+  div.lconnEmptyMsg {
+    font-weight: 400 !important;
+  }
+  input.lotusText {
+    color: $text-01 !important;
+  }
 
-	.switchContainer, .tabbedSwitch {
-		width: 100% !important;
-		margin: 0 !important;
-	}
+  .switchContainer, .tabbedSwitch {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .lconnBreadcrumb {
+    font-weight: 400 !important;
+    .lconnBreadcrumbdiv:last-child .lconnBreadcrumbnode {
+      font-weight: 400 !important;
+    }
+  }
 }
 
 // File Picker: Add Files and Share a File dialogs
@@ -291,7 +321,7 @@ form.lotusDialog.lotusForm{
 // file upload sharing
 // #lconn_files_widget_UploadFile_0_shareWithLabel
 [id^="lconn_files_widget_UploadFile_"] {
-	display: inline-block !important;
+  display: inline-block !important;
 }
 
 //fixes for File Preview -> About -> Get Links
@@ -426,17 +456,21 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 			}
 		}
 	}
-	.lotusFormFieldRow:nth-child(3), .lotusFormFieldRow:nth-child(4) {
-		td:last-child {
-			position: relative;
-			overflow: visible;
-			a {
-				position: absolute;
-				right: 0;
-				top: -3.5rem;
-			}
-		}
-	}
+  .lotusFormFieldRow:nth-child(3), .lotusFormFieldRow:nth-child(4) {
+    td:last-child {
+      position: relative;
+      overflow: visible;
+      a {
+        position: absolute;
+        right: 0;
+        top: -3.5rem;
+      }
+      //Add a file to a status update dialog
+      input[id^="lconn_files_widget_UploadFile_"][id$="_setEncrypt"] ~ a {
+        top: -2px !important;
+      }
+    }
+  }
 	.lotusUploadFile .lotusFormFieldRow:nth-child(3) td:last-child a {
 		position: relative;
 		top: auto;
