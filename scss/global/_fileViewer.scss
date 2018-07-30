@@ -1,6 +1,6 @@
 /*Globalization Changes*/
 .ics-viewer .manualCancel:hover span{
-	color:$brand-01!important;
+	color: $text-04 !important;
 }
 .ics-viewer{
 	 @import "./components/components";
@@ -8,7 +8,7 @@
 /*Globalization Changes END*/
 
 .versionNumber{
-	color:$brand-01 !important;
+	color: $text-04 !important;
 }
 .ics-viewer-banner{
 	background-color: $background-main !important;
@@ -210,7 +210,7 @@ ul.ics-viewer-tabs{
 	.cke_contents{
 		background-color:$background-side !important;
 		border:none!important;
-		border-bottom:2px solid $brand-01 !important;
+		border-bottom: 2px solid $border-field-focus !important;
 	}
 }
 
@@ -247,18 +247,16 @@ ul.ics-viewer-tabs{
 	}
 	.content{
 		a.fn.url{
-			color: $brand-01 !important;
+			color: $text-04 !important;
 		}
 	}
 	//sharing tab
 	.header1{
 		font-weight:400!important;
-		a{
-			color:$brand-01 !important;
-		}
 	}
+	.header1 a,
 	.targetUser span a{
-		color:$brand-01 !important;
+		color: $text-04 !important;
 	}
 	.comment .header1{
 		font-weight:500!important;
@@ -299,10 +297,10 @@ ul.ics-viewer-tabs{
 }
 .ics-viewer-upload-new-version,.panelFeed a span,
 .actionContainer span{
- color:$brand-01 !important;
+ color: $text-04 !important;
  &:hover{
 	 text-decoration:underline!important;
-	 text-decoration-color:$brand-01 !important;
+	 text-decoration-color: $text-04 !important;
  }
 }
 .panelFeed a span:hover{
@@ -341,7 +339,7 @@ ul.ics-viewer-tabs{
 		a.manualCancel:hover:not([disabled]), a.manualAdd:hover:not([disabled]),
 		.manualCancel:hover span, .manualAdd:hover span{
 			background-color:transparent !important;
-			color:$brand-01 !important;
+			color: $text-04 !important;
 		}
   }
 }
@@ -360,17 +358,17 @@ div[data-dojo-attach-point="descriptionContainer"],
 div[data-dojo-attach-point="linksContainer"],
 div[data-dojo-attach-point="tagsContainer"]{
 	.header2 a{
-		color:$brand-01 !important;
+		color: $text-04 !important;
 	}
 	.header2 a:hover{
 		text-decoration:underline!important;
-		text-decoration-color:$brand-01 !important;
+		text-decoration-color: $text-04 !important;
 	}
 }
 div[data-dojo-attach-point="downloadsContainer"]{
 	.header1 a:hover{
 		text-decoration:underline!important;
-		text-decoration-color:$brand-01 !important;
+		text-decoration-color: $text-04 !important;
 	}
 	.header2 a{
 		color: $text-01 !important;
@@ -378,11 +376,11 @@ div[data-dojo-attach-point="downloadsContainer"]{
 }
 ul[data-dojo-attach-point="tagList"]{
 	li a{
-		color:$brand-01 !important;
+		color: $text-04 !important;
 	}
 	li a:hover{
 		text-decoration:underline!important;
-		text-decoration-color:$brand-01 !important;
+		text-decoration-color: $text-04 !important;
 	}
 }
 //updating the prev/next buttons
@@ -429,7 +427,7 @@ ul[data-dojo-attach-point="tagList"]{
 			background-color:$background-side!important;
 			border:none!important;
 			color:black!important;
-			border-bottom:3px solid $brand-01!important;
+			border-bottom: 3px solid $border-field-focus !important;
 		}
 	}
 }
@@ -458,7 +456,7 @@ ul[data-dojo-attach-point="tagList"]{
  		border:none!important;
  		padding-bottom:8px!important;
  	&:focus{
- 			border-bottom:1px solid $brand-01!important;
+ 			border-bottom: 1px solid $border-field-focus !important;
  			outline:none!important;
  		}
  		background:transparent!important;
@@ -474,7 +472,7 @@ ul[data-dojo-attach-point="tagList"]{
  				background:white!important;
  				border-bottom:1px solid $color-gray-10!important;
  				&:focus{
- 					border-color:$brand-01;
+ 					border-color: $border-field-focus;
  					outline:none!important;
  				}
  				padding:4px!important;
@@ -483,16 +481,6 @@ ul[data-dojo-attach-point="tagList"]{
  	}
 }
 
-// fix file uploader
-.ics-viewer .ics-thumbnailwidget-container,
-.ics-viewer .ics-newversionwidget-container {
-	form input[type="file"] {
-		@include fileinput;
-	}
-}
-.lotusDialogWrapper form ._qkrDialogCompact input[type="file"].qkrFile {
-	@include fileinput;
-}
 //fix for issue 460
 .ics-viewer{
 	.panelContent.panelFeed{
@@ -503,7 +491,8 @@ ul[data-dojo-attach-point="tagList"]{
 //Styling for viewer nav bar icons
 
 #body .ics-viewer .ics-viewer-toolbar, body.ics-viewer-open .ics-viewer-toolbar {
-	.ics-viewer-action-upload.ics-viewer-splitbutton{
+	.ics-viewer-action.ics-viewer-splitbutton,
+	.ics-viewer-action.ics-viewer-action-splitmenu,{
 		margin-top:9px!important;
 	}
 	.ics-viewer-action-edit.ics-viewer-splitbutton,
@@ -524,7 +513,7 @@ ul[data-dojo-attach-point="tagList"]{
 		width:24px!important;
 		padding:2px!important;
 		&:focus,&.dijitDropDownButtonFocused{
-			outline:1px solid $brand-01!important;
+			outline: 1px solid $border-focus !important;
 		}
 		img,.dijitButtonNode,.dijitDownArrowButton,.dropdown-menu-icon{
 			height:100%!important;
@@ -582,7 +571,7 @@ ul[data-dojo-attach-point="tagList"]{
 .ics-viewer-title-name-container{
 	input:focus,
 	.ics-viewer-cancel:focus{
-		outline:1px solid $brand-01!important;
+		outline: 1px solid $border-focus !important;
 		outline-offset:2px!important;
 	}
 	overflow:auto!important;

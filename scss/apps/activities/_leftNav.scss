@@ -1,0 +1,104 @@
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame.activities .lotusMain {
+  .lotusColLeft,
+  #activitypage,
+  #recentupdatesid {
+    position:relative!important;
+    top:-15px!important;
+    margin-left:0px!important;
+    box-sizing: border-box;
+    .lotusMenu {
+      width:240px;
+      position:relative!important;
+      top:5px!important;
+      padding-top:1rem!important;
+      .lotusBottomCorner:not(:first-child) {
+        div[dojoattachpoint="prioritizedPane_AP"],
+        div[dojoattachpoint="organizationPane_AP"],
+        div[dojoattachpoint="publicPane_AP"],
+        div[dojoattachpoint="sectionsPane_AP"] {
+          h3 {
+            box-sizing:border-box;
+            margin-top:0!important;
+            margin-bottom:0!important;
+            padding:14px 24px!important;
+            padding-left:39px!important;
+            font-weight: 400 !important;
+            &:hover{
+              background-color:$background-side-hover!important;
+              cursor:pointer;
+            }
+          }
+          ul li {
+            padding-left:49px!important;
+            &.lotusSelected {
+              padding-left: 45px !important;
+              border-left: 4px solid $border-selected !important;
+              a {
+                font-weight:700!important;
+                border: none !important;
+              }
+            }
+          }
+        }
+        div[dojoattachpoint="organizationPane_AP"] {
+          #dashNavPanel-orgSectionAria {
+            overflow: hidden;
+            white-space: pre-line;
+            text-overflow: ellipsis;
+            display: block;
+          }
+        }
+        div[dojoattachpoint="newSectionLink_AP"] {
+          margin: 0px 0px;
+          a {
+            @include font-size($bodylink...);
+            box-sizing: border-box;
+            margin: 0px 0px !important;
+            padding: 14px 24px !important;
+            padding-left: 39px !important;
+          }
+        }
+        ul li {
+          box-sizing:border-box;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding: 14px 24px !important;
+          padding-left: 39px !important;
+
+          &.lotusSelected {
+            padding-left:35px!important;
+            transition:border 0.23s ease, padding 0.23s ease;
+            border-left: 4px solid $border-selected !important;
+            a {
+              font-weight:700!important;
+            }
+          }
+          a {
+            padding:0!important;
+            margin:0!important;
+            font-weight:400!important;
+            &:hover,&:focus{
+              border-color:transparent!important;
+              text-decoration: none !important;
+            }
+          }
+          &:hover {
+            background-color:$background-side-hover!important;
+            cursor:pointer;
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+//Tags section of left nav
+.TagCloud {
+  .lconnTagCloudFilter,
+  .lconnTagFilterActivity {
+    .lconnTagCloudContent.lotusSectionBody {
+      padding-left: 42px !important;
+      padding-right: 24px !important;
+    }
+  }
+}

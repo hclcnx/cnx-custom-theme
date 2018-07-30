@@ -5,9 +5,16 @@
   margin-top: $navbar-height !important; //Height of navbar
 }
 
-.ics-scbanner{
+.ics-scbanner {
   background-color: $navbar-bg-color !important;
   height: $navbar-height !important; //Height of navbar
+
+  //Help reduce jumping on load
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+
   //Text on the navbar
   &>div.navmenu, &>a{ //Words on navbar directly inside .ics-scbanner
     font-size:$navbar-font-size;
@@ -16,10 +23,10 @@
     text-decoration:none;
     -webkit-font-smoothing:antialiased!important;
     &.selected:after {
-      border-bottom: 4px solid $navbar-selected;
+      border-bottom: $navbar-selected-height solid $navbar-selected-color;
     }
     &:focus:before {
-      border: 1px solid $navbar-focus !important;
+      border: 1px solid $navbar-focus-color !important;
     }
 	}
   //Menus and Submenus from navbar entries - Submenus only appear on narrow window
@@ -34,8 +41,8 @@
     }
     &> li a:focus,
     &> li div.submenu:focus {
-      border-bottom: 1px solid $brand-01 !important;
-      border-top: 1px solid $brand-01 !important;
+      border-bottom: 1px solid $border-focus !important;
+      border-top: 1px solid $border-focus !important;
     }
     &> li a.selected {
       border-left: 4px solid $border-selected !important;
@@ -48,7 +55,7 @@
   &> a:hover::after,
   &> button:hover::after,
   &> .navmenu:hover::after {
-    border-bottom: 2px solid $navbar-hover !important;
+    border-bottom: $navbar-hover-height solid $navbar-hover-color !important;
   }
 }
 
@@ -56,12 +63,12 @@
 .ics-scbanner {
   //User icon
   .user .avatar{
-    height: 1.75rem!important;
-	  width: 1.75rem!important;
+    height: $navbar-avatar-height !important; //1.75rem!important;
+	  width: $navbar-avatar-width !important; //1.75rem!important;
   }
   //Help Icon
   .help, #headerHelpLi a {
-    background-position: center !important; //4px 10px!important;
+    background-position: center !important;
     background-repeat:no-repeat!important;
     background-image:svg-url-with-replaced-fill($svg-help-icon, '#000000', $icon-white) !important;
     background-size:20px 20px !important;

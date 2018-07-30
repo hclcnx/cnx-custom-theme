@@ -1,6 +1,6 @@
 //======MIXINS=========
 
-//======BUTTONS=========
+//======BUTTONS MIXIN=========
 // Basic button styling
 @mixin btnbasics {
   border-radius:$border-radius-buttons !important;
@@ -92,13 +92,13 @@
   }
 }
 
-//======BACKGROUND OPACITY=========
+//======BACKGROUND OPACITY MIXIN=========
 @mixin background-opacity($color, $opacity: 1) {
     background: $color!important; /* The fallback */
     background: rgba($color, $opacity)!important;
 }
 
-//======SELECT=========
+//======SELECT MIXIN=========
 @mixin select {
 		font-size: $input-size !important;
 		-webkit-appearance: none !important;
@@ -131,7 +131,7 @@
     }
 }
 
-//======TEXTAREA=========
+//======TEXTAREA MIXIN=========
 @mixin textarea {
 	background-color:$background-side !important;
 	border:none!important;
@@ -147,17 +147,15 @@
 	}
 }
 
-//======TEXTINPUT=========
+//======TEXTINPUT MIXIN=========
 @mixin textinput {
-	//height:2.5rem!important;
   line-height: 1.5 !important;
-	min-width:10rem!important;
 	padding:0!important;
 	background:none!important;
 	border:none!important;
 	border-bottom:1px solid $color-gray-10 !important;
 	font-size: $input-size !important;
-	padding-right:2rem!important;
+	padding-right:1rem!important;
   padding-bottom: .375rem !important;
 	box-sizing: border-box !important;
 	&:focus, .dijitTextBoxFocused {
@@ -167,7 +165,7 @@
 	}
 }
 
-//======FILEINPUT=========
+//======FILEINPUT MIXIN=========
 @mixin fileinput {
 	@include textinput;
 	cursor: pointer;
@@ -180,13 +178,12 @@
 	}
 }
 
-//======LINKS=========
-/* Link Mix-ins */
+//======LINK MIXIN=========
 @mixin link-color($color) {
   @if       $color == inherit { color: inherit !important; }
   @else if  $color == light   { color: $text-03 !important; }
   @else if  $color == dark    { color: $text-01 !important; }
-  @else                       { color: $brand-01 !important; }
+  @else                       { color: $text-04 !important; }
 }
 
 @mixin link-underline($color) {
@@ -200,7 +197,7 @@
                               { text-decoration-line: underline !important;
                                 text-decoration-color: currentColor !important; }
   @else                       { text-decoration-line: underline !important;
-                                text-decoration-color: $brand-01 !important; }
+                                text-decoration-color: $text-04 !important; }
 }
 
 @mixin link-override() {
@@ -270,7 +267,7 @@
   }
 }
 
-/* Large close icon */
+//======CLOSE ICON ON DIALOGS MIXIN=========
 /* Note - May also need to include a display:none on an existing button img */
 @mixin bx--modal-close() {
   background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default)!important;
@@ -286,7 +283,7 @@
   }
 }
 
-/* Tag mixin */
+//======TAG MIXIN=========
 @mixin tags($color: gray) {
   color: $text-01 !important;
   border-radius: $border-radius-tags !important;
@@ -325,7 +322,7 @@
   }
 }
 
-//Datatable
+//======DATATABLE MIXIN=========
 @mixin datatable($multiplier: 1) {
   //Table header
   //Table header text size, weight, color, transform
@@ -351,7 +348,7 @@
     border-bottom:1px solid $border-selected;
 
     //header
-    td a{
+    td a, th[id^="qkrSort"] a, th a {
       padding:8px 16px!important;
       border:1px solid transparent!important;
       $distance-x: calc(100% - 7px);
@@ -360,12 +357,12 @@
       &:hover,&:focus{
         text-decoration:none!important;
         border-radius:$border-radius-tabs!important;
-        border-color:$border-selected!important;
+        border-color: $btn-secondary-outline-hover !important;
       }
 
       &:hover{
-        background-color:$background-table-header-hover!important;
-        color:$text-03!important;
+        background-color: $btn-secondary-fill-hover !important;
+        color:$btn-secondary-text-hover!important;
       }
 
       &.lotusDescending,a.lotusAscending{
@@ -376,7 +373,7 @@
       &.lotusDescending{
         background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
         &:hover{
-          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
         }
       }
 
@@ -442,6 +439,36 @@
   }
 }
 
+//======GRADUATED FLAG=========/
+@mixin graduatedIdea {
+  padding:8px 12px !important;
+  width:auto !important;
+  display:inline-block;
+  border-color:$brand-03;
+  background-color:$brand-03;
+  color: $text-01 !important;
+  font-weight:500;
+  max-width:70px;
+  @include font-size($caption...);
+  &:before,&:after {
+    content:'';
+    position:absolute;
+    border-bottom:40px solid $brand-03;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    top:16px;
+    left:-14px;
+    transform:rotate(-142deg);
+    z-index:-1;
+  }
+  &:after {
+    left:auto;
+    right:-14px;
+    transform:rotate(142deg);
+  }
+}
+
+//======MESSAGE MIXIN=========
 // Style of notification message for warnings, success, errors, info
 @mixin message {
 	border-radius:$border-radius-message !important;
@@ -454,6 +481,7 @@
 	}
 }
 
+//======TABLE HEADER MIXIN=========
 @mixin tableHeader {
 
   color:$text-02!important;

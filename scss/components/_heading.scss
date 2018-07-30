@@ -23,7 +23,8 @@
 #dfAnsweredQuestionList h4, //forum answered topics list
 #ideatoins_main h4, //ideation blog list
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysListFullpage_"] h4, //surveys list
-#fullRecomm h4 { //recommended communities list
+#fullRecomm h4, //recommended communities list
+.lotusContent h4.blogsWrapText { //onprem blogs list 
   @include font-size($header...);
 }
 

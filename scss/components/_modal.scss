@@ -24,7 +24,7 @@
 		margin:0!important;
 		margin-top:16px!important;
 		background-color: $background-main !important;
-		padding: 1rem 3rem !important
+		padding: 1rem 2rem 2rem 2rem !important
 	}
 }
 .lconnPickerDialogBody .lotusRightSide.lotusForm,
@@ -50,24 +50,10 @@
 .lotusPaletteClose {
 	// need to check if this works in all cases;
 	@include bx--modal-close;
-	// if above works, then remove the commented section below
-  /* background-attachment: scroll!important;
-  background-clip: border-box!important;
-  background-color: transparent !important;
-	background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default)!important;
-  background-origin: padding-box!important;
-  background-position-x: center!important;
-  background-position-y: center!important;
-  background-repeat: no-repeat!important;
-  background-size: 12px 12px!important;
-  height: 12px!important;
-  width: 12px!important;
-  top:1rem!important;
-  right:1rem!important;
-	&:focus {
-		outline:1px solid $icon-default!important;
-		outline-offset: 1px!important;
-	} */
+}
+
+.lotusDialogBorder > .lotusDialog > div > .lotusDialogHeader > .lotusDialogClose {
+	right: 0 !important;
 }
 
 //File Picker Dialogs (add a file, upload, share a file, link to a file)
@@ -151,7 +137,7 @@ div[dojoattachpoint="streamNode"] {
 .lotusDialogHeader,
 .importHeader {
 	background-color: $background-main !important;
-	padding:0!important;
+	padding: 0 !important;
 	margin-bottom:1.5rem!important;
 	padding-top:2.75rem!important;
 	color: $text-01 !important;
@@ -205,11 +191,11 @@ input[id="lconn_share0_widget_Dialog_0mysearchbox"] {
   width: 296px !important;
 }
 
-div[id="lconn_share0_widget_Dialog_0"] {
+/*div[id^="lconn_share0_widget_Dialog_"] {
   .lotusDialogBorder > .lotusForm > div {
     padding-right: 1rem !important;
   }
-}
+}*/
 
 #lconn_btn_browse_files{
   @include btnprimary
@@ -231,6 +217,7 @@ span[id^="lconn_share_widget_LotusDialog_"],
 
 // Survey settings dialog
 div.lconn-survey_dialog {
+	width: 600px !important;
   div.lotusDialogHeader {
     padding-top: 1.25rem !important;
     margin-bottom: 0 !important;
@@ -249,9 +236,32 @@ div.lconn-survey_dialog {
     vertical-align: top !important;
   }
 }
+//Wiki dialog
 .lotusDialogContent._qkrDialogCompact{
 	overflow:initial!important;
+	td.lotusFormLabel { //1489: Spacing in wiki insert image attachment dialog
+		padding-left: 0 !important;
+	}
+	#image_attachmentList div[dojoattachpoint="streamNode"] {
+		padding-top: 0px !important;
+		label, span {
+			color: $text-01 !important;
+		}
+		.entry-title {
+			cursor: pointer !important;
+			img {
+				margin: 0px 6px;
+			}
+		}
+		tr.qkrHover,
+		tr.qkrSelected {
+			background-color: inherit !important;
+			cursor: default !important;
+		}
+	}
 }
+
+
 .pickerDropfilesVerticalPrompt{
 	width:calc(100% - 4px)!important;
 }
@@ -360,6 +370,11 @@ div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
 	padding-right:0px !important;
 }
 
+//1451: Add spacing between tabs and fields on insert image dialog.
+div[id^="lconn_share"][id*="widget_Dialog"] .lotusDialog .lotusDialogContent .lotusFormTable {
+  margin-top: 15px;
+}
+
 // "import contacts" modal
 .sc {
 	.dialogImportList {
@@ -379,7 +394,7 @@ div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
 			box-shadow: none !important;
 		}
 		.scImport .sourceIconHover {
-			outline: 1px solid $brand-01;
+			outline: 1px solid $border-focus;
 		}
 		.dialogPanel {
 			color: $text-01 !important;
@@ -416,7 +431,9 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchBar"] {
 	min-height: 3rem;
 	margin-bottom: 1rem;
 }
-div[id^="lconn_files_widget_CompactFolderPicker_"] {
+.lotusDialog div[id^="lconn_files_widget_CompactFolderPicker_"] {
+	width: 100% !important;
+  margin: 0 0 1.5rem 0 !important;
 	+ .lotusDialogFooter {
 		padding: 0 !important;
 		background-color: transparent !important;

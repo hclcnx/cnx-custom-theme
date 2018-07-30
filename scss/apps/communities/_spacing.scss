@@ -42,7 +42,7 @@
 }
 
 //Blog Changes overwrite the wiki counterpart
-.blog{
+.blog {
   .lotusMain{
     padding-top:0!important;
   }
@@ -66,18 +66,16 @@
   }
   #lotusColRight{
     margin-left:48px!important;
+    .lotusSection > h2 {
+      padding-left: 0 !important;
+    }
   }
-}
-//Blog jump to page override textinput
-.blog input[type="text"]#jumpToPage_text {
-  min-width:46px !important;
-  padding-right:0 !important;
 }
 
 //Wiki, images in pages
 .qkrWikiPreview {
   img:not(.lconn-ftype16) {
-    max-width:100;
+    max-width: 100%;
   }
 }
 

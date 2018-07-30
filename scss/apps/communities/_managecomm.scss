@@ -37,9 +37,6 @@
   
   // Community profile:
   #initialFormContainer {
-    input[type="file"] {
-      @include fileinput;
-    }
     input[type="checkbox"] + label {
       display: inline-block;
       vertical-align: top;

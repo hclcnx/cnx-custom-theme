@@ -47,3 +47,16 @@
 .lconnCompactMessage.lotusMessageContainer {
 	width:auto !important;
 }
+
+// add members message
+#membersmessages {
+  .memberMessage {
+    outline-color: transparent !important;
+  }
+}
+// remove focus outline from recent updates message
+#RecentUpdates {
+	.lotusMessageBody:focus {
+		outline: none !important;
+	}
+}

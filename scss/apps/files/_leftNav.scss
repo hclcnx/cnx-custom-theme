@@ -11,7 +11,7 @@
       &.lotusSelected,
       &:focus{
         padding-left:calc(#{$h-padding} - #{$b-thickness})!important;
-        border-left:$b-thickness solid $brand-01 !important;
+        border-left:$b-thickness solid $border-selected !important;
         transition:$border-slide;
       }
     }
@@ -33,7 +33,7 @@
       }
       .lotusClickable.lotusSelected{
           padding-left:calc((#{$h-padding} + #{$initial-l-padding}) - #{$b-thickness})!important;
-          border-left:$b-thickness solid $brand-01 !important;
+          border-left:$b-thickness solid $border-selected !important;
           transition:$border-slide;
       }
       .lotusMenuSubsection{
@@ -95,15 +95,16 @@
 }
 .headerSelector.selected::before{
   transition:border 0.23s ease-in;
-  border-left:$b-thickness solid $brand-01 !important;
+  border-left:$b-thickness solid $border-selected !important;
 }
 
 #menu_myfolders_childContainer{
   margin-left:55px!important;
   > div .lconnFilesTree{
-      margin-left:6px!important;
+    margin-left:6px!important;
   }
 }
+
 #menu_allfiles_childContainer{
   > div{
     margin:0!important;
@@ -117,7 +118,7 @@
     &.lotusSelected{
       padding-left:calc(((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness}) + 21px)!important;
       transition:$border-slide;
-      border-left:4px solid $brand-01 !important;
+      border-left:4px solid $border-selected !important;
       a{
         margin-left:0!important;
       }
@@ -149,7 +150,7 @@
   padding-top:calc(#{$v-padding})!important;
   padding-bottom:calc(#{$v-padding})!important;
   padding-left:calc((#{$initial-l-padding} + #{$h-padding})) !important;
-  border-color:$brand-01 !important;
+  border-color:$border-selected !important;
   height:20px!important;
   a{
     border-top:none!important;
@@ -159,7 +160,6 @@
     line-height:1.5!important;
     span{
       line-height:1.5!important;
-      color:$text-01 !important;
     }
   }
   &.lotusSelected{
@@ -204,9 +204,16 @@
 }
 
 //A11Y arrow focus state
-#body #lotusColLeft #lconnSideNavBody .lotusArrow.lotusSprite:focus{
-  outline:1px solid black!important;
+#body #lotusColLeft #lconnSideNavBody {
+  .lotusHeading {
+    color: $text-01;
+    @include font-size($body...);
+  }
+  .lotusArrow.lotusSprite:focus{
+    outline:1px solid black!important;
+  }
 }
+
 #pinnedfiles:focus,
 #favoritefolders:focus,
 #trash:focus{
@@ -235,13 +242,13 @@
   #menu_fileSync_childContainer,
   #menu_allfolders {
     .tree .header .title {
-      display: inline-block;
       word-wrap: break-word;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       max-width: calc(100% - 40px) !important;
       box-sizing: border-box;
+      float: none !important;
     }
   }
 }

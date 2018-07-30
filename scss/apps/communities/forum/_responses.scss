@@ -91,7 +91,7 @@
         background-color:$background-side;
         padding:10px 10px;
         border-radius:0px $border-radius-tour $border-radius-tour 0px;
-        border-left-color:$brand-01;
+        border-left-color: $border-focus;
       }
     }
   }
@@ -160,7 +160,7 @@ div[id^="lconn_core_TempTabbedDialog_"] {
   .dijitContentPane, .lotusFormFooter {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    
+
     label {
       margin-left: 0 !important;
     }

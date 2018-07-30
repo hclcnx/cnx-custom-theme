@@ -92,14 +92,6 @@ div.lotusPostIndicator a {
     outline: 1px solid currentColor !important;
   }
 }
-//Sort list links - active sort is dark
-.lotusContent {
-  .lotusSort {
-    a[aria-pressed="true"]:not(:hover) {
-      @include link-color(dark);
-    }
-  }
-}
 
 // allow ckeditor links to be not bold
 #wikiContentDiv.qkrWikiPreview,
@@ -115,15 +107,30 @@ div.lotusPostIndicator a {
 }
 
 // Status updates like - comment - repost alignment
-div.activityStreamNewsItemContainer {
-  div.lotusLikeConnector {
-    margin-bottom: 0 !important;
-    padding-right: 3px !important;
-  }
-  ul.lotusInlinelist li {
-    vertical-align: unset !important;
-    &:before {
-      margin-top: 4px !important;
+#activityStreamMain {
+  div.activityStreamNewsItemContainer {
+    div.lotusLikeConnector {
+      margin-bottom: 0 !important;
+      padding-right: 3px !important;
+    }
+    ul.lotusInlinelist {
+      li {
+        vertical-align: unset !important;
+        &:before {
+          margin-top: 4px !important;
+        }
+      }
+      li.savethisAction,
+      li.stopfollowingAction {
+        &:before {
+          margin-top: 7px !important;
+        }
+      }
     }
   }
+}
+
+// 1635: Correct font-weight in Bookmarks widget for Add a Bookmark and View All links 
+#bookmarksWidgetContainer a {
+  font-weight:600 !important;
 }

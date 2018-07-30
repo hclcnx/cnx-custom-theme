@@ -93,6 +93,15 @@
       outline-offset: 1px !important;
     }
   }
+  .filesList,
+  #list  {
+    ul.lotusActions {
+      float: right;
+      li:last-child {
+        padding: 0 0 0 7px !important;
+      }
+    }
+  }
 }
 
 // File viewer dropdown arrow - 1174
