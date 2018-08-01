@@ -7614,7 +7614,7 @@ span[class*="Bookmarks"] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 width=%2248px%22 height=%2248px%22 viewBox=%220 0 48 48%22%3E%3Cpath fill=%22%23000000%22 d=%22M35.966,0 L12.034,0 C8.702,0 6,2.68 6,5.986 L6,48 L23.952,30 L42,48 L42,5.986 C42,2.68 39.298,0 35.966,0 M35.966,2 C38.19,2 40,3.788 40,5.986 L40,43.18 L25.366,28.584 L23.95,27.172 L22.536,28.588 L8,43.162 L8,5.986 C8,3.788 9.81,2 12.034,2 L35.966,2%22%3E%3C/path%3E%3C/svg%3E") !important; }
 
 img[class*="Calendar"],
-span[class*="Calendar"] {
+span[class*="Calendar"]:not([class*="dijitCalendar"]) {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=%220 0 48 40%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath fill=%22%23000000%22 d=%22M44,4 L40,4 L40,0 L38,0 L38,4 L10,4 L10,0 L8,0 L8,4 L4,4 C1.790861,4 2.705415e-16,5.790861 0,8 L0,36 C2.705415e-16,38.209139 1.790861,40 4,40 L44,40 C46.209139,40 48,38.209139 48,36 L48,8 C48,5.790861 46.209139,4 44,4 Z M46,36 C46,37.1045695 45.1045695,38 44,38 L4,38 C2.8954305,38 2,37.1045695 2,36 L2,16 L46,16 L46,36 Z M46,14 L2,14 L2,8 C2,6.8954305 2.8954305,6 4,6 L8,6 L8,10 L10,10 L10,6 L38,6 L38,10 L40,10 L40,6 L44,6 C45.1045695,6 46,6.8954305 46,8 L46,14 Z%22%3E%3C/path%3E%3C/svg%3E") !important; }
 
 .icSearchResultsPage .iconsFileTypes64,

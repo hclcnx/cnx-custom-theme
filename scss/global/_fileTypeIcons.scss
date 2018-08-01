@@ -294,7 +294,7 @@ span[class*="Bookmarks"] {
   background-image:svg-url-with-replaced-fill($svg-icon-bookmark, '#000000', $icon-file-type-bookmark) !important;
 }
 img[class*="Calendar"],
-span[class*="Calendar"] {
+span[class*="Calendar"]:not([class*="dijitCalendar"]) {
   background-image:svg-url-with-replaced-fill($svg-icon-calendar, '#000000', $icon-file-type-calendar) !important;
 }
 
