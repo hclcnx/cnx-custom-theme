@@ -179,7 +179,7 @@ body.meetingBody:not(.cke_editable),
   }
   .lotusWidget_3columnsWithBannerTopMenuLayout .lotusMain,
   .lotusWidget_3columnsTopMenuLayout .lotusMain {
-    width: calc(100% - 80px);
+    width: calc(100% - 80px) !important;
     max-width: 1360px !important;
   }
 }
@@ -295,10 +295,10 @@ body.meetingBody:not(.cke_editable),
       max-width: calc(50% - 16px);
       box-sizing: border-box;
     }
-  }  
+  }
   .lotusWidget_3columnsTopMenuLayout #contentArea,
   .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -321,10 +321,17 @@ body.meetingBody:not(.cke_editable),
 // communities page bug fix
 div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
   &, table, tbody, tr {
-    width: 100%;
+    width: 100% !important;
     max-width: 100%;
     display: block;
   }
+}
+
+// forum widget overflow fix
+.widgetContainer .forumPagedList h4.lotusBreakWord.lotusEllipsis {
+  width: auto !important;
+  white-space: normal !important;
+  line-height: 1.2em;
 }
 
 

@@ -8002,7 +8002,7 @@ body.meetingBody:not(.cke_editable),
 
   .lotusWidget_3columnsWithBannerTopMenuLayout .lotusMain,
   .lotusWidget_3columnsTopMenuLayout .lotusMain {
-    width: calc(100% - 80px);
+    width: calc(100% - 80px) !important;
     max-width: 1360px !important; } }
 @media (min-width: 1061px) and (max-width: 1360px) {
   .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig,
@@ -8096,7 +8096,7 @@ body.meetingBody:not(.cke_editable),
 
   .lotusWidget_3columnsTopMenuLayout #contentArea,
   .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
-    width: 100%; } }
+    width: 100% !important; } }
 @media (max-width: 1060px) {
   .blog #entries .lotusTable.blogsFixedTable td.lotusFirstCell[style="width:95px"] {
     padding-left: 0 !important;
@@ -8112,9 +8112,14 @@ body.meetingBody:not(.cke_editable),
     font-size: 1rem !important;
     font-weight: 600 !important; } }
 div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] table, div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] tbody, div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] tr {
-  width: 100%;
+  width: 100% !important;
   max-width: 100%;
   display: block; }
+
+.widgetContainer .forumPagedList h4.lotusBreakWord.lotusEllipsis {
+  width: auto !important;
+  white-space: normal !important;
+  line-height: 1.2em; }
 
 .communities-widget-appearance .lotusWidget_2columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayout .lotusColLeft:after,
