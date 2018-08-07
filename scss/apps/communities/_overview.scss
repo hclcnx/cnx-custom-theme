@@ -1,6 +1,6 @@
 //Overview page widget styling
-//Widget headers and padding
-.widgetContainer .lotusWidget2 {
+//Widget headers and padding, does not apply to Rich Content widget
+.widgetContainer .lotusWidget2:not(.lconnRemoveContentPadding) {
   padding:0 30px !important;
   h2:first-child {
     padding:20px 30px !important;
@@ -8,13 +8,14 @@
   }
 }
 
-// subcommunity widget
+/*----SUBCOMMUNITY WIDGET----*/
 #subcommunityNavWidgetContainer {
   .lotusTable .lotusFirst + tr {
     > td > .lconnSubcomImageDiv {
       margin-right: 1.75rem;
       margin-bottom: 1.75rem;
       height: auto !important;
+      width: auto !important;
     }
     td.flushLeft, a {
       color: $text-01 !important;
@@ -23,19 +24,47 @@
   }
 }
 
-// right content widget tabs
-#showRichContent,
-#editRichContent {
-  #pageDetails .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
-    width: 100% !important;
-    text-align: left !important;
+/*----RICH CONTENT WIDGET----*/
+// 1721 Rich Content widget - maintain spacing on header only
+.widgetContainer .lotusWidget2.lconnRemoveContentPadding {
+  h2.widgetTitle {
+    padding: 20px 30px !important;
   }
-  #pageDetails .lotusBtnContainer {
-    padding-bottom: 26px;}
 }
 
-// 1457: better spacing above and below content in rich content widget
-#showRichContent {padding: 20px 0}
+// rich content widget edit mode tabs
+#editRichContent {
+  #pageDetails {
+    padding-left: 16px;
+    .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
+      width: 100% !important;
+      text-align: left !important;
+    }
+    .lotusBtnContainer {
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+}
+
+// 1670: wrap text, links, and alt text in tables
+#showRichContent,
+#descContent {
+  p, a, img {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  a {
+    word-wrap: break-word;
+  }
+  table {
+    table-layout: fixed;
+  }
+  img {
+    line-height: normal;
+    word-break: break-word;
+  }
+}
 
 // rich content insert / edit image dialog spacing
 div[id^="lconn_share0_widget_Dialog_"] {
@@ -44,7 +73,7 @@ div[id^="lconn_share0_widget_Dialog_"] {
   }
 }
 
-// related communities widget
+/*----RELATED COMMUNITIES WIDGET----*/
 .lotusContent #recomm .rc_recomm_item {
   height: auto !important;
   width: 110px;
@@ -73,30 +102,19 @@ div[id^="lconn_share0_widget_Dialog_"] {
   }
 }
 
-//Featured survey widget
+/*----FEATURED SURVEY WIDGET----*/
 .lotusWidget2 div[id^="com_ibm_form_integrations_formiwidget_widget_SingleSurveyViewMode_"] {
   padding-bottom: 30px;
 }
 
-// gallery widget set up
-div[id^="lconn_files_widget_CompactFolderPicker_"] {
-  width: 100% !important;
-}
-
-// email community
-#emailForm {
-  .rte {
-    border: none !important;
-  }
-}
-
-// members widget 
-div#membersdiv {
+/*----MEMBERS WIDGET----*/
+.communities-widget-appearance .lotusui30 .lotusWidget2 div#membersdiv {
   .lotusChunk.lconnMemberSummary {
     max-height: none;
     overflow: auto;
+    margin: 0 -.5rem !important;
   }
-  .communities-widget-appearance .lotusui30 .lotusWidget2 & div#membersInHikari {
+  div#membersInHikari {
     padding: 2rem .5rem !important;
   }
   .vcard {
@@ -111,5 +129,12 @@ div#membersdiv {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+}
+
+/*----EMAIL COMMUNITY----*/
+#emailForm {
+  .rte {
+    border: none !important;
   }
 }

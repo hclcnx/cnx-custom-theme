@@ -28,7 +28,7 @@
     }
     table:not(.lotusTable){
       margin-left:-4px!important;
-      background-color:white;
+      background-color: $background-main;
     }
   }
 }
@@ -65,7 +65,7 @@
 }
 #qkrViewControl{
   a.lotusView{
-    border-color:$brand-01!important;
+    border-color: $border-focus !important;
   }
 }
 .lconnFilesGridItem{
@@ -164,29 +164,29 @@ tr.lotusSort{
     padding-left:.9rem!important;
   }
   a:hover{
-    background-color:$brand-01!important;
-    color:white!important;
+    background-color: $table-header-background-hover !important;
+    color:$table-header-text-hover !important;
     border-radius:$border-radius-tabs!important;
     text-decoration: none!important;
   }
   a:focus{
     text-decoration:none!important;
-    border:1px solid $brand-01!important;
+    border: 1px solid $table-header-border-hover !important;
     border-radius:$border-radius-tabs!important;
   }
   a.lotusDescending,a.lotusAscending{
     background-size:8px 8px!important;
   }
   a.lotusDescending{
-    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon) !important;
     &:hover{
-      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon-hover) !important;
     }
   }
   a.lotusAscending{
-    background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+    background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon) !important;
     &:hover{
-      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white) !important;
+      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon-hover) !important;
     }
   }
 }
@@ -260,7 +260,7 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
   }
   div[id^="lconn_share_widget_Breadcrumb"] {
     div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
-      outline: 1px solid $brand-01;
+      outline: 1px solid $border-focus;
     }
   }
 }

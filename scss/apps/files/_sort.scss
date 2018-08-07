@@ -5,14 +5,14 @@
       color: $text-02 !important;
     }
     // .lotusActiveSort{
-    //   color:$brand-01 !important;
+    //   color: $text-04 !important;
     // }
   }
 }
 #body #list ul[dojoattachpoint="topPageNavigateNode"],
 #body #list ul[dojoattachpoint="bottomPageNavigateNode"]{
   li > a.numShape{
-    color:$brand-01!important;
+    color: $text-04 !important;
     text-decoration: none!important;
     &:hover{
       text-decoration: underline!important;

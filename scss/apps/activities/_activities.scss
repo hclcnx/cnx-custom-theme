@@ -1,0 +1,206 @@
+// activities list 
+.lotusui30 #activitiesTitleBar .lotusTitleBar2 .lotusTitleBarContent {
+  margin-right: 0 !important;
+  white-space: nowrap;
+  
+  .lotusHeading + div {
+    display: block;
+    //max-width: calc(100% - 253px);
+    overflow: auto;
+    
+    .lotusNavTabs {
+      white-space: nowrap;
+      margin-left: 1.5rem !important;
+      overflow: auto;
+      display: block;
+      float: none;
+    }
+  }
+}
+
+//Start an activity and create an activity template form
+#activitiesMainRegion,
+#t_activitiesMainRegion {
+  &:focus {
+    outline: none !important;
+  }
+  #activityList,
+  #t_activityList {
+    .lotusForm2 {
+      padding-top: 10px;
+      .lotusFormTitle {
+        padding: 0 0 10px 0;
+      }
+      .lotusFormBody {
+        padding-left: 0px;
+        padding-right: 0px;
+        label {
+          margin-top: 3px;
+          margin-left: 0;
+        }
+        input[type="checkbox"][id*="ActivityForm"]  {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1.5em;
+          border: none !important;
+          border-bottom: 0 !important;
+          &,
+          + label,
+          + script + label {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        input[id^="lconn_core_AddGroups_"],
+        input[id^="lconn_core_PeopleTypeAhead"],
+        input[id^="bhc_lconn_core_PeopleTypeAhead"],
+        div[id^="widget_bhc_lconn_core_PeopleTypeAhead"] {
+          height: 29px !important;
+        }
+        .dijitTextBox {
+          border: none !important;
+        }
+        select {
+          &:focus {
+            border-bottom-width: 1px !important;
+          }
+        }
+        .addMembersContainers {
+          padding-right: 8px !important;
+          .typeAhead {
+            border: none !important;
+            &.dijitTextBoxFocused, &.dijitTextBoxHover, &.dijitFocused {
+              outline: none !important;
+            }
+          }
+        }
+        .fieldDateNode {
+          &.dijitTextBoxFocused, &.dijitTextBoxHover, &.dijitFocused {
+            outline: none !important;
+          }
+        }
+      }
+      .lotusFormFooter {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+
+// spacing at the top of activities pages 
+.lotusui30_layout .lotusMain .lotusContent { //this overrides hikari styles and doesn't need to be any more specific because the activities style sheet itself keeps the scope on activities pages
+  padding-top: 4rem;
+  
+  .lotusForm2 .lotusFormTitle .lotusHeading,
+  .lotusHeader h1 {
+    @include font-size($title...);
+    padding-top: 0;
+  }
+}
+
+#activitiesMainRegion #activityList .lotusForm2, 
+#activitiesMainRegion #t_activityList .lotusForm2, 
+#t_activitiesMainRegion #activityList .lotusForm2, 
+#t_activitiesMainRegion #t_activityList .lotusForm2 {
+  padding-top: 0;
+}
+
+.lotusui30 #activitiesBanner+#lotusPlaceBar.lotusPlaceBar {
+  > .lotusRightCorner {
+    padding: 0 !important;
+    box-sizing: border-box;
+    min-width: 0 !important;
+    
+    > .lotusInner {
+      top: 4rem;
+      
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
+  padding-left: 48px;
+  margin-left: 240px;
+  box-sizing: border-box;
+  width: calc(100% - 240px);
+  h2#lotusPlaceBar-Title {
+    @include font-size($title...);
+    margin-left: 0 !important;
+    margin-right: 2rem !important;
+  }
+  #communityActionBarContainer {
+    float: right;
+    top: -3rem;
+    position: relative;
+    
+    ul.lotusInlinelist.lotusActions.lotusRight {
+      width: auto;
+    }
+  }
+}
+
+// 1705: Leading, space before, and space after, of descriptive text under headings on Activities and 
+//       To Do List tabs.
+.lotusMeta[dojoattachpoint="subtitle_AP"], 
+.lotusMeta[id="todolistWidget-Meta"] {
+  @include font-size($caption...);
+  line-height: 1rem !important;
+  padding-top: 1.1rem !important;
+  padding-bottom: .8rem;  
+}
+
+// 1212: create activity - correct an inline width which is causing the content to be cut off 
+div[id^="lconn_act_ActivityForm_"][id$="people"].lotusFormField {
+  width: auto !important;
+  white-space: nowrap;
+  
+  > label,
+  .lotusFieldWrapper.lconnActAddMembersAP {
+    float: none !important;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  div[dojoattachpoint="communityMemberArea_AP"] {
+    div[dojoattachpoint="allCommunityMembersSection_AP"], 
+    div[dojoattachpoint="allCommunityMembersSection_AP"] + div {
+      margin: .5rem 0 0;
+    }
+    input[type="radio"] {
+      vertical-align: baseline !important;
+      
+      ~ select {
+        width: auto !important;
+        min-width: 1px !important;
+        display: inline-block !important;
+      }
+    }
+  }
+  
+  .lotusFieldWrapper.lconnActAddMembersAP {
+    max-width: calc(100% - 150px);
+  }
+  
+  label.lotusCheckbox {
+    white-space: normal !important;
+  }
+  
+  .peopleFilterListContainers,
+  .assignToList .peopleList, 
+  .notifyList .peopleList, 
+  .templateList .peopleList {
+    width: auto;
+  }
+}
+
+.cke_dialog_tabs {
+  height: auto !important;
+}
+.cke_dialog_tab {
+  display: inline-block;
+  margin-right: 1rem !important;
+}

@@ -8,6 +8,34 @@
     ],
     "extensions": [
         {
+            "name": "AAGlobal Ex",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/global.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "global",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+          "name":"Account Settings",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/settings.css"
+            ],
+            "include-repo": {
+              "name": "cnx-custom-theme"
+            }
+          },
+          "path": "manage",
+          "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "Blogs",
             "type": "com.ibm.customizer.ui",
             "payload": {
@@ -61,20 +89,6 @@
                 }
             },
             "path": "forums",
-            "application": "Visual Update 1 for IBM Connections"
-        },
-        {
-            "name": "AAGlobal Ex",
-            "type": "com.ibm.customizer.ui",
-            "payload": {
-                "include-files": [
-                    "css/global.css"
-                ],
-                "include-repo": {
-                    "name": "cnx-custom-theme"
-                }
-            },
-            "path": "global",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -146,20 +160,6 @@
             },
             "path": "news",
             "application": "Visual Update 1 for IBM Connections"
-        },
-        {
-          "name":"Account Settings",
-          "type": "com.ibm.customizer.ui",
-          "payload": {
-            "include-files": [
-              "css/settings.css"
-            ],
-            "include-repo": {
-              "name": "cnx-custom-theme"
-            }
-          },
-          "path": "manage",
-          "application": "Visual Update 1 for IBM Connections"
         },
         {
             "name": "Profiles",

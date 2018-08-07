@@ -34,15 +34,19 @@
   #listRestrictedWarningNodeContainer > div {
     margin-top: .75rem;
   }
+  #listRestrictedRow > td {
+    padding-top: 0 !important;
+  }
   tr.lotusFormFieldRow > td {
     padding-top: 1.25rem !important;
-  }
-  #photoId {
-    @include fileinput;
+    &[role="radiogroup"] {
+      padding-top: 0 !important;
+      padding-bottom: 2px !important;
+    }
   }
   #photoUploadHelp .lotusMeta {
     display: block;
-    max-width: 35rem; 
+    max-width: 35rem;
     @include font-size($body...);
   }
   #addComMembersWidget > div.field {
@@ -63,13 +67,13 @@
         padding-left: 1.5rem !important;
         margin-left: -1rem !important;
       }
-    } 
+    }
   }
   .AddMembers #memberList {
     border: 0 !important;
     margin-left: -1rem;
     min-width: 37rem;
-    
+
     .member {
       border: 0 !important;
       padding: .25rem 0;
@@ -96,7 +100,7 @@
       outline-offset: 2px;
     }
   }
-  // who even knows 
+  // who even knows
   #communitiesAddButton {
     display: none !important;
   }
@@ -111,7 +115,7 @@
     background-position: center center !important;
     background-repeat: no-repeat;
     margin-bottom: .15rem;
-    
+
     svg {
       display: none;
     }
@@ -129,7 +133,7 @@
       font-weight: inherit !important;
       color: $text-04;
     }
-    
+
     &.dijitMenuItemSelected,
     &.dijitMenuItemHover {
       background-color: $background-main-hover !important;

@@ -37,11 +37,11 @@
         margin-bottom:0!important;
         padding:14px 24px!important;
         padding-left:39px!important;
-        border-color:$brand-01!important;
 
         &.searchFilterSelected{
           padding-left:35px!important;
           transition:border 0.23s ease, padding 0.23s ease;
+          border-left: 4px solid $border-selected !important;
           a{
             font-weight:700!important;
           }
@@ -52,6 +52,7 @@
           font-weight:400!important;
           &:hover,&:focus{
             border-color:transparent!important;
+            text-decoration: none !important;
           }
         }
         &:hover{

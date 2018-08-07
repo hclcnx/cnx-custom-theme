@@ -208,8 +208,8 @@ li.addressFormLi {
 			box-sizing: border-box;
 
 			&:focus {
-				border-color: $brand-01 !important;
-				box-shadow: 0 1px 0 $brand-01 !important;
+				border-color: $border-field-focus !important;
+				box-shadow: 0 1px 0 $border-field-focus !important;
 				outline: none !important;
 			}
 		}
@@ -294,14 +294,14 @@ form[id^="exportMembersForm"] {
 		}
 	}
 
-	.person_picker {
-		.menu_drop_icon {
-			margin-bottom: 6px !important;
-		}
-		.lotusDelete {
-			margin-bottom: 8px !important;
-		}
-	}
+  .person_picker {
+    .menu_drop_icon {
+      vertical-align: middle !important;
+    }
+    .lotusDelete {
+      vertical-align: middle !important;
+    }
+  }
 }
 
 // Event notification filter
@@ -317,12 +317,6 @@ div[id^="lconn_calendar_Notification"] {
 	}
 	.lconnNotify {
 		overflow: visible !important;
-	}
-	.vcard a.menu_drop_icon {
-		margin-bottom: 6px !important;
-	}
-	img.lotusDelete {
-		margin-bottom: 8px !important;
 	}
 }
 
@@ -346,5 +340,25 @@ form[name="surveysCreateForm"] {
       }
     }
   }
+}
 
+// onprem create community web address field
+#newCommunityForm {
+  input[id="autocompletehandle"] {
+    @include textinput;
+  }
+  tr[id="advHandleRow1"] {
+    span.lotusMeta {
+      @include font-size($body...);
+    }
+  }
+  tr[id="advHandleRow3"] {
+    td.lotusFormLable {
+      padding-top: 4px !important;
+    }
+    td.lotusMeta {
+      padding-top: 4px !important;
+      @include font-size($caption...);
+    }
+  }
 }

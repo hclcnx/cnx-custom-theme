@@ -49,14 +49,14 @@
   // Link hover
   &.verseTheme .lotusFrame a:hover,
   &.verseTheme .lotusFrame a:focus {
-    color:$brand-01 !important;
+    color: $text-04 !important;
   }
   // Expanding sections
   #audio_section_link,
   #meetingReportTb_link,
   #meetingRecordingTb_link {
     &:hover, &:focus {
-      outline: 1px solid $brand-01 !important;
+      outline: 1px solid $border-focus !important;
       outline-offset:1px;
     }
   }

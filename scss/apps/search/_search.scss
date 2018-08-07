@@ -64,23 +64,29 @@
   }
 }
 
-//Focus and hover on result
+//Focus and hover on results
 .icSearchResultsPage {
+
   .lotusMeta {
     color:$text-02 !important;
   }
-  tr.icSearchResultSelected,
-  tr:focus {
-    border-color:$border-selected !important;
-    border-top:1px solid $border-selected !important;
-    border-bottom:1px solid $border-selected !important;
-    outline:none !important;
+
+  tr {
+    border-left: 0 !important;
+    &.icSearchResultSelected,
+    &:focus {
+      border-color: $border-selected !important;
+      border-top: 1px solid $border-selected !important;
+      border-bottom: 1px solid $border-selected !important;
+      outline:none !important;
+    }
+    &:hover {
+      background-color:$background-main-hover !important;
+      border-left-color:$border-selected !important;
+      color:$text-02 !important;
+    }
   }
-  tr:hover {
-    background-color:$background-main-hover !important;
-    border-left-color:$border-selected !important;
-    color:$text-02 !important;
-  }
+
 }
 .lconnApplicationLoading{
   img{
@@ -100,6 +106,34 @@
 .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
   padding-left: 248px !important;
 }
+
+//Update content of results row
+.icSearchResultsPage #contentContainer_results_View > .lotusTable {
+  .icSearchTitle {
+
+    //Update font size of result title
+    h4 {
+      @include font-size($header...);
+    }
+
+    //Graduated flag on ideation posts
+    > span {
+      position: relative;
+      z-index: 2;
+      .lconnSearchIdeaGraduated {
+        @include graduatedIdea;
+        &:before, &:after {
+          top: 14px; //exception to mixin
+        }
+        &:after {
+          right: 16px; //exception to mixin
+        }
+      }
+    }
+
+  }
+}
+
 
 // advanced search left nav
 .lotusColLeft .lotusInfoBox {

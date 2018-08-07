@@ -38,9 +38,9 @@
 			// padding-top:0.5rem!important;
 			padding:0.5rem 0!important;
 			li.topAction a{
-				color:$brand-01!important;
+				color: $text-04 !important;
 				&:hover{
-					text-decoration-color:$brand-01!important;
+					text-decoration-color: $text-04 !important;
 				}
 				&::after{
 					content:"";

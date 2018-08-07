@@ -7,7 +7,7 @@
     left: 50%;
     margin-left: -28px;
     &:focus {
-      outline: 1px solid $brand-01 !important;
+      outline: 1px solid $border-focus !important;
       outline-offset: 1px;
     }
   }
@@ -28,7 +28,7 @@
 }
 #recent-friends-container .lotusChunk {
   margin: 0 -3px;
-  
+
   .lotusNetworkPerson {
     padding: 1rem 3px 0 !important;
     width: 33%;

@@ -85,22 +85,18 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 	}
 }
 
-//Community icons in Communities landing page
-.lotusContent {
-  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
-    .placeRow td[dojoattachpoint="communityIcon"] img {
-      border:1px solid $border-separator;
-    }
-  }
-}
-
 // Style person name
 a.lotusPerson,
 a.fn.person, //Names on community events list
 a:visited.lotusPerson,
 .vcard a.fn.url,
-.panelContent .header1 a.lotusPerson, {
-  color:$text-01 !important;
+.panelContent .header1 a.lotusPerson {
+  color: $text-01 !important;
+}
+
+.lotusPost .vcard a.lotusPerson { //onprem blogs persons
+  color: $text-01 !important;
+  font-weight: 600 !important;
 }
 
 //Contacts cards - still some styling in _contactcards.scss

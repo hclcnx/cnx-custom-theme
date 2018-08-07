@@ -7,7 +7,7 @@
 
 //edit contacts
 .iconAdd:focus {
-  outline: 1px solid $brand-01 !important;
+  outline: 1px solid $border-focus !important;
 }
 div:not(#_profileEditScene_div) .profileDataTable {
   .icon30:not(.iconLocation30) {
