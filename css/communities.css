@@ -11586,9 +11586,6 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] div[id^="lconn_share_widget_
   width: calc(100% - 70px); }
   .lconnFiles .filesSearchBar .dijitTextBox, .lconnFiles .filesSearchBar .dijitTextBoxFocused {
     border: 0 !important; }
-.lconnFiles #lconnFilterPanel .lotusSection {
-  padding-right: 0 !important;
-  margin-right: 0 !important; }
 .lconnFiles .lotusToolBar {
   padding-left: 2.35rem !important; }
 

@@ -2,8 +2,12 @@
 html.lconnFiles {
   .lotusMain{
     #lotusColLeft{
-      #lconnFolderNavPanel {
+      #lconnFolderNavPanel,
+      #lconnFilterPanel {
         width: $leftnav-width !important;
+      }
+      #lconnFilterPanel .lotusSection {
+        margin-right: 0 !important;
       }
       #menu_allfolders,
       #menu_allfiles{
