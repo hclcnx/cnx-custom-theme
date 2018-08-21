@@ -13,7 +13,7 @@
   .lotusColLeft {
     padding:14px 20px 14px 0px;
     margin:0px !important;
-    width:240px;
+    width: $leftnav-width;
     #showPhoto {
       margin:0 0 20px 0;
       padding-left:18px;
@@ -22,7 +22,7 @@
       padding:14px 24px;
     }
     li.lotusSelected a {
-      border-left: 4px solid $brand-01 !important;
+      border-left: 4px solid $border-selected !important;
     }
   }
 }

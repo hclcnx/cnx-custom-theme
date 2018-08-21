@@ -1,8 +1,13 @@
 //Wiki list of pages
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth,
+//onprem wiki list does not include qkrFixedWidth
+div#list .lotusTable.lotusFixedTable {
   @include datatable(2);
   tr:not(.lotusDetails):not(.lotusSort) {
     border-top:1px solid $border-separator;
+  }
+  tr.lotusSort th#qkrSortmodifier {
+    vertical-align: middle !important;
   }
   tr.lotusDetails {
     td {
@@ -16,14 +21,49 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
     border-bottom:1px solid $border-separator;
   }
 }
+//On cloud, adjust all column headers
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+  tr.lotusSort th {
+    vertical-align: middle !important;
+  }
+}
 
-//Blog list of entries
+//Manage Blog list of entries
 .blog.admin {
-
   .blogsFixedTable, .lotusTable {
     @include datatable;
-  }
 
+    th {
+      vertical-align: middle;
+    }
+
+    //Summary view
+    &#entry_summary_table {
+      tr:not(:first-child) {
+        border-top-width: 0 !important;
+      }
+    }
+
+    // Details view that shows more info on another row
+    &#entry_detail_table {
+      tr:nth-child(4n - 1):not(:first-child),
+      tr:nth-child(4n - 2) {
+        th, td {
+          background-color: $background-side;
+        }
+      }
+      tr.lotusDetails {
+        border-top-width: 0 !important;
+        td {
+          padding-top: 0 !important;
+        }
+      }
+      th, td {
+        background-color: white;
+      }
+    }
+
+  }
 }
 
 //This is the icons that appear for organizing the information in the Data Tables.
@@ -31,6 +71,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 
   .lotusTileOn,
   .lotusTileOff,
+  .viewOff,
   .lotusDetailsOn,
   .lotusDetailsOff,
   .lotusSummaryOn,
@@ -53,6 +94,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 
   .lotusView.lotusTileOff,
+  .lotusView.viewOff,
   .lotusView.lotusDetailsOff,
   .lotusView.lotusSummaryOff {
     border-color: transparent!important;
@@ -120,7 +162,18 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 #attachments .lotusTable {
   @include datatable();
 }
+// wiki image attachment dialog
+.lotusDialogContent._qkrDialogCompact {
+  #image_attachmentList .lotusTable {
+    @include datatable(2);
+    td {
+      padding: 10px 2px;
+    }
+  }
+}
 
+
+// -----------LISTS NOT DATATABLES-----------
 // bookmarks list
 #bookmarkContentAreaSub {
   .lotusTable {
@@ -170,16 +223,29 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 }
 
-//Various lists in communities
+//Various lists
 #ideatoins_main, //ideation blogs list
-div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //survey list
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //community survey list
 div#fullRecomm, //related communities list
-div#activityList { //activities list
+div#activityList { //activities list, stand-alone and in community
   .lotusTable {
     margin-top: 1rem;
 
     > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid $border-separator !important;
+    }
+  }
+}
+
+//Stand-alone blogs list
+.blog .lotusContent .blogsFixedTable {
+  &.lotusTable {
+    margin: 1rem 0;
+    > tbody > tr:not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+    > tbody > tr td {
+      padding: 1rem 0;
     }
   }
 }
@@ -195,14 +261,31 @@ div#activityList { //activities list
 }
 
 //Related communities and survey list specifics
-div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //survey list
+div[id*="widget_SurveysListFullpage"], //survey list
 div#fullRecomm { //related communities list
   .lotusTable {
     td {
       padding: 1rem 0 !important;
+//1681 list icon spacing
+      &:first-child {
+        padding-right: 8px !important;
+      }
     }
   }
 }
+
+//1681 survey list entry title and entry "More" spacing
+div[id*="widget_SurveysListFullpage"] {
+  .lotusTable td {
+    .entry-title {
+      color: $text-04 !important;
+    }
+    a[id*="listSection_listWidget_rootDiv_more"] {
+      margin-left: 25px !important;
+    }
+  }
+}
+
 //Related communities - more space between comm avatar and content
 div#fullRecomm {
   .lotusTable .lotusFirstCell {

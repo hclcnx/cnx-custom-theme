@@ -97,3 +97,15 @@ div[id^="lconn_communities_catalog_widgets_RecommendationsBox_"] {
     font-weight: 600 !important;
   }
 }
+
+.lotusWidget2 span {
+  &.lotusDivider,
+  &.dueDate,
+  &.lotusTags,
+  &[role="listitem"] {
+    display: inline-block;
+    vertical-align: middle !important;
+    line-height: 1.75em;
+    margin-bottom: 0;
+  }
+}

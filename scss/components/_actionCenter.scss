@@ -12,7 +12,7 @@
     text-overflow:ellipsis;
   }
   .header-right span, .header-right a{
-    color:$brand-01!important;
+    color: $link-default !important;
     padding:0px!important;
     margin:0px!important;
     &:hover,&:focus{
@@ -52,7 +52,7 @@
     }
     .icBanner-footer-link{
       font-size:14px!important;
-      color:$brand-01!important;
+      color: $link-default !important;
       &:hover{
         text-decoration:underline!important;
       }
@@ -61,9 +61,9 @@
   .icBanner-popover-content{
     .icNotification-post{
       .icNote-body:not(.selected) .bluedot{
-        background-color:$brand-01!important;
+        background-color: $background-unread !important;
         &:hover{
-          border-color:$brand-01!important;
+          border-color: $background-unread !important;
         }
       }
       //bluedot hidden when we have read the notif.
@@ -103,7 +103,7 @@
         }
       }
       .bluedot{
-        border-color:$brand-01!important;
+        border-color: $background-unread !important;
         top:19px!important;
         left:45px!important;
         width:8px!important;
@@ -111,19 +111,8 @@
       }
       .icNote-title{
         font-weight:600 !important;
-        a{
-          @include link-color('blue');
-          font-weight:bold!important;
-          &:visited {
-            @include link-color('blue');
-          }
-          &:active,
-          &:hover,
-          &:focus {
-            @include link-underline('blue');
-            text-decoration: underline !important;
-            outline: none !important;
-          }
+        a {
+          @include link-default();
         }
         a.fn.url{
           color:black!important;

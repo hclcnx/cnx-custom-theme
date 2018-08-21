@@ -18,7 +18,7 @@
 }
 
 //Status update tabs
-.lotusStream .lotusWidgetBody#activityStreamMain {
+.lotusui30 .lotusStream .lotusWidgetBody#activityStreamMain {
   .streamHeaderWrapper {
     .lotusPaging.lotusPagingTop {
       background:$background-main !important;
@@ -26,7 +26,6 @@
       border-bottom:1px solid $border-separator !important;
       margin-top:8px !important;
       margin-bottom:10px;
-      padding-bottom:3px;
       .lotusInlinelist li {
         &.lotusFirst {
           margin-left:0px;
@@ -48,6 +47,28 @@
         text-decoration: none !important;
         position:relative;
         overflow:visible;
+        // Search icon on classic home Page
+        &#asSearchMenuOption {
+          width:16px!important;
+          height:15px!important;
+          background-image:svg-url-with-replaced-fill($svg-search, '#000000', $btn-secondary-icon) !important;
+          background-color: $background-main !important;
+
+          background-repeat: no-repeat;
+          background-size: 18px 18px;
+          background-position: center !important;
+          border: 1px solid transparent !important;
+          img {
+            display:none;
+          }
+          &:hover {
+            background-color: $btn-secondary-fill-hover !important;
+            background-image:svg-url-with-replaced-fill($svg-search, '#000000', $btn-secondary-icon-hover) !important;
+          }
+          &:focus {
+            border: 1px solid $btn-secondary-outline-hover !important;
+          }
+        }
         &:hover {
           color: $text-03!important;
           background-color: $btn-secondary-fill-hover;
@@ -67,7 +88,7 @@
             left:0px;
             height:4px;
             width:100%;
-            background:$btn-secondary-outline-hover;
+            background:$border-selected;
           }
           &:hover {
             color:$text-03 !important;
@@ -138,3 +159,10 @@ div[dojoattachpoint="recommendContainer"] {
     @include link-color(dark);
   }
 }
+
+//1572 Classic homepage "Saved" link
+.savethisAction.activityStreamActionInactive a {
+    color: $text-02 !important;
+    text-decoration: none !important;
+}
+

@@ -1,4 +1,179 @@
-// Split button in file viewer
+//Primary button-------------
+.lotusStreamUpdate .lotusActions a[role="button"], //profiles
+.lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a,
+.lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a,
+.lotusCommunities #ideatoins_main span.lotusBtn a,
+.lotusCommunities #startActivity span.lotusBtn a,
+.lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn a,
+.lotusCommunities #calendar_view span.lotusBtn a,
+.lotusCommunities #calendarViews span.lotusBtn a,
+.lotusCommunities #fullRecomm span.lotusBtn a,
+.lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a,
+.lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a,
+#submit_button,
+#btn_actn__personCardSendEMail,
+.lotusRightCorner button, //Files New button
+.lotusBtn[name="submitButton"],
+.ics-viewer-action-upload .actionLink,
+.lotusBtn.submit.lotusButtonSubmit,
+.filesList .lotusDetails .lotusBtnSmall,
+#mainActions .lotusBtn,
+#memberAddForm #saveButton,
+span[id^="lconn_share_widget_Tagger"] input[type="submit"],
+#memberInviteForm .lotusFormButton[name="submit"],
+.dijitDialog .lotusFormButton.submit,
+div[id^="editBookmark"] input[type="submit"],
+span#createPlaceButton.lotusBtn.lotusBtnAction a, //Start a community button specifics
+span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
+#body .lotusContent > div.lotusBtnContainer .lotusBtn a // onprem start a wiki button
+{
+	@include btnprimary;
+  &:disabled, &[disabled="disabled"],
+  &.lotusBtnDisabled {
+    @include btnprimarydisabled;
+  }
+}
+// profiles
+.lotusStreamUpdate .lotusActions a[role="button"] .lotusInactive {
+  a[role="button"],
+  a[role="button"]:hover {
+    @include btnprimarydisabled;
+  }
+}
+//End Primary buttons-------------
+
+//Secondary buttons-------------
+.lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"], //profiles
+.lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"], //profiles
+.lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a,
+.lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn + .lotusBtn a,
+.lotusCommunities #ideatoins_main span.lotusBtn + .lotusBtn a,
+.lotusCommunities #startActivity span.lotusBtn + .lotusBtn a,
+.lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"] span.lotusBtn + .lotusBtn a,
+.lotusCommunities #calendar_view span.lotusBtn + .lotusBtn a,
+.lotusCommunities #calendarViews span.lotusBtn + .lotusBtn a,
+.lotusCommunities #fullRecomm span.lotusBtn + .lotusBtn a,
+.lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn + .lotusBtn a,
+.lotusBtn,
+.lotusFormButton,
+.ics-dialog-action #ok,
+.ics-dialog-action .cancel.neutral,
+.filesList .lotusDetails .lotusBtnSmallGray,
+.qkrEdit .lotusBtnSmall,
+.entryEditTable .lotusBtnSmall,
+.entryEditTable .lotusBtnSmallGray,
+.wikiHeader .lotusBtnSmall,
+#blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction,
+.blog .lotusBtn a,
+.wikiHeader .lotusBtn a,
+#topicList .lotusBtn a,
+#forum .lotusBtn a,
+#pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a,
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost),
+span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray,
+div#activityActionButtons span.lotusBtn a, //Community activities
+.lotusCommunities #memberAddButton a, //Community members
+.lotusCommunities #inviteButtons a, //Community members
+.lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
+#forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a
+{
+  @include btnsecondary;
+  &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
+    @include btnsecondarydisabled;
+  }
+}
+//End Secondary buttons-------------
+
+//Small buttons-------------
+.lotusui30 {
+  .lotusBtnSmall,
+  .lotusBtnSmallGray {
+    @include font-size($caption...);
+  }
+  input.lotusBtnSmall {
+    height: 34px !important;
+  }
+  a[class^="lotusBtnSmall"] {
+    padding: 8px 20px !important;
+  }
+}
+.wikiHeader,
+#topicList,
+#forum,
+#calendarViews {
+  input.lotusBtnSmall{
+    margin-top:0!important;
+    margin-bottom:0!important;
+    position: relative!important;
+  }
+}
+.lotusForm.qkrEdit, //forum
+#scene-body //files
+{
+  input.lotusBtnSmall {
+    margin: 0 8px 4px 12px!important;
+  }
+}
+//blog
+.entryEditTable {
+  #addtagwidgetAddTagsTypeAhead{
+    margin-top:9px!important;
+  }
+  span{
+    vertical-align: middle!important;
+  }
+}
+span[id^="lconn_share_widget_Tagger"] {
+   input[type="submit"],
+   a.lotusBtnSmallGray {
+     line-height: normal !important;
+   }
+}
+//End small buttons-------------
+
+//Hide outer button styling-------------
+.lotusCommunities .dfCommunityForums #dfTopicList, //Forum
+.lotusCommunities .dfCommunityForums #dfForumList, //Forum
+div#forumConfirmMessage + div,
+.lotusCommunities #ideatoins_main, //Ideation Blog
+.lotusCommunities div[id$="_FULLPAGE_listSection_controllerSection"],
+.lotusCommunities #calendar_view,
+.lotusCommunities #calendarViews,
+.lotusCommunities #fullRecomm,
+.lotusCommunities #bookmarkContentAreaSub #headline-content,
+.lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn,
+.lotusCommunities #memberAddButton, //Members
+.lotusCommunities #inviteButtons, //Members
+#activityList, //Stand-alone Activities
+#t_activityList, //Activity templates
+#activityActionButtons, //Community Activities
+.activiyActionBar, //activity template
+.wikiHeader,
+#topicList,
+#forum,
+#body .lotusContent > div.lotusBtnContainer { //on onprem start a wiki
+  span.lotusBtn {
+    &, &:hover, &:focus, &:active {
+      border: none !important;
+      box-shadow: none !important;
+      background: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}
+//Hide outer button
+span#createPlaceButton.lotusBtn.lotusBtnAction { //on Start a community
+  &, &:hover, &:focus {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+//End Hide outer button styling-------------
+
+// Split button in file viewer-------------
 .ics-viewer-splitbutton .actionLink,
 .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
 .ics-viewer-action-splitmenu span.dijitButtonNode {
@@ -30,35 +205,20 @@
   #body &, & {
     padding-top:7px!important;
     padding-bottom:7px!important;
-    top:-1px!important;
   }
 }
-.lotusBtn,
-.lotusFormButton,
-.ics-dialog-action #ok,
-.ics-dialog-action .cancel.neutral,
-.filesList .lotusDetails .lotusBtnSmallGray,
-.qkrEdit .lotusBtnSmall,
-.entryEditTable .lotusBtnSmall,
-.entryEditTable .lotusBtnSmallGray,
-.wikiHeader .lotusBtnSmall,
-#blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction,
-.blog .lotusBtn a,
-.wikiHeader .lotusBtn a,
-#topicList .lotusBtn a,
-#forum .lotusBtn a,
-#pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a,
-div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost),
-span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray {
-  @include btnsecondary;
-  &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
-    @include btnsecondarydisabled;
+.ics-viewer-splitbutton.ics-viewer-action .actionLink {
+  #body &, & {
+    top: 0 !important;
   }
 }
+.ics-viewer .ics-viewer-banner .ics-viewer-toolbar .ics-viewer-action-splitmenu .dijitButtonNode {
+  top: 0 !important;
+}
+//End split button in file viewer-------------
 
-div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"].share-attachAction:not(.ublogPost):focus {
-  box-shadow: none !important;
-}
+//Arrow on buttons-------------
+//Primary buttons with arrows
 #submit_button,
 #btn_actn__personCardSendEMail,
 .lotusRightCorner button, //Files New button
@@ -68,10 +228,6 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 .filesList .lotusDetails .lotusBtnSmall,
 #mainActions .lotusBtn
 {
-	@include btnprimary;
-  &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
-    @include btnprimarydisabled;
-  }
   .lotusArrow.lotusDropDownSprite {
     background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
     background-size: contain !important;
@@ -83,45 +239,22 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
     }
   }
 }
-//Start a community button specifics
+//Arrow on Start a community button
 span#createPlaceButton.lotusBtn.lotusBtnAction {
-  &, &:hover, &:focus {
-    border: none !important;
-    background: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
   &:hover a img {
     background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon-hover) !important;
   }
-  a {
-    @include btnprimary;
-    &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
-      @include btnprimarydisabled;
-    }
-    img {
-      filter: none !important;
-      text-indent: -999px;
-      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
-      width: .5rem !important;
-      height: .5rem !important;
-      background-position: center center;
-      margin: 0 0 .25rem .25rem !important;
-    }
+  a img {
+    filter: none !important;
+    text-indent: -999px;
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
+    width: .5rem !important;
+    height: .5rem !important;
+    background-position: center center;
+    margin: 0 0 .25rem .25rem !important;
   }
 }
-//End Start a community button specifics
-
-.lotusBtnDisabled,a.manualAdd[disabled="disabled"]{
-	cursor:not-allowed;
-	opacity:.5!important;
-}
-.lotusBtnDisabled:hover{
-	background-color:transparent!important;
-	color:$brand-01 !important;
-}
-
-// survey more actions button
+// Secondary buttons witih arrows
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusBtn {
   .lotusArrow.lotusDropDownSprite {
     background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon) !important;
@@ -132,6 +265,45 @@ div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lot
     .lotusArrow.lotusDropDownSprite {
       background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
     }
+  }
+}
+.wikiHeader,
+#topicList,
+#forum,
+#calendarViews {
+  .lotusBtn {
+    a:hover {
+      img.lotusArrow{
+        background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
+      }
+    }
+    img.lotusArrow{
+      background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon) !important;
+      background-position:0 0!important;
+      opacity:1!important;
+    }
+  }
+}
+//End arrow on buttons-------------
+
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"].share-attachAction:not(.ublogPost):focus {
+  box-shadow: none !important;
+}
+
+.lotusBtnDisabled,a.manualAdd[disabled="disabled"]{
+	cursor:not-allowed;
+	opacity:.5!important;
+}
+.lotusBtnDisabled:hover{
+	background-color:transparent!important;
+	color: $btn-secondary-text !important;
+}
+
+// share a file modal on a profile page:
+.filesList .lotusDetails  {
+  td:not(.lotusFirst) ul{
+    margin-top:12px!important;
+    margin-bottom:12px!important;
   }
 }
 
@@ -170,11 +342,11 @@ div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lot
   .lotusBtnContainer{
     .lotusBtn {
       a{
-        color:$brand-01 !important;
+        color: $btn-secondary-text !important;
         background:transparent!important;
       }
       &:hover a{
-        color: $text-03 !important;
+        color: $btn-secondary-text-hover !important;
       }
     }
   }
@@ -187,7 +359,7 @@ div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lot
 		padding: 0 !important;
 		&, &:hover {
 			background: none !important;
-			color: $brand-01 !important;
+			color: $btn-secondary-text !important;
 		}
 		a {
 			margin: 0;
@@ -208,10 +380,11 @@ body:not(.lotusImagesOff) {
       border: none !important;
     }
     &:focus {
-      outline: 1px solid $brand-01;
+      outline: 1px solid $border-focus;
     }
   }
 }
+
 // profiles/contacts ckeditor peripheral buttons
 .lotusStreamUpdate .lotusActions {
   ul {
@@ -223,38 +396,7 @@ body:not(.lotusImagesOff) {
     padding: 0 .5rem 0 0 !important;
   }
   a[role="button"] {
-    @include btnprimary;
     display: inline-block;
-    font-weight: normal !important;
-    strong {
-      font-weight: inherit;
-    }
-    &[data-dojo-attach-event="onclick: doCancel"],
-    &[dojoattachevent="onclick:cancel"] {
-      @include btnsecondary;
-    }
-  }
-  &.lotusInactive {
-    a[role="button"],
-    a[role="button"]:hover {
-      @include btnprimarydisabled;
-    }
-  }
-}
-// share a file modal on a profile page:
-.filesList .lotusDetails  {
-  td:not(.lotusFirst) ul{
-    margin-top:12px!important;
-    margin-bottom:12px!important;
-  }
-  .lotusBtnSmall{
-    margin-left:8px!important;
-    margin-right:8px!important;
-  }
-  .lotusBtnSmallGray{
-    padding:6px 16px!important;
-    font-weight:500!important;
-    font-size:0.675rem!important;
   }
 }
 
@@ -285,14 +427,6 @@ body:not(.lotusImagesOff) {
 #forum,
 #calendarViews {
   .lotusBtn{
-    border:none!important;
-    padding:0!important;
-    margin:0!important;
-    &:hover{
-      padding:0px!important;
-      background-color:white!important;
-      border:none!important;
-    }
     a:hover{
       img.lotusArrow{
         background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
@@ -304,44 +438,13 @@ body:not(.lotusImagesOff) {
       opacity:1!important;
     }
   }
-  input.lotusBtnSmall{
-    margin-top:0!important;
-    margin-bottom:0!important;
-    height: 35px!important;
-    position: relative!important;
-    top: -1px!important;
-  }
-  .lotusBtnSmall{
-    font-weight:500!important;
-  }
 }
+
 #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a{
   margin:12px 0!important;
   display:inline-block!important;
 }
-.entryEditTable{
-  .lotusBtnSmall{
-    height:34px!important;
-  }
-  .lotusBtnSmall, .lotusBtnSmallGray{
-    font-weight:500!important;
-  }
-  #addtagwidgetAddTagsTypeAhead{
-    margin-top:9px!important;
-  }
-  span{
-    vertical-align: middle!important;
-  }
-}
-.lotusForm.qkrEdit{
-  .lotusBtnSmall{
-    font-weight:500!important;
-  }
-  input.lotusBtnSmall{
-    margin: 0 8px 4px 12px!important;
-    height:34px!important;
-  }
-}
+
 #blogCommentPanel [dojoattachpoint='addCommentLinkAP'].lotusAction{
   display:inline-block!important;
   margin:8px 0!important;
@@ -352,19 +455,6 @@ body:not(.lotusImagesOff) {
 	#memberAddButton,
   #inviteButtons {
     padding-top: 3px;
-
-    span.lotusBtn {
-      &, &:hover, &:focus, &:active {
-    		border:none!important;
-    		box-shadow:none!important;
-    		background-color:transparent!important;
-    		padding:0!important;
-      }
-
-      a {
-        @include btnsecondary;
-      }
-    }
 	}
   .dfCommunityForums #dfTopicList,
   .dfCommunityForums #dfForumList,
@@ -380,38 +470,6 @@ body:not(.lotusImagesOff) {
 
     .lotusBtnContainer {
       margin: 0 !important;
-    }
-
-    span.lotusBtn {
-      &, &:hover, &:focus, &:active {
-        border:none!important;
-        box-shadow:none!important;
-        background-color:transparent!important;
-        padding:0!important;
-      }
-
-      a {
-        @include btnprimary;
-      }
-
-      + .lotusBtn a {
-        @include btnsecondary;
-      }
-
-      &.lotusBtnDisabled a {
-        @include btnprimarydisabled;
-      }
-    }
-  }
-  ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn {
-    &, &:hover, &:focus, &:active {
-      border:none!important;
-      box-shadow:none!important;
-      background-color:transparent!important;
-      padding:0!important;
-    }
-    a {
-      @include btnprimary;
     }
   }
   #fullRecomm .lotusBtnContainer,
@@ -430,32 +488,14 @@ body:not(.lotusImagesOff) {
     }
   }
 }
-#memberAddForm #saveButton,
-span[id^="lconn_share_widget_Tagger"] input[type="submit"],
-#memberInviteForm .lotusFormButton[name="submit"],
-.dijitDialog .lotusFormButton.submit,
-div[id^="editBookmark"] input[type="submit"] {
-  @include btnprimary;
-  margin-left: 2px !important;
-  &.lotusBtnDisabled {
-    @include btnprimarydisabled;
-  }
-}
-
-span[id^="lconn_share_widget_Tagger"] {
-   input[type="submit"],
-   a.lotusBtnSmallGray {
-     line-height: normal !important;
-   }
-}
 
 // Status updates Post button
 li[id^="com_ibm_social_as_item_comment"] {
   .lotusStreamUpdate .lotusActions ul {
-      margin-top: 0 !important;
-      &.lotusLeft {
-        padding-bottom: 18px !important;
-      }
+    margin-top: 0 !important;
+    &.lotusLeft {
+      padding-bottom: 18px !important;
+    }
   }
 }
 

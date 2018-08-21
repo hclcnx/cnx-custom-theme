@@ -1,14 +1,7 @@
-$h-padding:24px;
-$b-thickness:4px;
-$v-padding:14px;
-$initial-l-padding:15px;
-$p1:24px;
-$border-slide:border .23s ease, padding .23s ease;
-
 .lotusMain{
   padding-left:0!important;
   #lotusColLeft:not(.wpthemeNarrow){
-    width:240px;
+    width: $leftnav-width;
     padding: 1rem 0 0 !important;
     margin:0!important;
     #lotusSidenav{

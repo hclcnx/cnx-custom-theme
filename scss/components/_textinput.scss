@@ -5,7 +5,7 @@
 [id^="lconn_core_AddGroups_"][id$="PeopleTypeAhead"],
 input[id^="lconn_share_widget_TagTypeAhead_"],
 input[id^="lconn_share_widget_Dialog_"][id$="_name"],
-.lotusFieldWrapper input:not(#generateAppPassword):not(#enableBiDi):not([type="radio"]),
+.lotusFieldWrapper input:not(#generateAppPassword):not(#enableBiDi):not(#activitiesAddButton):not([type="radio"]):not([type="checkbox"]),
 #concordnewfiledoc,
 #concordnewfilesheet,
 #concordnewfilepres,
@@ -17,6 +17,14 @@ input.lotusText,
 #bookmarkAddForm input.dijitTextBox
  {
 	@include textinput;
+}
+
+//Blog jump to page override textinput
+.blog input[type="text"]#jumpToPage_text,
+.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"])[name="jumpToPage_text"],
+ {
+  min-width: 46px !important;
+  padding-right: 0 !important;
 }
 
 // Align labels to the middle
@@ -133,6 +141,20 @@ input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
 	@include textinput;
 }
 
+//Folders shared with me > Created by search field
+.lconnFiles .lotusSearch {
+  .dijitTextBox#widget_filterSharesByUser,
+  .typeaheadInput {
+    background: transparent !important;
+  }
+  .dijitTextBox#widget_filterSharesByUser {
+    border: none !important;
+  }
+  .typeaheadInput {
+    padding-left: 0 !important;
+  }
+}
+
 // directory search on scroll fix:
 .lotusui30 .lconn_directoryPage .lconn_searchNode.fixed {
 	background-color: $background-main !important;
@@ -200,6 +222,7 @@ div[id^="widget_bhc_PeopleTypeAhead_"] {
 	#bhc_lconn_core_PeopleTypeAhead,
 	#addMembersWidgetPeopleTypeAhead {
 		padding-bottom: .75rem !important;
+    width: auto !important;
 	}
 	#widget_bhc_lconn_core_PeopleTypeAhead {
 		border: none !important;
@@ -223,6 +246,10 @@ div[id^="widget_bhc_PeopleTypeAhead_"] {
 		height: auto !important;
 		margin-left: .75rem;
 	}
+  .dijitFocused,
+  .dijitTextBoxFocused {
+    outline: none !important;
+  }
 }
 #MembersPanel .lotusForm {
 	#filterString {

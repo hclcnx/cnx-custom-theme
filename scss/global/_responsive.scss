@@ -73,8 +73,8 @@ body.meetingBody:not(.cke_editable),
       box-sizing: border-box;
     }
     #lotusColLeft ~ #lotusContent.wpthemeWide {
-      width: calc(100% - 240px) !important;
-      min-width: calc(100% - 240px) !important;
+      width: calc(100% - $leftnav-width) !important;
+      min-width: calc(100% - $leftnav-width) !important;
       box-sizing: border-box;
     }
     #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
@@ -98,14 +98,9 @@ body.meetingBody:not(.cke_editable),
       box-sizing: border-box;
     }
   }
-  .activityStreamPage #lotusContent{
-    width: calc(100% - 430px) !important;
-    min-width: calc(100% - 430px) !important;
-    float: right;
-    box-sizing: border-box;
-  }
   // profile page
-  #profileBody {
+  #profileBody,
+  .activityStreamPage #lotusContent {
     width: calc(100% - 505px) !important;
     min-width: calc(100% - 505px) !important;
     float: right;
@@ -161,7 +156,7 @@ body.meetingBody:not(.cke_editable),
     width: 100% !important;
   }
   .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
-    margin-left: 240px !important;
+    margin-left: $leftnav-width !important;
 
     #lotusContent {
       box-sizing: border-box;
@@ -182,6 +177,11 @@ body.meetingBody:not(.cke_editable),
       padding-left: 3rem !important;
     }
   }
+  .lotusWidget_3columnsWithBannerTopMenuLayout .lotusMain,
+  .lotusWidget_3columnsTopMenuLayout .lotusMain {
+    width: calc(100% - 80px) !important;
+    max-width: 1360px !important;
+  }
 }
 @media (min-width: 1061px) and (max-width: 1360px) {
   .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig,
@@ -189,7 +189,8 @@ body.meetingBody:not(.cke_editable),
     width: 250px !important;
   }
 }
-@media (max-width: 1030px) {
+// communities responsive breakpoint:
+@media (max-width: 899px) {
   #lotusMain {
     box-sizing: border-box;
   }
@@ -211,33 +212,21 @@ body.meetingBody:not(.cke_editable),
     }
   }
 }
-
-@media (min-width: 1031px) and (max-width: 1415px) {
+// communities responsive breakpoint:
+@media (min-width: 900px) and (max-width: 1270px) {
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
     #lotusColLeft.wpthemeNarrow,
     #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
-      float: none !important;
-      margin: 0 !important;
-      width: 100% !important;
-      max-width: 100%;
+      float: left !important;
+      width: calc(50% - 15px) !important;
+      max-width: calc(50% - 15px);
     }
-    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
-    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
-      float: none !important;
-      margin: 0 !important;
-      width: 50% !important;
-      max-width: 50%;
-      vertical-align: top;
-      display: inline-block !important;
-      box-sizing: border-box;
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus{
+      float: left !important;
     }
-    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
-      margin-right: -4px !important;
-      padding-right: 20px !important;
-    }
-    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
-      padding-left: 20px !important;
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus{
+      float: right !important;
     }
     #contentArea {
       width: 100% !important;
@@ -246,6 +235,70 @@ body.meetingBody:not(.cke_editable),
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout {
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      margin: 0 !important;
+      width: calc(50% - 15px) !important;
+      max-width: calc(50% - 15px);
+      vertical-align: top;
+      display: inline-block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusMainColumns {
+      float: right !important;
+      width: calc(50% - 17px) !important;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      width: 100% !important;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+// communities repsonsive breakpoint:
+@media (min-width: 1271px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+      width: calc(33% - 15px) !important;
+      max-width: calc(33% - 15px);
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout {
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      margin: 0 !important;
+      width: calc(33% - 15px) !important;
+      max-width: calc(33% - 15px);
+      vertical-align: top;
+      display: inline-block !important;
+      box-sizing: border-box;
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusMainColumns {
+      width: calc(66% - 17px) !important;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      width: calc(50% - 16px) !important;
+      max-width: calc(50% - 16px);
+      box-sizing: border-box;
+    }
+  }
+  .lotusWidget_3columnsTopMenuLayout #contentArea,
+  .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
+    width: 100% !important;
   }
 }
 
@@ -268,16 +321,32 @@ body.meetingBody:not(.cke_editable),
 // communities page bug fix
 div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
   &, table, tbody, tr {
-    width: 100%;
+    width: 100% !important;
     max-width: 100%;
     display: block;
   }
 }
 
+// forum widget overflow fix
+.widgetContainer .forumPagedList h4.lotusBreakWord.lotusEllipsis {
+  width: auto !important;
+  white-space: normal !important;
+  line-height: 1.2em;
+}
 
 // make left column in communites be the correct width - this is not the real left col, it's the backgorund pseudo content
 .communities-widget-appearance .lotusWidget_2columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayoutWithBanner .lotusColLeft:after {
-  border-right-width: 240px !important;
+  border-right-width: $leftnav-width !important;
+}
+
+// classic home page responsive changes
+.activityStreamPage.lotusMain {
+  #lotusColLeft {
+    width: 264px !important;
+  }
+  .lotusui30_layout & .lotusColLeft:after {
+    border-right-width: 264px !important;
+  }
 }

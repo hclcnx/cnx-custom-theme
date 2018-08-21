@@ -1,20 +1,17 @@
 // Design Guide .bx--link
 a {
-  @include bx--link-default();
+  @include link-default();
   -webkit-font-smoothing: antialiased !important;
-  font-weight: 600 !important;
   transition: color 250ms ease, text-decoration 250ms ease !important;
-  text-decoration: none !important;
 }
 
 [id^="section_"] > ul > li > a,
 [id^="lconnTagWidget_"] > div > div > a,
 [id^="lconnTagWidget_"] > div > ul > li > a,
 [id^="lconnTagWidget_"] > li > a,
-#contactsTagWidget_tagCloudView > div > ul > li > a,
 [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a,
 .lotusColLeft a {
-  @include bx--link-dark();
+  @include link-dark();
 }
 
 #tagsListTags_div + div span,
@@ -25,7 +22,7 @@ a {
   }
 }
 
-// Design Guide .bx--link-dark
+// Design Guide .link-dark
 #scene-title > a:not(.lconnInternalLink),
 [id^="lconn_files_action_title_more_"] > div,
 #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a,
@@ -36,7 +33,7 @@ a {
 #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a,
 #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a,
 #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a{
-  @include bx--link-dark();
+  @include link-dark();
 }
 
 
@@ -49,7 +46,7 @@ a {
 // Business card
 #javlinDiv > div > div.semtag_header > ul > li > a,
 [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1) {
-  @include bx--link-light();
+  @include link-light();
 }
 
 // Dark when active
@@ -66,12 +63,39 @@ a._linkHolder.lotusLeft {
   }
 }
 
+//Community overview specific link overrides
+.lotusCommunities .lotusWidget2 {
+  a:not([role="tab"]) {
+    @include link-default();
+  }
+  a.lotusPerson {
+    @include link-dark();
+  }
+  #tagsContainer #tagsDiv_tagCloudView a {
+    @include link-dark();
+    &, &:hover, &:focus {
+      font-weight: inherit !important;
+    }
+  }
+  a.lotusAction {
+    &, &:hover, &:focus {
+      @include font-size($caption...);
+    }
+  }
+  // icon links need focus/hover/active states
+  a.menu_drop_icon,
+  a.lotusIcon,
+  a.lotusAdd,
+  div.lotusPostIndicator a {
+    &:focus {
+      outline: 1px solid currentColor !important;
+    }
+  }
+}
+
 // Files left nav
 [id^="menu_"] a,
 #lotusTitleBar > div > div > h2 > span > a,
-#trash,
-#pinnedfiles,
-#favoritefolders,
 // Contacts left nav
 #lotusSidenav > div.lotusBottomCorner > div > div > ul > li > a,
 #scGroupTreeContent > div.groupActionBar > a {
@@ -92,14 +116,6 @@ div.lotusPostIndicator a {
     outline: 1px solid currentColor !important;
   }
 }
-//Sort list links - active sort is dark
-.lotusContent {
-  .lotusSort {
-    a[aria-pressed="true"]:not(:hover) {
-      @include link-color(dark);
-    }
-  }
-}
 
 // allow ckeditor links to be not bold
 #wikiContentDiv.qkrWikiPreview,
@@ -115,15 +131,25 @@ div.lotusPostIndicator a {
 }
 
 // Status updates like - comment - repost alignment
-div.activityStreamNewsItemContainer {
-  div.lotusLikeConnector {
-    margin-bottom: 0 !important;
-    padding-right: 3px !important;
-  }
-  ul.lotusInlinelist li {
-    vertical-align: unset !important;
-    &:before {
-      margin-top: 4px !important;
+#activityStreamMain {
+  div.activityStreamNewsItemContainer {
+    div.lotusLikeConnector {
+      margin-bottom: 0 !important;
+      padding-right: 3px !important;
+    }
+    ul.lotusInlinelist {
+      li {
+        vertical-align: unset !important;
+        &:before {
+          margin-top: 4px !important;
+        }
+      }
+      li.savethisAction,
+      li.stopfollowingAction {
+        &:before {
+          margin-top: 7px !important;
+        }
+      }
     }
   }
 }

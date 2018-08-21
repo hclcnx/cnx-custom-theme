@@ -1,40 +1,34 @@
-// Styles for People Avatars
+// Styles for People Avatars--------
 
-//People avatars on search results page
-.lconnStatusUpdatePhotoContainer img,
-.lconnProfilesPhotoContainer.otherPeople64 img,
-.lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55 img,
+.lconnStatusUpdatePhotoContainer img, //People avatars
+.lconnProfilesPhotoContainer.otherPeople64 img, //People avatars on profiles & contacts
+.lconnProfilesPhotoContainer.otherPeople64.otherPeople64-NoPhotoPerson55 img, //People avatars on profiles & contacts
 div[id^="com_ibm_social_personcard_widget_PersonWidget_"] .lconn_profileImage img, //Directory search
 #forum .lotusPostAuthorInfo .lotusPostAvatar img, //On forum posts
 form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img, //Invite to network
 #lotusReportingStructure #reportStructureArea img.photo, //Reporting structure on profiles
 #searchResultsTable img.photo, //Profiles Directory Search Results avatars
+.lotusCommunities img.otherPeople32, //In Community members widget
+.lotusCommunities img.otherPeople48, //In Community members page
 div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comments
 {
   border-radius:$border-radius-avatar !important;
-}
-
-//Community icons in search history panel - special case
-.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
-  border-radius:$border-radius-comm-icon !important;
-}
-//Community icons in Communities landing page
-.lotusContent {
-  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
-    .placeRow td[dojoattachpoint="communityIcon"] img {
-      border:1px solid $border-separator;
-    }
-  }
-}
-//Community icons on Related communities list
-#fullRecomm .lotusTable td img,
-//Community icons in Related communities widget on overview page
-#recomm img,
-//Community icons in search results page
-.icSearchResultsPage .lotusTable td img[src*="/communities/service/html/"] {
-  border-radius: $border-radius-comm-icon !important;
   border:1px solid $border-separator;
 }
+
+//Styles for Community Avatars--------
+.lotusCommunities img#communityLogo, //Main avatar on Overview page
+#fullRecomm .lotusTable td img, //In Related communities list
+#recomm img, //In Related communities widget on overview page
+#subcommunityNavWidgetContainer img.lconnSubcomImage, //In Subcommunity widget on overview page
+.icSearchResultsPage .lotusTable td img[src*="/communities/service/html/"], //In search results page
+.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage), //In search history panel - special case
+.lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img //In Communities landing page
+{
+ border-radius: $border-radius-comm-icon !important;
+ border:1px solid $border-separator !important;
+}
+
 //Community icons in Related communities widget on overview page
 .lotusContent .lotusWidget2 #recomm {
   .rc_icon {
@@ -64,10 +58,17 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comm
 }
 
 //People on Similar blogs and ideation blogs widgets
+//Community blog right side widgets
 #section_relatedblogs,
 #section_relatedideationblogs,
 #section_relatedentries,
-#section_relatedideas tr {
+#section_relatedideas tr,
+//Stand-alone blog right side widgets
+#section_featuredentries,
+#section_mostRecommended,
+#section_mostVoted,
+#section_mostCommented,
+#section_hotblogentries {
   td:first-of-type {
     width: 48px;
     padding:0 5px;
@@ -85,22 +86,18 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
 	}
 }
 
-//Community icons in Communities landing page
-.lotusContent {
-  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
-    .placeRow td[dojoattachpoint="communityIcon"] img {
-      border:1px solid $border-separator;
-    }
-  }
-}
-
 // Style person name
 a.lotusPerson,
 a.fn.person, //Names on community events list
 a:visited.lotusPerson,
 .vcard a.fn.url,
-.panelContent .header1 a.lotusPerson, {
-  color:$text-01 !important;
+.panelContent .header1 a.lotusPerson {
+  color: $text-01 !important;
+}
+
+.lotusPost .vcard a.lotusPerson { //onprem blogs persons
+  color: $text-01 !important;
+  font-weight: 600 !important;
 }
 
 //Contacts cards - still some styling in _contactcards.scss

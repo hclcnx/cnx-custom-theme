@@ -87,14 +87,17 @@ tbody .lotusFirstCell{
   // icon alignment in files list
   .filesList {
     .lconnSelectAllContainer {
-//      padding-left: 10px !important; 1372: Prevent unwanted padding in Community files feature select all checkbox.
     }
   }
 }
 
-// 1372: Restrict padding to select all checkbox in Files component, prevent it in Community files feature.
-#lotusContent > #scene-body .filesList .lconnSelectAllContainer {
+// 1372 Files: Restrict padding to select all checkbox in Files component, prevent it in Community files feature.
+//1428 Files: Align checkboxes and prevent focus cut-off.
+#scene-body {
+  .lconnSelectAllContainer,
+  .lotusTable tr td:first-child {
     padding-left: 10px !important;
+  }
 }
 
 // sub community add members form
@@ -106,3 +109,54 @@ tbody .lotusFirstCell{
     vertical-align: middle;
   }
 }
+
+
+// 1521 vertically align checkboxes on wiki trash page
+.lconnWikis .hentry .lotusFirstCell input[type="checkbox"] {
+    margin-top: 0 !important;
+}
+
+// Activities checkboxes
+//1691: Prevent clipping of checkboxes in to-do and entry edit fields.
+div[dojoattachpoint="content_AP"] {
+
+  div[dojoattachpoint="checkboxes_AP"] {
+
+    .lotusFieldWrapper {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .lotusCheckbox {
+      top: -1px !important;
+    }
+  }
+
+  div[dojoattachpoint="notifyArea_AP"] {
+    .lotusFieldWrapper {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .lotusCheckbox {
+      top: -1px !important;
+    }
+    div[dojoattachpoint="filteringContainer_AP"] {
+      .lotusSearch {padding-top: 10px;}
+      .peopleList .lconnNotify {
+        padding: 2px 0;
+      }
+    }
+  }
+}
+
+//1694: Start community activity - Allow all other community members checkbox
+div[dojoattachpoint="addAllReadersContainer_AP"] {
+  padding-bottom: 3px;
+  padding-top: 4px;
+  .lotusFieldWrapper {
+    margin-left: 10px !important;
+  }  
+  .lotusFieldWrapper .lotusCheckbox {
+	top: 0;
+  }
+}
+

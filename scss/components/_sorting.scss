@@ -1,4 +1,14 @@
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth .lotusSort{
+.lotusSort{
+  ul li{
+    border:none!important;
+    a {
+      color: $text-02 !important;
+      
+      &[aria-pressed="true"] {
+        @include link-color(dark);
+      }
+    }
+  }
   th{
     padding:0!important;
     padding-bottom:16px!important;

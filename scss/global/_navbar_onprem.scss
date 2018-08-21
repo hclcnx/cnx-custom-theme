@@ -10,7 +10,7 @@
   }
   //Compant name & logo
   div.lotusLogo {
-    height: $navbar-height;;
+    height: $navbar-height;
     span {
       font-size: $navbar-font-size;
       font-weight: $navbar-font-weight;
@@ -27,9 +27,9 @@
     }
     &.lotusSelected {
       a {
-        border-bottom: 4px solid $navbar-selected;
+        border-bottom: $navbar-selected-height solid $navbar-selected-color;
         &:hover {
-          border-bottom: 2px solid $navbar-hover;
+          border-bottom: $navbar-hover-height solid $navbar-hover-color;
         }
       }
       &::after {
@@ -45,8 +45,8 @@
       padding: 9px 12px 8px 12px !important;
       border: 1px solid transparent;
       &:hover {
-        background:none !important;
-        border-bottom:2px solid $navbar-hover;
+        background: none !important;
+        border-bottom: $navbar-hover-height solid $navbar-hover-color;
         &:before {
           border: none !important;
         }
@@ -55,7 +55,7 @@
         display:none;
       }
       &:focus {
-        border:1px solid $navbar-focus;
+        border: 1px solid $navbar-focus-color;
       }
     }
   }
@@ -77,10 +77,10 @@
         display:none;
       }
       &:hover {
-        border-bottom: 2px solid $navbar-hover;
+        border-bottom: $navbar-hover-height solid $navbar-hover-color;
       }
       &:focus {
-        border-color: $navbar-focus;
+        border-color: $navbar-focus-color;
       }
     }
     #lotusPerson a {
@@ -88,10 +88,10 @@
         display:none;
       }
       &:hover {
-        border-bottom: 2px solid $navbar-hover;
+        border-bottom: $navbar-hover-height solid $navbar-hover-color;
       }
       &:focus {
-        border-color: $navbar-focus !important;
+        border-color: $navbar-focus-color !important;
       }
     }
     //Share button
@@ -102,25 +102,25 @@
       text-decoration: none !important;
       margin: 0px 20px 0px 0px;
       &:hover {
-        border-bottom: 2px solid $navbar-hover;
+        border-bottom: $navbar-hover-height solid $navbar-hover-color;
         background: transparent;
       }
       &:focus {
-        border-color: $navbar-focus !important;
+        border-color: $navbar-focus-color !important;
       }
     }
     #headerHelpLi a {
-      height: $navbar-height; //42px;
+      height: $navbar-height;
       padding-top: 0px !important;
       padding-bottom: 0px !important;
       img {
         display:none;
       }
       &:hover {
-        border-bottom: 2px solid $navbar-hover;
+        border-bottom: $navbar-hover-height solid $navbar-hover-color;
       }
       &:focus {
-        border-color: $navbar-focus;
+        border-color: $navbar-focus-color;
       }
     }
   }

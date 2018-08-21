@@ -12,7 +12,7 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
     }
     
     &[dojoattachpoint="attachActionButtonNode"]:hover {
-      @include bx--link-default();
+      @include link-default();
     }
   }
   img.lconnSprite-iconAttachment16,

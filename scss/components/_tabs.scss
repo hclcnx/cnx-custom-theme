@@ -1,212 +1,257 @@
 // normal tabs and app_palette_modal _tabs
 .lotusTabContainer,
-.app_palette_modal_header {
-  border-bottom: 1px solid $color-gray-10 !important;
-  font-size: $tab-font-size !important;
-  font-weight: 500 !important;
+#activitiesTitleBar .lotusTitleBar2Tabs, //Stand-alone Activities
+.app_palette_modal_header,
+.ic-orient .ic-stream-controls //Orient Me
+ {
+  border-bottom: 1px solid $border-separator !important;
+  @include font-size($tabs...);
+}
 
-  .lotusTabs,
-  .app_palette_modal_tabs_ul {
-    li {
-      margin: 0 0 4px !important;
-      padding: 0.625rem 0 0.375rem !important;
-      font-size: inherit !important;
-      font-weight: inherit !important;
+.lotusTabs,
+.lotusNavTabs#activitiesNagvigationToolbar,
+.blog.admin .lotusNavTabs,
+.blog.lotusui .lotusNavTabs,
+.app_palette_modal_tabs_ul,
+.bx--tabs__nav,
+.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"] {
+  li {
+    margin: 0 0 4px !important;
+    padding: 0.625rem 0 0.375rem !important;
 
-      &:hover, &:hover a, &:focus, &:focus a, &:active, &:active a {
+    &:hover, &:hover a, &:focus, &:focus a, &:active, &:active a {
+      text-decoration: none !important;
+    }
+    &:focus {
+      outline: none !important;
+    }
+
+    + li {
+      margin-left: 1rem !important;
+    }
+
+    a {
+      padding: 0.5rem 1rem !important;
+      margin: 0 !important;
+      border-radius: $border-radius-tabs !important;
+      border: 1px solid transparent !important;
+      @include font-size($tabs...);
+      &, &:visited {
+        &, strong {
+          color: $tab-text !important;
+        }
+      }
+
+      strong, .lotusTabInner {
+        color: $tab-text !important;
+        padding-bottom: 0px !important;
+        @include font-size($tabs...);
+      }
+      &:focus {
+        color: $tab-text-focus !important;
+        background-color: $tab-background-focus !important;
+        border-color: $tab-border-focus !important;
         text-decoration: none !important;
       }
-
-      #about_link,
-      #share_link,
-      a._linkHolder.lotusLeft {
-        &:hover {
-          color: $text-03 !important;
-        }
-        &:hover, &:active, &:focus {
-          font-weight: 500 !important;
+      &:hover {
+        background-color: $tab-background-hover !important;
+        border-color: $tab-border-hover !important;
+        color: $tab-text-hover !important;
+        strong, .lotusTabInner {
+          color: $tab-text-hover !important;
         }
       }
+      &._linkHolder.lotusLeft {
+        @include font-size($tabs...);
+        &:hover {
+          color: $tab-text-hover !important;
+        }
+      }
+    }
 
-      + li {
+    #about_link,
+    #share_link {
+      @include font-size($tabs...);
+      &:hover {
+        color: $tab-text-hover !important;
+      }
+    }
+
+    &.lotusSelected,
+    &.bx--tabs__nav-item--selected  {
+      border-bottom: 4px solid $tab-border-selected !important;
+      margin-bottom: 0 !important;
+      a {
+        &, strong, .lotusTabInner {
+          color: $tab-text-selected !important;
+        }
+        &:active, &:focus {
+          text-decoration: none !important;
+        }
+        &:hover,
+        &:hover strong,
+        &:hover .lotusTabInner {
+          color: $tab-text-hover !important;
+        }
+      }
+    }
+  }
+}
+//Orient Me specifics
+.ic-orient .ic-stream-controls {
+  border-bottom: 1px solid transparent !important; //Use bottom border that is already there
+  .bx--tabs__nav li {
+    margin: 0px 0px !important; //Move selection bar down a bit
+  }
+  //Override orient me styling
+  .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
+    border: transparent;
+  }
+}
+
+// Actvities specifics
+#activitiesTitleBar .lotusTitleBar2Tabs {
+  border-bottom-color: transparent !important;
+  ul {
+    border-bottom: 1px solid $border-separator;
+  }
+  .lotusTabInner {
+    text-transform: none;
+  }
+}
+
+//File picker for selecting or sharing files
+.lconnPicker {
+  .tabbedSwitch .lconnPickerSourceLabelSpan {
+    text-transform: initial !important;
+  }
+
+  // share a file
+  .tabbedSwitch,
+  div[id^="lconn_share_widget_Dialog_"],
+  div[id^="lconn_files_widget_CompactFilePicker_"] {
+    .switchPane {
+      margin-bottom: 1rem !important;
+      max-width: 100%;
+    }
+  }
+}
+
+.dijitTabListContainer-top,
+.switchContainer {
+  border-bottom: 1px solid $border-separator !important;
+  @include font-size($tabs...);
+  height: auto !important;
+  background: none !important;
+  margin-left: 0 !important;
+
+  .dijitTabListWrapper {
+    position: relative !important;
+    left: auto !important;
+  }
+
+  .lconnPickerSourceSwitchingContentArea, fieldset {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  > div {
+    height: auto !important;
+  }
+  .tablist > div {
+    display: inline-block !important;
+  }
+  // li
+  .lconnPickerSourceToCheck {
+      margin: 0 !important;
+      padding: 0.625rem 0 0.375rem !important;
+      //font-size: inherit !important;
+      //font-weight: inherit !important;
+      display: inline-block !important;
+
+      + .lconnPickerSourceToCheck {
         margin-left: 1rem !important;
       }
 
-      &.lotusSelected  {
-        border-bottom: 4px solid $border-selected !important;
-        margin-bottom: 0 !important;
-        a {
-          strong {
-            color: $text-01 !important;
-          }
-          &:active, &:focus {
-            text-decoration: none !important;
-          }
-        }
-      }
-
-      &:focus {
-        outline: none !important;
-      }
-
-      a {
-        padding: 0.5rem 1rem !important;
-        margin: 0 !important;
-        font-size: inherit !important;
-        border-radius: $border-radius-tabs !important;
-        border: 1px solid transparent !important;
-        &, &:visited {
-          &, strong {
-            color: $text-02 !important;
-          }
-        }
-        strong {
-          font-weight: 500 !important;
-          color: $text-02 !important;
-          padding-bottom: 0px !important;
-        }
-        &:focus {
-          color: $text-02 !important;
-          background-color: transparent !important;
-          border-color: $btn-secondary-outline-hover !important;
-        }
-        &:hover {
-          background-color: $btn-secondary-fill-hover !important;
-          border-color: $btn-secondary-outline-hover !important;
-          color:$text-03 !important;
-          strong {
-            color: $text-03 !important;
-          }
-        }
-      }
-    }
   }
-}
-
-// share a file
-.tabbedSwitch,
-div[id^="lconn_share_widget_Dialog_"],
-div[id^="lconn_files_widget_CompactFilePicker_"] {
-  .switchPane {
-    margin-bottom: 1rem !important;
-    max-width: 100%;
-  }
-  .dijitTabListContainer-top,
-  .switchContainer {
-    border-bottom: 1px solid $color-gray-10 !important;
-    font-size: $tab-font-size !important;
-    font-weight: 500 !important;
-    height: auto !important;
-    background: none !important;
-    margin-left: 0 !important;
-
-    .dijitTabListWrapper {
-      position: relative !important;
-      left: auto !important;
-    }
-
-    .lconnPickerSourceSwitchingContentArea, fieldset {
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-
-    div[role="tablist"],
-    .tablist, .lconnPickerSourceToCheck, .lconnPickerSourceLabel, .lconnPickerSourceToCheck span {
-      font-size: inherit !important;
-      font-weight: inherit !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      border: 0 !important;
-      position: relative !important;
-    }
-    > div {
-      height: auto !important;
-    }
-    .tablist > div {
-      display: inline-block !important;
-    }
-    // li
-    .lconnPickerSourceToCheck {
-        margin: 0 !important;
-        padding: 0.625rem 0 0.375rem !important;
-        font-size: inherit !important;
-        font-weight: inherit !important;
-        display: inline-block !important;
-
-        + .lconnPickerSourceToCheck {
-          margin-left: 1rem !important;
-        }
-
-    }
-    // tab list items styling (a):
-    .dijitTabInner.dijitTabContent,
-    .lconnPickerSourceToCheck .lconnPickerSourceLabel {
-      display: inline-block !important;
-      position: relative;
-      padding: 0.5rem 1rem 0.5rem 2.25rem !important;
-      margin: 0 !important;
-      font-size: inherit !important;
-      color: $text-02 !important;
-      border-radius: 2px;
-      border: 1px solid transparent !important;
-      font-weight: 500 !important;
-      width: auto !important;
-      .lconnPickerSourceLabelSpan {
-        color: inherit !important;
-      }
+  // selected styling:
+  .pickerSourceChecked {
+    border-bottom: 4px solid $tab-border-selected !important;
+    background-image: none !important;
+    .lconnPickerSourceLabel {
+      color: $tab-text-selected !important;
+      border-radius: $border-radius-tabs !important;
       &:hover {
-        color: $text-03 !important;
-        background-color: $btn-secondary-fill-hover !important;
-        border-color: $btn-secondary-outline-hover !important;
-        font-weight: 500 !important;
+        color: $tab-text-hover !important;
+        background-color: $tab-background-hover !important;
+        border-color: $tab-border-hover !important;
       }
       &:focus {
-        color: $text-01 !important;
-        background-color: transparent !important;
-        border-color: $btn-secondary-outline-hover !important;
-        outline: none !important;
-      }
-      img {
-        left: .75rem;
-        position: absolute;
-
-        &[class*="Folder"] {
-          left: .25rem;
-        }
-      }
-    }
-    // selected styling:
-    .pickerSourceChecked {
-      border-bottom: 4px solid $border-selected !important;
-      background-image: none !important;
-      .lconnPickerSourceLabel {
-        color: $text-01 !important;
-        &:hover {
-          color: $text-03 !important;
-          background-color: $btn-secondary-fill-hover !important;
-          border-color: $btn-secondary-outline-hover !important;
-          font-weight: 500 !important;
-        }
-        &:focus {
-          color: $text-01 !important;
-          background-color: transparent !important;
-          border-color: $btn-secondary-outline-hover !important;
-        }
+        color: $tab-text-focus !important;
+        background-color: $tab-background-focus !important;
+        border-color: $tab-border-focus !important;
       }
     }
   }
 }
+
+
+div[role="tablist"],
+.tablist,
+.lconnPickerSourceToCheck,
+.lconnPickerSourceLabel,
+.lconnPickerSourceToCheck span {
+  //font-size: inherit !important;
+  //font-weight: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  position: relative !important;
+}
+// tab list items styling (a):
+.dijitTabInner.dijitTabContent,
+.lconnPickerSourceToCheck .lconnPickerSourceLabel {
+  display: inline-block !important;
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 2.25rem !important;
+  margin: 0 !important;
+  //font-size: inherit !important;
+  //font-weight: 500 !important;
+  color: $tab-text !important;
+  border-radius: $border-radius-tabs !important;
+  border: 1px solid transparent !important;
+  width: auto !important;
+  .lconnPickerSourceLabelSpan {
+    color: inherit !important;
+  }
+  &:hover {
+    color: $tab-text-hover !important;
+    background-color: $tab-background-hover !important;
+    border-color: $tab-border-hover !important;
+    //font-weight: 500 !important;
+  }
+  &:focus {
+    color: $tab-text-focus !important;
+    background-color: $tab-background-focus !important;
+    border-color: $tab-border-focus !important;
+    outline: none !important;
+  }
+  img {
+    left: .75rem;
+    position: absolute;
+
+    &[class*="Folder"] {
+      left: .25rem;
+    }
+  }
+}
+
 
 // forum reply -> insert image -> file picker dialog
 // these tabs hide the icons already so we should fix the left padding
 .dijitTabContainer .dijitTabListContainer-top {
   padding: 0 !important;
   background: transparent !important;
-
-  .dijitTabContainerTopStrip {
-    height: 3rem !important;
-    border-bottom: 1px solid $color-gray-10;
-  }
 
   div[role="tablist"] {
     padding-bottom: calc(.375rem + 3px) !important;
@@ -220,34 +265,36 @@ div[id^="lconn_files_widget_CompactFilePicker_"] {
 
       .tabLabel {
         position: relative;
-        color: $text-01 !important;
+        color: $tab-text !important;
         display: block;
         padding: 0.5rem 1rem !important;
         border-radius: $border-radius-tabs !important;
         border: 1px solid transparent !important;
-        @include font-size($body...);
-        font-weight: 500 !important;
+        @include font-size($tabs...);
         &:hover {
-          color: $text-03 !important;
-          background-color: $btn-secondary-fill-hover !important;
-          border-color: $btn-secondary-outline-hover !important;
-          font-weight: 500 !important;
+          color: $tab-text-hover !important;
+          background-color: $tab-background-hover !important;
+          border-color: $tab-border-hover !important;
           cursor: pointer;
         }
         &:focus {
-          color: $text-01 !important;
-          background-color: transparent !important;
-          border-color: $btn-secondary-outline-hover !important;
+          color: $tab-text-focus !important;
+          background-color: $tab-background-focus !important;
+          border-color: $tab-border-focus !important;
           outline: none !important;
         }
       }
       &.dijitTabChecked {
-        .tabLabel{
+        .tabLabel {
+          color: $tab-text-selected !important;
+          &:hover {
+            color: $tab-text-hover !important;
+          }
           &:after {
             content: '';
             position: absolute;
             display: block;
-            border-bottom: 4px solid $border-selected !important;
+            border-bottom: 4px solid $tab-border-selected !important;
             top: 100%;
             margin-top: .375rem;
             left: -1px;
@@ -262,36 +309,39 @@ div[id^="lconn_files_widget_CompactFilePicker_"] {
 }
 
 // Survey settings dialog
-div.lconn-survey_dialog {
-  .dijitTabContainer .dijitTabListContainer-top {
+div.lconn-survey_dialog .dijitTabContainer {
+  .dijitTabListContainer-top {
+    border-bottom: 1px solid $border-separator !important;
+    width: auto !important;
     padding: 0 !important;
     div[role="tablist"] {
       padding-bottom: calc(.375rem + 3px) !important;
       .dijitTabInner.dijitTabContent {
-        padding-left: 1rem !important;
+        @include font-size($tabs...);
+        margin-left: 1rem !important;
         background-image: none !important;
-        color: $text-01 !important;
+        border-radius: $border-radius-tabs;
+        color: $tab-text !important;
         + .dijitTabInner.dijitTabContent {
           margin-left: .5rem !important;
         }
         &.dijitTabChecked {
           position: relative;
+          color: $tab-text-selected !important;
         }
         &:hover {
-          color: $text-03 !important;
-          background-color: $btn-secondary-fill-hover !important;
-          border-color: $btn-secondary-outline-hover !important;
-          font-weight: 500 !important;
+          color: $tab-text-hover !important;
+          background-color: $tab-background-hover !important;
+          border-color: $tab-border-hover !important;
         }
         &:focus {
-          color: $text-01 !important;
-          background-color: transparent !important;
-          border-color: $btn-secondary-outline-hover !important;
+          color: $tab-text-focus !important;
+          background-color: $tab-background-focus !important;
+          border-color: $tab-border-focus !important;
         }
         span.tabLabel {
           color: inherit !important;
           border: none !important;
-          font-weight: 500 !important;
           text-transform: none !important;
           &:focus {
             outline: 0 !important;
@@ -309,4 +359,41 @@ div.lconn-survey_dialog {
 ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
   min-width: 1px !important;
   padding-right: 2rem;
+}
+
+// classic home page tabs
+.streamHeaderInner > div[id^="com_ibm_social_sharebox_ContextualSharebox_"] + .lotusPaging.lotusPagingTop {
+  height: auto !important;
+}
+.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"] {
+  white-space: nowrap;
+
+  span[dojoattachpoint="containerNode"] {
+    max-width: calc(100% - 50px);
+  }
+
+  ul {
+    white-space: normal;
+  }
+
+  li {
+    display: inline-block !important;
+  }
+}
+
+// onprem standalone blogs
+#blogsNavigationSelectedTab {
+  &:hover {
+    color: $tab-text-hover !important;
+    background-color: $tab-background-hover !important;
+    border-color: $tab-border-hover !important;
+    strong, .lotusTabInner {
+      color: $tab-text-hover !important;
+    }
+  }
+}
+
+//1715 Initial caps for standalone blogs tabs
+.lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
+	text-transform: initial;
 }

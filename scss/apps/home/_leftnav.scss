@@ -1,26 +1,19 @@
 //left nav on classic home page
-$h-padding:24px;
-$b-thickness:4px;
-$v-padding:14px;
-$initial-l-padding:15px;
-$p1:24px;
-$border-slide:border .23s ease, padding .23s ease;
-
 .lotusMain{
   padding-left:0!important;
   #lotusColLeft{
-    width:240px;
+    width: $leftnav-width;
     padding: 1rem 0 0 !important;
     margin:0!important;
     #homepageLeftNavigationMenuContainer {
-      //padding:0px $h-padding;
+      //padding:0px $leftnav-horizontal-padding;
       li {
         margin:0px 0px;
         a {
-          padding-left:calc(#{$initial-l-padding} + #{$h-padding})!important;
-          padding-right:$h-padding;
-          padding-top:$v-padding;
-          padding-bottom:$v-padding;
+          padding-left:calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})!important;
+          padding-right:$leftnav-horizontal-padding;
+          padding-top:$leftnav-vertical-padding;
+          padding-bottom:$leftnav-vertical-padding;
           @include font-size($body...);
           border:none !important;
           text-decoration:none !important;
@@ -42,7 +35,7 @@ $border-slide:border .23s ease, padding .23s ease;
         &.lotusSelected {
           border:none !important;
           a {
-            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
             font-weight:700 !important;
             border-left:4px solid $border-selected !important;
           }
