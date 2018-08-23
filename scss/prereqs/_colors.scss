@@ -60,6 +60,7 @@ $icon-file-type-calendar: #000000;
 
 //-----METRICS DATA COLORS-----
 $data-bookmarks: #dc267f; // Bookmarks; Magenta 50
+$data-communities: #008673; // Communities; Teal 50
 $data-forums: #9753e1; // Forums; Violet 50
 $data-wikis: #5d1a38; // Wikis; Magenta 80
 $data-ideationblog: #db7c00; // IDEATIONBLOG; Orange 40
@@ -81,7 +82,19 @@ $data-overall: $color-gray-50; // Overall; Cool Gray 50
 $text-01: $color-black; // Primary text color on all backgrounds
 $text-02: $color-gray-60; // Secondary text color
 $text-03: $color-white; // Light color on dark background
-$text-04: $brand-01; // links
+$text-04: $brand-01; // links; deprecated. Use vars below.
+
+// -----LINK COLORS-----
+$link-default: $brand-01;
+$link-dark: $text-01; // use over light backgrounds
+$link-light: $text-03; // use over dark backgrounds
+
+//-----ICON COLORS-----
+$icon-default: $color-gray-60; // Primary icon color
+$icon-brand-01: $brand-01; // Brand-01 colored icons
+$icon-brand-02: $brand-02; // Brand-02 colored icons
+$icon-white: $text-03; // Icons on dark backgrounds
+$icon-black: $text-01; // Text-colored icons
 
 //-----ICON COLORS-----
 $icon-default: $color-gray-60; // Primary icon color

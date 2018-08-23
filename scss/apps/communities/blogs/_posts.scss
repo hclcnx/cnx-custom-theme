@@ -21,8 +21,7 @@
         }
         //meta info
         .lotusMeta, .lotusMeta a {
-          font-size: $body-mini-font-size !important;
-          font-weight:500 !important;
+          @include font-size($caption...);
           color:$text-02 !important;
         }
         .lotusMeta {
@@ -35,7 +34,7 @@
           float: none !important;
         }
         .rating.lotusRating .lotusLike {
-          font-size: .75rem;
+          @include font-size($caption...);
           .lotusLikeCount {
             padding-bottom: 0 !important;
             margin-bottom: 0 !important;
@@ -90,7 +89,7 @@
   .ideaVotingDiv {
     .ideaVotingButtonDiv {
       .ideaVotingButton {
-        @include bx--link-default;
+        @include link-default;
       }
     }
   }
@@ -178,5 +177,14 @@
   }
   .peopleList .lconnNotify {
     padding: .15rem;
+  }
+}
+
+// font size for blog actions links; onprem 1668
+.lotusBoard.blogsBoard {
+  ul.lotusInlinelist > li {
+    a {
+      @include font-size($caption...);
+    }
   }
 }

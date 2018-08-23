@@ -7,7 +7,7 @@
     margin-left:0px!important;
     box-sizing: border-box;
     .lotusMenu {
-      width:240px;
+      width: $leftnav-width;
       position:relative!important;
       top:5px!important;
       padding-top:1rem!important;
@@ -20,8 +20,8 @@
             box-sizing:border-box;
             margin-top:0!important;
             margin-bottom:0!important;
-            padding:14px 24px!important;
-            padding-left:39px!important;
+            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
             font-weight: 400 !important;
             &:hover{
               background-color:$background-side-hover!important;
@@ -29,10 +29,11 @@
             }
           }
           ul li {
-            padding-left:49px!important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+            border-left-width: 0 !important;
             &.lotusSelected {
-              padding-left: 45px !important;
-              border-left: 4px solid $border-selected !important;
+              padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+              border-left: $leftnav-active-border-thickness solid $border-selected !important;
               a {
                 font-weight:700!important;
                 border: none !important;
@@ -54,21 +55,21 @@
             @include font-size($bodylink...);
             box-sizing: border-box;
             margin: 0px 0px !important;
-            padding: 14px 24px !important;
-            padding-left: 39px !important;
+            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
           }
         }
         ul li {
           box-sizing:border-box;
           margin-top: 0 !important;
           margin-bottom: 0 !important;
-          padding: 14px 24px !important;
-          padding-left: 39px !important;
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+          transition: $leftnav-border-slide;
 
           &.lotusSelected {
-            padding-left:35px!important;
-            transition:border 0.23s ease, padding 0.23s ease;
-            border-left: 4px solid $border-selected !important;
+            border-left: $leftnav-active-border-thickness solid $border-selected !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) !important;
             a {
               font-weight:700!important;
             }
@@ -76,7 +77,7 @@
           a {
             padding:0!important;
             margin:0!important;
-            font-weight:400!important;
+            font-weight: 400 !important;
             &:hover,&:focus{
               border-color:transparent!important;
               text-decoration: none !important;
@@ -86,6 +87,17 @@
             background-color:$background-side-hover!important;
             cursor:pointer;
             text-decoration: none !important;
+          }
+        }
+        #actNavPanel-sectionsSection,
+        #dashNavPanel-prioritySection,
+        #dashNavPanel-publicSection {
+          ul li {
+            padding-left: calc( ( #{$leftnav-indent-padding} * 2 ) + #{$leftnav-horizontal-padding} ) !important;
+            &.lotusSelected {
+              border-left: $leftnav-active-border-thickness solid $border-selected !important;
+              padding-left: calc( ( #{$leftnav-indent-padding} * 2 ) + #{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) !important;
+            }
           }
         }
       }
@@ -100,5 +112,27 @@
       padding-left: 42px !important;
       padding-right: 24px !important;
     }
+  }
+}
+
+.lotusSection {
+  > h2  {
+    margin-left:0!important;
+    padding-left:calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+    padding-right:$leftnav-horizontal-padding!important;
+    margin-bottom:0!important;
+    padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+    padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
+    &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
+      background-color:$background-side-hover !important;
+    }
+  }
+  .lconnTagCloudContent,
+  &.lconnTagFilterActivity {
+    margin: 0 !important;
   }
 }

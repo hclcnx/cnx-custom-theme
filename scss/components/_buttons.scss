@@ -73,7 +73,9 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray,
 div#activityActionButtons span.lotusBtn a, //Community activities
 .lotusCommunities #memberAddButton a, //Community members
-.lotusCommunities #inviteButtons a //Community members
+.lotusCommunities #inviteButtons a, //Community members
+.lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
+#forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a
 {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {

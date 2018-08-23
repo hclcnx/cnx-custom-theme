@@ -86,6 +86,11 @@
           }
         }
       }
+      // post images 
+      img {
+        max-width: 100%;
+        height: auto;
+      }
       //Quoted post
       .lotusPostDetails .quote {
         background-color:$background-side;

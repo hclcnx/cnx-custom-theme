@@ -12,7 +12,7 @@
     .dijitMenuPreviousButton,
     .dijitMenuNextButton {
       font-style: normal !important;
-      color: $text-04 !important;
+      color: $link-default !important;
       font-weight: 500 !important;
     }
     .dijitMenuItem {
@@ -25,7 +25,7 @@
       }
       b {
         font-weight: inherit !important;
-        color: $text-04 !important;
+        color: $link-default !important;
       }
       .bhcBizCardFloat {
         padding: 0 .75rem 0 0 !important;

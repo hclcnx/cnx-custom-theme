@@ -178,93 +178,52 @@
 	}
 }
 
-//======LINK MIXIN=========
-@mixin link-color($color) {
+//======LINK MIXINS=========
+// the first few are utility mixins - DO NOT EDIT OR USE THEM
+@mixin link-color($color:null) {
   @if       $color == inherit { color: inherit !important; }
-  @else if  $color == light   { color: $text-03 !important; }
-  @else if  $color == dark    { color: $text-01 !important; }
-  @else                       { color: $text-04 !important; }
+  @else if  $color == light   { color: $link-light !important; }
+  @else if  $color == dark    { color: $link-dark !important; }
+  @else                       { color: $link-default !important; }
 }
-
-@mixin link-underline($color) {
-  @if       $color == none    { text-decoration: none !important; }
-  @else if  $color == inherit { text-decoration: inherit !important; }
-  @else if  $color == light   { text-decoration-line: underline !important;
-                                text-decoration-color: $text-03 !important; }
-  @else if  $color == dark    { text-decoration-line: underline !important;
-                                text-decoration-color: $text-01 !important; }
-  @else if  $color == currentColor
-                              { text-decoration-line: underline !important;
-                                text-decoration-color: currentColor !important; }
-  @else                       { text-decoration-line: underline !important;
-                                text-decoration-color: $text-04 !important; }
-}
-
+// DO NOT EDIT OR USE
 @mixin link-override() {
   @include link-color('inherit');
-  @include link-underline('none');
+  text-decoration: none !important;
   font-weight: inherit !important;
 }
-
-@mixin bx--link-default() {
-  @include link-color('brand01');
-
+// DO NOT EDIT OR USE
+@mixin make-links($linkcolor, $underlinecolor) {
+  @include link-color($linkcolor);
+  text-decoration-color: currentColor !important;
+  font-weight: $link-default-font-weight !important;
+  text-decoration: $link-default-decoration !important;
   &:visited {
-    @include link-color('brand01');
+    @include link-color($linkcolor);
   }
-
   &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('currentColor');
+  &:hover {
     outline: none !important;
+    font-weight: $link-hover-font-weight !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-hover-decoration !important;
+  }
+  &:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-focus-decoration !important;
   }
 }
 
-@mixin bx--link-dark() {
-  @include link-color('dark');
-
-  &:visited {
-    @include link-color('dark');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('currentColor');
-    outline: none !important;
-  }
+// these are the ones we should use
+@mixin link-default() {
+  @include make-links('', 'currentColor');
 }
-
-@mixin bx--link-dark-alt() {
-  @include link-color('dark');
-
-  &:visited {
-    @include link-color('dark');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-color('blue');
-    @include link-underline('currentColor');
-    outline: none !important;
-  }
+@mixin link-dark() {
+  @include make-links('dark', 'currentColor');
 }
-
-@mixin bx--link-light() {
-  @include link-color('light');
-
-  &:visited {
-    @include link-color('light');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('light');
-    outline: none !important;
-  }
+@mixin link-light() {
+  @include make-links('light', 'currentColor');
 }
 
 //======CLOSE ICON ON DIALOGS MIXIN=========
@@ -559,5 +518,5 @@
 
 //how to use:
 // body {
-//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-brand-01) !important;
+//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-default) !important;
 // }

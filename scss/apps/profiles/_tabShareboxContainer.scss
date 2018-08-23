@@ -22,7 +22,7 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_textBoxContainer"]
     &:hover, &:focus {
       background: transparent !important;
       border: 0 !important;
-      color: $text-04 !important;
+      color: $link-default !important;
       text-decoration: underline !important;
     }
   }

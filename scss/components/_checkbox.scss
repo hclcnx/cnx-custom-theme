@@ -110,6 +110,12 @@ tbody .lotusFirstCell{
   }
 }
 
+
+// 1521 vertically align checkboxes on wiki trash page
+.lconnWikis .hentry .lotusFirstCell input[type="checkbox"] {
+    margin-top: 0 !important;
+}
+
 // Activities checkboxes
 //1691: Prevent clipping of checkboxes in to-do and entry edit fields.
 div[dojoattachpoint="content_AP"] {
@@ -148,9 +154,8 @@ div[dojoattachpoint="addAllReadersContainer_AP"] {
   padding-top: 4px;
   .lotusFieldWrapper {
     margin-left: 10px !important;
-  }  
+  }
   .lotusFieldWrapper .lotusCheckbox {
 	top: 0;
   }
 }
-

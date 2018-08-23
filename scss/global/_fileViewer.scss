@@ -1,6 +1,6 @@
 /*Globalization Changes*/
 .ics-viewer .manualCancel:hover span{
-	color: $text-04 !important;
+	color: $link-default !important;
 }
 .ics-viewer{
 	 @import "./components/components";
@@ -247,7 +247,7 @@ ul.ics-viewer-tabs{
 	}
 	.content{
 		a.fn.url{
-			color: $text-04 !important;
+			color: $link-default !important;
 		}
 	}
 	//sharing tab
@@ -256,7 +256,7 @@ ul.ics-viewer-tabs{
 	}
 	.header1 a,
 	.targetUser span a{
-		color: $text-04 !important;
+		color: $link-default !important;
 	}
 	.comment .header1{
 		font-weight:500!important;
@@ -297,10 +297,10 @@ ul.ics-viewer-tabs{
 }
 .ics-viewer-upload-new-version,.panelFeed a span,
 .actionContainer span{
- color: $text-04 !important;
+ color: $link-default !important;
  &:hover{
 	 text-decoration:underline!important;
-	 text-decoration-color: $text-04 !important;
+	 text-decoration-color: currentColor !important;
  }
 }
 .panelFeed a span:hover{
@@ -339,7 +339,7 @@ ul.ics-viewer-tabs{
 		a.manualCancel:hover:not([disabled]), a.manualAdd:hover:not([disabled]),
 		.manualCancel:hover span, .manualAdd:hover span{
 			background-color:transparent !important;
-			color: $text-04 !important;
+			color: $link-default !important;
 		}
   }
 }
@@ -358,29 +358,29 @@ div[data-dojo-attach-point="descriptionContainer"],
 div[data-dojo-attach-point="linksContainer"],
 div[data-dojo-attach-point="tagsContainer"]{
 	.header2 a{
-		color: $text-04 !important;
+		color: $link-default !important;
 	}
 	.header2 a:hover{
 		text-decoration:underline!important;
-		text-decoration-color: $text-04 !important;
+		text-decoration-color: currentColor !important;
 	}
 }
 div[data-dojo-attach-point="downloadsContainer"]{
 	.header1 a:hover{
 		text-decoration:underline!important;
-		text-decoration-color: $text-04 !important;
+		text-decoration-color: currentColor !important;
 	}
 	.header2 a{
-		color: $text-01 !important;
+		color: $link-default !important;
 	}
 }
 ul[data-dojo-attach-point="tagList"]{
 	li a{
-		color: $text-04 !important;
+		color: $link-default !important;
 	}
 	li a:hover{
 		text-decoration:underline!important;
-		text-decoration-color: $text-04 !important;
+		text-decoration-color: currentColor !important;
 	}
 }
 //updating the prev/next buttons

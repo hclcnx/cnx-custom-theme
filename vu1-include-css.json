@@ -36,6 +36,20 @@
           "application": "Visual Update 1 for IBM Connections"
         },
         {
+          "name":"Activities",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/activities.css"
+            ],
+            "include-repo": {
+              "name": "cnx-custom-theme"
+            }
+          },
+          "path": "activities",
+          "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "Blogs",
             "type": "com.ibm.customizer.ui",
             "payload": {
@@ -131,6 +145,20 @@
                 }
             },
             "path": "meetings",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Metrics",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/metrics.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "metrics",
             "application": "Visual Update 1 for IBM Connections"
         },
         {

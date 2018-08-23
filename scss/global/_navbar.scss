@@ -1,7 +1,7 @@
 //Navigation bar at the top of all pages
 
 //Moves body of site down to be below the navbar
-.lotusui30_body.scloud3 {
+.lotusui30_body.scloud3:not(.compactMode) {
   margin-top: $navbar-height !important; //Height of navbar
 }
 
@@ -16,7 +16,7 @@
   top: 0;
 
   //Text on the navbar
-  &>div.navmenu, &>a{ //Words on navbar directly inside .ics-scbanner
+  &>div.navmenu, &>a { //Words on navbar directly inside .ics-scbanner
     font-size:$navbar-font-size;
     font-weight: $navbar-font-weight !important;
     //color:$navbar-text-color !important; //Fixed to white for now
@@ -27,6 +27,9 @@
     }
     &:focus:before {
       border: 1px solid $navbar-focus-color !important;
+    }
+    &:hover {
+      font-weight: $navbar-font-weight !important;
     }
 	}
   //Menus and Submenus from navbar entries - Submenus only appear on narrow window

@@ -108,14 +108,20 @@
     font-weight: 600 !important; }
     #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a {
       color: #3C6DF0 !important;
-      font-weight: bold !important; }
+      text-decoration-color: currentColor !important;
+      font-weight: 600 !important;
+      text-decoration: none !important; }
       #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:visited {
         color: #3C6DF0 !important; }
-      #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:active, #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:hover, #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:focus {
-        text-decoration-line: underline !important;
-        text-decoration-color: #3C6DF0 !important;
-        text-decoration: underline !important;
-        outline: none !important; }
+      #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:active, #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:hover {
+        outline: none !important;
+        font-weight: 600 !important;
+        text-decoration-color: currentColor !important;
+        text-decoration: none !important; }
+      #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a:focus {
+        outline: none !important;
+        text-decoration-color: currentColor !important;
+        text-decoration: underline !important; }
     #notificationsMenu .icBanner-popover-content .icNotification-post .icNote-title a.fn.url {
       color: black !important;
       display: block; }
@@ -153,20 +159,21 @@ div[id^="com_ibm_social_personcard_widget_PersonWidget_"] .lconn_profileImage im
 form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profilePhoto img,
 #lotusReportingStructure #reportStructureArea img.photo,
 #searchResultsTable img.photo,
+.lotusCommunities img.otherPeople32,
+.lotusCommunities img.otherPeople48,
 div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img {
-  border-radius: 50% !important; }
-
-.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage) {
-  border-radius: 50% !important; }
-
-.lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
-  border: 1px solid #d8d8d8; }
-
-#fullRecomm .lotusTable td img,
-#recomm img,
-.icSearchResultsPage .lotusTable td img[src*="/communities/service/html/"] {
   border-radius: 50% !important;
   border: 1px solid #d8d8d8; }
+
+.lotusCommunities img#communityLogo,
+#fullRecomm .lotusTable td img,
+#recomm img,
+#subcommunityNavWidgetContainer img.lconnSubcomImage,
+.icSearchResultsPage .lotusTable td img[src*="/communities/service/html/"],
+.lconn_personContainer.compact .lconn_profileImage img:not(.lconn-ftype32):not([class^="lconnSprite-"]):not(.lconn_userImage),
+.lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow td[dojoattachpoint="communityIcon"] img {
+  border-radius: 50% !important;
+  border: 1px solid #d8d8d8 !important; }
 
 .lotusContent .lotusWidget2 #recomm .rc_icon {
   width: 100%;
@@ -188,13 +195,23 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img {
 #section_relatedblogs td:first-of-type,
 #section_relatedideationblogs td:first-of-type,
 #section_relatedentries td:first-of-type,
-#section_relatedideas tr td:first-of-type {
+#section_relatedideas tr td:first-of-type,
+#section_featuredentries td:first-of-type,
+#section_mostRecommended td:first-of-type,
+#section_mostVoted td:first-of-type,
+#section_mostCommented td:first-of-type,
+#section_hotblogentries td:first-of-type {
   width: 48px;
   padding: 0 5px; }
   #section_relatedblogs td:first-of-type img,
   #section_relatedideationblogs td:first-of-type img,
   #section_relatedentries td:first-of-type img,
-  #section_relatedideas tr td:first-of-type img {
+  #section_relatedideas tr td:first-of-type img,
+  #section_featuredentries td:first-of-type img,
+  #section_mostRecommended td:first-of-type img,
+  #section_mostVoted td:first-of-type img,
+  #section_mostCommented td:first-of-type img,
+  #section_hotblogentries td:first-of-type img {
     border-radius: 50% !important;
     width: 40px;
     height: 40px; }
@@ -244,7 +261,7 @@ a:visited.lotusPerson,
     #javlinDiv .personMenu ul.topActionHolder li.topAction a {
       color: #3C6DF0 !important; }
       #javlinDiv .personMenu ul.topActionHolder li.topAction a:hover {
-        text-decoration-color: #3C6DF0 !important; }
+        text-decoration-color: currentColor !important; }
       #javlinDiv .personMenu ul.topActionHolder li.topAction a::after {
         content: "";
         padding-left: 1px;
@@ -1140,7 +1157,9 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.
 span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray,
 div#activityActionButtons span.lotusBtn a,
 .lotusCommunities #memberAddButton a,
-.lotusCommunities #inviteButtons a {
+.lotusCommunities #inviteButtons a,
+.lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a,
+#forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a {
   border-radius: 2rem !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -1279,7 +1298,15 @@ div#activityActionButtons span.lotusBtn a,
   .lotusCommunities #inviteButtons a,
   .lotusCommunities #inviteButtons a:hover,
   .lotusCommunities #inviteButtons a:active,
-  .lotusCommunities #inviteButtons a:focus {
+  .lotusCommunities #inviteButtons a:focus,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:focus,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus {
     text-decoration: none !important;
     font-weight: 500 !important; }
   .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:hover, .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:active,
@@ -1342,7 +1369,11 @@ div#activityActionButtons span.lotusBtn a,
   .lotusCommunities #memberAddButton a:hover,
   .lotusCommunities #memberAddButton a:active,
   .lotusCommunities #inviteButtons a:hover,
-  .lotusCommunities #inviteButtons a:active {
+  .lotusCommunities #inviteButtons a:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:active {
     outline: none; }
   .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:focus,
@@ -1374,7 +1405,9 @@ div#activityActionButtons span.lotusBtn a,
   span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray:focus,
   div#activityActionButtons span.lotusBtn a:focus,
   .lotusCommunities #memberAddButton a:focus,
-  .lotusCommunities #inviteButtons a:focus {
+  .lotusCommunities #inviteButtons a:focus,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:focus,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus {
     box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
     outline: none !important; }
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:focus,
@@ -1437,7 +1470,11 @@ div#activityActionButtons span.lotusBtn a,
   .dj_a11y .lotusCommunities #memberAddButton a:focus,
   .dijit_a11y .lotusCommunities #memberAddButton a:focus,
   .dj_a11y .lotusCommunities #inviteButtons a:focus,
-  .dijit_a11y .lotusCommunities #inviteButtons a:focus {
+  .dijit_a11y .lotusCommunities #inviteButtons a:focus,
+  .dj_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:focus,
+  .dijit_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:focus,
+  .dj_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus,
+  .dijit_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus {
     box-shadow: none !important;
     outline: 1px solid #3C6DF0 !important;
     outline-offset: 1px; }
@@ -1501,7 +1538,11 @@ div#activityActionButtons span.lotusBtn a,
   .lotusCommunities #memberAddButton a:active,
   .lotusCommunities #memberAddButton a:hover,
   .lotusCommunities #inviteButtons a:active,
-  .lotusCommunities #inviteButtons a:hover {
+  .lotusCommunities #inviteButtons a:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:hover {
     background-color: #3C6DF0 !important;
     color: #FFFFFF !important;
     border-color: #3C6DF0 !important; }
@@ -1775,7 +1816,25 @@ div#activityActionButtons span.lotusBtn a,
   .lotusCommunities #inviteButtons a[disabled="disabled"]:active,
   .lotusCommunities #inviteButtons a.lotusBtnDisabled,
   .lotusCommunities #inviteButtons a.lotusBtnDisabled:hover,
-  .lotusCommunities #inviteButtons a.lotusBtnDisabled:active {
+  .lotusCommunities #inviteButtons a.lotusBtnDisabled:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"],
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"]:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"]:active,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled:hover,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"],
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"]:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"]:active,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled:hover,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled:active {
     cursor: not-allowed;
     color: #969696 !important;
     border-color: #969696 !important;
@@ -1870,7 +1929,13 @@ div#activityActionButtons span.lotusBtn a,
   .lotusCommunities #memberAddButton a.lotusBtnDisabled:focus,
   .lotusCommunities #inviteButtons a:disabled:focus,
   .lotusCommunities #inviteButtons a[disabled="disabled"]:focus,
-  .lotusCommunities #inviteButtons a.lotusBtnDisabled:focus {
+  .lotusCommunities #inviteButtons a.lotusBtnDisabled:focus,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled:focus,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"]:focus,
+  .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled:focus,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled:focus,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"]:focus,
+  #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled:focus {
     box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:disabled:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"]:disabled:focus, .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus, .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:focus,
@@ -2052,7 +2117,19 @@ div#activityActionButtons span.lotusBtn a,
   .dj_a11y .lotusCommunities #inviteButtons a[disabled="disabled"]:focus,
   .dijit_a11y .lotusCommunities #inviteButtons a[disabled="disabled"]:focus,
   .dj_a11y .lotusCommunities #inviteButtons a.lotusBtnDisabled:focus,
-  .dijit_a11y .lotusCommunities #inviteButtons a.lotusBtnDisabled:focus {
+  .dijit_a11y .lotusCommunities #inviteButtons a.lotusBtnDisabled:focus,
+  .dj_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled:focus,
+  .dijit_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:disabled:focus,
+  .dj_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"]:focus,
+  .dijit_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a[disabled="disabled"]:focus,
+  .dj_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled:focus,
+  .dijit_a11y .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a.lotusBtnDisabled:focus,
+  .dj_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled:focus,
+  .dijit_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:disabled:focus,
+  .dj_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"]:focus,
+  .dijit_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a[disabled="disabled"]:focus,
+  .dj_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled:focus,
+  .dijit_a11y #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a.lotusBtnDisabled:focus {
     box-shadow: none !important;
     outline: 1px solid #969696 !important;
     outline-offset: 1px; }
@@ -2569,6 +2646,9 @@ tbody .lotusFirstCell {
     display: inline-block;
     vertical-align: middle; }
 
+.lconnWikis .hentry .lotusFirstCell input[type="checkbox"] {
+  margin-top: 0 !important; }
+
 div[dojoattachpoint="content_AP"] div[dojoattachpoint="checkboxes_AP"] .lotusFieldWrapper {
   padding-top: 2px;
   padding-bottom: 2px; }
@@ -2755,71 +2835,141 @@ div[dojoattachpoint="addAllReadersContainer_AP"] {
 [id$="_selhicolor"] {
   margin-bottom: 8px; }
 
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a,
+div#list .lotusTable.lotusFixedTable th,
+div#list .lotusTable.lotusFixedTable th a,
+div#list .lotusTable.lotusFixedTable tr.lotusSort td,
+div#list .lotusTable.lotusFixedTable tr.lotusSort td a {
   font-size: 12px !important;
   font-weight: 500 !important;
   color: #595859 !important; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:lang(en) {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td:lang(en), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:lang(en),
+  div#list .lotusTable.lotusFixedTable th:lang(en),
+  div#list .lotusTable.lotusFixedTable th a:lang(en),
+  div#list .lotusTable.lotusFixedTable tr.lotusSort td:lang(en),
+  div#list .lotusTable.lotusFixedTable tr.lotusSort td a:lang(en) {
     text-transform: uppercase !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth th {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth th,
+div#list .lotusTable.lotusFixedTable th {
   border-bottom: 1px solid #3C6DF0; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a,
+  div#list .lotusTable.lotusFixedTable th a {
     text-decoration: none; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:hover {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth th a:hover,
+    div#list .lotusTable.lotusFixedTable th a:hover {
       text-decoration: underline; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort,
+div#list .lotusTable.lotusFixedTable tr.lotusSort {
   border-bottom: 1px solid #3C6DF0; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a,
+  div#list .lotusTable.lotusFixedTable tr.lotusSort td a,
+  div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a,
+  div#list .lotusTable.lotusFixedTable tr.lotusSort th a {
     padding: 8px 16px !important;
     border: 1px solid transparent !important;
     background-position: calc(100% - 7px) 13px !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:focus, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:focus, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:focus {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:focus, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:focus, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:focus,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a:focus,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a:focus,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a:focus {
       text-decoration: none !important;
       border-radius: 2px !important;
       border-color: #3C6DF0 !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:hover {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a:hover,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a:hover {
       background-color: #3C6DF0 !important;
       color: #FFFFFF !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a a.lotusAscending {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a a.lotusAscending {
       background-size: 8px 8px !important;
       padding: 8px 20px 8px 16px !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a.lotusDescending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a.lotusDescending {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
-      div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending:hover {
+      div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusDescending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusDescending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusDescending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort td a.lotusDescending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a.lotusDescending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort th a.lotusDescending:hover {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusAscending {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusAscending, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort td a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a.lotusAscending,
+    div#list .lotusTable.lotusFixedTable tr.lotusSort th a.lotusAscending {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
-      div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusAscending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusAscending:hover {
+      div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort td a.lotusAscending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th[id^="qkrSort"] a.lotusAscending:hover, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th a.lotusAscending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort td a.lotusAscending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort th[id^="qkrSort"] a.lotusAscending:hover,
+      div#list .lotusTable.lotusFixedTable tr.lotusSort th a.lotusAscending:hover {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort tr.lotusFirst {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort tr.lotusFirst,
+  div#list .lotusTable.lotusFixedTable tr.lotusSort tr.lotusFirst {
     border-top: 1px solid #3C6DF0 !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) td, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+2) td, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3), div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:nth-child(4n+3) td,
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+2),
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+2) th,
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+2) td,
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+3),
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+3) th,
+div#list .lotusTable.lotusFixedTable tr:nth-child(4n+3) td {
   background-color: #F3F3F3; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td,
+div#list .lotusTable.lotusFixedTable tr th,
+div#list .lotusTable.lotusFixedTable tr td {
   padding-top: 20px !important;
   padding-bottom: 20px !important; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child,
+  div#list .lotusTable.lotusFixedTable tr th:first-child,
+  div#list .lotusTable.lotusFixedTable tr td:first-child {
     padding-left: 10px !important; }
-    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child input, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child input {
+    div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:first-child input, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:first-child input,
+    div#list .lotusTable.lotusFixedTable tr th:first-child input,
+    div#list .lotusTable.lotusFixedTable tr td:first-child input {
       margin: 0px 0px; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:last-child, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:last-child {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr th:last-child, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td:last-child,
+  div#list .lotusTable.lotusFixedTable tr th:last-child,
+  div#list .lotusTable.lotusFixedTable tr td:last-child {
     padding-right: 10px !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.normalTopic td,
+div#list .lotusTable.lotusFixedTable tr.normalTopic td {
   padding-bottom: 12px !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td,
+div#list .lotusTable.lotusFixedTable tr.lotusMore td {
   padding-top: 0px !important;
   padding-bottom: 20px !important; }
-  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td .lotusMeta > span {
+  div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusMore td .lotusMeta > span,
+  div#list .lotusTable.lotusFixedTable tr.lotusMore td .lotusMeta > span {
     vertical-align: baseline !important;
     margin-bottom: 0 !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:not(.lotusDetails):not(.lotusSort) {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:not(.lotusDetails):not(.lotusSort),
+div#list .lotusTable.lotusFixedTable tr:not(.lotusDetails):not(.lotusSort) {
   border-top: 1px solid #d8d8d8; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th#qkrSortmodifier,
+div#list .lotusTable.lotusFixedTable tr.lotusSort th#qkrSortmodifier {
+  vertical-align: middle !important; }
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td,
+div#list .lotusTable.lotusFixedTable tr.lotusDetails td {
   padding-top: 0px !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr td,
+div#list .lotusTable.lotusFixedTable tr td {
   background-color: #FFFFFF !important; }
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type,
+div#list .lotusTable.lotusFixedTable tr:last-of-type {
   border-bottom: 1px solid #d8d8d8; }
+
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusSort th {
+  vertical-align: middle !important; }
 
 .blog.admin .blogsFixedTable th, .blog.admin .blogsFixedTable th a, .blog.admin .blogsFixedTable tr.lotusSort td, .blog.admin .blogsFixedTable tr.lotusSort td a, .blog.admin .lotusTable th, .blog.admin .lotusTable th a, .blog.admin .lotusTable tr.lotusSort td, .blog.admin .lotusTable tr.lotusSort td a {
   font-size: 12px !important;
@@ -2897,11 +3047,13 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
 
 #qkrViewControl.lotusViewControl .lotusTileOn,
 #qkrViewControl.lotusViewControl .lotusTileOff,
+#qkrViewControl.lotusViewControl .viewOff,
 #qkrViewControl.lotusViewControl .lotusDetailsOn,
 #qkrViewControl.lotusViewControl .lotusDetailsOff,
 #qkrViewControl.lotusViewControl .lotusSummaryOn,
 #qkrViewControl.lotusViewControl .lotusSummaryOff, .blog .lotusViewControl .lotusTileOn,
 .blog .lotusViewControl .lotusTileOff,
+.blog .lotusViewControl .viewOff,
 .blog .lotusViewControl .lotusDetailsOn,
 .blog .lotusViewControl .lotusDetailsOff,
 .blog .lotusViewControl .lotusSummaryOn,
@@ -2915,11 +3067,13 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
   margin: 3px !important; }
   #qkrViewControl.lotusViewControl .lotusTileOn:focus,
   #qkrViewControl.lotusViewControl .lotusTileOff:focus,
+  #qkrViewControl.lotusViewControl .viewOff:focus,
   #qkrViewControl.lotusViewControl .lotusDetailsOn:focus,
   #qkrViewControl.lotusViewControl .lotusDetailsOff:focus,
   #qkrViewControl.lotusViewControl .lotusSummaryOn:focus,
   #qkrViewControl.lotusViewControl .lotusSummaryOff:focus, .blog .lotusViewControl .lotusTileOn:focus,
   .blog .lotusViewControl .lotusTileOff:focus,
+  .blog .lotusViewControl .viewOff:focus,
   .blog .lotusViewControl .lotusDetailsOn:focus,
   .blog .lotusViewControl .lotusDetailsOff:focus,
   .blog .lotusViewControl .lotusSummaryOn:focus,
@@ -2928,8 +3082,10 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr:last-of-type {
     outline-width: 1px !important;
     outline-style: solid !important; }
 #qkrViewControl.lotusViewControl .lotusView.lotusTileOff,
+#qkrViewControl.lotusViewControl .lotusView.viewOff,
 #qkrViewControl.lotusViewControl .lotusView.lotusDetailsOff,
 #qkrViewControl.lotusViewControl .lotusView.lotusSummaryOff, .blog .lotusViewControl .lotusView.lotusTileOff,
+.blog .lotusViewControl .lotusView.viewOff,
 .blog .lotusViewControl .lotusView.lotusDetailsOff,
 .blog .lotusViewControl .lotusView.lotusSummaryOff {
   border-color: transparent !important; }
@@ -3496,9 +3652,17 @@ div#activityList .lotusTable {
 #ideatoins_main .lotusTable .lotusAlignRight.lotusLastCell {
   padding: 1rem 0 !important; }
 
-div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable td,
+div[id*="widget_SurveysListFullpage"] .lotusTable td,
 div#fullRecomm .lotusTable td {
   padding: 1rem 0 !important; }
+  div[id*="widget_SurveysListFullpage"] .lotusTable td:first-child,
+  div#fullRecomm .lotusTable td:first-child {
+    padding-right: 8px !important; }
+
+div[id*="widget_SurveysListFullpage"] .lotusTable td .entry-title {
+  color: #3C6DF0 !important; }
+div[id*="widget_SurveysListFullpage"] .lotusTable td a[id*="listSection_listWidget_rootDiv_more"] {
+  margin-left: 25px !important; }
 
 div#fullRecomm .lotusTable .lotusFirstCell {
   width: 48px !important; }
@@ -4031,55 +4195,64 @@ div[id^="com_ibm_oneui_controls_internal__MasterPopup_"] .lotusPopupRight .lotus
 
 a {
   color: #3C6DF0 !important;
-  -webkit-font-smoothing: antialiased !important;
+  text-decoration-color: currentColor !important;
   font-weight: 600 !important;
-  transition: color 250ms ease, text-decoration 250ms ease !important;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  transition: color 250ms ease, text-decoration 250ms ease !important; }
   a:visited {
     color: #3C6DF0 !important; }
-  a:active, a:hover, a:focus {
-    text-decoration-line: underline !important;
+  a:active, a:hover {
+    outline: none !important;
+    font-weight: 600 !important;
     text-decoration-color: currentColor !important;
-    outline: none !important; }
+    text-decoration: none !important; }
+  a:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
 
 [id^="section_"] > ul > li > a,
 [id^="lconnTagWidget_"] > div > div > a,
 [id^="lconnTagWidget_"] > div > ul > li > a,
 [id^="lconnTagWidget_"] > li > a,
-#contactsTagWidget_tagCloudView > div > ul > li > a,
 [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a,
 .lotusColLeft a {
-  color: #000000 !important; }
+  color: #000000 !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
   [id^="section_"] > ul > li > a:visited,
   [id^="lconnTagWidget_"] > div > div > a:visited,
   [id^="lconnTagWidget_"] > div > ul > li > a:visited,
   [id^="lconnTagWidget_"] > li > a:visited,
-  #contactsTagWidget_tagCloudView > div > ul > li > a:visited,
   [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a:visited,
   .lotusColLeft a:visited {
     color: #000000 !important; }
-  [id^="section_"] > ul > li > a:active, [id^="section_"] > ul > li > a:hover, [id^="section_"] > ul > li > a:focus,
+  [id^="section_"] > ul > li > a:active, [id^="section_"] > ul > li > a:hover,
   [id^="lconnTagWidget_"] > div > div > a:active,
   [id^="lconnTagWidget_"] > div > div > a:hover,
-  [id^="lconnTagWidget_"] > div > div > a:focus,
   [id^="lconnTagWidget_"] > div > ul > li > a:active,
   [id^="lconnTagWidget_"] > div > ul > li > a:hover,
-  [id^="lconnTagWidget_"] > div > ul > li > a:focus,
   [id^="lconnTagWidget_"] > li > a:active,
   [id^="lconnTagWidget_"] > li > a:hover,
-  [id^="lconnTagWidget_"] > li > a:focus,
-  #contactsTagWidget_tagCloudView > div > ul > li > a:active,
-  #contactsTagWidget_tagCloudView > div > ul > li > a:hover,
-  #contactsTagWidget_tagCloudView > div > ul > li > a:focus,
   [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a:active,
   [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a:hover,
-  [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a:focus,
   .lotusColLeft a:active,
-  .lotusColLeft a:hover,
-  .lotusColLeft a:focus {
-    text-decoration-line: underline !important;
+  .lotusColLeft a:hover {
+    outline: none !important;
+    font-weight: 600 !important;
     text-decoration-color: currentColor !important;
-    outline: none !important; }
+    text-decoration: none !important; }
+  [id^="section_"] > ul > li > a:focus,
+  [id^="lconnTagWidget_"] > div > div > a:focus,
+  [id^="lconnTagWidget_"] > div > ul > li > a:focus,
+  [id^="lconnTagWidget_"] > li > a:focus,
+  [id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a:focus,
+  .lotusColLeft a:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
 
 #tagsListTags_div + div span,
 .lotusTagCloud + div span {
@@ -4099,7 +4272,10 @@ a {
 #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a,
 #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a,
 #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a {
-  color: #000000 !important; }
+  color: #000000 !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
   #scene-title > a:not(.lconnInternalLink):visited,
   [id^="lconn_files_action_title_more_"] > div:visited,
   #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a:visited,
@@ -4111,61 +4287,74 @@ a {
   #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a:visited,
   #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:visited {
     color: #000000 !important; }
-  #scene-title > a:not(.lconnInternalLink):active, #scene-title > a:not(.lconnInternalLink):hover, #scene-title > a:not(.lconnInternalLink):focus,
+  #scene-title > a:not(.lconnInternalLink):active, #scene-title > a:not(.lconnInternalLink):hover,
   [id^="lconn_files_action_title_more_"] > div:active,
   [id^="lconn_files_action_title_more_"] > div:hover,
-  [id^="lconn_files_action_title_more_"] > div:focus,
   #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a:active,
   #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a:hover,
-  #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a:focus,
   #about > div > div > a:active,
   #about > div > div > a:hover,
-  #about > div > div > a:focus,
   .entry-title:active,
   .entry-title:hover,
-  .entry-title:focus,
   #qkrViewControl > tbody > tr > td:nth-child(3) > a:active,
   #qkrViewControl > tbody > tr > td:nth-child(3) > a:hover,
-  #qkrViewControl > tbody > tr > td:nth-child(3) > a:focus,
   #list > div > ul.lotusRight.lotusInlinelist > li:nth-child(3) > a:active,
   #list > div > ul.lotusRight.lotusInlinelist > li:nth-child(3) > a:hover,
-  #list > div > ul.lotusRight.lotusInlinelist > li:nth-child(3) > a:focus,
   #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a:active,
   #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a:hover,
-  #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a:focus,
   #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a:active,
   #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a:hover,
-  #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a:focus,
   #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:active,
-  #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:hover,
-  #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:focus {
-    text-decoration-line: underline !important;
+  #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:hover {
+    outline: none !important;
+    font-weight: 600 !important;
     text-decoration-color: currentColor !important;
-    outline: none !important; }
+    text-decoration: none !important; }
+  #scene-title > a:not(.lconnInternalLink):focus,
+  [id^="lconn_files_action_title_more_"] > div:focus,
+  #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a:focus,
+  #about > div > div > a:focus,
+  .entry-title:focus,
+  #qkrViewControl > tbody > tr > td:nth-child(3) > a:focus,
+  #list > div > ul.lotusRight.lotusInlinelist > li:nth-child(3) > a:focus,
+  #scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a:focus,
+  #lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a:focus,
+  #lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
 
 [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a,
 [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a,
 #javlinDiv > div > div.semtag_header > ul > li > a,
 [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1) {
-  color: #FFFFFF !important; }
+  color: #FFFFFF !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
   [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:visited,
   [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a:visited,
   #javlinDiv > div > div.semtag_header > ul > li > a:visited,
   [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1):visited {
     color: #FFFFFF !important; }
-  [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:active, [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:hover, [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:focus,
+  [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:active, [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:hover,
   [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a:active,
   [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a:hover,
-  [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a:focus,
   #javlinDiv > div > div.semtag_header > ul > li > a:active,
   #javlinDiv > div > div.semtag_header > ul > li > a:hover,
-  #javlinDiv > div > div.semtag_header > ul > li > a:focus,
   [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1):active,
-  [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1):hover,
+  [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1):hover {
+    outline: none !important;
+    font-weight: 600 !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: none !important; }
+  [id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a:focus,
+  [id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a:focus,
+  #javlinDiv > div > div.semtag_header > ul > li > a:focus,
   [id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1):focus {
-    text-decoration-line: underline !important;
-    text-decoration-color: #FFFFFF !important;
-    outline: none !important; }
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
 
 #about_link,
 #share_link,
@@ -4183,11 +4372,67 @@ a._linkHolder.lotusLeft {
     color: #000000 !important;
     font-weight: bold !important; }
 
+.lotusCommunities .lotusWidget2 a:not([role="tab"]) {
+  color: #3C6DF0 !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 a:not([role="tab"]):visited {
+    color: #3C6DF0 !important; }
+  .lotusCommunities .lotusWidget2 a:not([role="tab"]):active, .lotusCommunities .lotusWidget2 a:not([role="tab"]):hover {
+    outline: none !important;
+    font-weight: 600 !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 a:not([role="tab"]):focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
+.lotusCommunities .lotusWidget2 a.lotusPerson {
+  color: #000000 !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 a.lotusPerson:visited {
+    color: #000000 !important; }
+  .lotusCommunities .lotusWidget2 a.lotusPerson:active, .lotusCommunities .lotusWidget2 a.lotusPerson:hover {
+    outline: none !important;
+    font-weight: 600 !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 a.lotusPerson:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
+.lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a {
+  color: #000000 !important;
+  text-decoration-color: currentColor !important;
+  font-weight: 600 !important;
+  text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:visited {
+    color: #000000 !important; }
+  .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:active, .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:hover {
+    outline: none !important;
+    font-weight: 600 !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: none !important; }
+  .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: underline !important; }
+  .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a, .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:hover, .lotusCommunities .lotusWidget2 #tagsContainer #tagsDiv_tagCloudView a:focus {
+    font-weight: inherit !important; }
+.lotusCommunities .lotusWidget2 a.lotusAction, .lotusCommunities .lotusWidget2 a.lotusAction:hover, .lotusCommunities .lotusWidget2 a.lotusAction:focus {
+  font-size: 12px !important;
+  font-weight: 500 !important; }
+.lotusCommunities .lotusWidget2 a.menu_drop_icon:focus,
+.lotusCommunities .lotusWidget2 a.lotusIcon:focus,
+.lotusCommunities .lotusWidget2 a.lotusAdd:focus,
+.lotusCommunities .lotusWidget2 div.lotusPostIndicator a:focus {
+  outline: 1px solid currentColor !important; }
+
 [id^="menu_"] a,
 #lotusTitleBar > div > div > h2 > span > a,
-#trash,
-#pinnedfiles,
-#favoritefolders,
 #lotusSidenav > div.lotusBottomCorner > div > div > ul > li > a,
 #scGroupTreeContent > div.groupActionBar > a {
   color: inherit !important;
@@ -5274,9 +5519,11 @@ select[id^="compactpicker_select_"] {
   #activitiesTitleBar .lotusTitleBar2Tabs .lotusTabInner {
     text-transform: none; }
 
-.tabbedSwitch .switchPane,
-div[id^="lconn_share_widget_Dialog_"] .switchPane,
-div[id^="lconn_files_widget_CompactFilePicker_"] .switchPane {
+.lconnPicker .tabbedSwitch .lconnPickerSourceLabelSpan {
+  text-transform: initial !important; }
+.lconnPicker .tabbedSwitch .switchPane,
+.lconnPicker div[id^="lconn_share_widget_Dialog_"] .switchPane,
+.lconnPicker div[id^="lconn_files_widget_CompactFilePicker_"] .switchPane {
   margin-bottom: 1rem !important;
   max-width: 100%; }
 
@@ -5475,6 +5722,9 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
   border-color: #3C6DF0 !important; }
   #blogsNavigationSelectedTab:hover strong, #blogsNavigationSelectedTab:hover .lotusTabInner {
     color: #FFFFFF !important; }
+
+.lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
+  text-transform: initial; }
 
 #socialTags #tagsYouAddedList_div, #socialTags #tagsListTags_div {
   max-height: 12.75rem;
@@ -6455,8 +6705,23 @@ input.lotusText.scTagTypeahead {
   font-size: 14px !important;
   font-weight: 400 !important; }
   .lotusui30 .lotusTagCloud li a {
+    color: #000000 !important;
+    text-decoration-color: currentColor !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
     font-size: inherit !important;
     font-weight: inherit !important; }
+    .lotusui30 .lotusTagCloud li a:visited {
+      color: #000000 !important; }
+    .lotusui30 .lotusTagCloud li a:active, .lotusui30 .lotusTagCloud li a:hover {
+      outline: none !important;
+      font-weight: 600 !important;
+      text-decoration-color: currentColor !important;
+      text-decoration: none !important; }
+    .lotusui30 .lotusTagCloud li a:focus {
+      outline: none !important;
+      text-decoration-color: currentColor !important;
+      text-decoration: underline !important; }
     .lotusui30 .lotusTagCloud li a.lotusF5 {
       font-size: 1.5em !important; }
     .lotusui30 .lotusTagCloud li a.lotusF4 {
@@ -6689,6 +6954,14 @@ input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
     border-color: #3C6DF0 !important;
     box-shadow: 0 1px 0 #3C6DF0 !important; }
 
+.lconnFiles .lotusSearch .dijitTextBox#widget_filterSharesByUser,
+.lconnFiles .lotusSearch .typeaheadInput {
+  background: transparent !important; }
+.lconnFiles .lotusSearch .dijitTextBox#widget_filterSharesByUser {
+  border: none !important; }
+.lconnFiles .lotusSearch .typeaheadInput {
+  padding-left: 0 !important; }
+
 .lotusui30 .lconn_directoryPage .lconn_searchNode.fixed {
   background-color: #FFFFFF !important;
   border-bottom: 0 !important;
@@ -6785,7 +7058,8 @@ a[id*="_HelpLauncher_"] img,
 a[id*="_helpLink"] img,
 a[class*="_help_link"] img,
 .mtgHelp img,
-#tagHelper img {
+#tagHelper img,
+#helpOwner img {
   height: 12px !important;
   width: 12px !important;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath fill=%22%23595859%22 d=%22M12,0 C5.373,0 0,5.364 0,11.98 C0,18.596 5.373,23.96 12,23.96 C18.627,23.96 24,18.596 24,11.98 C24,5.364 18.627,0 12,0 M12,1 C18.065,1 23,5.926 23,11.98 C23,18.034 18.065,22.96 12,22.96 C5.935,22.96 1,18.034 1,11.98 C1,5.926 5.935,1 12,1%22%3E%3C/path%3E%3Cpath fill=%22%23595859%22 d=%22M10.6582,18.003 L10.6582,17.711 C10.6582,17.01 11.0482,16.504 11.9452,16.504 C12.8422,16.504 13.2322,17.01 13.2322,17.711 L13.2322,18.003 C13.2322,18.704 12.8422,19.21 11.9452,19.21 C11.0482,19.21 10.6582,18.704 10.6582,18.003 L10.6582,18.003 Z M11.1062,14.83 L11.1062,11.675 C13.2122,11.597 14.4602,10.702 14.4602,9.105 L14.4602,8.833 C14.4602,7.567 13.5832,6.769 12.2962,6.769 C10.8922,6.769 10.0342,7.684 9.7212,8.93 L8.1032,8.307 C8.5912,6.652 9.8782,5.153 12.3542,5.153 C14.8112,5.153 16.3912,6.632 16.3912,8.891 C16.3912,11.325 14.5772,12.532 12.8422,12.863 L12.8422,14.83 L11.1062,14.83 Z%22%3E%3C/path%3E%3C/svg%3E") !important;
@@ -6801,7 +7075,8 @@ a[id*="_HelpLauncher_"]:focus img,
 a[id*="_helpLink"]:focus img,
 a[class*="_help_link"]:focus img,
 .mtgHelp:focus img,
-#tagHelper:focus img {
+#tagHelper:focus img,
+#helpOwner:focus img {
   outline: 1px solid #595859 !important;
   outline-offset: 2px; }
 
@@ -6958,6 +7233,50 @@ input[type="file"] {
       color: #3C6DF0 !important;
       border-color: #3C6DF0 !important; }
 
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft {
+  position: relative !important;
+  top: -15px !important;
+  margin-left: 0px !important;
+  box-sizing: border-box; }
+  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft .lotusMenu {
+    width: 240px;
+    position: relative !important;
+    top: 5px !important;
+    padding-top: 1rem !important;
+    margin: 0 !important; }
+  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li {
+    box-sizing: border-box;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 14px 24px !important;
+    padding-left: calc(15px + 24px) !important;
+    transition: border 0.23s ease, padding 0.23s ease; }
+    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected {
+      border-left: 4px solid #3C6DF0 !important;
+      padding-left: calc(15px + 24px - 4px) !important; }
+      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected a {
+        font-weight: 700 !important; }
+    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a {
+      padding: 0 !important;
+      margin: 0 !important;
+      font-weight: 400 !important; }
+      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:hover, .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:focus {
+        border-color: transparent !important;
+        text-decoration: none !important; }
+    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li:hover {
+      background-color: #d8d8d8 !important;
+      cursor: pointer; }
+  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection {
+    margin: 0 !important; }
+    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection span {
+      font-weight: 400 !important; }
+    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection h2 {
+      padding: 14px 24px !important;
+      padding-left: calc(15px + 24px) !important; }
+      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection h2 + .lconnFacet {
+        margin: 0 !important;
+        padding: 0 24px 14px calc(15px + 24px) !important; }
+
 .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper {
   position: relative;
   z-index: 940 !important;
@@ -6975,44 +7294,6 @@ input[type="file"] {
     padding-left: 294px !important;
     font-weight: 900 !important;
     font-size: 1.125rem !important; }
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft {
-  position: relative !important;
-  top: -15px !important;
-  margin-left: 0px !important;
-  box-sizing: border-box; }
-  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft .lotusMenu {
-    width: 240px;
-    position: relative !important;
-    top: 5px !important;
-    padding-top: 1rem !important; }
-  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li {
-    box-sizing: border-box;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding: 14px 24px !important;
-    padding-left: 39px !important; }
-    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected {
-      padding-left: 35px !important;
-      transition: border 0.23s ease, padding 0.23s ease;
-      border-left: 4px solid #3C6DF0 !important; }
-      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected a {
-        font-weight: 700 !important; }
-    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a {
-      padding: 0 !important;
-      margin: 0 !important;
-      font-weight: 400 !important; }
-      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:hover, .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:focus {
-        border-color: transparent !important;
-        text-decoration: none !important; }
-    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li:hover {
-      background-color: #d8d8d8 !important;
-      cursor: pointer; }
-  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer {
-    padding-left: 28px !important; }
-    .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection {
-      margin-bottom: 21px !important; }
-      .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection span {
-        font-weight: 400 !important; }
 
 .lotusHeader.lconnSearchHeader {
   padding-top: 1rem !important;

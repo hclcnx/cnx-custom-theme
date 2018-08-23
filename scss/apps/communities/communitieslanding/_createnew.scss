@@ -60,6 +60,9 @@
       margin-top: 1.25rem;
       border: none !important;
     }
+    #addComMembersWidgetPeopleTypeAhead {
+      margin-top: 1.25rem;
+    }
     .typeaheadInput {
       margin-left: 0 !important;
       padding-bottom: 1px;
@@ -69,28 +72,50 @@
       }
     }
   }
-  .AddMembers #memberList {
-    border: 0 !important;
-    margin-left: -1rem;
-    min-width: 37rem;
-
-    .member {
+  .AddMembers {
+    #memberList {
       border: 0 !important;
-      padding: .25rem 0;
-    }
-    .nameContent {
-      padding: 0 !important;
-      @include font-size($body...);
-      span {
-        font-size: inherit !important;
-        font-weight: inherit !important;
-        color: inherit !important;
-        font-style: inherit !important;
+      margin-left: -1rem;
+      min-width: 37rem;
+
+      .member {
+        border: 0 !important;
+        padding: .25rem 0;
       }
-    }
-    span.type {
-      display: inline-block;
-      margin-right: .5rem;
+      .nameContent {
+        padding: 0 !important;
+        @include font-size($body...);
+        span {
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          color: inherit !important;
+          font-style: inherit !important;
+        }
+      }
+      span.type {
+        display: inline-block;
+        margin-right: .5rem;
+      }
+      //Style selected names for cloud
+      .member {
+        @include tags();
+        margin-bottom: 8px !important;
+        margin-right: 8px !important;
+        padding-right: 30px !important;
+        padding-left: 2px !important;
+      }
+      //Style selected names for onprem
+      .lotusFilter.filterSpacing {
+        margin-top: 10px !important;
+        margin-right: 4px !important;
+        margin-left: 12px !important;
+      }
+      //Style for cloud and onprem
+      .member, .lotusFilter {
+        .lotusDelete {
+          opacity: 0.55 !important;
+        }
+      }
     }
   }
   .lotusDelete {

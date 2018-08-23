@@ -159,3 +159,10 @@ div[dojoattachpoint="recommendContainer"] {
     @include link-color(dark);
   }
 }
+
+//1572 Classic homepage "Saved" link
+.savethisAction.activityStreamActionInactive a {
+    color: $text-02 !important;
+    text-decoration: none !important;
+}
+

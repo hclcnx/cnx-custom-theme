@@ -154,7 +154,7 @@ h2 + div#communityActionBar,
   margin: 0 2rem 0 0 !important;
 }
 .lotusMain #lotusColBanner[style*="display: none;"] ~ #lotusColLeft.wpthemeNarrow {
-  width: 240px !important;
+  width: $leftnav-width !important;
 }
 .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow {
   width: 370px !important;
@@ -200,7 +200,7 @@ h2 + div#communityActionBar,
 
 // left nav layout tweaks
 .communities-widget-appearance .lotusWidget_3columnLayoutWithBanner #lotusMainColumns {
-  margin-left: 240px !important;
+  margin-left: $leftnav-width !important;
 }
 
 // community members

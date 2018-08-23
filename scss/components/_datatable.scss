@@ -1,8 +1,13 @@
 //Wiki list of pages
-div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth,
+//onprem wiki list does not include qkrFixedWidth
+div#list .lotusTable.lotusFixedTable {
   @include datatable(2);
   tr:not(.lotusDetails):not(.lotusSort) {
     border-top:1px solid $border-separator;
+  }
+  tr.lotusSort th#qkrSortmodifier {
+    vertical-align: middle !important;
   }
   tr.lotusDetails {
     td {
@@ -14,6 +19,12 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
   tr:last-of-type {
     border-bottom:1px solid $border-separator;
+  }
+}
+//On cloud, adjust all column headers
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+  tr.lotusSort th {
+    vertical-align: middle !important;
   }
 }
 
@@ -60,6 +71,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 
   .lotusTileOn,
   .lotusTileOff,
+  .viewOff,
   .lotusDetailsOn,
   .lotusDetailsOff,
   .lotusSummaryOn,
@@ -82,6 +94,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
   }
 
   .lotusView.lotusTileOff,
+  .lotusView.viewOff,
   .lotusView.lotusDetailsOff,
   .lotusView.lotusSummaryOff {
     border-color: transparent!important;
@@ -248,14 +261,31 @@ div#activityList { //activities list, stand-alone and in community
 }
 
 //Related communities and survey list specifics
-div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //survey list
+div[id*="widget_SurveysListFullpage"], //survey list
 div#fullRecomm { //related communities list
   .lotusTable {
     td {
       padding: 1rem 0 !important;
+//1681 list icon spacing
+      &:first-child {
+        padding-right: 8px !important;
+      }
     }
   }
 }
+
+//1681 survey list entry title and entry "More" spacing
+div[id*="widget_SurveysListFullpage"] {
+  .lotusTable td {
+    .entry-title {
+      color: $text-04 !important;
+    }
+    a[id*="listSection_listWidget_rootDiv_more"] {
+      margin-left: 25px !important;
+    }
+  }
+}
+
 //Related communities - more space between comm avatar and content
 div#fullRecomm {
   .lotusTable .lotusFirstCell {

@@ -1,5 +1,5 @@
 .lotusTitleBar2 .lotusWrapper {
-  padding-left: $h-padding !important;
+  padding-left: $leftnav-horizontal-padding !important;
 }
 .lotusMain{
   #lotusColLeft,
@@ -15,10 +15,10 @@
     .lotusMenuSection h3 {
       margin-left:0!important;
       padding-left:42px!important;
-      padding-right:$h-padding!important;
+      padding-right:$leftnav-horizontal-padding!important;
       margin-bottom:0!important;
-      padding-top:calc(#{$v-padding} + 2px)!important;
-      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+      padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
       font-size: .875rem !important;
       font-weight: normal !important;
     }
@@ -26,12 +26,12 @@
         padding: 0 !important;
         margin: 0!important;
         a {
-          padding: $v-padding $h-padding !important;
-          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
           margin: 0 !important;
           display: block;
           border: none !important;
-          transition:$border-slide!important;
+          transition:$leftnav-border-slide!important;
           box-sizing: border-box;
           font-weight: normal !important;
           &:hover {
@@ -51,8 +51,8 @@
           border: none !important;
           a {
             border: none !important;
-            border-left:$b-thickness solid $border-selected !important;
-            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px - #{$b-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px - #{$leftnav-active-border-thickness})!important;
             font-weight: 700 !important;
             span {
               border: none !important;

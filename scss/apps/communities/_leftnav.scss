@@ -10,10 +10,7 @@
   .lotusColLeft:not(.wpthemeNarrow) {
     padding: 0 !important;
     margin: 0 !important;
-    width: 240px;
-    .dijitTreeNode {
-      position: relative;
-    }
+    width: $leftnav-width;
     .lotusArrow:focus,
     .lotusSprite:focus,
     a[widgetid="tagsHelpLink"]:focus {
@@ -24,8 +21,8 @@
         padding: 0 !important;
         margin: 0!important;
         span.dijitTreeContent {
-          padding: $v-padding $h-padding !important;
-          padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
           margin: 0 !important;
           display: block;
           border: none !important;
@@ -49,18 +46,18 @@
     .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li,
     #viewAllMetricsDivID > ul > li,
     > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li,
-    #sideNav .lotusMenuSection .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode,
     #sideNav > div > ul > li,
     .lotusChunk.lotusTiny.lotusRight,
     > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li,
-    .lotusSection:not([id*="Tag"]) > div #allPagesList li + li {
+    .lotusSection:not([id*="Tag"]) > div #allPagesList li + li,
+    // for stand-alone apps on prem:
+    > .lotusMenu ul[role="toolbar"] li {
         padding: 0 !important;
         margin: 0 !important;
         a, div.dijitTreeRow {
-          padding: $v-padding $h-padding !important;
-          padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
           margin: 0 !important;
-          // display: block;
           border: none !important;
           transition:none!important;
           font-weight: normal !important;
@@ -71,6 +68,7 @@
           white-space: nowrap;
           text-overflow: ellipsis;
           display: block;
+          line-height: 1.5;
           &:hover, &:focus {
             background-color:$background-side-hover !important;
             border: none !important;
@@ -78,45 +76,9 @@
           }
           &.dijitTreeRowSelected {
             border: none !important;
-            border-left:$b-thickness solid $border-selected !important;
-            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
             font-weight: 700 !important;
-          }
-        }
-        &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
-        &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
-          > .dijitTreeRow {
-            padding-left:calc( (2 * #{$initial-l-padding}) + #{$h-padding} )!important;
-            &.dijitTreeRowSelected {
-              padding-left:calc( (2 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
-            }
-          }
-          &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
-          &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
-            > .dijitTreeRow {
-              padding-left:calc( (3 * #{$initial-l-padding}) + #{$h-padding} )!important;
-              &.dijitTreeRowSelected {
-                padding-left:calc( (3 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
-              }
-            }
-            &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
-            &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
-              > .dijitTreeRow {
-                padding-left:calc( (4 * #{$initial-l-padding}) + #{$h-padding} )!important;
-                &.dijitTreeRowSelected {
-                  padding-left:calc( (4 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
-                }
-              }
-            }
-            &.dijitTreeNodeEXPANDED .dijitTreeRow + div > .dijitTreeNode,
-            &.dijitTreeNodeNotLoaded .dijitTreeRow + div > .dijitTreeNode {
-              > .dijitTreeRow {
-                padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} )!important;
-                &.dijitTreeRowSelected {
-                  padding-left:calc( (5 * #{$initial-l-padding}) + #{$h-padding} - 4px )!important;
-                }
-              }
-            }
           }
         }
         .dijitTreeRow span > a {
@@ -139,8 +101,8 @@
           border: none !important;
           a {
             border: none !important;
-            border-left:$b-thickness solid $border-selected !important;
-            padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
             font-weight: 700 !important;
             span {
               border: none !important;
@@ -155,12 +117,12 @@
         #section_draftEntries,
         #section_publishedEntries {
           &.lotusSectionBody ul li {
-            padding-left: calc((#{$initial-l-padding} + #{$h-padding}))!important;
+            padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
 
             > a {
-              width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
-              max-width: calc( 100% + (#{$initial-l-padding} + #{$h-padding})) !important;
-              margin-left: calc( -1 * (#{$initial-l-padding} + #{$h-padding}))!important;
+              width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+              max-width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+              margin-left: calc( -1 * (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
             }
           }
         }
@@ -176,8 +138,8 @@
       .lotusSection:not([id*="Tag"]) > div #allPagesList {
         li:first-child {
           a, form {
-            padding: $v-padding $h-padding !important;
-            padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
             margin: 0 !important;
             font-weight: 500 !important;
             &:hover {
@@ -227,9 +189,9 @@
     #lconnTagCloudFilter > h3,
     #lconnTagCloudFilter > div > h2 {
       padding-left:42px!important;
-      padding-right:$h-padding!important;
-      padding-top:calc(#{$v-padding} + 2px)!important;
-      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      padding-right:$leftnav-horizontal-padding!important;
+      padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+      padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
       a, span {
         font-weight: normal !important;
         white-space: nowrap;
@@ -254,10 +216,10 @@
     #section_memberPermissionsHelp {
       margin-left:0!important;
       padding-left:42px!important;
-      padding-right:$h-padding!important;
+      padding-right:$leftnav-horizontal-padding!important;
       margin-bottom:0!important;
-      padding-top:calc(#{$v-padding} + 2px)!important;
-      padding-bottom:calc(#{$v-padding} - 2px)!important;
+      padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+      padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -294,16 +256,16 @@
       max-width: 100%;
       margin: 0 !important;
       ul li {
-        padding-top:$v-padding!important;
-        padding-bottom:$v-padding!important;
-        padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+        padding-top:$leftnav-vertical-padding!important;
+        padding-bottom:$leftnav-vertical-padding!important;
+        padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
         position: relative;
         min-height: 21px;
         font-size: $body-sm-font-size;
         a {
-          padding-top:$v-padding!important;
-          padding-bottom:$v-padding!important;
-          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+          padding-top:$leftnav-vertical-padding!important;
+          padding-bottom:$leftnav-vertical-padding!important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
           margin: 0 !important;
           position: absolute;
           top: 0;
@@ -312,61 +274,23 @@
           width: 100%;
         }
         &.lotusSelected a {
-          padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 17px)!important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 17px)!important;
         }
       }
     }
     .lotusSprite:focus {
       outline: 1px solid $icon-default !important;
     }
-
-    .dijitTreeNode .dijitTreeRow {
-      padding-top:$v-padding!important;
-      padding-bottom:$v-padding!important;
-      padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
-      border:none!important;
-      transition: font-weight .23s ease;
-      &.dijitTreeNodeSelected {
-        padding-left:calc(((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness}) + 21px)!important;
-        transition:none;
-        border-left:4px solid $border-selected !important;
-        a{
-          margin-left:0!important;
-        }
-      }
-      span,
-      &.dijitTreeNodeSelected span {
-        &:focus, &:active {
-          outline: 0 !important;
-        }
-      }
-      span.dijitTreeContent {
-        padding: 0 !important;
-      }
-    }
   }
 
   .groupActionBar,
   div[id^="scGroupTree"] .lotusSectionBody .groupActionBar {
-    padding-top:$v-padding!important;
-    padding-bottom:$v-padding!important;
-    padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
 
     a {
-      @include link-color('dark');
-      font-weight: 500 !important;
-
-      &:visited {
-        @include link-color('dark');
-      }
-
-      &:active,
-      &:hover,
-      &:focus {
-        @include link-underline('dark');
-        text-decoration: underline !important;
-        outline: none !important;
-      }
+      @include link-dark();
     }
   }
   > .lotusSection #lconnTagWidget > div > div[dojoattachpoint="_relatedTagsSection"] {
@@ -380,8 +304,8 @@
 .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent,
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget,
 .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 {
-  padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
-  padding-right: $h-padding;
+  padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+  padding-right: $leftnav-horizontal-padding;
   > div > div {
     margin: 0 !important;
   }
@@ -404,7 +328,7 @@
 }
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) {
   #admin_menu.lotusArrow {
-    margin-left: -($h-padding * .75) !important;
+    margin-left: -($leftnav-horizontal-padding * .75) !important;
   }
 }
 #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div#section_dateFilter .lotusChunk:not(.personinlinemenu) {
@@ -413,9 +337,9 @@
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]):not(#lconnTagCloudFilter) > div {
   &#section_entrymanagement,
   &#section_dateFilter {
-    padding-top:$v-padding!important;
-    padding-bottom:$v-padding!important;
-    padding-left:calc((#{$initial-l-padding} + #{$h-padding}) + 21px)!important;
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
 
     input[type="text"]:not(.dijitArrowButtonInner):not(.personinlinemenu),
     .dijitReset.dijitInputInner {
@@ -459,16 +383,25 @@
 }
 
 // for files
+.files-independent-scrollbars-compatible #navTreeMain {
+  overflow-y: overlay !important;
+}
 #navTreeMain {
-  padding: 0 !important;
+  padding: 0 0 1rem 0 !important;
   #navTreeContainer {
     margin: 0 !important;
   }
 }
 #navCommunityFilesOuter,
-div[id^="lconn_share_widget_Tree_"] {
+#navCommunityFilesOuter + #navTreeContainer,
+.lotusColLeft div[id^="lconn_share_widget_Tree_"] {
   border: 0 !important;
   margin: 0 !important;
+  position: relative;
+
+  div[id^="lconn_share_widget_Tree_"] {
+    position: static; // necessary so that nested folder hover styles work
+  }
 
   .twisty {
     width: auto !important;
@@ -476,14 +409,14 @@ div[id^="lconn_share_widget_Tree_"] {
   }
   .lconnNavTreeSelector,
   .headerSelector {
-    padding: $v-padding $h-padding !important;
-    padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+    padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
     border: none !important;
     transition:none!important;
     font-weight: normal !important;
     font-size: $body-sm-font-size;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
@@ -506,9 +439,20 @@ div[id^="lconn_share_widget_Tree_"] {
     }
     &.lotusSelected {
       border: none !important;
-      border-left:$b-thickness solid $border-selected !important;
-      padding-left:calc((#{$initial-l-padding} + #{$h-padding}) - #{$b-thickness})!important;
       font-weight: 700 !important;
+
+      &::before {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        width: $leftnav-active-border-thickness;
+        height: $leftnav-line-item-height;
+        position: absolute;
+        left: auto;
+        margin-top: -($leftnav-vertical-padding);
+        right: calc( #{$leftnav-width} - #{$leftnav-active-border-thickness} );
+        border-left: $leftnav-active-border-thickness solid $border-selected !important;
+      }
     }
   }
 }
@@ -521,8 +465,8 @@ div[id^="lconn_share_widget_Tree_"] {
     }
   }
   .headerSelector{
-    padding-top:$v-padding!important;
-    padding-bottom:$v-padding!important;
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
     &:focus{
       outline:none!important;
       .title > span{
@@ -570,7 +514,7 @@ div[id^="lconn_share_widget_Tree_"] {
 }
 
 .lotusMain #lotusColLeft #mainActions {
-  padding: $v-padding $h-padding;
+  padding: $leftnav-vertical-padding $leftnav-horizontal-padding;
   margin: 0 !important;
   width: auto !important;
   button {
@@ -580,8 +524,8 @@ div[id^="lconn_share_widget_Tree_"] {
 
 #lconnTagCloudContent-widget-tagcloud,
 #lconnTagWidget {
-  padding: $v-padding $h-padding !important;
-  padding-left:calc((#{$initial-l-padding} + #{$h-padding}))!important;
+  padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+  padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
 }
 
 .lotusSection:not([id*="Tag"]):not([id^="event"]) > h2 {
@@ -618,6 +562,47 @@ div[id^="lconn_share_widget_Tree_"] {
     }
     > a {
       @include font-size($bodylink...);
+    }
+  }
+}
+
+// move twisty to the left in comm files
+#navTreeContainer > .lconnFilesTree > .tree {
+  .header {
+    overflow: visible !important;
+  }
+  .twisty {
+    width: 0 !important;
+    .lotusArrow:not([style="display:none;"]) {
+      margin-left: -18px;
+      width: 18px !important;
+      max-width: 18px !important;
+    }
+  }
+}
+
+// fix indenting for comm files
+#navTreeContainer {
+  position: relative;
+  .lconnFilesTree .lconnFilesTree {
+    padding-left: 6px !important;
+  }
+  .headerOuter {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0px;
+      height: $leftnav-line-item-height;
+      width: 100%;
+      z-index: 0;
+    }
+    &:hover::before {
+      background-color:$background-side-hover;
+    }
+    .headerSelector {
+      z-index: 1;
+      position: relative;
     }
   }
 }

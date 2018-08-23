@@ -33,7 +33,7 @@ function periscope(){
     "search":["/search/"],
     "communities":["/communities/"],
     "blogs":["/blogs/"],
-//    "activities":["/activities/"],
+    "activities":["/activities/"],
     "home":["/social/",
             "/homepage/"],
     "forums":["/forums/"],

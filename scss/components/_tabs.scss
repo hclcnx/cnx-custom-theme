@@ -88,7 +88,7 @@
         &:active, &:focus {
           text-decoration: none !important;
         }
-        &:hover, 
+        &:hover,
         &:hover strong,
         &:hover .lotusTabInner {
           color: $tab-text-hover !important;
@@ -120,15 +120,23 @@
   }
 }
 
-// share a file
-.tabbedSwitch,
-div[id^="lconn_share_widget_Dialog_"],
-div[id^="lconn_files_widget_CompactFilePicker_"] {
-  .switchPane {
-    margin-bottom: 1rem !important;
-    max-width: 100%;
+//File picker for selecting or sharing files
+.lconnPicker {
+  .tabbedSwitch .lconnPickerSourceLabelSpan {
+    text-transform: initial !important;
+  }
+
+  // share a file
+  .tabbedSwitch,
+  div[id^="lconn_share_widget_Dialog_"],
+  div[id^="lconn_files_widget_CompactFilePicker_"] {
+    .switchPane {
+      margin-bottom: 1rem !important;
+      max-width: 100%;
+    }
   }
 }
+
 .dijitTabListContainer-top,
 .switchContainer {
   border-bottom: 1px solid $border-separator !important;
@@ -383,4 +391,9 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
       color: $tab-text-hover !important;
     }
   }
+}
+
+//1715 Initial caps for standalone blogs tabs
+.lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
+	text-transform: initial;
 }

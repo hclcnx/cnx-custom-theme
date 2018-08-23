@@ -141,6 +141,20 @@ input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
 	@include textinput;
 }
 
+//Folders shared with me > Created by search field
+.lconnFiles .lotusSearch {
+  .dijitTextBox#widget_filterSharesByUser,
+  .typeaheadInput {
+    background: transparent !important;
+  }
+  .dijitTextBox#widget_filterSharesByUser {
+    border: none !important;
+  }
+  .typeaheadInput {
+    padding-left: 0 !important;
+  }
+}
+
 // directory search on scroll fix:
 .lotusui30 .lconn_directoryPage .lconn_searchNode.fixed {
 	background-color: $background-main !important;

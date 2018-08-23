@@ -417,7 +417,7 @@ input.lotusText.scTagTypeahead {
       font-weight:normal!important;
     }
     a.bidiAware:hover{
-      color: $text-04 !important;
+      color: $link-default !important;
     }
     a[role="button"],
     a.qkrRemove{
@@ -603,7 +603,7 @@ input.lotusText.scTagTypeahead {
   }
 }
 
-// this is defined here so that I can extend it below to 
+// this is defined here so that I can extend it below to
 // the different cloud and on-prem mebers tags instances
 %membersTagStylingModule {
   border: none;
@@ -613,7 +613,7 @@ input.lotusText.scTagTypeahead {
   margin-bottom: .5rem !important;
   box-sizing: border-box;
   position: relative;
-  
+
   img.lotusDelete {
     position: absolute;
     top: 50%;
@@ -639,7 +639,7 @@ input.lotusText.scTagTypeahead {
 
   .member {
     @extend %membersTagStylingModule;
-    
+
     > .P {
       display: none;
     }
@@ -664,6 +664,7 @@ input.lotusText.scTagTypeahead {
   // set font size here so that we can use ems below and they'll be relative to this parent:
   @include font-size($body...);
   a {
+    @include link-dark();
     // inherit the font size and weight by default:
     @include font-size(inherit, inherit);
     // now apply the pre-periscope styles to the different classes of tags:

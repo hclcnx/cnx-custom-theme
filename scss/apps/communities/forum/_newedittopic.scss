@@ -81,3 +81,8 @@
     }
   }
 }
+
+.lotusForumNewTopic div[dojoattachpoint="titleRow"] input {
+    @include font-size($title...);
+    width: 30em !important;
+}

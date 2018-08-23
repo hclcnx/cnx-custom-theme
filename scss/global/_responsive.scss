@@ -73,8 +73,8 @@ body.meetingBody:not(.cke_editable),
       box-sizing: border-box;
     }
     #lotusColLeft ~ #lotusContent.wpthemeWide {
-      width: calc(100% - 240px) !important;
-      min-width: calc(100% - 240px) !important;
+      width: calc(100% - $leftnav-width) !important;
+      min-width: calc(100% - $leftnav-width) !important;
       box-sizing: border-box;
     }
     #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
@@ -156,7 +156,7 @@ body.meetingBody:not(.cke_editable),
     width: 100% !important;
   }
   .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
-    margin-left: 240px !important;
+    margin-left: $leftnav-width !important;
 
     #lotusContent {
       box-sizing: border-box;
@@ -334,12 +334,21 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
   line-height: 1.2em;
 }
 
-
 // make left column in communites be the correct width - this is not the real left col, it's the backgorund pseudo content
 .communities-widget-appearance .lotusWidget_2columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayoutWithBanner .lotusColLeft:after {
-  border-right-width: 240px !important;
+  border-right-width: $leftnav-width !important;
+}
+
+// classic home page responsive changes
+.activityStreamPage.lotusMain {
+  #lotusColLeft {
+    width: 264px !important;
+  }
+  .lotusui30_layout & .lotusColLeft:after {
+    border-right-width: 264px !important;
+  }
 }
 
 // classic home page responsive changes

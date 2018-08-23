@@ -165,6 +165,7 @@ img[class$="xlt"],
 img[class$="ods"],
 img[class*="DataDocs"],
 img[src*="ibmdocs_spreadsheets_16.png"],
+.ics-viewer .iconsFileTypes16-ftData16, // overrides a stubborn selector in hikari
 span[class$="xlsx"],
 span[class$="xls"],
 span[class$="xlt"],
@@ -179,6 +180,7 @@ img[class$="key"],
 img[class$="odp"],
 img[class*="Presentation"],
 img[src*="ibmdocs_presentations_16.png"],
+.ics-viewer .iconsFileTypes16-ftPresentation16, // overrides a stubborn selector in hikari
 span[class$="pptx"],
 span[class$="ppt"],
 span[class$="key"],
@@ -204,6 +206,16 @@ span[class*="Compressed"] {
 }
 
 // Folder type
+img[class*="Folder"],
+img[class*="folder"]:not(.ic-thumb-folder),
+span[class*="Folder"]:not(.lconnCommunityFolder),
+span[class*="folder"]:not(.ic-thumb-folder) {
+  background-position: 0 0 !important;
+  min-width: 1.5rem !important;
+  min-height: 1.15rem !important;
+  // put the default folder icon everywhere, then override below for public, private, shared, community, etc
+  background-image:svg-url-with-replaced-fill($svg-icon-folder, '#000000', $icon-file-type-folder) !important;
+}
 img[class*="iconFolderPublic"] {
     background-image:svg-url-with-replaced-fill($svg-icon-folder-public, '#000000', $icon-file-type-folder) !important;
 }
@@ -215,14 +227,6 @@ img[class*="iconFolderShared"] {
 }
 img[class*="iconFolderCommunity"] {
     background-image:svg-url-with-replaced-fill($svg-icon-folder-community, '#000000', $icon-file-type-folder) !important;
-}
-img[class*="Folder"],
-img[class*="folder"]:not(.ic-thumb-folder),
-span[class*="Folder"]:not(.lconnCommunityFolder),
-span[class*="folder"]:not(.ic-thumb-folder) {
-  background-position: 0 0 !important;
-  min-width: 1.5rem !important;
-  min-height: 1.15rem !important;
 }
 // Audio type
 img[class$="mp3"],
