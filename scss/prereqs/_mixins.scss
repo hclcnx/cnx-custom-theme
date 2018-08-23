@@ -215,7 +215,7 @@
   }
 }
 
-// these are the ones we should use 
+// these are the ones we should use
 @mixin link-default() {
   @include make-links('', 'currentColor');
 }

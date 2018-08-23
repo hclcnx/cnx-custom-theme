@@ -5,17 +5,17 @@ input[id^="lconn_wikis_widget_MembershipOptions"] {
 
 .dijitLayoutContainer.dijitDialog {
   min-height: 350px;
-  
+
   .dijitDialogPaneContent.dijitAlignCenter {
     top: 0 !important;
     min-height: 100% !important;
     height: auto !important;
   }
-  
+
   .lotusDialogBorder  {
     max-width: 100% !important;
 
-    
+
     > .lotusDialog > div[id^="lconn_share"].lotusDialogHeader {
       position: relative !important;
       width: 100% !important;

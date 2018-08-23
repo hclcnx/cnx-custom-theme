@@ -4469,6 +4469,9 @@ div.lotusPostIndicator a:focus {
 #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
   margin-top: 7px !important; }
 
+#bookmarksWidgetContainer a {
+  font-weight: 600 !important; }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }

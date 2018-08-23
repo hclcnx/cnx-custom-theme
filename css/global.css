@@ -4461,6 +4461,8 @@ html .ic-orient, html .ic-orient button, html .ic-orient input, html .ic-orient 
   .ics-viewer #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.savethisAction:before,
   .ics-viewer #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
     margin-top: 7px !important; }
+  .ics-viewer #bookmarksWidgetContainer a {
+    font-weight: 600 !important; }
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }
@@ -8399,6 +8401,11 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lco
 .communities-widget-appearance .lotusWidget_3columnLayout .lotusColLeft:after,
 .communities-widget-appearance .lotusWidget_3columnLayoutWithBanner .lotusColLeft:after {
   border-right-width: 240px !important; }
+
+.activityStreamPage.lotusMain #lotusColLeft {
+  width: 264px !important; }
+.lotusui30_layout .activityStreamPage.lotusMain .lotusColLeft:after {
+  border-right-width: 264px !important; }
 
 .activityStreamPage.lotusMain #lotusColLeft {
   width: 264px !important; }

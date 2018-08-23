@@ -213,7 +213,7 @@ span[class*="folder"]:not(.ic-thumb-folder) {
   background-position: 0 0 !important;
   min-width: 1.5rem !important;
   min-height: 1.15rem !important;
-  // put the default folder icon everywhere, then override below for public, private, shared, community, etc 
+  // put the default folder icon everywhere, then override below for public, private, shared, community, etc
   background-image:svg-url-with-replaced-fill($svg-icon-folder, '#000000', $icon-file-type-folder) !important;
 }
 img[class*="iconFolderPublic"] {

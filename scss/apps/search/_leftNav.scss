@@ -42,7 +42,7 @@
         }
       }
     }
-    #facetsContainer { // tags, people, dates 
+    #facetsContainer { // tags, people, dates
       //padding-left:28px!important;
       .lotusSection{
         //margin-bottom:21px!important;
@@ -53,7 +53,7 @@
         h2 {
           padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
           padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
-          
+
           + .lconnFacet {
             margin: 0 !important;
             padding: 0 $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
