@@ -33,7 +33,7 @@ function periscope(){
     "search":["/search/"],
     "communities":["/communities/"],
     "blogs":["/blogs/"],
-//    "activities":["/activities/"],
+    "activities":["/activities/"],
     "home":["/social/",
             "/homepage/"],
     "forums":["/forums/"],
@@ -41,7 +41,8 @@ function periscope(){
     "wikis":["/wikis/"],
     "settings":["/manage/account/user",
                 "/news/",
-                "/manage/subscribers/showInviteGuestDialog/input"]
+                "/manage/subscribers/showInviteGuestDialog/input",
+                "/downloads/"]
   };
 
   //This is the function that applies the style

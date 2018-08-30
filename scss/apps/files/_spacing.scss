@@ -1,11 +1,21 @@
-.lconnFiles .lconnNonVerticalScrollableBody #lotusTopNav .lotusRightCorner {
-  padding-left: 0 !important;
+//Titlebar area of Files
+//NEW FILES UI SEPT 2018
+.lconnFiles .lotusTopNav {
+  .lotusTitleBar {
+    .lotusColLeft.newButton,
+    .lotusColLeft,
+    .lotusPlaceBar {
+      width: auto !important;
+    }
+    .lotusHeader#lotusContentHeaderTitleBar {
+      padding-left: 15px;
+    }
+  }
 }
+//End of general updates to accommodate new UI
+
 .lotusui30 .lotusContent .lotusHeader .lotusMeta{
   padding-top:0px!important;
-  ul li{
-    //font-size:$body-mini-font-size;
-  }
 }
 #lotusContentHeaderTitleBar{
   margin-left:3px;
@@ -28,7 +38,7 @@
     }
     table:not(.lotusTable){
       margin-left:-4px!important;
-      background-color:white;
+      background-color: $background-main;
     }
   }
 }
@@ -36,22 +46,16 @@
 .lotusPlaceBar.lotusGlobalActionBar {
   margin-right:0!important;
   width:100%!important;
-  div[role="toolbar"]{
-    text-align:center;
-    width:100%!important;
-  }
 }
 .lotusColLeft{
   margin-right:0!important;
-  width:240px!important;
+  width: $leftnav-width!important;
   padding: 0 !important;
 }
 .widgetContainer[style] + div .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
   padding-left: 48px !important;
 }
-.lotusRightCorner{
-  padding-left:0!important;
-}
+
 #lotusContentSceneActions{
   margin-bottom:3px!important;
   .lotusBtn:not(.lotusBtnDisabled){
@@ -63,15 +67,76 @@
     }
   }
 }
-#qkrViewControl{
-  a.lotusView{
-    border-color:$brand-01!important;
+
+//FILES SEPT 2018 OVERRIDES: DEPENDENT ON GATEKEEPER CLASSES
+html.lconnFiles.files-enable-recent-view,
+html.lconnFiles.files-enable-refine-panel,
+html.lconnFiles.files-enable-simplify-left-nav {
+
+  //Toolbar
+  .lotusTopNav {
+    #lotusToolBar {
+
+      //Left side of toolbar: folder and filter panel switcher
+      .toolActions {
+        width: 182px;
+        //Panel icon selection and focus
+        .actionOn:after {
+          border-bottom: 3px solid $border-selected;
+        }
+        a:focus {
+          box-shadow: 0px 0px 0px 1px $border-focus;
+        }
+      }
+      &.colLeftHidden .toolActions {
+        width: 60px !important;
+      }
+
+      //Right side of toolbar
+      #lotusContentSceneActions {
+        width: calc(100% - (182px + 70px)) !important;
+        div[role="toolbar"] {
+          margin-top: 2px;
+        }
+
+        //Batch actions
+        .lotusBtn {
+          border: 0 !important;
+          color: $text-01 !important;
+          @include font-size($body...);
+          padding: 8px 12px !important;
+          &:first-of-type {
+            padding-left: 16px !important;
+          }
+          &:focus, &:hover {
+            text-decoration: underline !important;
+            box-shadow: 0 0 0 1px transparent, 0 0 0 2px transparent !important;
+            background-color: $background-main !important;
+          }
+        }
+
+        //Display icon selection and focus
+        #qkrViewControl {
+          position: absolute;
+          right: 16px;
+          .viewOn:after {
+            border-bottom: 3px solid $border-selected;
+            top: 6px;
+          }
+          a:focus {
+            box-shadow: 0px 0px 0px 1px $border-focus;
+            outline: none !important;
+          }
+        }
+
+      }
+    }
   }
 }
+
 .lconnFilesGridItem{
   margin-top:12px!important;
   margin-bottom:12px!important;
-  //margin-left was 2px already.
   margin-right:22px!important;
 }
 
@@ -105,13 +170,7 @@
     }
   }
 }
-div[dojoattachpoint="streamNode"]{
-  > div{
-    padding-bottom:12px!important;
-  }
-  position:relative;
-  top: 0;
-}
+
 #listcustomizer > div{
   padding-left:0px!important;
 }
@@ -164,29 +223,29 @@ tr.lotusSort{
     padding-left:.9rem!important;
   }
   a:hover{
-    background-color:$brand-01!important;
-    color:white!important;
+    background-color: $table-header-background-hover !important;
+    color:$table-header-text-hover !important;
     border-radius:$border-radius-tabs!important;
     text-decoration: none!important;
   }
   a:focus{
     text-decoration:none!important;
-    border:1px solid $brand-01!important;
+    border: 1px solid $table-header-border-hover !important;
     border-radius:$border-radius-tabs!important;
   }
   a.lotusDescending,a.lotusAscending{
     background-size:8px 8px!important;
   }
   a.lotusDescending{
-    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon) !important;
     &:hover{
-      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon-hover) !important;
     }
   }
   a.lotusAscending{
-    background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+    background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon) !important;
     &:hover{
-      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white) !important;
+      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon-hover) !important;
     }
   }
 }
@@ -260,7 +319,24 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
   }
   div[id^="lconn_share_widget_Breadcrumb"] {
     div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
-      outline: 1px solid $brand-01;
+      outline: 1px solid $border-focus;
     }
+  }
+}
+
+//Sept 2018 Files UI Updates
+.lconnFiles {
+
+  //Recently Visited - Quick find field
+  .filesSearchBar {
+    width: calc(100% - 70px);
+    .dijitTextBox, .dijitTextBoxFocused {
+      border: 0 !important;
+    }
+  }
+
+  //New toolbar
+  .lotusToolBar {
+    padding-left: 2.35rem !important;
   }
 }

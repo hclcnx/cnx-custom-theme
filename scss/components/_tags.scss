@@ -389,8 +389,8 @@ input.lotusText.scTagTypeahead {
 
 // Tags in "Files -> More -> Add Tags"
 // and in blog -> entry, wiki -> entry
-.lotusContent .lotusTags.lotusMeta,
-.lotusContent .lotusTags {
+.lotusMain .lotusTags.lotusMeta,
+.lotusMain .lotusTags {
   > ul, > span:not(.lotusHidden), > form {
     display: inline-block;
     vertical-align: middle;
@@ -417,7 +417,7 @@ input.lotusText.scTagTypeahead {
       font-weight:normal!important;
     }
     a.bidiAware:hover{
-      color:$brand-01!important;
+      color: $link-default !important;
     }
     a[role="button"],
     a.qkrRemove{
@@ -537,6 +537,7 @@ input.lotusText.scTagTypeahead {
     margin: .15rem !important;
     margin-left: -.75rem !important;
     padding: 0 1rem 0 0 !important;
+    vertical-align: middle;
 
     img {
       height: 100% !important;
@@ -598,33 +599,79 @@ input.lotusText.scTagTypeahead {
         display: inline-block;
         margin: 0 .25rem;
       }
-      #addMembersWidget #memberList {
-        border: none;
-
-        .member {
-          border: none;
-          @include tags;
-          float: left;
-          margin-bottom: .5rem !important;
-
-          > .P {
-            display: none;
-          }
-
-          .nameContent {
-            padding-left: 0;
-          }
-
-          .type {
-            color: $text-01;
-            margin-right: 1rem;
-          }
-
-          img.lotusDelete {
-            margin-right: 0;
-          }
-        }
-      }
     }
+  }
+}
+
+// this is defined here so that I can extend it below to
+// the different cloud and on-prem mebers tags instances
+%membersTagStylingModule {
+  border: none;
+  @include tags;
+  padding-right: 1.5rem !important;
+  float: left;
+  margin-bottom: .5rem !important;
+  box-sizing: border-box;
+  position: relative;
+
+  img.lotusDelete {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px !important;
+    width: 12px !important;
+    right: 10px;
+    background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+    background-position: center center;
+    margin-right: 0;
+  }
+}
+
+#memberAddFormDiv #memberList,
+#memberInviteFormDiv #memberList {
+  .lotusFilter.filterSpacing {
+    @extend %membersTagStylingModule;
+  }
+}
+#addMembersWidget #memberList,
+#inviteMembersWidget #memberList {
+  border: none;
+
+  .member {
+    @extend %membersTagStylingModule;
+   
+    > .P {
+      display: none;
+    }
+
+    .nameContent {
+      padding-left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .type {
+      color: $text-01;
+      margin-right: 1rem;
+    }
+  }
+}
+
+// cloud differentiations
+
+.lotusui30 .lotusTagCloud li {
+  // set font size here so that we can use ems below and they'll be relative to this parent:
+  @include font-size($body...);
+  a {
+    @include link-dark();
+    // inherit the font size and weight by default:
+    @include font-size(inherit, inherit);
+    // now apply the pre-periscope styles to the different classes of tags:
+    &.lotusF5, &:hover.lotusF5 { font-size:1.5em !important; font-weight: inherit !important; }
+    &.lotusF4, &:hover.lotusF4 { font-size:1.167em !important; font-weight:600 !important; }
+    &.lotusF3, &:hover.lotusF3 { font-size:1.167em !important; font-weight: inherit !important; }
+    &.lotusF2, &:hover.lotusF2 { font-size:.917em !important; font-weight:600 !important; }
+    &.lotusF1, &:hover.lotusF1 { font-size:.917em !important; font-weight: inherit !important; }
   }
 }

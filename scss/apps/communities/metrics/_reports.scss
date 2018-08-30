@@ -32,9 +32,11 @@
       background: $background-chart-header !important;
       font-size: 16px !important;
       height: 2.4em !important;
+      padding-left: 0em !important;
     }
     & tr > td {
       background: $background-side !important;
+      padding-left: 0em !important;
     }
     & tr:nth-child(3) {
       font-style: italic;
@@ -44,6 +46,9 @@
 #lineChartTableID {
   & tbody > tr:nth-child(1) > th {
     background: $background-side !important;
+  }
+  & tbody > tr > th:nth-child(n+2), td:nth-child(n+2) {
+    padding-left: 0em !important
   }
 }
 
@@ -74,11 +79,17 @@
       fill: $background-main !important;
     }
   }
+  #svgLine .line {
+    stroke-width: 4 !important;
+  }
   & .data-OVERALL > rect {
     fill: $data-overall !important;
     stroke: $data-overall !important;
   }
   & .data-BOOKMARKS {
+    &.line {
+      stroke: $data-bookmarks !important;
+    }
     & rect {
       fill: $data-bookmarks !important;
       stroke: $data-bookmarks !important;
@@ -89,7 +100,24 @@
         background-color: $data-bookmarks !important;
     }
   }
+  & .data-COMMUNITIES {
+    &.line {
+      stroke: $data-communities !important;
+    }
+    & rect {
+      fill: $data-communities !important;
+      stroke: $data-communities !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-communities !important;
+    }
+  }
   & .data-FORUMS {
+    &.line {
+      stroke: $data-forums !important;
+    }
     & rect {
       fill: $data-forums !important;
       stroke: $data-forums !important;
@@ -101,6 +129,9 @@
     }
   }
   & .data-WIKIS {
+    &.line {
+      stroke: $data-wikis !important;
+    }
     & rect {
       fill: $data-wikis !important;
       stroke: $data-wikis !important;
@@ -112,6 +143,9 @@
     }
   }
   & .data-IDEATIONBLOG {
+    &.line {
+      stroke: $data-ideationblog !important;
+    }
     & rect {
       fill: $data-ideationblog !important;
       stroke: $data-ideationblog !important;
@@ -123,6 +157,9 @@
     }
   }
   & .data-BLOGS {
+    &.line {
+      stroke: $data-blogs !important;
+    }
     & rect {
       fill: $data-blogs !important;
       stroke: $data-blogs !important;
@@ -134,6 +171,9 @@
     }
   }
   & .data-FILES {
+    &.line {
+      stroke: $data-files !important;
+    }
     & rect {
       fill: $data-files !important;
       stroke: $data-files !important;
@@ -145,6 +185,9 @@
     }
   }
   & .data-ACTIVITIES {
+    &.line {
+      stroke: $data-activities !important;
+    }
     & rect {
       fill: $data-activities !important;
       stroke: $data-activities !important;
@@ -169,4 +212,18 @@
 // text under slider
 #HorizontalRuleLabelsContain a {
   @include link-color('dark');
+}
+
+// 1389: Center summary values in table view in metrics app.
+#reportContainerDivID #statisticHeaderTableID {
+  th, td {
+    padding-left: 0em !important;
+  }
+}
+
+//1556: Use Plex font in metrics table view.
+.appfiltertext,
+.bottomRectText_textBar,
+.gridtable {
+  font-family: inherit !important
 }

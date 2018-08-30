@@ -9,6 +9,16 @@
     top:5px;
   }
 }
+#image_attachmentList {
+  .lotusPaging {
+    padding-right: 1rem !important;
+  }
+  .lotusTable {
+    tr.lotusSort {
+      border-bottom: 1px solid $border-focus;
+    }
+  }
+}
 //Help icon in Insert Link to Files dialog
 div[id^="lconn_files_widget_CompactFilePicker"]{
   margin:20px 0!important;
@@ -19,25 +29,25 @@ div[id^="lconn_files_widget_CompactFilePicker"]{
   }
 }
 
-// delete community dialog 
-body > div[id*="dialogs_deleteConfirmTrash"] {
+// delete community dialog
+body > div[id*="dialogs_deleteConfirm"] {
   height: auto !important;
   box-shadow: 2px 2px 6px $box-shadow-30 !important;
   border: 1px solid $border-separator !important;
-  
+
   * {
     max-width: 100% !important;
     box-sizing: border-box;
   }
-  
+
   .lotusDialog.lotusForm2._lotusDelete {
     border: none !important;
   }
-  
+
   .lotusErrorContent {
     padding: 0 !important;
     position: relative;
-    
+
     .iconsMessages48 {
       position: absolute;
       top: 2rem;
@@ -48,37 +58,37 @@ body > div[id*="dialogs_deleteConfirmTrash"] {
       width: 2rem !important;
       height: 2rem !important;
     }
-    
+
     #warning {
       padding: 2rem 2rem 2rem 3rem;
       display: block;
     }
-    
+
     .lotusErrorForm {
-      margin-left: 0; 
+      margin-left: 0;
       border: 1px solid $error;
-      
+
       .lotusMessage2 {
         border: none !important;
         box-shadow: none !important;
       }
     }
-    
+
     div[style="clear:both"],
     br {
       display: none;
     }
-    
+
     span[dojoattachpoint="signDirection"],
     > .lotusMeta {
       display: block;
       padding: 1rem 0;
     }
-    
+
     span[dojoattachpoint="signDirection"] {
       position: relative;
     }
-    
+
     > .lotusMeta {
       @include font-size($body...);
     }

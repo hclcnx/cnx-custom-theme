@@ -9,7 +9,7 @@
     background-size: 300px 300px;
     padding-top:300px !important;
     .lotusSyncHeading {
-      color: $brand-01;
+      color: $text-04;
     }
     p {
       font-weight:normal;
@@ -19,8 +19,7 @@
       font-weight:normal;
       color: $text-01 !important;
       a {
-      //font-weight:bold;
-      color:$brand-01 !important;
+      color: $link-default !important;
       margin-left:10px;
       }
     }

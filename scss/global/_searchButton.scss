@@ -1,4 +1,20 @@
 //Floating search button
+
+//Position search button relative to navbar
+#lotusFrame .tabNavBar {
+  &:not(.tabNavFixed) {
+    .icSearchPaneButton {
+      top: calc(#{$navbar-height} + 20px) !important; //Position search button relative to navbar height
+    }
+  }
+  &.tabNavFixed {
+    .icSearchPaneButton {
+      top: 20px !important; //Position search button when navbar is hidden on scroll
+    }
+  }
+}
+
+//Style search button
 .icSearchPaneButton {
   border-radius:$border-radius-search-button !important;
   background-color: $btn-primary-fill !important;
@@ -45,6 +61,7 @@
   }
 }
 
+//Search panel open
 //Search field on history panel
 .icSearchBar{
   a.icSearchIcon {
@@ -63,16 +80,16 @@
     height:auto !important;
   }
   .dijitTextBoxFocused {
-    box-shadow: 0 1px 0 $brand-01 !important;
+    box-shadow: 0 1px 0 $border-field-focus !important;
     outline:none!important;
-    border-bottom:1px solid $brand-01 !important;
+    border-bottom:1px solid $border-field-focus !important;
   }
 }
 
 //Hover & focus on entry in search panel
 .search-history-view-ui .icSearchPane {
   .pfEntry:hover, .pfEntry.spSelected {
-    border-color:$brand-01 !important;
+    border-color:$border-selected !important;
     .lconn_gray {
       color: $text-02 !important;
     }

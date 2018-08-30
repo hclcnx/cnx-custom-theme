@@ -33,7 +33,7 @@
         width: calc(33.3333% - 1rem) !important;
         &.pfSelected {
           background-color: transparent !important;
-          border-color: $brand-01;
+          border-color: $border-selected;
         }
       }
     }

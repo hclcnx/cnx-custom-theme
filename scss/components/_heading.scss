@@ -21,9 +21,12 @@
 #dfTopicList h4, //forum topics list
 #dfOpenQuestionList h4, //forum open topics list
 #dfAnsweredQuestionList h4, //forum answered topics list
+#updatesArea .lotusTable h4, // stand-alone forums list 
+#category .dfForums h4, // stand-alone public forums list 
 #ideatoins_main h4, //ideation blog list
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysListFullpage_"] h4, //surveys list
-#fullRecomm h4 { //recommended communities list
+#fullRecomm h4, //recommended communities list
+.lotusContent h4.blogsWrapText { //onprem blogs list 
   @include font-size($header...);
 }
 

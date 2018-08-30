@@ -1,6 +1,6 @@
 //======MIXINS=========
 
-//======BUTTONS=========
+//======BUTTONS MIXIN=========
 // Basic button styling
 @mixin btnbasics {
   border-radius:$border-radius-buttons !important;
@@ -91,14 +91,22 @@
     outline-offset: 1px;
   }
 }
+@mixin btnsmall {
+  @include font-size($caption...);
+  padding: 7px 14px !important;
+  height: auto !important;
+  display: inline-block; /*make it easier to control height/padding/etc, 
+  but no !important flag so that it doesn't override any instance where 
+  they should be display: block; */
+}
 
-//======BACKGROUND OPACITY=========
+//======BACKGROUND OPACITY MIXIN=========
 @mixin background-opacity($color, $opacity: 1) {
     background: $color!important; /* The fallback */
     background: rgba($color, $opacity)!important;
 }
 
-//======SELECT=========
+//======SELECT MIXIN=========
 @mixin select {
 		font-size: $input-size !important;
 		-webkit-appearance: none !important;
@@ -131,7 +139,7 @@
     }
 }
 
-//======TEXTAREA=========
+//======TEXTAREA MIXIN=========
 @mixin textarea {
 	background-color:$background-side !important;
 	border:none!important;
@@ -147,17 +155,15 @@
 	}
 }
 
-//======TEXTINPUT=========
+//======TEXTINPUT MIXIN=========
 @mixin textinput {
-	//height:2.5rem!important;
   line-height: 1.5 !important;
-	min-width:10rem!important;
 	padding:0!important;
 	background:none!important;
 	border:none!important;
 	border-bottom:1px solid $color-gray-10 !important;
 	font-size: $input-size !important;
-	padding-right:2rem!important;
+	padding-right:1rem!important;
   padding-bottom: .375rem !important;
 	box-sizing: border-box !important;
 	&:focus, .dijitTextBoxFocused {
@@ -167,7 +173,7 @@
 	}
 }
 
-//======FILEINPUT=========
+//======FILEINPUT MIXIN=========
 @mixin fileinput {
 	@include textinput;
 	cursor: pointer;
@@ -180,97 +186,57 @@
 	}
 }
 
-//======LINKS=========
-/* Link Mix-ins */
-@mixin link-color($color) {
+//======LINK MIXINS=========
+// the first few are utility mixins - DO NOT EDIT OR USE THEM
+@mixin link-color($color:null) {
   @if       $color == inherit { color: inherit !important; }
-  @else if  $color == light   { color: $text-03 !important; }
-  @else if  $color == dark    { color: $text-01 !important; }
-  @else                       { color: $brand-01 !important; }
+  @else if  $color == light   { color: $link-light !important; }
+  @else if  $color == dark    { color: $link-dark !important; }
+  @else                       { color: $link-default !important; }
 }
-
-@mixin link-underline($color) {
-  @if       $color == none    { text-decoration: none !important; }
-  @else if  $color == inherit { text-decoration: inherit !important; }
-  @else if  $color == light   { text-decoration-line: underline !important;
-                                text-decoration-color: $text-03 !important; }
-  @else if  $color == dark    { text-decoration-line: underline !important;
-                                text-decoration-color: $text-01 !important; }
-  @else if  $color == currentColor
-                              { text-decoration-line: underline !important;
-                                text-decoration-color: currentColor !important; }
-  @else                       { text-decoration-line: underline !important;
-                                text-decoration-color: $brand-01 !important; }
-}
-
+// DO NOT EDIT OR USE
 @mixin link-override() {
-  @include link-color('inherit');
-  @include link-underline('none');
-  font-weight: inherit !important;
+  &, &:hover {
+    @include link-color('inherit');
+    text-decoration: none !important;
+    font-weight: inherit !important;    
+  }
 }
-
-@mixin bx--link-default() {
-  @include link-color('brand01');
-
+// DO NOT EDIT OR USE
+@mixin make-links($linkcolor, $underlinecolor) {
+  @include link-color($linkcolor);
+  text-decoration-color: currentColor !important;
+  font-weight: $link-default-font-weight !important;
+  text-decoration: $link-default-decoration !important;
   &:visited {
-    @include link-color('brand01');
+    @include link-color($linkcolor);
   }
-
   &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('currentColor');
+  &:hover {
     outline: none !important;
+    font-weight: $link-hover-font-weight !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-hover-decoration !important;
+  }
+  &:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-focus-decoration !important;
   }
 }
 
-@mixin bx--link-dark() {
-  @include link-color('dark');
-
-  &:visited {
-    @include link-color('dark');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('currentColor');
-    outline: none !important;
-  }
+// these are the ones we should use
+@mixin link-default() {
+  @include make-links('', 'currentColor');
+}
+@mixin link-dark() {
+  @include make-links('dark', 'currentColor');
+}
+@mixin link-light() {
+  @include make-links('light', 'currentColor');
 }
 
-@mixin bx--link-dark-alt() {
-  @include link-color('dark');
-
-  &:visited {
-    @include link-color('dark');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-color('blue');
-    @include link-underline('currentColor');
-    outline: none !important;
-  }
-}
-
-@mixin bx--link-light() {
-  @include link-color('light');
-
-  &:visited {
-    @include link-color('light');
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    @include link-underline('light');
-    outline: none !important;
-  }
-}
-
-/* Large close icon */
+//======CLOSE ICON ON DIALOGS MIXIN=========
 /* Note - May also need to include a display:none on an existing button img */
 @mixin bx--modal-close() {
   background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default)!important;
@@ -286,7 +252,7 @@
   }
 }
 
-/* Tag mixin */
+//======TAG MIXIN=========
 @mixin tags($color: gray) {
   color: $text-01 !important;
   border-radius: $border-radius-tags !important;
@@ -325,7 +291,7 @@
   }
 }
 
-//Datatable
+//======DATATABLE MIXIN=========
 @mixin datatable($multiplier: 1) {
   //Table header
   //Table header text size, weight, color, transform
@@ -351,7 +317,7 @@
     border-bottom:1px solid $border-selected;
 
     //header
-    td a{
+    td a, th[id^="qkrSort"] a, th a {
       padding:8px 16px!important;
       border:1px solid transparent!important;
       $distance-x: calc(100% - 7px);
@@ -360,15 +326,15 @@
       &:hover,&:focus{
         text-decoration:none!important;
         border-radius:$border-radius-tabs!important;
-        border-color:$border-selected!important;
+        border-color: $btn-secondary-outline-hover !important;
       }
 
       &:hover{
-        background-color:$background-table-header-hover!important;
-        color:$text-03!important;
+        background-color: $btn-secondary-fill-hover !important;
+        color:$btn-secondary-text-hover!important;
       }
 
-      &.lotusDescending,a.lotusAscending{
+      &.lotusDescending, &.lotusAscending{
         background-size:8px 8px!important;
         padding:8px 20px 8px 16px!important;
       }
@@ -376,7 +342,7 @@
       &.lotusDescending{
         background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
         &:hover{
-          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
         }
       }
 
@@ -442,6 +408,36 @@
   }
 }
 
+//======GRADUATED FLAG=========/
+@mixin graduatedIdea {
+  padding:8px 12px !important;
+  width:auto !important;
+  display:inline-block;
+  border-color:$brand-03;
+  background-color:$brand-03;
+  color: $text-01 !important;
+  font-weight:500;
+  max-width:70px;
+  @include font-size($caption...);
+  &:before,&:after {
+    content:'';
+    position:absolute;
+    border-bottom:40px solid $brand-03;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    top:16px;
+    left:-14px;
+    transform:rotate(-142deg);
+    z-index:-1;
+  }
+  &:after {
+    left:auto;
+    right:-14px;
+    transform:rotate(142deg);
+  }
+}
+
+//======MESSAGE MIXIN=========
 // Style of notification message for warnings, success, errors, info
 @mixin message {
 	border-radius:$border-radius-message !important;
@@ -454,6 +450,7 @@
 	}
 }
 
+//======TABLE HEADER MIXIN=========
 @mixin tableHeader {
 
   color:$text-02!important;
@@ -531,5 +528,5 @@
 
 //how to use:
 // body {
-//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-brand-01) !important;
+//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-default) !important;
 // }

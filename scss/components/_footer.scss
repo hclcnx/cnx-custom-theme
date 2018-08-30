@@ -11,7 +11,7 @@ body:not(.cke_editable) {
   #lotusMain, .lotusMain {
     padding-bottom:24px !important;
     #lotusColLeft:not(.wpthemeNarrow), .lotusColLeft:not(.wpthemeNarrow) {
-      width:240px;
+      width: $leftnav-width;
     }
     #lotusContent.lotusContent, .lotusContent {
       left:0;
@@ -21,7 +21,7 @@ body:not(.cke_editable) {
   #lotusFooter.lotusFooter {
     position:relative !important;
     bottom:0 !important;
-    width:99% !important;
+    width: calc(100% - 50px) !important;
     margin:auto;
     height:auto;
     ul {
@@ -31,6 +31,7 @@ body:not(.cke_editable) {
   }
 }
 //Text styling of footer
+.lotusui30 .lotusFooter > ul > li > a, //Org page on cloud
 #lotusFooter.lotusFooter a,
 #footer > .lotusFooter > ul > li > a,
 .meetingBody .lotusFooter a {

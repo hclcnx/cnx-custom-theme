@@ -21,7 +21,7 @@
   .activityStreamNewsItemContainer {
     //padding-right: 0 !important;
     &:focus {
-      outline: 1px solid $brand-01 !important;
+      outline: 1px solid $border-focus !important;
     }
   }
   .lotusCommentList {
@@ -79,7 +79,7 @@
 
 #centerWidgetContainer {
   &:focus, div:focus, ul:not(.lotusTabs) > li:focus {
-    outline: 1px solid $brand-01 !important;
+    outline: 1px solid $border-focus !important;
   }
 }
 

@@ -108,21 +108,19 @@ form.lotusForm.qkrEdit {
       border-bottom: 0 !important;
       margin-bottom: 0 !important;
     }
-    // width for on-prem community wikis
-    .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
-      width: 50% !important;
-    }
-
-    // both cloud and on-prem, except width is specific to cloud
+    // both cloud and on-prem
     ul.lotusTabs#qkrEditorTabs {
-      // width specific to cloud
       width: 100% !important;
       text-align: right;
+      position: relative !important;
 
       li {
         float: none;
         display: inline-block;
 
+    		&#qkrRefHide {
+    		  padding-top: 4px !important;
+    		}
         &#qkrRefHide + li {
           margin-left: 0 !important;
         }
@@ -140,6 +138,12 @@ form.lotusForm.qkrEdit {
       display: inline-block !important;
     }
   }
+}
+
+.pageContainerDivStyleWidthpageContentDivStyleMargin .lotusActionBar.lotusBtnContainer,
+.pageContainerDivStyleIsCloudMode,
+.pageContainerDivStyleIsNotCloudMode {
+  height: auto !important;
 }
 
 div[id^="lconn_share0_widget_Dialog_"] {

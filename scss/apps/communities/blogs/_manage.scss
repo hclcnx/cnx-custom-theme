@@ -1,86 +1,28 @@
-.blog.admin #websiteForm {
-  td {
-    padding: 1rem 0 !important;
-    &.label {
-      text-align: left !important;
+.blog.admin {
+    #websiteForm {
+    td {
+      padding: 1rem 0 !important;
+      &.label {
+        text-align: left !important;
+      }
+      &[colspan="3"] {
+        padding: 1rem 0 0 !important;
+      }
     }
-    &[colspan="3"] {
-      padding: 1rem 0 0 !important;
+  }
+
+  //Updates to display icons
+  #lotusMain .lotusActionBar .lotusViewControl {
+    a {
+      border: 1px solid transparent !important;
+      border-bottom-width: 2px !important;
+      &.lotusSelected {
+        border-bottom-color: $border-selected !important;
+      }
     }
   }
 }
 
-.blog.admin #entry_detail_table {
-  th, td {
-    background-color: white;
-  }
-  tr:nth-child(4n - 1):not(:first-child),
-  tr:nth-child(4n - 2) {
-    th, td {
-      background-color: $background-side;
-    }
-  }
-  tr.lotusDetails td {
-    padding-top: 0 !important;
-  }
-}
-//styling the data tables
-.lotusTable {
-  th:nth-child(n+1) span a{
-    background-position:100% 5px!important;
-    background-size:8px 8px!important;
-    &.lotusActiveSort.lotusDescending {
-        background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default)!important;
-    }
-    &.lotusActiveSort.lotusAscending {
-        background-image:svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default)!important;
-    }
-    &:hover{
-      position:relative!important;
-      cursor:pointer!important;
-      color:$text-03!important;
-      text-decoration:none!important;
-      &.lotusActiveSort.lotusDescending {
-        background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white)!important;
-      }
-      &.lotusActiveSort.lotusAscending {
-        background-image:svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white)!important;
-      }
-      &::after{
-        content:"";
-        width:calc(100% + 2rem)!important;
-        height:calc(100% + 1.5rem)!important;
-        background-color:$background-table-header-hover;
-        position:absolute;
-        z-index:-1!important;
-        left:-18px;
-        top:-12px;
-        border-radius:2px!important;
-      }
-    }
-    &:focus{
-      color:$text-02!important;
-      text-decoration:none!important;
-      &.lotusActiveSort.lotusDescending {
-          background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default)!important;
-      }
-      &.lotusActiveSort.lotusAscending {
-          background-image:svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default)!important;
-      }
-      &::after{
-        content:"";
-        width:calc(100% + 2rem)!important;
-        height:calc(100% + 1.5rem)!important;
-        background-color:transparent!important;
-        outline:1px solid $border-selected!important;
-        position:absolute;
-        z-index:-1!important;
-        left:-18px;
-        top:-12px;
-      }
-    }
-  }
-}
 form[name='commentManagementForm'] {
   .lotusTable .lotusSort th:nth-child(2){
     padding-left:18px!important;

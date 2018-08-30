@@ -8,6 +8,48 @@
     ],
     "extensions": [
         {
+            "name": "AAGlobal Ex",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/global.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "global",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+          "name":"Account Settings",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/settings.css"
+            ],
+            "include-repo": {
+              "name": "periscope"
+            }
+          },
+          "path": "manage",
+          "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+          "name":"Activities",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+            "include-files": [
+              "css/activities.css"
+            ],
+            "include-repo": {
+              "name": "periscope"
+            }
+          },
+          "path": "activities",
+          "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "Blogs",
             "type": "com.ibm.customizer.ui",
             "payload": {
@@ -15,7 +57,7 @@
                     "css/blogs.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "blogs",
@@ -29,10 +71,24 @@
                     "css/communities.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "communities",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Downloads",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/settings.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "downloads",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -43,7 +99,7 @@
                     "css/files.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "files",
@@ -57,24 +113,10 @@
                     "css/forums.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "forums",
-            "application": "Visual Update 1 for IBM Connections"
-        },
-        {
-            "name": "AAGlobal Ex",
-            "type": "com.ibm.customizer.ui",
-            "payload": {
-                "include-files": [
-                    "css/global.css"
-                ],
-                "include-repo": {
-                    "name": "cnx-custom-theme"
-                }
-            },
-            "path": "global",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -85,7 +127,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "social",
@@ -99,7 +141,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "homepage",
@@ -113,10 +155,24 @@
                     "css/meetings.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "meetings",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Metrics",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/metrics.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "metrics",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -127,7 +183,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "mycontacts",
@@ -141,25 +197,25 @@
                     "css/settings.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "news",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
-          "name":"Account Settings",
-          "type": "com.ibm.customizer.ui",
-          "payload": {
-            "include-files": [
-              "css/settings.css"
-            ],
-            "include-repo": {
-              "name": "cnx-custom-theme"
-            }
-          },
-          "path": "manage",
-          "application": "Visual Update 1 for IBM Connections"
+            "name": "Org page",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "periscope"
+                }
+            },
+            "path": "contacts",
+            "application": "Visual Update 1 for IBM Connections"
         },
         {
             "name": "Profiles",
@@ -169,7 +225,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "profiles",
@@ -183,7 +239,7 @@
                     "css/search.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "search",
@@ -197,7 +253,7 @@
                     "css/wikis.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "wikis",

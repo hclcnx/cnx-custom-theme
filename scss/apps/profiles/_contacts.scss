@@ -7,7 +7,7 @@
 
 //edit contacts
 .iconAdd:focus {
-  outline: 1px solid $brand-01 !important;
+  outline: 1px solid $border-focus !important;
 }
 div:not(#_profileEditScene_div) .profileDataTable {
   .icon30:not(.iconLocation30) {
@@ -30,4 +30,17 @@ div:not(#_profileEditScene_div) .profileDataTable {
 // fix too-close dropdown arrow for sorting contacts
 .lotusPaging span.endWithSpace + a img {
   margin-left: .25rem;
+}
+
+#friendsFullPageSection table .lotusFirstRow ~ tr,
+#friendsFullPageSection table tr + .lotusResultRow,
+#followTabContent table .lotusFirstRow ~ tr {
+  border-top: 1px solid $border-separator;
+}
+#friendsFullPageSection table .lotusHidden ~ tr td,
+#followTabContent table .lotusHidden ~ tr td {
+  padding: 1rem .5rem 1rem 0;
+}
+#friendsFullPageSection table .lotusResultRow td {
+  padding: 1rem 1rem 0 0;
 }

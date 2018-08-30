@@ -6,6 +6,7 @@
   .cke_dialog_body {
     .cke_dialog_title {
       background-color: $background-main;
+      padding-top: 1.25rem !important;
     }
     [id^="cke_dialog_close_button"].cke_dialog_close_button {
       @include bx--modal-close;
@@ -103,6 +104,12 @@
           }
         }
       }
+      .cke_dialog_ui_html {
+        text-align: left !important;
+      }
     }
   }
 }
+//Select Color dialog for tables
+//1602 add space between selected color and field to enter color
+[id$="_selhicolor"] {margin-bottom: 8px;}

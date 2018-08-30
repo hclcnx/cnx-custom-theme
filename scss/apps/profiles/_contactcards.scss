@@ -14,7 +14,7 @@ div[class$="directory"] {
   flex-direction: row;
   flex-wrap: wrap;
   > a:focus {
-    outline-color: $brand-01 !important;
+    outline-color: $border-focus !important;
   }
   .lotusFloatContent div:not(.scFontItalic) {
     display: flex;
@@ -48,7 +48,7 @@ div[class$="directory"] {
     &.itemHover {
       .sccontact,
       .lotusPhoto img {
-        border-color: $brand-01 !important;
+        border-color: $border-focus !important;
       }
       .actionGroup {
         opacity: 1 !important;
@@ -74,12 +74,12 @@ div[class$="directory"] {
   }
   .sccontact {
     &.contactSelected {
-      border-color: $brand-01 !important;
+      border-color: $border-selected !important;
       .ccMember {
         background-color: $color-gray-1 !important;
       }
       .lotusPhoto a:first-child img {
-        border: 2px solid $brand-01 !important;
+        border: 2px solid $border-selected !important;
       }
     }
     .ccMember {
