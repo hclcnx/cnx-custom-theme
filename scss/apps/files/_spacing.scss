@@ -322,6 +322,11 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
       outline: 1px solid $border-focus;
     }
   }
+
+  //New toolbar
+  .lotusToolBar {
+    padding-left: 2.35rem !important;
+  }
 }
 
 //Sept 2018 Files UI Updates

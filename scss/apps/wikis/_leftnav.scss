@@ -16,30 +16,30 @@
     text-indent: -25px; // offsets drag handles and twisties
     overflow: visible;
     padding-right: $leftnav-horizontal-padding;
-    
+
     .dijitTreeContent {
-      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty 
+      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty
       display: inline-block;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       vertical-align: middle;
       padding-left: 25px !important; // to offset the text-indent...
-      
+
       .dijitTreeLabel {
         font-size: $body-sm-font-size;
         font-weight: normal !important;
         line-height: 1.5;
-        
+
         &:hover {
           text-decoration: none !important;
         }
       }
     }
-    
+
     &.dijitTreeRowSelected {
       background: transparent !important;
-      
+
       &::before {
         border-left: 4px solid $border-selected !important;
       }

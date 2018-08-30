@@ -2288,8 +2288,8 @@ div#activityActionButtons span.lotusBtn a,
   padding: 7px 14px !important;
   height: auto !important;
   display: inline-block;
-                       /*make it easier to control height/padding/etc, 
-but no !important flag so that it doesn't override any instance where 
+                       /*make it easier to control height/padding/etc,
+but no !important flag so that it doesn't override any instance where
 they should be display: block; */ }
 
 .wikiHeader input.lotusBtnSmall,
@@ -4928,6 +4928,9 @@ div.lotusPostIndicator a:focus {
 #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
   margin-top: 7px !important; }
 
+#bookmarksWidgetContainer a {
+  font-weight: 600 !important; }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }
@@ -6132,6 +6135,13 @@ select[id^="compactpicker_select_"] {
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover strong,
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover .lotusTabInner {
       color: #FFFFFF !important; }
+
+.ic-orient .ic-stream-controls {
+  border-bottom: 1px solid transparent !important; }
+  .ic-orient .ic-stream-controls .bx--tabs__nav li {
+    margin: 0px 0px !important; }
+  .ic-orient .ic-stream-controls .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
+    border: transparent; }
 
 .lotusPaletteBody .lotusPaletteNav {
   width: calc(100% - 60px);
@@ -9901,6 +9911,16 @@ div#list .lotusTable.lotusFixedTable li.lotusTags {
 .wikiHeader .lotusTags > span {
   font-size: 12px !important;
   font-weight: 500 !important; }
+
+#span\.recommendation,
+.lotusLikeAction,
+.lotusLikeCount,
+.lotusLikeDescription,
+#span\.recommendation .wikiheader .lotusHeader .lotusMeta > *,
+.lotusMeta .lotusDivider {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  top: 0 !important; }
 
 .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
   float: none;

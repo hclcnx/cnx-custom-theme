@@ -78,7 +78,7 @@ div#activityActionButtons span.lotusBtn a, //Community activities
 #frinds_removeFriendsDiv a,
 .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
 #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
-.lotusTable .lotusDetails .lotusBtnSmall // wiki list add tag buttons 
+.lotusTable .lotusDetails .lotusBtnSmall // wiki list add tag buttons
 {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {

@@ -2288,8 +2288,8 @@ div#activityActionButtons span.lotusBtn a,
   padding: 7px 14px !important;
   height: auto !important;
   display: inline-block;
-                       /*make it easier to control height/padding/etc, 
-but no !important flag so that it doesn't override any instance where 
+                       /*make it easier to control height/padding/etc,
+but no !important flag so that it doesn't override any instance where
 they should be display: block; */ }
 
 .wikiHeader input.lotusBtnSmall,
@@ -4928,6 +4928,9 @@ div.lotusPostIndicator a:focus {
 #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
   margin-top: 7px !important; }
 
+#bookmarksWidgetContainer a {
+  font-weight: 600 !important; }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }
@@ -6132,6 +6135,13 @@ select[id^="compactpicker_select_"] {
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover strong,
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover .lotusTabInner {
       color: #FFFFFF !important; }
+
+.ic-orient .ic-stream-controls {
+  border-bottom: 1px solid transparent !important; }
+  .ic-orient .ic-stream-controls .bx--tabs__nav li {
+    margin: 0px 0px !important; }
+  .ic-orient .ic-stream-controls .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
+    border: transparent; }
 
 .lotusPaletteBody .lotusPaletteNav {
   width: calc(100% - 60px);
@@ -8051,18 +8061,77 @@ html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection:first-child .lotusCli
   max-width: calc(100% - 24px) !important; }
   html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection:first-child .lotusClickable:first-child > div a {
     display: inline-block; }
-html.lconnFiles .lotusMain #lotusColLeft .subNavigationMenu:hover,
-html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:first-child:hover,
-html.lconnFiles .lotusMain #lotusColLeft .myDriveNormalItem > div:hover {
-  background: #d8d8d8 !important; }
+html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection .lotusClickable.lotusSelected {
+  padding-left: calc((24px + 15px) - 4px) !important;
+  border-left: 4px solid #3C6DF0 !important;
+  transition: border 0.23s ease, padding 0.23s ease; }
+html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection .lotusMenuSubsection {
+  margin-top: 0 !important; }
+html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection .headerOuter {
+  margin-top: 0 !important;
+  border: none !important; }
+  html.lconnFiles .lotusMain #lotusColLeft .lotusMenuSection .headerOuter .headerSelector {
+    border: none !important; }
 html.lconnFiles #menu_myfolders_childContainer {
-  margin-left: 55px !important;
-  padding-right: 24px; }
+  margin-left: 55px !important; }
   html.lconnFiles #menu_myfolders_childContainer > div .lconnFilesTree {
     margin-left: 6px !important; }
 html.lconnFiles #lotusContentSceneActions a.lotusSprite.lotusView {
   margin: 3px; }
   html.lconnFiles #lotusContentSceneActions a.lotusSprite.lotusView:focus {
+    outline: 1px solid #3C6DF0 !important; }
+
+html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable,
+html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable,
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable {
+  padding: 14px 24px !important;
+  margin-top: 0 !important; }
+  html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable.lotusSelected, html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:focus,
+  html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable.lotusSelected,
+  html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:focus,
+  html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable.lotusSelected,
+  html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:focus {
+    padding-left: calc(24px - 4px) !important;
+    border-left: 4px solid #3C6DF0 !important;
+    transition: border 0.23s ease, padding 0.23s ease; }
+html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft #menu_myfolders_childContainer,
+html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft #menu_myfolders_childContainer,
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft #menu_myfolders_childContainer {
+  margin-left: 32px !important; }
+  html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft #menu_myfolders_childContainer > div .lconnFilesTree,
+  html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft #menu_myfolders_childContainer > div .lconnFilesTree,
+  html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft #menu_myfolders_childContainer > div .lconnFilesTree {
+    margin-left: 6px !important; }
+  html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft #menu_myfolders_childContainer div.lotusSelected,
+  html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft #menu_myfolders_childContainer div.lotusSelected,
+  html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft #menu_myfolders_childContainer div.lotusSelected {
+    border-left: 4px solid transparent !important; }
+html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .subNavigationMenu:hover,
+html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:first-child:hover,
+html.lconnFiles.files-enable-recent-view .lotusMain #lotusColLeft .myDriveNormalItem > div:hover,
+html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .subNavigationMenu:hover,
+html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:first-child:hover,
+html.lconnFiles.files-enable-refine-panel .lotusMain #lotusColLeft .myDriveNormalItem > div:hover,
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .subNavigationMenu:hover,
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable:first-child:hover,
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .myDriveNormalItem > div:hover {
+  background: #d8d8d8 !important; }
+html.lconnFiles.files-enable-recent-view #menu_myfolders_childContainer,
+html.lconnFiles.files-enable-refine-panel #menu_myfolders_childContainer,
+html.lconnFiles.files-enable-simplify-left-nav #menu_myfolders_childContainer {
+  margin-left: 55px !important;
+  padding-right: 24px; }
+  html.lconnFiles.files-enable-recent-view #menu_myfolders_childContainer > div .lconnFilesTree,
+  html.lconnFiles.files-enable-refine-panel #menu_myfolders_childContainer > div .lconnFilesTree,
+  html.lconnFiles.files-enable-simplify-left-nav #menu_myfolders_childContainer > div .lconnFilesTree {
+    margin-left: 6px !important; }
+html.lconnFiles.files-enable-recent-view #lotusContentSceneActions a.lotusSprite.lotusView,
+html.lconnFiles.files-enable-refine-panel #lotusContentSceneActions a.lotusSprite.lotusView,
+html.lconnFiles.files-enable-simplify-left-nav #lotusContentSceneActions a.lotusSprite.lotusView {
+  margin: 3px; }
+  html.lconnFiles.files-enable-recent-view #lotusContentSceneActions a.lotusSprite.lotusView:focus,
+  html.lconnFiles.files-enable-refine-panel #lotusContentSceneActions a.lotusSprite.lotusView:focus,
+  html.lconnFiles.files-enable-simplify-left-nav #lotusContentSceneActions a.lotusSprite.lotusView:focus {
     outline: 1px solid #3C6DF0 !important; }
 
 html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .lotusMenuSection > .lotusClickable {
@@ -8086,6 +8155,17 @@ html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .myDrive
 
 .lconnFiles #lotusColLeft.lconnInvisible {
   width: 0 !important; }
+
+.lconnFiles #lotusColLeft.lconnInvisible {
+  width: 0 !important; }
+
+.lconnFiles .lotusMain #lconnFilterPanel .lotusSectionBody:not(#lconnTagCloudContent) {
+  margin-left: 10px; }
+  .lconnFiles .lotusMain #lconnFilterPanel .lotusSectionBody:not(#lconnTagCloudContent) li a {
+    font-size: 14px !important;
+    font-weight: 400 !important; }
+.lconnFiles .lotusMain #lconnFilterPanel ul[id*="_tagList"]:not(#tagsDiv_tagList) > li a, .lconnFiles .lotusMain #lconnFilterPanel ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span {
+  background: #F3F3F3 !important; }
 
 .lconnFiles .lotusMain #lconnFilterPanel .lotusSectionBody:not(#lconnTagCloudContent) {
   margin-left: 10px; }
@@ -8501,6 +8581,8 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchBar"] di
     margin-top: 4px; }
 div[id^="lconn_files_widget_PersonalFolderPicker_"] div[id^="lconn_share_widget_Breadcrumb"] div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
   outline: 1px solid #3C6DF0; }
+div[id^="lconn_files_widget_PersonalFolderPicker_"] .lotusToolBar {
+  padding-left: 2.35rem !important; }
 
 .lconnFiles .filesSearchBar {
   width: calc(100% - 70px); }

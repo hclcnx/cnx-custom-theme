@@ -68,6 +68,77 @@ html.lconnFiles {
             }
           }
         }
+        .lotusClickable.lotusSelected{
+            padding-left:calc((#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) - #{$leftnav-active-border-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            transition:$leftnav-border-slide;
+        }
+        .lotusMenuSubsection{
+          margin-top:0!important;
+        }
+        .headerOuter {
+          margin-top:0!important;
+          border:none!important;
+          .headerSelector{
+            border:none!important;
+          }
+        }
+      }
+    }
+  }
+
+  #menu_myfolders_childContainer{
+    margin-left:55px!important;
+    > div .lconnFilesTree{
+      margin-left:6px!important;
+    }
+  }
+
+  //Display options
+  #lotusContentSceneActions{
+    a.lotusSprite.lotusView{
+      margin:3px;
+      &:focus{
+        outline:1px solid $border-selected!important;
+      }
+    }
+  }
+
+}
+//End old Files UI
+
+//FILES SEPT 2018 OVERRIDES: DEPENDENT ON GATEKEEPER CLASSES
+html.lconnFiles.files-enable-recent-view,
+html.lconnFiles.files-enable-refine-panel,
+html.lconnFiles.files-enable-simplify-left-nav {
+
+  //Update to indent new tree nodes
+  .lotusMain {
+    #lotusColLeft {
+
+      .lotusMenuSection > .lotusClickable
+      {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        margin-top:0!important;
+        &.lotusSelected,
+        &:focus{
+          padding-left:calc(#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness})!important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          transition:$leftnav-border-slide;
+        }
+      }
+
+      //Update indent of folders
+      #menu_myfolders_childContainer {
+        margin-left: 32px !important;
+        > div .lconnFilesTree{
+          margin-left: 6px !important;
+        }
+
+        //Hide selected left bar on folders from Files code
+        div.lotusSelected {
+          border-left: 4px solid transparent !important;
+        }
       }
       .subNavigationMenu,
       .lotusMenuSection > .lotusClickable:first-child,
@@ -109,7 +180,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
       .lotusMenuSection > .lotusClickable {
         padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
         margin-top:0!important;
-        
+
         > .dojoDndItem {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -141,7 +212,9 @@ html.lconnFiles.files-enable-simplify-left-nav {
       }
 
     }
+
   }
+
 }
 //End new Files UI
 
@@ -149,6 +222,32 @@ html.lconnFiles.files-enable-simplify-left-nav {
 .lconnFiles #lotusColLeft.lconnInvisible {
   width: 0 !important;
 }
+//End new Files UI
+
+//FILES SEPT 2018: Left panel closed, content fills window
+.lconnFiles #lotusColLeft.lconnInvisible {
+  width: 0 !important;
+}
+
+//FILES SEPT 2018: New Filter panel
+.lconnFiles .lotusMain #lconnFilterPanel {
+
+  //Style filter options in each section
+  .lotusSectionBody:not(#lconnTagCloudContent) {
+    margin-left: 10px;
+    li a {
+      @include font-size($body...);
+    }
+  }
+
+  //Style tags on white background
+  ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
+    a, > span {
+      background: $background-side !important;
+    }
+  }
+}
+//End new filter panel
 
 //FILES SEPT 2018: New Filter panel
 .lconnFiles .lotusMain #lconnFilterPanel {
