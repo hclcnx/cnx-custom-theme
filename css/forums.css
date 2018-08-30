@@ -5728,6 +5728,9 @@ select[id^="compactpicker_select_"] {
     width: 100%;
     clear: both; }
 
+#activitiesTitleBar .lotusTitleBar2.lotusTitleBar2Tabs {
+  margin-bottom: 0 !important; }
+
 .lotusTabs li,
 .lotusNavTabs#activitiesNagvigationToolbar li,
 .blog.admin .lotusNavTabs li,
@@ -6135,13 +6138,6 @@ select[id^="compactpicker_select_"] {
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover strong,
     .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover .lotusTabInner {
       color: #FFFFFF !important; }
-
-.ic-orient .ic-stream-controls {
-  border-bottom: 1px solid transparent !important; }
-  .ic-orient .ic-stream-controls .bx--tabs__nav li {
-    margin: 0px 0px !important; }
-  .ic-orient .ic-stream-controls .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
-    border: transparent; }
 
 .lotusPaletteBody .lotusPaletteNav {
   width: calc(100% - 60px);

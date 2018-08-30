@@ -9186,12 +9186,15 @@ div[id^="widget_lconn_act_ActivityForm_"][id$="duedate"] {
   border: none !important; }
 
 .lotusui30_layout .lotusMain .lotusContent {
-  padding-top: 4rem; }
+  margin-top: 2rem; }
   .lotusui30_layout .lotusMain .lotusContent .lotusForm2 .lotusFormTitle .lotusHeading,
   .lotusui30_layout .lotusMain .lotusContent .lotusHeader h1 {
     font-size: 20px !important;
     font-weight: 600 !important;
     padding-top: 0; }
+
+body.scloud3 .lotusHeader #actViewLabel h1 {
+  margin-top: 2rem !important; }
 
 #activitiesMainRegion #activityList .lotusForm2,
 #activitiesMainRegion #t_activityList .lotusForm2,

@@ -5630,6 +5630,8 @@ they should be display: block; */ }
       height: 0;
       width: 100%;
       clear: both; }
+  .ics-viewer #activitiesTitleBar .lotusTitleBar2.lotusTitleBar2Tabs {
+    margin-bottom: 0 !important; }
   .ics-viewer .lotusTabs li,
   .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li,
   .ics-viewer .blog.admin .lotusNavTabs li,
@@ -6037,12 +6039,6 @@ they should be display: block; */ }
       .ics-viewer .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover strong,
       .ics-viewer .lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] li.bx--tabs__nav-item--selected a:hover .lotusTabInner {
         color: #FFFFFF !important; }
-  .ics-viewer .ic-orient .ic-stream-controls {
-    border-bottom: 1px solid transparent !important; }
-    .ics-viewer .ic-orient .ic-stream-controls .bx--tabs__nav li {
-      margin: 0px 0px !important; }
-    .ics-viewer .ic-orient .ic-stream-controls .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
-      border: transparent; }
   .ics-viewer .lotusPaletteBody .lotusPaletteNav {
     width: calc(100% - 60px);
     border-bottom: 1px solid #d8d8d8;

@@ -17,6 +17,11 @@
   }
 }
 
+//Community Activities community top app navigator override
+#activitiesTitleBar .lotusTitleBar2.lotusTitleBar2Tabs {
+  margin-bottom: 0 !important;
+}
+
 .lotusTabs,
 .lotusNavTabs#activitiesNagvigationToolbar,
 .blog.admin .lotusNavTabs,
@@ -106,17 +111,6 @@
         }
       }
     }
-  }
-}
-//Orient Me specifics
-.ic-orient .ic-stream-controls {
-  border-bottom: 1px solid transparent !important; //Use bottom border that is already there
-  .bx--tabs__nav li {
-    margin: 0px 0px !important; //Move selection bar down a bit
-  }
-  //Override orient me styling
-  .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
-    border: transparent;
   }
 }
 
