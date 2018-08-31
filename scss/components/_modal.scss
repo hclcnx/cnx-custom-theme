@@ -499,11 +499,16 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 	}
 }
 
-// Add app to community popup
-#app_palette_dialog_modal {
+// START Add app to community popup
 
-	//Width of dialog
-	width: 500px !important;
+//Width of dialog set in two spots
+.lotusui30_body #app_palette_dialog_modal.dijitDialog {
+	&, #app_palette_dialog_modal {
+		width: 500px !important;
+	}
+}
+
+.lotusui30_body #app_palette_dialog_modal {
 	.app_palette_modal {
 		width: 498px !important;
 		.lotusPaletteContent,
@@ -616,6 +621,7 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 	  }
 	}
 }
+// END Add app to community popup
 
 // new group in contacts
 .dijitDialog div[id^="addPeopleLable_"] .dijitTextBox {
