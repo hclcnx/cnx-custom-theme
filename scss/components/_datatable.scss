@@ -67,23 +67,35 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 }
 
 //This is the icons that appear for organizing the information in the Data Tables.
-#qkrViewControl.lotusViewControl, .blog .lotusViewControl {
+
+html:not(.lconnFiles) #qkrViewControl.lotusViewControl, //wiki index
+html.lconnFiles .lotusCommunities .filesListFilled .lotusViewControl, //Comm files old UI
+html.lconnFiles:not(.files-enable-simplify-left-nav) #qkrViewControl.lotusViewControl, //stand-alone files
+body.blog .lotusViewControl, //Manage blog lists
+#lotusMain div#ideatoins_main .lotusViewControl, //Comm Ideation blog
+.activiyActionBar, //Activity entry lists
+#calendar_view //Comm Events list
+{
 
   .lotusTileOn,
   .lotusTileOff,
   .viewOff,
+  .viewOn,
   .lotusDetailsOn,
   .lotusDetailsOff,
   .lotusSummaryOn,
   .lotusSummaryOff {
 
     padding-bottom: 2px!important;
-    background-size: 18px 18px!important;
+    background-size: 20px 20px !important;
     background-position: 2px 2px !important;
+    background-repeat: no-repeat !important;
     border: 1px solid transparent!important;
     border-bottom: 2px solid transparent!important;
-    padding: 2px!important;
+    padding: 2px 2px !important;
     margin:3px!important;
+    height: 20px !important;
+    width: 20px !important;
 
     &:focus {
       outline:1px solid $border-selected!important;
@@ -100,6 +112,7 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
     border-color: transparent!important;
   }
 
+  .viewOn,
   .lotusTileOn,
   .lotusDetailsOn,
   .lotusSummaryOn {
@@ -127,7 +140,10 @@ div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
 #dfTopicList, //List of forum topics in community
 #dfOpenQuestionList, //List of open forum questions in community
 #dfAnsweredQuestionList, //List of answered forum questions in community
-#topicList { //List of forum topics inside forum
+#topicList, //List of forum topics inside forum
+#updatesArea, // stand-alone forums list
+#category .dfForums // stand-alone public forums list
+{
   .lotusTable{
     @include datatable(2);
     td.lotusFirstCell {

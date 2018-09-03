@@ -78,6 +78,20 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
+            "name": "Downloads",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/settings.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "downloads",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "Files",
             "type": "com.ibm.customizer.ui",
             "payload": {
@@ -103,20 +117,6 @@
                 }
             },
             "path": "forums",
-            "application": "Visual Update 1 for IBM Connections"
-        },
-        {
-            "name": "Homepage New",
-            "type": "com.ibm.customizer.ui",
-            "payload": {
-                "include-files": [
-                    "css/home.css"
-                ],
-                "include-repo": {
-                    "name": "cnx-custom-theme"
-                }
-            },
-            "path": "social",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -162,6 +162,20 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
+            "name": "Metrics",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/metrics.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "metrics",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "MyContacts",
             "type": "com.ibm.customizer.ui",
             "payload": {
@@ -187,6 +201,20 @@
                 }
             },
             "path": "news",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Org page",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/profiles.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "contacts",
             "application": "Visual Update 1 for IBM Connections"
         },
         {

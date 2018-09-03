@@ -10,7 +10,10 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] .profil
 #searchResultsTable img.photo, //Profiles Directory Search Results avatars
 .lotusCommunities img.otherPeople32, //In Community members widget
 .lotusCommunities img.otherPeople48, //In Community members page
-div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comments
+div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img, //Wiki comments
+#friendsFullPageSection table img[width="55"], // on-prem contacts
+#friendsFullPageSection table img[width="45"], // on-prem invitations
+#followTabContent table img[width="55"] // on-prem following & followers
 {
   border-radius:$border-radius-avatar !important;
   border:1px solid $border-separator;
@@ -35,7 +38,6 @@ div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusPostAvatar img //Wiki comm
     width: 100%;
     height: auto;
     float: none;
-    //padding-right: 1rem !important;
     img {
       @include avatarSize($size4);
     }

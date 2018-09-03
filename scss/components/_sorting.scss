@@ -3,7 +3,7 @@
     border:none!important;
     a {
       color: $text-02 !important;
-      
+
       &[aria-pressed="true"] {
         @include link-color(dark);
       }
@@ -31,18 +31,6 @@
     }
     &#qkrSortmostpopular{
       width:100px!important;
-    }
-  }
-}
-
-#lotusMain{
-  .lotusSummaryOn,
-  .lotusDetailsOn {
-    border-color:$border-selected!important;
-    border-top:0px!important;
-    border-bottom:2px solid!important;
-    &:focus{
-      outline:1px solid $border-selected!important;
     }
   }
 }

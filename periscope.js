@@ -42,7 +42,8 @@ function periscope(){
     "activities":["/activities/"],
     "settings":["/manage/account/user",
                 "/news/",
-                "/manage/subscribers/showInviteGuestDialog/input"]
+                "/manage/subscribers/showInviteGuestDialog/input",
+                "/downloads/"]
   };
 
   //This is the function that applies the style

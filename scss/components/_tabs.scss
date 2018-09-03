@@ -2,10 +2,24 @@
 .lotusTabContainer,
 #activitiesTitleBar .lotusTitleBar2Tabs, //Stand-alone Activities
 .app_palette_modal_header,
-.ic-orient .ic-stream-controls //Orient Me
+.ic-orient .ic-stream-controls, //Orient Me
+#lotusHeaderNavigation_UL
  {
   border-bottom: 1px solid $border-separator !important;
   @include font-size($tabs...);
+
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+  }
+}
+
+//Community Activities community top app navigator override
+#activitiesTitleBar .lotusTitleBar2.lotusTitleBar2Tabs {
+  margin-bottom: 0 !important;
 }
 
 .lotusTabs,
@@ -14,7 +28,9 @@
 .blog.lotusui .lotusNavTabs,
 .app_palette_modal_tabs_ul,
 .bx--tabs__nav,
-.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"] {
+.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"],
+#lotusHeaderNavigation_UL,
+.lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] {
   li {
     margin: 0 0 4px !important;
     padding: 0.625rem 0 0.375rem !important;
@@ -97,6 +113,28 @@
     }
   }
 }
+
+//Add Apps dialog specifics
+.lotusPaletteBody .lotusPaletteNav {
+  width: calc(100% - 60px);
+  border-bottom: 1px solid $border-separator;
+  margin-left: 30px;
+  padding: 0 !important;
+
+  .lotusMenu {
+    margin: 0 !important;
+    ul[role="tablist"] li {
+      float: left;
+      + li {
+        margin-left: 1rem !important;
+      }
+      &.lotusSelected {
+        border-left-width: 0 !important;
+      }
+    }
+  }
+}
+
 //Orient Me specifics
 .ic-orient .ic-stream-controls {
   border-bottom: 1px solid transparent !important; //Use bottom border that is already there
@@ -194,7 +232,6 @@
     }
   }
 }
-
 
 div[role="tablist"],
 .tablist,
@@ -396,4 +433,23 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
 //1715 Initial caps for standalone blogs tabs
 .lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
 	text-transform: initial;
+}
+
+// onprem contacts and profiles
+.lotusProfiles .lotusTitleBarContent,
+.myProfile .lotusTitleBarContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  .lotusHeading {
+    float: none !important;
+    margin-right: 45px !important;
+  }
+  .lotusHeading + div[aria-controls="lotusMain"] {
+    flex-grow: 1;
+  }
+}
+#myNetwork_contentDiv,
+.myProfile #lotusMain {
+  margin-top: 1.75rem;
 }

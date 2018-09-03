@@ -60,3 +60,47 @@
 		outline: none !important;
 	}
 }
+
+// message icons updates
+.lotusIconMsgSuccess,
+.iconsMessages16-msgSuccess16,
+.ics-viewer-messagebox-icon.success {
+  background-image: svg-url-with-replaced-fill($svg-success-msg, '#000000', $success) !important;
+  background-position:0px 0px!important;
+}
+.lotusIconMsgError,
+.lconnSprite-iconError16,
+.iconsMessages16-msgError16,
+.ics-viewer-messagebox-icon.error {
+  background-image: svg-url-with-replaced-fill($svg-error-msg, '#000000', $error) !important;
+  background-position:0px 0px!important;
+}
+.lotusIconMsgInfo,
+.iconsMessages16-msgInfo16,
+.ics-viewer-messagebox-icon.info {
+  background-image: svg-url-with-replaced-fill($svg-info-msg, '#000000', $information) !important;
+  background-position:0px 0px!important;
+}
+.lotusIconMsgWarning,
+.lconnSprite-iconWarning16,
+.iconsMessages16-msgWarning16,
+.ics-viewer-messagebox-icon.warning {
+  background-image: svg-url-with-replaced-fill($svg-warning-msg, '#000000', $warning) !important;
+  background-position:0px 0px!important;
+}
+
+//Messages in org page
+#partnerPageContentFF {
+	.lotusContent {
+		div[role="alert"] {
+			width: auto !important;
+			div.lotusMessage2 {
+				padding: 11px 11px !important;
+			}
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

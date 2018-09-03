@@ -1,6 +1,7 @@
 .lotusMain{
   padding-left:0!important;
-  #lotusColLeft:not(.wpthemeNarrow){
+  #lotusColLeft:not(.wpthemeNarrow),
+  .lotusColLeft:not(.wpthemeNarrow){
     width: $leftnav-width;
     padding: 1rem 0 0 !important;
     margin:0!important;

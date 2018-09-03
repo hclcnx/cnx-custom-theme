@@ -95,6 +95,9 @@ html.lconnFiles.files-enable-simplify-left-nav {
       //Right side of toolbar
       #lotusContentSceneActions {
         width: calc(100% - (182px + 70px)) !important;
+        div[role="toolbar"] {
+          margin-top: 2px;
+        }
 
         //Batch actions
         .lotusBtn {
@@ -118,6 +121,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
           right: 16px;
           .viewOn:after {
             border-bottom: 3px solid $border-selected;
+            top: 6px;
           }
           a:focus {
             box-shadow: 0px 0px 0px 1px $border-focus;
@@ -130,11 +134,6 @@ html.lconnFiles.files-enable-simplify-left-nav {
   }
 }
 
-#qkrViewControl{
-  a.lotusView{
-    border-color: $border-focus !important;
-  }
-}
 .lconnFilesGridItem{
   margin-top:12px!important;
   margin-bottom:12px!important;
@@ -322,6 +321,11 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
     div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
       outline: 1px solid $border-focus;
     }
+  }
+
+  //New toolbar
+  .lotusToolBar {
+    padding-left: 2.35rem !important;
   }
 }
 

@@ -30,7 +30,7 @@ div[id^="lconn_files_widget_CompactFilePicker"]{
 }
 
 // delete community dialog
-body > div[id*="dialogs_deleteConfirmTrash"] {
+body > div[id*="dialogs_deleteConfirm"] {
   height: auto !important;
   box-shadow: 2px 2px 6px $box-shadow-30 !important;
   border: 1px solid $border-separator !important;

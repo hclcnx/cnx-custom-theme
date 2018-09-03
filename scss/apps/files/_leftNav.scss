@@ -17,6 +17,9 @@ html.lconnFiles {
       .lotusMenuSection .subNavigationMenu {
         padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
         margin-top: 0 !important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         &.lotusSelected,
         &:focus{
           padding-left:calc(#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness})!important;
@@ -37,6 +40,31 @@ html.lconnFiles {
             &.lotusSelected{
               padding-left:calc(((#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) + #{$leftnav-indent-padding}) + 19px)!important;
               transition:$leftnav-border-slide;
+            }
+          }
+        }
+        .lotusClickable.lotusSelected{
+            padding-left:calc((#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) - #{$leftnav-active-border-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            transition:$leftnav-border-slide;
+        }
+        .lotusMenuSubsection{
+          margin-top:0!important;
+        }
+        .headerOuter {
+          margin-top:0!important;
+          border:none!important;
+          .headerSelector{
+            border:none!important;
+          }
+        }
+      }
+      .lotusMenuSection {
+        &:first-child {
+          .lotusClickable:first-child > div {
+            max-width: calc(100% - #{ $leftnav-horizontal-padding }) !important;
+            a {
+              display: inline-block;
             }
           }
         }
@@ -112,6 +140,76 @@ html.lconnFiles.files-enable-simplify-left-nav {
           border-left: 4px solid transparent !important;
         }
       }
+      .subNavigationMenu,
+      .lotusMenuSection > .lotusClickable:first-child,
+      .myDriveNormalItem > div {
+        &:hover {
+          background: $background-side-hover !important;
+        }
+      }
+    }
+  }
+
+  #menu_myfolders_childContainer{
+    margin-left:55px!important;
+    padding-right: $leftnav-horizontal-padding;
+    > div .lconnFilesTree{
+      margin-left:6px!important;
+    }
+  }
+
+  //Display options
+  #lotusContentSceneActions{
+    a.lotusSprite.lotusView{
+      margin:3px;
+      &:focus{
+        outline:1px solid $border-selected!important;
+      }
+    }
+  }
+
+}
+//End old Files UI
+
+//FILES SEPT 2018 OVERRIDES: DEPENDENT ON GATEKEEPER CLASSES
+  //Update to indent new tree nodes
+html.lconnFiles.files-enable-simplify-left-nav {
+  .lotusMain {
+    #lotusColLeft {
+
+      .lotusMenuSection > .lotusClickable {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        margin-top:0!important;
+
+        > .dojoDndItem {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &.lotusSelected,
+        &:focus{
+          padding-left:calc(#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness})!important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          transition:$leftnav-border-slide;
+        }
+      }
+
+      //Update indent of folders
+      #menu_myfolders_childContainer {
+        margin-left: 32px !important;
+        padding-right: $leftnav-horizontal-padding;
+        > div .lconnFilesTree{
+          margin-left: 6px !important;
+        }
+      }
+      //Truncate long org Files name
+      .myDriveNavigation .myDriveNormalItem > div {
+        > a#public span.bidiAware {
+          wbr {
+            display: none;
+          }
+        }
+      }
 
     }
 
@@ -124,6 +222,32 @@ html.lconnFiles.files-enable-simplify-left-nav {
 .lconnFiles #lotusColLeft.lconnInvisible {
   width: 0 !important;
 }
+//End new Files UI
+
+//FILES SEPT 2018: Left panel closed, content fills window
+.lconnFiles #lotusColLeft.lconnInvisible {
+  width: 0 !important;
+}
+
+//FILES SEPT 2018: New Filter panel
+.lconnFiles .lotusMain #lconnFilterPanel {
+
+  //Style filter options in each section
+  .lotusSectionBody:not(#lconnTagCloudContent) {
+    margin-left: 10px;
+    li a {
+      @include font-size($body...);
+    }
+  }
+
+  //Style tags on white background
+  ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
+    a, > span {
+      background: $background-side !important;
+    }
+  }
+}
+//End new filter panel
 
 //FILES SEPT 2018: New Filter panel
 .lconnFiles .lotusMain #lconnFilterPanel {
@@ -223,7 +347,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
   }
   > .lconnFilesTree{
     margin-left:calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})!important;
-    padding-right:8px !important;
+    padding-right: $leftnav-horizontal-padding !important;
     .lconnFilesTree{
       margin-left:6px!important;
     }
@@ -236,9 +360,10 @@ html.lconnFiles.files-enable-simplify-left-nav {
 
 //Changing Trash, Pinned Folders, Pinned Files
 .myDriveNormalItem > div{
-  padding-top:calc(#{$leftnav-vertical-padding})!important;
-  padding-bottom:calc(#{$leftnav-vertical-padding})!important;
-  padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+  padding-top: $leftnav-vertical-padding !important;
+  padding-bottom: $leftnav-vertical-padding !important;
+  padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+  padding-right: $leftnav-horizontal-padding !important;
   margin-top: 0 !important;
   border-color:$border-selected !important;
   height:20px!important;
@@ -250,6 +375,10 @@ html.lconnFiles.files-enable-simplify-left-nav {
     line-height:1.5!important;
     span{
       line-height:1.5!important;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
     }
   }
   &.lotusSelected{
@@ -357,7 +486,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      max-width: calc(100% - 40px) !important;
+      max-width: 100% !important;
       box-sizing: border-box;
       float: none !important;
     }

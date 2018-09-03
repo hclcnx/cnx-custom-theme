@@ -23,6 +23,7 @@
 // @match        https://apps.na.collabserv.com/blogs/*
 // @match        https://apps.na.collabserv.com/communities/*
 // @match        https://apps.na.collabserv.com/contacts/*
+// @match        https://apps.na.collabserv.com/downloads/*
 // @match        https://apps.na.collabserv.com/files/*
 // @match        https://apps.na.collabserv.com/forums/*
 // @match        https://apps.na.collabserv.com/manage/account/user/*

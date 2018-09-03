@@ -143,6 +143,26 @@ div#list {
 }
 
 // 1522 Adjust vertical placement of meta line elements to match 'You like this' text.
+.wikiHeader {
+  #span\.recommendation {
+    margin-bottom: 0;
+    .lotusLikeAction,
+    .lotusDivider {
+      top: 0 !important;
+    }
+    .lotusLikeText {
+      top: -3px !important;
+    }
+    .lotusIconLike {
+      top: -5px !important;
+    }
+  }
+  .lotusTags > span {
+    @include font-size($caption...);
+  }
+}
+
+// 1522 Adjust vertical placement of meta line elements to match 'You like this' text.
 #span\.recommendation,
 .lotusLikeAction,
 .lotusLikeCount,

@@ -262,7 +262,7 @@ div.lconn-survey_dialog {
 }
 
 
-.pickerDropfilesVerticalPrompt{
+html:not(.ie-native-mode) .pickerDropfilesVerticalPrompt{
 	width:calc(100% - 4px)!important;
 }
 .lconnEmptyMsg{
@@ -499,11 +499,28 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 	}
 }
 
-// Add app popup styles
-.app_palette_modal {
+// START Add app to community popup
+
+//Width of dialog set in two spots
+.lotusui30_body #app_palette_dialog_modal.dijitDialog {
+	&, #app_palette_dialog_modal {
+		width: 500px !important;
+	}
+}
+
+.lotusui30_body #app_palette_dialog_modal {
+	.app_palette_modal {
+		width: 498px !important;
+		.lotusPaletteContent,
+		.lotusPaletteContentAreaNode .lotusPaletteWidget {
+			width: 430px !important;
+	 	}
+	}
+
+	//Header of catalog and layout dialog
   .app_palette_modal_header {
     background-color: #ffffff;
-    height: 90px;
+    height: auto;
     border: 0 !important;
 
     // display applications added message after adding app
@@ -511,57 +528,100 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
       position: absolute;
       left: 30px;
       top: 110px;
-      font-size: $tab-font-size !important;
-      font-weight: 500 !important;
+			@include font-size($tabs...);
       color: $text-01 !important;
     }
-
     .app_palette_modal_tabs_ul {
       border-bottom: 1px solid $color-gray-10 !important;
       padding: 10px 0px 0px 0px !important;
-      width: 85% !important;
+      width: 100% !important;
+			position: relative;
+			left: auto;
+			bottom: auto;
     }
+		// use larger close icon
+		.lotusPaletteClose {
+			@include bx--modal-close;
+		}
+		.app_palette_modal_close_button img {
+			display:none!important;
+		}
+		//App added message
+		span.lotusAdded {
+			&.lotusHidden {
+				display: none;
+			}
+			float: none;
+			text-align: left;
+			display: block;
+			background-image: svg-url-with-replaced-fill($svg-success-msg, '#000000', $success) !important;
+			background-repeat: no-repeat;
+			p {
+				position: relative;
+				top: auto;
+				left: auto;
+				margin-top: 12px;
+				margin-left: 30px;
+			}
+		}
   }
 
-	// display for name of the current layout
-  h4 {
-    a.homepageUnclickable {
-      &:active, &:hover, &:focus {
-        text-decoration: none !important;
-      }
-    }
-    .titleNodeSpanSelected {
-      color: $text-01 !important;
-      white-space: normal;
-    }
-    .lotusAltText {
-      color: $text-01 !important;
-      display: block !important;
-      &:before {
-        content: " [";
-      }
-      &:after {
-        content: "]";
-      }
-    }
-  }
-  .lotusPaletteWidget {
-    padding: 6px 4px !important;
-    &:focus {
-      outline: $btn-secondary-outline-hover auto 2px;
-    }
-  }
-  .lotusIcon {
-    background-position-x: 2px !important;
-  }
-  // use larger close icon
-  .lotusPaletteClose {
-		@include bx--modal-close;
-  }
-  .app_palette_modal_close_button img {
-    display:none!important;
-  }
+	// Body of catalog and layout dialog
+	.lotusPaletteBody {
+
+		.lotusPaletteNav {
+			margin-top: 14px;
+		}
+
+		//Show message in change layout dialog for English only
+		&[id^="lconn_core_palette_ChangeLayout"]:lang(en):before {
+			content: "Community layouts are responsive to your window size. Members might see 3, 2, or 1 column based on the width of their window.";
+			background-image: svg-url-with-replaced-fill($svg-info-msg, '#000000', $information);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			background-size: 30px 30px;
+			margin: 10px 30px;
+			padding: 10px 10px 10px 50px;
+			width: auto;
+			position: relative;
+			display: block;
+			border-radius: $border-radius-message;
+			border:2px solid rgba($color-gray-50, 0.3);
+		}
+	  h4 {
+	    a.homepageUnclickable {
+	      &:active, &:hover, &:focus {
+	        text-decoration: none !important;
+	      }
+	    }
+	    .titleNodeSpanSelected {
+	      color: $text-01 !important;
+	      white-space: normal;
+	    }
+	    .lotusAltText {
+	      color: $text-01 !important;
+	      display: block !important;
+	      &:before {
+	        content: " [";
+	      }
+	      &:after {
+	        content: "]";
+	      }
+	    }
+	  }
+	  .lotusPaletteWidget {
+	    padding: 6px 4px !important;
+			border-bottom: 1px solid $border-separator;
+	    &:focus {
+	      outline: $btn-secondary-outline-hover auto 2px;
+	    }
+	  }
+	  .lotusIcon {
+	    background-position-x: 2px !important;
+	  }
+	}
 }
+// END Add app to community popup
 
 // new group in contacts
 .dijitDialog div[id^="addPeopleLable_"] .dijitTextBox {

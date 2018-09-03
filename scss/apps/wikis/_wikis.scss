@@ -28,3 +28,13 @@ input[id^="lconn_wikis_widget_MembershipOptions"] {
 .lconnWikisMembersSummary {
 	margin-left: 40px !important;
 }
+
+
+//1476 Wiki page comment button
+div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
+    padding-left: 4px !important;
+}
+
+.renameTitleDivStyle:focus {
+  outline: 1px solid $border-focus;
+}

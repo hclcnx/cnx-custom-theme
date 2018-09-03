@@ -74,8 +74,11 @@ span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray,
 div#activityActionButtons span.lotusBtn a, //Community activities
 .lotusCommunities #memberAddButton a, //Community members
 .lotusCommunities #inviteButtons a, //Community members
+#follow_removeContactsDiv a,
+#frinds_removeFriendsDiv a,
 .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
-#forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a
+#forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
+.lotusTable .lotusDetails .lotusBtnSmall // wiki list add tag buttons
 {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
@@ -87,14 +90,10 @@ div#activityActionButtons span.lotusBtn a, //Community activities
 //Small buttons-------------
 .lotusui30 {
   .lotusBtnSmall,
-  .lotusBtnSmallGray {
-    @include font-size($caption...);
-  }
-  input.lotusBtnSmall {
-    height: 34px !important;
-  }
-  a[class^="lotusBtnSmall"] {
-    padding: 8px 20px !important;
+  .lotusBtnSmallGray,
+	a[class^="lotusBtnSmall"],
+	input[class^="lotusBtnSmall"] {
+    @include btnsmall;
   }
 }
 .wikiHeader,
@@ -151,7 +150,9 @@ div#forumConfirmMessage + div,
 .wikiHeader,
 #topicList,
 #forum,
-#body .lotusContent > div.lotusBtnContainer { //on onprem start a wiki
+#body .lotusContent > div.lotusBtnContainer, //on onprem start a wiki
+#follow_removeContactsDiv,
+#frinds_removeFriendsDiv {
   span.lotusBtn {
     &, &:hover, &:focus, &:active {
       border: none !important;

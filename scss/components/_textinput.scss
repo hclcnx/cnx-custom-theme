@@ -14,8 +14,9 @@ input.lotusText,
 .dijitTextBox .typeaheadInput input,
 #communityTypeAhead,
 #editbookmarkTagTypeAheadContainer input.dijitTextBox,
-#bookmarkAddForm input.dijitTextBox
- {
+#bookmarkAddForm input.dijitTextBox,
+#companyInfoEdit input //Org page edit mode
+{
 	@include textinput;
 }
 

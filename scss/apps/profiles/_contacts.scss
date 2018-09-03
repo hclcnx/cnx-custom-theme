@@ -31,3 +31,16 @@ div:not(#_profileEditScene_div) .profileDataTable {
 .lotusPaging span.endWithSpace + a img {
   margin-left: .25rem;
 }
+
+#friendsFullPageSection table .lotusFirstRow ~ tr,
+#friendsFullPageSection table tr + .lotusResultRow,
+#followTabContent table .lotusFirstRow ~ tr {
+  border-top: 1px solid $border-separator;
+}
+#friendsFullPageSection table .lotusHidden ~ tr td,
+#followTabContent table .lotusHidden ~ tr td {
+  padding: 1rem .5rem 1rem 0;
+}
+#friendsFullPageSection table .lotusResultRow td {
+  padding: 1rem 1rem 0 0;
+}

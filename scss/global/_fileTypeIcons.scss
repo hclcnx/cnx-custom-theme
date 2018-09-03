@@ -39,9 +39,12 @@ img[class*="Activities"],
 img[class*="Forums"],
 img[class*="Bookmarks"],
 img[class*="Calendar"] {
-  background-position: 0 0!important;
-  border-radius: 0px !important;
-  background-size: contain;
+  &,
+  .ics-viewer &  {
+    background-position: 0 0!important;
+    border-radius: 0px !important;
+    background-size: contain;
+  }
 }
 
 .lconn-ftype16, .iconsFileTypes16{
@@ -186,7 +189,10 @@ span[class$="ppt"],
 span[class$="key"],
 span[class$="odp"],
 span[class*="Presentation"] {
-  background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-file-type-presentation) !important;
+  &,
+  .ics-viewer & {
+    background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-file-type-presentation) !important;
+  }
 }
 // PDF type
 img[class$="pdf"],

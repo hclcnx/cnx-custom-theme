@@ -1,6 +1,10 @@
 #lotusColLeft {
-  #lconnWikisNavTree > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode {
+  #lconnWikisNavTree > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode,
+  #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode {
     padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+  }
+  #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode .dijitTreeRow {
+    text-indent: -20px;
   }
   .dijitTreeNode .dijitTreeRow {
     padding-top: $leftnav-vertical-padding !important;
@@ -12,30 +16,30 @@
     text-indent: -25px; // offsets drag handles and twisties
     overflow: visible;
     padding-right: $leftnav-horizontal-padding;
-    
+
     .dijitTreeContent {
-      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty 
+      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty
       display: inline-block;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       vertical-align: middle;
       padding-left: 25px !important; // to offset the text-indent...
-      
+
       .dijitTreeLabel {
         font-size: $body-sm-font-size;
         font-weight: normal !important;
         line-height: 1.5;
-        
+
         &:hover {
           text-decoration: none !important;
         }
       }
     }
-    
+
     &.dijitTreeRowSelected {
       background: transparent !important;
-      
+
       &::before {
         border-left: 4px solid $border-selected !important;
       }
@@ -69,5 +73,19 @@
   }
   .dijitTreeContainer .dijitTreeContainer .dijitTreeContainer {
     padding-left: 6px !important;
+  }
+}
+
+//1758 Search icon for Wiki > Index > Pages > Go to Page...
+div[id^="filter_wiki.filter.allpages"] .lotusSearch {
+  input#pagenavsearchbox {
+    height: auto;
+  }
+  .lotusBtnImg {
+    width: 25px !important;
+    padding-top: 0 !important;
+    .lotusAltText {
+      display: none !important;
+    }
   }
 }

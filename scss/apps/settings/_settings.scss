@@ -1,4 +1,10 @@
 //Account Settings
+//Titlebar for Account Settings & Invite Guest
+.lotusTitleBar2 .lotusHeading {
+  @include font-size($apptitle...);
+}
+
+//Fields and form elements
 #accessingAccountShow,
 #appPasswordsShow1,
 #langEdit {
@@ -105,40 +111,48 @@
 
 //Notification Settings
 
-//Fix padding on sides to line up with overall page padding
-.lotusMain.emailPreferences {
-  padding-left:2.0rem !important;
-  padding-right:2.0rem !important;
-  margin:0 10px 10px 10px !important;
-}
-@media screen and (min-width: 1250px) {
-  .lotusNewsNotifications .emailPreferences {
-    padding-left:2.0rem;
-    padding-right:2.0rem;
+.lotusNewsNotifications {
+
+  .lotusContent .lotusHeader .lotusHeading {
+    @include font-size($apptitle...);
   }
-}
 
-.emailPreferences h1 {
-  //font-size:$head2-font-size !important;
-  font-weight:normal !important;
-  color: $text-01 !important;
-}
-.notificationPrefTitle {
-  font-weight:500;
-}
-
-.prefTable {
-  td {
-    padding: 0.75rem 5px;
-    &:first-child {
-      font-weight:700;
+  //Fix padding on sides to line up with overall page padding
+  .lotusMain.emailPreferences {
+    padding-left:2.0rem !important;
+    padding-right:2.0rem !important;
+    margin:0 10px 10px 10px !important;
+  }
+  @media screen and (min-width: 1250px) {
+    .lotusNewsNotifications .emailPreferences {
+      padding-left:2.0rem;
+      padding-right:2.0rem;
     }
   }
-}
-//Table
-.responsesNotifications {
-  table {
-    border-collapse:collapse;
+
+  .emailPreferences h1 {
+    //font-size:$head2-font-size !important;
+    font-weight:normal !important;
+    color: $text-01 !important;
   }
-  @include datatable;
+  .notificationPrefTitle {
+    font-weight:500;
+  }
+
+  .prefTable {
+    td {
+      padding: 0.75rem 5px;
+      &:first-child {
+        font-weight:700;
+      }
+    }
+  }
+  //Table
+  .responsesNotifications {
+    table {
+      border-collapse:collapse;
+    }
+    @include datatable;
+  }
+
 }

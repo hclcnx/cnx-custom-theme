@@ -668,10 +668,10 @@ input.lotusText.scTagTypeahead {
     // inherit the font size and weight by default:
     @include font-size(inherit, inherit);
     // now apply the pre-periscope styles to the different classes of tags:
-    &.lotusF5 { font-size:1.5em !important; }
-    &.lotusF4 { font-size:1.167em !important; font-weight:600 !important; }
-    &.lotusF3 { font-size:1.167em !important; }
-    &.lotusF2 { font-size:.917em !important; font-weight:600 !important; }
-    &.lotusF1 { font-size:.917em !important; }
+    &.lotusF5, &:hover.lotusF5 { font-size:1.5em !important; font-weight: inherit !important; }
+    &.lotusF4, &:hover.lotusF4 { font-size:1.167em !important; font-weight:600 !important; }
+    &.lotusF3, &:hover.lotusF3 { font-size:1.167em !important; font-weight: inherit !important; }
+    &.lotusF2, &:hover.lotusF2 { font-size:.917em !important; font-weight:600 !important; }
+    &.lotusF1, &:hover.lotusF1 { font-size:.917em !important; font-weight: inherit !important; }
   }
 }
