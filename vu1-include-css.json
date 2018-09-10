@@ -162,20 +162,6 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
-            "name": "Metrics",
-            "type": "com.ibm.customizer.ui",
-            "payload": {
-                "include-files": [
-                    "css/metrics.css"
-                ],
-                "include-repo": {
-                    "name": "cnx-custom-theme"
-                }
-            },
-            "path": "metrics",
-            "application": "Visual Update 1 for IBM Connections"
-        },
-        {
             "name": "MyContacts",
             "type": "com.ibm.customizer.ui",
             "payload": {
