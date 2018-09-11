@@ -243,7 +243,9 @@ body.blog .lotusViewControl, //Manage blog lists
 #ideatoins_main, //ideation blogs list
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //community survey list
 div#fullRecomm, //related communities list
-div#activityList { //activities list, stand-alone and in community
+div#activityList, //activities list, stand-alone and in community
+div.ActivityList
+{
   .lotusTable {
     margin-top: 1rem;
 
@@ -310,7 +312,8 @@ div#fullRecomm {
 }
 
 //Activities list specifics
-div#activityList {
+div#activityList,
+div.ActivityList {
   .lotusTable {
     tr:not(.lotusDetails) td {
       padding: 1rem 0 !important;

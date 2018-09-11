@@ -17,7 +17,7 @@
   }
 
   //Text that appears in empty state of personal and community files
-  .filesList .lotusPaging + div[dojoattachpoint="streamNode"] .lconnEmpty {
+  #scene-body .lconnEmpty {
     @include font-size($emptystate...);
     text-align: center;
     font-style: normal;

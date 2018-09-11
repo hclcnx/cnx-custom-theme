@@ -88,7 +88,8 @@ html.lconnFiles.files-enable-simplify-left-nav {
           box-shadow: 0px 0px 0px 1px $border-focus;
         }
       }
-      &.colLeftHidden .toolActions {
+      &.colLeftHidden .toolActions,
+      &.colLeftSlideIn .toolActions {
         width: 60px !important;
       }
 
@@ -162,6 +163,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
 
 .lotusTable{
   tr[id^="dojoUnique"],
+  tr.hentry.dojoDndItem,
   &#filesByUserFeedContentContainerFeedTableContainer tr{
     border-top:1px solid $border-separator!important;
     td{
@@ -321,11 +323,6 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
     div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
       outline: 1px solid $border-focus;
     }
-  }
-
-  //New toolbar
-  .lotusToolBar {
-    padding-left: 2.35rem !important;
   }
 }
 

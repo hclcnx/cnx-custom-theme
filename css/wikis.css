@@ -2288,8 +2288,8 @@ div#activityActionButtons span.lotusBtn a,
   padding: 7px 14px !important;
   height: auto !important;
   display: inline-block;
-                       /*make it easier to control height/padding/etc,
-but no !important flag so that it doesn't override any instance where
+                       /*make it easier to control height/padding/etc, 
+but no !important flag so that it doesn't override any instance where 
 they should be display: block; */ }
 
 .wikiHeader input.lotusBtnSmall,
@@ -2322,6 +2322,10 @@ div#forumConfirmMessage + div span.lotusBtn,
 div#forumConfirmMessage + div span.lotusBtn:hover,
 div#forumConfirmMessage + div span.lotusBtn:focus,
 div#forumConfirmMessage + div span.lotusBtn:active,
+div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn,
+div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:hover,
+div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:focus,
+div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:active,
 .lotusCommunities #ideatoins_main span.lotusBtn,
 .lotusCommunities #ideatoins_main span.lotusBtn:hover,
 .lotusCommunities #ideatoins_main span.lotusBtn:focus,
@@ -2892,7 +2896,8 @@ div[dojoattachpoint="addAllReadersContainer_AP"] {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text:focus, .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text .dijitTextBoxFocused {
     outline: none !important;
     border-color: #3C6DF0 !important;
@@ -4078,12 +4083,14 @@ body.blog .lotusViewControl .lotusSummaryOff,
 #ideatoins_main .lotusTable,
 div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable,
 div#fullRecomm .lotusTable,
-div#activityList .lotusTable {
+div#activityList .lotusTable,
+div.ActivityList .lotusTable {
   margin-top: 1rem; }
   #ideatoins_main .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
   div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
   div#fullRecomm .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
-  div#activityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
+  div#activityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
+  div.ActivityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
     border-top: 1px solid #d8d8d8 !important; }
 
 .blog .lotusContent .blogsFixedTable.lotusTable {
@@ -4112,7 +4119,8 @@ div[id*="widget_SurveysListFullpage"] .lotusTable td a[id*="listSection_listWidg
 div#fullRecomm .lotusTable .lotusFirstCell {
   width: 48px !important; }
 
-div#activityList .lotusTable tr:not(.lotusDetails) td {
+div#activityList .lotusTable tr:not(.lotusDetails) td,
+div.ActivityList .lotusTable tr:not(.lotusDetails) td {
   padding: 1rem 0 !important; }
 
 .lotusui30 .lotusBoard .lotusStream .lotusPostHover, .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
@@ -4353,7 +4361,8 @@ form[id^="exportMembersForm"] input[type="checkbox"] {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   #calendar_event_editor .dijitTextBox .dijitInputField input:focus, #calendar_event_editor .dijitTextBox .dijitInputField input .dijitTextBoxFocused,
   #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"]:focus,
   #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] .dijitTextBoxFocused {
@@ -4389,6 +4398,7 @@ div[id^="lconn_calendar_Notification"] input[id^="lconn_calendar_FilteringCheckb
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
+  height: auto !important;
   min-width: initial !important;
   padding-right: 0 !important;
   padding-bottom: 0 !important; }
@@ -4425,7 +4435,8 @@ form[name="surveysCreateForm"] {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   #newCommunityForm input[id="autocompletehandle"]:focus, #newCommunityForm input[id="autocompletehandle"] .dijitTextBoxFocused {
     outline: none !important;
     border-color: #3C6DF0 !important;
@@ -4488,6 +4499,7 @@ body:not(.cke_editable) {
     padding: 0 !important; }
 
 #activityList h4,
+.ActivityList h4,
 #bookmarkContentAreaSub h4,
 #calendar_view h4,
 #dfForumList h4,
@@ -4927,9 +4939,6 @@ div.lotusPostIndicator a:focus {
 #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.savethisAction:before,
 #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
   margin-top: 7px !important; }
-
-#bookmarksWidgetContainer a {
-  font-weight: 600 !important; }
 
 @keyframes rotate {
   0% {
@@ -5450,6 +5459,7 @@ form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] input[t
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
+  height: auto !important;
   max-width: 240px; }
   form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] input[type="text"]:focus, form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] input[type="text"] .dijitTextBoxFocused {
     outline: none !important;
@@ -6610,6 +6620,7 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
   margin: 0 .5rem !important; }
 
 #lconnTagWidget_tagList > li,
+#lconnTagWidget_tagCloudView > li,
 ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
   display: flex !important;
   padding: 0 !important;
@@ -6619,9 +6630,12 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
   justify-content: flex-start;
   flex-wrap: nowrap; }
   #lconnTagWidget_tagList > li wbr,
+  #lconnTagWidget_tagCloudView > li wbr,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li wbr {
     display: none !important; }
   #lconnTagWidget_tagList > li > span, #lconnTagWidget_tagList > li > a,
+  #lconnTagWidget_tagCloudView > li > span,
+  #lconnTagWidget_tagCloudView > li > a,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a {
     float: none !important;
@@ -6642,24 +6656,33 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
     text-overflow: ellipsis;
     background: #FFFFFF !important; }
     #lconnTagWidget_tagList > li > span a, #lconnTagWidget_tagList > li > a a,
+    #lconnTagWidget_tagCloudView > li > span a,
+    #lconnTagWidget_tagCloudView > li > a a,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span a,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a a {
       color: #000000 !important;
       font-weight: normal !important; }
     #lconnTagWidget_tagList > li > span:hover, #lconnTagWidget_tagList > li > a:hover,
+    #lconnTagWidget_tagCloudView > li > span:hover,
+    #lconnTagWidget_tagCloudView > li > a:hover,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:hover,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:hover {
       text-decoration: none !important;
       color: #000000 !important; }
     #lconnTagWidget_tagList > li > span:focus, #lconnTagWidget_tagList > li > a:focus,
+    #lconnTagWidget_tagCloudView > li > span:focus,
+    #lconnTagWidget_tagCloudView > li > a:focus,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:focus,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:focus {
       text-decoration: underline !important; }
       #lconnTagWidget_tagList > li > span:focus img, #lconnTagWidget_tagList > li > a:focus img,
+      #lconnTagWidget_tagCloudView > li > span:focus img,
+      #lconnTagWidget_tagCloudView > li > a:focus img,
       ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:focus img,
       ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:focus img {
         border-bottom: 1px solid currentColor; }
   #lconnTagWidget_tagList > li .lotusLeft,
+  #lconnTagWidget_tagCloudView > li .lotusLeft,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusLeft {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -6670,6 +6693,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
     max-width: calc(100% - 58px) !important;
     box-sizing: border-box; }
   #lconnTagWidget_tagList > li .lotusRight,
+  #lconnTagWidget_tagCloudView > li .lotusRight,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -6679,6 +6703,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
     overflow: visible;
     z-index: 2; }
     #lconnTagWidget_tagList > li .lotusRight:before,
+    #lconnTagWidget_tagCloudView > li .lotusRight:before,
     ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight:before {
       content: '\2022';
       display: block;
@@ -6686,6 +6711,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
       left: -.15rem;
       top: 0; }
   #lconnTagWidget_tagList > li .lotusDelete img,
+  #lconnTagWidget_tagCloudView > li .lotusDelete img,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusDelete img {
     margin: 6px 0; }
 
@@ -7403,6 +7429,48 @@ input.lotusText.scTagTypeahead {
     .lotusui30 .lotusTagCloud li a.lotusF1, .lotusui30 .lotusTagCloud li a:hover.lotusF1 {
       font-size: .917em !important;
       font-weight: inherit !important; }
+    .lotusui30 .lotusTagCloud li a:hover {
+      background: transparent !important;
+      text-decoration: underline !important; }
+
+#category .lotusFilters .lotusFilter, #updatesArea .lotusFilters .lotusFilter {
+  color: #000000 !important;
+  border-radius: 0.75rem !important;
+  line-height: 1.5rem !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  padding: 0 1rem !important;
+  width: auto !important;
+  max-width: 100%;
+  display: inline-block !important;
+  margin: 0 !important;
+  font-weight: normal !important;
+  border: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #F3F3F3 !important;
+  vertical-align: middle; }
+  #category .lotusFilters .lotusFilter a, #updatesArea .lotusFilters .lotusFilter a {
+    color: #000000 !important;
+    font-weight: normal !important; }
+  #category .lotusFilters .lotusFilter:hover, #updatesArea .lotusFilters .lotusFilter:hover {
+    text-decoration: none !important;
+    color: #000000 !important; }
+  #category .lotusFilters .lotusFilter:focus, #updatesArea .lotusFilters .lotusFilter:focus {
+    text-decoration: underline !important; }
+    #category .lotusFilters .lotusFilter:focus img, #updatesArea .lotusFilters .lotusFilter:focus img {
+      border-bottom: 1px solid currentColor; }
+  #category .lotusFilters .lotusFilter span, #updatesArea .lotusFilters .lotusFilter span {
+    display: inline-block;
+    vertical-align: middle; }
+  #category .lotusFilters .lotusFilter .lotusClose, #updatesArea .lotusFilters .lotusFilter .lotusClose {
+    height: 12px !important;
+    width: 12px !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+    background-position: center center;
+    font-size: 0;
+    background-repeat: no-repeat; }
 
 textarea {
   background-color: #F3F3F3 !important;
@@ -7442,7 +7510,8 @@ input.lotusText,
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   [id^="widget_lconn_share_widget_MemberInput_"][id$="_people"]:focus, [id^="widget_lconn_share_widget_MemberInput_"][id$="_people"] .dijitTextBoxFocused,
   [id^="widget_lconn_share_widget_MemberInput_"][id$="_communities"]:focus,
   [id^="widget_lconn_share_widget_MemberInput_"][id$="_communities"] .dijitTextBoxFocused,
@@ -7516,6 +7585,7 @@ input.lotusText,
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     padding-left: 2rem !important; }
     .lconn_directorySearchBox .lconn_searchBox input.dijitInputInner:focus, .lconn_directorySearchBox .lconn_searchBox input.dijitInputInner .dijitTextBoxFocused {
       outline: none !important;
@@ -7537,6 +7607,7 @@ div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] 
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     padding-bottom: 0.75rem !important;
     height: auto !important; }
     div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] input.lotusText:focus, div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] input.lotusText .dijitTextBoxFocused {
@@ -7596,6 +7667,7 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
+  height: auto !important;
   padding: 0 !important;
   width: calc(100% - 30px) !important;
   min-width: 1rem !important;
@@ -7620,7 +7692,8 @@ input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"]:focus, input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] .dijitTextBoxFocused {
     outline: none !important;
     border-color: #3C6DF0 !important;
@@ -7714,7 +7787,8 @@ div[id^="widget_bhc_PeopleTypeAhead_"] {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   #MembersPanel .lotusForm #filterString:focus, #MembersPanel .lotusForm #filterString .dijitTextBoxFocused {
     outline: none !important;
     border-color: #3C6DF0 !important;
@@ -7851,6 +7925,7 @@ input[type="file"] {
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
+  height: auto !important;
   cursor: pointer; }
   input[type="file"]:focus, input[type="file"] .dijitTextBoxFocused {
     outline: none !important;
@@ -9298,55 +9373,55 @@ body > div[id*="dialogs_deleteConfirm"] {
     background-color: transparent !important; }
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div,
-  .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div,
-  .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div,
-  .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div,
-  .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection,
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection,
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection,
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]),
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent),
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection,
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) {
-    padding: 0 !important;
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) {
+    padding: 0;
     max-width: 100%;
     margin: 0 !important; }
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li,
-    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li,
-    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li,
-    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li,
-    .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li,
-    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li,
-    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li,
-    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li,
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li,
     .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li,
-    .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li {
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li {
       padding-top: 14px !important;
       padding-bottom: 14px !important;
       padding-left: calc((15px + 24px) + 21px) !important;
@@ -9355,28 +9430,28 @@ body > div[id*="dialogs_deleteConfirm"] {
       font-size: 0.875rem; }
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li a {
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li a {
         padding-top: 14px !important;
         padding-bottom: 14px !important;
         padding-left: calc((15px + 24px) + 21px) !important;
@@ -9388,28 +9463,28 @@ body > div[id*="dialogs_deleteConfirm"] {
         width: 100%; }
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li.lotusSelected a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li.lotusSelected a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li.lotusSelected a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li.lotusSelected a,
-      .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain #lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li.lotusSelected a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div ul li.lotusSelected a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div > div ul li.lotusSelected a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusSidenav.lotusMenu > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div > div ul li.lotusSelected a,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]) ul li.lotusSelected a {
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) span.X-community-display-inline > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) ul li.lotusSelected a {
         padding-left: calc((15px + 24px) + 17px) !important; }
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) .lotusSprite:focus,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection .lotusSprite:focus,
@@ -9518,6 +9593,7 @@ body > div[id*="dialogs_deleteConfirm"] {
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     padding-right: 0 !important;
     width: 120px !important;
     min-width: 120px !important;
@@ -9908,16 +9984,6 @@ div#list .lotusTable.lotusFixedTable li.lotusTags {
 .wikiHeader .lotusTags > span {
   font-size: 12px !important;
   font-weight: 500 !important; }
-
-#span\.recommendation,
-.lotusLikeAction,
-.lotusLikeCount,
-.lotusLikeDescription,
-#span\.recommendation .wikiheader .lotusHeader .lotusMeta > *,
-.lotusMeta .lotusDivider {
-  display: inline-block !important;
-  vertical-align: middle !important;
-  top: 0 !important; }
 
 .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
   float: none;
@@ -10542,7 +10608,7 @@ div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
   padding-left: calc((15px + 24px)) !important; }
 #lotusColLeft #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode .dijitTreeRow {
   text-indent: -20px; }
-#lotusColLeft .dijitTreeNode .dijitTreeRow {
+#lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow {
   padding-top: 14px !important;
   padding-bottom: 14px !important;
   border: none !important;
@@ -10552,7 +10618,8 @@ div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
   text-indent: -25px;
   overflow: visible;
   padding-right: 24px; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow .dijitTreeContent {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitTreeContent,
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) {
     max-width: calc(100% - 26px) !important;
     display: inline-block;
     white-space: nowrap;
@@ -10560,19 +10627,21 @@ div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
     overflow: hidden;
     vertical-align: middle;
     padding-left: 25px !important; }
-    #lotusColLeft .dijitTreeNode .dijitTreeRow .dijitTreeContent .dijitTreeLabel {
+    #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitTreeContent .dijitTreeLabel,
+    #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) .dijitTreeLabel {
       font-size: 0.875rem;
       font-weight: normal !important;
       line-height: 1.5; }
-      #lotusColLeft .dijitTreeNode .dijitTreeRow .dijitTreeContent .dijitTreeLabel:hover {
+      #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitTreeContent .dijitTreeLabel:hover,
+      #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) .dijitTreeLabel:hover {
         text-decoration: none !important; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
     background: transparent !important; }
-    #lotusColLeft .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected::before {
+    #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected::before {
       border-left: 4px solid #3C6DF0 !important; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow span:focus, #lotusColLeft .dijitTreeNode .dijitTreeRow span:active, #lotusColLeft .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected span:focus, #lotusColLeft .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected span:active {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow span:focus, #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow span:active, #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected span:focus, #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected span:active {
     outline: 0 !important; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow::before {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow::before {
     content: '';
     display: block;
     position: absolute;
@@ -10581,12 +10650,12 @@ div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
     width: 100%;
     z-index: 0;
     margin-top: -14px; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow:hover::before {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow:hover::before {
     background-color: #d8d8d8; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow > * {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow > * {
     z-index: 1;
     position: relative; }
-  #lotusColLeft .dijitTreeNode .dijitTreeRow, #lotusColLeft .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+  #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow, #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
     position: static; }
 #lotusColLeft .dijitTreeContainer .dijitTreeContainer .dijitTreeContainer {
   padding-left: 6px !important; }

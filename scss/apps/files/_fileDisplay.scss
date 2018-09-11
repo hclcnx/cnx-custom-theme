@@ -102,6 +102,11 @@
       }
     }
   }
+  // line up quota text with table - issye 1241
+  .qkrQuota {
+    margin-right: 44px !important;
+    margin-left: 44px !important;
+  }
 }
 
 // File viewer dropdown arrow - 1174

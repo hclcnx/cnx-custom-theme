@@ -6,7 +6,7 @@
   #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode .dijitTreeRow {
     text-indent: -20px;
   }
-  .dijitTreeNode .dijitTreeRow {
+  .navDiv#sideNav .dijitTreeNode .dijitTreeRow {
     padding-top: $leftnav-vertical-padding !important;
     padding-bottom: $leftnav-vertical-padding !important;
     border: none !important;
@@ -16,30 +16,31 @@
     text-indent: -25px; // offsets drag handles and twisties
     overflow: visible;
     padding-right: $leftnav-horizontal-padding;
-
-    .dijitTreeContent {
-      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty
+    
+    .dijitTreeContent,
+    .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) {
+      max-width: calc(100% - 26px) !important; // this is the parent width minus the width of the grab handle and twisty 
       display: inline-block;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       vertical-align: middle;
       padding-left: 25px !important; // to offset the text-indent...
-
+      
       .dijitTreeLabel {
         font-size: $body-sm-font-size;
         font-weight: normal !important;
         line-height: 1.5;
-
+        
         &:hover {
           text-decoration: none !important;
         }
       }
     }
-
+    
     &.dijitTreeRowSelected {
       background: transparent !important;
-
+      
       &::before {
         border-left: 4px solid $border-selected !important;
       }
