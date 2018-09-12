@@ -1,7 +1,7 @@
 {
     "app_id": "com.ibm.connections.vu1css",
-    "name": "Visual Update 1 - Direct CSS",
-    "title": "Visual Update 1 - Direct CSS",
+    "name": "Visual Update 1 for IBM Connections",
+    "title": "Visual Update 1 for IBM Connections",
     "description": "Customizer extension to re-theme Connections",
     "services": [
         "Customizer"
@@ -117,6 +117,20 @@
                 }
             },
             "path": "forums",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
+            "name": "Homepage New",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "social",
             "application": "Visual Update 1 for IBM Connections"
         },
         {

@@ -2399,8 +2399,8 @@ html .ic-orient, html .ic-orient button, html .ic-orient input, html .ic-orient 
     padding: 7px 14px !important;
     height: auto !important;
     display: inline-block;
-                       /*make it easier to control height/padding/etc,
-but no !important flag so that it doesn't override any instance where
+                       /*make it easier to control height/padding/etc, 
+but no !important flag so that it doesn't override any instance where 
 they should be display: block; */ }
   .ics-viewer .wikiHeader input.lotusBtnSmall,
   .ics-viewer #topicList input.lotusBtnSmall,
@@ -2428,6 +2428,10 @@ they should be display: block; */ }
   .ics-viewer div#forumConfirmMessage + div span.lotusBtn:hover,
   .ics-viewer div#forumConfirmMessage + div span.lotusBtn:focus,
   .ics-viewer div#forumConfirmMessage + div span.lotusBtn:active,
+  .ics-viewer div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn,
+  .ics-viewer div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:hover,
+  .ics-viewer div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:focus,
+  .ics-viewer div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:active,
   .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn,
   .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn:hover,
   .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn:focus,
@@ -2951,7 +2955,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text:focus, .ics-viewer .cke_dialog .cke_dialog_body .cke_dialog_contents .cke_dialog_ui_text input.cke_dialog_ui_input_text .dijitTextBoxFocused {
       outline: none !important;
       border-color: #3C6DF0 !important;
@@ -4124,12 +4129,14 @@ they should be display: block; */ }
   .ics-viewer #ideatoins_main .lotusTable,
   .ics-viewer div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable,
   .ics-viewer div#fullRecomm .lotusTable,
-  .ics-viewer div#activityList .lotusTable {
+  .ics-viewer div#activityList .lotusTable,
+  .ics-viewer div.ActivityList .lotusTable {
     margin-top: 1rem; }
     .ics-viewer #ideatoins_main .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
     .ics-viewer div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"] .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
     .ics-viewer div#fullRecomm .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
-    .ics-viewer div#activityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
+    .ics-viewer div#activityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child),
+    .ics-viewer div.ActivityList .lotusTable > tbody > tr:nth-child(2n-1):not(:first-child) {
       border-top: 1px solid #d8d8d8 !important; }
   .ics-viewer .blog .lotusContent .blogsFixedTable.lotusTable {
     margin: 1rem 0; }
@@ -4152,7 +4159,8 @@ they should be display: block; */ }
     margin-left: 25px !important; }
   .ics-viewer div#fullRecomm .lotusTable .lotusFirstCell {
     width: 48px !important; }
-  .ics-viewer div#activityList .lotusTable tr:not(.lotusDetails) td {
+  .ics-viewer div#activityList .lotusTable tr:not(.lotusDetails) td,
+  .ics-viewer div.ActivityList .lotusTable tr:not(.lotusDetails) td {
     padding: 1rem 0 !important; }
   .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostHover, .ics-viewer .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
     background-color: #F3F3F3; }
@@ -4363,7 +4371,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer #calendar_event_editor .dijitTextBox .dijitInputField input:focus, .ics-viewer #calendar_event_editor .dijitTextBox .dijitInputField input .dijitTextBoxFocused,
     .ics-viewer #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"]:focus,
     .ics-viewer #calendar_event_editor input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] .dijitTextBoxFocused {
@@ -4398,6 +4407,7 @@ they should be display: block; */ }
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     min-width: initial !important;
     padding-right: 0 !important;
     padding-bottom: 0 !important; }
@@ -4432,7 +4442,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer #newCommunityForm input[id="autocompletehandle"]:focus, .ics-viewer #newCommunityForm input[id="autocompletehandle"] .dijitTextBoxFocused {
       outline: none !important;
       border-color: #3C6DF0 !important;
@@ -4488,6 +4499,7 @@ they should be display: block; */ }
     .ics-viewer .lotusui30 .lotusTitleBar .lotusRightCorner a {
       padding: 0 !important; }
   .ics-viewer #activityList h4,
+  .ics-viewer .ActivityList h4,
   .ics-viewer #bookmarkContentAreaSub h4,
   .ics-viewer #calendar_view h4,
   .ics-viewer #dfForumList h4,
@@ -4918,8 +4930,6 @@ they should be display: block; */ }
   .ics-viewer #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.savethisAction:before,
   .ics-viewer #activityStreamMain div.activityStreamNewsItemContainer ul.lotusInlinelist li.stopfollowingAction:before {
     margin-top: 7px !important; }
-  .ics-viewer #bookmarksWidgetContainer a {
-    font-weight: 600 !important; }
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }
@@ -5370,6 +5380,7 @@ they should be display: block; */ }
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     max-width: 240px; }
     .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] input[type="text"]:focus, .ics-viewer form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] input[type="text"] .dijitTextBoxFocused {
       outline: none !important;
@@ -6490,6 +6501,7 @@ they should be display: block; */ }
   .ics-viewer #searchInfo a.lotusFilter {
     margin: 0 .5rem !important; }
   .ics-viewer #lconnTagWidget_tagList > li,
+  .ics-viewer #lconnTagWidget_tagCloudView > li,
   .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
     display: flex !important;
     padding: 0 !important;
@@ -6499,9 +6511,12 @@ they should be display: block; */ }
     justify-content: flex-start;
     flex-wrap: nowrap; }
     .ics-viewer #lconnTagWidget_tagList > li wbr,
+    .ics-viewer #lconnTagWidget_tagCloudView > li wbr,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li wbr {
       display: none !important; }
     .ics-viewer #lconnTagWidget_tagList > li > span, .ics-viewer #lconnTagWidget_tagList > li > a,
+    .ics-viewer #lconnTagWidget_tagCloudView > li > span,
+    .ics-viewer #lconnTagWidget_tagCloudView > li > a,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a {
       float: none !important;
@@ -6522,24 +6537,33 @@ they should be display: block; */ }
       text-overflow: ellipsis;
       background: #FFFFFF !important; }
       .ics-viewer #lconnTagWidget_tagList > li > span a, .ics-viewer #lconnTagWidget_tagList > li > a a,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > span a,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > a a,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span a,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a a {
         color: #000000 !important;
         font-weight: normal !important; }
       .ics-viewer #lconnTagWidget_tagList > li > span:hover, .ics-viewer #lconnTagWidget_tagList > li > a:hover,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > span:hover,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > a:hover,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:hover,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:hover {
         text-decoration: none !important;
         color: #000000 !important; }
       .ics-viewer #lconnTagWidget_tagList > li > span:focus, .ics-viewer #lconnTagWidget_tagList > li > a:focus,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > span:focus,
+      .ics-viewer #lconnTagWidget_tagCloudView > li > a:focus,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:focus,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:focus {
         text-decoration: underline !important; }
         .ics-viewer #lconnTagWidget_tagList > li > span:focus img, .ics-viewer #lconnTagWidget_tagList > li > a:focus img,
+        .ics-viewer #lconnTagWidget_tagCloudView > li > span:focus img,
+        .ics-viewer #lconnTagWidget_tagCloudView > li > a:focus img,
         .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > span:focus img,
         .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li > a:focus img {
           border-bottom: 1px solid currentColor; }
     .ics-viewer #lconnTagWidget_tagList > li .lotusLeft,
+    .ics-viewer #lconnTagWidget_tagCloudView > li .lotusLeft,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusLeft {
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
@@ -6550,6 +6574,7 @@ they should be display: block; */ }
       max-width: calc(100% - 58px) !important;
       box-sizing: border-box; }
     .ics-viewer #lconnTagWidget_tagList > li .lotusRight,
+    .ics-viewer #lconnTagWidget_tagCloudView > li .lotusRight,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight {
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
@@ -6559,6 +6584,7 @@ they should be display: block; */ }
       overflow: visible;
       z-index: 2; }
       .ics-viewer #lconnTagWidget_tagList > li .lotusRight:before,
+      .ics-viewer #lconnTagWidget_tagCloudView > li .lotusRight:before,
       .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight:before {
         content: '\2022';
         display: block;
@@ -6566,6 +6592,7 @@ they should be display: block; */ }
         left: -.15rem;
         top: 0; }
     .ics-viewer #lconnTagWidget_tagList > li .lotusDelete img,
+    .ics-viewer #lconnTagWidget_tagCloudView > li .lotusDelete img,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusDelete img {
       margin: 6px 0; }
   .ics-viewer ul.lotusRelatedTags a {
@@ -7262,6 +7289,47 @@ they should be display: block; */ }
       .ics-viewer .lotusui30 .lotusTagCloud li a.lotusF1, .ics-viewer .lotusui30 .lotusTagCloud li a:hover.lotusF1 {
         font-size: .917em !important;
         font-weight: inherit !important; }
+      .ics-viewer .lotusui30 .lotusTagCloud li a:hover {
+        background: transparent !important;
+        text-decoration: underline !important; }
+  .ics-viewer #category .lotusFilters .lotusFilter, .ics-viewer #updatesArea .lotusFilters .lotusFilter {
+    color: #000000 !important;
+    border-radius: 0.75rem !important;
+    line-height: 1.5rem !important;
+    font-size: 0.75rem !important;
+    height: 1.5rem !important;
+    padding: 0 1rem !important;
+    width: auto !important;
+    max-width: 100%;
+    display: inline-block !important;
+    margin: 0 !important;
+    font-weight: normal !important;
+    border: none !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #F3F3F3 !important;
+    vertical-align: middle; }
+    .ics-viewer #category .lotusFilters .lotusFilter a, .ics-viewer #updatesArea .lotusFilters .lotusFilter a {
+      color: #000000 !important;
+      font-weight: normal !important; }
+    .ics-viewer #category .lotusFilters .lotusFilter:hover, .ics-viewer #updatesArea .lotusFilters .lotusFilter:hover {
+      text-decoration: none !important;
+      color: #000000 !important; }
+    .ics-viewer #category .lotusFilters .lotusFilter:focus, .ics-viewer #updatesArea .lotusFilters .lotusFilter:focus {
+      text-decoration: underline !important; }
+      .ics-viewer #category .lotusFilters .lotusFilter:focus img, .ics-viewer #updatesArea .lotusFilters .lotusFilter:focus img {
+        border-bottom: 1px solid currentColor; }
+    .ics-viewer #category .lotusFilters .lotusFilter span, .ics-viewer #updatesArea .lotusFilters .lotusFilter span {
+      display: inline-block;
+      vertical-align: middle; }
+    .ics-viewer #category .lotusFilters .lotusFilter .lotusClose, .ics-viewer #updatesArea .lotusFilters .lotusFilter .lotusClose {
+      height: 12px !important;
+      width: 12px !important;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 height=%2212px%22 width=%2212px%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%23595859%22 d=%22M7.7,6l3.4-3.4c0.4-0.4,0.4-1.1,0-1.5l-0.2-0.2c-0.4-0.4-1.1-0.4-1.5,0L6,4.3L2.6,0.9c-0.4-0.4-1.1-0.4-1.5,0 L0.9,1.1c-0.4,0.4-0.4,1.1,0,1.5L4.3,6L0.9,9.4c-0.4,0.4-0.4,1.1,0,1.5l0.2,0.2c0.4,0.4,1.1,0.4,1.5,0L6,7.7l3.4,3.4 c0.4,0.4,1.1,0.4,1.5,0l0.2-0.2c0.4-0.4,0.4-1.1,0-1.5L7.7,6z%22/%3E%3C/svg%3E") !important;
+      background-position: center center;
+      font-size: 0;
+      background-repeat: no-repeat; }
   .ics-viewer textarea {
     background-color: #F3F3F3 !important;
     border: none !important;
@@ -7299,7 +7367,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer [id^="widget_lconn_share_widget_MemberInput_"][id$="_people"]:focus, .ics-viewer [id^="widget_lconn_share_widget_MemberInput_"][id$="_people"] .dijitTextBoxFocused,
     .ics-viewer [id^="widget_lconn_share_widget_MemberInput_"][id$="_communities"]:focus,
     .ics-viewer [id^="widget_lconn_share_widget_MemberInput_"][id$="_communities"] .dijitTextBoxFocused,
@@ -7369,6 +7438,7 @@ they should be display: block; */ }
       padding-right: 1rem !important;
       padding-bottom: .375rem !important;
       box-sizing: border-box !important;
+      height: auto !important;
       padding-left: 2rem !important; }
       .ics-viewer .lconn_directorySearchBox .lconn_searchBox input.dijitInputInner:focus, .ics-viewer .lconn_directorySearchBox .lconn_searchBox input.dijitInputInner .dijitTextBoxFocused {
         outline: none !important;
@@ -7388,6 +7458,7 @@ they should be display: block; */ }
       padding-right: 1rem !important;
       padding-bottom: .375rem !important;
       box-sizing: border-box !important;
+      height: auto !important;
       padding-bottom: 0.75rem !important;
       height: auto !important; }
       .ics-viewer div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] input.lotusText:focus, .ics-viewer div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] input.lotusText .dijitTextBoxFocused {
@@ -7442,6 +7513,7 @@ they should be display: block; */ }
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     padding: 0 !important;
     width: calc(100% - 30px) !important;
     min-width: 1rem !important;
@@ -7465,7 +7537,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"]:focus, .ics-viewer input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] .dijitTextBoxFocused {
       outline: none !important;
       border-color: #3C6DF0 !important;
@@ -7551,7 +7624,8 @@ they should be display: block; */ }
     font-size: 12.8px !important;
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
-    box-sizing: border-box !important; }
+    box-sizing: border-box !important;
+    height: auto !important; }
     .ics-viewer #MembersPanel .lotusForm #filterString:focus, .ics-viewer #MembersPanel .lotusForm #filterString .dijitTextBoxFocused {
       outline: none !important;
       border-color: #3C6DF0 !important;
@@ -7680,6 +7754,7 @@ they should be display: block; */ }
     padding-right: 1rem !important;
     padding-bottom: .375rem !important;
     box-sizing: border-box !important;
+    height: auto !important;
     cursor: pointer; }
     .ics-viewer input[type="file"]:focus, .ics-viewer input[type="file"] .dijitTextBoxFocused {
       outline: none !important;
@@ -7978,7 +8053,8 @@ ul.ics-viewer-tabs {
   font-size: 12.8px !important;
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  height: auto !important; }
   .ics-sharing-panel.multiAdd-active .multiAddContainer .ics-typeaheadboxmulti-container input:focus, .ics-sharing-panel.multiAdd-active .multiAddContainer .ics-typeaheadboxmulti-container input .dijitTextBoxFocused {
     outline: none !important;
     border-color: #3C6DF0 !important;
@@ -8878,8 +8954,8 @@ body.meetingBody:not(.cke_editable),
     min-width: 100% !important;
     box-sizing: border-box; }
   #lotusMain #lotusColLeft ~ #lotusContent.wpthemeWide {
-    width: calc(100% - $leftnav-width) !important;
-    min-width: calc(100% - $leftnav-width) !important;
+    width: calc(100% - 240px) !important;
+    min-width: calc(100% - 240px) !important;
     box-sizing: border-box; }
   #lotusMain #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
     width: calc(100% - 475px) !important;
@@ -9057,10 +9133,10 @@ body.meetingBody:not(.cke_editable),
   .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
     width: 100% !important; } }
 @media (max-width: 1060px) {
-  .blog #entries .lotusTable.blogsFixedTable td.lotusFirstCell[style="width:95px"] {
+  .blog #entries .lotusTable.blogsFixedTable tr td[style="width:95px"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: 80px !important; }
+    width: 95px !important; }
 
   html .blog #entries .ideaVotingDiv > .ideaVotingNumber,
   html .blog #entries .ideaVotingDivDisabled > .ideaVotingNumber {
@@ -9147,6 +9223,7 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lco
   padding-right: 1rem !important;
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
+  height: auto !important;
   height: auto !important; }
   .icSearchBar .dijitTextBox:focus, .icSearchBar .dijitTextBox .dijitTextBoxFocused {
     outline: none !important;

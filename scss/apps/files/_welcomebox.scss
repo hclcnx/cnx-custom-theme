@@ -10,22 +10,27 @@
     padding-top:300px !important;
     .lotusSyncHeading {
       color: $text-04;
+      font-family: inherit;
     }
     p {
-      font-weight:normal;
+      font-weight: normal;
       color: $text-01 !important;
+      font-family: inherit;
     }
     .lotusSyncLinkSpan {
       font-weight:normal;
       color: $text-01 !important;
       a {
-      color: $link-default !important;
-      margin-left:10px;
+        margin-left: 10px;
+        &:hover {
+          font-family: inherit !important;
+        }
       }
     }
 
     .lotusSyncButtonDiv .lotusSyncInstallButton {
-      @include btnprimary;
+      @include btnsecondary;
+      font-family: inherit !important;
     }
     #lotusSyncPicBackground {
       display:none;

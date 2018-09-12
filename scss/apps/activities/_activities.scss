@@ -149,7 +149,7 @@ body.scloud3 .lotusHeader #actViewLabel h1 {
   padding-left: 48px;
   margin-left: $leftnav-width;
   box-sizing: border-box;
-  width: calc(100% - $leftnav-width);
+  width: calc(100% - #{$leftnav-width});
   h2#lotusPlaceBar-Title {
     @include font-size($title...);
     margin-left: 0 !important;

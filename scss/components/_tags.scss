@@ -194,6 +194,7 @@
   margin: 0 .5rem !important;
 }
 #lconnTagWidget_tagList,
+#lconnTagWidget_tagCloudView,
 ul[id*="_tagList"]:not(#tagsDiv_tagList) {
   > li {
     display: flex !important;
@@ -673,5 +674,30 @@ input.lotusText.scTagTypeahead {
     &.lotusF3, &:hover.lotusF3 { font-size:1.167em !important; font-weight: inherit !important; }
     &.lotusF2, &:hover.lotusF2 { font-size:.917em !important; font-weight:600 !important; }
     &.lotusF1, &:hover.lotusF1 { font-size:.917em !important; font-weight: inherit !important; }
+    &:hover {
+      background: transparent !important;
+      text-decoration: underline !important;
+    }
+  }
+}
+
+// on-prem forum filter tags 
+#category, #updatesArea {
+  .lotusFilters .lotusFilter {
+    @include tags();
+    vertical-align: middle; 
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .lotusClose {
+      height: 12px !important;
+      width: 12px !important;
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      background-position: center center;
+      font-size: 0;
+      background-repeat: no-repeat;
+    }
   }
 }

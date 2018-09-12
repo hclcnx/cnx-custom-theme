@@ -162,18 +162,6 @@ div#list {
   }
 }
 
-// 1522 Adjust vertical placement of meta line elements to match 'You like this' text.
-#span\.recommendation,
-.lotusLikeAction,
-.lotusLikeCount,
-.lotusLikeDescription,
-#span\.recommendation .wikiheader .lotusHeader .lotusMeta > *,
-.lotusMeta .lotusDivider {
-  display: inline-block !important;
-  vertical-align: middle !important;
-    top: 0 !important;
-}
-
 // Wiki index page tags in pages list
 .lconnWikis table.lotusTable.qkrFixedWidth tr {
   .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {

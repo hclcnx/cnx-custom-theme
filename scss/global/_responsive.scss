@@ -73,8 +73,8 @@ body.meetingBody:not(.cke_editable),
       box-sizing: border-box;
     }
     #lotusColLeft ~ #lotusContent.wpthemeWide {
-      width: calc(100% - $leftnav-width) !important;
-      min-width: calc(100% - $leftnav-width) !important;
+      width: calc(100% - #{$leftnav-width}) !important;
+      min-width: calc(100% - #{$leftnav-width}) !important;
       box-sizing: border-box;
     }
     #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
@@ -304,10 +304,10 @@ body.meetingBody:not(.cke_editable),
 
 // ideation blog vote number column
 @media (max-width: 1060px) {
-  .blog #entries .lotusTable.blogsFixedTable td.lotusFirstCell[style="width:95px"] {
+  .blog #entries .lotusTable.blogsFixedTable tr td[style="width:95px"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: 80px !important;
+    width: 95px !important;
   }
   html .blog #entries .ideaVotingDiv > .ideaVotingNumber,
   html .blog #entries .ideaVotingDivDisabled > .ideaVotingNumber {

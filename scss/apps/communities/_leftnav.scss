@@ -251,8 +251,8 @@
     }
     > div > .lotusMenuSubsection,
     > div > div,
-    > div :not(.personinlinemenu):not(ul[role="listbox"]) {
-      padding: 0 !important;
+    > div :not(.personinlinemenu):not(ul[role="listbox"]):not(a.lotusAction):not(span.dijitTreeContent) {
+      padding: 0;
       max-width: 100%;
       margin: 0 !important;
       ul li {

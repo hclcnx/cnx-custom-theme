@@ -179,3 +179,8 @@
 #advancedSearchForm1 .lotusBtn{
   @include btnprimary;
 }
+
+.lotusMeta > span.searchDateClass {
+  font-size: inherit;
+  margin: 0;
+}
