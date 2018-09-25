@@ -8,7 +8,7 @@
     transform: translateY(-50%);
     position: relative;
   }
-  //Compant name & logo
+  //Company name & logo
   div.lotusLogo {
     height: $navbar-height;
     span {
@@ -20,17 +20,23 @@
     }
   }
   //Text on the navigation bar
-  ul.lotusInlinelist.lotusLinks li {
+  ul.lotusInlinelist.lotusLinks li, //left side of navbar
+  ul.lotusInlinelist.lotusUtility li //right side of navbar
+  {
     height: $navbar-height;
     &.lotusHover a {
       background-color:transparent !important;
     }
     &.lotusSelected {
-      a {
+      a:after {
         border-bottom: $navbar-selected-height solid $navbar-selected-color;
-        &:hover {
-          border-bottom: $navbar-hover-height solid $navbar-hover-color;
-        }
+        bottom: -1px;
+        content: '';
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
       }
       &::after {
         display:none;
@@ -45,8 +51,16 @@
       padding: 9px 12px 8px 12px !important;
       border: 1px solid transparent;
       &:hover {
-        background: none !important;
-        border-bottom: $navbar-hover-height solid $navbar-hover-color;
+        &:after {
+          border-bottom: $navbar-hover-height solid $navbar-hover-color;
+          bottom: 0px;
+          content: '';
+          height: 100%;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+          width: 100%;
+        }
         &:before {
           border: none !important;
         }
@@ -57,71 +71,43 @@
       &:focus {
         border: 1px solid $navbar-focus-color;
       }
+      &:before {
+        display: none;
+      }
     }
   }
 
 
-  //Right side of navigation bar
-  .lotusInlinelist.lotusUtility {
-    li {
-      height: $navbar-height;
-    }
-    a {
-      padding: 9px 12px 8px 12px !important;
-      background: transparent;
-      border: 1px solid transparent;
-      border-color: transparent !important;
-    }
-    #lotusBannerNotifications a {
-      &:before {
-        display:none;
-      }
-      &:hover {
-        border-bottom: $navbar-hover-height solid $navbar-hover-color;
-      }
-      &:focus {
-        border-color: $navbar-focus-color;
+  //Right side of navbar specifics
+  ul.lotusInlinelist.lotusUtility {
+    //Notification bell
+    #lotusBannerNotifications {
+      padding-left: 0 !important;
+      a {
+        padding-top: 7px !important;
+        padding-bottom: 4px !important;
       }
     }
+    //avatar and help icon
+    #headerHelpLi a,
     #lotusPerson a {
-      &:before {
-        display:none;
-      }
-      &:hover {
-        border-bottom: $navbar-hover-height solid $navbar-hover-color;
-      }
-      &:focus {
-        border-color: $navbar-focus-color !important;
-      }
-    }
-    //Share button
-    #headerSharebox a.lotusBannerBtn {
-      color: $text-03 !important;
-      font-size: $navbar-font-size;
-      font-weight: $navbar-font-weight;
-      text-decoration: none !important;
-      margin: 0px 20px 0px 0px;
-      &:hover {
-        border-bottom: $navbar-hover-height solid $navbar-hover-color;
-        background: transparent;
-      }
-      &:focus {
-        border-color: $navbar-focus-color !important;
-      }
+      padding-top: 5px !important;
+      padding-bottom: 4px !important;
     }
     #headerHelpLi a {
-      height: $navbar-height;
-      padding-top: 0px !important;
-      padding-bottom: 0px !important;
-      img {
-        display:none;
-      }
-      &:hover {
-        border-bottom: $navbar-hover-height solid $navbar-hover-color;
-      }
       &:focus {
-        border-color: $navbar-focus-color;
+        img {
+          outline: none !important;
+        }
       }
+    }
+    //Share and Language links
+    #logoutLi a, //Log in link
+    #headerSharebox a.lotusBannerBtn, //Share button
+    #languageSelectorText a //Language menu
+    {
+      padding-bottom: 7px !important;
+      margin: 0px 0px 0px 0px;
     }
   }
 }

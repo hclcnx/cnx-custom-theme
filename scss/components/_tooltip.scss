@@ -20,7 +20,7 @@ a[class*="_help_link"],
 // forum tag tooltip
 #tagHelper,
 #helpOwner {
-  img {
+  img:not(.iconsOther24-bannerHelpNormal24) { //Not help icon in the navbar
     height:12px !important;
     width:12px !important;
     background-image: svg-url-with-replaced-fill($svg-tooltip, '#000000', $icon-default) !important;

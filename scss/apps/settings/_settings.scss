@@ -119,13 +119,10 @@
 
   //Fix padding on sides to line up with overall page padding
   .lotusMain.emailPreferences {
-    padding-left:2.0rem !important;
     padding-right:2.0rem !important;
-    margin:0 10px 10px 10px !important;
   }
   @media screen and (min-width: 1250px) {
     .lotusNewsNotifications .emailPreferences {
-      padding-left:2.0rem;
       padding-right:2.0rem;
     }
   }
@@ -151,6 +148,7 @@
   .responsesNotifications {
     table {
       border-collapse:collapse;
+      width: 100% !important;
     }
     @include datatable;
   }

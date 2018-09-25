@@ -99,6 +99,10 @@ html.lconnFiles.files-enable-simplify-left-nav {
         div[role="toolbar"] {
           margin-top: 2px;
         }
+        //2153 Toolbar separator. Comment out because fixes on i1 but breaks in production
+        /*&:before {
+          left: 20px;
+        }*/
 
         //Batch actions
         .lotusBtn {
@@ -254,10 +258,27 @@ tr.lotusSort{
 tr.lotusSort{
   td.lotusFirstCell{
     position:relative!important;
-    top:5px!important;
-    padding-bottom:24px!important;
+    top: 5px!important;
+    padding-bottom: 24px!important;
   }
 }
+
+div.filesListFilled #scene-body {
+  tr:not(.hentry) {
+    td.lotusFirstCell {
+      top: 0 !important;
+      .lotusCheckbox {
+        padding-top: 6px;
+      }
+    }
+  }
+  tr.hentry {
+    td.lotusFirstCell input {
+      margin: 0 !important;
+    }
+  }
+}
+
 tr.hentry{
   td.lotusAlignRight{
     padding-right:1.5rem!important;
@@ -279,8 +300,7 @@ div[dojoattachpoint="streamNode"]{
     }
     td:nth-child(5),
     td:nth-child(6),
-    td:nth-child(7),
-    {
+    td:nth-child(7) {
       padding-top:22px!important;
     }
   }
@@ -340,5 +360,32 @@ div[id^="lconn_files_widget_PersonalFolderPicker_"] {
   //New toolbar
   .lotusToolBar {
     padding-left: 2.35rem !important;
+  }
+}
+
+.files-independent-scrollbars-compatible .lotusui30_body .lotusMain {
+  padding-right: 0;
+
+  #Members,
+  #ideationsListContainer,
+  div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysListFullpage_"],
+  #activityList,
+  .dfCommunityForums,
+  #calendar_view,
+  #fullRecomm {
+    padding-right: 50px;
+
+    .lotusTabContainer {
+      margin-right: 0 !important;
+    }
+  }
+  #Members table.lotusLayout.lotusHeader {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .files-independent-scrollbars-compatible .lotusui30 .lotusChunk15 {
+      max-width: 100%;
   }
 }

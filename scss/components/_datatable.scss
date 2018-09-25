@@ -116,9 +116,19 @@ body.blog .lotusViewControl, //Manage blog lists
   .lotusTileOn,
   .lotusDetailsOn,
   .lotusSummaryOn {
-    border-bottom: 2px solid $border-selected!important;
-    top:0!important;
-    bottom:0!important;
+    position: relative !important;
+    &:after {
+      width: auto;
+      height: 0;
+      border-bottom: 3px solid $border-selected!important;
+      bottom: -5px;
+      content: '';
+      position: absolute;
+      display: block;
+      left: 2px;
+      right: 2px;
+      top: auto !important;
+    }
   }
   .lotusTileOff,
   .lotusTileOn {
@@ -133,7 +143,6 @@ body.blog .lotusViewControl, //Manage blog lists
     background-image: svg-url-with-replaced-fill($svg-summary-view, '#000000', $icon-default) !important;
   }
 }
-
 
 //Forums
 #dfForumList,// list of forums
@@ -151,24 +160,18 @@ body.blog .lotusViewControl, //Manage blog lists
     }
   }
 }
-//Align labels on not sorting columns on list of forum topics inside forum
-#topicList .lotusTable tr.lotusSort {
-  #topics { //Topic table header on forum list inside forum
-    padding:28px 16px 20px 46px!important;
-    border:1px solid transparent!important;
-    border-bottom:1px solid $border-selected!important;
-  }
-}
-//Align labels on not sorting columns on list of forum topics in community
-#dfTopicList
-,#dfOpenQuestionList,
-#dfAnsweredQuestionList {
+//Forum lists - Column headings - Align labels on non-sorting columns
+#topicList, //List of topics inside specific forum
+#dfTopicList, //List of topics on comm forums landing page
+#dfOpenQuestionList, //List of open questions on comm forums landing page
+#dfAnsweredQuestionList, //List of answered questions on comm forums landing page
+#updatesArea .forumPagedList {
   .lotusTable tr.lotusSort {
-    td:first-of-type { //Topic table header in forum list in community
-      padding:31px 16px 20px 46px!important;
-    }
+    td:first-of-type, //Topic table header in forum list in community
     td:nth-of-type(2) { //Forum table header in forum list in community
-      padding:31px 16px 20px 0px !important;
+      padding-right: 16px;
+      padding-left: 46px;
+      vertical-align: middle;
     }
   }
 }
@@ -262,6 +265,9 @@ div.ActivityList
     > tbody > tr:not(:first-child) {
       border-top: 1px solid $border-separator !important;
     }
+    > tbody > tr[name*='item_detail'] {
+      border-top: none !important;
+    }
     > tbody > tr td {
       padding: 1rem 0;
     }
@@ -293,10 +299,36 @@ div#fullRecomm { //related communities list
 }
 
 //1681 survey list entry title and entry "More" spacing
+//1290 survey icons
 div[id*="widget_SurveysListFullpage"] {
+  div[id*="FULLPAGE_listSection_listWidget"]{
+    padding-top: 32px !important;
+    overflow-x: unset !important;
+  }
   .lotusTable td {
     .entry-title {
       color: $text-04 !important;
+    }
+    img.lconn-survey_draft_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-draft, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
+    }
+    img.lconn-survey_incomplete_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-incomplete, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
+    }
+    img.lconn-survey_complete_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-complete, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
     }
     a[id*="listSection_listWidget_rootDiv_more"] {
       margin-left: 25px !important;
@@ -319,4 +351,10 @@ div.ActivityList {
       padding: 1rem 0 !important;
     }
   }
+}
+
+// 2080 - remove extra padding on Events / Ideation blog
+#lotusMain div#ideatoins_main .lotusViewControl, //Comm Ideation blog
+#calendar_main div#calendar_view .lotusViewControl { //Events
+  padding-right: 0 !important;
 }

@@ -67,6 +67,7 @@
 .ics-viewer-messagebox-icon.success {
   background-image: svg-url-with-replaced-fill($svg-success-msg, '#000000', $success) !important;
   background-position:0px 0px!important;
+	background-repeat: no-repeat;
 }
 .lotusIconMsgError,
 .lconnSprite-iconError16,
@@ -74,12 +75,14 @@
 .ics-viewer-messagebox-icon.error {
   background-image: svg-url-with-replaced-fill($svg-error-msg, '#000000', $error) !important;
   background-position:0px 0px!important;
+	background-repeat: no-repeat;
 }
 .lotusIconMsgInfo,
 .iconsMessages16-msgInfo16,
 .ics-viewer-messagebox-icon.info {
   background-image: svg-url-with-replaced-fill($svg-info-msg, '#000000', $information) !important;
   background-position:0px 0px!important;
+	background-repeat: no-repeat;
 }
 .lotusIconMsgWarning,
 .lconnSprite-iconWarning16,
@@ -87,6 +90,7 @@
 .ics-viewer-messagebox-icon.warning {
   background-image: svg-url-with-replaced-fill($svg-warning-msg, '#000000', $warning) !important;
   background-position:0px 0px!important;
+	background-repeat: no-repeat;
 }
 
 //Messages in org page
@@ -103,4 +107,9 @@
 			}
 		}
 	}
+}
+
+// Add activity message - issue 1973
+#activitypage #displayMessageList {
+	padding-top: 24px !important;
 }

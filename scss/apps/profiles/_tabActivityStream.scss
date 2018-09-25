@@ -19,9 +19,26 @@
     background: $background-side !important;
   }
   .activityStreamNewsItemContainer {
-    //padding-right: 0 !important;
     &:focus {
       outline: 1px solid $border-focus !important;
+    }
+    div.lotusLikeConnector {
+      margin-bottom: 5px !important;
+      padding-right: 3px !important;
+    }
+    ul.lotusInlinelist {
+      li {
+        vertical-align: unset !important;
+        &:before {
+          margin-top: 7px !important;
+        }
+      }
+      li.savethisAction,
+      li.stopfollowingAction {
+        &:before {
+          margin-top: 7px !important;
+        }
+      }
     }
   }
   .lotusCommentList {
@@ -48,16 +65,9 @@
     .lotusPostAction {
       padding-right: 2rem;
     }
-    div[dojoattachpoint="footerSummary"] .lotusActions {
-      a {
-        font-weight: normal !important;
-        color: $text-02 !important;
-      }
-    }
   }
   .lotusPostContent,
   .lotusCommentList {
-    font-size: $body-sm-font-size;
     .vcard a {
       color: $text-01 !important;
     }

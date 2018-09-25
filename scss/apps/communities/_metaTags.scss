@@ -78,9 +78,13 @@
     @include tags();
     vertical-align: middle;
   }
+}
+
+// split out this fix for issue 816
+.blog.admin.tabbedpage .lotusFilters2 {
   .blogsPaddingRight {
     &:after {
-      content: ":";
+       content: ":";
     }
   }
 }
@@ -92,6 +96,15 @@
 //1503 Ideation blog entry tags
   .lotusTags span[role="listitem"] {
     margin-bottom: 3px !important;
+  }
+}
+
+// tags in onprem blogs app
+.blog #lotusMain {
+  table.blogsFixedTable {
+    .lotusMeta > span {
+      vertical-align: inherit;
+    }
   }
 }
 

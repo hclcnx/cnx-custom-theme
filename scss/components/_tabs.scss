@@ -24,6 +24,7 @@
 
 .lotusTabs,
 .lotusNavTabs#activitiesNagvigationToolbar,
+.lotusNavTabs#pageTabs,
 .blog.admin .lotusNavTabs,
 .blog.lotusui .lotusNavTabs,
 .app_palette_modal_tabs_ul,
@@ -51,6 +52,7 @@
       margin: 0 !important;
       border-radius: $border-radius-tabs !important;
       border: 1px solid transparent !important;
+      color: $tab-text !important;
       @include font-size($tabs...);
       &, &:visited {
         &, strong {
@@ -429,6 +431,14 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
     }
   }
 }
+body.blog.admin #pageTabs.lotusNavTabs {
+  border-bottom: 1px solid $border-separator;
+  
+  li {
+    float: none;
+    display: inline-block;
+  }
+}
 
 //1715 Initial caps for standalone blogs tabs
 .lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
@@ -436,11 +446,17 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
 }
 
 // onprem contacts and profiles
-.lotusProfiles .lotusTitleBarContent,
-.myProfile .lotusTitleBarContent {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.75rem;
+.lotusProfiles,
+.myProfile,
+.editMyProfile {
+  .lotusTitleBarContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.75rem;
+  }
+  div.lotusTitleBar2 .lotusInner {
+    height: auto;
+  }
   .lotusHeading {
     float: none !important;
     margin-right: 45px !important;
@@ -452,4 +468,35 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
 #myNetwork_contentDiv,
 .myProfile #lotusMain {
   margin-top: 1.75rem;
+}
+
+// insert img new ui 
+.lotusui30dojo .lconnInsertImage.forum .lotusDialog {
+  .dijitTabListContainer-top.dijitTabController {
+    margin-right: 0;
+    
+    ~ .dijitTabPaneWrapper {
+      padding: 0;
+    }
+  }
+  .dijitTabListWrapper {
+    border-bottom: none;
+  }
+}
+
+// 1747 rich content widget tabs 
+.lotusCommunities .lotusWidget2 .lotusTabs {
+  #qkrRefHide + li {
+    margin-left: 0 !important;
+  }
+  a:not([role="tab"]) {
+    color: $tab-text !important;
+    
+    &:focus {
+      color: $tab-text-focus !important;
+    }
+    &:hover {
+      color: $tab-text-hover !important;
+    }
+  }
 }

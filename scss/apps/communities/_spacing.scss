@@ -1,5 +1,8 @@
 //Communities app name in top left
-#lotusTitleBar h2, #lotusTitleBar h2 a{
+.lotusTitleBar h2.lotusHeading .lotusText a, //Stand-alone forums app title
+.lotusTitleBar h2.lotusHeading .lotusText a:hover, //Stand-alone forums app title
+#lotusTitleBar h2,
+#lotusTitleBar h2 a {
   @include font-size($apptitle...);
   color:$text-01 !important;
 }
@@ -21,6 +24,12 @@
   }
   #wikiPageHeader {
     @include font-size($title...);
+  }
+}
+// create sub-community in a top-nav no banner community 
+#lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+  #newCommunityForm {
+    padding-left:48px!important;
   }
 }
 #lotusColLeft.lotusColLeft:not(.wpthemeNarrow){
@@ -113,8 +122,11 @@ div[id^="lconn_forums_PostForm_"] {
       line-height: 1.5;
   }
 }
+.lotusui30 #activitiesTitleBar .lotusRightCorner.tabNavPlaceBarRightCorner {
+  @extend %headreset;
+}
 #lotusFrame .lotusPlaceBar {
-@extend %headreset;
+  @extend %headreset;
   .lotusRightCorner {
     @extend %headreset;
     .lotusInner {
@@ -257,5 +269,26 @@ h2 + div#communityActionBar,
     #widget_bhc_lconn_core_PeopleTypeAhead {
       width: 48% !important;
     }
+  }
+}
+
+// External title and members message
+.lconnSharedExternalPlaceBar {
+  h2 {
+    background: none !important;
+    .comNavInline {
+      background: $external !important;
+    }
+  }
+}
+//External community note
+#lotusFrame:not([class$="TopMenuLayout"]) #lotusMain #commMayHaveExternals {
+  @extend %headreset;
+  margin-left: 288px !important;
+  margin-bottom: 20px !important;
+}
+#lotusContent #Members {
+  span.lconnIconListSharedExternal {
+    margin: 0 4px 0 6px;
   }
 }

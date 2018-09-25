@@ -37,9 +37,11 @@ function periscope(){
     "home":["/social/",
             "/homepage/"],
     "forums":["/forums/"],
-    "metrics":["/metricssc/"],
+    "metrics":["/metricssc/",
+               "/metrics"],
     "wikis":["/wikis/"],
-    "settings":["/manage/account/user",
+    "settings":["/manage/account/user/",
+                "/manage/account/announcement/",
                 "/news/",
                 "/manage/subscribers/showInviteGuestDialog/input",
                 "/downloads/"]

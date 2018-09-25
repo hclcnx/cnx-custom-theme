@@ -15,7 +15,7 @@
   .lotusContent.downloads {
     //Download details
     .lldwn-details {
-      padding: 20px 0;
+      padding: 10px 0 !important;
       h2 {
         @include link-color(dark);
         @include font-size($header...);

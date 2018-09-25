@@ -29,8 +29,7 @@
 }
 .lconnPickerDialogBody .lotusRightSide.lotusForm,
 .lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane,
-.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane .lconnPickerSourceArea,
-{
+.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane .lconnPickerSourceArea {
 	width:100%!important;
 }
 .lotusDialogBorder > .lotusDialog,
@@ -91,12 +90,13 @@ img.lconnPickerSourceLabelIconCommunity{
 //Upload File from My Computer Browse and Drop Zone
 .lconnPicker {
   .pickerDropfilesHorizentalPrompt {
-    width:100% !important;
+		width: 99% !important;
 		display: flex !important;
 		flex-direction: column;
 		justify-content: center;
   }
   .pickerDropfilesVerticalPrompt {
+    width: auto !important;
     height:100% !important;
     max-height:300px !important;
   }
@@ -146,7 +146,7 @@ div[dojoattachpoint="streamNode"] {
 	}
 }
 .lotusDialogBorder > .lotusForm > div,
-.lotusDialogBorder > .lotusDialog > div{
+.lotusDialogBorder > .lotusDialog > div:not(.lotusTabContainer){
 	padding-right:2rem!important;
 	padding-left:2rem!important;
 }
@@ -637,10 +637,37 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 			background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
 			background-position: right top !important;
 			background-size: 20px 20px !important;
-
-			// .lotusText {
-			//
-			// }
 		}
 	}
+}
+
+// new insert img dialog
+.lotusTabDialog.lconnInsertImage {
+	width: 645px !important;
+
+	&.forum .lotusDialog .dijitTabListWrapper {
+		border-bottom: 1px solid $border-separator !important;
+	}
+
+	.lotusDialog .layout-prop-table {
+		margin-left: 0;
+	}
+	.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div .lotusTabs {
+		margin: 0 -2rem;
+	}
+	.lotusDialogContent .lconnWebUrlTab .lotusMessage2 {
+		margin-bottom: 1rem;
+	}
+	.lotusTabContainer {
+		padding: 0 !important;
+	}
+}
+.lconnInsertImage.dijitDialog {
+	.lotusTabContainer,
+	.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
+		padding: 0 !important;
+	}
+}
+.lconnInsertImage .lconnFileUploadLabel .lotusText::-ms-clear {
+  display: none;
 }

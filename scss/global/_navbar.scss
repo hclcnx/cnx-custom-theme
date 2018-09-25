@@ -1,7 +1,7 @@
 //Navigation bar at the top of all pages
 
 //Moves body of site down to be below the navbar
-.lotusui30_body.scloud3:not(.compactMode) {
+.lotusui30_body.scloud3:not(.compactMode):not(.concord) {
   margin-top: $navbar-height !important; //Height of navbar
 }
 

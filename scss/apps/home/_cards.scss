@@ -1,5 +1,10 @@
 //CARDS USED ON ORIENT ME PAGE
-.ic-icon, .ic-icon-button, .ic-stack-tile, .ic-tile, .ic-group-nav-left, ic-group-nav-right {
+.ic-icon,
+.ic-icon-button,
+.ic-stack-tile,
+.ic-tile,
+.ic-group-nav-left,
+.ic-group-nav-right {
   &:focus {
     outline:1px solid $border-selected;
   }

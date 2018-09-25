@@ -53,8 +53,19 @@ html {
   .lotusui30 .lotusWelcomeBox .lotusHeading,
   .lotusui30_layout .lotusWelcomeBox h2,
   .lotusliveui, .lotusliveui30, .scloud3,
-  .ic-orient, .ic-orient button, .ic-orient input, .ic-orient select, .ic-orient textarea, .ocs-nav-bar-wrapper {
+  .ic-orient, .ic-orient button, .ic-orient input, .ic-orient select, .ic-orient textarea, .ocs-nav-bar-wrapper
+  {
     font-family: inherit;
+  }
+}
+
+// reset to Arial for ckeditor content 
+html {
+  .entryContentContainer,
+  .entry-content,
+  .qkrWikiPreview h1 ~ *
+  {
+    font-family: "Helvetica Neue", sans-serif, Helvetica, Arial, Roboto;
   }
 }
 

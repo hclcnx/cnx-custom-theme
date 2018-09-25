@@ -26,9 +26,11 @@
 // @match        https://apps.na.collabserv.com/downloads/*
 // @match        https://apps.na.collabserv.com/files/*
 // @match        https://apps.na.collabserv.com/forums/*
+// @match        https://apps.na.collabserv.com/manage/account/announcement/*
 // @match        https://apps.na.collabserv.com/manage/account/user/*
 // @match        https://apps.na.collabserv.com/manage/subscribers/showInviteGuestDialog/*
 // @match        https://apps.na.collabserv.com/meetings/*
+// @match        https://apps.na.collabserv.com/metrics/*
 // @match        https://apps.na.collabserv.com/metricssc/*
 // @match        https://apps.na.collabserv.com/mycontacts/*
 // @match        https://apps.na.collabserv.com/news/web/*
