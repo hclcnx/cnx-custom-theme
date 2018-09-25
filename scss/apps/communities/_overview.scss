@@ -33,7 +33,8 @@
 }
 
 // rich content widget edit mode tabs
-#editRichContent {
+#editRichContent,
+#showRichContent {
   #pageDetails {
     padding-left: 16px;
     .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
@@ -136,5 +137,33 @@ div[id^="lconn_share0_widget_Dialog_"] {
 #emailForm {
   .rte {
     border: none !important;
+  }
+}
+
+/*-----Style arrows on blog, ideation blog, and activities widgets----*/
+#blogsSectionDiv,
+#activitiesListTable,
+#ideations_blogsSectionDiv {
+  img {
+    &.lotusIconHide {
+      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+      background-size: 12px !important;
+      background-position: right 2px !important;
+      background-repeat: no-repeat !important;
+    }
+    &.lotusIconShow {
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+      background-size: 12px !important;
+      background-position: right 2px !important;
+      background-repeat: no-repeat !important;
+    }
+  }
+  .lotusTable {
+    td {
+      padding-bottom: 14px !important;
+    }
+    td.lotusLastCell span[style="padding:0 15px;"] {
+      padding: 0 0 0 5px !important;
+    }
   }
 }

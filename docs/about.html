@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>App - Visual Update 1 for IBM Connections</title>
+    <title>Cloud App - Visual Update 1 for IBM Connections</title>
   <link rel="stylesheet" type="text/css" href="docs.css">
   <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
@@ -34,9 +34,11 @@
 <div class="toc">
   <ul>
     <li>CONTENTS</li>
-    <li><a href="#about">About the App</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prereq">Prerequisites</a></li>
     <li><a href="#install">Install and Configure the App</a></li>
-    <li><a href="#support">Support</a></li>
+    <li><a href="#subset">Enable for sub-set</a></li>
+    <li><a href="#org">Enable for org</a></li>
     <li><a href="./index.html">&#8592; Back to Main</a></li>
   </ul>
 </div>
@@ -47,144 +49,64 @@
 <div class="aboutContent">
 
 
-  <h1><a name="about"></a>Preview available in the Cloud App Catalog!</h1>
-  <h2>About the App</a></h2>
-  <p>The Connections Design Team is crafting new design specifications for Connections. You can preview the new visual styles by installing the application, from the IBM Connections Cloud App Catalog, which leverages the Connections Customizer technology. There is not an App Catalog for IBM Connections on premises at this time.</p>
+  <h1><a name="about"></a>Install and Configure from Cloud App Catalog</h1>
+  <h2>About</a></h2>
+  <p>This topic walks you through installing and configuring Visual Update 1 for IBM Connections from the Cloud App Catalog. While you can enable the application for your entire organization in a few clicks, this topic also provides instructions on how to only enable the app for a set of users.</p>
 
-  <h4>Prerequisites</h4>
+  <h2><class="anchor" name="prereq">Prerequisites</a></h2>
   <p>Customizer is available on IBM Connections Cloud for tenants of the North America and Europe data centers. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>
 
 
-  <h4><a class="anchor" name="preview">What's included in the Preview</a></h4>
-  <p>Because this is a Preview, it is recommended that you enable the application for a sub-set of users.</p>
-  <p>This release is a preview and has limitations, which include:
-  <ul>
-    <li>Only works with the default theme, called "Verse Theme (Default)".</li>
-    <li>Does not support bi-directional languages.</li>
-    <li>Might contain defects.</li>
-    <li>Only applies to a sub-set of applications and pages. Read <a href="./updatehistory.html">Update History</a> for a complete list of applications and page.</li>
-  </ul>
-</p>
-
-<h4><a class="anchor" name="updates">Updates</a></h4>
-<p>We periodically release updates to fix defects and add styling to more applications and pages.</p>
-<p class="button"><a href="./updatehistory.html">Review what's new and update history</a></p>
-
-
-  <h2><a class="anchor" name="install">Install and Configure the App</a></h2>
-  <p>Find Visual Update 1 for IBM Connections in the App Catalog. Get the app and configure it. </p>
-  <h4>Important notes before installing</h4>
-  <ul>
-  <li>When first configured, the application is enabled for the entire organization. It is recommended that you first enable for a sub-set of users.</li>
-  <li>This application is only intended to be used with Verse Theme (Default), which can be selected in the Theme section of Administration.</li>
-</ul>
-
-  <h4>Enable for no users or a sub-set of users</h4>
-  <p>You can install the application and enable it for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
-  <p>To enable for no users or a sub-set of users, customize the extension that was installed when you enabled the app.</p>
+<!--install-->
+<h2><a class="anchor" name="install">Install and Configure the App</a></h2>
   <ol>
-    <li>After installing the application, in Administration, go to Organization Extensions.</li>
+    <li>As an administrator go to <strong>Manage Organization</strong>.</li>
+    <li>Go to <strong>Apps</strong> and then <strong>App Catalog</strong>.</li>
+    <li>Locate <strong>Visual Update 1 for IBM Connections</strong> and click <strong>Get</strong>.</li>
+    <li>When configuring the application, on the Users step, select to enable it for the Entire Organization or Individuals.</li>
+    <li>Click <strong>Next</strong> past Extensions. There is not support for individual extensions at this time.</li>
+    <li>Click <strong>Next</strong> until you get to the last page and click <strong>Finish</strong>. </li>
+  </ol>
+<!--subset-->
+  <h2><a class="anchor" name="subset">Enable for a set of individuals</a></h2>
+  <p>Because this is a new visual style, it is recommended that you enable the application for a sub-set of users first. Enabling for a set of individuals allows you to review the application before turning it on for your entire organization.</p>
+
+  <p>To enable for a set of users:</p>
+  <ol>
+    <li>From the App Catalog, Configure Visual Update 1.</li>
+    <li>On the Users step select Individuals and click through to Finish.</li>
+    <li>When the configuration is finished go to Organization Extensions.</li>
     <li>At the top of the page, follow the new Apps Manager link.</li>
-    <li>Click on the name of the app to edit the extension.</li>
-    <li>Edit the json to add "match", "user-email", and values to the payload section, as follows.</li>
-
-    <p>Enable for no users by adding a fake email address inside "user-email":</p>
-
-    <pre class="code">
-    "payload": {
-      "match": {
-        "user-email": [
-          "userid1@example.com"
-        ]
-      },
-      "include-files":[
-        "periscope.js"
-      ],
-      "include-repo": {
-        "name":"periscope"
-      }
-    },
-    </pre>
-
-<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
+    <li>Click on the name of the app to edit the extension and select Code Editor.</li>
+    <li>In the .json, in each extension playload look for "match", "user-email", and a sample email address, as follows. Replace the sample email address with the email address' of the users you want to enable. This example shows how multiple email addresses would appear.
   <pre class="code">
   "payload": {
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"periscope"
+    },
     "match": {
       "user-email": [
         "userid1@example.com",
         "userid2@example.com"
       ]
-    },
-    "include-files":[
-      "periscope.js"
-    ],
-    "include-repo": {
-      "name":"periscope"
     }
   },
   </pre>
+</li>
 </ol>
 
-
-  <h4>Disable the application</h4>
-  <p><span style="color:red;">Use caution before disabling a customized application.</span> If you disable the application, your customizations will be lost. Save the customized json to another location before disabling the application.</p>
-<p>To disable the application:</p>
-<ol>
-  <li>After installing the application, in Administration, go to Apps.</li>
-  <li>Go to My Apps and locate Visual Update 1 for IBM Connections.</li>
-  <li>In the overflow menu select Disable.</li>
-  <li>Confirm that you want to disable the application because this will remove the Organization Extension and any customizations you made.</li>
-</ol>
-
-  <h4>Enable for entire organization</h4>
-  <p>If you have previously enabled for a sub-set of users, edit the json again and remove the "match" and "user-email" matches in the payload section.</p>
+<!--org-->
+  <h2><a class="anchor" name="org">Enable for entire organization</a></h2>
+  <p>If you previously enabled for a set of users, follow these steps to enable for the entire organization.</p>
   <ol>
-    <li>Go to Organization Extensions.</li>
-    <li>At the top of the page, follow the new Apps Manager link.</li>
-    <li>Click on the name of the app to edit the extension.</li>
-    <li>Edit the json to remove "match", "user-email", and specific email addresses in the payload section, as follows.</li>
-
-  <pre class="code">
-  "payload": {
-    "include-files":[
-      "periscope.js"
-    ],
-    "include-repo": {
-      "name":"periscope"
-    }
-  },
-  </pre>
+    <li>From the App Catalog, Configure Visual Update 1.</li>
+    <li>On the Users step select Entire Organization. This will result in the email addresses being removed from the payload section of the .json file.</li>
+    <li>Click through to Finish.</li>
 </ol>
 
-
-
-<h2><a class="anchor" name="support">Support</a></h2>
-
-<h3>FAQ</h3>
-<h4>Why don't I see Visual Update 1 changes?</h4>
-<p><span style="font-weight:600;">Question: </span>Why don't I see any visual updates after I enable Visual Update 1?</p>
-<p><span style="font-weight:600;">Answer: </span>Check the following things:
-  <ul>
-    <li>Make sure you have Customizer enabled. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
-    <li>Visual updates are only applied to a sub-set of Connections applications at this time. Look for changes in Files and Profiles. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
-  </ul>
-</p>
-
-<h4>Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
-<p><span style="font-weight:600;">Question: </span>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for IBM Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
-<p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
-
-<p>The App Registry includes the Visual Update 1 for IBM Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for IBM Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for IBM Connections changes.</p>
-
-<h3>What is supported</h3>
-<p>The Visual Update 1 for IBM Connections is supported only for implementations where the application is installed and configured directly from the IBM Connections App Catalog and in which all of the following criteria are met: (1) Only the Verse Theme (Default) is enabled (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
-
-<p>Due to the preview nature of the application, PMRs will not be accepted and resolved by IBM. Questions and support requests, however, can be posted directly on the support forum located here. IBM will not assist with making modifications to the open source code provided for this application nor modifications created to add additional customizations in lieu of the Visual Update 1 for IBM Connections.</p>
-
-<p>While the application is in preview, bi-directional language support will not be included. Visual updates will apply only to applications stated in official communications and will not extend to custom widgets added to Connections. IBM plans to regularly add new Connections applications to the visual update and will share communications accordingly.</p>
-
-<h3>Getting support</h3>
-<p>Ask questions and view answers tagged with <a href="https://developer.ibm.com/answers/topics/cnx-custom-theme.html" target="_blank">'cnx-custom-theme'</a> on dW Answers.</p>
 
 </div>
 

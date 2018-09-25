@@ -3,11 +3,46 @@
   width: 152px !important;
   height: 152px !important;
 }
-#smallBizCardInfoPhotoDiv > a:focus {
-  outline: 1px solid $border-focus !important;
-  outline-offset: 2px;
+#smallBizCardInfoPhotoDiv > a {
   display: inline-block;
   position: relative;
+  &:focus {
+    outline: 1px solid $border-focus !important;
+    outline-offset: 2px;
+    display: inline-block;
+    position: relative;
+  }
+}
+// edit profile photo button 
+#spanEditProfilePhoto {
+  float: none !important;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  height: 24px !important;
+  width: 24px !important;
+  background-color: $btn-secondary-fill;
+  border-radius: $border-radius-avatar;
+  border: 1px solid $btn-secondary-outline;
+  padding: .5rem;
+  box-sizing: content-box;
+  #aEditProfilePhoto {
+    background-color: transparent !important;
+    opacity: 1 !important;
+    height: 24px !important;
+    width: 24px !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    padding: 0 !important;
+  }
+  .lconnSprite {
+    background-image: svg-url-with-replaced-fill($svg-edit, '#000000', $icon-brand-01) !important;
+    background-position: center center !important;
+    height: 24px !important;
+    width: 24px !important;
+    display: block;
+  }
 }
 // profile top buttons:
 #businessCardActions {

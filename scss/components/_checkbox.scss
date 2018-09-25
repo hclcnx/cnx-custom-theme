@@ -7,6 +7,8 @@ input[type=checkbox]{
   //////////////////////////
 	transition:none!important;
   -webkit-appearance: none;
+  -moz-appearance: none !important;
+  appearance: none !important;
   border: none !important;
   // to address issue 1185
   vertical-align: bottom;
@@ -154,9 +156,8 @@ div[dojoattachpoint="addAllReadersContainer_AP"] {
   padding-top: 4px;
   .lotusFieldWrapper {
     margin-left: 10px !important;
-  }  
+  }
   .lotusFieldWrapper .lotusCheckbox {
 	top: 0;
   }
 }
-

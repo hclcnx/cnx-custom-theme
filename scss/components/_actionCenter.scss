@@ -141,19 +141,46 @@
 }
 //Make action center a full height panel
 /*Notificaiton panel full length*/
-.navsimplelist.notificationCenterContainer {
+.navsimplelist.notificationCenterContainer,
+#lotusBannerNotifications_dropdown {
   height: auto;
   right:-129px !important;
+  left: auto !important;
+  top: calc( #{$navbar-height} + 1px) !important;
   border:none !important;
+  width: 392px;
   box-shadow: rgba(0, 0, 0, 0.37) 0px 0px 12px !important;
   -webkit-box-shadow:0 0 12px rgba(0,0,0,0.37);
   /*panel inside panel*/
   .icBanner-popover-inner {
     border-radius:0px !important;
     border: 0px solid rgba(0, 0, 0, 0.38);
+    width: 100%;
+    box-shadow: none !important;
   }
   /*list inside inner panel*/
   .icBanner-popover-content {
     height: calc(100vh - 158px);
+    // tighten spacing for nonotification Bee and text - issue 490
+    .icBanner-NoNotification-bee {
+      margin-top: 10% !important;
+    }
+    .icBanner-NoNotification {
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      position: relative !important;
+      margin: 0 auto !important;
+      width: 80% !important;
+    }
   }
+}
+#lotusBannerNotifications_dropdown {
+  right: 1px !important;
+}
+#lconnheadermenu-notifications {
+  box-shadow: none !important;
+}
+div#lconnheadermenu-notifications {
+  margin-top: 0;
 }

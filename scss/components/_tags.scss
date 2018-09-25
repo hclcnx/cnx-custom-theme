@@ -117,7 +117,6 @@
     #tagInputForm > .lotusBtnImg {
       padding: 0 !important;
       height: auto !important;
-        padding: .75rem 0 !important;
     }
     #addTagButtonId {
       display: block;
@@ -418,7 +417,7 @@ input.lotusText.scTagTypeahead {
       font-weight:normal!important;
     }
     a.bidiAware:hover{
-      color: $link-default !important;
+      text-decoration: underline !important;
     }
     a[role="button"],
     a.qkrRemove{
@@ -681,11 +680,11 @@ input.lotusText.scTagTypeahead {
   }
 }
 
-// on-prem forum filter tags 
+// on-prem forum filter tags
 #category, #updatesArea {
   .lotusFilters .lotusFilter {
     @include tags();
-    vertical-align: middle; 
+    vertical-align: middle;
 
     span {
       display: inline-block;

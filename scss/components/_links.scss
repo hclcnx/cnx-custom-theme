@@ -2,7 +2,6 @@
 a {
   @include link-default();
   -webkit-font-smoothing: antialiased !important;
-  transition: color 250ms ease, text-decoration 250ms ease !important;
 }
 
 [id^="section_"] > ul > li > a,
@@ -65,7 +64,7 @@ a._linkHolder.lotusLeft {
 
 //Community overview specific link overrides
 .lotusCommunities .lotusWidget2 {
-  a:not([role="tab"]) {
+  a:not([role="tab"]):not([role="button"]) {
     @include link-default();
   }
   a.lotusPerson {
@@ -130,26 +129,7 @@ div.lotusPostIndicator a {
   }
 }
 
-// Status updates like - comment - repost alignment
-#activityStreamMain {
-  div.activityStreamNewsItemContainer {
-    div.lotusLikeConnector {
-      margin-bottom: 0 !important;
-      padding-right: 3px !important;
-    }
-    ul.lotusInlinelist {
-      li {
-        vertical-align: unset !important;
-        &:before {
-          margin-top: 4px !important;
-        }
-      }
-      li.savethisAction,
-      li.stopfollowingAction {
-        &:before {
-          margin-top: 7px !important;
-        }
-      }
-    }
-  }
+// On prem wiki page links to wiki
+#lotusPlaceBar .lotusInner h2 a {
+  color:$text-01 !important;
 }

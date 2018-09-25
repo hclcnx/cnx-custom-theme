@@ -66,10 +66,10 @@ $not-liked: icon-var-get($like-icon-vars, $like-shape, "not-liked");
 
 .ics-viewer-action-like{
   .unchecked img{
-    @include not-liked;
+    @include not-liked($actionable: false);
   }
   .checked img{
-    @include liked;
+    @include liked($actionable: false);
   }
 }
 

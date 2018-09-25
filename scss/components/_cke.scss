@@ -12,26 +12,49 @@
       @include bx--modal-close;
     }
     .cke_dialog_tabs {
-      border-bottom: 1px solid $color-gray-10 !important;
-      padding: 20px 10px 12px 20px;
+      padding: 20px 10px 12px 20px !important;
       font-size: $tab-font-size !important;
-      font-weight: 500 !important;
+      height: auto;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: auto;
+        left: 20px;
+        right: 20px;
+        border-bottom: 1px solid $color-gray-10 !important;
+      }
 
       .cke_dialog_tab {
+        @include font-size($tabs...);
         padding: 0.5rem 1rem !important;
-        line-height: 20px;
         margin: 0 !important;
-        font-size: inherit !important;
         color: $text-02 !important;
         border-radius: $border-radius-tabs !important;
         border: 1px solid transparent !important;
-        font-weight: 500 !important;
         text-transform: none !important;
+        display: inline-block;
+        position: relative;
+        + .cke_dialog_tab {
+          margin-left: 1rem !important;
+        }
+        &:after {
+          content: '';
+          display: none;
+          bottom: -13px;
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background-color: $border-selected;
+          position: absolute;
+        }
         &:hover {
           color: $text-03 !important;
           background-color: $btn-secondary-fill-hover !important;
           border-color: $btn-secondary-outline-hover !important;
-          font-weight: 500 !important;
         }
         &:focus {
           color: $text-01 !important;
@@ -39,13 +62,14 @@
           border-color: $btn-secondary-outline-hover !important;
         }
         &.cke_dialog_tab_selected {
-          border-bottom: 4px solid $border-selected !important;
           color: $text-01 !important;
+          &:after {
+            display: block;
+          }
           &:hover {
             color: $text-03 !important;
             background-color: $btn-secondary-fill-hover !important;
             border-color: $btn-secondary-outline-hover !important;
-            font-weight: 500 !important;
           }
           &:focus {
             border-color: $btn-secondary-outline-hover !important;

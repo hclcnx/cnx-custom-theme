@@ -159,12 +159,23 @@
       .lotusChunk.lotusTiny.lotusRight {
         display: block;
         text-align: left;
-        float: none !important;
+        float: left !important;
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
         a {
-          font-weight: bold !important;
+          @include btnsecondary;
+          height: auto !important;
+          width: auto !important;
+          font-size: 12px !important;
           &:hover, &:focus {
-            text-decoration: underline !important;
-            background-color: transparent !important;
+            border-style: solid !important;
+            border-width: 1px !important;
+          }
+          &:focus {
+            background: $btn-secondary-fill !important;
+          }
+          &:hover {
+            background: $btn-secondary-fill-hover !important;
           }
         }
       }
@@ -605,4 +616,10 @@
       position: relative;
     }
   }
+}
+
+// community catalog tags 
+body.catalog #lotusColLeftContents .lotusSection .lotusSectionBody {
+  padding: 0 $leftnav-horizontal-padding !important;
+  padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
 }

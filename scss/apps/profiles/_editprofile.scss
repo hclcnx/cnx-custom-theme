@@ -108,12 +108,9 @@
     }
   }
   .lotusFormFieldRow:first-child td {
-    display: flex !important;
-    flex-direction: column;
-    margin-top: 14px !important;
+    padding: 1rem 0 2rem;
   }
   #photoUploadDesc {
-    order: 1;
     margin: 0 0 24px !important;
     font-size: $body-mini-font-size !important;
     i {
@@ -125,9 +122,6 @@
     p + p {
       margin-top: 0 !important;
     }
-  }
-  #photoUploadFileSelectFieldsDiv {
-    order: 2;
   }
   #photoDiv label {
     margin-bottom: 6px;

@@ -25,7 +25,7 @@ span[id^="lconn_share_widget_Tagger"] input[type="submit"],
 div[id^="editBookmark"] input[type="submit"],
 span#createPlaceButton.lotusBtn.lotusBtnAction a, //Start a community button specifics
 span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
-#body .lotusContent > div.lotusBtnContainer .lotusBtn a // onprem start a wiki button
+#body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^="newButton"]) a // onprem start a wiki button
 {
 	@include btnprimary;
   &:disabled, &[disabled="disabled"],
@@ -43,7 +43,7 @@ span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
 //End Primary buttons-------------
 
 //Secondary buttons-------------
-.lotusStreamUpdate .lotusActions a[role="button"] [data-dojo-attach-event="onclick: doCancel"], //profiles
+.lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"], //profiles
 .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"], //profiles
 .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a,
 .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn + .lotusBtn a,
@@ -78,7 +78,8 @@ div#activityActionButtons span.lotusBtn a, //Community activities
 #frinds_removeFriendsDiv a,
 .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
 #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
-.lotusTable .lotusDetails .lotusBtnSmall // wiki list add tag buttons 
+.lotusTable .lotusDetails .lotusBtnSmall, // wiki list add tag buttons
+.lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a //1752 wiki members page buttons - onprem
 {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {

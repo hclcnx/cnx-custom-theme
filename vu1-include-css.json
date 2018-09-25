@@ -1,7 +1,7 @@
 {
     "app_id": "com.ibm.connections.vu1css",
-    "name": "Visual Update 1 for IBM Connections",
-    "title": "Visual Update 1 for IBM Connections",
+    "name": "Visual Update 1 - Direct CSS",
+    "title": "Visual Update 1 - Direct CSS",
     "description": "Customizer extension to re-theme Connections",
     "services": [
         "Customizer"
@@ -15,7 +15,7 @@
                     "css/global.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "global",
@@ -29,7 +29,7 @@
               "css/settings.css"
             ],
             "include-repo": {
-              "name": "cnx-custom-theme"
+              "name": "periscope"
             }
           },
           "path": "manage",
@@ -43,7 +43,7 @@
               "css/activities.css"
             ],
             "include-repo": {
-              "name": "cnx-custom-theme"
+              "name": "periscope"
             }
           },
           "path": "activities",
@@ -57,7 +57,7 @@
                     "css/blogs.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "blogs",
@@ -71,7 +71,7 @@
                     "css/communities.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "communities",
@@ -85,7 +85,7 @@
                     "css/settings.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "downloads",
@@ -99,7 +99,7 @@
                     "css/files.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "files",
@@ -113,7 +113,7 @@
                     "css/forums.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "forums",
@@ -127,7 +127,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "social",
@@ -141,7 +141,7 @@
                     "css/home.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "homepage",
@@ -155,7 +155,7 @@
                     "css/meetings.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "meetings",
@@ -169,7 +169,7 @@
                     "css/metrics.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "metrics",
@@ -183,7 +183,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "mycontacts",
@@ -197,7 +197,7 @@
                     "css/settings.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "news",
@@ -211,7 +211,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "contacts",
@@ -225,7 +225,7 @@
                     "css/profiles.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "profiles",
@@ -239,7 +239,7 @@
                     "css/search.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "search",
@@ -253,7 +253,7 @@
                     "css/wikis.css"
                 ],
                 "include-repo": {
-                    "name": "cnx-custom-theme"
+                    "name": "periscope"
                 }
             },
             "path": "wikis",

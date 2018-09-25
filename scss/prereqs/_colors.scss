@@ -32,6 +32,10 @@ $color-gray-1: #F3F3F3; //Neutral white 4
 // Disabled / non-active color used to indicate something is not available or functioning
 $disabled: $color-gray-30; //Gray 30
 
+// -----EXTERNAL MEMBERS-----
+// Used to highlight things that are shared with people external to your org
+$external: #fdf4c8;
+
 // -----NOTIFICATION INDICATOR COLORS-----
 // Use these colors for notification indicators. Continue to use text colors above for the messages.
 $success: #34BC6E; //Green 30
@@ -53,21 +57,24 @@ $icon-file-type-video: #FF509E;
 $icon-file-type-code: #C038D2;
 $icon-file-type-wiki: #000000;
 $icon-file-type-blog: #000000;
+$icon-file-type-files: #000000;
 $icon-file-type-activity: #000000;
 $icon-file-type-forum: #000000;
 $icon-file-type-bookmark: #000000;
 $icon-file-type-calendar: #000000;
 
 //-----METRICS DATA COLORS-----
+$data-overall: $color-gray-50; // Overall; Cool Gray 50
+$data-activities: #e62325; // Activities; Red 50
+$data-blogs: #00884b; // Blogs; Green 50
 $data-bookmarks: #dc267f; // Bookmarks; Magenta 50
 $data-communities: #008673; // Communities; Teal 50
-$data-forums: #9753e1; // Forums; Violet 50
-$data-wikis: #5d1a38; // Wikis; Magenta 80
-$data-ideationblog: #db7c00; // IDEATIONBLOG; Orange 40
-$data-blogs: #00884b; // Blogs; Green 50
 $data-files: $brand-01; // Files; Ultramarine 50
-$data-activities: #e62325; // Activities; Red 50
-$data-overall: $color-gray-50; // Overall; Cool Gray 50
+$data-forums: #9753e1; // Forums; Violet 50
+$data-homepage: #c22dd5; // Homepage; Purple 50
+$data-ideationblog: #db7c00; // IDEATIONBLOG; Orange 40
+$data-profiles: #188291; // Profiles; Aqua 50
+$data-wikis: #047cc0; // Wikis; Cerulean 50
 
 //*****IMPORT CUSTOM OVERRIDES TO HEX VALUES BELOW HERE*****
 //Import your custom color definitions here, after the default hex values are set

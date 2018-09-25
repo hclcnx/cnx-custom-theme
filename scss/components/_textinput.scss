@@ -22,10 +22,20 @@ input.lotusText,
 
 //Blog jump to page override textinput
 .blog input[type="text"]#jumpToPage_text,
-.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"])[name="jumpToPage_text"],
- {
+.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"])[name="jumpToPage_text"] {
   min-width: 46px !important;
   padding-right: 0 !important;
+}
+
+//Blog insert image dialog - URL field
+.blog {
+  .dijitValidationTextBox {
+    margin-top: 8px !important;
+    input[type="text"] {
+      padding-top: 8px !important;
+      border-bottom: none !important;
+    }
+  }
 }
 
 // Align labels to the middle
@@ -131,7 +141,7 @@ div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchBar"] 
 #contactsTagWidgetcommonTagsTypeAhead,
 input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
 	@include textinput;
-	padding: 0 !important;
+	padding-right: 0 !important;
 	//font-size: $body-sm-font-size !important;
 	width: calc(100% - 30px) !important;
 	min-width: 1rem !important;

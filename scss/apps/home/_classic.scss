@@ -20,6 +20,19 @@
 //Status update tabs
 .lotusui30 .lotusStream .lotusWidgetBody#activityStreamMain {
   .streamHeaderWrapper {
+    div[dojoattachpoint="successMessageNode"] {
+      padding-top: 16px !important;
+      .lotusSuccess {
+        .lotusMessageBody {
+          &:focus {
+            outline: none !important;
+          }
+        }
+        .lotusDelete {
+          top: 4px !important;
+        }
+      }
+    }
     .lotusPaging.lotusPagingTop {
       background:$background-main !important;
       border:none;
@@ -165,4 +178,3 @@ div[dojoattachpoint="recommendContainer"] {
     color: $text-02 !important;
     text-decoration: none !important;
 }
-

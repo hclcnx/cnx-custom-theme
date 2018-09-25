@@ -173,3 +173,24 @@ div[class$="directory"] {
     }
   }
 }
+// forward contacts dlg
+.sc {
+  .dijitDialog {
+    .lotusDialogContent {
+      padding-top: 0 !important;
+    }
+    .scShare {
+      .shareSection:not(:first-child) {
+        padding-top: 16px !important;
+      }
+      .peoplePickerTypeahead {
+        .dijitTextBox {
+          border: none !important;
+        }
+      }
+    }
+    .lotusDialogFooter {
+      margin-top: 0 !important;
+    }
+  }
+}
