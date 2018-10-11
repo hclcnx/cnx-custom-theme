@@ -35,6 +35,7 @@
   <ul>
     <li>CONTENTS</li>
     <li><a href="#v1release">Version 1 Release</a></li>
+    <li><a href="#midoctober2018" style="padding-left:16px;">Mid October 2018</a></li>
     <li><a href="#preview">Early adopter history</a></li>
     <li><a href="#summary">Apps and pages supported</a></li>
     <!--
@@ -68,11 +69,49 @@
 <!--v1-->
 <h1><a class="anchor" name="v1release">Version 1 - Available!</a></h1>
 <p>Visual Update 1 has moved past 'Preview' stage and is now generally available for both Cloud and On-premises customers. Update history will continue to build on top of the early adopter code, starting with a Late September 2018 update.</p>
+<p><strong>Styling not complete for some applications.</strong> View a list of applications and pages:
+  <ul>
+    <li><a href="#summary">Applications and pages that are styled</a></li>
+    <li><a href="#notstyled">Applcations and pages being styled, to be included in a future update.</a></li>
+  </ul>
+</p>
 
+<!--mid oct-->
+<h2><a class="anchor" name="midoctober2018">Mid October 2018</a></h2>
+<p>Each update includes style fixes to previously released apps and pages. Examples of 'style fixes' typically include updates so that elements of the page are not cut off, misaligned, or missing. We continue to update the visual styling in places where we missed it in previous releases. These updates apply to Cloud and On-premises Connections, unless otherwise noted.</p>
+
+<h4>Community Catalog</h4>
+<ul>
+<li>Updated styles to also apply to the updated Catalog page and fix an indention issue in the left navigation.</li>
+<li>Updated style of no results text.</li>
+</ul>
+
+<h4>Community Members</h4>
+<ul>
+<li>Fixed overlapping Add Members fields.</li>
+</ul>
+
+<h4>Community Surveys</h4>
+<ul>
+<li>Updated style of Browse button when importing a survey.</li>
+</ul>
+
+<h4>Files</h4>
+<ul>
+<li>Updated Upload Files dialog to remove excess spacing between default options, which was resulting in a vertical scroll bar.</li>
+</ul>
+
+<h4>Customization improvements</h4>
+<ul>
+<li>Added a new extensions directory and stub files where customers can add their specific style overrides. The extensions stub files are set up to import in to the base styling in the correct order to ensure the custom styles override the existing ones. Documentation needs to be written to provide more guidance.</li>
+<li>Added new variable options, /prereqs/profileform.scss, that controls the layout of the edit profile form.</li>
+<li>Fixed relative paths of partial scss files that are imported.</li>
+</ul>
 
 <br/>
 <br/>
 <!-----------------------preview-------------------->
+<hr />
 <h1><a class="anchor" name="preview">Early adopter history</a></h1>
 <p>If you are an early adopter of Visual Update 1, you were using the 'Preview' version. The history of changes to the Preview are listed below.</p>
 
@@ -944,16 +983,18 @@
 <li>Notificaiton Center for the above applications and pages</li>
 </ul>
 </p>
-
+<br />
+<br />
 <!---summary--->
-<h2><a class="anchor" name="summary">List of apps and pages styled or not</a></h2>
-<h3><a class="anchor" name="styled">Apps and pages that are styled</a></h3>
+<hr />
+<h1><a class="anchor" name="summary">List of apps and pages styled or not</a></h1>
+<h2><a class="anchor" name="styled">Apps and pages that are styled</a></h2>
 <p>This preview applies to the following applications and pages:
 <ul>
-<li><strong>IMPROVED!!</strong> Visual Update 1 Cloud app now performs faster</li>
-<li><strong>NEW!!</strong> Updates for new Files UI that is rolling out soon (added mid September)</li>
-<li><strong>NEW!!</strong> Downloads and Setup page (added late August)</li>
-<li><strong>NEW!!</strong> Activities (stand-alone and in Communities) (added mid August 2018)</li>
+<li>Visual Update 1 Cloud app now performs faster</li>
+<li>Updates for new Files UI that is rolling out soon (added mid September)</li>
+<li>Downloads and Setup page (added late August)</li>
+<li>Activities (stand-alone and in Communities) (added mid August 2018)</li>
 <li>Community pages and apps (added late May 2018)</li>
 <li>Communities catalog page and create community (added late March 2018)</li>
 <li>Edit Community (added late March 2018)</li>
@@ -975,18 +1016,18 @@
 </ul>
 </p>
 
-<h3><a class="anchor" name="notstyled">Apps and pages not styled yet:</a></h3>
+<h2><a class="anchor" name="notstyled">Apps and pages not styled yet:</a></h2>
 <ul>
-<li>Community Surveys</li>
 <li>Embedded experience - open social gadgets</li>
-<li>Application Access settings page (On-premises only)</li>
-<li>Globalization settings page (On-premises only)</li>
-<li>Stand-alone Bookmarks app (On-premises only)</li>
-<li>Community Library (On-premises only)</li>
-<li>IBM Docs</li>
 <li>File viewer when opened from the new 'Orient Me' homepage</li>
 <li>Reports (Cloud only)</li>
-<li>Organization page (Cloud only)</li>
+<li>Community Survey (/surveys URL)</li>
+<li>IBM Docs (/docs URL)</li>
+<li>Community Library (On-premises only)</li>
+<li>Stand-alone Bookmarks (/dogear URL) (On-premises only)</li>
+<li>Globalization Settings (On-premises only)</li>
+<li>Application Access Settings (On-premises only)</li>
+<li>Action Center (On-premises only)</li>
 </ul>
 </p>
 

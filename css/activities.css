@@ -2471,6 +2471,10 @@ span#createPlaceButton.lotusBtn.lotusBtnAction, span#createPlaceButton.lotusBtn.
   padding: 0 !important;
   margin: 0 !important; }
 
+div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn, div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn:hover, div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn:focus {
+  border: none !important;
+  background: none !important; }
+
 .ics-viewer-splitbutton .actionLink,
 .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
 .ics-viewer-action-splitmenu span.dijitButtonNode {
@@ -4475,9 +4479,6 @@ li.addressFormLi .addressFormField .addressFormInput {
     font-size: inherit !important;
     color: inherit !important; }
 
-#tableEditProfileContactInfo td {
-  display: block !important; }
-
 .lotusui30 .lotusDialogBorder form.lotusDialog {
   border: none; }
 
@@ -5538,8 +5539,17 @@ div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
       border-top: 1px solid #3C6DF0 !important;
       border-bottom: 1px solid #3C6DF0 !important; }
 
-[id^="lconn_files_widget_UploadFile_"] {
+div[id^="lconn_share_widget_Dialog_"] .lotusDialogHeader {
+  margin-bottom: 0 !important; }
+div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] {
   display: inline-block !important; }
+  div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable {
+    margin-top: 0 !important; }
+    div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow .lotusFormLabel {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important; }
+    div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow td > div {
+      margin-bottom: 6px !important; }
 
 #body .dijitDialogTitleBar {
   padding-bottom: 0px !important;
@@ -5867,7 +5877,6 @@ select[id^="compactpicker_select_"] {
 #addMembersRow #addPeopleOrGroupsSelect,
 #addMembersRow #addMembersSelectBox:not([style="display: block"]) {
   display: inline-block !important;
-  min-width: 40% !important;
   margin: 0 .5rem 0 .25rem !important; }
 
 #versionHistory .lotusVersions select {
@@ -7920,10 +7929,8 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
   height: auto !important;
-  padding-right: 0 !important;
   width: calc(100% - 30px) !important;
-  min-width: 1rem !important;
-  height: 36px; }
+  min-width: 1rem !important; }
   #socialTagName:focus, #socialTagName .dijitTextBoxFocused,
   #lconnTagWidgetcommonTagsTypeAhead:focus,
   #lconnTagWidgetcommonTagsTypeAhead .dijitTextBoxFocused,
@@ -7934,6 +7941,18 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
     outline: none !important;
     border-color: #3C6DF0 !important;
     box-shadow: 0 1px 0 #3C6DF0 !important; }
+  #socialTagName + .lotusBtnImg:hover,
+  #lconnTagWidgetcommonTagsTypeAhead + .lotusBtnImg:hover,
+  #contactsTagWidgetcommonTagsTypeAhead + .lotusBtnImg:hover,
+  input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] + .lotusBtnImg:hover {
+    opacity: 1 !important; }
+  #socialTagName + .lotusBtnImg .lotusSearchButton,
+  #lconnTagWidgetcommonTagsTypeAhead + .lotusBtnImg .lotusSearchButton,
+  #contactsTagWidgetcommonTagsTypeAhead + .lotusBtnImg .lotusSearchButton,
+  input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] + .lotusBtnImg .lotusSearchButton {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 25 25%22%3E%3Cpath fill=%22%23595859%22 d=%22M24.7,23.3l-9.4-9.4c0,0,0,0-0.1,0c1.2-1.5,1.9-3.3,1.9-5.3c0-4.7-3.8-8.6-8.6-8.6S0,3.8,0,8.6s3.8,8.6,8.6,8.6c2,0,3.9-0.7,5.3-1.9c0,0,0,0,0,0.1l9.4,9.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C25.1,24.3,25.1,23.7,24.7,23.3zM8.6,15.4c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9C15.4,12.4,12.4,15.4,8.6,15.4z%22/%3E%3C/svg%3E") !important;
+    background-position: center center !important;
+    background-size: contain; }
 
 input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
   line-height: 1.5 !important;
@@ -9069,7 +9088,7 @@ div#list .lotusTable.lotusFixedTable li.lotusTags {
 #lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus #newCommunityForm {
   padding-left: 48px !important; }
 
-#lotusColLeft.lotusColLeft:not(.wpthemeNarrow) {
+body:not(.catalog) #lotusColLeft.lotusColLeft:not(.wpthemeNarrow), html:not(.catalog-ui-updated) .catalog #lotusColLeft.lotusColLeft:not(.wpthemeNarrow) {
   position: relative !important;
   top: -24px !important;
   padding-top: 32px !important; }
@@ -9205,6 +9224,8 @@ h2 + div#communityActionBar,
 #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable {
   width: 100% !important;
   table-layout: fixed; }
+  #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable tbody {
+    display: flex; }
   #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable #addMembersWidgetTD {
     width: 100%; }
   #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable div.memberList {
@@ -9224,8 +9245,8 @@ h2 + div#communityActionBar,
   display: inline-block; }
 #Members #MembersPanel .lotusForm #roleFilter {
   width: 10rem !important; }
-#Members #MembersPanel .lotusForm #widget_bhc_lconn_core_PeopleTypeAhead {
-  width: 48% !important; }
+#Members #communitiesAddButton {
+  display: none; }
 
 .lconnSharedExternalPlaceBar h2 {
   background: none !important; }

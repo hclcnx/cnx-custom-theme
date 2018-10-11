@@ -46,20 +46,26 @@ input[type="submit"]#addCommunityButton {
   }
 }
 
-div[dojoattachpoint="zeroResultsNode"] {
-  // there is no #000000 in the svg so I'm using that as a way not to really change the colors
-  background-image: svg-url-with-replaced-fill($svg-empty-state-communities, '#000000', $icon-default) !important;
-  background-repeat: no-repeat;
-  background-position: center 40px;
-  background-size: 300px 300px;
-  padding-top: 350px;
-  padding-bottom: 70px;
-  background-color: $background-main;
-  position: relative;
-  z-index: 90;
+//Update style of empty state text in old catalog page - 2044
+html:not(.catalog-ui-updated) div[dojoattachpoint="zeroResultsNode"] {
+  @include font-size($emptystate...);
   text-align: center;
-  @include font-size($caption...);
 }
+//Update style of empty state text in new catalog page - 2044
+.catalog .zeroResultsNode {
+  @include font-size($emptystate...);
+}
+
+//Style new back to top button
+.catalog .backToTop {
+  z-index: 1;
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px $icon-black;
+    background-color: $background-main;
+  }
+}
+
 //List update
 .lotusContent {
   div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {

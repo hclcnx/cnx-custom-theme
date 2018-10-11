@@ -477,6 +477,26 @@
 
 }
 
+//======CUSTOMIZE EDIT PROFILE CONTACT INFO MIXIN=========
+//Customize layout of edit contact information
+@mixin editprofileform($layout) {
+  //Display label above fields
+  @if $layout == above {
+    display: block !important;
+    &.lotusFormLabel {
+      vertical-align: bottom !important;
+    }
+  }
+  //Display label to side of fields, takes up less vertical space
+  @else if $layout == side {
+    display: table-cell !important;
+    &.lotusFormLabel {
+      vertical-align: middle !important;
+    }
+  }
+}
+
+
 
 // ------------------------------------------------- //
 // ==from https://codepen.io/jakob-e/pen/doMoML      //

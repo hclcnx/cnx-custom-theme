@@ -141,11 +141,19 @@ div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchBar"] 
 #contactsTagWidgetcommonTagsTypeAhead,
 input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
 	@include textinput;
-	padding-right: 0 !important;
-	//font-size: $body-sm-font-size !important;
 	width: calc(100% - 30px) !important;
 	min-width: 1rem !important;
-	height: 36px;
+	
+	+ .lotusBtnImg {
+		&:hover {
+			opacity: 1 !important;
+		}
+		.lotusSearchButton {
+			background-image:svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+			background-position: center center !important	;
+			background-size: contain;
+		}
+	}
 }
 
 input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {

@@ -6,6 +6,10 @@
 @import "links";
 @import "icons";
 @import "illustrations";
+@import "leftnav-dimensions";
 @import "mixins";
 @import "navbar";
-@import "leftnav-dimensions";
+@import "profileform";
+
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/prereqs/prereqs";

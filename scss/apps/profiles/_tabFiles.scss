@@ -1,8 +1,8 @@
-// files 
+// files
 #filesReaderSection {
-  @import "apps/files/spacing";
+  @import "../files/spacing";
   padding-top: 2rem;
-  
+
   #multiFeedReaderContentContainer > .lotusTabContainer {
     border-bottom: 0 !important;
   }

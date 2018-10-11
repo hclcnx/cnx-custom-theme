@@ -52,133 +52,143 @@
     .lotusSection:not([id*="Tag"]) > div #allPagesList li + li,
     // for stand-alone apps on prem:
     > .lotusMenu ul[role="toolbar"] li {
+      padding: 0 !important;
+      margin: 0 !important;
+      a, div.dijitTreeRow {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+        margin: 0 !important;
+        border: none !important;
+        transition:none!important;
+        font-weight: normal !important;
+        font-size: $body-sm-font-size;
+        width: 100% !important;
+        box-sizing: border-box;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        line-height: 1.5;
+        &:hover, &:focus {
+          background-color:$background-side-hover !important;
+          border: none !important;
+          text-decoration: none !important;
+        }
+        &.dijitTreeRowSelected {
+          border: none !important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
+          font-weight: 700 !important;
+        }
+      }
+      //New community catalog navigation
+      html.catalog-ui-updated .catalog &.lotusIndent20 > * {
+        padding-left: $leftnav-indent-padding + $leftnav-horizontal-padding + 20px !important;
+      }
+      html.catalog-ui-updated .catalog &.lotusIndent20.lotusSelected > * {
+        padding-left: $leftnav-indent-padding + $leftnav-horizontal-padding + 20px - $leftnav-active-border-thickness !important;
+      }
+      .dijitTreeRow span > a {
         padding: 0 !important;
         margin: 0 !important;
-        a, div.dijitTreeRow {
-          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
-          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
-          margin: 0 !important;
+        display: inline !important;
+      }
+      .dijitTreeNodeSelected {
+        border: none !important;
+        span {
           border: none !important;
-          transition:none!important;
-          font-weight: normal !important;
-          font-size: $body-sm-font-size;
-          width: 100% !important;
-          box-sizing: border-box;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          display: block;
-          line-height: 1.5;
-          &:hover, &:focus {
-            background-color:$background-side-hover !important;
-            border: none !important;
-            text-decoration: none !important;
-          }
-          &.dijitTreeRowSelected {
-            border: none !important;
-            border-left:$leftnav-active-border-thickness solid $border-selected !important;
-            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
-            font-weight: 700 !important;
-          }
-        }
-        .dijitTreeRow span > a {
           padding: 0 !important;
-          margin: 0 !important;
-          display: inline !important;
         }
-        .dijitTreeNodeSelected {
+      }
+      .lotusDragHandle {
+        margin-left: -28px !important;
+      }
+      &.lotusSelected,
+      &:focus {
+        border: none !important;
+        a {
           border: none !important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
+          font-weight: 700 !important;
           span {
             border: none !important;
             padding: 0 !important;
           }
         }
-        .lotusDragHandle {
-          margin-left: -28px !important;
-        }
-        &.lotusSelected,
-        &:focus {
-          border: none !important;
-          a {
-            border: none !important;
-            border-left:$leftnav-active-border-thickness solid $border-selected !important;
-            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
-            font-weight: 700 !important;
-            span {
-              border: none !important;
-              padding: 0 !important;
-            }
-          }
-        }
       }
-      > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) {
-        #section_comments,
-        #section_pendingEntries,
-        #section_draftEntries,
-        #section_publishedEntries {
-          &.lotusSectionBody ul li {
-            padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+    }
+    > .lotusMenu ul[role="toolbar"] li.lotusIndent20 > * {
+      margin-left: 20px;
+    }
+    > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) {
+      #section_comments,
+      #section_pendingEntries,
+      #section_draftEntries,
+      #section_publishedEntries {
+        &.lotusSectionBody ul li {
+          padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
 
-            > a {
-              width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
-              max-width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
-              margin-left: calc( -1 * (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
-            }
+          > a {
+            width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+            max-width: calc( 100% + (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+            margin-left: calc( -1 * (#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
           }
         }
       }
-      > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li {
-        line-height: 0 !important;
-        font-size: 0 !important;
-        a {
-          font-size: $body-sm-font-size !important;
-          line-height: 1.2em !important;
-        }
+    }
+    > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li {
+      line-height: 0 !important;
+      font-size: 0 !important;
+      a {
+        font-size: $body-sm-font-size !important;
+        line-height: 1.2em !important;
       }
-      .lotusSection:not([id*="Tag"]) > div #allPagesList {
-        li:first-child {
-          a, form {
-            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
-            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
-            margin: 0 !important;
-            font-weight: 500 !important;
-            &:hover {
-              background-color: transparent !important;
-              text-decoration: underline !important;
-            }
-          }
-          form {
-            display: block !important;
-            text-align: left !important;
-            input[type="text"] {
-              max-width: 85%;
-            }
-          }
-        }
-      }
-      .lotusChunk.lotusTiny.lotusRight {
-        display: block;
-        text-align: left;
-        float: left !important;
-        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
-        padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
-        a {
-          @include btnsecondary;
-          height: auto !important;
-          width: auto !important;
-          font-size: 12px !important;
-          &:hover, &:focus {
-            border-style: solid !important;
-            border-width: 1px !important;
-          }
-          &:focus {
-            background: $btn-secondary-fill !important;
-          }
+    }
+    .lotusSection:not([id*="Tag"]) > div #allPagesList {
+      li:first-child {
+        a, form {
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+          margin: 0 !important;
+          font-weight: 500 !important;
           &:hover {
-            background: $btn-secondary-fill-hover !important;
+            background-color: transparent !important;
+            text-decoration: underline !important;
+          }
+        }
+        form {
+          display: block !important;
+          text-align: left !important;
+          input[type="text"] {
+            max-width: 85%;
           }
         }
       }
+    }
+    .lotusChunk.lotusTiny.lotusRight {
+      display: block;
+      text-align: left;
+      float: left !important;
+      padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+      padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+      a {
+        @include btnsecondary;
+        height: auto !important;
+        width: auto !important;
+        font-size: 12px !important;
+        &:hover, &:focus {
+          border-style: solid !important;
+          border-width: 1px !important;
+        }
+        &:focus {
+          background: $btn-secondary-fill !important;
+        }
+        &:hover {
+          background: $btn-secondary-fill-hover !important;
+        }
+      }
+    }
     .lotusMenu {
       margin: 0 !important;
       // Fix for issue 1387, long app name drop-down arrow
@@ -314,9 +324,10 @@
 }
 .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent,
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget,
-.lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 {
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0,
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] {
   padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
-  padding-right: $leftnav-horizontal-padding;
+  padding-right: $leftnav-horizontal-padding !important;
   > div > div {
     margin: 0 !important;
   }
@@ -618,7 +629,7 @@
   }
 }
 
-// community catalog tags 
+// community catalog tags
 body.catalog #lotusColLeftContents .lotusSection .lotusSectionBody {
   padding: 0 $leftnav-horizontal-padding !important;
   padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
