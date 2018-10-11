@@ -78,7 +78,8 @@ $data-wikis: #047cc0; // Wikis; Cerulean 50
 
 //*****IMPORT CUSTOM OVERRIDES TO HEX VALUES BELOW HERE*****
 //Import your custom color definitions here, after the default hex values are set
-
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/prereqs/colors";
 
 //***************************************
 //*******COMPONENT COLOR VARIABLES*******
@@ -195,3 +196,5 @@ $table-header-icon-hover: $color-white; //Icon color on hover of table header
 
 //*****IMPORT CUSTOM OVERRIDES TO VARIABLES BELOW HERE*****
 //Import your custom color variables here, after the default variables are set
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/prereqs/colors";

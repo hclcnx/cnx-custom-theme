@@ -32,10 +32,12 @@
     padding-left:48px!important;
   }
 }
-#lotusColLeft.lotusColLeft:not(.wpthemeNarrow){
-  position:relative!important;
-  top:-24px!important;
-  padding-top:32px!important;
+body:not(.catalog), html:not(.catalog-ui-updated) .catalog {
+  #lotusColLeft.lotusColLeft:not(.wpthemeNarrow) {
+    position:relative!important;
+    top:-24px!important;
+    padding-top:32px!important;
+  }
 }
 .wikiHeader{
   .lotusMeta,.lotusBtnContainer{
@@ -236,6 +238,10 @@ h2 + div#communityActionBar,
     > .lotusTable {
       width: 100% !important;
       table-layout: fixed;
+      
+      tbody {
+        display: flex;
+      }
 
       #addMembersWidgetTD {
         width: 100%;
@@ -266,9 +272,9 @@ h2 + div#communityActionBar,
   	#roleFilter {
   		width: 10rem !important;
   	}
-    #widget_bhc_lconn_core_PeopleTypeAhead {
-      width: 48% !important;
-    }
+  }
+  #communitiesAddButton {
+    display: none;
   }
 }
 

@@ -2472,6 +2472,10 @@ span#createPlaceButton.lotusBtn.lotusBtnAction, span#createPlaceButton.lotusBtn.
   padding: 0 !important;
   margin: 0 !important; }
 
+div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn, div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn:hover, div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer span.lotusBtn:focus {
+  border: none !important;
+  background: none !important; }
+
 .ics-viewer-splitbutton .actionLink,
 .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
 .ics-viewer-action-splitmenu span.dijitButtonNode {
@@ -4476,9 +4480,6 @@ li.addressFormLi .addressFormField .addressFormInput {
     font-size: inherit !important;
     color: inherit !important; }
 
-#tableEditProfileContactInfo td {
-  display: block !important; }
-
 .lotusui30 .lotusDialogBorder form.lotusDialog {
   border: none; }
 
@@ -5539,8 +5540,17 @@ div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
       border-top: 1px solid #3C6DF0 !important;
       border-bottom: 1px solid #3C6DF0 !important; }
 
-[id^="lconn_files_widget_UploadFile_"] {
+div[id^="lconn_share_widget_Dialog_"] .lotusDialogHeader {
+  margin-bottom: 0 !important; }
+div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] {
   display: inline-block !important; }
+  div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable {
+    margin-top: 0 !important; }
+    div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow .lotusFormLabel {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important; }
+    div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow td > div {
+      margin-bottom: 6px !important; }
 
 #body .dijitDialogTitleBar {
   padding-bottom: 0px !important;
@@ -5868,7 +5878,6 @@ select[id^="compactpicker_select_"] {
 #addMembersRow #addPeopleOrGroupsSelect,
 #addMembersRow #addMembersSelectBox:not([style="display: block"]) {
   display: inline-block !important;
-  min-width: 40% !important;
   margin: 0 .5rem 0 .25rem !important; }
 
 #versionHistory .lotusVersions select {
@@ -7921,10 +7930,8 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
   padding-bottom: .375rem !important;
   box-sizing: border-box !important;
   height: auto !important;
-  padding-right: 0 !important;
   width: calc(100% - 30px) !important;
-  min-width: 1rem !important;
-  height: 36px; }
+  min-width: 1rem !important; }
   #socialTagName:focus, #socialTagName .dijitTextBoxFocused,
   #lconnTagWidgetcommonTagsTypeAhead:focus,
   #lconnTagWidgetcommonTagsTypeAhead .dijitTextBoxFocused,
@@ -7935,6 +7942,18 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
     outline: none !important;
     border-color: #3C6DF0 !important;
     box-shadow: 0 1px 0 #3C6DF0 !important; }
+  #socialTagName + .lotusBtnImg:hover,
+  #lconnTagWidgetcommonTagsTypeAhead + .lotusBtnImg:hover,
+  #contactsTagWidgetcommonTagsTypeAhead + .lotusBtnImg:hover,
+  input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] + .lotusBtnImg:hover {
+    opacity: 1 !important; }
+  #socialTagName + .lotusBtnImg .lotusSearchButton,
+  #lconnTagWidgetcommonTagsTypeAhead + .lotusBtnImg .lotusSearchButton,
+  #contactsTagWidgetcommonTagsTypeAhead + .lotusBtnImg .lotusSearchButton,
+  input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] + .lotusBtnImg .lotusSearchButton {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 25 25%22%3E%3Cpath fill=%22%23595859%22 d=%22M24.7,23.3l-9.4-9.4c0,0,0,0-0.1,0c1.2-1.5,1.9-3.3,1.9-5.3c0-4.7-3.8-8.6-8.6-8.6S0,3.8,0,8.6s3.8,8.6,8.6,8.6c2,0,3.9-0.7,5.3-1.9c0,0,0,0,0,0.1l9.4,9.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C25.1,24.3,25.1,23.7,24.7,23.3zM8.6,15.4c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9C15.4,12.4,12.4,15.4,8.6,15.4z%22/%3E%3C/svg%3E") !important;
+    background-position: center center !important;
+    background-size: contain; }
 
 input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
   line-height: 1.5 !important;
@@ -8934,6 +8953,56 @@ body > div[id*="dialogs_deleteConfirm"] {
         border-left: 4px solid #3C6DF0 !important;
         padding-left: calc((15px + 24px) - 4px) !important;
         font-weight: 700 !important; }
+    html.catalog-ui-updated .catalog .lotusMain #lotusColLeft:not(.wpthemeNarrow) div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #viewAllMetricsDivID > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #sideNav > div > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusChunk.lotusTiny.lotusRight.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div #allPagesList li + li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #viewAllMetricsDivID > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #sideNav > div > ul > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusChunk.lotusTiny.lotusRight.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div #allPagesList li + li.lotusIndent20 > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20 > * {
+      padding-left: 59px !important; }
+    html.catalog-ui-updated .catalog .lotusMain #lotusColLeft:not(.wpthemeNarrow) div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #viewAllMetricsDivID > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) #sideNav > div > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusChunk.lotusTiny.lotusRight.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div #allPagesList li + li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusMenuSubsection > ul:not([aria-label="Subcommunities"]) > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #viewAllMetricsDivID > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) ul li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #sideNav > div > ul > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusChunk.lotusTiny.lotusRight.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not([id*="Tag"]) > .lotusSectionBody > ul.lotusList.lotusEditable.lotusMeta.lotusTags > li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div #allPagesList li + li.lotusIndent20.lotusSelected > *, html.catalog-ui-updated .catalog
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20.lotusSelected > * {
+      padding-left: 55px !important; }
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) div[id^="lconn_communities_catalog_widgets_PlacesNavigation_"] .lotusMenu li .dijitTreeRow span > a,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > ul > li .dijitTreeRow span > a,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusMenuSection > div > div > ul .dijitTreeRow span > a,
@@ -9185,6 +9254,9 @@ body > div[id*="dialogs_deleteConfirm"] {
         .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li:focus a span {
           border: none !important;
           padding: 0 !important; }
+  .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20 > *,
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusMenu ul[role="toolbar"] li.lotusIndent20 > * {
+    margin-left: 20px; }
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) #section_comments.lotusSectionBody ul li,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) #section_pendingEntries.lotusSectionBody ul li,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) #section_draftEntries.lotusSectionBody ul li,
@@ -9880,32 +9952,39 @@ body > div[id*="dialogs_deleteConfirm"] {
 
 .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent,
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget,
-.lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 {
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0,
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] {
   padding-left: calc((15px + 24px)) !important;
-  padding-right: 24px; }
+  padding-right: 24px !important; }
   .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent > div > div,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget > div > div,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 > div > div {
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 > div > div,
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] > div > div {
     margin: 0 !important; }
   .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent .lotusTagCloud,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget .lotusTagCloud,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud {
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud,
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] .lotusTagCloud {
     display: inline-block !important;
     margin-right: 5px !important; }
     .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent .lotusTagCloud ul li a,
     .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget .lotusTagCloud ul li a,
-    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud ul li a {
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud ul li a,
+    .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] .lotusTagCloud ul li a {
       padding: 0 !important; }
       .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent .lotusTagCloud ul li a:hover,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget .lotusTagCloud ul li a:hover,
-      .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud ul li a:hover {
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusTagCloud ul li a:hover,
+      .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] .lotusTagCloud ul li a:hover {
         background: transparent !important;
         text-decoration: underline !important; }
   .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent .lotusInlinelist.lotusActions span, .sc.hikari.lotusui30 #lotusColLeft:not(.wpthemeNarrow) .lotusSection .lotusSectionBody#lconnTagCloudContent .lotusInlinelist.lotusActions a:hover,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget .lotusInlinelist.lotusActions span,
   .lotusMain #lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget .lotusInlinelist.lotusActions a:hover,
   .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusInlinelist.lotusActions span,
-  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusInlinelist.lotusActions a:hover {
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) > .lotusSection #lconnTagWidget_0 .lotusInlinelist.lotusActions a:hover,
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] .lotusInlinelist.lotusActions span,
+  .lotusMain .lotusColLeft:not(.wpthemeNarrow) #lotusColLeftContents > .lotusSection .lotusSectionBody[dojoattachpoint="tagCloudContent"] .lotusInlinelist.lotusActions a:hover {
     text-decoration: underline !important; }
 
 .lotusMain #lotusColLeft:not(.wpthemeNarrow) #admin_menu.lotusArrow {
@@ -10473,7 +10552,7 @@ div#list .lotusTable.lotusFixedTable li.lotusTags {
 #lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus #newCommunityForm {
   padding-left: 48px !important; }
 
-#lotusColLeft.lotusColLeft:not(.wpthemeNarrow) {
+body:not(.catalog) #lotusColLeft.lotusColLeft:not(.wpthemeNarrow), html:not(.catalog-ui-updated) .catalog #lotusColLeft.lotusColLeft:not(.wpthemeNarrow) {
   position: relative !important;
   top: -24px !important;
   padding-top: 32px !important; }
@@ -10609,6 +10688,8 @@ h2 + div#communityActionBar,
 #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable {
   width: 100% !important;
   table-layout: fixed; }
+  #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable tbody {
+    display: flex; }
   #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable #addMembersWidgetTD {
     width: 100%; }
   #Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable div.memberList {
@@ -10628,8 +10709,8 @@ h2 + div#communityActionBar,
   display: inline-block; }
 #Members #MembersPanel .lotusForm #roleFilter {
   width: 10rem !important; }
-#Members #MembersPanel .lotusForm #widget_bhc_lconn_core_PeopleTypeAhead {
-  width: 48% !important; }
+#Members #communitiesAddButton {
+  display: none; }
 
 .lconnSharedExternalPlaceBar h2 {
   background: none !important; }
@@ -11124,19 +11205,21 @@ input[type="submit"]#addCommunityButton {
   .lotusFilters[id^="lconn_communities_catalog_widgets_Breadcrumbs_"] a:hover .lotusDelete {
     opacity: 1; }
 
-div[dojoattachpoint="zeroResultsNode"] {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 153 138%22 style=%22enable-background:new 0 0 153 138;%22%3E%3Cpath fill=%22%23F6F6F6%22 d=%22M142.1,70.2l-1.5-0.2l-3.8-0.4l0,0l-0.3,0L117.3,54l0,0l-1.9-1.5l0,0l-4.1-3.3c-0.4-0.3-0.7-0.8-0.7-1.3 s0.1-1.1,0.4-1.5l4.7-5.8c0.3-0.4,0.8-0.7,1.3-0.7c0.3,0,0.5,0,0.8,0.1c0.3,0.1,0.6,0.2,0.9,0.4L143,59.9c0-0.1,0-0.3,0-0.4	C143,27.2,116.8,1,84.5,1C61.2,1,41.1,14.6,31.7,34.3l11.4,3.1c1.1,0.2,1.7,1.3,1.4,2.4L44.4,40c0,0.2,0,0.3-0.1,0.5l-4.1,15.4l0,0 l0,0l-1.6,5.9c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2,0.5-0.7,0.8-1.1,0.9c-0.3,0.1-0.6,0.2-0.9,0.2c-0.2,0-0.4,0-0.6-0.1L26,60.9	c0.2,7.5,1.8,14.6,4.6,21.2c4.2-7.5,12.2-12.6,21.4-12.6c13.5,0,24.5,11,24.5,24.5c0,8.7-4.6,16.4-11.5,20.8 c4.7,1.6,9.7,2.7,14.8,3.1l-2.9-6.2c-0.2-0.5-0.2-1-0.1-1.5c0.2-0.5,0.6-0.9,1-1.1l0.1,0c0,0,0.1,0,0.1-0.1l7.8-3.6l7-3.3l0,0	l9.8,3.5l0,0l3.9,8.3C124.8,106.3,138.4,90,142.1,70.2z M46,33.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5	S47.4,33.5,46,33.5z M103,12.5c3.6,0,6.5,2.9,6.5,6.5s-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5S99.4,12.5,103,12.5z M82,18.5 c1.4,0,2.5,1.1,2.5,2.5s-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5S80.6,18.5,82,18.5z M58,23.5c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5 s4.5,2,4.5,4.5S60.5,23.5,58,23.5z M63.5,48c0-9.6,7.9-17.5,17.5-17.5S98.5,38.4,98.5,48S90.6,65.5,81,65.5S63.5,57.6,63.5,48z M102,96.5c-6.9,0-12.5-5.6-12.5-12.5s5.6-12.5,12.5-12.5s12.5,5.6,12.5,12.5S108.9,96.5,102,96.5z M119,103.5	c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S120.4,103.5,119,103.5z M119.5,84c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5 s-2,4.5-4.5,4.5S119.5,86.5,119.5,84z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M106.6,113.8l-3.9-8.3l0,0l-9.8-3.5l0,0l-7,3.3L78,109l-0.1,0c-0.5,0.2-0.8,0.6-1,1.1c-0.2,0.5-0.2,1.1,0.1,1.5 l2.9,6.2l7.7,16.4c0.2,0.5,0.6,0.8,1.1,1c0.2,0.1,0.5,0.1,0.7,0.1c0.3,0,0.6-0.1,0.8-0.2l19.9-9.3c0.5-0.2,0.8-0.6,1-1.1 c0.2-0.5,0.2-1.1-0.1-1.5L106.6,113.8z M101.5,106.1l-3.6,1.7c-1,0.5-2.2,0-2.7-1l-1.6-3.5L101.5,106.1z M110.2,124.5 c-0.1,0.3-0.3,0.5-0.5,0.6l-19.9,9.3c-0.2,0.1-0.5,0.1-0.8,0c-0.3-0.1-0.5-0.3-0.6-0.5l-10.6-22.7c-0.1-0.2-0.1-0.5,0-0.8 c0.1-0.3,0.3-0.5,0.5-0.6l14.1-6.6l1.8,3.9c0.7,1.5,2.5,2.2,4,1.5l4-1.9l7.9,16.9C110.3,124,110.3,124.3,110.2,124.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M101.6,112.5l-15.7,7.3c-0.3,0.1-0.4,0.4-0.2,0.7c0.1,0.2,0.3,0.3,0.5,0.3c0.1,0,0.1,0,0.2,0l15.7-7.3 c0.3-0.1,0.4-0.4,0.2-0.7C102.2,112.5,101.9,112.4,101.6,112.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M101.2,117.8l-11,5.1c-0.3,0.1-0.4,0.4-0.2,0.7c0.1,0.2,0.3,0.3,0.5,0.3c0.1,0,0.1,0,0.2,0l11-5.1 c0.3-0.1,0.4-0.4,0.2-0.7C101.7,117.8,101.4,117.7,101.2,117.8z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M52,69.5c-9.2,0-17.2,5.1-21.4,12.6c-2,3.5-3.1,7.6-3.1,11.9c0,13.5,11,24.5,24.5,24.5c4.8,0,9.2-1.4,13-3.7 c6.9-4.3,11.5-12,11.5-20.8C76.5,80.5,65.5,69.5,52,69.5z M52,117.5c-13,0-23.5-10.5-23.5-23.5S39,70.5,52,70.5S75.5,81,75.5,94	S65,117.5,52,117.5z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2253.6%22 cy=%2289.3%22 r=%221.2%22/%3E%3Cpath fill=%22%23777677%22 d=%22M62.7,93.1c-0.3,0-0.5,0.2-0.5,0.5c0,1.3-1,2.3-2.3,2.3c-1.3,0-2.3-1-2.3-2.3c0-0.3-0.2-0.5-0.5-0.5 s-0.5,0.2-0.5,0.5c0,1.8,1.5,3.3,3.3,3.3c1.8,0,3.3-1.5,3.3-3.3C63.2,93.3,63,93.1,62.7,93.1z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2266.2%22 cy=%2289.3%22 r=%221.2%22/%3E%3Cpath fill=%22%23777677%22 d=%22M81,65.5c9.6,0,17.5-7.9,17.5-17.5S90.6,30.5,81,30.5S63.5,38.4,63.5,48S71.4,65.5,81,65.5z M81,31.5 c9.1,0,16.5,7.4,16.5,16.5S90.1,64.5,81,64.5c-9.1,0-16.5-7.4-16.5-16.5S71.9,31.5,81,31.5z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2270.7%22 cy=%2251.2%22 r=%221.2%22/%3E%3Cpath fill=%22%23777677%22 d=%22M77.1,58.8c1.8,0,3.3-1.5,3.3-3.3c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5c0,1.3-1,2.3-2.3,2.3 c-1.3,0-2.3-1-2.3-2.3c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5C73.8,57.3,75.3,58.8,77.1,58.8z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2283.4%22 cy=%2251.2%22 r=%221.2%22/%3E%3Cpath fill=%22%23777677%22 d=%22M103,25.5c3.6,0,6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5s-6.5,2.9-6.5,6.5S99.4,25.5,103,25.5z M103,13.5 c3,0,5.5,2.5,5.5,5.5s-2.5,5.5-5.5,5.5S97.5,22,97.5,19S100,13.5,103,13.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M124,79.5c-2.5,0-4.5,2-4.5,4.5s2,4.5,4.5,4.5s4.5-2,4.5-4.5S126.5,79.5,124,79.5z M124,87.5 c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S125.9,87.5,124,87.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M58,23.5c2.5,0,4.5-2,4.5-4.5s-2-4.5-4.5-4.5s-4.5,2-4.5,4.5S55.5,23.5,58,23.5z M58,15.5 c1.9,0,3.5,1.6,3.5,3.5s-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5S56.1,15.5,58,15.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M7,65.5c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5S10.6,65.5,7,65.5z M7,77.5 c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5C12.5,75,10,77.5,7,77.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M82,23.5c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5S80.6,23.5,82,23.5z M82,19.5 c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5S81.2,19.5,82,19.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M119,98.5c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S120.4,98.5,119,98.5z M119,102.5 c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S119.8,102.5,119,102.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M65,119.5c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S66.4,119.5,65,119.5z M65,123.5 c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S65.8,123.5,65,123.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M17,87.5c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S18.4,87.5,17,87.5z M17,91.5 c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S17.8,91.5,17,91.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M46,33.5c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5S44.6,33.5,46,33.5z M46,29.5 c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5S45.2,29.5,46,29.5z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M102,71.5c-6.9,0-12.5,5.6-12.5,12.5s5.6,12.5,12.5,12.5s12.5-5.6,12.5-12.5S108.9,71.5,102,71.5z M102,95.5 c-6.3,0-11.5-5.2-11.5-11.5s5.2-11.5,11.5-11.5s11.5,5.2,11.5,11.5S108.3,95.5,102,95.5z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2293.2%22 cy=%2282.4%22 r=%221%22/%3E%3Cpath fill=%22%23777677%22 d=%22M98,85.1c-0.3,0-0.5,0.2-0.5,0.5c0,0.6-0.5,1.1-1.1,1.1s-1.1-0.5-1.1-1.1c0-0.3-0.2-0.5-0.5-0.5 s-0.5,0.2-0.5,0.5c0,1.2,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1C98.5,85.3,98.3,85.1,98,85.1z%22/%3E%3Ccircle fill=%22%23777677%22 cx=%2299.6%22 cy=%2282.4%22 r=%221%22/%3E%3Cpath fill=%22%23777677%22 d=%22M36.3,63.6c0.3,0,0.6-0.1,0.9-0.2c0.1,0,0.2-0.1,0.3-0.1c0.3-0.2,0.6-0.5,0.8-0.8c0.2-0.2,0.3-0.5,0.4-0.7 l1.6-5.9l0,0l0,0l4.1-15.4c0-0.2,0.1-0.3,0.1-0.5c0-0.5-0.1-1-0.3-1.4c-0.3-0.6-0.9-1-1.5-1.2l-22.2-6c-0.6-0.2-1.3-0.1-1.9,0.3	c-0.6,0.3-1,0.9-1.2,1.5l-4.8,18.1l0,0l0,0l-0.8,3.2c-0.2,0.6-0.1,1.3,0.3,1.9c0.3,0.6,0.9,1,1.5,1.2L26,60.9l9.6,2.6 C35.8,63.6,36,63.6,36.3,63.6z M18.3,33.5c0.2-0.7,0.8-1.1,1.4-1.1c0.1,0,0.3,0,0.4,0.1l22.2,6c0.4,0.1,0.7,0.4,0.9,0.7	c0.2,0.3,0.3,0.8,0.2,1.1l-3.8,14.1l-4.7-11.8l-10.4,8.6l-4.2-6.6l-6.4,5.7L18.3,33.5z M13.7,56.6c-0.4-0.1-0.7-0.4-0.9-0.7 c-0.2-0.3-0.3-0.8-0.2-1.1l0.8-2.9l6.7-5.9l4.2,6.6l10.3-8.4l4.7,11.8l-1.5,5.6c-0.2,0.8-1,1.3-1.8,1.1L13.7,56.6z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M23.8,43.3c0.3,0.1,0.7,0.1,1,0.1c1.6,0,3.1-1.1,3.5-2.6c0.5-1.9-0.7-3.9-2.6-4.4c-2-0.5-4,0.6-4.5,2.5 c-0.2,0.9-0.1,1.9,0.4,2.7C22,42.5,22.8,43.1,23.8,43.3z M22.1,39.1c0.3-1.2,1.4-1.9,2.6-1.9c0.2,0,0.5,0,0.7,0.1	c1.4,0.4,2.3,1.8,1.9,3.2c-0.4,1.4-1.8,2.2-3.3,1.8c-0.7-0.2-1.3-0.6-1.7-1.2C22,40.5,21.9,39.8,22.1,39.1z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M143.6,60.7l-25.1-20.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3-0.1-0.5-0.1-0.8-0.1c-0.5,0.1-1,0.3-1.3,0.7l-4.7,5.8 c-0.3,0.4-0.5,0.9-0.4,1.5s0.3,1,0.7,1.3l4.1,3.3l0,0l1.9,1.5l0,0l19.2,15.5l0.3,0l3.8,0.5l1.5,0.2l5,0.6L143.6,60.7z M112,48.4 c-0.2-0.2-0.3-0.4-0.4-0.7c0-0.3,0-0.5,0.2-0.7l4.7-5.8c0.2-0.2,0.4-0.3,0.7-0.4c0.3,0,0.5,0,0.7,0.2l4.1,3.3l-6,7.4L112,48.4z M117.2,52.6l-0.3-0.3l6-7.3l0.3,0.3L117.2,52.6z M117.9,53.2l6-7.4l17.7,14.4l-1.1-0.1l0.5,2.3l-2.2-0.1l0.6,2.2l-2.3,0l0.6,2.1 l-2.3,0l0.3,1.1L117.9,53.2z M137.1,68.6l-0.3-1l2.3,0l-0.6-2.1l2.3,0l-0.6-2.1l2.2,0.1l-0.5-2.2l1,0.1l1.9,5.6l-1.8,2.2L137.1,68.6	z%22/%3E%3Cpath fill=%22%23777677%22 d=%22M121.1,52.1c-0.2-0.2-0.5-0.1-0.7,0.1c-0.2,0.2-0.1,0.5,0.1,0.7l10.5,8.5c0.1,0.1,0.2,0.1,0.3,0.1 c0.1,0,0.3-0.1,0.4-0.2c0.2-0.2,0.1-0.5-0.1-0.7L121.1,52.1z%22/%3E%3C/svg%3E") !important;
-  background-repeat: no-repeat;
-  background-position: center 40px;
-  background-size: 300px 300px;
-  padding-top: 350px;
-  padding-bottom: 70px;
-  background-color: #FFFFFF;
-  position: relative;
-  z-index: 90;
-  text-align: center;
-  font-size: 12px !important;
-  font-weight: 500 !important; }
+html:not(.catalog-ui-updated) div[dojoattachpoint="zeroResultsNode"] {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  text-align: center; }
+
+.catalog .zeroResultsNode {
+  font-size: 20px !important;
+  font-weight: 300 !important; }
+
+.catalog .backToTop {
+  z-index: 1; }
+  .catalog .backToTop:focus, .catalog .backToTop:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px #000000;
+    background-color: #FFFFFF; }
 
 .lotusContent div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] .placeRow {
   border-bottom: 1px solid #d8d8d8; }
@@ -11168,9 +11251,10 @@ div[id^="lconn_communities_catalog_widgets_RecommendationsBox_"] a {
   line-height: 1.75em;
   margin-bottom: 0; }
 
+.lotusMain .lotusColLeft .lotusHeading {
+  padding-left: 24px; }
 .lotusMain .lotusColLeft #lconn_communities_catalog_widgets_PlacesNavigation_0 .lotusMenu li a {
   white-space: pre-line; }
-
 .lotusMain .lotusColLeft #lconn_communities_catalog_widgets_TagFilter_0 {
   margin: 0 !important; }
   .lotusMain .lotusColLeft #lconn_communities_catalog_widgets_TagFilter_0 h2 {

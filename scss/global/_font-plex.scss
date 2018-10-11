@@ -1,6 +1,6 @@
 //Plex specific font definitions
 $font-path: '../fonts/IBMPlexSans-' !default;
-@import "./global/repoName";
+@import "repoName";
 
   @font-face {
     font-family: 'IBM Plex Sans';

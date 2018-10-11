@@ -3,7 +3,7 @@
 	color: $link-default !important;
 }
 .ics-viewer{
-	 @import "./components/components";
+	 @import "../components/components";
 }
 /*Globalization Changes END*/
 
@@ -152,7 +152,7 @@ ul.ics-viewer-tabs{
 				background-position:0px!important;
 			}
   }
-	@import './components/likebtn';
+	@import '../components/likebtn';
 	.ics-viewer-action-favorite{
 		.checked img{
 			background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-default) !important;
@@ -447,8 +447,22 @@ ul[data-dojo-attach-point="tagList"]{
 }
 
 #body .ics-viewer div[data-dojo-attach-point="externalIconDiv"] img.externalIcon,
-.ics-viewer div[data-dojo-attach-point="externalIconDiv"] img.externalIcon{
-	background-image:$svg-external-share!important;
+.ics-viewer div[data-dojo-attach-point="externalIconDiv"] img.externalIcon,
+.ics-viewer .commentActions img.externalIcon {
+	background-image: svg-url-with-replaced-fill($svg-external-share, '#000000', lighten($warning, 20%)) !important;
+	background-color: $icon-default;
+	border: 1px solid darken( $warning, 5% );
+	border-radius: 22%;
+}
+.ics-viewer .ics-viewer-banner .ics-viewer-icon.externalIcon {
+	margin-top: 0 !important;
+}
+
+.ics-viewer .ics-commentbox-container.active .commentActions {
+	ul, img {
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 
 .ics-newversionwidget-container form{
@@ -591,7 +605,15 @@ ul[data-dojo-attach-point="tagList"]{
 		padding-top:6px!important;
 	}
 }
-#body .ics-viewer .vcard a.menu_drop_icon{
+#body .ics-viewer .vcard a.menu_drop_icon {
 	margin-left:3px!important;
 	background-position-x:2px!important;
+}
+#body .ics-viewer .vcard a.menu_drop_icon,
+.ics-viewer .ics-panel-entry .header1 .vcard .lotusPerson {
+	position: relative;
+	float: none !important;
+	display: inline-block !important;
+	vertical-align: middle;
+	top: auto;
 }

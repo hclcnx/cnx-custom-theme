@@ -330,8 +330,26 @@ div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
 
 // file upload sharing
 // #lconn_files_widget_UploadFile_0_shareWithLabel
-[id^="lconn_files_widget_UploadFile_"] {
+// with fixes to tighten spacing and not display scroll bar - issue 2192
+div[id^="lconn_share_widget_Dialog_"] {
+  .lotusDialogHeader {
+    margin-bottom: 0 !important;
+  }
+  div[id^="lconn_files_widget_UploadFile_"] {
   display: inline-block !important;
+  .lotusFormTable {
+    margin-top: 0 !important;
+      .lotusFormFieldRow {
+        .lotusFormLabel {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        td > div {
+          margin-bottom: 6px !important;
+        }
+      }
+    }
+  }
 }
 
 //fixes for File Preview -> About -> Get Links

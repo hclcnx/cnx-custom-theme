@@ -10,7 +10,7 @@
   #tableEditProfileContactInfo {
     width: 100% !important;
     td {
-      display: block !important;
+      @include editprofileform($editprofile-layout);
     }
   }
   #displayName_ro {

@@ -53,13 +53,14 @@ html {
   .lotusui30 .lotusWelcomeBox .lotusHeading,
   .lotusui30_layout .lotusWelcomeBox h2,
   .lotusliveui, .lotusliveui30, .scloud3,
-  .ic-orient, .ic-orient button, .ic-orient input, .ic-orient select, .ic-orient textarea, .ocs-nav-bar-wrapper
+  .ic-orient, .ic-orient button, .ic-orient input, .ic-orient select, .ic-orient textarea, .ocs-nav-bar-wrapper,
+  .lotusHeader .shareSome-desc
   {
     font-family: inherit;
   }
 }
 
-// reset to Arial for ckeditor content 
+// reset to Arial for ckeditor content
 html {
   .entryContentContainer,
   .entry-content,
@@ -71,4 +72,4 @@ html {
 
 
 //Plex specific definitions
-@import "./global/font-plex";
+@import "font-plex";
