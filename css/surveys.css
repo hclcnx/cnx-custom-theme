@@ -14,8 +14,7 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
-/*METRICS STYLE SHEET*/
-/* Variable and mixin Imports*/
+/* SURVEYS STYLE SHEET */
 /* Border radius */
 /* Box Shadows */
 /* Note - May also need to include a display:none on an existing button img */
@@ -8646,6 +8645,155 @@ input[type="file"] {
         background-color: transparent !important;
         color: #595859 !important; }
 
+#comments {
+  padding-left: 0px !important; }
+  #comments .qkrAddComment.lotusForm .cke_contents {
+    width: 100% !important;
+    min-width: 240px !important;
+    background-color: #F3F3F3 !important;
+    border: none !important;
+    border-bottom: 2px solid #3C6DF0 !important; }
+  #comments .lotusFeeds.lotusMeta {
+    padding-left: 10px; }
+  #comments .lconnRTE,
+  #comments .lotusFormFooter {
+    padding-left: 0 !important; }
+    #comments .lconnRTE input[type="submit"],
+    #comments .lotusFormFooter input[type="submit"] {
+      border-radius: 2rem !important;
+      border-width: 1px !important;
+      border-style: solid !important;
+      box-shadow: none !important;
+      transform: translateZ(0) !important;
+      -webkit-font-smoothing: antialiased !important;
+      cursor: pointer !important;
+      -webkit-box-align: center !important;
+      -webkit-box-pack: center !important;
+      text-align: center !important;
+      transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+      white-space: nowrap !important;
+      padding: 9px 20px !important;
+      background-image: none !important;
+      margin: 2px 4px 3px 2px !important;
+      background-color: #3C6DF0 !important;
+      border-color: #3C6DF0 !important;
+      color: #FFFFFF !important; }
+      #comments .lconnRTE input[type="submit"], #comments .lconnRTE input[type="submit"]:hover, #comments .lconnRTE input[type="submit"]:active, #comments .lconnRTE input[type="submit"]:focus,
+      #comments .lotusFormFooter input[type="submit"],
+      #comments .lotusFormFooter input[type="submit"]:hover,
+      #comments .lotusFormFooter input[type="submit"]:active,
+      #comments .lotusFormFooter input[type="submit"]:focus {
+        text-decoration: none !important;
+        font-weight: 500 !important; }
+      #comments .lconnRTE input[type="submit"]:hover, #comments .lconnRTE input[type="submit"]:active,
+      #comments .lotusFormFooter input[type="submit"]:hover,
+      #comments .lotusFormFooter input[type="submit"]:active {
+        outline: none; }
+      #comments .lconnRTE input[type="submit"]:focus,
+      #comments .lotusFormFooter input[type="submit"]:focus {
+        box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+        outline: none !important; }
+      .dj_a11y #comments .lconnRTE input[type="submit"]:focus, .dijit_a11y #comments .lconnRTE input[type="submit"]:focus,
+      .dj_a11y #comments .lotusFormFooter input[type="submit"]:focus,
+      .dijit_a11y #comments .lotusFormFooter input[type="submit"]:focus {
+        box-shadow: none !important;
+        outline: 1px solid #3C6DF0 !important;
+        outline-offset: 1px; }
+      #comments .lconnRTE input[type="submit"]:active, #comments .lconnRTE input[type="submit"]:hover,
+      #comments .lotusFormFooter input[type="submit"]:active,
+      #comments .lotusFormFooter input[type="submit"]:hover {
+        background-color: #FFFFFF !important;
+        color: #3C6DF0 !important;
+        border-color: #3C6DF0 !important; }
+
+.lotusui30 div[id^="section_eventcomments_"] div[dojoattachpoint="noCommentHintAP"] {
+  padding-bottom: 20px; }
+.lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] {
+  padding-bottom: 20px; }
+  .lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] .lotusMeta {
+    font-size: 12px !important;
+    font-weight: 500 !important; }
+    .lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] .lotusMeta span.vcard {
+      margin-bottom: 0px; }
+.lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important; }
+  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"], .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active {
+    outline: none; }
+  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus, .dijit_a11y .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover {
+    background-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    border-color: #3C6DF0 !important; }
+.lotusui30 div[id^="section_eventcomments_"] .lotusForm2 {
+  padding-top: 10px; }
+  .lotusui30 div[id^="section_eventcomments_"] .lotusForm2 .lconnRTE [id^="cke_editor"] {
+    width: 100%; }
+    .lotusui30 div[id^="section_eventcomments_"] .lotusForm2 .lconnRTE [id^="cke_editor"] .cke_contents {
+      width: 100% !important;
+      min-width: 240px !important;
+      border: none !important;
+      border-bottom: 2px solid #3C6DF0 !important; }
+
+#blogCommentPanel #blogAddCommentForm .lotusPostContent {
+  display: inline; }
+  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormTitle {
+    padding-top: 0px; }
+  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody {
+    padding-left: 0px;
+    padding-right: 0px; }
+    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^="cke_editor"] {
+      width: 100% !important; }
+      #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^="cke_editor"] .cke_contents {
+        outline: none !important;
+        padding: 0 !important;
+        min-width: 240px !important;
+        background-color: #F3F3F3 !important;
+        border: none !important;
+        border-bottom: 2px solid #3C6DF0 !important; }
+    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody input#postCommentAsTrackback {
+      margin-left: 2px; }
+    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody label {
+      margin-top: 3px; }
+    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint="selectBlogAP"] {
+      padding-top: 10px; }
+      #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint="selectBlogAP"] select#postCommentAsTrackbackWeblogSelect {
+        margin-left: 0px !important; }
+  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormFooter {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+#comments div[id^="lconn_wikis_widget_CommentsMentions_"] div.lotusMeta, #comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > a, #comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > span {
+  font-size: 12px !important;
+  font-weight: 500 !important; }
+#comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > span {
+  margin-bottom: 0px !important; }
+
 #body .lconnPickerSourceArea .headerSelector .checkbox {
   margin-top: 5px !important; }
 #body .lconnPickerSourceArea .headerSelector .icon img.lconn-ftype16 {
@@ -10894,155 +11042,6 @@ form.lotusForm.qkrEdit .lotusTabs.aria_toolbar {
 div[id^="lconn_share0_widget_Dialog_"] form .lotusDialogContent._qkrDialogCompact {
   padding: 0 !important; }
 
-#comments {
-  padding-left: 0px !important; }
-  #comments .qkrAddComment.lotusForm .cke_contents {
-    width: 100% !important;
-    min-width: 240px !important;
-    background-color: #F3F3F3 !important;
-    border: none !important;
-    border-bottom: 2px solid #3C6DF0 !important; }
-  #comments .lotusFeeds.lotusMeta {
-    padding-left: 10px; }
-  #comments .lconnRTE,
-  #comments .lotusFormFooter {
-    padding-left: 0 !important; }
-    #comments .lconnRTE input[type="submit"],
-    #comments .lotusFormFooter input[type="submit"] {
-      border-radius: 2rem !important;
-      border-width: 1px !important;
-      border-style: solid !important;
-      box-shadow: none !important;
-      transform: translateZ(0) !important;
-      -webkit-font-smoothing: antialiased !important;
-      cursor: pointer !important;
-      -webkit-box-align: center !important;
-      -webkit-box-pack: center !important;
-      text-align: center !important;
-      transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
-      white-space: nowrap !important;
-      padding: 9px 20px !important;
-      background-image: none !important;
-      margin: 2px 4px 3px 2px !important;
-      background-color: #3C6DF0 !important;
-      border-color: #3C6DF0 !important;
-      color: #FFFFFF !important; }
-      #comments .lconnRTE input[type="submit"], #comments .lconnRTE input[type="submit"]:hover, #comments .lconnRTE input[type="submit"]:active, #comments .lconnRTE input[type="submit"]:focus,
-      #comments .lotusFormFooter input[type="submit"],
-      #comments .lotusFormFooter input[type="submit"]:hover,
-      #comments .lotusFormFooter input[type="submit"]:active,
-      #comments .lotusFormFooter input[type="submit"]:focus {
-        text-decoration: none !important;
-        font-weight: 500 !important; }
-      #comments .lconnRTE input[type="submit"]:hover, #comments .lconnRTE input[type="submit"]:active,
-      #comments .lotusFormFooter input[type="submit"]:hover,
-      #comments .lotusFormFooter input[type="submit"]:active {
-        outline: none; }
-      #comments .lconnRTE input[type="submit"]:focus,
-      #comments .lotusFormFooter input[type="submit"]:focus {
-        box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
-        outline: none !important; }
-      .dj_a11y #comments .lconnRTE input[type="submit"]:focus, .dijit_a11y #comments .lconnRTE input[type="submit"]:focus,
-      .dj_a11y #comments .lotusFormFooter input[type="submit"]:focus,
-      .dijit_a11y #comments .lotusFormFooter input[type="submit"]:focus {
-        box-shadow: none !important;
-        outline: 1px solid #3C6DF0 !important;
-        outline-offset: 1px; }
-      #comments .lconnRTE input[type="submit"]:active, #comments .lconnRTE input[type="submit"]:hover,
-      #comments .lotusFormFooter input[type="submit"]:active,
-      #comments .lotusFormFooter input[type="submit"]:hover {
-        background-color: #FFFFFF !important;
-        color: #3C6DF0 !important;
-        border-color: #3C6DF0 !important; }
-
-.lotusui30 div[id^="section_eventcomments_"] div[dojoattachpoint="noCommentHintAP"] {
-  padding-bottom: 20px; }
-.lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] {
-  padding-bottom: 20px; }
-  .lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] .lotusMeta {
-    font-size: 12px !important;
-    font-weight: 500 !important; }
-    .lotusui30 div[id^="section_eventcomments_"] div[id$="_commentList"] .lotusMeta span.vcard {
-      margin-bottom: 0px; }
-.lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"] {
-  border-radius: 2rem !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  box-shadow: none !important;
-  transform: translateZ(0) !important;
-  -webkit-font-smoothing: antialiased !important;
-  cursor: pointer !important;
-  -webkit-box-align: center !important;
-  -webkit-box-pack: center !important;
-  text-align: center !important;
-  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
-  white-space: nowrap !important;
-  padding: 9px 20px !important;
-  background-image: none !important;
-  margin: 2px 4px 3px 2px !important;
-  background-color: #FFFFFF !important;
-  border-color: #3C6DF0 !important;
-  color: #3C6DF0 !important; }
-  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"], .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
-    text-decoration: none !important;
-    font-weight: 500 !important; }
-  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active {
-    outline: none; }
-  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
-    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
-    outline: none !important; }
-  .dj_a11y .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus, .dijit_a11y .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:focus {
-    box-shadow: none !important;
-    outline: 1px solid #3C6DF0 !important;
-    outline-offset: 1px; }
-  .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:active, .lotusui30 div[id^="section_eventcomments_"] a[id$="_addCommentLink"]:hover {
-    background-color: #3C6DF0 !important;
-    color: #FFFFFF !important;
-    border-color: #3C6DF0 !important; }
-.lotusui30 div[id^="section_eventcomments_"] .lotusForm2 {
-  padding-top: 10px; }
-  .lotusui30 div[id^="section_eventcomments_"] .lotusForm2 .lconnRTE [id^="cke_editor"] {
-    width: 100%; }
-    .lotusui30 div[id^="section_eventcomments_"] .lotusForm2 .lconnRTE [id^="cke_editor"] .cke_contents {
-      width: 100% !important;
-      min-width: 240px !important;
-      border: none !important;
-      border-bottom: 2px solid #3C6DF0 !important; }
-
-#blogCommentPanel #blogAddCommentForm .lotusPostContent {
-  display: inline; }
-  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormTitle {
-    padding-top: 0px; }
-  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody {
-    padding-left: 0px;
-    padding-right: 0px; }
-    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^="cke_editor"] {
-      width: 100% !important; }
-      #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^="cke_editor"] .cke_contents {
-        outline: none !important;
-        padding: 0 !important;
-        min-width: 240px !important;
-        background-color: #F3F3F3 !important;
-        border: none !important;
-        border-bottom: 2px solid #3C6DF0 !important; }
-    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody input#postCommentAsTrackback {
-      margin-left: 2px; }
-    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody label {
-      margin-top: 3px; }
-    #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint="selectBlogAP"] {
-      padding-top: 10px; }
-      #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint="selectBlogAP"] select#postCommentAsTrackbackWeblogSelect {
-        margin-left: 0px !important; }
-  #blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormFooter {
-    padding-left: 0px;
-    padding-right: 0px; }
-
-#comments div[id^="lconn_wikis_widget_CommentsMentions_"] div.lotusMeta, #comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > a, #comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > span {
-  font-size: 12px !important;
-  font-weight: 500 !important; }
-#comments div[id^="lconn_wikis_widget_CommentsMentions_"] .lotusMeta > span {
-  margin-bottom: 0px !important; }
-
 #lotusInfoBox {
   margin: 0 !important;
   padding: 32px !important;
@@ -11051,438 +11050,173 @@ div[id^="lconn_share0_widget_Dialog_"] form .lotusDialogContent._qkrDialogCompac
     border: none !important;
     background-color: #F3F3F3 !important; }
 
-.lotusContent {
-  margin-top: 32px !important; }
-  .lotusContent .metricsDateRangeFilter label, .lotusContent .metricsDateRangeFilter select,
-  .lotusContent #selectDropDownContainerID label,
-  .lotusContent #selectDropDownContainerID select,
-  .lotusContent #divGroupByFilterID label,
-  .lotusContent #divGroupByFilterID select {
-    font-size: 14px !important;
-    font-weight: 400 !important; }
+div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
+  top: -30px !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top {
+    height: 68px !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top .dijitTabListWrapper {
+      height: auto !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
+      padding-bottom: calc(.375rem + 3px) !important; }
+      div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab {
+        padding: 0.625rem 0 0.375rem 0 !important;
+        margin: 0 0 0 1rem !important;
+        border-bottom: none !important; }
+        div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab.dijitTabChecked {
+          border-bottom: 4px solid #3C6DF0 !important; }
+        div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent {
+          margin-left: 0 !important; }
+          div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent span {
+            padding: 0.5rem 1rem !important;
+            color: #595859 !important;
+            border: 1px solid transparent !important;
+            font-size: 14px !important;
+            font-weight: 600 !important; }
+            div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent span:focus {
+              text-decoration: none !important;
+              border-color: #3C6DF0 !important;
+              color: #595859 !important; }
+            div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent span:hover {
+              border-color: #3C6DF0 !important;
+              background-color: #3C6DF0 !important;
+              color: #FFFFFF !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .lotusMessage img {
+    margin-top: 12px !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .lotusMessage span {
+    font-size: 1.3em !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton .dijitButtonText {
+    font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover {
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover .dijitButtonText {
+      color: #FFFFFF !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonFocused {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter .dijitButtonContents {
+    outline: none !important; }
 
-#dateRangeTextPID b {
-  color: #000000 !important;
-  font-size: 16px !important;
-  font-weight: 600 !important; }
+.lfSummaryWrapper div.dijitVisible {
+  top: 24px !important; }
+  .lfSummaryWrapper div.dijitVisible .dijitContentPane {
+    top: 0 !important;
+    left: 0 !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important; }
+    .lfSummaryWrapper div.dijitVisible .dijitContentPane.lfOverviewToolbar {
+      padding: 0 !important; }
+.lfSummaryWrapper .lfViewResponseControls {
+  border-bottom: none !important; }
+  .lfSummaryWrapper .lfViewResponseControls .lotusInlinelist {
+    height: 54px !important;
+    bottom: 0 !important; }
+  .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li {
+    padding: 0.625rem 0 0.375rem 0 !important;
+    margin: 0 0 0 1rem !important;
+    border-bottom: none !important; }
+    .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li.active {
+      border-bottom: 4px solid #3C6DF0 !important; }
+    .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li:focus {
+      outline: none !important; }
+    .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li a {
+      padding: 0.5rem 1rem !important;
+      color: #595859 !important;
+      border: 1px solid transparent !important;
+      font-size: 14px !important;
+      font-weight: 600 !important; }
+      .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li a:focus {
+        text-decoration: none !important;
+        border-color: #3C6DF0 !important; }
+      .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li a:hover {
+        border-color: #3C6DF0 !important;
+        background-color: #3C6DF0 !important;
+        color: #FFFFFF !important; }
 
-#statisticHeadDivId .LineChartHeaderRectClz {
-  fill: #777677 !important; }
-#statisticHeadDivId .LineChartBodyRectClz {
-  fill: #F3F3F3 !important; }
-#statisticHeadDivId text.LineChartHeaderRectDespClz {
-  alignment-baseline: middle;
-  font-size: 16px !important; }
-#statisticHeadDivId text.LineChartBodyRectDespClz {
-  font-style: italic; }
-
-.metricsReport {
-  outline: none !important; }
-  .metricsReport#reportContainerDivID {
-    overflow-x: auto !important; }
-  .metricsReport #statisticHeadDivId,
-  .metricsReport #lineChartViewTable,
-  .metricsReport #appFilterDivId,
-  .metricsReport #reportDivId,
-  .metricsReport #lineChartTableDiv,
-  .metricsReport #hBarViewTable,
-  .metricsReport #hBarAppFilterDivId,
-  .metricsReport #hBarChartDivId {
-    width: 100% !important; }
-    .metricsReport #statisticHeadDivId svg,
-    .metricsReport #statisticHeadDivId g[class^="data-"] rect,
-    .metricsReport #lineChartViewTable svg,
-    .metricsReport #lineChartViewTable g[class^="data-"] rect,
-    .metricsReport #appFilterDivId svg,
-    .metricsReport #appFilterDivId g[class^="data-"] rect,
-    .metricsReport #reportDivId svg,
-    .metricsReport #reportDivId g[class^="data-"] rect,
-    .metricsReport #lineChartTableDiv svg,
-    .metricsReport #lineChartTableDiv g[class^="data-"] rect,
-    .metricsReport #hBarViewTable svg,
-    .metricsReport #hBarViewTable g[class^="data-"] rect,
-    .metricsReport #hBarAppFilterDivId svg,
-    .metricsReport #hBarAppFilterDivId g[class^="data-"] rect,
-    .metricsReport #hBarChartDivId svg,
-    .metricsReport #hBarChartDivId g[class^="data-"] rect {
-      width: 100% !important; }
-
-.metricsReport #rightMsgContainerDivID,
-.metricsReport #lineChartRightDivID {
-  margin-left: 20px; }
-  .metricsReport #rightMsgContainerDivID div,
-  .metricsReport #lineChartRightDivID div {
-    background-color: #FFFFFF !important;
-    color: #000000 !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    border-bottom: 1px solid #d8d8d8; }
-  .metricsReport #rightMsgContainerDivID span.warning,
-  .metricsReport #lineChartRightDivID span.warning {
-    white-space: normal;
-    display: block;
-    max-width: 260px;
-    padding: 20px 10px;
-    font-size: 20px !important;
-    font-weight: 300 !important; }
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID rect.topUHeaderRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID rect.topUHeaderRect {
-    fill: #FFFFFF !important;
-    border-bottom: 1px solid #d8d8d8; }
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID text.TopUHeaderRectDespClz,
-  .metricsReport #lineChartRightDivID #topUsersSvgID text.TopUHeaderRectDespClz {
-    fill: #000000 !important;
-    font-size: 16px !important;
-    font-weight: 600 !important; }
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(even) rect.topUItemHeader,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(even) rect.followedNoRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(even) rect.postsNoRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(even) rect.topUClearBlackLineRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(even) rect.topUItemBody,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(even) rect.topUItemHeader,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(even) rect.followedNoRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(even) rect.postsNoRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(even) rect.topUClearBlackLineRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(even) rect.topUItemBody {
-    fill: #F3F3F3 !important; }
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(odd) rect.topUItemHeader,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(odd) rect.followedNoRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(odd) rect.postsNoRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(odd) rect.topUClearBlackLineRect,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID > g:nth-child(odd) rect.topUItemBody,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(odd) rect.topUItemHeader,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(odd) rect.followedNoRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(odd) rect.postsNoRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(odd) rect.topUClearBlackLineRect,
-  .metricsReport #lineChartRightDivID #topUsersSvgID > g:nth-child(odd) rect.topUItemBody {
-    fill: #FFFFFF !important; }
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID text.postsNo,
-  .metricsReport #rightMsgContainerDivID #topUsersSvgID text.postText,
-  .metricsReport #lineChartRightDivID #topUsersSvgID text.postsNo,
-  .metricsReport #lineChartRightDivID #topUsersSvgID text.postText {
-    fill: #000000 !important; }
-  .metricsReport #rightMsgContainerDivID #topUViewTable a,
-  .metricsReport #rightMsgContainerDivID #topUViewChart a,
-  .metricsReport #lineChartRightDivID #topUViewTable a,
-  .metricsReport #lineChartRightDivID #topUViewChart a {
-    font-size: 12px !important;
-    font-weight: 500 !important; }
-
-#groupByTableDivID {
-  font-size: 14px !important;
-  font-weight: 400 !important; }
-  #groupByTableDivID table tr th, #groupByTableDivID table tr td {
-    padding-top: 6px;
-    padding-bottom: 6px; }
-
-#appFilterDivId .data-Total > rect {
-  fill: #777677 !important; }
-#appFilterDivId .appflitertext {
-  font-weight: bold !important; }
-
-#statisticHeaderTableID tbody tr > th {
-  font-size: 16px !important;
-  height: 2.4em !important;
-  padding-left: 0em !important; }
-#statisticHeaderTableID tbody tr > td {
-  padding-left: 0em !important; }
-#statisticHeaderTableID tbody tr:nth-child(3) {
-  font-style: italic; }
-
-#lineChartTableID tbody > tr:nth-child(1) > th {
-  background: #F3F3F3 !important; }
-#lineChartTableID tbody > tr > th:nth-child(n+2), #lineChartTableID td:nth-child(n+2) {
-  padding-left: 0em !important; }
-
-#reportContainerDivID td span:before,
-#reportContainerDivID th span:before,
-#hBarTableDiv td span:before,
-#hBarTableDiv th span:before,
-#lineChartTableID td span:before,
-#lineChartTableID th span:before,
-#hBarAppFilterDivId td span:before,
-#hBarAppFilterDivId th span:before {
-  width: 8px !important; }
-#reportContainerDivID td, #reportContainerDivID th,
-#hBarTableDiv td,
-#hBarTableDiv th,
-#lineChartTableID td,
-#lineChartTableID th,
-#hBarAppFilterDivId td,
-#hBarAppFilterDivId th {
-  padding-left: 1.6em !important; }
-#reportContainerDivID g[name="hBBottomBar"] rect,
-#hBarTableDiv g[name="hBBottomBar"] rect,
-#lineChartTableID g[name="hBBottomBar"] rect,
-#hBarAppFilterDivId g[name="hBBottomBar"] rect {
-  fill: #FFFFFF !important; }
-#reportContainerDivID #svgLine .line,
-#hBarTableDiv #svgLine .line,
-#lineChartTableID #svgLine .line,
-#hBarAppFilterDivId #svgLine .line {
-  stroke-width: 4 !important; }
-#reportContainerDivID .data-OVERALL > rect,
-#hBarTableDiv .data-OVERALL > rect,
-#lineChartTableID .data-OVERALL > rect,
-#hBarAppFilterDivId .data-OVERALL > rect {
-  fill: #777677 !important;
-  stroke: #777677 !important; }
-#reportContainerDivID .data-ACTIVITIES.line,
-#hBarTableDiv .data-ACTIVITIES.line,
-#lineChartTableID .data-ACTIVITIES.line,
-#hBarAppFilterDivId .data-ACTIVITIES.line {
-  stroke: #e62325 !important; }
-#reportContainerDivID .data-ACTIVITIES rect,
-#hBarTableDiv .data-ACTIVITIES rect,
-#lineChartTableID .data-ACTIVITIES rect,
-#hBarAppFilterDivId .data-ACTIVITIES rect {
-  fill: #e62325 !important;
-  stroke: #e62325 !important; }
-#reportContainerDivID .data-ACTIVITIES td span:before,
-#reportContainerDivID .data-ACTIVITIES th span:before,
-#reportContainerDivID .data-ACTIVITIES td:first-child span:before,
-#hBarTableDiv .data-ACTIVITIES td span:before,
-#hBarTableDiv .data-ACTIVITIES th span:before,
-#hBarTableDiv .data-ACTIVITIES td:first-child span:before,
-#lineChartTableID .data-ACTIVITIES td span:before,
-#lineChartTableID .data-ACTIVITIES th span:before,
-#lineChartTableID .data-ACTIVITIES td:first-child span:before,
-#hBarAppFilterDivId .data-ACTIVITIES td span:before,
-#hBarAppFilterDivId .data-ACTIVITIES th span:before,
-#hBarAppFilterDivId .data-ACTIVITIES td:first-child span:before {
-  background-color: #e62325 !important; }
-#reportContainerDivID .data-BLOGS.line,
-#hBarTableDiv .data-BLOGS.line,
-#lineChartTableID .data-BLOGS.line,
-#hBarAppFilterDivId .data-BLOGS.line {
-  stroke: #00884b !important; }
-#reportContainerDivID .data-BLOGS rect,
-#hBarTableDiv .data-BLOGS rect,
-#lineChartTableID .data-BLOGS rect,
-#hBarAppFilterDivId .data-BLOGS rect {
-  fill: #00884b !important;
-  stroke: #00884b !important; }
-#reportContainerDivID .data-BLOGS td span:before,
-#reportContainerDivID .data-BLOGS th span:before,
-#reportContainerDivID .data-BLOGS td:first-child span:before,
-#hBarTableDiv .data-BLOGS td span:before,
-#hBarTableDiv .data-BLOGS th span:before,
-#hBarTableDiv .data-BLOGS td:first-child span:before,
-#lineChartTableID .data-BLOGS td span:before,
-#lineChartTableID .data-BLOGS th span:before,
-#lineChartTableID .data-BLOGS td:first-child span:before,
-#hBarAppFilterDivId .data-BLOGS td span:before,
-#hBarAppFilterDivId .data-BLOGS th span:before,
-#hBarAppFilterDivId .data-BLOGS td:first-child span:before {
-  background-color: #00884b !important; }
-#reportContainerDivID .data-BOOKMARKS.line,
-#hBarTableDiv .data-BOOKMARKS.line,
-#lineChartTableID .data-BOOKMARKS.line,
-#hBarAppFilterDivId .data-BOOKMARKS.line {
-  stroke: #dc267f !important; }
-#reportContainerDivID .data-BOOKMARKS rect,
-#hBarTableDiv .data-BOOKMARKS rect,
-#lineChartTableID .data-BOOKMARKS rect,
-#hBarAppFilterDivId .data-BOOKMARKS rect {
-  fill: #dc267f !important;
-  stroke: #dc267f !important; }
-#reportContainerDivID .data-BOOKMARKS td span:before,
-#reportContainerDivID .data-BOOKMARKS th span:before,
-#reportContainerDivID .data-BOOKMARKS td:first-child span:before,
-#hBarTableDiv .data-BOOKMARKS td span:before,
-#hBarTableDiv .data-BOOKMARKS th span:before,
-#hBarTableDiv .data-BOOKMARKS td:first-child span:before,
-#lineChartTableID .data-BOOKMARKS td span:before,
-#lineChartTableID .data-BOOKMARKS th span:before,
-#lineChartTableID .data-BOOKMARKS td:first-child span:before,
-#hBarAppFilterDivId .data-BOOKMARKS td span:before,
-#hBarAppFilterDivId .data-BOOKMARKS th span:before,
-#hBarAppFilterDivId .data-BOOKMARKS td:first-child span:before {
-  background-color: #dc267f !important; }
-#reportContainerDivID .data-COMMUNITIES.line,
-#hBarTableDiv .data-COMMUNITIES.line,
-#lineChartTableID .data-COMMUNITIES.line,
-#hBarAppFilterDivId .data-COMMUNITIES.line {
-  stroke: #008673 !important; }
-#reportContainerDivID .data-COMMUNITIES rect,
-#hBarTableDiv .data-COMMUNITIES rect,
-#lineChartTableID .data-COMMUNITIES rect,
-#hBarAppFilterDivId .data-COMMUNITIES rect {
-  fill: #008673 !important;
-  stroke: #008673 !important; }
-#reportContainerDivID .data-COMMUNITIES td span:before,
-#reportContainerDivID .data-COMMUNITIES th span:before,
-#reportContainerDivID .data-COMMUNITIES td:first-child span:before,
-#hBarTableDiv .data-COMMUNITIES td span:before,
-#hBarTableDiv .data-COMMUNITIES th span:before,
-#hBarTableDiv .data-COMMUNITIES td:first-child span:before,
-#lineChartTableID .data-COMMUNITIES td span:before,
-#lineChartTableID .data-COMMUNITIES th span:before,
-#lineChartTableID .data-COMMUNITIES td:first-child span:before,
-#hBarAppFilterDivId .data-COMMUNITIES td span:before,
-#hBarAppFilterDivId .data-COMMUNITIES th span:before,
-#hBarAppFilterDivId .data-COMMUNITIES td:first-child span:before {
-  background-color: #008673 !important; }
-#reportContainerDivID .data-FILES.line,
-#hBarTableDiv .data-FILES.line,
-#lineChartTableID .data-FILES.line,
-#hBarAppFilterDivId .data-FILES.line {
-  stroke: #3C6DF0 !important; }
-#reportContainerDivID .data-FILES rect,
-#hBarTableDiv .data-FILES rect,
-#lineChartTableID .data-FILES rect,
-#hBarAppFilterDivId .data-FILES rect {
-  fill: #3C6DF0 !important;
-  stroke: #3C6DF0 !important; }
-#reportContainerDivID .data-FILES td span:before,
-#reportContainerDivID .data-FILES th span:before,
-#reportContainerDivID .data-FILES td:first-child span:before,
-#hBarTableDiv .data-FILES td span:before,
-#hBarTableDiv .data-FILES th span:before,
-#hBarTableDiv .data-FILES td:first-child span:before,
-#lineChartTableID .data-FILES td span:before,
-#lineChartTableID .data-FILES th span:before,
-#lineChartTableID .data-FILES td:first-child span:before,
-#hBarAppFilterDivId .data-FILES td span:before,
-#hBarAppFilterDivId .data-FILES th span:before,
-#hBarAppFilterDivId .data-FILES td:first-child span:before {
-  background-color: #3C6DF0 !important; }
-#reportContainerDivID .data-FORUMS.line,
-#hBarTableDiv .data-FORUMS.line,
-#lineChartTableID .data-FORUMS.line,
-#hBarAppFilterDivId .data-FORUMS.line {
-  stroke: #9753e1 !important; }
-#reportContainerDivID .data-FORUMS rect,
-#hBarTableDiv .data-FORUMS rect,
-#lineChartTableID .data-FORUMS rect,
-#hBarAppFilterDivId .data-FORUMS rect {
-  fill: #9753e1 !important;
-  stroke: #9753e1 !important; }
-#reportContainerDivID .data-FORUMS td span:before,
-#reportContainerDivID .data-FORUMS th span:before,
-#reportContainerDivID .data-FORUMS td:first-child span:before,
-#hBarTableDiv .data-FORUMS td span:before,
-#hBarTableDiv .data-FORUMS th span:before,
-#hBarTableDiv .data-FORUMS td:first-child span:before,
-#lineChartTableID .data-FORUMS td span:before,
-#lineChartTableID .data-FORUMS th span:before,
-#lineChartTableID .data-FORUMS td:first-child span:before,
-#hBarAppFilterDivId .data-FORUMS td span:before,
-#hBarAppFilterDivId .data-FORUMS th span:before,
-#hBarAppFilterDivId .data-FORUMS td:first-child span:before {
-  background-color: #9753e1 !important; }
-#reportContainerDivID .data-HOMEPAGE.line,
-#hBarTableDiv .data-HOMEPAGE.line,
-#lineChartTableID .data-HOMEPAGE.line,
-#hBarAppFilterDivId .data-HOMEPAGE.line {
-  stroke: #c22dd5 !important; }
-#reportContainerDivID .data-HOMEPAGE rect,
-#hBarTableDiv .data-HOMEPAGE rect,
-#lineChartTableID .data-HOMEPAGE rect,
-#hBarAppFilterDivId .data-HOMEPAGE rect {
-  fill: #c22dd5 !important;
-  stroke: #c22dd5 !important; }
-#reportContainerDivID .data-HOMEPAGE td span:before,
-#reportContainerDivID .data-HOMEPAGE th span:before,
-#reportContainerDivID .data-HOMEPAGE td:first-child span:before,
-#hBarTableDiv .data-HOMEPAGE td span:before,
-#hBarTableDiv .data-HOMEPAGE th span:before,
-#hBarTableDiv .data-HOMEPAGE td:first-child span:before,
-#lineChartTableID .data-HOMEPAGE td span:before,
-#lineChartTableID .data-HOMEPAGE th span:before,
-#lineChartTableID .data-HOMEPAGE td:first-child span:before,
-#hBarAppFilterDivId .data-HOMEPAGE td span:before,
-#hBarAppFilterDivId .data-HOMEPAGE th span:before,
-#hBarAppFilterDivId .data-HOMEPAGE td:first-child span:before {
-  background-color: #c22dd5 !important; }
-#reportContainerDivID .data-IDEATIONBLOG.line,
-#hBarTableDiv .data-IDEATIONBLOG.line,
-#lineChartTableID .data-IDEATIONBLOG.line,
-#hBarAppFilterDivId .data-IDEATIONBLOG.line {
-  stroke: #db7c00 !important; }
-#reportContainerDivID .data-IDEATIONBLOG rect,
-#hBarTableDiv .data-IDEATIONBLOG rect,
-#lineChartTableID .data-IDEATIONBLOG rect,
-#hBarAppFilterDivId .data-IDEATIONBLOG rect {
-  fill: #db7c00 !important;
-  stroke: #db7c00 !important; }
-#reportContainerDivID .data-IDEATIONBLOG td span:before,
-#reportContainerDivID .data-IDEATIONBLOG th span:before,
-#reportContainerDivID .data-IDEATIONBLOG td:first-child span:before,
-#hBarTableDiv .data-IDEATIONBLOG td span:before,
-#hBarTableDiv .data-IDEATIONBLOG th span:before,
-#hBarTableDiv .data-IDEATIONBLOG td:first-child span:before,
-#lineChartTableID .data-IDEATIONBLOG td span:before,
-#lineChartTableID .data-IDEATIONBLOG th span:before,
-#lineChartTableID .data-IDEATIONBLOG td:first-child span:before,
-#hBarAppFilterDivId .data-IDEATIONBLOG td span:before,
-#hBarAppFilterDivId .data-IDEATIONBLOG th span:before,
-#hBarAppFilterDivId .data-IDEATIONBLOG td:first-child span:before {
-  background-color: #db7c00 !important; }
-#reportContainerDivID .data-PROFILES.line,
-#hBarTableDiv .data-PROFILES.line,
-#lineChartTableID .data-PROFILES.line,
-#hBarAppFilterDivId .data-PROFILES.line {
-  stroke: #188291 !important; }
-#reportContainerDivID .data-PROFILES rect,
-#hBarTableDiv .data-PROFILES rect,
-#lineChartTableID .data-PROFILES rect,
-#hBarAppFilterDivId .data-PROFILES rect {
-  fill: #188291 !important;
-  stroke: #188291 !important; }
-#reportContainerDivID .data-PROFILES td span:before,
-#reportContainerDivID .data-PROFILES th span:before,
-#reportContainerDivID .data-PROFILES td:first-child span:before,
-#hBarTableDiv .data-PROFILES td span:before,
-#hBarTableDiv .data-PROFILES th span:before,
-#hBarTableDiv .data-PROFILES td:first-child span:before,
-#lineChartTableID .data-PROFILES td span:before,
-#lineChartTableID .data-PROFILES th span:before,
-#lineChartTableID .data-PROFILES td:first-child span:before,
-#hBarAppFilterDivId .data-PROFILES td span:before,
-#hBarAppFilterDivId .data-PROFILES th span:before,
-#hBarAppFilterDivId .data-PROFILES td:first-child span:before {
-  background-color: #188291 !important; }
-#reportContainerDivID .data-WIKIS.line,
-#hBarTableDiv .data-WIKIS.line,
-#lineChartTableID .data-WIKIS.line,
-#hBarAppFilterDivId .data-WIKIS.line {
-  stroke: #047cc0 !important; }
-#reportContainerDivID .data-WIKIS rect,
-#hBarTableDiv .data-WIKIS rect,
-#lineChartTableID .data-WIKIS rect,
-#hBarAppFilterDivId .data-WIKIS rect {
-  fill: #047cc0 !important;
-  stroke: #047cc0 !important; }
-#reportContainerDivID .data-WIKIS td span:before,
-#reportContainerDivID .data-WIKIS th span:before,
-#reportContainerDivID .data-WIKIS td:first-child span:before,
-#hBarTableDiv .data-WIKIS td span:before,
-#hBarTableDiv .data-WIKIS th span:before,
-#hBarTableDiv .data-WIKIS td:first-child span:before,
-#lineChartTableID .data-WIKIS td span:before,
-#lineChartTableID .data-WIKIS th span:before,
-#lineChartTableID .data-WIKIS td:first-child span:before,
-#hBarAppFilterDivId .data-WIKIS td span:before,
-#hBarAppFilterDivId .data-WIKIS th span:before,
-#hBarAppFilterDivId .data-WIKIS td:first-child span:before {
-  background-color: #047cc0 !important; }
-
-#hBarChartBodyDivId {
-  border: none !important; }
-
-#moveCirleId {
-  fill: #777677 !important; }
-
-#HorizontalRuleLabelsContain a {
-  color: #000000 !important; }
-
-#reportContainerDivID #statisticHeaderTableID th, #reportContainerDivID #statisticHeaderTableID td {
-  padding-left: 0em !important; }
-
-.appfiltertext,
-.bottomRectText_textBar,
-.gridtable {
+.lfMn.lotusui30dojo .lotusDialogHeader {
+  padding-top: 2rem !important; }
+.lfMn.lotusui30dojo .lotusDialogContent {
+  padding: 0px 20px !important; }
+.lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton {
   font-family: inherit !important; }
+  .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover {
+    transition: color 150ms ease-in, background-color 150ms ease-in, border-color 150ms ease-in !important;
+    border-color: #3C6DF0 !important;
+    background-color: #3C6DF0 !important; }
+    .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover span {
+      color: #FFFFFF !important; }
+  .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton.dijitFocused {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
+  .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton .dijitButtonContents:focus {
+    outline: none !important; }
+.lfMn.lotusui30dojo .lfDialogContent .dijitCheckBox {
+  width: 17px !important; }
+.lfMn.lotusui30dojo div[id^="freedom_widget_solution_environment_OptionsList"] .dijitCheckBox {
+  margin-right: 3px; }
+.lfMn.lotusui30dojo .input-cell .dijitTextBox {
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: .375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  height: auto !important; }
+  .lfMn.lotusui30dojo .input-cell .dijitTextBox:focus, .lfMn.lotusui30dojo .input-cell .dijitTextBox .dijitTextBoxFocused {
+    outline: none !important;
+    border-color: #3C6DF0 !important;
+    box-shadow: 0 1px 0 #3C6DF0 !important; }
+.lfMn.lotusui30dojo .secondary-action .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
+  text-decoration: none !important; }
+.lfMn.lotusui30dojo .dijitDropDownButton .dijitButtonNode {
+  font-size: 12px !important;
+  font-weight: 500 !important; }
+  .lfMn.lotusui30dojo .dijitDropDownButton .dijitButtonNode .dijitButtonText {
+    color: #000000 !important;
+    text-align: left !important;
+    min-width: 8.5em !important; }
+.lfMn.lotusui30dojo .lfAdvancedSearchConditionsWrapperContainer {
+  padding-left: 0; }
+.lfMn.lotusui30dojo .framed-wrapper,
+.lfMn.lotusui30dojo .hovered-wrapper,
+.lfMn.lotusui30dojo .selected-wrapper {
+  border: none;
+  background-color: #FFFFFF !important;
+  padding-left: 0px !important; }
+.lfMn.lotusui30dojo .dijitArrowButtonInner {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+  background-position: 100% 5px !important;
+  background-size: 0.75rem;
+  background-repeat: no-repeat !important; }
+.lfMn.lotusui30dojo .dijitButtonContents {
+  outline: none !important; }
+.lfMn.lotusui30dojo .lfAdvancedSearchBody {
+  padding-left: 0px; }
 
-/*# sourceMappingURL=metrics.css.map */
+html.dj_contentbox {
+  overflow: hidden !important; }
+
+#freedom-composer span {
+  outline: none; }
+
+div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
+  outline: none; }
+
+/*# sourceMappingURL=surveys.css.map */

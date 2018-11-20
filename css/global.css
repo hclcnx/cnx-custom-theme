@@ -2865,6 +2865,44 @@ they should be display: block; */ }
     padding: 0.25rem 0.25rem 0.125rem 0.25rem !important; }
     .ics-viewer #activityStream a.lotusDelete img:focus {
       outline: 1px solid #3C6DF0 !important; }
+  .ics-viewer #sametime-tray ul.navsimplelist button {
+    border-radius: 2rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    box-shadow: none !important;
+    transform: translateZ(0) !important;
+    -webkit-font-smoothing: antialiased !important;
+    cursor: pointer !important;
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    text-align: center !important;
+    transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+    white-space: nowrap !important;
+    padding: 9px 20px !important;
+    background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+    padding: 0 20px !important;
+    margin-top: 12px !important; }
+    .ics-viewer #sametime-tray ul.navsimplelist button, .ics-viewer #sametime-tray ul.navsimplelist button:hover, .ics-viewer #sametime-tray ul.navsimplelist button:active, .ics-viewer #sametime-tray ul.navsimplelist button:focus {
+      text-decoration: none !important;
+      font-weight: 500 !important; }
+    .ics-viewer #sametime-tray ul.navsimplelist button:hover, .ics-viewer #sametime-tray ul.navsimplelist button:active {
+      outline: none; }
+    .ics-viewer #sametime-tray ul.navsimplelist button:focus {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+      outline: none !important; }
+    .dj_a11y .ics-viewer #sametime-tray ul.navsimplelist button:focus, .dijit_a11y .ics-viewer #sametime-tray ul.navsimplelist button:focus {
+      box-shadow: none !important;
+      outline: 1px solid #3C6DF0 !important;
+      outline-offset: 1px; }
+    .ics-viewer #sametime-tray ul.navsimplelist button:active, .ics-viewer #sametime-tray ul.navsimplelist button:hover {
+      background-color: #FFFFFF !important;
+      color: #3C6DF0 !important;
+      border-color: #3C6DF0 !important; }
   .ics-viewer input[type=checkbox] {
     height: 16px !important;
     width: 20px !important;
@@ -4479,7 +4517,7 @@ they should be display: block; */ }
       .ics-viewer .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer .dijitInputInner {
         border-bottom: 1px solid #d8d8d8 !important;
         padding: .75rem 2.75rem .75rem 0 !important;
-        box-sizing: border-box; }
+        box-sizing: border-box !important; }
         .ics-viewer .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer .dijitInputInner:focus {
           border-color: #3C6DF0 !important;
           box-shadow: 0 1px 0 #3C6DF0 !important;
@@ -5329,11 +5367,18 @@ they should be display: block; */ }
   .ics-viewer .lotusDialogBorder > .lotusDialog > div:not(.lotusTabContainer) {
     padding-right: 2rem !important;
     padding-left: 2rem !important; }
+  .ics-viewer .lconnInsertImage.forum .lotusDialogHeader,
+  .ics-viewer #blogImgTabDlg .lotusDialogHeader,
+  .ics-viewer #blogsImageTabDiv .lotusDialogHeader {
+    padding-top: 32px !important; }
   .ics-viewer .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
     padding-left: 2rem !important;
     padding-top: 1rem !important; }
     .ics-viewer .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
       padding-left: 2rem !important; }
+  .ics-viewer .images .uploadedImageTd.imageSelected .insertImage,
+  .ics-viewer .lconnInsertImage .uploadedImageTd .insertImage.lotusSelected {
+    border: 2px solid #3C6DF0 !important; }
   .ics-viewer input.moveCheckBox {
     vertical-align: middle !important; }
     .ics-viewer input.moveCheckBox label {
@@ -5505,7 +5550,7 @@ they should be display: block; */ }
   .ics-viewer .sc .dialogImportList {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
     .ics-viewer .sc .dialogImportList .lotusStream .lotusPaging .lotusInlinelist .lotusFirst {
       margin: 0 !important; }
   .ics-viewer .sc .slideDialog,
@@ -6432,39 +6477,49 @@ they should be display: block; */ }
               left: -1px;
               width: calc(100% + 2px);
               height: 0; }
-  .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top {
+  .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top,
+  .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top {
     border-bottom: 1px solid #d8d8d8 !important;
     width: auto !important;
     padding: 0 !important; }
-    .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
+    .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"],
+    .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
       padding-bottom: calc(.375rem + 3px) !important; }
-      .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
+      .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent,
+      .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
         font-size: 14px !important;
         font-weight: 600 !important;
         margin-left: 1rem !important;
         background-image: none !important;
         border-radius: 2px;
         color: #595859 !important; }
-        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent,
+        .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
           margin-left: .5rem !important; }
-        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked,
+        .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
           position: relative;
           color: #000000 !important; }
-        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover,
+        .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
           color: #FFFFFF !important;
           background-color: #3C6DF0 !important;
           border-color: #3C6DF0 !important; }
-        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus,
+        .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
           color: #595859 !important;
           background-color: transparent !important;
           border-color: #3C6DF0 !important; }
-        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
+        .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel,
+        .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
           color: inherit !important;
           border: none !important;
           text-transform: none !important; }
-          .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
+          .ics-viewer div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus,
+          .ics-viewer div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
             outline: 0 !important; }
-  .ics-viewer div.lconn-survey_dialog .dijitTabContainer .lotusDialogFooter {
+  .ics-viewer div.lconn-survey_dialog .dijitTabContainer .lotusDialogFooter,
+  .ics-viewer div.question-creator .dijitTabContainer .lotusDialogFooter {
     padding: 1rem 1rem !important; }
   .ics-viewer ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
     min-width: 1px !important;
@@ -6599,7 +6654,7 @@ they should be display: block; */ }
     left: auto !important;
     padding-right: .5rem !important;
     max-width: calc(100% - 58px) !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight {
     order: 2; }
     .ics-viewer #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete img, .ics-viewer #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete img {
@@ -6816,7 +6871,7 @@ they should be display: block; */ }
       left: auto !important;
       padding-right: .5rem !important;
       max-width: calc(100% - 58px) !important;
-      box-sizing: border-box; }
+      box-sizing: border-box !important; }
     .ics-viewer #lconnTagWidget_tagList > li .lotusRight,
     .ics-viewer #lconnTagWidget_tagCloudView > li .lotusRight,
     .ics-viewer ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight {
@@ -6857,7 +6912,7 @@ they should be display: block; */ }
     overflow: hidden;
     text-overflow: ellipsis;
     background: #FFFFFF !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
     .ics-viewer ul.lotusRelatedTags a a {
       color: #000000 !important;
       font-weight: normal !important; }
@@ -6944,7 +6999,7 @@ they should be display: block; */ }
       left: auto !important;
       padding-right: .5rem !important;
       max-width: calc(100% - 58px) !important;
-      box-sizing: border-box; }
+      box-sizing: border-box !important; }
       .ics-viewer div[dojoattachpoint="_selectedTagsSection"] .lotusList > li span.lotusLeft a,
       .ics-viewer div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li span.lotusLeft a {
         color: #000000 !important;
@@ -7109,7 +7164,7 @@ they should be display: block; */ }
       height: 100%;
       margin: 0 3px;
       padding: .45rem 0;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
       display: inline-block;
       vertical-align: middle; }
       .ics-viewer .lotusMain .lotusTags.lotusMeta span[role="listitem"] a[role="button"] img,
@@ -7459,7 +7514,7 @@ they should be display: block; */ }
     padding-right: 1.5rem !important;
     float: left;
     margin-bottom: .5rem !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     position: relative; }
     .ics-viewer #memberAddFormDiv #memberList .lotusFilter.filterSpacing a,
     .ics-viewer #memberInviteFormDiv #memberList .lotusFilter.filterSpacing a, .ics-viewer #addMembersWidget #memberList .member a,
@@ -8693,7 +8748,7 @@ img[class*="Calendar"],
   width: 16px;
   height: 16px;
   padding: 16px 16px 0 0;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 
 .ics-viewer-title .lconn-ftype16, .ics-viewer-title .iconsFileTypes16 {
   background-size: 24px 24px !important;
@@ -8719,7 +8774,7 @@ img[class*="Calendar"],
   width: 32px;
   height: 32px;
   padding-left: 32px;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   background-repeat: no-repeat; }
 
 .lconn-ftype64, .iconsFileTypes64 {
@@ -8733,7 +8788,7 @@ img[class*="Calendar"],
   width: 32px;
   height: 32px;
   padding: 32px 32px 0 0;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 
 .lconn-ftype16-docx,
 .lconn-ftype16-xlsx,
@@ -8743,7 +8798,7 @@ img[class*="Calendar"],
   width: 16px;
   height: 16px;
   padding: 16px 16px 0 0;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 
 img[class*="ftype"],
 img[class*="Default"] {
@@ -8904,7 +8959,7 @@ img[class$="json"],
 img[class$="scss"],
 img[class$="xml"],
 img[class*="Code"],
-span[class$="css"],
+span[class$="css"]:not(.freedom-base-mixin-css),
 span[class$="dmg"],
 span[class$="exe"],
 span[class$="html"]:not(.cke_dialog_ui_html),
@@ -9025,7 +9080,7 @@ span[class*="Calendar"]:not([class*="dijitCalendar"]) {
   width: 100%;
   position: fixed;
   top: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
   html.catalog-ui-updated .catalog .ics-scbanner:not(.isfixed) {
     position: absolute;
     top: -40px; }
@@ -9211,7 +9266,7 @@ body.meetingBody:not(.cke_editable),
 .lotusui30 .lotusFooter,
 #lotusFrame #lotusFooter.lotusFooter,
 .lotusFrame #lotusFooter.lotusFooter {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
   max-width: 100%; }
@@ -9229,7 +9284,7 @@ body.meetingBody:not(.cke_editable),
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusMain[role="tabpanel"],
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMain[role="tabpanel"] {
     padding-left: 40px !important;
-    box-sizing: border-box; } }
+    box-sizing: border-box !important; } }
 @media screen and (max-width: 1060px) {
   .lotusui30 .lotusBanner .lotusInner,
   .lotusui30 .lotusBannerExt .lotusWrapper,
@@ -9252,11 +9307,11 @@ body.meetingBody:not(.cke_editable),
   #lotusMain #lotusContent.wpthemeWide {
     width: 100% !important;
     min-width: 100% !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   #lotusMain #lotusColLeft ~ #lotusContent.wpthemeWide {
     width: calc(100% - 240px) !important;
     min-width: calc(100% - 240px) !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   #lotusMain #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
     width: calc(100% - 475px) !important;
     min-width: calc(100% - 475px) !important; }
@@ -9266,25 +9321,25 @@ body.meetingBody:not(.cke_editable),
   body #lotusMain .lotusColRight {
     width: 200px !important;
     min-width: 200px !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   body #lotusMain + #lotusContent {
     width: calc(100% - 488px) !important;
     min-width: calc(100% - 488px) !important;
     float: right;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   #profileBody,
   .activityStreamPage #lotusContent {
     width: calc(100% - 505px) !important;
     min-width: calc(100% - 505px) !important;
     float: right;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   #profilePaneRight,
   .activityStreamPage #lotusColRight {
     width: 150px !important;
     min-width: 150px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     margin-left: 2.45rem !important; }
     #profilePaneRight #recent-friends-container .lotusChunk .lotusNetworkPerson,
     .activityStreamPage #lotusColRight #recent-friends-container .lotusChunk .lotusNetworkPerson {
@@ -9304,7 +9359,7 @@ body.meetingBody:not(.cke_editable),
       width: 50% !important; }
     .verseTheme .stmeetingCenter #joinUrl {
       width: 100% !important;
-      box-sizing: border-box; }
+      box-sizing: border-box !important; }
     .verseTheme .stmeetingCenter .verseColsRight {
       margin-left: 5% !important; }
 
@@ -9324,7 +9379,7 @@ body.meetingBody:not(.cke_editable),
   .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
     margin-left: 240px !important; }
     .lotusColLeft.wpthemeThin ~ #lotusMainColumns #lotusContent {
-      box-sizing: border-box; }
+      box-sizing: border-box !important; }
 
   .lotusWidget_3columnLayoutWithBanner .lotusColLeft.wpthemeThin ~ #lotusMainColumns #lotusColBanner,
   .lotusWidget_3columnLayoutWithBanner .lotusColLeft.wpthemeThin ~ #lotusMainColumns #lotusColRight,
@@ -9345,7 +9400,7 @@ body.meetingBody:not(.cke_editable),
     width: 250px !important; } }
 @media (max-width: 899px) {
   #lotusMain {
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow,
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
@@ -9392,7 +9447,7 @@ body.meetingBody:not(.cke_editable),
     max-width: calc(50% - 15px);
     vertical-align: top;
     display: inline-block !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMainColumns {
     float: right !important;
@@ -9401,7 +9456,7 @@ body.meetingBody:not(.cke_editable),
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
     width: 100% !important;
     max-width: 100%;
-    box-sizing: border-box; } }
+    box-sizing: border-box !important; } }
 @media (min-width: 1271px) {
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow,
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
@@ -9417,7 +9472,7 @@ body.meetingBody:not(.cke_editable),
     max-width: calc(33% - 15px);
     vertical-align: top;
     display: inline-block !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMainColumns {
     width: calc(66% - 17px) !important; }
@@ -9425,7 +9480,7 @@ body.meetingBody:not(.cke_editable),
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
     width: calc(50% - 16px) !important;
     max-width: calc(50% - 16px);
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
 
   .lotusWidget_3columnsTopMenuLayout #contentArea,
   .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
@@ -9464,9 +9519,23 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lco
 .lotusui30_layout .activityStreamPage.lotusMain .lotusColLeft:after {
   border-right-width: 264px !important; }
 
-#lotusFrame .tabNavBar:not(.tabNavFixed) .icSearchPaneButton {
+.lotusui30_body.scloud3.tundra:not(.compactMode):not(.concord) {
+  min-width: 0 !important; }
+
+#lotusFrame #lotusTitleBar .lotusInner div.icSearchPaneButton,
+#lotusFrame .lotusTitleBar2 .lotusInner div.icSearchPaneButton,
+.lotusFrame #lotusTitleBar .lotusInner div.icSearchPaneButton,
+.lotusFrame .lotusTitleBar .lotusInner div.icSearchPaneButton {
   top: calc(40px + 20px) !important; }
-#lotusFrame .tabNavBar.tabNavFixed .icSearchPaneButton {
+#lotusFrame #lotusTitleBar .tabNavBar:not(.tabNavFixed) .icSearchPaneButton,
+#lotusFrame .lotusTitleBar2 .tabNavBar:not(.tabNavFixed) .icSearchPaneButton,
+.lotusFrame #lotusTitleBar .tabNavBar:not(.tabNavFixed) .icSearchPaneButton,
+.lotusFrame .lotusTitleBar .tabNavBar:not(.tabNavFixed) .icSearchPaneButton {
+  top: calc(40px + 20px) !important; }
+#lotusFrame #lotusTitleBar .tabNavBar.tabNavFixed .icSearchPaneButton,
+#lotusFrame .lotusTitleBar2 .tabNavBar.tabNavFixed .icSearchPaneButton,
+.lotusFrame #lotusTitleBar .tabNavBar.tabNavFixed .icSearchPaneButton,
+.lotusFrame .lotusTitleBar .tabNavBar.tabNavFixed .icSearchPaneButton {
   top: 20px !important; }
 
 .icSearchPaneButton {
@@ -9501,6 +9570,13 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lco
       top: -20px !important; }
     .icSearchPaneButton.icSearchBarMode .icSearchBar {
       padding-top: 0px !important; }
+
+.icSearchPane,
+.icSearchPane * {
+  box-sizing: border-box !important; }
+
+.icSearchPane {
+  top: calc(40px + 1px) !important; }
 
 .icSearchBar a.icSearchIcon {
   width: 16px !important;
@@ -9543,5 +9619,489 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"], div[id^="lco
   height: 0;
   width: 100%;
   clear: both; }
+
+body.lotusui30_body .uploadFileGadgetDiv {
+  width: 500px !important; }
+  body.lotusui30_body .uploadFileGadgetDiv fieldset[id="lconn_files_widget_UploadFile_0_share_with_fieldset"] {
+    min-width: 380px !important; }
+
+body.lconnShareboxGadget {
+  min-width: 500px !important;
+  max-width: 100%; }
+
+.lotusui30dojo .lcSharebox div.dijitDialogTitleBar,
+.lcSharebox .dijitTabContainer {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  margin-left: 0 !important; }
+
+.lotusui30dojo .lcSharebox div.dijitDialogTitleBar {
+  box-shadow: none !important; }
+
+.lotusDialogHeader.shareBoxBottomHeader {
+  padding-top: 0 !important; }
+
+body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"],
+body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important; }
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled {
+    border-radius: 2rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    box-shadow: none !important;
+    transform: translateZ(0) !important;
+    -webkit-font-smoothing: antialiased !important;
+    cursor: pointer !important;
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    text-align: center !important;
+    transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+    white-space: nowrap !important;
+    padding: 9px 20px !important;
+    background-image: none !important;
+    margin: 2px 4px 3px 2px !important;
+    background-color: #FFFFFF !important;
+    border-color: #3C6DF0 !important;
+    color: #3C6DF0 !important; }
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:hover, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:active, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:focus,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:hover,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:active,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:focus {
+      text-decoration: none !important;
+      font-weight: 500 !important; }
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:hover, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:active,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:hover,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:active {
+      outline: none; }
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:focus,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:focus {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+      outline: none !important; }
+    .dj_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:focus, .dijit_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:focus,
+    .dj_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:focus,
+    .dijit_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:focus {
+      box-shadow: none !important;
+      outline: 1px solid #3C6DF0 !important;
+      outline-offset: 1px; }
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:active, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"].lotusBtnDisabled:hover,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:active,
+    body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"].lotusBtnDisabled:hover {
+      background-color: #3C6DF0 !important;
+      color: #FFFFFF !important;
+      border-color: #3C6DF0 !important; }
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"], body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:hover, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:active, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:focus,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"],
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:hover,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:active,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:hover, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:active,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:hover,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:active {
+    outline: none; }
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:focus,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:focus, .dijit_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:focus,
+  .dj_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:focus,
+  .dijit_a11y body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:active, body.lconnShareboxGadget input[type="button"][dojoattachpoint="postButtonNode"]:hover,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:active,
+  body.lconnShareboxGadget input[type="button"][dojoattachpoint="resetButtonNode"]:hover {
+    background-color: #FFFFFF !important;
+    color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+body.lconnShareboxGadget select {
+  font-size: 12.8px !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 50% !important;
+  max-width: 100% !important;
+  padding: 0 2.75rem 0.75rem 0 !important;
+  color: #000000 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+  background-size: 0.75rem !important;
+  background-position: right .4rem !important;
+  background-repeat: no-repeat !important;
+  height: auto !important;
+  min-width: 45% !important; }
+  body.lconnShareboxGadget select:focus {
+    border-bottom: 2px solid #3C6DF0 !important;
+    outline: none !important; }
+  body.lconnShareboxGadget select[disabled] {
+    cursor: not-allowed !important;
+    color: #969696 !important; }
+body.lconnShareboxGadget input[type="text"],
+body.lconnShareboxGadget input.lotusText {
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: .375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  padding-top: .375rem !important; }
+  body.lconnShareboxGadget input[type="text"]:focus, body.lconnShareboxGadget input[type="text"] .dijitTextBoxFocused,
+  body.lconnShareboxGadget input.lotusText:focus,
+  body.lconnShareboxGadget input.lotusText .dijitTextBoxFocused {
+    outline: none !important;
+    border-color: #3C6DF0 !important;
+    box-shadow: 0 1px 0 #3C6DF0 !important; }
+body.lconnShareboxGadget div[role="search"] {
+  border: none !important; }
+body.lconnShareboxGadget li.lotusFirst a {
+  outline: none !important; }
+body.lconnShareboxGadget button[id="lconn_btn_browse_files"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important; }
+  body.lconnShareboxGadget button[id="lconn_btn_browse_files"], body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:hover, body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:active, body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:hover, body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:active {
+    outline: none; }
+  body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:focus, .dijit_a11y body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:active, body.lconnShareboxGadget button[id="lconn_btn_browse_files"]:hover {
+    background-color: #FFFFFF !important;
+    color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+body.lconnShareboxGadget input[type="submit"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important; }
+  body.lconnShareboxGadget input[type="submit"], body.lconnShareboxGadget input[type="submit"]:hover, body.lconnShareboxGadget input[type="submit"]:active, body.lconnShareboxGadget input[type="submit"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lconnShareboxGadget input[type="submit"]:hover, body.lconnShareboxGadget input[type="submit"]:active {
+    outline: none; }
+  body.lconnShareboxGadget input[type="submit"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lconnShareboxGadget input[type="submit"]:focus, .dijit_a11y body.lconnShareboxGadget input[type="submit"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lconnShareboxGadget input[type="submit"]:active, body.lconnShareboxGadget input[type="submit"]:hover {
+    background-color: #FFFFFF !important;
+    color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+  body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled, body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled:hover, body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled:active {
+    cursor: not-allowed !important;
+    background-color: #969696 !important;
+    color: #FFFFFF !important;
+    border-color: #969696 !important; }
+  body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
+  .dj_a11y body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled:focus, .dijit_a11y body.lconnShareboxGadget input[type="submit"].lotusBtnDisabled:focus {
+    box-shadow: none !important;
+    outline: 1px solid #FFFFFF !important;
+    outline-offset: 1px; }
+body.lconnShareboxGadget input[value="Cancel"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important; }
+  body.lconnShareboxGadget input[value="Cancel"], body.lconnShareboxGadget input[value="Cancel"]:hover, body.lconnShareboxGadget input[value="Cancel"]:active, body.lconnShareboxGadget input[value="Cancel"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lconnShareboxGadget input[value="Cancel"]:hover, body.lconnShareboxGadget input[value="Cancel"]:active {
+    outline: none; }
+  body.lconnShareboxGadget input[value="Cancel"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lconnShareboxGadget input[value="Cancel"]:focus, .dijit_a11y body.lconnShareboxGadget input[value="Cancel"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lconnShareboxGadget input[value="Cancel"]:active, body.lconnShareboxGadget input[value="Cancel"]:hover {
+    background-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    border-color: #3C6DF0 !important; }
+body.lconnShareboxGadget .lotusDialogHeader {
+  background-color: #FFFFFF !important;
+  color: #000000 !important; }
+  body.lconnShareboxGadget .lotusDialogHeader h1 {
+    color: #000000 !important;
+    font-weight: 500 !important;
+    font-size: 1.3125rem !important; }
+body.lconnShareboxGadget .lotusDialogClose img {
+  display: none !important; }
+body.lconnShareboxGadget .lotusDialogClose {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23595859%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+  background-position-x: center !important;
+  background-position-y: center !important;
+  height: 24px !important;
+  width: 24px !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  padding: 0.25rem 0.25rem 0.125rem 0.25rem !important; }
+  body.lconnShareboxGadget .lotusDialogClose:focus {
+    outline: 1px solid #3C6DF0 !important; }
+body.lconnShareboxGadget div[role="tablist"] {
+  padding-bottom: calc(.375rem + 3px) !important; }
+body.lconnShareboxGadget .dijitTabInner.dijitTabContent,
+body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel {
+  position: relative;
+  padding: 8px 16px 4px 32px !important;
+  margin: 0 !important;
+  color: #595859 !important;
+  border-radius: 2px !important;
+  border: 1px solid transparent !important;
+  width: auto !important; }
+  body.lconnShareboxGadget .dijitTabInner.dijitTabContent .lconnPickerSourceLabelSpan,
+  body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel .lconnPickerSourceLabelSpan {
+    color: inherit !important; }
+  body.lconnShareboxGadget .dijitTabInner.dijitTabContent:hover,
+  body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel:hover {
+    color: #FFFFFF !important;
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+  body.lconnShareboxGadget .dijitTabInner.dijitTabContent:focus,
+  body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel:focus {
+    color: #595859 !important;
+    background-color: transparent !important;
+    border-color: #3C6DF0 !important;
+    outline: none !important; }
+  body.lconnShareboxGadget .dijitTabInner.dijitTabContent img,
+  body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel img {
+    left: .75rem;
+    position: absolute; }
+    body.lconnShareboxGadget .dijitTabInner.dijitTabContent img[class*="Folder"],
+    body.lconnShareboxGadget .lconnPickerSourceToCheck .lconnPickerSourceLabel img[class*="Folder"] {
+      left: .25rem; }
+
+body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"],
+body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"], body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:hover, body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:active, body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:focus,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"],
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:hover,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:active,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:hover, body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:active,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:hover,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:active {
+    outline: none; }
+  body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:focus,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:focus, .dijit_a11y body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:focus,
+  .dj_a11y body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:focus,
+  .dijit_a11y body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:active, body.lotusui30_body > .uploadFileGadgetDiv button[id="lconn_btn_browse_files"]:hover,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:active,
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="submit"]:hover {
+    background-color: #FFFFFF !important;
+    color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"], body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:hover, body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:active, body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:hover, body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:active {
+    outline: none; }
+  body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:focus, .dijit_a11y body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:active, body.lotusui30_body > .uploadFileGadgetDiv input[value="Cancel"]:hover {
+    background-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    border-color: #3C6DF0 !important; }
+body.lotusui30_body > .uploadFileGadgetDiv a[id^="additionalOptions"]:focus {
+  outline: none !important; }
+body.lotusui30_body > .uploadFileGadgetDiv input[type="text"] {
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: .375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  padding-bottom: 11px !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv input[type="text"]:focus, body.lotusui30_body > .uploadFileGadgetDiv input[type="text"] .dijitTextBoxFocused {
+    outline: none !important;
+    border-color: #3C6DF0 !important;
+    box-shadow: 0 1px 0 #3C6DF0 !important; }
+body.lotusui30_body > .uploadFileGadgetDiv select {
+  font-size: 12.8px !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 50% !important;
+  max-width: 100% !important;
+  padding: 0 2.75rem 0.75rem 0 !important;
+  color: #000000 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+  background-size: 0.75rem !important;
+  background-position: right .4rem !important;
+  background-repeat: no-repeat !important;
+  height: auto !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv select:focus {
+    border-bottom: 2px solid #3C6DF0 !important;
+    outline: none !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv select[disabled] {
+    cursor: not-allowed !important;
+    color: #969696 !important; }
+body.lotusui30_body > .uploadFileGadgetDiv textarea {
+  background-color: #F3F3F3 !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  padding: 1rem !important;
+  min-height: 3rem !important;
+  box-sizing: border-box !important; }
+  body.lotusui30_body > .uploadFileGadgetDiv textarea:focus {
+    outline: none !important;
+    border-color: #3C6DF0 !important;
+    box-shadow: 0 1px 0 #3C6DF0 !important; }
+
+div[id^="com_ibm_social_sharebox_controls_TabContainer"] {
+  margin-left: .5rem !important; }
+  div[id^="com_ibm_social_sharebox_controls_TabContainer"] .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked .tabLabel:hover {
+    color: #FFFFFF !important;
+    background-color: #3C6DF0 !important; }
+  div[id^="com_ibm_social_sharebox_controls_TabContainer"] .dijitTabInner.dijitTabContent.dijitTabHover {
+    background-color: transparent !important; }
+  div[id^="com_ibm_social_sharebox_controls_TabContainer"] .tabLabel {
+    margin-bottom: 0 !important; }
 
 /*# sourceMappingURL=global.css.map */

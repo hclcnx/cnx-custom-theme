@@ -21,7 +21,7 @@ body.meetingBody:not(.cke_editable),
 .lotusui30 .lotusFooter,
 #lotusFrame #lotusFooter.lotusFooter,
 .lotusFrame #lotusFooter.lotusFooter {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
   max-width: 100%;
@@ -42,7 +42,7 @@ body.meetingBody:not(.cke_editable),
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusMain[role="tabpanel"],
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMain[role="tabpanel"] {
     padding-left: 40px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 }
 @media screen and (max-width: 1060px) {
@@ -70,12 +70,12 @@ body.meetingBody:not(.cke_editable),
     #lotusContent.wpthemeWide {
       width: 100% !important;
       min-width: 100% !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
     #lotusColLeft ~ #lotusContent.wpthemeWide {
       width: calc(100% - #{$leftnav-width}) !important;
       min-width: calc(100% - #{$leftnav-width}) !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
     #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
       width: calc(100% - 475px) !important;
@@ -89,13 +89,13 @@ body.meetingBody:not(.cke_editable),
     .lotusColRight {
       width: 200px !important;
       min-width: 200px !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
     + #lotusContent {
       width: calc(100% - 488px) !important;
       min-width: calc(100% - 488px) !important;
       float: right;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
   // profile page
@@ -104,13 +104,13 @@ body.meetingBody:not(.cke_editable),
     width: calc(100% - 505px) !important;
     min-width: calc(100% - 505px) !important;
     float: right;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
   #profilePaneRight,
   .activityStreamPage #lotusColRight {
     width: 150px !important;
     min-width: 150px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     margin-left: 2.45rem !important;
 
     #recent-friends-container .lotusChunk .lotusNetworkPerson {
@@ -134,7 +134,7 @@ body.meetingBody:not(.cke_editable),
 
     #joinUrl {
       width: 100% !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
 
     .verseColsRight {
@@ -159,7 +159,7 @@ body.meetingBody:not(.cke_editable),
     margin-left: $leftnav-width !important;
 
     #lotusContent {
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
   .lotusWidget_3columnLayoutWithBanner .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
@@ -192,7 +192,7 @@ body.meetingBody:not(.cke_editable),
 // communities responsive breakpoint:
 @media (max-width: 899px) {
   #lotusMain {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
   .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
   .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
@@ -243,7 +243,7 @@ body.meetingBody:not(.cke_editable),
       max-width: calc(50% - 15px);
       vertical-align: top;
       display: inline-block !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
 
@@ -256,7 +256,7 @@ body.meetingBody:not(.cke_editable),
     #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
       width: 100% !important;
       max-width: 100%;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
 }
@@ -279,7 +279,7 @@ body.meetingBody:not(.cke_editable),
       max-width: calc(33% - 15px);
       vertical-align: top;
       display: inline-block !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
 
@@ -291,7 +291,7 @@ body.meetingBody:not(.cke_editable),
     #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
       width: calc(50% - 16px) !important;
       max-width: calc(50% - 16px);
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
   .lotusWidget_3columnsTopMenuLayout #contentArea,
@@ -347,4 +347,9 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
   .lotusui30_layout & .lotusColLeft:after {
     border-right-width: 264px !important;
   }
+}
+
+// Disable minwidth on meetings iframe - issue 2141
+.lotusui30_body.scloud3.tundra:not(.compactMode):not(.concord) {
+  min-width: 0 !important;
 }

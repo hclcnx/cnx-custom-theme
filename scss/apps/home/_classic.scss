@@ -162,6 +162,43 @@
           padding:10px 6px 0px 6px !important;
         }
       }
+      // survey icons 2139
+      img[src$="survey_draft_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-draft, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
+      img[src$="survey_incomplete_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-incomplete, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
+      img[src$="survey_complete_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-complete, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
     }
   }
 }

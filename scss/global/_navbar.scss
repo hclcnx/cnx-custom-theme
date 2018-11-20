@@ -17,7 +17,7 @@
     position: absolute;
     top: -$navbar-height;
   }
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 
   //Text on the navbar
   &>div.navmenu, &>a { //Words on navbar directly inside .ics-scbanner

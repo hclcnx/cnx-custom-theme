@@ -514,3 +514,11 @@ li[id^="com_ibm_social_as_item_comment"] {
     @include bx--modal-close;
   }
 }
+
+// Sametime login / logout button
+#sametime-tray ul.navsimplelist button {
+  @include btnprimary;
+	font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+  padding: 0 20px !important;
+  margin-top: 12px !important;
+}

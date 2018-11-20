@@ -60,7 +60,7 @@
         left: auto !important;
         padding-right: .5rem !important;
         max-width: calc(100% - 58px) !important;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
       }
       span.lotusRight {
         order: 2;
@@ -219,7 +219,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) {
       left: auto !important;
       padding-right: .5rem !important;
       max-width: calc(100% - 58px) !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
     .lotusRight {
       border-top-left-radius: 0 !important;
@@ -246,7 +246,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) {
 // related tags in the left menu:
 ul.lotusRelatedTags a {
   @include tags(white);
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   wbr {
     display: none !important;
   }
@@ -282,7 +282,7 @@ div[data-dojo-attach-point="_selectedTagsSection"] {
         left: auto !important;
         padding-right: .5rem !important;
         max-width: calc(100% - 58px) !important;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
       }
       a.lotusDelete {
         order: 2;
@@ -425,7 +425,7 @@ input.lotusText.scTagTypeahead {
       height: 100%;
       margin: 0 3px;
       padding: .45rem 0;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
       display: inline-block;
       vertical-align: middle;
       img{
@@ -611,7 +611,7 @@ input.lotusText.scTagTypeahead {
   padding-right: 1.5rem !important;
   float: left;
   margin-bottom: .5rem !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   position: relative;
 
   img.lotusDelete {

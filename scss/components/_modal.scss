@@ -151,6 +151,16 @@ div[dojoattachpoint="streamNode"] {
 	padding-left:2rem!important;
 }
 
+
+//2238: Blog and Forum: The top spacing is too large, it should be 32px.
+.lconnInsertImage.forum,
+#blogImgTabDlg,
+#blogsImageTabDiv {
+	.lotusDialogHeader {
+		padding-top: 32px !important;
+	}
+}
+
 // fix for right col too wide in Wiki Move Page dlg
 .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
 	padding-left:2rem!important;
@@ -158,6 +168,12 @@ div[dojoattachpoint="streamNode"] {
 	+ div {
 		padding-left:2rem!important;
 	}
+}
+
+//2240: Wiki and blog insert image, Existing Imges selected border color.
+.images .uploadedImageTd.imageSelected .insertImage,
+.lconnInsertImage .uploadedImageTd .insertImage.lotusSelected {
+    border: 2px solid $border-selected !important;
 }
 
 // Move page checkbox alignment
@@ -398,7 +414,7 @@ div[id^="lconn_share"][id*="widget_Dialog"] .lotusDialog .lotusDialogContent .lo
 	.dialogImportList {
 		padding-right:3rem!important;
 		padding-left:3rem!important;
-		box-sizing: border-box;
+		box-sizing: border-box !important;
 
 		.lotusStream .lotusPaging .lotusInlinelist .lotusFirst {
 			margin: 0 !important;

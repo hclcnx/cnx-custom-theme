@@ -80,6 +80,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
       //Left side of toolbar: folder and filter panel switcher
       .toolActions {
         width: 182px;
+        box-sizing: content-box !important;
         //Panel icon selection and focus
         .actionOn:after {
           border-bottom: 3px solid $border-selected;
@@ -269,6 +270,7 @@ div.filesListFilled #scene-body {
       top: 0 !important;
       .lotusCheckbox {
         padding-top: 6px;
+        margin-top: 2px;
       }
     }
   }

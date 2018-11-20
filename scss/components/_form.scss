@@ -205,7 +205,7 @@ li.addressFormLi {
 			//font-size: $body-font-size !important;
 			border-bottom: 1px solid $color-gray-10 !important;
 			padding: .75rem 2.75rem .75rem 0 !important;
-			box-sizing: border-box;
+			box-sizing: border-box !important;
 
 			&:focus {
 				border-color: $border-field-focus !important;
