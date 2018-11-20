@@ -63,7 +63,7 @@
         font-weight: normal !important;
         font-size: $body-sm-font-size;
         width: 100% !important;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -291,7 +291,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          box-sizing: border-box;
+          box-sizing: border-box !important;
           width: 100%;
         }
         &.lotusSelected a {
@@ -437,7 +437,7 @@
     transition:none!important;
     font-weight: normal !important;
     font-size: $body-sm-font-size;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     overflow: visible;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -466,7 +466,7 @@
       &::before {
         content: '';
         display: block;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         width: $leftnav-active-border-thickness;
         height: $leftnav-line-item-height;
         position: absolute;
@@ -530,7 +530,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       max-width: calc(100% - 40px) !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
 }

@@ -54,7 +54,7 @@ img[class*="Calendar"] {
   width: 16px;
   height: 16px;
   padding: 16px 16px 0 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 .ics-viewer-title{
   .lconn-ftype16, .iconsFileTypes16{
@@ -82,7 +82,7 @@ img[class*="Calendar"] {
   width: 32px;
   height: 32px;
   padding-left: 32px;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   background-repeat: no-repeat;
 }
 .lconn-ftype64, .iconsFileTypes64{
@@ -96,7 +96,7 @@ img[class*="Calendar"] {
   width: 32px;
   height: 32px;
   padding: 32px 32px 0 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 .lconn-ftype16-docx,
 .lconn-ftype16-xlsx,
@@ -106,7 +106,7 @@ img[class*="Calendar"] {
   width: 16px;
   height: 16px;
   padding: 16px 16px 0 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 img[class*="ftype"],
@@ -272,7 +272,7 @@ img[class$="json"],
 img[class$="scss"],
 img[class$="xml"],
 img[class*="Code"],
-span[class$="css"],
+span[class$="css"]:not(.freedom-base-mixin-css),
 span[class$="dmg"],
 span[class$="exe"],
 span[class$="html"]:not(.cke_dialog_ui_html),

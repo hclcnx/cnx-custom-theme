@@ -1,15 +1,27 @@
 //Floating search button
 
 //Position search button relative to navbar
-#lotusFrame .tabNavBar {
-  &:not(.tabNavFixed) {
-    .icSearchPaneButton {
+#lotusFrame #lotusTitleBar,
+#lotusFrame .lotusTitleBar2,
+.lotusFrame #lotusTitleBar,
+.lotusFrame .lotusTitleBar {
+  //Most pages where search button appears; Orient Me and Files works with no change
+  .lotusInner {
+    div.icSearchPaneButton {
       top: calc(#{$navbar-height} + 20px) !important; //Position search button relative to navbar height
     }
   }
-  &.tabNavFixed {
-    .icSearchPaneButton {
-      top: 20px !important; //Position search button when navbar is hidden on scroll
+  //Community top navigation
+  .tabNavBar {
+    &:not(.tabNavFixed) {
+      .icSearchPaneButton {
+        top: calc(#{$navbar-height} + 20px) !important; //Position search button relative to navbar height
+      }
+    }
+    &.tabNavFixed {
+      .icSearchPaneButton {
+        top: 20px !important; //Position search button when navbar is hidden on scroll
+      }
     }
   }
 }
@@ -61,7 +73,17 @@
   }
 }
 
-//Search panel open
+//Onprem, override box-sizing to fix issue if Action Center is enabled
+.icSearchPane,
+.icSearchPane * {
+  box-sizing: border-box !important;
+}
+
+//Position Search pane below navigation bar
+.icSearchPane {
+  top: calc(#{$navbar-height} + 1px) !important;
+}
+
 //Search field on history panel
 .icSearchBar{
   a.icSearchIcon {

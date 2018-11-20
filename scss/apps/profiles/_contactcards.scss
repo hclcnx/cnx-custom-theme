@@ -37,7 +37,7 @@ div[class$="directory"] {
   > a {
     padding: .5rem !important;
     margin: 0 !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-weight: normal !important;
     @media only screen and (min-width: 0px) {
       width: 50% !important;
@@ -86,7 +86,7 @@ div[class$="directory"] {
       display: flex;
       flex-direction: row;
       padding: 1.5rem 3.5rem 1.5rem 1.5rem;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
       position: relative;
 
       .lotusFloatContent,
@@ -156,7 +156,7 @@ div[class$="directory"] {
             margin: 0 auto 10px !important;
             padding: 0 !important;
             display: inline-block;
-            box-sizing: border-box;
+            box-sizing: border-box !important;
             width: 20px !important;
             height: 20px !important;
 

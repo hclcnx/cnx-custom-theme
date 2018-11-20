@@ -18,6 +18,7 @@
 // @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
 // @resource     search file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/search.css
 // @resource     settings file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/settings.css
+// @resource     surveys file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/surveys.css
 // @resource     wikis file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/wikis.css
 // @match        https://apps.na.collabserv.com/activities/*
 // @match        https://apps.na.collabserv.com/blogs/*

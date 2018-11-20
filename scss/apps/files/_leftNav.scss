@@ -123,6 +123,11 @@ html.lconnFiles.files-enable-simplify-left-nav {
         }
       }
 
+      //Fix for when onprem Action Center is enabled 2207
+      .myDriveNavigation .lotusInner {
+        box-sizing: content-box;
+      }
+
       //Update indent of folders
       #menu_myfolders_childContainer {
         margin-left: 32px !important;
@@ -389,7 +394,7 @@ html.lconnFiles.files-enable-simplify-left-nav {
       text-overflow: ellipsis;
       white-space: nowrap;
       max-width: 100% !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
       float: none !important;
     }
   }

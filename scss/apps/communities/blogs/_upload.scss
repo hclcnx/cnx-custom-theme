@@ -19,3 +19,8 @@ fieldset.blogsHiddenBorder{
   margin-left:0;
   padding-left:0;
 }
+
+//2236: Blog: Change the selected border color of image layout
+.lconnInsertImage input.blogImgLayout.lotusSelected {
+  border: 2px solid $border-selected !important;
+}

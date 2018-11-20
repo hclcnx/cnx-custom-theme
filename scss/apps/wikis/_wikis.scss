@@ -19,7 +19,7 @@ input[id^="lconn_wikis_widget_MembershipOptions"] {
     > .lotusDialog > div[id^="lconn_share"].lotusDialogHeader {
       position: relative !important;
       width: 100% !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
     }
   }
 }

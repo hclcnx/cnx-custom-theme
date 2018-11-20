@@ -32,7 +32,7 @@
           display: block;
           border: none !important;
           transition:$leftnav-border-slide!important;
-          box-sizing: border-box;
+          box-sizing: border-box !important;
           font-weight: normal !important;
           &:hover {
             background-color:$background-side-hover !important;

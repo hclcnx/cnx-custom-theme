@@ -2787,6 +2787,45 @@ li[id^="com_ibm_social_as_item_comment"] .lotusStreamUpdate .lotusActions ul {
   #activityStream a.lotusDelete img:focus {
     outline: 1px solid #3C6DF0 !important; }
 
+#sametime-tray ul.navsimplelist button {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important;
+  font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+  padding: 0 20px !important;
+  margin-top: 12px !important; }
+  #sametime-tray ul.navsimplelist button, #sametime-tray ul.navsimplelist button:hover, #sametime-tray ul.navsimplelist button:active, #sametime-tray ul.navsimplelist button:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  #sametime-tray ul.navsimplelist button:hover, #sametime-tray ul.navsimplelist button:active {
+    outline: none; }
+  #sametime-tray ul.navsimplelist button:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y #sametime-tray ul.navsimplelist button:focus, .dijit_a11y #sametime-tray ul.navsimplelist button:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  #sametime-tray ul.navsimplelist button:active, #sametime-tray ul.navsimplelist button:hover {
+    background-color: #FFFFFF !important;
+    color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+
 input[type=checkbox] {
   height: 16px !important;
   width: 20px !important;
@@ -4459,7 +4498,7 @@ li.addressFormLi .addressFormField .addressFormInput {
     .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer .dijitInputInner {
       border-bottom: 1px solid #d8d8d8 !important;
       padding: .75rem 2.75rem .75rem 0 !important;
-      box-sizing: border-box; }
+      box-sizing: border-box !important; }
       .profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer .dijitInputInner:focus {
         border-color: #3C6DF0 !important;
         box-shadow: 0 1px 0 #3C6DF0 !important;
@@ -5375,11 +5414,20 @@ div[dojoattachpoint="streamNode"] {
   padding-right: 2rem !important;
   padding-left: 2rem !important; }
 
+.lconnInsertImage.forum .lotusDialogHeader,
+#blogImgTabDlg .lotusDialogHeader,
+#blogsImageTabDiv .lotusDialogHeader {
+  padding-top: 32px !important; }
+
 .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
   padding-left: 2rem !important;
   padding-top: 1rem !important; }
   .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
     padding-left: 2rem !important; }
+
+.images .uploadedImageTd.imageSelected .insertImage,
+.lconnInsertImage .uploadedImageTd .insertImage.lotusSelected {
+  border: 2px solid #3C6DF0 !important; }
 
 input.moveCheckBox {
   vertical-align: middle !important; }
@@ -5580,7 +5628,7 @@ div[id^="lconn_share"][id*="widget_Dialog"] .lotusDialog .lotusDialogContent .lo
 .sc .dialogImportList {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
   .sc .dialogImportList .lotusStream .lotusPaging .lotusInlinelist .lotusFirst {
     margin: 0 !important; }
 .sc .slideDialog,
@@ -6538,39 +6586,49 @@ div[role="tablist"],
             width: calc(100% + 2px);
             height: 0; }
 
-div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top {
+div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top,
+div.question-creator .dijitTabContainer .dijitTabListContainer-top {
   border-bottom: 1px solid #d8d8d8 !important;
   width: auto !important;
   padding: 0 !important; }
-  div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
+  div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"],
+  div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
     padding-bottom: calc(.375rem + 3px) !important; }
-    div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
+    div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent,
+    div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
       font-size: 14px !important;
       font-weight: 600 !important;
       margin-left: 1rem !important;
       background-image: none !important;
       border-radius: 2px;
       color: #595859 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
+      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent,
+      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
         margin-left: .5rem !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
+      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked,
+      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
         position: relative;
         color: #000000 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
+      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover,
+      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
         color: #FFFFFF !important;
         background-color: #3C6DF0 !important;
         border-color: #3C6DF0 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
+      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus,
+      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
         color: #595859 !important;
         background-color: transparent !important;
         border-color: #3C6DF0 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
+      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel,
+      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
         color: inherit !important;
         border: none !important;
         text-transform: none !important; }
-        div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
+        div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus,
+        div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
           outline: 0 !important; }
-div.lconn-survey_dialog .dijitTabContainer .lotusDialogFooter {
+div.lconn-survey_dialog .dijitTabContainer .lotusDialogFooter,
+div.question-creator .dijitTabContainer .lotusDialogFooter {
   padding: 1rem 1rem !important; }
 
 ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
@@ -6716,7 +6774,7 @@ body.blog.admin #pageTabs.lotusNavTabs {
   left: auto !important;
   padding-right: .5rem !important;
   max-width: calc(100% - 58px) !important;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 #socialTags #tagsYouAddedView .lotusTags span.lotusRight, #socialTags #tagsList .lotusTags span.lotusRight {
   order: 2; }
   #socialTags #tagsYouAddedView .lotusTags span.lotusRight .lotusDelete img, #socialTags #tagsList .lotusTags span.lotusRight .lotusDelete img {
@@ -6936,7 +6994,7 @@ ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
     left: auto !important;
     padding-right: .5rem !important;
     max-width: calc(100% - 58px) !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   #lconnTagWidget_tagList > li .lotusRight,
   #lconnTagWidget_tagCloudView > li .lotusRight,
   ul[id*="_tagList"]:not(#tagsDiv_tagList) > li .lotusRight {
@@ -6978,7 +7036,7 @@ ul.lotusRelatedTags a {
   overflow: hidden;
   text-overflow: ellipsis;
   background: #FFFFFF !important;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
   ul.lotusRelatedTags a a {
     color: #000000 !important;
     font-weight: normal !important; }
@@ -7066,7 +7124,7 @@ div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li {
     left: auto !important;
     padding-right: .5rem !important;
     max-width: calc(100% - 58px) !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
     div[dojoattachpoint="_selectedTagsSection"] .lotusList > li span.lotusLeft a,
     div[data-dojo-attach-point="_selectedTagsSection"] .lotusList > li span.lotusLeft a {
       color: #000000 !important;
@@ -7240,7 +7298,7 @@ input.lotusText.scTagTypeahead {
     height: 100%;
     margin: 0 3px;
     padding: .45rem 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     display: inline-block;
     vertical-align: middle; }
     .lotusMain .lotusTags.lotusMeta span[role="listitem"] a[role="button"] img,
@@ -7598,7 +7656,7 @@ input.lotusText.scTagTypeahead {
   padding-right: 1.5rem !important;
   float: left;
   margin-bottom: .5rem !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   position: relative; }
   #memberAddFormDiv #memberList .lotusFilter.filterSpacing a,
   #memberInviteFormDiv #memberList .lotusFilter.filterSpacing a, #addMembersWidget #memberList .member a,
@@ -8613,7 +8671,7 @@ body > div[id*="dialogs_deleteConfirm"] {
   border: 1px solid #d8d8d8 !important; }
   body > div[id*="dialogs_deleteConfirm"] * {
     max-width: 100% !important;
-    box-sizing: border-box; }
+    box-sizing: border-box !important; }
   body > div[id*="dialogs_deleteConfirm"] .lotusDialog.lotusForm2._lotusDelete {
     border: none !important; }
   body > div[id*="dialogs_deleteConfirm"] .lotusErrorContent {
@@ -8772,7 +8830,7 @@ body > div[id*="dialogs_deleteConfirm"] {
       font-weight: normal !important;
       font-size: 0.875rem;
       width: 100% !important;
-      box-sizing: border-box;
+      box-sizing: border-box !important;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -9840,7 +9898,7 @@ body > div[id*="dialogs_deleteConfirm"] {
         position: absolute;
         top: 0;
         left: 0;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         width: 100%; }
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > .lotusMenuSubsection ul li.lotusSelected a,
       .lotusMain #lotusColLeft:not(.wpthemeNarrow) .lotusSection:not([id*="Tag"]) > div > div ul li.lotusSelected a,
@@ -10063,7 +10121,7 @@ body > div[id*="dialogs_deleteConfirm"] {
     transition: none !important;
     font-weight: normal !important;
     font-size: 0.875rem;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     overflow: visible;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -10118,7 +10176,7 @@ body > div[id*="dialogs_deleteConfirm"] {
       .lotusColLeft div[id^="lconn_share_widget_Tree_"] .headerSelector.lotusSelected::before {
         content: '';
         display: block;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         width: 4px;
         height: calc( (14px * 2) + calc(14px * 1.5) );
         position: absolute;
@@ -10161,7 +10219,7 @@ body > div[id*="dialogs_deleteConfirm"] {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: calc(100% - 40px) !important;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 
 .lotusMain #lotusColLeft #mainActions {
   padding: 14px 24px;

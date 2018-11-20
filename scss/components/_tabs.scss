@@ -348,7 +348,8 @@ div[role="tablist"],
 }
 
 // Survey settings dialog
-div.lconn-survey_dialog .dijitTabContainer {
+div.lconn-survey_dialog .dijitTabContainer,
+div.question-creator .dijitTabContainer {
   .dijitTabListContainer-top {
     border-bottom: 1px solid $border-separator !important;
     width: auto !important;
@@ -433,7 +434,7 @@ ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
 }
 body.blog.admin #pageTabs.lotusNavTabs {
   border-bottom: 1px solid $border-separator;
-  
+
   li {
     float: none;
     display: inline-block;
@@ -470,11 +471,11 @@ body.blog.admin #pageTabs.lotusNavTabs {
   margin-top: 1.75rem;
 }
 
-// insert img new ui 
+// insert img new ui
 .lotusui30dojo .lconnInsertImage.forum .lotusDialog {
   .dijitTabListContainer-top.dijitTabController {
     margin-right: 0;
-    
+
     ~ .dijitTabPaneWrapper {
       padding: 0;
     }
@@ -484,14 +485,14 @@ body.blog.admin #pageTabs.lotusNavTabs {
   }
 }
 
-// 1747 rich content widget tabs 
+// 1747 rich content widget tabs
 .lotusCommunities .lotusWidget2 .lotusTabs {
   #qkrRefHide + li {
     margin-left: 0 !important;
   }
   a:not([role="tab"]) {
     color: $tab-text !important;
-    
+
     &:focus {
       color: $tab-text-focus !important;
     }

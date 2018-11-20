@@ -37,7 +37,7 @@ body > div[id*="dialogs_deleteConfirm"] {
 
   * {
     max-width: 100% !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 
   .lotusDialog.lotusForm2._lotusDelete {
