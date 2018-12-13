@@ -358,3 +358,8 @@ div.ActivityList {
 #calendar_main div#calendar_view .lotusViewControl { //Events
   padding-right: 0 !important;
 }
+
+//1215 Height of iframe in Surveys responses table.
+div[id*="SurveysFullpageMode"] iframe[id$="FULLPAGE_singleViewSection_iFrame"] {
+  min-height: 1500px;
+}

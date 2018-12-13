@@ -54,6 +54,9 @@
 .lotusDialogBorder > .lotusDialog > div > .lotusDialogHeader > .lotusDialogClose {
 	right: 0 !important;
 }
+.lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose {
+	top: 2rem !important;
+}
 
 //File Picker Dialogs (add a file, upload, share a file, link to a file)
 //Files tab in file picker
@@ -161,10 +164,16 @@ div[dojoattachpoint="streamNode"] {
 	}
 }
 
+//2250 POsition top of insert image dialog in forums.
+.lconnInsertImage.forum {
+	top: 4rem !important;
+	position: fixed !important;
+}
+
 // fix for right col too wide in Wiki Move Page dlg
 .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
 	padding-left:2rem!important;
-	padding-top:1rem!important;
+	padding-top:2rem!important;
 	+ div {
 		padding-left:2rem!important;
 	}
@@ -704,4 +713,16 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 }
 .lconnInsertImage .lconnFileUploadLabel .lotusText::-ms-clear {
   display: none;
+}
+
+//2247 wiki insert image dialog, space above local files drop zone
+table.lotusFormTable.lconnLocalFilesTab {
+  margin-top: 0 !important;
+}
+
+//2251 forum insert image border issue
+.lconnLocalFilesTab {
+  div[id^="lconn_core_upload_ui_DnDFileField"] {
+    width: inherit !important;
+  }
 }
