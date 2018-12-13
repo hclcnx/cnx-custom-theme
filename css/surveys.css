@@ -4309,6 +4309,9 @@ div.ActivityList .lotusTable tr:not(.lotusDetails) td {
 #calendar_main div#calendar_view .lotusViewControl {
   padding-right: 0 !important; }
 
+div[id*="SurveysFullpageMode"] iframe[id$="FULLPAGE_singleViewSection_iFrame"] {
+  min-height: 1500px; }
+
 .lotusui30 .lotusBoard .lotusStream .lotusPostHover, .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
   background-color: #F3F3F3; }
 
@@ -5282,6 +5285,9 @@ div.lotusPostIndicator a:focus {
 #activitypage #displayMessageList {
   padding-top: 24px !important; }
 
+.lotusDialogContent .lotusMessage img {
+  margin: 12px 5px 0 0 !important; }
+
 .dijitDialogUnderlay {
   background: rgba(0, 0, 0, 0.6) !important;
   opacity: 1 !important; }
@@ -5342,6 +5348,9 @@ div.lotusPostIndicator a:focus {
 
 .lotusDialogBorder > .lotusDialog > div > .lotusDialogHeader > .lotusDialogClose {
   right: 0 !important; }
+
+.lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose {
+  top: 2rem !important; }
 
 img.lconnPickerSourceLabelIconCloud {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23595859%22 d=%22M21,12L21,12l0-10c0-1.1-0.9-2-2-2H5C3.9,0,3,0.9,3,2v20c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-9h0V12z M5,1h14 c0.5,0,1,0.4,1,1v10H4V2C4,1.4,4.4,1,5,1z M20,22c0,0.5-0.4,1-1,1H5c-0.5,0-1-0.4-1-1v-9h16V22z%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%226%22 width=%226%22 height=%221%22/%3E%3Crect fill=%22%23595859%22 x=%229%22 y=%2217%22 width=%226%22 height=%221%22/%3E%3C/svg%3E") !important;
@@ -5418,9 +5427,13 @@ div[dojoattachpoint="streamNode"] {
 #blogsImageTabDiv .lotusDialogHeader {
   padding-top: 32px !important; }
 
+.lconnInsertImage.forum {
+  top: 4rem !important;
+  position: fixed !important; }
+
 .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
   padding-left: 2rem !important;
-  padding-top: 1rem !important; }
+  padding-top: 2rem !important; }
   .lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
     padding-left: 2rem !important; }
 
@@ -5846,6 +5859,12 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog .BrowseGroups {
 
 .lconnInsertImage .lconnFileUploadLabel .lotusText::-ms-clear {
   display: none; }
+
+table.lotusFormTable.lconnLocalFilesTab {
+  margin-top: 0 !important; }
+
+.lconnLocalFilesTab div[id^="lconn_core_upload_ui_DnDFileField"] {
+  width: inherit !important; }
 
 select:not([style="display:none"]):not([style="display: none;"]) {
   font-size: 12.8px !important;
@@ -6539,6 +6558,24 @@ div[role="tablist"],
     .lconnPickerSourceToCheck .lconnPickerSourceLabel img[class*="Folder"] {
       left: .25rem; }
 
+div.lconn-survey_dialog .dijitTabContainer {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+  div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top {
+    width: 100% !important; }
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp"]:focus {
+    outline: 1px solid currentColor !important; }
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_1"],
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_2"] {
+    padding: 4px 0px 4px 6px !important; }
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_3"],
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_4"],
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_5"] {
+    padding: 6px 0px 2px 6px !important; }
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_6"],
+  div.lconn-survey_dialog .dijitTabContainer a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_7"] {
+    padding: 6px 0px 6px 6px !important; }
+
 .dijitTabContainer .dijitTabListContainer-top {
   padding: 0 !important;
   background: transparent !important; }
@@ -6556,6 +6593,7 @@ div[role="tablist"],
         padding: 0.5rem 1rem !important;
         border-radius: 2px !important;
         border: 1px solid transparent !important;
+        text-transform: none !important;
         font-size: 14px !important;
         font-weight: 600 !important; }
         .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent .tabLabel:hover {
@@ -6584,51 +6622,6 @@ div[role="tablist"],
             left: -1px;
             width: calc(100% + 2px);
             height: 0; }
-
-div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top,
-div.question-creator .dijitTabContainer .dijitTabListContainer-top {
-  border-bottom: 1px solid #d8d8d8 !important;
-  width: auto !important;
-  padding: 0 !important; }
-  div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"],
-  div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
-    padding-bottom: calc(.375rem + 3px) !important; }
-    div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent,
-    div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent {
-      font-size: 14px !important;
-      font-weight: 600 !important;
-      margin-left: 1rem !important;
-      background-image: none !important;
-      border-radius: 2px;
-      color: #595859 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent,
-      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent + .dijitTabInner.dijitTabContent {
-        margin-left: .5rem !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked,
-      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked {
-        position: relative;
-        color: #000000 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover,
-      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:hover {
-        color: #FFFFFF !important;
-        background-color: #3C6DF0 !important;
-        border-color: #3C6DF0 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus,
-      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent:focus {
-        color: #595859 !important;
-        background-color: transparent !important;
-        border-color: #3C6DF0 !important; }
-      div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel,
-      div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel {
-        color: inherit !important;
-        border: none !important;
-        text-transform: none !important; }
-        div.lconn-survey_dialog .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus,
-        div.question-creator .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent span.tabLabel:focus {
-          outline: 0 !important; }
-div.lconn-survey_dialog .dijitTabContainer .lotusDialogFooter,
-div.question-creator .dijitTabContainer .lotusDialogFooter {
-  padding: 1rem 1rem !important; }
 
 ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
   min-width: 1px !important;
@@ -10797,7 +10790,9 @@ div[id^="lconn_forums_PostForm_"] .lotusFormTitle, div[id^="lconn_forums_PostFor
 #lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner h2 {
   margin-left: 288px !important;
   margin-top: -47px !important; }
-
+@-moz-document url-prefix() {
+  #lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner h2 {
+    margin-top: 0px !important; } }
 h2 + div.lotusTitleBarExt > ul.lotusInlinelist.lotusActions:not(#communityActions) {
   padding: 1rem 1.75rem 0 !important; }
 
@@ -11051,9 +11046,17 @@ div[id^="lconn_share0_widget_Dialog_"] form .lotusDialogContent._qkrDialogCompac
     background-color: #F3F3F3 !important; }
 
 div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
-  top: -30px !important; }
+  left: 0 !important;
+  top: 0 !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogHeader {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    padding-top: 2.75rem !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogContent {
+    overflow-x: hidden !important; }
   div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top {
-    height: 68px !important; }
+    width: 100% !important;
+    height: 58px !important; }
     div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top .dijitTabListWrapper {
       height: auto !important; }
     div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] {
@@ -11067,11 +11070,8 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
         div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent {
           margin-left: 0 !important; }
           div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent span {
-            padding: 0.5rem 1rem !important;
-            color: #595859 !important;
-            border: 1px solid transparent !important;
-            font-size: 14px !important;
-            font-weight: 600 !important; }
+            padding: 0.2rem 1rem !important;
+            text-transform: capitalize !important; }
             div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitTabListContainer-top div[role="tablist"] .dijitTab .dijitTabInner.dijitTabContent span:focus {
               text-decoration: none !important;
               border-color: #3C6DF0 !important;
@@ -11080,21 +11080,49 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
               border-color: #3C6DF0 !important;
               background-color: #3C6DF0 !important;
               color: #FFFFFF !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane {
+    padding: 0 20px !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane .dijitTextBox {
+      border: none !important; }
+      div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane .dijitTextBox input[type="text"] {
+        line-height: 1.5 !important;
+        padding: 0 !important;
+        background: none !important;
+        border: none !important;
+        border-bottom: 1px solid #d8d8d8 !important;
+        font-size: 12.8px !important;
+        padding-right: 1rem !important;
+        padding-bottom: .375rem !important;
+        box-sizing: border-box !important;
+        height: auto !important; }
+        div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane .dijitTextBox input[type="text"]:focus, div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane .dijitTextBox input[type="text"] .dijitTextBoxFocused {
+          outline: none !important;
+          border-color: #3C6DF0 !important;
+          box-shadow: 0 1px 0 #3C6DF0 !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane select:focus {
+      border-bottom-width: 1px !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane a.lotusIcon:focus {
+      padding: 1px 6px !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane a.upIcon:focus, div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane a.downIcon:focus, div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane a.addIcon:focus, div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .dijitContentPane a.removeIcon:focus {
+      outline: 1px solid currentColor !important; }
   div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .lotusMessage img {
     margin-top: 12px !important; }
   div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .dijitTabContainer .lotusMessage span {
     font-size: 1.3em !important; }
-  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton .dijitButtonText {
-    font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif; }
-  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover {
-    background-color: #3C6DF0 !important;
-    border-color: #3C6DF0 !important; }
-    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover .dijitButtonText {
-      color: #FFFFFF !important; }
-  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonFocused {
-    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
-  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter .dijitButtonContents {
-    outline: none !important; }
+  div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter {
+    padding: 6px 0 8px 0 !important;
+    margin: 0 !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton .dijitButtonText {
+      font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover {
+      background-color: #3C6DF0 !important;
+      border-color: #3C6DF0 !important; }
+      div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonHover .dijitButtonText {
+        color: #FFFFFF !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter span.dijitButton.lotusFormButton.dijitButtonFocused {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
+    div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] .lotusDialogFooter .dijitButtonContents {
+      outline: none !important; }
 
 .lfSummaryWrapper div.dijitVisible {
   top: 24px !important; }
@@ -11122,6 +11150,7 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
       padding: 0.5rem 1rem !important;
       color: #595859 !important;
       border: 1px solid transparent !important;
+      line-height: 1.2 !important;
       font-size: 14px !important;
       font-weight: 600 !important; }
       .lfSummaryWrapper .lfViewResponseControls ul[role="tablist"] li a:focus {
@@ -11133,36 +11162,173 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
         color: #FFFFFF !important; }
 
 .lfMn.lotusui30dojo .lotusDialogHeader {
-  padding-top: 2rem !important; }
+  padding-top: 2rem !important;
+  background-image: none !important; }
 .lfMn.lotusui30dojo .lotusDialogContent {
   padding: 0px 20px !important; }
 .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"],
 .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"],
 .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton,
-.lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton {
+.lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"] {
   font-family: inherit !important; }
+  .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton span.dijitArrowButtonInner,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"] span.dijitArrowButtonInner {
+    background-position: 100% 3px !important; }
   .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"]:hover,
   .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"]:hover,
   .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:hover,
-  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover {
+  .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"]:hover,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"]:hover,
+  .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"]:hover,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton:hover,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"]:hover {
     transition: color 150ms ease-in, background-color 150ms ease-in, border-color 150ms ease-in !important;
     border-color: #3C6DF0 !important;
     background-color: #3C6DF0 !important; }
     .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"]:hover span,
     .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"]:hover span,
     .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:hover span,
-    .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover span {
+    .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"]:hover span,
+    .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"]:hover span,
+    .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"]:hover span,
+    .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton:hover span,
+    .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"]:hover span {
       color: #FFFFFF !important; }
+    .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton:hover span.dijitArrowButtonInner,
+    .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"]:hover span.dijitArrowButtonInner {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+  .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"]:focus,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"]:focus,
+  .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"]:focus,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"]:focus,
+  .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"]:focus,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton:focus,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"]:focus {
+    outline: 1px solid #3C6DF0 !important; }
   .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"].dijitFocused,
   .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"].dijitFocused,
   .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton.dijitFocused,
-  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton.dijitFocused {
+  .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"].dijitFocused,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"].dijitFocused,
+  .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"].dijitFocused,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton.dijitFocused,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"].dijitFocused {
     box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
   .lfMn.lotusui30dojo .lfSummaryView .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus,
   .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus,
   .lfMn.lotusui30dojo .lotusDialogContent .dijitButton.lotusFormButton .dijitButtonContents:focus,
-  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton .dijitButtonContents:focus {
+  .lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lotusDialogFooter .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lfFormFooter .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell .dijitButton.lotusFormButton .dijitButtonContents:focus,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"] .dijitButtonContents:focus {
     outline: none !important; }
+.lfMn.lotusui30dojo .lfSummaryView a.upIcon:focus, .lfMn.lotusui30dojo .lfSummaryView a.downIcon:focus, .lfMn.lotusui30dojo .lfSummaryView a.addIcon:focus, .lfMn.lotusui30dojo .lfSummaryView a.removeIcon:focus,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar a.upIcon:focus,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar a.downIcon:focus,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar a.addIcon:focus,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar a.removeIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogContent a.upIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogContent a.downIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogContent a.addIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogContent a.removeIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogFooter a.upIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogFooter a.downIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogFooter a.addIcon:focus,
+.lfMn.lotusui30dojo .lotusDialogFooter a.removeIcon:focus,
+.lfMn.lotusui30dojo .lfFormFooter a.upIcon:focus,
+.lfMn.lotusui30dojo .lfFormFooter a.downIcon:focus,
+.lfMn.lotusui30dojo .lfFormFooter a.addIcon:focus,
+.lfMn.lotusui30dojo .lfFormFooter a.removeIcon:focus,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell a.upIcon:focus,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell a.downIcon:focus,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell a.addIcon:focus,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell a.removeIcon:focus {
+  outline: 1px solid currentColor !important; }
+.lfMn.lotusui30dojo .lfSummaryView span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lotusDialogContent span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lotusDialogFooter span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .lfFormFooter span[id^="dijit_form_DropDownButton"],
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell span[id^="dijit_form_DropDownButton"] {
+  padding: 2px; }
+.lfMn.lotusui30dojo .lfSummaryView div.dijitRadio,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar div.dijitRadio,
+.lfMn.lotusui30dojo .lotusDialogContent div.dijitRadio,
+.lfMn.lotusui30dojo .lotusDialogFooter div.dijitRadio,
+.lfMn.lotusui30dojo .lfFormFooter div.dijitRadio,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell div.dijitRadio {
+  padding-left: 6px !important; }
+  .lfMn.lotusui30dojo .lfSummaryView div.dijitRadio .dijitCheckBoxInput,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar div.dijitRadio .dijitCheckBoxInput,
+  .lfMn.lotusui30dojo .lotusDialogContent div.dijitRadio .dijitCheckBoxInput,
+  .lfMn.lotusui30dojo .lotusDialogFooter div.dijitRadio .dijitCheckBoxInput,
+  .lfMn.lotusui30dojo .lfFormFooter div.dijitRadio .dijitCheckBoxInput,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell div.dijitRadio .dijitCheckBoxInput {
+    outline: none !important; }
+.lfMn.lotusui30dojo .lfSummaryView label,
+.lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar label,
+.lfMn.lotusui30dojo .lotusDialogContent label,
+.lfMn.lotusui30dojo .lotusDialogFooter label,
+.lfMn.lotusui30dojo .lfFormFooter label,
+.lfMn.lotusui30dojo .optionActionsCell.trailingCell label {
+  vertical-align: bottom; }
+  .lfMn.lotusui30dojo .lfSummaryView label.dijitFocusedLabel,
+  .lfMn.lotusui30dojo .lfnExt_ViewResponses_Toolbar label.dijitFocusedLabel,
+  .lfMn.lotusui30dojo .lotusDialogContent label.dijitFocusedLabel,
+  .lfMn.lotusui30dojo .lotusDialogFooter label.dijitFocusedLabel,
+  .lfMn.lotusui30dojo .lfFormFooter label.dijitFocusedLabel,
+  .lfMn.lotusui30dojo .optionActionsCell.trailingCell label.dijitFocusedLabel {
+    outline: 1px solid #3C6DF0 !important; }
 .lfMn.lotusui30dojo .lfDialogContent .dijitCheckBox {
   width: 17px !important; }
 .lfMn.lotusui30dojo div[id^="freedom_widget_solution_environment_OptionsList"] .dijitCheckBox {
@@ -11210,13 +11376,183 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
 .lfMn.lotusui30dojo .lfAdvancedSearchBody {
   padding-left: 0px; }
 
-html.dj_contentbox {
-  overflow: hidden !important; }
-
 #freedom-composer span {
   outline: none; }
 
 div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
   outline: none; }
+
+.lfMn.lotusui30dojo .dijitContentPane .lfDataPager {
+  border-top: none !important;
+  border-bottom: none !important;
+  margin: 10px 0;
+  padding: 5px 0; }
+.lfMn.lotusui30dojo div[id^="freedomapplication_widget_overviewF_Form1"] {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+.lfMn.lotusui30dojo .toolbar-list-trail {
+  position: relative;
+  right: 2em; }
+  .lfMn.lotusui30dojo .toolbar-list-trail li:nth-child(2) {
+    color: #FFFFFF; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridMasterView div[class="dojoxGridView"]:last-child {
+  left: 450px !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid div > .dojoxGridRow:first-child .dojoxGridCell,
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridCell.firstFieldCell {
+  border-left-style: none !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridCell.lastMetaCell {
+  border-right-style: none !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid div > .dojoxGridRow:first-child .dojoxGridCell {
+  border-top: #FFFFFF !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell,
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCellFocus {
+  border-style: none !important; }
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridArrowButtonNode,
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridColCaption,
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCellFocus .dojoxGridArrowButtonNode,
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCellFocus .dojoxGridColCaption {
+    position: relative;
+    top: 10px !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader th.idCell {
+  width: 4em !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell {
+  padding-top: 20px !important;
+  padding-bottom: 15px !important;
+  text-transform: uppercase; }
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridArrowButtonNode {
+    position: relative;
+    left: 9000px; }
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridSortUp {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E");
+    background-size: 8px 8px !important;
+    padding: 0px 0px 0px 0px !important;
+    background-position: calc(100% - 7px) 15px !important;
+    background-repeat: no-repeat; }
+    .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridSortUp:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M1.4,7.5L6,2.8l4.6,4.7L12,6.1L6,0L0,6.1L1.4,7.5z%22/%3E%3C/svg%3E") !important; }
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridSortDown {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E");
+    background-size: 8px 8px !important;
+    padding: 0px 0px 0px 0px !important;
+    background-position: calc(100% - 7px) 15px !important;
+    background-repeat: no-repeat; }
+    .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridCell .dojoxGridSortDown:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridHeader .dojoxGridRowTable {
+  border-bottom: 1px solid #3C6DF0 !important; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridMasterHeader {
+  height: 81px; }
+  .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridMasterHeader .dojoxGridSortNode {
+    color: #595859 !important;
+    text-decoration: none !important;
+    border-radius: 2px !important;
+    border-color: #3C6DF0 !important;
+    text-align: center;
+    font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    height: 40px; }
+    .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridMasterHeader .dojoxGridSortNode:hover {
+      background-color: #3C6DF0;
+      color: #FFFFFF !important; }
+    .lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridMasterHeader .dojoxGridSortNode > .dojoxGridCellContent {
+      position: relative;
+      top: 10px;
+      display: inline-block; }
+.lfMn.lotusui30dojo .lfAppOverviewArea .dojoxGrid .dojoxGridCell {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+.lfMn.lotusui30dojo li.dijitDisabled a {
+  font-weight: 400 !important;
+  color: #000000 !important;
+  text-decoration: none !important; }
+.lfMn.lotusui30dojo .pageSizeController li:nth-child(1)::after {
+  content: ":"; }
+.lfMn.lotusui30dojo .pageSizeController li:nth-child(9) {
+  text-transform: lowercase; }
+.lfMn.lotusui30dojo .pageSizeController li:nth-child(3), .lfMn.lotusui30dojo .pageSizeController li:nth-child(5), .lfMn.lotusui30dojo .pageSizeController li:nth-child(7) {
+  color: #FFFFFF; }
+.lfMn.lotusui30dojo .lfSummaryWrapper .dijitLayoutContainer {
+  overflow: hidden !important; }
+
+.viewDataSessionDialog,
+#export-dialog_dialog,
+.lfAdvancedSearchDialog {
+  top: 0px !important; }
+
+div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
+  outline: none; }
+
+div[id^="freedom_widget_solution_environment_CurrentItemViewDialog"] .lotusDialogHeader {
+  overflow: hidden !important; }
+
+div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogContent ul {
+  padding-left: 0 !important; }
+div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton, div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:hover, div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:active, div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:focus {
+    text-decoration: none !important;
+    font-weight: 500 !important; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:hover, div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:active {
+    outline: none; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:focus {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+    outline: none !important; }
+  .dj_a11y div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:focus, .dijit_a11y div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:focus {
+    box-shadow: none !important;
+    outline: 1px solid #3C6DF0 !important;
+    outline-offset: 1px; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:active, div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton:hover {
+    background-color: #3C6DF0 !important;
+    color: #FFFFFF !important;
+    border-color: #3C6DF0 !important; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton .dijitButtonText {
+    font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton.dijitButtonHover {
+    background-color: #3C6DF0 !important;
+    border-color: #3C6DF0 !important; }
+    div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton.dijitButtonHover .dijitButtonText {
+      color: #FFFFFF !important; }
+  div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter span.dijitButton.dijitButtonFocused {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
+div[id^="freedom_widget_common_environment_Dialog"] .lotusDialogFooter .dijitButtonContents {
+  outline: none !important; }
+
+@-moz-document url-prefix() {
+  div[id^="freedom_widget"] .dijitInline,
+  #export-dialog_dialog .dijitInline,
+  .lfSummaryWrapper .dijitInline {
+    padding: 3px 6px !important; }
+
+  div[id^="freedom_widget_solution_environment_ViewDataSessionPropertyDialog"] .dijitInline {
+    padding: 2px 6px !important; } }
+.lfMn.cnx table.grid-layout-table > .grid-layout-body > .grid-layout-row > .grid-layout-cell.selected,
+.lfMn.cnx table.grid-layout-table > .grid-layout-body > .grid-layout-row > .grid-layout-cell.hovered.selected,
+.lfMn.cnx table.grid-layout-table .grid-layout-action-bar {
+  border: 1px solid #aaa !important; }
+.lfMn.cnx table.grid-layout-table td.grid-layout-cell .selected-wrapper, .lfMn.cnx table.grid-layout-table td.grid-layout-cell .hovered-wrapper {
+  background-color: transparent !important; }
+
+#summary-view .lfCarousel .lfCarouselFooter {
+  padding: 0 !important; }
+#summary-view .lfCarousel .lfCarouselBody table.dojoxLegendNode label.dojoxLegendText {
+  display: initial !important; }
 
 /*# sourceMappingURL=surveys.css.map */

@@ -40,6 +40,7 @@ function periscope(){
     "metrics":["/metricssc/",
                "/metrics"],
     "wikis":["/wikis/"],
+    "surveys":["/surveys/"],
     "settings":["/manage/account/user/",
                 "/manage/account/announcement/",
                 "/news/",

@@ -285,9 +285,36 @@ div[role="tablist"],
   }
 }
 
+// some overrides needed for lconn-survey_dialog settings dialog
+div.lconn-survey_dialog .dijitTabContainer {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  .dijitTabListContainer-top {
+    width: 100% !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp"] {
+    &:focus {
+      outline: 1px solid currentColor !important;
+    }
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_1"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_2"] {
+    padding: 4px 0px 4px 6px !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_3"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_4"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_5"] {
+    padding: 6px 0px 2px 6px !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_6"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_7"] {
+    padding: 6px 0px 6px 6px !important;
+  }
+}
 
 // forum reply -> insert image -> file picker dialog
 // these tabs hide the icons already so we should fix the left padding
+// also applies to Survey settings on div.lconn-survey_dialog
 .dijitTabContainer .dijitTabListContainer-top {
   padding: 0 !important;
   background: transparent !important;
@@ -309,6 +336,7 @@ div[role="tablist"],
         padding: 0.5rem 1rem !important;
         border-radius: $border-radius-tabs !important;
         border: 1px solid transparent !important;
+        text-transform: none !important;
         @include font-size($tabs...);
         &:hover {
           color: $tab-text-hover !important;
@@ -344,54 +372,6 @@ div[role="tablist"],
         background-image: none !important;
       }
     }
-  }
-}
-
-// Survey settings dialog
-div.lconn-survey_dialog .dijitTabContainer,
-div.question-creator .dijitTabContainer {
-  .dijitTabListContainer-top {
-    border-bottom: 1px solid $border-separator !important;
-    width: auto !important;
-    padding: 0 !important;
-    div[role="tablist"] {
-      padding-bottom: calc(.375rem + 3px) !important;
-      .dijitTabInner.dijitTabContent {
-        @include font-size($tabs...);
-        margin-left: 1rem !important;
-        background-image: none !important;
-        border-radius: $border-radius-tabs;
-        color: $tab-text !important;
-        + .dijitTabInner.dijitTabContent {
-          margin-left: .5rem !important;
-        }
-        &.dijitTabChecked {
-          position: relative;
-          color: $tab-text-selected !important;
-        }
-        &:hover {
-          color: $tab-text-hover !important;
-          background-color: $tab-background-hover !important;
-          border-color: $tab-border-hover !important;
-        }
-        &:focus {
-          color: $tab-text-focus !important;
-          background-color: $tab-background-focus !important;
-          border-color: $tab-border-focus !important;
-        }
-        span.tabLabel {
-          color: inherit !important;
-          border: none !important;
-          text-transform: none !important;
-          &:focus {
-            outline: 0 !important;
-          }
-        }
-      }
-    }
-  }
-  .lotusDialogFooter {
-    padding: 1rem 1rem !important;
   }
 }
 

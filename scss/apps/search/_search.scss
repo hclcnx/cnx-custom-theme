@@ -1,4 +1,4 @@
-// page header 
+// page header
 .lotusui.lotusui30dojo.lotusui30_body .lotusFrame{
   .lotusWrapper{
     position:relative;
@@ -128,6 +128,10 @@
 }
 .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
   padding-left: 248px !important;
+  // interim fix for firefox issue to display top of community overview
+  @-moz-document url-prefix() {
+    padding-left: 0px !important;
+  }
 }
 
 //Update content of results row

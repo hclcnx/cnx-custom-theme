@@ -38,6 +38,7 @@
 // @match        https://apps.na.collabserv.com/profiles/*
 // @match        https://apps.na.collabserv.com/search/*
 // @match        https://apps.na.collabserv.com/social/*
+// @match        https://apps.na.collabserv.com/surveys/*
 // @match        https://apps.na.collabserv.com/wikis/*
 // @grant        GM_getResourceText
 // @grant        GM_addStyle

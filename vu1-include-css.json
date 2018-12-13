@@ -246,6 +246,20 @@
             "application": "Visual Update 1 for IBM Connections"
         },
         {
+            "name": "Surveys",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/surveys.css"
+                ],
+                "include-repo": {
+                  "name": "cnx-custom-theme"
+                }
+            },
+            "path": "surveys",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+        {
             "name": "Wikis",
             "type": "com.ibm.customizer.ui",
             "payload": {

@@ -26,7 +26,7 @@
     @include font-size($title...);
   }
 }
-// create sub-community in a top-nav no banner community 
+// create sub-community in a top-nav no banner community
 #lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
   #newCommunityForm {
     padding-left:48px!important;
@@ -138,6 +138,12 @@ div[id^="lconn_forums_PostForm_"] {
         margin-left: 288px !important;
         margin-top: -47px !important;
       }
+      // interim fix for firefox issue to display top of community overview
+      @-moz-document url-prefix() {
+        h2 {
+          margin-top: 0px !important;
+        }
+      }
     }
   }
 }
@@ -238,7 +244,7 @@ h2 + div#communityActionBar,
     > .lotusTable {
       width: 100% !important;
       table-layout: fixed;
-      
+
       tbody {
         display: flex;
       }
