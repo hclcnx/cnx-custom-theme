@@ -365,12 +365,16 @@ div[id^="lconn_share_widget_Dialog_"] {
   .lotusFormTable {
     margin-top: 0 !important;
       .lotusFormFieldRow {
-        .lotusFormLabel {
+      	.lotusFormLabel {
           margin-top: 0 !important;
           margin-bottom: 0 !important;
+					a[id^="lconn_share_widget_HelpLauncher_"] {
+						position: relative;
+						bottom: 1px;
+					}
         }
         td > div {
-          margin-bottom: 6px !important;
+          margin-bottom: 8px !important;
         }
       }
     }
@@ -522,7 +526,7 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
       overflow: visible;
       a {
         position: absolute;
-        right: 0;
+        right: 3px;
         top: -3.5rem;
       }
       //Add a file to a status update dialog
@@ -535,10 +539,15 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
 		position: relative;
 		top: auto;
 		right: auto;
+		left: 1px;
 	}
 	.BrowseGroups {
 		margin-bottom: -1.35rem !important;
 
+	}
+	a[id^="lconn_share_widget_HelpLauncher"] {
+		position: relative;
+		bottom: 1px;
 	}
 }
 
@@ -725,4 +734,47 @@ table.lotusFormTable.lconnLocalFilesTab {
   div[id^="lconn_core_upload_ui_DnDFileField"] {
     width: inherit !important;
   }
+}
+
+//2293 Library share dialog
+.qkrDialog .lotusDialog .lotusFormFieldRow {
+	td.qkrShareWithLabel {
+		vertical-align: top !important;
+	}
+	select[aria-describedby^="qkrLW_UserRoleSelection"] {
+	    padding-bottom: .5rem !important;
+			position: relative;
+			bottom: 3px;
+	}
+	td:nth-of-type(2) {
+		select {
+			 padding-left: 5px !important;
+		}
+		span {
+			 padding-left: 5px;
+			 display: inline-block;
+			 padding-top: .5px;
+		}
+	}
+	input[id^="quickr_lw_widget_PeopleTypeAhead"] {
+		position: relative;
+		bottom: 1px;
+	}
+	a.qkrHelpIcon {
+		position: relative;
+		top: 2px;
+	}
+	.lotusFilters2 .lotusFilter .lotusAltText {
+		display:none;
+	}
+}
+
+.qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo {
+	padding-top: 5px !important;
+	>img {
+		margin: 1px 5px 6px 0 !important;
+	}
+	a img {
+		margin: 3px 8px 6px 0 !important;
+	}
 }

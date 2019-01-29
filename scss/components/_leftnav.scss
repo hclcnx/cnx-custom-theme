@@ -20,6 +20,11 @@
     padding-left:48px!important;
     margin-left:0px !important;
   }
+  &.metricsLotusMain {
+    .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow){
+      padding-left: 8px!important;
+    }    
+  }
   .lotusWidget_3columnLayoutWithBanner & .lotusContent.wpthemeWide:not(.wpthemeBanner):not(.wpthemeNarrow) {
     padding-left: 0 !important;
   }
