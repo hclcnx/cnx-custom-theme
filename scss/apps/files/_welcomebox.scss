@@ -1,22 +1,11 @@
 .lotusui30 {
   .lotusSyncViewWelcomeBox {
-    background-color: transparent !important;
-    background-image: none;
-    background-image:svg-url-with-replaced-fill($svg-welcome-back, '#000000', $color-gray-50) !important;
-    background-repeat: no-repeat!important;
-    background-position: center;
-    background-position-y:0px;
-    background-size: 300px 300px;
-    padding-top:300px !important;
-    .lotusSyncHeading {
-      color: $text-04;
-      font-family: inherit;
-    }
     p {
       font-weight: normal;
       color: $text-01 !important;
       font-family: inherit;
     }
+
     .lotusSyncLinkSpan {
       font-weight:normal;
       color: $text-01 !important;

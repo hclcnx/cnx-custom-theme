@@ -18,6 +18,7 @@
 .lotusBtn.submit.lotusButtonSubmit,
 .filesList .lotusDetails .lotusBtnSmall,
 #mainActions .lotusBtn,
+#feedContentAreaSub #addFeedBtn,
 #memberAddForm #saveButton,
 span[id^="lconn_share_widget_Tagger"] input[type="submit"],
 #memberInviteForm .lotusFormButton[name="submit"],
@@ -43,6 +44,7 @@ span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
 //End Primary buttons-------------
 
 //Secondary buttons-------------
+.resultsDisplay .cardResultsBody .empty a.bx--btn--secondary,
 .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"], //profiles
 .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"], //profiles
 .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a,
@@ -79,7 +81,8 @@ div#activityActionButtons span.lotusBtn a, //Community activities
 .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a, // stand-alone forums list buttons
 #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
 .lotusTable .lotusDetails .lotusBtnSmall, // wiki list add tag buttons
-.lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a //1752 wiki members page buttons - onprem
+.lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a, //1752 wiki members page buttons - onprem
+.qkrLibraryWidget span.lotusBtn a // library widget buttons
 {
   @include btnsecondary;
   &:disabled, &[disabled="disabled"], &.lotusBtnDisabled {
@@ -154,7 +157,9 @@ div#forumConfirmMessage + div #updatesArea .lotusBtnContainer,
 #forum,
 #body .lotusContent > div.lotusBtnContainer, //on onprem start a wiki
 #follow_removeContactsDiv,
-#frinds_removeFriendsDiv {
+.qkrLibraryWidget,
+#frinds_removeFriendsDiv,
+#feedContentAreaSub {
   span.lotusBtn {
     &, &:hover, &:focus, &:active {
       border: none !important;

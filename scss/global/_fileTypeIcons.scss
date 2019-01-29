@@ -85,6 +85,13 @@ img[class*="Calendar"] {
   box-sizing: border-box !important;
   background-repeat: no-repeat;
 }
+#scene-body { //for CR4 table view
+  .lconnSprite-iconFolderPrivate32,
+  .lconnSprite-iconFolderShared32,
+  .lconnSprite-iconFolderPublic32 {
+    padding-left: 0 !important;
+  }
+}
 .lconn-ftype64, .iconsFileTypes64{
   background-size: 64px 64px!important;
 }

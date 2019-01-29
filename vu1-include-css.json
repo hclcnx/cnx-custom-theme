@@ -8,20 +8,6 @@
     ],
     "extensions": [
         {
-            "name": "AAGlobal Ex",
-            "type": "com.ibm.customizer.ui",
-            "payload": {
-                "include-files": [
-                    "css/global.css"
-                ],
-                "include-repo": {
-                    "name": "cnx-custom-theme"
-                }
-            },
-            "path": "global",
-            "application": "Visual Update 1 for IBM Connections"
-        },
-        {
           "name":"Account Settings",
           "type": "com.ibm.customizer.ui",
           "payload": {
@@ -119,22 +105,24 @@
             "path": "forums",
             "application": "Visual Update 1 for IBM Connections"
         },
-        {
-            "name": "Homepage New",
+		{
+            "name": "AAGlobal Ex",
+			"title":"Global Settings",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
-                    "css/home.css"
+                    "css/global.css"
                 ],
                 "include-repo": {
                     "name": "cnx-custom-theme"
                 }
             },
-            "path": "social",
+            "path": "global",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
             "name": "Homepage Old",
+			"title":"Homepage",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
@@ -205,6 +193,7 @@
         },
         {
             "name": "Org page",
+			"title":"Organization Page",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
@@ -215,6 +204,21 @@
                 }
             },
             "path": "contacts",
+            "application": "Visual Update 1 for IBM Connections"
+        },
+		{
+            "name": "Homepage New",
+			"title":"OrientMe",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "css/home.css"
+                ],
+                "include-repo": {
+                    "name": "cnx-custom-theme"
+                }
+            },
+            "path": "social",
             "application": "Visual Update 1 for IBM Connections"
         },
         {
@@ -253,7 +257,7 @@
                     "css/surveys.css"
                 ],
                 "include-repo": {
-                  "name": "cnx-custom-theme"
+                    "name": "cnx-custom-theme"
                 }
             },
             "path": "surveys",

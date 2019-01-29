@@ -19,8 +19,15 @@ body.lconnShareboxGadget {
 .lotusui30dojo .lcSharebox div.dijitDialogTitleBar {
   box-shadow: none !important;
 }
+//Fix for narrow sharebox - CR4 2347
+.lotusui30dojo .lcSharebox {
+  div.shareTabContainer {
+    width: 584px !important;
+  }
+}
 //Set bottom of sharebox
 .lotusDialogHeader.shareBoxBottomHeader {
+  margin-bottom: 0 !important;
 	padding-top: 0 !important;
 }
 

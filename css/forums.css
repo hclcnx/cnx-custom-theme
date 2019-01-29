@@ -384,6 +384,7 @@ a:visited.lotusPerson,
 .lotusBtn.submit.lotusButtonSubmit,
 .filesList .lotusDetails .lotusBtnSmall,
 #mainActions .lotusBtn,
+#feedContentAreaSub #addFeedBtn,
 #memberAddForm #saveButton,
 span[id^="lconn_share_widget_Tagger"] input[type="submit"],
 #memberInviteForm .lotusFormButton[name="submit"],
@@ -483,6 +484,10 @@ span[id^="lconn_act_StartActivityButton_"] a,
   #mainActions .lotusBtn:hover,
   #mainActions .lotusBtn:active,
   #mainActions .lotusBtn:focus,
+  #feedContentAreaSub #addFeedBtn,
+  #feedContentAreaSub #addFeedBtn:hover,
+  #feedContentAreaSub #addFeedBtn:active,
+  #feedContentAreaSub #addFeedBtn:focus,
   #memberAddForm #saveButton,
   #memberAddForm #saveButton:hover,
   #memberAddForm #saveButton:active,
@@ -554,6 +559,8 @@ span[id^="lconn_act_StartActivityButton_"] a,
   .filesList .lotusDetails .lotusBtnSmall:active,
   #mainActions .lotusBtn:hover,
   #mainActions .lotusBtn:active,
+  #feedContentAreaSub #addFeedBtn:hover,
+  #feedContentAreaSub #addFeedBtn:active,
   #memberAddForm #saveButton:hover,
   #memberAddForm #saveButton:active,
   span[id^="lconn_share_widget_Tagger"] input[type="submit"]:hover,
@@ -590,6 +597,7 @@ span[id^="lconn_act_StartActivityButton_"] a,
   .lotusBtn.submit.lotusButtonSubmit:focus,
   .filesList .lotusDetails .lotusBtnSmall:focus,
   #mainActions .lotusBtn:focus,
+  #feedContentAreaSub #addFeedBtn:focus,
   #memberAddForm #saveButton:focus,
   span[id^="lconn_share_widget_Tagger"] input[type="submit"]:focus,
   #memberInviteForm .lotusFormButton[name="submit"]:focus,
@@ -637,6 +645,8 @@ span[id^="lconn_act_StartActivityButton_"] a,
   .dijit_a11y .filesList .lotusDetails .lotusBtnSmall:focus,
   .dj_a11y #mainActions .lotusBtn:focus,
   .dijit_a11y #mainActions .lotusBtn:focus,
+  .dj_a11y #feedContentAreaSub #addFeedBtn:focus,
+  .dijit_a11y #feedContentAreaSub #addFeedBtn:focus,
   .dj_a11y #memberAddForm #saveButton:focus,
   .dijit_a11y #memberAddForm #saveButton:focus,
   .dj_a11y span[id^="lconn_share_widget_Tagger"] input[type="submit"]:focus,
@@ -693,6 +703,8 @@ span[id^="lconn_act_StartActivityButton_"] a,
   .filesList .lotusDetails .lotusBtnSmall:hover,
   #mainActions .lotusBtn:active,
   #mainActions .lotusBtn:hover,
+  #feedContentAreaSub #addFeedBtn:active,
+  #feedContentAreaSub #addFeedBtn:hover,
   #memberAddForm #saveButton:active,
   #memberAddForm #saveButton:hover,
   span[id^="lconn_share_widget_Tagger"] input[type="submit"]:active,
@@ -875,6 +887,15 @@ span[id^="lconn_act_StartActivityButton_"] a,
   #mainActions .lotusBtn.lotusBtnDisabled,
   #mainActions .lotusBtn.lotusBtnDisabled:hover,
   #mainActions .lotusBtn.lotusBtnDisabled:active,
+  #feedContentAreaSub #addFeedBtn:disabled,
+  #feedContentAreaSub #addFeedBtn:disabled:hover,
+  #feedContentAreaSub #addFeedBtn:disabled:active,
+  #feedContentAreaSub #addFeedBtn[disabled="disabled"],
+  #feedContentAreaSub #addFeedBtn[disabled="disabled"]:hover,
+  #feedContentAreaSub #addFeedBtn[disabled="disabled"]:active,
+  #feedContentAreaSub #addFeedBtn.lotusBtnDisabled,
+  #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:hover,
+  #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:active,
   #memberAddForm #saveButton:disabled,
   #memberAddForm #saveButton:disabled:hover,
   #memberAddForm #saveButton:disabled:active,
@@ -1006,6 +1027,9 @@ span[id^="lconn_act_StartActivityButton_"] a,
   #mainActions .lotusBtn:disabled:focus,
   #mainActions .lotusBtn[disabled="disabled"]:focus,
   #mainActions .lotusBtn.lotusBtnDisabled:focus,
+  #feedContentAreaSub #addFeedBtn:disabled:focus,
+  #feedContentAreaSub #addFeedBtn[disabled="disabled"]:focus,
+  #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
   #memberAddForm #saveButton:disabled:focus,
   #memberAddForm #saveButton[disabled="disabled"]:focus,
   #memberAddForm #saveButton.lotusBtnDisabled:focus,
@@ -1140,6 +1164,12 @@ span[id^="lconn_act_StartActivityButton_"] a,
   .dijit_a11y #mainActions .lotusBtn[disabled="disabled"]:focus,
   .dj_a11y #mainActions .lotusBtn.lotusBtnDisabled:focus,
   .dijit_a11y #mainActions .lotusBtn.lotusBtnDisabled:focus,
+  .dj_a11y #feedContentAreaSub #addFeedBtn:disabled:focus,
+  .dijit_a11y #feedContentAreaSub #addFeedBtn:disabled:focus,
+  .dj_a11y #feedContentAreaSub #addFeedBtn[disabled="disabled"]:focus,
+  .dijit_a11y #feedContentAreaSub #addFeedBtn[disabled="disabled"]:focus,
+  .dj_a11y #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
+  .dijit_a11y #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
   .dj_a11y #memberAddForm #saveButton:disabled:focus,
   .dijit_a11y #memberAddForm #saveButton:disabled:focus,
   .dj_a11y #memberAddForm #saveButton[disabled="disabled"]:focus,
@@ -1210,6 +1240,7 @@ span[id^="lconn_act_StartActivityButton_"] a,
   outline: 1px solid #FFFFFF !important;
   outline-offset: 1px; }
 
+.resultsDisplay .cardResultsBody .empty a.bx--btn--secondary,
 .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"],
 .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"],
 .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a,
@@ -1246,7 +1277,8 @@ div#activityActionButtons span.lotusBtn a,
 .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a,
 #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
 .lotusTable .lotusDetails .lotusBtnSmall,
-.lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a {
+.lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a,
+.qkrLibraryWidget span.lotusBtn a {
   border-radius: 2rem !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -1265,7 +1297,11 @@ div#activityActionButtons span.lotusBtn a,
   background-color: #FFFFFF !important;
   border-color: #3C6DF0 !important;
   color: #3C6DF0 !important; }
-  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"], .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:hover, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:active, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:focus,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"],
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"],
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:hover,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:active,
@@ -1409,10 +1445,16 @@ div#activityActionButtons span.lotusBtn a,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+  .qkrLibraryWidget span.lotusBtn a,
+  .qkrLibraryWidget span.lotusBtn a:hover,
+  .qkrLibraryWidget span.lotusBtn a:active,
+  .qkrLibraryWidget span.lotusBtn a:focus {
     text-decoration: none !important;
     font-weight: 500 !important; }
-  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active,
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:hover, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:hover,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:active,
   .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a:hover,
@@ -1484,8 +1526,11 @@ div#activityActionButtons span.lotusBtn a,
   .lotusTable .lotusDetails .lotusBtnSmall:hover,
   .lotusTable .lotusDetails .lotusBtnSmall:active,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
+  .qkrLibraryWidget span.lotusBtn a:hover,
+  .qkrLibraryWidget span.lotusBtn a:active {
     outline: none; }
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:focus,
   .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:focus,
   .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a:focus,
@@ -1522,10 +1567,13 @@ div#activityActionButtons span.lotusBtn a,
   .lotusBtnContainer .forumsLockedLabel + div span.lotusBtn a:focus,
   #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus,
   .lotusTable .lotusDetails .lotusBtnSmall:focus,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+  .qkrLibraryWidget span.lotusBtn a:focus {
     box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
     outline: none !important; }
-  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
+  .dj_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:focus, .dijit_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:focus,
+  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
+  .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:focus,
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:focus,
   .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:focus,
   .dj_a11y .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a:focus,
@@ -1597,11 +1645,15 @@ div#activityActionButtons span.lotusBtn a,
   .dj_a11y .lotusTable .lotusDetails .lotusBtnSmall:focus,
   .dijit_a11y .lotusTable .lotusDetails .lotusBtnSmall:focus,
   .dj_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
-  .dijit_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus {
+  .dijit_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+  .dj_a11y .qkrLibraryWidget span.lotusBtn a:focus,
+  .dijit_a11y .qkrLibraryWidget span.lotusBtn a:focus {
     box-shadow: none !important;
     outline: 1px solid #3C6DF0 !important;
     outline-offset: 1px; }
-  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover,
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:active, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:hover,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:active,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:hover,
   .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn + .lotusBtn a:active,
@@ -1673,11 +1725,22 @@ div#activityActionButtons span.lotusBtn a,
   .lotusTable .lotusDetails .lotusBtnSmall:active,
   .lotusTable .lotusDetails .lotusBtnSmall:hover,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
+  .qkrLibraryWidget span.lotusBtn a:active,
+  .qkrLibraryWidget span.lotusBtn a:hover {
     background-color: #3C6DF0 !important;
     color: #FFFFFF !important;
     border-color: #3C6DF0 !important; }
-  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:hover, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:active, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"], .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:hover, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:active, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:hover, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:active,
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled:hover, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled:active, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"], .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"]:hover, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"]:active, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled:hover, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"],
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:active,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:hover,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:active,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:hover,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:active,
@@ -2001,12 +2064,24 @@ div#activityActionButtons span.lotusBtn a,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled="disabled"]:active,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:hover,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:active {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:active,
+  .qkrLibraryWidget span.lotusBtn a:disabled,
+  .qkrLibraryWidget span.lotusBtn a:disabled:hover,
+  .qkrLibraryWidget span.lotusBtn a:disabled:active,
+  .qkrLibraryWidget span.lotusBtn a[disabled="disabled"],
+  .qkrLibraryWidget span.lotusBtn a[disabled="disabled"]:hover,
+  .qkrLibraryWidget span.lotusBtn a[disabled="disabled"]:active,
+  .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled,
+  .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:hover,
+  .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:active {
     cursor: not-allowed;
     color: #969696 !important;
     border-color: #969696 !important;
     background-color: #FFFFFF !important; }
-  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus, .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
+  .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled:focus, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"]:focus, .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled:focus,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus,
+  .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"][disabled="disabled"]:focus,
   .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"].lotusBtnDisabled:focus,
@@ -2114,9 +2189,18 @@ div#activityActionButtons span.lotusBtn a,
   .lotusTable .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:disabled:focus,
   .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled="disabled"]:focus,
-  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus {
+  .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
+  .qkrLibraryWidget span.lotusBtn a:disabled:focus,
+  .qkrLibraryWidget span.lotusBtn a[disabled="disabled"]:focus,
+  .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:focus {
     box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important; }
-  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus, .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus, .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus, .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
+  .dj_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled:focus, .dijit_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary:disabled:focus, .dj_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"]:focus, .dijit_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary[disabled="disabled"]:focus, .dj_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled:focus, .dijit_a11y .resultsDisplay .cardResultsBody .empty a.bx--btn--secondary.lotusBtnDisabled:focus,
+  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus,
+  .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"]:disabled:focus,
+  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus,
+  .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"][disabled="disabled"]:focus,
+  .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
+  .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"][data-dojo-attach-event="onclick: doCancel"].lotusBtnDisabled:focus,
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:focus,
   .dijit_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"]:disabled:focus,
   .dj_a11y .lotusStreamUpdate .lotusActions a[role="button"] [dojoattachevent="onclick:cancel"][disabled="disabled"]:focus,
@@ -2332,7 +2416,13 @@ div#activityActionButtons span.lotusBtn a,
   .dj_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled="disabled"]:focus,
   .dijit_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled="disabled"]:focus,
   .dj_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
-  .dijit_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus {
+  .dijit_a11y .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
+  .dj_a11y .qkrLibraryWidget span.lotusBtn a:disabled:focus,
+  .dijit_a11y .qkrLibraryWidget span.lotusBtn a:disabled:focus,
+  .dj_a11y .qkrLibraryWidget span.lotusBtn a[disabled="disabled"]:focus,
+  .dijit_a11y .qkrLibraryWidget span.lotusBtn a[disabled="disabled"]:focus,
+  .dj_a11y .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:focus,
+  .dijit_a11y .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:focus {
     box-shadow: none !important;
     outline: 1px solid #969696 !important;
     outline-offset: 1px; }
@@ -2456,10 +2546,18 @@ div#forumConfirmMessage + div #updatesArea .lotusBtnContainer span.lotusBtn:acti
 #follow_removeContactsDiv span.lotusBtn:hover,
 #follow_removeContactsDiv span.lotusBtn:focus,
 #follow_removeContactsDiv span.lotusBtn:active,
+.qkrLibraryWidget span.lotusBtn,
+.qkrLibraryWidget span.lotusBtn:hover,
+.qkrLibraryWidget span.lotusBtn:focus,
+.qkrLibraryWidget span.lotusBtn:active,
 #frinds_removeFriendsDiv span.lotusBtn,
 #frinds_removeFriendsDiv span.lotusBtn:hover,
 #frinds_removeFriendsDiv span.lotusBtn:focus,
-#frinds_removeFriendsDiv span.lotusBtn:active {
+#frinds_removeFriendsDiv span.lotusBtn:active,
+#feedContentAreaSub span.lotusBtn,
+#feedContentAreaSub span.lotusBtn:hover,
+#feedContentAreaSub span.lotusBtn:focus,
+#feedContentAreaSub span.lotusBtn:active {
   border: none !important;
   box-shadow: none !important;
   background: none !important;
@@ -4767,6 +4865,8 @@ div.hopscotch-bubble {
   .lotusMain .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow) {
     padding-left: 48px !important;
     margin-left: 0px !important; }
+  .lotusMain.metricsLotusMain .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 8px !important; }
   .lotusWidget_3columnLayoutWithBanner .lotusMain .lotusContent.wpthemeWide:not(.wpthemeBanner):not(.wpthemeNarrow) {
     padding-left: 0 !important; }
 
@@ -5610,8 +5710,11 @@ div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] 
     div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow .lotusFormLabel {
       margin-top: 0 !important;
       margin-bottom: 0 !important; }
+      div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow .lotusFormLabel a[id^="lconn_share_widget_HelpLauncher_"] {
+        position: relative;
+        bottom: 1px; }
     div[id^="lconn_share_widget_Dialog_"] div[id^="lconn_files_widget_UploadFile_"] .lotusFormTable .lotusFormFieldRow td > div {
-      margin-bottom: 6px !important; }
+      margin-bottom: 8px !important; }
 
 #body .dijitDialogTitleBar {
   padding-bottom: 0px !important;
@@ -5730,16 +5833,20 @@ div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow:nth-child(
   overflow: visible; }
   div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow:nth-child(3) td:last-child a, div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow:nth-child(4) td:last-child a {
     position: absolute;
-    right: 0;
+    right: 3px;
     top: -3.5rem; }
   div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow:nth-child(3) td:last-child input[id^="lconn_files_widget_UploadFile_"][id$="_setEncrypt"] ~ a, div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow:nth-child(4) td:last-child input[id^="lconn_files_widget_UploadFile_"][id$="_setEncrypt"] ~ a {
     top: -2px !important; }
 div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusUploadFile .lotusFormFieldRow:nth-child(3) td:last-child a {
   position: relative;
   top: auto;
-  right: auto; }
+  right: auto;
+  left: 1px; }
 div[id^="lconn_share_widget_Dialog_"] .lotusDialog .BrowseGroups {
   margin-bottom: -1.35rem !important; }
+div[id^="lconn_share_widget_Dialog_"] .lotusDialog a[id^="lconn_share_widget_HelpLauncher"] {
+  position: relative;
+  bottom: 1px; }
 
 .lotusui30_body #app_palette_dialog_modal.dijitDialog, .lotusui30_body #app_palette_dialog_modal.dijitDialog #app_palette_dialog_modal {
   width: 500px !important; }
@@ -5866,6 +5973,34 @@ table.lotusFormTable.lconnLocalFilesTab {
 
 .lconnLocalFilesTab div[id^="lconn_core_upload_ui_DnDFileField"] {
   width: inherit !important; }
+
+.qkrDialog .lotusDialog .lotusFormFieldRow td.qkrShareWithLabel {
+  vertical-align: top !important; }
+.qkrDialog .lotusDialog .lotusFormFieldRow select[aria-describedby^="qkrLW_UserRoleSelection"] {
+  padding-bottom: .5rem !important;
+  position: relative;
+  bottom: 3px; }
+.qkrDialog .lotusDialog .lotusFormFieldRow td:nth-of-type(2) select {
+  padding-left: 5px !important; }
+.qkrDialog .lotusDialog .lotusFormFieldRow td:nth-of-type(2) span {
+  padding-left: 5px;
+  display: inline-block;
+  padding-top: .5px; }
+.qkrDialog .lotusDialog .lotusFormFieldRow input[id^="quickr_lw_widget_PeopleTypeAhead"] {
+  position: relative;
+  bottom: 1px; }
+.qkrDialog .lotusDialog .lotusFormFieldRow a.qkrHelpIcon {
+  position: relative;
+  top: 2px; }
+.qkrDialog .lotusDialog .lotusFormFieldRow .lotusFilters2 .lotusFilter .lotusAltText {
+  display: none; }
+
+.qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo {
+  padding-top: 5px !important; }
+  .qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo > img {
+    margin: 1px 5px 6px 0 !important; }
+  .qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo a img {
+    margin: 3px 8px 6px 0 !important; }
 
 select:not([style="display:none"]):not([style="display: none;"]) {
   font-size: 12.8px !important;
@@ -6695,6 +6830,9 @@ body.blog.admin #pageTabs.lotusNavTabs {
     color: #595859 !important; }
   .lotusCommunities .lotusWidget2 .lotusTabs a:not([role="tab"]):hover {
     color: #FFFFFF !important; }
+
+.ic-orient nav.ic-stream-controls-options #om_latest_updates {
+  margin-left: 1rem !important; }
 
 #socialTags #tagsYouAddedList_div, #socialTags #tagsListTags_div {
   max-height: 12.75rem;
