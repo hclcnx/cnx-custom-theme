@@ -5339,9 +5339,19 @@ div.lotusPostIndicator a:focus {
   width: auto !important; }
 
 #membersmessages .memberMessage {
-  outline-color: transparent !important; }
+  outline-color: transparent !important;
+  border: 0px none !important; }
 
-#RecentUpdates .lotusMessageBody:focus {
+#RecentUpdates .lotusMessageBody,
+.lotusSuccess .lotusMessageBody,
+.lotusMessage2 .lotusMessageBody {
+  border: none !important; }
+#RecentUpdates .lotusMessageBody:focus,
+.lotusSuccess .lotusMessageBody:focus,
+.lotusMessage2 .lotusMessageBody:focus {
+  outline: none !important; }
+
+.Members .lotusMessage2 {
   outline: none !important; }
 
 .lotusIconMsgSuccess,
