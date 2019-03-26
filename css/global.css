@@ -5322,8 +5322,17 @@ they should be display: block; */ }
   .ics-viewer .lconnCompactMessage.lotusMessageContainer {
     width: auto !important; }
   .ics-viewer #membersmessages .memberMessage {
-    outline-color: transparent !important; }
-  .ics-viewer #RecentUpdates .lotusMessageBody:focus {
+    outline-color: transparent !important;
+    border: 0px none !important; }
+  .ics-viewer #RecentUpdates .lotusMessageBody,
+  .ics-viewer .lotusSuccess .lotusMessageBody,
+  .ics-viewer .lotusMessage2 .lotusMessageBody {
+    border: none !important; }
+  .ics-viewer #RecentUpdates .lotusMessageBody:focus,
+  .ics-viewer .lotusSuccess .lotusMessageBody:focus,
+  .ics-viewer .lotusMessage2 .lotusMessageBody:focus {
+    outline: none !important; }
+  .ics-viewer .Members .lotusMessage2 {
     outline: none !important; }
   .ics-viewer .lotusIconMsgSuccess,
   .ics-viewer .iconsMessages16-msgSuccess16,

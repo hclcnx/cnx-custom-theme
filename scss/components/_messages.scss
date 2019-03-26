@@ -52,13 +52,22 @@
 #membersmessages {
   .memberMessage {
     outline-color: transparent !important;
+    border: 0px none !important;
   }
 }
 // remove focus outline from recent updates message
-#RecentUpdates {
+#RecentUpdates,
+.lotusSuccess,
+.lotusMessage2 {
+  .lotusMessageBody {
+		border: none !important;
+	}
 	.lotusMessageBody:focus {
 		outline: none !important;
 	}
+}
+.Members .lotusMessage2 {
+  outline: none !important;
 }
 
 // message icons updates
