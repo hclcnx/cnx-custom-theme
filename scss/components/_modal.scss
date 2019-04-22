@@ -34,15 +34,16 @@
 }
 .lotusDialogBorder > .lotusDialog,
 .dijitDialogTitleBar{
-	box-shadow:0 12px 24px 0 $box-shadow-10 !important;
-	border-top: $background-main 4px solid!important;
-	padding-top:0!important;
-	box-sizing:border-box!important;
-	width:100%!important;
-	background-color: $background-main !important;
+  background-color: $background-main !important;
+  border-top: $background-main 4px solid!important;
+  box-shadow:0 12px 24px 0 $box-shadow-10 !important;
+  box-sizing:border-box!important;
+  height: 100% !important;
+  padding-top:0!important;
+  width:100%!important;
 }
 .lotusDialogClose img{
-	display:none!important;
+  display:none!important;
 }
 .lotusDialogClose,
 .dijitDialogCloseIcon

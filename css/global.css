@@ -5396,12 +5396,13 @@ they should be display: block; */ }
     width: 100% !important; }
   .ics-viewer .lotusDialogBorder > .lotusDialog,
   .ics-viewer .dijitDialogTitleBar {
-    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1) !important;
+    background-color: #FFFFFF !important;
     border-top: #FFFFFF 4px solid !important;
-    padding-top: 0 !important;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1) !important;
     box-sizing: border-box !important;
-    width: 100% !important;
-    background-color: #FFFFFF !important; }
+    height: 100% !important;
+    padding-top: 0 !important;
+    width: 100% !important; }
   .ics-viewer .lotusDialogClose img {
     display: none !important; }
   .ics-viewer .lotusDialogClose,
