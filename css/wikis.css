@@ -12788,25 +12788,25 @@ div[widgetid^=lconn_wikis_widget_CommentsMentions] .lotusChunk {
   text-indent: -20px;
 }
 #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow {
-  padding-top: 14px !important;
-  padding-bottom: 14px !important;
   border: none !important;
-  transition: font-weight 0.23s ease;
-  font-weight: normal !important;
   font-size: 0.875rem;
-  text-indent: -25px;
+  font-weight: normal !important;
   overflow: visible;
-  padding-right: 24px;
+  padding-bottom: 14px !important;
+  padding-right: 0 !important;
+  padding-top: 14px !important;
+  text-indent: -25px;
+  transition: font-weight 0.23s ease;
 }
 #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitTreeContent,
 #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitExpandoText:not([dojoattachpoint=expandoNodeText]) {
-  max-width: calc(100% - 26px) !important;
   display: inline-block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
-  vertical-align: middle;
   padding-left: 25px !important;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100% !important;
 }
 #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitTreeContent .dijitTreeLabel,
 #lotusColLeft .navDiv#sideNav .dijitTreeNode .dijitTreeRow .dijitExpandoText:not([dojoattachpoint=expandoNodeText]) .dijitTreeLabel {
