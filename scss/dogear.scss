@@ -1,5 +1,5 @@
 /*
-	 * © Copyright HCL Technologies Limited, 2017, 2019.
+	 * © Copyright HCL Technologies Limited, 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -13,11 +13,19 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
-/*SEARCH STYLE SHEET*/
-/* Variable and mixin Imports*/
+/* BOOKMARKS STYLE SHEET */
+// Variable and mixin Imports
 @import "prereqs/prereqs";
 // Component Imports
 @import "components/components";
 // App Specific Imports
-@import "apps/search/leftNav";
-@import "apps/search/search";
+@import "apps/communities/appNavigator";
+@import "apps/communities/comments";
+@import "apps/communities/dialogs";
+@import "apps/communities/metaTags";
+@import "apps/communities/spacing";
+@import "apps/communities/newentry";
+@import "apps/communities/tips";
+// App Specific Imports
+@import "apps/dogear/dogear";
+@import "apps/dogear/leftNav";

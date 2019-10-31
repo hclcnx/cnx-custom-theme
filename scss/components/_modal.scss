@@ -13,7 +13,7 @@
 	margin:0!important;
 	padding-top:0!important;
 }
-.lotusFormTable tbody td{
+body:not(.catalog) .lotusFormTable tbody td{
 	margin-top:20px!important;
 }
 .lotusDialog, .slideDialog {

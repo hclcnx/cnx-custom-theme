@@ -1,4 +1,7 @@
 #lotusColLeft {
+  #lconnWikisNavTree {
+    overflow-x: hidden;
+  }
   #lconnWikisNavTree > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode,
   #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode {
     padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
@@ -7,15 +10,15 @@
     text-indent: -20px;
   }
   .navDiv#sideNav .dijitTreeNode .dijitTreeRow {
-    border: none !important;
-    font-size: $body-sm-font-size;
-    font-weight: normal !important;
-    overflow: visible;
-    padding-bottom: $leftnav-vertical-padding !important;
-    padding-right: 0 !important; // Issue #2419; fix for severely truncated items
     padding-top: $leftnav-vertical-padding !important;
-    text-indent: -25px; // offsets drag handles and twisties
+    padding-bottom: $leftnav-vertical-padding !important;
+    border: none !important;
     transition: font-weight .23s ease;
+    font-weight: normal !important;
+    font-size: $body-sm-font-size;
+    text-indent: -25px; // offsets drag handles and twisties
+    overflow: visible;
+    padding-right: 2px;
 
     .dijitTreeContent,
     .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) {
@@ -25,7 +28,10 @@
       text-overflow: ellipsis;
       vertical-align: middle;
       white-space: nowrap;
-      width: 100% !important; // Issue #2419; fix for severely truncated items
+      @supports (-moz-appearance:none) {
+        width: calc(100% - 18px) !important; // Issue #2419; FF fix for severely truncated items
+      }
+      width: calc(100% - 4px) !important; // Issue #2419; fix for severely truncated items
 
       .dijitTreeLabel {
         font-size: $body-sm-font-size;

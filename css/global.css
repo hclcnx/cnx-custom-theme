@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-	 * © Copyright IBM Corp. 2017, 2018
+	 * © Copyright HCL Technologies Limited, 2017, 2019.
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -21,139 +21,6 @@
 /* Note - May also need to include a display:none on an existing button img */
 /* Global imports*/
 /* Global imports*/
-html:not([lang=ar]):not([lang*=zh]):not([lang=el]):not([lang=he]):not([lang=ja]):not([lang=ko]):not([lang=ru]):not([lang=th]) {
-  font-family: "IBM Plex Sans", "IBM Helvetica", "Helvetica Neue", HelveticaNeue, Helvetica, sans-serif;
-}
-
-body {
-  font-family: inherit !important;
-}
-body * {
-  font-family: inherit;
-}
-
-html .lotusui30 .lotusDialog .lotusHeading,
-html .lotusui30 .lotusTitleBar2 .lotusHeading,
-html .lotusui30 .lotusTitleBar2 .lotusHeading a,
-html .lotusui30 div.lotusTitleBar h2,
-html .lotusui30 div.lotusPlaceBar h2,
-html .lotusui30 .lotusPlaceBar .lotusBtn,
-html .lotusui30 .dijitTitlePaneTitle,
-html .lotusui30 .lotusSection h2,
-html .lotusui30 .lotusWidget h2,
-html .lotusui30 .lotusWidget2 h2,
-html .lotusui30 .lotusMeta,
-html .lotusui30 .lotusWidget2 .lotusTable h4,
-html .lotusui30 .lotusTable h4,
-html .lotusui30 .lotusMeta,
-html .lotusui30 .lotusWidget2 .lotusTable h4 .ics-viewer .ics-panel-entry-container,
-html .lotusui30 .lotusBtn,
-html .lotusui30 button,
-html .lotusui30 input,
-html .lotusui30 select,
-html .lotusui30 .lotusBtnSmallGray,
-html .lotusui30 button.lotusFormButton,
-html .lotusui30 .lconnUploadContainer .lotusBtn,
-html .lotusui30 input.lotusFormButton,
-html .ics-viewer .ics-panel-entry-container,
-html .ics-viewer .ics-viewer-details .ics-viewer-details-shelf,
-html .scloud3,
-html .lotusui30_fonts,
-html .lotusui30 .lotusSymbol,
-html .lotusui30 .lotusFlyoutInner .lotusStatus,
-html .lotusui30dojo textarea,
-html .lotusui30_fonts,
-html .lotusui30 .lotusMain span.lotusBtn a,
-html .lotusui30 .lotusBtnSmall,
-html .lotusui30 .lotusPaletteHeader ul.lotusTabs li a strong,
-html .lotusui30 .lotusWelcomeBox li,
-html .lotusui30 .lotusWelcomeBox p,
-html .lotusui30 .lotusWelcomeBox .lotusHeading,
-html .lotusui30_layout .lotusWelcomeBox h2,
-html .lotusliveui, html .lotusliveui30, html .scloud3,
-html .ic-orient, html .ic-orient button, html .ic-orient input, html .ic-orient select, html .ic-orient textarea, html .ocs-nav-bar-wrapper,
-html .lotusHeader .shareSome-desc {
-  font-family: inherit;
-}
-
-html .entryContentContainer,
-html .entry-content,
-html .qkrWikiPreview h1 ~ * {
-  font-family: "Helvetica Neue", sans-serif, Helvetica, Arial, Roboto;
-}
-
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-ExtraLight-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 200;
-  src: url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-ExtraLightItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/IBMPlexSans-Light-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Light-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Light-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 300;
-  src: url("../fonts/IBMPlexSans-LightItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-LightItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-LightItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/IBMPlexSans-Regular-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Regular-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Regular-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/IBMPlexSans-Italic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Italic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Italic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/IBMPlexSans-Medium-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Medium-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Medium-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-MediumItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/IBMPlexSans-SemiBold-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-SemiBold-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-SemiBold-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-SemiBoldItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/IBMPlexSans-Bold-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-Bold-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-Bold-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff2?repoName=cnx-custom-theme") format("woff2"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.woff?repoName=cnx-custom-theme") format("woff"), url("../fonts/IBMPlexSans-BoldItalic-V01.1.eot?repoName=cnx-custom-theme") format("eot");
-}
 /*Globalization Changes*/
 .ics-viewer .manualCancel:hover span {
   color: #3C6DF0 !important;
@@ -582,7 +449,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #cardDiv #cardTable #cardFooter .lotusActionMenu a:hover, .ics-viewer #cardDiv #cardTable #cardFooter .lotusActionMenu a:focus {
   background-color: #E7E9F7;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button],
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]),
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a,
@@ -609,7 +476,10 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer div[id^=editBookmark] input[type=submit],
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a {
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]),
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a,
+.ics-viewer input[type=submit],
+.ics-viewer #bookmarkletForm #submitBtn {
   border-radius: 2rem !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -629,7 +499,7 @@ html .qkrWikiPreview h1 ~ * {
   border-color: #3C6DF0 !important;
   color: #FFFFFF !important;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button], .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:focus,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]), .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:active,
@@ -734,14 +604,26 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:hover,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:active,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]),
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):focus,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:hover,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:active,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus {
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus,
+.ics-viewer input[type=submit],
+.ics-viewer input[type=submit]:hover,
+.ics-viewer input[type=submit]:active,
+.ics-viewer input[type=submit]:focus,
+.ics-viewer #bookmarkletForm #submitBtn,
+.ics-viewer #bookmarkletForm #submitBtn:hover,
+.ics-viewer #bookmarkletForm #submitBtn:active,
+.ics-viewer #bookmarkletForm #submitBtn:focus {
   text-decoration: none !important;
   font-weight: 500 !important;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:active,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):active,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:active,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:hover,
@@ -794,11 +676,17 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:active,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:hover,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):active,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:hover,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:active {
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:active,
+.ics-viewer input[type=submit]:hover,
+.ics-viewer input[type=submit]:active,
+.ics-viewer #bookmarkletForm #submitBtn:hover,
+.ics-viewer #bookmarkletForm #submitBtn:active {
   outline: none;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:focus,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:focus,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:focus,
@@ -825,11 +713,14 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer div[id^=editBookmark] input[type=submit]:focus,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:focus,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:focus,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus {
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):focus,
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus,
+.ics-viewer input[type=submit]:focus,
+.ics-viewer #bookmarkletForm #submitBtn:focus {
   box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
   outline: none !important;
 }
-.dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:focus,
+.dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:focus,
@@ -882,13 +773,19 @@ html .qkrWikiPreview h1 ~ * {
 .dijit_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:focus,
 .dj_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a:focus,
+.dj_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):focus,
+.dijit_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):focus,
 .dj_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus,
-.dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus {
+.dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:focus,
+.dj_a11y .ics-viewer input[type=submit]:focus,
+.dijit_a11y .ics-viewer input[type=submit]:focus,
+.dj_a11y .ics-viewer #bookmarkletForm #submitBtn:focus,
+.dijit_a11y .ics-viewer #bookmarkletForm #submitBtn:focus {
   box-shadow: none !important;
   outline: 1px solid #3C6DF0 !important;
   outline-offset: 1px;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:hover,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:active,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:active,
@@ -941,13 +838,19 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:hover,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:active,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):hover,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:active,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:hover {
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:hover,
+.ics-viewer input[type=submit]:active,
+.ics-viewer input[type=submit]:hover,
+.ics-viewer #bookmarkletForm #submitBtn:active,
+.ics-viewer #bookmarkletForm #submitBtn:hover {
   background-color: #FFFFFF !important;
   color: #3C6DF0 !important;
   border-color: #3C6DF0 !important;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled], .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled:active,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled], .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:active, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled:hover, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled:active,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled:active,
@@ -957,6 +860,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled:active,
@@ -966,6 +872,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled:active,
@@ -975,6 +884,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled:active,
@@ -984,6 +896,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled:active,
@@ -993,6 +908,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled:active,
@@ -1002,6 +920,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled:active,
@@ -1011,6 +932,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled:active,
@@ -1020,6 +944,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled:active,
@@ -1029,6 +956,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled:active,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled:hover,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled:active,
@@ -1038,6 +968,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled,
+.ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled:hover,
+.ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled:active,
 .ics-viewer #submit_button:disabled,
 .ics-viewer #submit_button:disabled:hover,
 .ics-viewer #submit_button:disabled:active,
@@ -1047,6 +980,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #submit_button.lotusBtnDisabled,
 .ics-viewer #submit_button.lotusBtnDisabled:hover,
 .ics-viewer #submit_button.lotusBtnDisabled:active,
+.ics-viewer #submit_button.submitDisabled,
+.ics-viewer #submit_button.submitDisabled:hover,
+.ics-viewer #submit_button.submitDisabled:active,
 .ics-viewer #btn_actn__personCardSendEMail:disabled,
 .ics-viewer #btn_actn__personCardSendEMail:disabled:hover,
 .ics-viewer #btn_actn__personCardSendEMail:disabled:active,
@@ -1056,6 +992,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled,
 .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled:hover,
 .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled:active,
+.ics-viewer #btn_actn__personCardSendEMail.submitDisabled,
+.ics-viewer #btn_actn__personCardSendEMail.submitDisabled:hover,
+.ics-viewer #btn_actn__personCardSendEMail.submitDisabled:active,
 .ics-viewer .lotusRightCorner button:disabled,
 .ics-viewer .lotusRightCorner button:disabled:hover,
 .ics-viewer .lotusRightCorner button:disabled:active,
@@ -1065,6 +1004,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusRightCorner button.lotusBtnDisabled,
 .ics-viewer .lotusRightCorner button.lotusBtnDisabled:hover,
 .ics-viewer .lotusRightCorner button.lotusBtnDisabled:active,
+.ics-viewer .lotusRightCorner button.submitDisabled,
+.ics-viewer .lotusRightCorner button.submitDisabled:hover,
+.ics-viewer .lotusRightCorner button.submitDisabled:active,
 .ics-viewer .lotusBtn[name=submitButton]:disabled,
 .ics-viewer .lotusBtn[name=submitButton]:disabled:hover,
 .ics-viewer .lotusBtn[name=submitButton]:disabled:active,
@@ -1074,6 +1016,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled,
 .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled:hover,
 .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled:active,
+.ics-viewer .lotusBtn[name=submitButton].submitDisabled,
+.ics-viewer .lotusBtn[name=submitButton].submitDisabled:hover,
+.ics-viewer .lotusBtn[name=submitButton].submitDisabled:active,
 .ics-viewer .ics-viewer-action-upload .actionLink:disabled,
 .ics-viewer .ics-viewer-action-upload .actionLink:disabled:hover,
 .ics-viewer .ics-viewer-action-upload .actionLink:disabled:active,
@@ -1083,6 +1028,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled,
 .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled:hover,
 .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled:active,
+.ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled,
+.ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled:hover,
+.ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled:active,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled:hover,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled:active,
@@ -1092,6 +1040,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:hover,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:active,
+.ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled,
+.ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled:hover,
+.ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled:active,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:hover,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:active,
@@ -1101,6 +1052,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:hover,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:active,
+.ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled,
+.ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled:hover,
+.ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled:active,
 .ics-viewer #mainActions .lotusBtn:disabled,
 .ics-viewer #mainActions .lotusBtn:disabled:hover,
 .ics-viewer #mainActions .lotusBtn:disabled:active,
@@ -1110,6 +1064,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled,
 .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:hover,
 .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:active,
+.ics-viewer #mainActions .lotusBtn.submitDisabled,
+.ics-viewer #mainActions .lotusBtn.submitDisabled:hover,
+.ics-viewer #mainActions .lotusBtn.submitDisabled:active,
 .ics-viewer #feedContentAreaSub #addFeedBtn:disabled,
 .ics-viewer #feedContentAreaSub #addFeedBtn:disabled:hover,
 .ics-viewer #feedContentAreaSub #addFeedBtn:disabled:active,
@@ -1119,6 +1076,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled,
 .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:hover,
 .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:active,
+.ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled,
+.ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled:hover,
+.ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled:active,
 .ics-viewer #memberAddForm #saveButton:disabled,
 .ics-viewer #memberAddForm #saveButton:disabled:hover,
 .ics-viewer #memberAddForm #saveButton:disabled:active,
@@ -1128,6 +1088,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled,
 .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled:hover,
 .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled:active,
+.ics-viewer #memberAddForm #saveButton.submitDisabled,
+.ics-viewer #memberAddForm #saveButton.submitDisabled:hover,
+.ics-viewer #memberAddForm #saveButton.submitDisabled:active,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled:hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled:active,
@@ -1137,6 +1100,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled:hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled:active,
+.ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled,
+.ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled:hover,
+.ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled:active,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled:hover,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled:active,
@@ -1146,6 +1112,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled:hover,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled:active,
+.ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled,
+.ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled:hover,
+.ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled:active,
 .ics-viewer .dijitDialog .lotusFormButton.submit:disabled,
 .ics-viewer .dijitDialog .lotusFormButton.submit:disabled:hover,
 .ics-viewer .dijitDialog .lotusFormButton.submit:disabled:active,
@@ -1155,6 +1124,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled,
 .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled:hover,
 .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled:active,
+.ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled,
+.ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled:hover,
+.ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled:active,
 .ics-viewer div[id^=editBookmark] input[type=submit]:disabled,
 .ics-viewer div[id^=editBookmark] input[type=submit]:disabled:hover,
 .ics-viewer div[id^=editBookmark] input[type=submit]:disabled:active,
@@ -1164,6 +1136,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled,
 .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled:hover,
 .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled:active,
+.ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled,
+.ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled:hover,
+.ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled:active,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled:hover,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled:active,
@@ -1173,6 +1148,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled:hover,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled:active,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled:hover,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled:active,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled:hover,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled:active,
@@ -1182,6 +1160,21 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled:hover,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled:active,
+.ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled,
+.ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled:hover,
+.ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled],
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled]:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled]:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled:active,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled:hover,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled:active,
@@ -1190,259 +1183,403 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a[disabled=disabled]:active,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:hover,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:active {
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:active,
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled,
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled:hover,
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled:active,
+.ics-viewer input[type=submit]:disabled,
+.ics-viewer input[type=submit]:disabled:hover,
+.ics-viewer input[type=submit]:disabled:active,
+.ics-viewer input[type=submit][disabled=disabled],
+.ics-viewer input[type=submit][disabled=disabled]:hover,
+.ics-viewer input[type=submit][disabled=disabled]:active,
+.ics-viewer input[type=submit].lotusBtnDisabled,
+.ics-viewer input[type=submit].lotusBtnDisabled:hover,
+.ics-viewer input[type=submit].lotusBtnDisabled:active,
+.ics-viewer input[type=submit].submitDisabled,
+.ics-viewer input[type=submit].submitDisabled:hover,
+.ics-viewer input[type=submit].submitDisabled:active,
+.ics-viewer #bookmarkletForm #submitBtn:disabled,
+.ics-viewer #bookmarkletForm #submitBtn:disabled:hover,
+.ics-viewer #bookmarkletForm #submitBtn:disabled:active,
+.ics-viewer #bookmarkletForm #submitBtn[disabled=disabled],
+.ics-viewer #bookmarkletForm #submitBtn[disabled=disabled]:hover,
+.ics-viewer #bookmarkletForm #submitBtn[disabled=disabled]:active,
+.ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled,
+.ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled:hover,
+.ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled:active,
+.ics-viewer #bookmarkletForm #submitBtn.submitDisabled,
+.ics-viewer #bookmarkletForm #submitBtn.submitDisabled:hover,
+.ics-viewer #bookmarkletForm #submitBtn.submitDisabled:active {
   cursor: not-allowed !important;
   background-color: #969696 !important;
   color: #FFFFFF !important;
   border-color: #969696 !important;
 }
-.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled]:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled:focus,
+.ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus, .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled:focus,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled:focus,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled:focus,
 .ics-viewer #submit_button:disabled:focus,
 .ics-viewer #submit_button[disabled=disabled]:focus,
 .ics-viewer #submit_button.lotusBtnDisabled:focus,
+.ics-viewer #submit_button.submitDisabled:focus,
 .ics-viewer #btn_actn__personCardSendEMail:disabled:focus,
 .ics-viewer #btn_actn__personCardSendEMail[disabled=disabled]:focus,
 .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled:focus,
+.ics-viewer #btn_actn__personCardSendEMail.submitDisabled:focus,
 .ics-viewer .lotusRightCorner button:disabled:focus,
 .ics-viewer .lotusRightCorner button[disabled=disabled]:focus,
 .ics-viewer .lotusRightCorner button.lotusBtnDisabled:focus,
+.ics-viewer .lotusRightCorner button.submitDisabled:focus,
 .ics-viewer .lotusBtn[name=submitButton]:disabled:focus,
 .ics-viewer .lotusBtn[name=submitButton][disabled=disabled]:focus,
 .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled:focus,
+.ics-viewer .lotusBtn[name=submitButton].submitDisabled:focus,
 .ics-viewer .ics-viewer-action-upload .actionLink:disabled:focus,
 .ics-viewer .ics-viewer-action-upload .actionLink[disabled=disabled]:focus,
 .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled:focus,
+.ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled:focus,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled:focus,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit[disabled=disabled]:focus,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:focus,
+.ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled:focus,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:focus,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled=disabled]:focus,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
+.ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled:focus,
 .ics-viewer #mainActions .lotusBtn:disabled:focus,
 .ics-viewer #mainActions .lotusBtn[disabled=disabled]:focus,
 .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus,
+.ics-viewer #mainActions .lotusBtn.submitDisabled:focus,
 .ics-viewer #feedContentAreaSub #addFeedBtn:disabled:focus,
 .ics-viewer #feedContentAreaSub #addFeedBtn[disabled=disabled]:focus,
 .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
+.ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled:focus,
 .ics-viewer #memberAddForm #saveButton:disabled:focus,
 .ics-viewer #memberAddForm #saveButton[disabled=disabled]:focus,
 .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled:focus,
+.ics-viewer #memberAddForm #saveButton.submitDisabled:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit][disabled=disabled]:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled:focus,
+.ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled:focus,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled:focus,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit][disabled=disabled]:focus,
 .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled:focus,
+.ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled:focus,
 .ics-viewer .dijitDialog .lotusFormButton.submit:disabled:focus,
 .ics-viewer .dijitDialog .lotusFormButton.submit[disabled=disabled]:focus,
 .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled:focus,
+.ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled:focus,
 .ics-viewer div[id^=editBookmark] input[type=submit]:disabled:focus,
 .ics-viewer div[id^=editBookmark] input[type=submit][disabled=disabled]:focus,
 .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled:focus,
+.ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled:focus,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled:focus,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a[disabled=disabled]:focus,
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled:focus,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled:focus,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled:focus,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a[disabled=disabled]:focus,
 .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled:focus,
+.ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled]:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled:focus,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled:focus,
 .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a[disabled=disabled]:focus,
-.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:focus {
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:focus,
+.ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled:focus,
+.ics-viewer input[type=submit]:disabled:focus,
+.ics-viewer input[type=submit][disabled=disabled]:focus,
+.ics-viewer input[type=submit].lotusBtnDisabled:focus,
+.ics-viewer input[type=submit].submitDisabled:focus,
+.ics-viewer #bookmarkletForm #submitBtn:disabled:focus,
+.ics-viewer #bookmarkletForm #submitBtn[disabled=disabled]:focus,
+.ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled:focus,
+.ics-viewer #bookmarkletForm #submitBtn.submitDisabled:focus {
   box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #969696 !important;
 }
-.dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:disabled:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button][disabled=disabled]:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]):disabled:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus, .dj_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled:focus, .dijit_a11y .ics-viewer .lotusStreamUpdate .lotusActions a[role=button]:not([dojoattachpoint=removeAttachmentNode]).submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #ideatoins_main span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #startActivity span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities div[id$=_FULLPAGE_listSection_controllerSection] span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #calendar_view span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #calendarViews span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #fullRecomm span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities #bookmarkContentAreaSub #headline-content span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn a.submitDisabled:focus,
 .dj_a11y .ics-viewer #submit_button:disabled:focus,
 .dijit_a11y .ics-viewer #submit_button:disabled:focus,
 .dj_a11y .ics-viewer #submit_button[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #submit_button[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #submit_button.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #submit_button.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #submit_button.submitDisabled:focus,
+.dijit_a11y .ics-viewer #submit_button.submitDisabled:focus,
 .dj_a11y .ics-viewer #btn_actn__personCardSendEMail:disabled:focus,
 .dijit_a11y .ics-viewer #btn_actn__personCardSendEMail:disabled:focus,
 .dj_a11y .ics-viewer #btn_actn__personCardSendEMail[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #btn_actn__personCardSendEMail[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #btn_actn__personCardSendEMail.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #btn_actn__personCardSendEMail.submitDisabled:focus,
+.dijit_a11y .ics-viewer #btn_actn__personCardSendEMail.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusRightCorner button:disabled:focus,
 .dijit_a11y .ics-viewer .lotusRightCorner button:disabled:focus,
 .dj_a11y .ics-viewer .lotusRightCorner button[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusRightCorner button[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusRightCorner button.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusRightCorner button.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusRightCorner button.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusRightCorner button.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusBtn[name=submitButton]:disabled:focus,
 .dijit_a11y .ics-viewer .lotusBtn[name=submitButton]:disabled:focus,
 .dj_a11y .ics-viewer .lotusBtn[name=submitButton][disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusBtn[name=submitButton][disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusBtn[name=submitButton].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusBtn[name=submitButton].submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusBtn[name=submitButton].submitDisabled:focus,
 .dj_a11y .ics-viewer .ics-viewer-action-upload .actionLink:disabled:focus,
 .dijit_a11y .ics-viewer .ics-viewer-action-upload .actionLink:disabled:focus,
 .dj_a11y .ics-viewer .ics-viewer-action-upload .actionLink[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .ics-viewer-action-upload .actionLink[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .ics-viewer-action-upload .actionLink.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled:focus,
+.dijit_a11y .ics-viewer .ics-viewer-action-upload .actionLink.submitDisabled:focus,
 .dj_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled:focus,
 .dijit_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit:disabled:focus,
 .dj_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled:focus,
+.dijit_a11y .ics-viewer .lotusBtn.submit.lotusButtonSubmit.submitDisabled:focus,
 .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:focus,
 .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall:disabled:focus,
 .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled:focus,
+.dijit_a11y .ics-viewer .filesList .lotusDetails .lotusBtnSmall.submitDisabled:focus,
 .dj_a11y .ics-viewer #mainActions .lotusBtn:disabled:focus,
 .dijit_a11y .ics-viewer #mainActions .lotusBtn:disabled:focus,
 .dj_a11y .ics-viewer #mainActions .lotusBtn[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #mainActions .lotusBtn[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #mainActions .lotusBtn.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #mainActions .lotusBtn.submitDisabled:focus,
+.dijit_a11y .ics-viewer #mainActions .lotusBtn.submitDisabled:focus,
 .dj_a11y .ics-viewer #feedContentAreaSub #addFeedBtn:disabled:focus,
 .dijit_a11y .ics-viewer #feedContentAreaSub #addFeedBtn:disabled:focus,
 .dj_a11y .ics-viewer #feedContentAreaSub #addFeedBtn[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #feedContentAreaSub #addFeedBtn[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #feedContentAreaSub #addFeedBtn.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled:focus,
+.dijit_a11y .ics-viewer #feedContentAreaSub #addFeedBtn.submitDisabled:focus,
 .dj_a11y .ics-viewer #memberAddForm #saveButton:disabled:focus,
 .dijit_a11y .ics-viewer #memberAddForm #saveButton:disabled:focus,
 .dj_a11y .ics-viewer #memberAddForm #saveButton[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #memberAddForm #saveButton[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #memberAddForm #saveButton.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #memberAddForm #saveButton.submitDisabled:focus,
+.dijit_a11y .ics-viewer #memberAddForm #saveButton.submitDisabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit]:disabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit][disabled=disabled]:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit][disabled=disabled]:focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled:focus,
+.dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] input[type=submit].submitDisabled:focus,
 .dj_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled:focus,
 .dijit_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit]:disabled:focus,
 .dj_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit][disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit][disabled=disabled]:focus,
 .dj_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled:focus,
+.dijit_a11y .ics-viewer #memberInviteForm .lotusFormButton[name=submit].submitDisabled:focus,
 .dj_a11y .ics-viewer .dijitDialog .lotusFormButton.submit:disabled:focus,
 .dijit_a11y .ics-viewer .dijitDialog .lotusFormButton.submit:disabled:focus,
 .dj_a11y .ics-viewer .dijitDialog .lotusFormButton.submit[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer .dijitDialog .lotusFormButton.submit[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .dijitDialog .lotusFormButton.submit.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled:focus,
+.dijit_a11y .ics-viewer .dijitDialog .lotusFormButton.submit.submitDisabled:focus,
 .dj_a11y .ics-viewer div[id^=editBookmark] input[type=submit]:disabled:focus,
 .dijit_a11y .ics-viewer div[id^=editBookmark] input[type=submit]:disabled:focus,
 .dj_a11y .ics-viewer div[id^=editBookmark] input[type=submit][disabled=disabled]:focus,
 .dijit_a11y .ics-viewer div[id^=editBookmark] input[type=submit][disabled=disabled]:focus,
 .dj_a11y .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer div[id^=editBookmark] input[type=submit].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled:focus,
+.dijit_a11y .ics-viewer div[id^=editBookmark] input[type=submit].submitDisabled:focus,
 .dj_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled:focus,
 .dijit_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a:disabled:focus,
 .dj_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled:focus,
+.dijit_a11y .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction a.submitDisabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a:disabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled:focus,
+.dijit_a11y .ics-viewer span[id^=lconn_act_StartActivityButton_] a.submitDisabled:focus,
+.dj_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled:focus,
+.dijit_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]):disabled:focus,
+.dj_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled]:focus,
+.dijit_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink])[disabled=disabled]:focus,
+.dj_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled:focus,
+.dijit_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled:focus,
+.dijit_a11y .ics-viewer #bookmarksMainContent .lotusActionBar a[role=button]:not([id=bkListLink]):not([id=bkdetailsLink]).submitDisabled:focus,
 .dj_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled:focus,
 .dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a:disabled:focus,
 .dj_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a[disabled=disabled]:focus,
 .dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:focus,
-.dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:focus {
+.dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled:focus,
+.dijit_a11y .ics-viewer #body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^=newButton]) a.submitDisabled:focus,
+.dj_a11y .ics-viewer input[type=submit]:disabled:focus,
+.dijit_a11y .ics-viewer input[type=submit]:disabled:focus,
+.dj_a11y .ics-viewer input[type=submit][disabled=disabled]:focus,
+.dijit_a11y .ics-viewer input[type=submit][disabled=disabled]:focus,
+.dj_a11y .ics-viewer input[type=submit].lotusBtnDisabled:focus,
+.dijit_a11y .ics-viewer input[type=submit].lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer input[type=submit].submitDisabled:focus,
+.dijit_a11y .ics-viewer input[type=submit].submitDisabled:focus,
+.dj_a11y .ics-viewer #bookmarkletForm #submitBtn:disabled:focus,
+.dijit_a11y .ics-viewer #bookmarkletForm #submitBtn:disabled:focus,
+.dj_a11y .ics-viewer #bookmarkletForm #submitBtn[disabled=disabled]:focus,
+.dijit_a11y .ics-viewer #bookmarkletForm #submitBtn[disabled=disabled]:focus,
+.dj_a11y .ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled:focus,
+.dijit_a11y .ics-viewer #bookmarkletForm #submitBtn.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #bookmarkletForm #submitBtn.submitDisabled:focus,
+.dijit_a11y .ics-viewer #bookmarkletForm #submitBtn.submitDisabled:focus {
   box-shadow: none !important;
   outline: 1px solid #FFFFFF !important;
   outline-offset: 1px;
@@ -1494,7 +1631,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #topicList .lotusBtn a,
 .ics-viewer #forum .lotusBtn a,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost),
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]),
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray,
 .ics-viewer div#activityActionButtons span.lotusBtn a,
 .ics-viewer .lotusCommunities #memberAddButton a,
@@ -1505,6 +1642,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
 .ics-viewer .lotusTable .lotusDetails .lotusBtnSmall,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a {
   border-radius: 2rem !important;
   border-width: 1px !important;
@@ -1630,10 +1768,10 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:hover,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:active,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:focus,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost),
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):focus,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]),
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:active,
@@ -1674,6 +1812,10 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:focus,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:hover,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:active,
@@ -1734,8 +1876,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #forum .lotusBtn a:active,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:hover,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):active,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:active,
 .ics-viewer div#activityActionButtons span.lotusBtn a:hover,
@@ -1756,6 +1898,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusTable .lotusDetails .lotusBtnSmall:active,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:active,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:hover,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:active {
   outline: none;
@@ -1787,7 +1931,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #topicList .lotusBtn a:focus,
 .ics-viewer #forum .lotusBtn a:focus,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:focus,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):focus,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:focus,
 .ics-viewer div#activityActionButtons span.lotusBtn a:focus,
 .ics-viewer .lotusCommunities #memberAddButton a:focus,
@@ -1798,6 +1942,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a:focus,
 .ics-viewer .lotusTable .lotusDetails .lotusBtnSmall:focus,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:focus,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:focus {
   box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
   outline: none !important;
@@ -1855,8 +2000,8 @@ html .qkrWikiPreview h1 ~ * {
 .dijit_a11y .ics-viewer #forum .lotusBtn a:focus,
 .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:focus,
 .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:focus,
-.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):focus,
-.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):focus,
+.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):focus,
+.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:focus,
 .dj_a11y .ics-viewer div#activityActionButtons span.lotusBtn a:focus,
@@ -1877,6 +2022,8 @@ html .qkrWikiPreview h1 ~ * {
 .dijit_a11y .ics-viewer .lotusTable .lotusDetails .lotusBtnSmall:focus,
 .dj_a11y .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
 .dijit_a11y .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:focus,
+.dj_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:focus,
+.dijit_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:focus,
 .dj_a11y .ics-viewer .qkrLibraryWidget span.lotusBtn a:focus,
 .dijit_a11y .ics-viewer .qkrLibraryWidget span.lotusBtn a:focus {
   box-shadow: none !important;
@@ -1936,8 +2083,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #forum .lotusBtn a:hover,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:active,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:active,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:hover,
 .ics-viewer div#activityActionButtons span.lotusBtn a:active,
@@ -1958,6 +2105,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusTable .lotusDetails .lotusBtnSmall:hover,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:active,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:hover,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:active,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:hover {
   background-color: #3C6DF0 !important;
@@ -2199,15 +2348,15 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled:hover,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled:active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled:hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled:active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled],
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled]:hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled]:active,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled:hover,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled:active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled:hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled:active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled],
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:active,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:hover,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:active,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled:hover,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled:active,
@@ -2298,6 +2447,15 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:hover,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled],
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled]:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled]:active,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled:hover,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled:active,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled:hover,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled:active,
@@ -2391,9 +2549,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a:disabled:focus,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a[disabled=disabled]:focus,
 .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled:focus,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled:focus,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled]:focus,
-.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled:focus,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled:focus,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus,
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray[disabled=disabled]:focus,
 .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray.lotusBtnDisabled:focus,
@@ -2424,6 +2582,9 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a:disabled:focus,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled:focus,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled]:focus,
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled:focus,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled:focus,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a[disabled=disabled]:focus,
 .ics-viewer .qkrLibraryWidget span.lotusBtn a.lotusBtnDisabled:focus {
@@ -2586,12 +2747,12 @@ html .qkrWikiPreview h1 ~ * {
 .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer #pageDetails .qkrTabBody div[dojoattachpoint=toggleNode] a.lotusBtnDisabled:focus,
-.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled:focus,
-.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):disabled:focus,
-.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled]:focus,
-.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost)[disabled=disabled]:focus,
-.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled:focus,
-.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost).lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled:focus,
+.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]):disabled:focus,
+.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus,
+.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode])[disabled=disabled]:focus,
+.dj_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus,
+.dijit_a11y .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublogActionsList) a[role=button]:not(.ublogPost):not([dojoattachpoint=removeAttachmentNode]).lotusBtnDisabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled:focus,
 .dijit_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray:disabled:focus,
 .dj_a11y .ics-viewer span[id^=lconn_share_widget_Tagger] a.lotusBtnSmallGray[disabled=disabled]:focus,
@@ -2652,6 +2813,12 @@ html .qkrWikiPreview h1 ~ * {
 .dijit_a11y .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a[disabled=disabled]:focus,
 .dj_a11y .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
 .dijit_a11y .ics-viewer .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a.lotusBtnDisabled:focus,
+.dj_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled:focus,
+.dijit_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a:disabled:focus,
+.dj_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled]:focus,
+.dijit_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a[disabled=disabled]:focus,
+.dj_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled:focus,
+.dijit_a11y .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn a.lotusBtnDisabled:focus,
 .dj_a11y .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled:focus,
 .dijit_a11y .ics-viewer .qkrLibraryWidget span.lotusBtn a:disabled:focus,
 .dj_a11y .ics-viewer .qkrLibraryWidget span.lotusBtn a[disabled=disabled]:focus,
@@ -2738,6 +2905,10 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn span.lotusBtn:hover,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn span.lotusBtn:focus,
 .ics-viewer .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn span.lotusBtn:active,
+.ics-viewer #bookmarksMainContent .lotusActionBar span.lotusBtn,
+.ics-viewer #bookmarksMainContent .lotusActionBar span.lotusBtn:hover,
+.ics-viewer #bookmarksMainContent .lotusActionBar span.lotusBtn:focus,
+.ics-viewer #bookmarksMainContent .lotusActionBar span.lotusBtn:active,
 .ics-viewer .lotusCommunities #memberAddButton span.lotusBtn,
 .ics-viewer .lotusCommunities #memberAddButton span.lotusBtn:hover,
 .ics-viewer .lotusCommunities #memberAddButton span.lotusBtn:focus,
@@ -2800,7 +2971,10 @@ html .qkrWikiPreview h1 ~ * {
   padding: 0 !important;
   margin: 0 !important;
 }
-.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction, .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction:hover, .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction:focus {
+.ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn, .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn:hover, .ics-viewer #placesAdmin div.lotusActionBar span.lotusBtn:focus,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction:hover,
+.ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction:focus {
   border: none !important;
   background: none !important;
   padding: 0 !important;
@@ -2809,6 +2983,88 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer div[dojoattachpoint=importSurveyNode] .lconnFileInput .lconnUploadContainer span.lotusBtn, .ics-viewer div[dojoattachpoint=importSurveyNode] .lconnFileInput .lconnUploadContainer span.lotusBtn:hover, .ics-viewer div[dojoattachpoint=importSurveyNode] .lconnFileInput .lconnUploadContainer span.lotusBtn:focus {
   border: none !important;
   background: none !important;
+}
+.ics-viewer form#enabledForm a[role=button],
+.ics-viewer form#disabledForm a[role=button],
+.ics-viewer form#clearWidgetCache a[role=button] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important;
+}
+.ics-viewer form#enabledForm a[role=button], .ics-viewer form#enabledForm a[role=button]:hover, .ics-viewer form#enabledForm a[role=button]:active, .ics-viewer form#enabledForm a[role=button]:focus,
+.ics-viewer form#disabledForm a[role=button],
+.ics-viewer form#disabledForm a[role=button]:hover,
+.ics-viewer form#disabledForm a[role=button]:active,
+.ics-viewer form#disabledForm a[role=button]:focus,
+.ics-viewer form#clearWidgetCache a[role=button],
+.ics-viewer form#clearWidgetCache a[role=button]:hover,
+.ics-viewer form#clearWidgetCache a[role=button]:active,
+.ics-viewer form#clearWidgetCache a[role=button]:focus {
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+.ics-viewer form#enabledForm a[role=button]:hover, .ics-viewer form#enabledForm a[role=button]:active,
+.ics-viewer form#disabledForm a[role=button]:hover,
+.ics-viewer form#disabledForm a[role=button]:active,
+.ics-viewer form#clearWidgetCache a[role=button]:hover,
+.ics-viewer form#clearWidgetCache a[role=button]:active {
+  outline: none;
+}
+.ics-viewer form#enabledForm a[role=button]:focus,
+.ics-viewer form#disabledForm a[role=button]:focus,
+.ics-viewer form#clearWidgetCache a[role=button]:focus {
+  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+  outline: none !important;
+}
+.dj_a11y .ics-viewer form#enabledForm a[role=button]:focus, .dijit_a11y .ics-viewer form#enabledForm a[role=button]:focus,
+.dj_a11y .ics-viewer form#disabledForm a[role=button]:focus,
+.dijit_a11y .ics-viewer form#disabledForm a[role=button]:focus,
+.dj_a11y .ics-viewer form#clearWidgetCache a[role=button]:focus,
+.dijit_a11y .ics-viewer form#clearWidgetCache a[role=button]:focus {
+  box-shadow: none !important;
+  outline: 1px solid #3C6DF0 !important;
+  outline-offset: 1px;
+}
+.ics-viewer form#enabledForm a[role=button]:active, .ics-viewer form#enabledForm a[role=button]:hover,
+.ics-viewer form#disabledForm a[role=button]:active,
+.ics-viewer form#disabledForm a[role=button]:hover,
+.ics-viewer form#clearWidgetCache a[role=button]:active,
+.ics-viewer form#clearWidgetCache a[role=button]:hover {
+  background-color: #3C6DF0 !important;
+  color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+}
+.ics-viewer form#enabledForm span.lotusBtn, .ics-viewer form#enabledForm span.lotusBtn:hover, .ics-viewer form#enabledForm span.lotusBtn:focus,
+.ics-viewer form#disabledForm span.lotusBtn,
+.ics-viewer form#disabledForm span.lotusBtn:hover,
+.ics-viewer form#disabledForm span.lotusBtn:focus,
+.ics-viewer form#clearWidgetCache span.lotusBtn,
+.ics-viewer form#clearWidgetCache span.lotusBtn:hover,
+.ics-viewer form#clearWidgetCache span.lotusBtn:focus {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.ics-viewer #widgetTabConfiguration select.widgetTabField {
+  display: inline !important;
+  min-width: 0 !important;
+  padding-left: 10px !important;
 }
 .ics-viewer .ics-viewer-splitbutton .actionLink,
 .ics-viewer .ics-viewer-splitbutton.ics-viewer-action-upload .actionLink,
@@ -2916,7 +3172,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .ics-viewer-action-upload .actionLink .lotusArrow.lotusDropDownSprite,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit .lotusArrow.lotusDropDownSprite,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall .lotusArrow.lotusDropDownSprite,
-.ics-viewer #mainActions .lotusBtn .lotusArrow.lotusDropDownSprite {
+.ics-viewer #mainActions .lotusBtn .lotusArrow.lotusDropDownSprite,
+.ics-viewer #moreactionsachor .lotusArrow.lotusDropDownSprite {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
   background-size: contain !important;
   background-position: center center !important;
@@ -2928,7 +3185,8 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer .ics-viewer-action-upload .actionLink:hover .lotusArrow.lotusDropDownSprite,
 .ics-viewer .lotusBtn.submit.lotusButtonSubmit:hover .lotusArrow.lotusDropDownSprite,
 .ics-viewer .filesList .lotusDetails .lotusBtnSmall:hover .lotusArrow.lotusDropDownSprite,
-.ics-viewer #mainActions .lotusBtn:hover .lotusArrow.lotusDropDownSprite {
+.ics-viewer #mainActions .lotusBtn:hover .lotusArrow.lotusDropDownSprite,
+.ics-viewer #moreactionsachor:hover .lotusArrow.lotusDropDownSprite {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%233C6DF0%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
 }
 .ics-viewer span#createPlaceButton.lotusBtn.lotusBtnAction:hover a img {
@@ -3139,7 +3397,7 @@ html .qkrWikiPreview h1 ~ * {
 .ics-viewer li[id^=com_ibm_social_as_item_comment] .lotusStreamUpdate .lotusActions ul.lotusLeft {
   padding-bottom: 18px !important;
 }
-.ics-viewer #activityStream a.lotusDelete img {
+.ics-viewer #activityStream a.lotusDelete:not([dojoattachpoint=removeAttachmentNode]) img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width=%2224px%22 height=%2224px%22 viewBox=%220 0 24 24%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E%3Cg id=%22Icons-24-x-24px%22 stroke=%22none%22 stroke-width=%221%22 fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg id=%22close_24%22 fill=%22%23595859%22%3E%3Cpolygon id=%22close%22 points=%2218 6 12.353 11.647 6.708 6 6 6.707 11.647 12.354 6 18 6.708 18.707 12.353 13.061 18 18.707 18.707 18 13.061 12.354 18.707 6.707%22%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
   background-position-x: center !important;
   background-position-y: center !important;
@@ -3149,8 +3407,11 @@ html .qkrWikiPreview h1 ~ * {
   right: 1rem !important;
   padding: 0.25rem 0.25rem 0.125rem 0.25rem !important;
 }
-.ics-viewer #activityStream a.lotusDelete img:focus {
+.ics-viewer #activityStream a.lotusDelete:not([dojoattachpoint=removeAttachmentNode]) img:focus {
   outline: 1px solid #3C6DF0 !important;
+}
+.ics-viewer #activityStream a.lotusDelete[dojoattachpoint=removeAttachmentNode] img {
+  vertical-align: middle !important;
 }
 .ics-viewer #sametime-tray ul.navsimplelist button {
   border-radius: 2rem !important;
@@ -3171,7 +3432,6 @@ html .qkrWikiPreview h1 ~ * {
   background-color: #3C6DF0 !important;
   border-color: #3C6DF0 !important;
   color: #FFFFFF !important;
-  font-family: "IBM Plex Sans", "IBM Helvetica", "Helvetica Neue", HelveticaNeue, Helvetica, sans-serif;
   padding: 0 20px !important;
   margin-top: 12px !important;
 }
@@ -3196,7 +3456,7 @@ html .qkrWikiPreview h1 ~ * {
   color: #3C6DF0 !important;
   border-color: #3C6DF0 !important;
 }
-.ics-viewer input[type=checkbox] {
+.ics-viewer input:not(.xccEllipsis):not([name^=likesAndComments]):not([name^=allowContentCreation]):not([value^=personalized]):not([name^=useProxy])[type=checkbox] {
   height: 16px !important;
   width: 20px !important;
   position: relative;
@@ -3207,7 +3467,7 @@ html .qkrWikiPreview h1 ~ * {
   border: none !important;
   vertical-align: bottom;
 }
-.ics-viewer input[type=checkbox]::after {
+.ics-viewer input:not(.xccEllipsis):not([name^=likesAndComments]):not([name^=allowContentCreation]):not([value^=personalized]):not([name^=useProxy])[type=checkbox]::after {
   content: "" !important;
   position: absolute;
   left: 1px;
@@ -3221,13 +3481,13 @@ html .qkrWikiPreview h1 ~ * {
   border: 2px solid #595859 !important;
   background-position: 0 0 !important;
 }
-.ics-viewer input[type=checkbox]:hover::after, .ics-viewer input[type=checkbox]:focus::after {
+.ics-viewer input:not(.xccEllipsis):not([name^=likesAndComments]):not([name^=allowContentCreation]):not([value^=personalized]):not([name^=useProxy])[type=checkbox]:hover::after, .ics-viewer input:not(.xccEllipsis):not([name^=likesAndComments]):not([name^=allowContentCreation]):not([value^=personalized]):not([name^=useProxy])[type=checkbox]:focus::after {
   content: "" !important;
   position: absolute;
   outline: 1px solid #595859 !important;
   outline-offset: 2px !important;
 }
-.ics-viewer input[type=checkbox]:focus {
+.ics-viewer input:not(.xccEllipsis):not([name^=likesAndComments]):not([name^=allowContentCreation]):not([value^=personalized]):not([name^=useProxy])[type=checkbox]:focus {
   outline: none !important;
 }
 .ics-viewer .ic-thumb-widget-flip-card .card-back .check,
@@ -3244,7 +3504,7 @@ html .qkrWikiPreview h1 ~ * {
   outline: 1px solid #FFFFFF !important;
   outline-offset: 2px !important;
 }
-.ics-viewer input[type=checkbox]:checked::after,
+.ics-viewer input[type=checkbox]:not(.xccEllipsis):checked::after,
 .ics-viewer .ic-thumb-widget-flip-card-is-checked .card-back .check,
 .ics-viewer .ic-thumb-widget-flip-card-is-checked .card-front .check {
   border-color: #3C6DF0 !important;
@@ -5017,7 +5277,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer #newCommunityForm td:focus, .ics-viewer #newCommunityForm #addCommunityDescriptionDiv, .ics-viewer #newCommunityForm #cke_addCommunityDescription {
   outline: none !important;
 }
-.ics-viewer .lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
+.ics-viewer .lotusDialogContent .lotusFormFieldRow:not([dojoattachpoint=serverTypesList]) .lotusFormLabel {
   margin-top: 10px !important;
 }
 .ics-viewer [id^=lconn_share_widget_LotusDialog_] {
@@ -5108,14 +5368,14 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
-.ics-viewer .lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
+.ics-viewer body:not(.catalog) .lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
   margin-top: 1rem !important;
   font-weight: 500 !important;
   font-size: 0.75rem !important;
   margin-bottom: 4px !important;
   color: #595859 !important;
 }
-.ics-viewer .lotusDialogContent .lotusFormFieldRow .lotusFormLabel label, .ics-viewer .lotusDialogContent .lotusFormFieldRow .lotusFormLabel span {
+.ics-viewer body:not(.catalog) .lotusDialogContent .lotusFormFieldRow .lotusFormLabel label, .ics-viewer body:not(.catalog) .lotusDialogContent .lotusFormFieldRow .lotusFormLabel span {
   font-weight: inherit !important;
   font-size: inherit !important;
   color: inherit !important;
@@ -5257,6 +5517,26 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   padding-top: 4px !important;
   font-size: 12px !important;
   font-weight: 500 !important;
+}
+.ics-viewer body.catalog input[type=text],
+.ics-viewer body.catalog input[type=password] {
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+}
+.ics-viewer body.catalog input[type=text]:focus, .ics-viewer body.catalog input[type=text] .dijitTextBoxFocused,
+.ics-viewer body.catalog input[type=password]:focus,
+.ics-viewer body.catalog input[type=password] .dijitTextBoxFocused {
+  outline: none !important;
+  border-color: #3C6DF0 !important;
+  box-shadow: 0 1px 0 #3C6DF0 !important;
 }
 .ics-viewer html {
   height: 100%;
@@ -6039,7 +6319,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   margin: 0 !important;
   padding-top: 0 !important;
 }
-.ics-viewer .lotusFormTable tbody td {
+.ics-viewer body:not(.catalog) .lotusFormTable tbody td {
   margin-top: 20px !important;
 }
 .ics-viewer .lotusDialog .lotusFormBody, .ics-viewer .slideDialog .lotusFormBody {
@@ -6734,7 +7014,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo a img {
   margin: 3px 8px 6px 0 !important;
 }
-.ics-viewer select:not([style="display:none"]):not([style="display: none;"]) {
+.ics-viewer select:not([style="display:none"]):not([style="display: none;"]):not(.lotusHidden) {
   font-size: 12.8px !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -6756,11 +7036,11 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   background-repeat: no-repeat !important;
   height: auto !important;
 }
-.ics-viewer select:not([style="display:none"]):not([style="display: none;"]):focus {
+.ics-viewer select:not([style="display:none"]):not([style="display: none;"]):not(.lotusHidden):focus {
   border-bottom: 2px solid #3C6DF0 !important;
   outline: none !important;
 }
-.ics-viewer select:not([style="display:none"]):not([style="display: none;"])[disabled] {
+.ics-viewer select:not([style="display:none"]):not([style="display: none;"]):not(.lotusHidden)[disabled] {
   cursor: not-allowed !important;
   color: #969696 !important;
 }
@@ -6774,8 +7054,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   display: inline !important;
   min-width: 1px !important;
 }
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown],
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown] {
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown]:not(.lotusHidden),
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown]:not(.lotusHidden) {
   font-size: 12.8px !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -6797,15 +7077,18 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   background-repeat: no-repeat !important;
   height: auto !important;
 }
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown]:focus,
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown]:focus {
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown]:not(.lotusHidden):focus,
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown]:not(.lotusHidden):focus {
   border-bottom: 2px solid #3C6DF0 !important;
   outline: none !important;
 }
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown][disabled],
-.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown][disabled] {
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_searchSourceDropdown]:not(.lotusHidden)[disabled],
+.ics-viewer [id^=lconn_share_widget_MemberInput_] [id*=_roleDropdown]:not(.lotusHidden)[disabled] {
   cursor: not-allowed !important;
   color: #969696 !important;
+}
+.ics-viewer td[id^=lconn_share_widget_InlineContainer] a.lotusFilter {
+  position: inherit !important;
 }
 .ics-viewer select[id^=compactpicker_select_]:not([style="display:none"]):not([style="display: none;"]) {
   min-width: 0 !important;
@@ -6854,6 +7137,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li,
 .ics-viewer .lotusNavTabs#pageTabs li,
+.ics-viewer .lotusNavTabs#bookmarksNav li,
 .ics-viewer .blog.admin .lotusNavTabs li,
 .ics-viewer .blog.lotusui .lotusNavTabs li,
 .ics-viewer .app_palette_modal_tabs_ul li,
@@ -6877,6 +7161,12 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#pageTabs li:focus a,
 .ics-viewer .lotusNavTabs#pageTabs li:active,
 .ics-viewer .lotusNavTabs#pageTabs li:active a,
+.ics-viewer .lotusNavTabs#bookmarksNav li:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li:hover a,
+.ics-viewer .lotusNavTabs#bookmarksNav li:focus,
+.ics-viewer .lotusNavTabs#bookmarksNav li:focus a,
+.ics-viewer .lotusNavTabs#bookmarksNav li:active,
+.ics-viewer .lotusNavTabs#bookmarksNav li:active a,
 .ics-viewer .blog.admin .lotusNavTabs li:hover,
 .ics-viewer .blog.admin .lotusNavTabs li:hover a,
 .ics-viewer .blog.admin .lotusNavTabs li:focus,
@@ -6924,6 +7214,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li:focus,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li:focus,
 .ics-viewer .lotusNavTabs#pageTabs li:focus,
+.ics-viewer .lotusNavTabs#bookmarksNav li:focus,
 .ics-viewer .blog.admin .lotusNavTabs li:focus,
 .ics-viewer .blog.lotusui .lotusNavTabs li:focus,
 .ics-viewer .app_palette_modal_tabs_ul li:focus,
@@ -6936,6 +7227,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li + li,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li + li,
 .ics-viewer .lotusNavTabs#pageTabs li + li,
+.ics-viewer .lotusNavTabs#bookmarksNav li + li,
 .ics-viewer .blog.admin .lotusNavTabs li + li,
 .ics-viewer .blog.lotusui .lotusNavTabs li + li,
 .ics-viewer .app_palette_modal_tabs_ul li + li,
@@ -6948,6 +7240,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li a,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a,
 .ics-viewer .lotusNavTabs#pageTabs li a,
+.ics-viewer .lotusNavTabs#bookmarksNav li a,
 .ics-viewer .blog.admin .lotusNavTabs li a,
 .ics-viewer .blog.lotusui .lotusNavTabs li a,
 .ics-viewer .app_palette_modal_tabs_ul li a,
@@ -6972,6 +7265,10 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#pageTabs li a strong,
 .ics-viewer .lotusNavTabs#pageTabs li a:visited,
 .ics-viewer .lotusNavTabs#pageTabs li a:visited strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li a,
+.ics-viewer .lotusNavTabs#bookmarksNav li a strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:visited,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:visited strong,
 .ics-viewer .blog.admin .lotusNavTabs li a,
 .ics-viewer .blog.admin .lotusNavTabs li a strong,
 .ics-viewer .blog.admin .lotusNavTabs li a:visited,
@@ -7007,6 +7304,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a .lotusTabInner,
 .ics-viewer .lotusNavTabs#pageTabs li a strong,
 .ics-viewer .lotusNavTabs#pageTabs li a .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li a strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li a .lotusTabInner,
 .ics-viewer .blog.admin .lotusNavTabs li a strong,
 .ics-viewer .blog.admin .lotusNavTabs li a .lotusTabInner,
 .ics-viewer .blog.lotusui .lotusNavTabs li a strong,
@@ -7029,6 +7328,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li a:focus,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a:focus,
 .ics-viewer .lotusNavTabs#pageTabs li a:focus,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:focus,
 .ics-viewer .blog.admin .lotusNavTabs li a:focus,
 .ics-viewer .blog.lotusui .lotusNavTabs li a:focus,
 .ics-viewer .app_palette_modal_tabs_ul li a:focus,
@@ -7044,6 +7344,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li a:hover,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a:hover,
 .ics-viewer .lotusNavTabs#pageTabs li a:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:hover,
 .ics-viewer .blog.admin .lotusNavTabs li a:hover,
 .ics-viewer .blog.lotusui .lotusNavTabs li a:hover,
 .ics-viewer .app_palette_modal_tabs_ul li a:hover,
@@ -7060,6 +7361,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a:hover .lotusTabInner,
 .ics-viewer .lotusNavTabs#pageTabs li a:hover strong,
 .ics-viewer .lotusNavTabs#pageTabs li a:hover .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:hover strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li a:hover .lotusTabInner,
 .ics-viewer .blog.admin .lotusNavTabs li a:hover strong,
 .ics-viewer .blog.admin .lotusNavTabs li a:hover .lotusTabInner,
 .ics-viewer .blog.lotusui .lotusNavTabs li a:hover strong,
@@ -7079,6 +7382,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li a._linkHolder.lotusLeft,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a._linkHolder.lotusLeft,
 .ics-viewer .lotusNavTabs#pageTabs li a._linkHolder.lotusLeft,
+.ics-viewer .lotusNavTabs#bookmarksNav li a._linkHolder.lotusLeft,
 .ics-viewer .blog.admin .lotusNavTabs li a._linkHolder.lotusLeft,
 .ics-viewer .blog.lotusui .lotusNavTabs li a._linkHolder.lotusLeft,
 .ics-viewer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft,
@@ -7092,6 +7396,7 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusTabs li a._linkHolder.lotusLeft:hover,
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li a._linkHolder.lotusLeft:hover,
 .ics-viewer .lotusNavTabs#pageTabs li a._linkHolder.lotusLeft:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li a._linkHolder.lotusLeft:hover,
 .ics-viewer .blog.admin .lotusNavTabs li a._linkHolder.lotusLeft:hover,
 .ics-viewer .blog.lotusui .lotusNavTabs li a._linkHolder.lotusLeft:hover,
 .ics-viewer .app_palette_modal_tabs_ul li a._linkHolder.lotusLeft:hover,
@@ -7107,6 +7412,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li #share_link,
 .ics-viewer .lotusNavTabs#pageTabs li #about_link,
 .ics-viewer .lotusNavTabs#pageTabs li #share_link,
+.ics-viewer .lotusNavTabs#bookmarksNav li #about_link,
+.ics-viewer .lotusNavTabs#bookmarksNav li #share_link,
 .ics-viewer .blog.admin .lotusNavTabs li #about_link,
 .ics-viewer .blog.admin .lotusNavTabs li #share_link,
 .ics-viewer .blog.lotusui .lotusNavTabs li #about_link,
@@ -7130,6 +7437,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li #share_link:hover,
 .ics-viewer .lotusNavTabs#pageTabs li #about_link:hover,
 .ics-viewer .lotusNavTabs#pageTabs li #share_link:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li #about_link:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li #share_link:hover,
 .ics-viewer .blog.admin .lotusNavTabs li #about_link:hover,
 .ics-viewer .blog.admin .lotusNavTabs li #share_link:hover,
 .ics-viewer .blog.lotusui .lotusNavTabs li #about_link:hover,
@@ -7151,6 +7460,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#activitiesNagvigationToolbar li.bx--tabs__nav-item--selected,
 .ics-viewer .lotusNavTabs#pageTabs li.lotusSelected,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected,
 .ics-viewer .blog.admin .lotusNavTabs li.bx--tabs__nav-item--selected,
 .ics-viewer .blog.lotusui .lotusNavTabs li.lotusSelected,
@@ -7181,6 +7492,12 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a strong,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a .lotusTabInner,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a strong,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a .lotusTabInner,
@@ -7234,6 +7551,10 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#pageTabs li.lotusSelected a:focus,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a:active,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a:focus,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a:active,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a:focus,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a:active,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a:focus,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a:active,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a:focus,
 .ics-viewer .blog.admin .lotusNavTabs li.bx--tabs__nav-item--selected a:active,
@@ -7277,6 +7598,12 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a:hover,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a:hover strong,
 .ics-viewer .lotusNavTabs#pageTabs li.bx--tabs__nav-item--selected a:hover .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a:hover strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li.lotusSelected a:hover .lotusTabInner,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a:hover,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a:hover strong,
+.ics-viewer .lotusNavTabs#bookmarksNav li.bx--tabs__nav-item--selected a:hover .lotusTabInner,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a:hover,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a:hover strong,
 .ics-viewer .blog.admin .lotusNavTabs li.lotusSelected a:hover .lotusTabInner,
@@ -9042,6 +9369,8 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 }
 .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=myactions] .lotusInlinelist.lotusRight {
   float: right !important;
+}
+.ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=myactions] .lotusInlinelist.lotusRight:not(.ublogActionsList) {
   padding: 0.75rem 0;
 }
 .ics-viewer div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=myactions] .lotusInlinelist.floatLeft {
@@ -9251,6 +9580,11 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer a[id*=_HelpLauncher_] img:not(.iconsOther24-bannerHelpNormal24),
 .ics-viewer a[id*=_helpLink] img:not(.iconsOther24-bannerHelpNormal24),
 .ics-viewer a[class*=_help_link] img:not(.iconsOther24-bannerHelpNormal24),
+.ics-viewer #subsHelpIcon img:not(.iconsOther24-bannerHelpNormal24),
+.ics-viewer #tagHelpIcon img:not(.iconsOther24-bannerHelpNormal24),
+.ics-viewer #peopleHelpIcon img:not(.iconsOther24-bannerHelpNormal24),
+.ics-viewer #subscribeHelp1 img:not(.iconsOther24-bannerHelpNormal24),
+.ics-viewer #feedHelpIcon img:not(.iconsOther24-bannerHelpNormal24),
 .ics-viewer .mtgHelp img:not(.iconsOther24-bannerHelpNormal24),
 .ics-viewer #tagHelper img:not(.iconsOther24-bannerHelpNormal24),
 .ics-viewer #helpOwner img:not(.iconsOther24-bannerHelpNormal24) {
@@ -9269,6 +9603,11 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
 .ics-viewer a[id*=_HelpLauncher_]:focus img,
 .ics-viewer a[id*=_helpLink]:focus img,
 .ics-viewer a[class*=_help_link]:focus img,
+.ics-viewer #subsHelpIcon:focus img,
+.ics-viewer #tagHelpIcon:focus img,
+.ics-viewer #peopleHelpIcon:focus img,
+.ics-viewer #subscribeHelp1:focus img,
+.ics-viewer #feedHelpIcon:focus img,
 .ics-viewer .mtgHelp:focus img,
 .ics-viewer #tagHelper:focus img,
 .ics-viewer #helpOwner:focus img {
@@ -9426,7 +9765,6 @@ html:not(.dj_safari) .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][i
   border-color: #3C6DF0 !important;
   color: #FFFFFF !important;
   padding: 0.575rem 1.15rem;
-  font-family: "IBM Plex Sans", "IBM Helvetica", "Helvetica Neue", HelveticaNeue, Helvetica, sans-serif !important;
 }
 .dj_webkit .ics-viewer input[type=file]::-webkit-file-upload-button, .dj_webkit .ics-viewer input[type=file]::-webkit-file-upload-button:hover, .dj_webkit .ics-viewer input[type=file]::-webkit-file-upload-button:active, .dj_webkit .ics-viewer input[type=file]::-webkit-file-upload-button:focus {
   text-decoration: none !important;
@@ -10776,7 +11114,7 @@ div[id^=lotusBanner][id$=_dropdown] .lotusNavMenu .lotusNavMenuLarge th,
   padding-right: 20px;
 }
 
-body.lotusui:not(.cke_editable),
+body.lotusui:not(.cke_editable):not(.lotusBookmarklet),
 body.meetingBody:not(.cke_editable),
 .lotusui30_body .lotusFrame,
 .lotusui30_body .lotusMain,
@@ -11113,10 +11451,6 @@ div[id^=lconn_communities_catalog_widgets_ResultsDisplayWidget_], div[id^=lconn_
 }
 .lotusui30_layout .activityStreamPage.lotusMain .lotusColLeft:after {
   border-right-width: 264px !important;
-}
-
-.lotusui30_body.scloud3.tundra:not(.compactMode):not(.concord) {
-  min-width: 0 !important;
 }
 
 #lotusFrame #lotusTitleBar .lotusInner div.icSearchPaneButton,

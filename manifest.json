@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Visual Update 1 for IBM Connections - Preview",
+  "name": "Visual Update 1 for HCL Connections - Preview",
   "version": "0.0",
-  "description": "This extension re-styles specific pages and applications in IBM Connections based on the new Connections Design Language. (c) 2017, 2018 IBM Corporation",
-  "author": "IBM Corporation",
+  "description": "This extension re-styles specific pages and applications in HCL Connections. (c) 2017, 2019 HCL Technologies Limited",
+  "author": "HCL Technologies Limited",
   "icons": {
     "16": "./extension/periscope_16.png",
     "24": "./extension/periscope_24.png",
@@ -11,7 +11,7 @@
    },
    "browser_action": {
      "default_icon": "./extension/active.png",
-     "default_title": "IBM Connections Custom Theme Preview"
+     "default_title": "HCL Connections Custom Theme Preview"
    },
   "permissions": [
     "activeTab",

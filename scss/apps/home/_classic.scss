@@ -83,6 +83,9 @@
           }
         }
         &:hover {
+          &:focus {
+            color: $text-03!important;
+          }
           color: $text-03!important;
           background-color: $btn-secondary-fill-hover;
           border-color: $btn-secondary-outline-hover;
@@ -93,7 +96,6 @@
         }
         &.filterSelected {
           color:$text-01 !important;
-          //border-bottom:4px solid $border-selected !important;
           &:before {
             content:'';
             position:absolute;

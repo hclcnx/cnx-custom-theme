@@ -1,5 +1,5 @@
 //Primary button-------------
-.lotusStreamUpdate .lotusActions a[role="button"], //profiles
+.lotusStreamUpdate .lotusActions a[role="button"]:not([dojoattachpoint="removeAttachmentNode"]), //profiles
 .lotusCommunities .dfCommunityForums #dfTopicList span.lotusBtn a,
 .lotusCommunities .dfCommunityForums #dfForumList span.lotusBtn a,
 .lotusCommunities #ideatoins_main span.lotusBtn a,
@@ -26,11 +26,15 @@ span[id^="lconn_share_widget_Tagger"] input[type="submit"],
 div[id^="editBookmark"] input[type="submit"],
 span#createPlaceButton.lotusBtn.lotusBtnAction a, //Start a community button specifics
 span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
-#body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^="newButton"]) a // onprem start a wiki button
+#bookmarksMainContent .lotusActionBar a[role="button"]:not([id="bkListLink"]):not([id="bkdetailsLink"]), //Stand-alone bookmarks
+#body .lotusContent > div.lotusBtnContainer .lotusBtn:not([id^="newButton"]) a, // onprem start a wiki button
+input[type="submit"], // makes any submit button primary
+#bookmarkletForm #submitBtn // on-prem create bookmark dialog
 {
 	@include btnprimary;
   &:disabled, &[disabled="disabled"],
-  &.lotusBtnDisabled {
+  &.lotusBtnDisabled,
+  &.submitDisabled {
     @include btnprimarydisabled;
   }
 }
@@ -71,7 +75,7 @@ span[id^="lconn_act_StartActivityButton_"] a, //Stand-alone activities
 #topicList .lotusBtn a,
 #forum .lotusBtn a,
 #pageDetails .qkrTabBody div[dojoattachpoint="toggleNode"] a,
-div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost),
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList) a[role="button"]:not(.ublogPost):not([dojoattachpoint="removeAttachmentNode"]),
 span[id^="lconn_share_widget_Tagger"] a.lotusBtnSmallGray,
 div#activityActionButtons span.lotusBtn a, //Community activities
 .lotusCommunities #memberAddButton a, //Community members
@@ -82,6 +86,7 @@ div#activityActionButtons span.lotusBtn a, //Community activities
 #forumConfirmMessage + div .lotusBtnContainer span.lotusBtn a,
 .lotusTable .lotusDetails .lotusBtnSmall, // wiki list add tag buttons
 .lconnWikis .lotusContent > div.lotusBtnContainer .lotusBtn a, //1752 wiki members page buttons - onprem
+#placesAdmin div.lotusActionBar span.lotusBtn a, // 2436 community catalog admin buttons
 .qkrLibraryWidget span.lotusBtn a // library widget buttons
 {
   @include btnsecondary;
@@ -146,6 +151,7 @@ div#forumConfirmMessage + div #updatesArea .lotusBtnContainer,
 .lotusCommunities #fullRecomm,
 .lotusCommunities #bookmarkContentAreaSub #headline-content,
 .lotusCommunities ~ .lotusDialog .lconnFileInput .lconnUploadContainer span.lotusBtn,
+#bookmarksMainContent .lotusActionBar,
 .lotusCommunities #memberAddButton, //Members
 .lotusCommunities #inviteButtons, //Members
 #activityList, //Stand-alone Activities
@@ -171,6 +177,7 @@ div#forumConfirmMessage + div #updatesArea .lotusBtnContainer,
   }
 }
 //Hide outer button
+#placesAdmin div.lotusActionBar span.lotusBtn, // 2436 community catalog admin buttons
 span#createPlaceButton.lotusBtn.lotusBtnAction { //on Start a community
   &, &:hover, &:focus {
     border: none !important;
@@ -185,7 +192,31 @@ div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer sp
     background: none !important;
   }
 }
+form#enabledForm, // Adminstration onprem buttons
+form#disabledForm,
+form#clearWidgetCache {
+  a[role="button"] {
+    @include btnsecondary;
+  }
+  span.lotusBtn { // Hide outter button
+    &, &:hover, &:focus {
+      border: none !important;
+      background: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}
 //End Hide outer button styling-------------
+
+// Admin page enabled save button and select field
+#widgetTabConfiguration {
+	select.widgetTabField {
+		display: inline !important;
+		min-width: 0 !important;
+		padding-left: 10px !important;
+	}
+}
 
 // Split button in file viewer-------------
 .ics-viewer-splitbutton .actionLink,
@@ -240,7 +271,8 @@ div[dojoattachpoint="importSurveyNode"] .lconnFileInput .lconnUploadContainer sp
 .ics-viewer-action-upload .actionLink,
 .lotusBtn.submit.lotusButtonSubmit,
 .filesList .lotusDetails .lotusBtnSmall,
-#mainActions .lotusBtn
+#mainActions .lotusBtn,
+#moreactionsachor
 {
   .lotusArrow.lotusDropDownSprite {
     background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
@@ -515,15 +547,17 @@ li[id^="com_ibm_social_as_item_comment"] {
 
 // status updates close icon
 #activityStream {
-  a.lotusDelete img {
+  a.lotusDelete:not([dojoattachpoint="removeAttachmentNode"]) img {
     @include bx--modal-close;
+  }
+  a.lotusDelete[dojoattachpoint="removeAttachmentNode"] img {
+    vertical-align: middle !important;
   }
 }
 
 // Sametime login / logout button
 #sametime-tray ul.navsimplelist button {
   @include btnprimary;
-	font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
   padding: 0 20px !important;
   margin-top: 12px !important;
 }

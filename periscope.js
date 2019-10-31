@@ -1,5 +1,5 @@
 /*
-	 * © Copyright IBM Corp. 2017, 2018
+	 * © Copyright HCL Technologies Limited 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -33,6 +33,8 @@ function periscope(){
     "search":["/search/"],
     "communities":["/communities/"],
     "blogs":["/blogs/"],
+    "dogear":["/dogear/",
+              "/connections/bookmarklet"],
     "activities":["/activities/"],
     "home":["/social/",
             "/homepage/"],
@@ -45,7 +47,9 @@ function periscope(){
                 "/manage/account/announcement/",
                 "/news/",
                 "/manage/subscribers/showInviteGuestDialog/input",
-                "/downloads/"]
+                "/downloads/"],
+    "opensocial":["/opensocial/",
+                  "/connections/opensocial"]
   };
 
   //This is the function that applies the style

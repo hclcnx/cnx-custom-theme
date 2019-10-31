@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-	 * © Copyright HCL Technologies Limited, 2017, 2019.
+	 * © Copyright HCL Technologies Limited, 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -14,8 +14,7 @@
 	 * implied. See the License for the specific language governing
 	 * permissions and limitations under the License.
 */
-/*SEARCH STYLE SHEET*/
-/* Variable and mixin Imports*/
+/* BOOKMARKS STYLE SHEET */
 /* Border radius */
 /* Box Shadows */
 /* Note - May also need to include a display:none on an existing button img */
@@ -10092,313 +10091,843 @@ input[type=file]:focus, input[type=file] .dijitTextBoxFocused {
   border-color: #3C6DF0 !important;
 }
 
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft {
-  position: relative !important;
-  top: -15px !important;
-  margin-left: 0px !important;
-  box-sizing: border-box !important;
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li,
+#dropdownNavMenu #lotusNavBar li,
+#dropdownNavMenu #bizCardNavMenu li,
+#dropdownSubMenu .lotusMenuSubsection ul li {
+  padding: 0.625rem 0 0.375rem 0 !important;
+  margin: 0 0 0 1rem !important;
 }
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft .lotusMenu {
-  width: 240px;
-  position: relative !important;
-  top: 5px !important;
-  padding-top: 1rem !important;
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a,
+#dropdownNavMenu #lotusNavBar li a,
+#dropdownNavMenu #bizCardNavMenu li a,
+#dropdownSubMenu .lotusMenuSubsection ul li a {
   margin: 0 !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li {
-  box-sizing: border-box;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 14px 24px !important;
-  padding-left: calc(15px + 24px) !important;
-  transition: border 0.23s ease, padding 0.23s ease;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected {
-  border-left: 4px solid #3C6DF0 !important;
-  padding-left: calc(15px + 24px - 4px) !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li.searchFilterSelected a {
-  font-weight: 700 !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a {
-  padding: 0 !important;
-  margin: 0 !important;
-  font-weight: 400 !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:hover, .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li a:focus {
-  border-color: transparent !important;
-  text-decoration: none !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft ul.searchFilter li:hover {
-  background-color: #d8d8d8 !important;
-  cursor: pointer;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection {
-  margin: 0 !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection span {
-  font-weight: 400 !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection h2 {
-  padding: 14px 24px !important;
-  padding-left: calc(15px + 24px) !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusColLeft #facetsContainer .lotusSection h2 + .lconnFacet {
-  margin: 0 !important;
-  padding: 0 24px 14px calc(15px + 24px) !important;
-}
-
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper {
-  position: relative;
-  z-index: 940 !important;
-  margin-left: 0px !important;
-  margin-right: 0 !important;
-  padding-left: 39px !important;
-  max-width: 100%;
-  box-shadow: 0 1px 4px 0 rgba(40, 40, 40, 0.2) !important;
-  background-color: white !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusInner {
-  height: 47px !important;
-  padding-top: 18px !important;
-}
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
-  color: #000000 !important;
-  padding-left: 294px !important;
-  font-weight: 900 !important;
-  font-size: 1.125rem !important;
-}
-
-.lotusHeader.lconnSearchHeader {
-  padding-top: 1rem !important;
-  margin-right: -1.5rem;
-}
-.lotusHeader.lconnSearchHeader .lotusSearch {
-  border: 0 !important;
-}
-.lotusHeader.lconnSearchHeader .lotusSearch .icSearchInputBox input.lotusText {
-  font-size: 1rem !important;
-  color: #000000 !important;
-}
-.lotusHeader.lconnSearchHeader .lotusSearch .icSearchBarButtons {
-  position: relative;
-  left: -1.5rem;
-}
-.lotusHeader.lconnSearchHeader .lotusBtnImg.lotusClose:focus img {
-  outline: 1px solid #595859 !important;
-}
-.lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch {
-  border-radius: 2rem !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  box-shadow: none !important;
-  transform: translateZ(0) !important;
-  -webkit-font-smoothing: antialiased !important;
-  cursor: pointer !important;
-  -webkit-box-align: center !important;
-  -webkit-box-pack: center !important;
-  text-align: center !important;
-  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
-  white-space: nowrap !important;
-  padding: 9px 20px !important;
-  background-image: none !important;
-  margin: 2px 4px 3px 2px !important;
-  background-color: #3C6DF0 !important;
-  border-color: #3C6DF0 !important;
-  color: #FFFFFF !important;
-}
-.lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch, .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:hover, .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:active, .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:focus {
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-.lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:hover, .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:active {
-  outline: none;
-}
-.lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:focus {
-  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
-  outline: none !important;
-}
-.dj_a11y .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:focus, .dijit_a11y .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:focus {
-  box-shadow: none !important;
-  outline: 1px solid #3C6DF0 !important;
-  outline-offset: 1px;
-}
-.lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:active, .lotusHeader.lconnSearchHeader .lotusBtn.icSubmitSearch:hover {
-  background-color: #FFFFFF !important;
-  color: #3C6DF0 !important;
-  border-color: #3C6DF0 !important;
-}
-
-#contentContainer_results #filtersContainer > div, #contentContainer_results #filtersContainer > span {
-  display: inline-block;
-  vertical-align: baseline;
-  float: none !important;
-}
-#contentContainer_results #filtersContainer > div a, #contentContainer_results #filtersContainer > span a {
-  border-radius: 2rem !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  box-shadow: none !important;
-  transform: translateZ(0) !important;
-  -webkit-font-smoothing: antialiased !important;
-  cursor: pointer !important;
-  -webkit-box-align: center !important;
-  -webkit-box-pack: center !important;
-  text-align: center !important;
-  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
-  white-space: nowrap !important;
-  padding: 9px 20px !important;
-  background-image: none !important;
-  margin: 2px 4px 3px 2px !important;
-  background-color: #FFFFFF !important;
-  border-color: #3C6DF0 !important;
-  color: #3C6DF0 !important;
-}
-#contentContainer_results #filtersContainer > div a, #contentContainer_results #filtersContainer > div a:hover, #contentContainer_results #filtersContainer > div a:active, #contentContainer_results #filtersContainer > div a:focus, #contentContainer_results #filtersContainer > span a, #contentContainer_results #filtersContainer > span a:hover, #contentContainer_results #filtersContainer > span a:active, #contentContainer_results #filtersContainer > span a:focus {
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-#contentContainer_results #filtersContainer > div a:hover, #contentContainer_results #filtersContainer > div a:active, #contentContainer_results #filtersContainer > span a:hover, #contentContainer_results #filtersContainer > span a:active {
-  outline: none;
-}
-#contentContainer_results #filtersContainer > div a:focus, #contentContainer_results #filtersContainer > span a:focus {
-  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
-  outline: none !important;
-}
-.dj_a11y #contentContainer_results #filtersContainer > div a:focus, .dijit_a11y #contentContainer_results #filtersContainer > div a:focus, .dj_a11y #contentContainer_results #filtersContainer > span a:focus, .dijit_a11y #contentContainer_results #filtersContainer > span a:focus {
-  box-shadow: none !important;
-  outline: 1px solid #3C6DF0 !important;
-  outline-offset: 1px;
-}
-#contentContainer_results #filtersContainer > div a:active, #contentContainer_results #filtersContainer > div a:hover, #contentContainer_results #filtersContainer > span a:active, #contentContainer_results #filtersContainer > span a:hover {
-  background-color: #3C6DF0 !important;
-  color: #FFFFFF !important;
-  border-color: #3C6DF0 !important;
-}
-#contentContainer_results #filtersContainer div[id^=contentContainer_results_FiltersForm_] {
-  margin-right: 1rem !important;
-}
-#contentContainer_results #filtersContainer div:empty[id^=contentContainer_results_FiltersForm_] {
-  display: none;
-}
-#contentContainer_results #filtersContainer > div:last-child {
-  margin-left: 0 !important;
-}
-#contentContainer_results .icFiltersRight {
-  text-align: right;
-}
-#contentContainer_results .icFiltersRight > div {
-  padding: 0 !important;
-  display: block !important;
-}
-#contentContainer_results #contentContainer_results_View_Sorting a {
-  color: #000000 !important;
-}
-#contentContainer_results #contentContainer_results_View_CenterPaging a {
-  color: #000000 !important;
-}
-#contentContainer_results #contentContainer_results_View_CenterPaging .icSelected {
   color: #595859 !important;
-  text-decoration: underline !important;
-}
-
-.icSearchResultsPage .lotusMeta {
-  color: #595859 !important;
-}
-.icSearchResultsPage tr {
-  border-left: 0 !important;
-}
-.icSearchResultsPage tr.icSearchResultSelected, .icSearchResultsPage tr:focus {
-  border-color: #3C6DF0 !important;
-  border-top: 1px solid #3C6DF0 !important;
-  border-bottom: 1px solid #3C6DF0 !important;
-  outline: none !important;
-}
-.icSearchResultsPage tr:hover {
-  background-color: #F3F3F3 !important;
-  border-left-color: #3C6DF0 !important;
-  color: #595859 !important;
-}
-
-.lconnApplicationLoading img {
-  width: 40px !important;
-  height: 40px !important;
-  left: calc(50% - 20px) !important;
-}
-.lconnApplicationLoading div {
-  display: none !important;
-}
-
-.lotusui30_layout .lotusMain .lotusContent {
-  padding: 0 28px !important;
-}
-
-.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
-  padding-left: 248px !important;
-}
-@-moz-document url-prefix() {
-  .lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
-    padding-left: 0px !important;
-  }
-}
-
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle h4 {
-  font-size: 16px !important;
+  padding: 0.5rem !important;
+  border: 1px solid transparent !important;
+  border-radius: 2px !important;
+  text-transform: capitalize !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span {
-  position: relative;
-  z-index: 2;
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a .tabNavItemInline img#moreButtonArrow,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #lotusNavBar li a .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #bizCardNavMenu li a .tabNavItemInline img#moreButtonArrow,
+#dropdownSubMenu .lotusMenuSubsection ul li a .tabNavItemInline img#moreButtonArrow {
+  background-position: 0 0 !important;
+  opacity: 1 !important;
+  position: relative !important;
+  top: 2px !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E");
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated {
-  padding: 8px 12px !important;
-  width: auto !important;
-  display: inline-block;
-  border-color: #40D5BB;
-  background-color: #40D5BB;
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:hover,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:hover,
+#dropdownNavMenu #lotusNavBar li a:hover,
+#dropdownNavMenu #bizCardNavMenu li a:hover,
+#dropdownSubMenu .lotusMenuSubsection ul li a:hover {
+  color: #FFFFFF !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  text-decoration: none !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:hover .tabNavItemInline img#moreButtonArrow,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #lotusNavBar li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #bizCardNavMenu li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownSubMenu .lotusMenuSubsection ul li a:hover .tabNavItemInline img#moreButtonArrow {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E");
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:focus,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:focus,
+#dropdownNavMenu #lotusNavBar li a:focus,
+#dropdownNavMenu #bizCardNavMenu li a:focus,
+#dropdownSubMenu .lotusMenuSubsection ul li a:focus {
+  color: #595859 !important;
+  border-color: #3C6DF0 !important;
+  background-color: transparent !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:focus .tabNavItemInline img#moreButtonArrow,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:focus .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #lotusNavBar li a:focus .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #bizCardNavMenu li a:focus .tabNavItemInline img#moreButtonArrow,
+#dropdownSubMenu .lotusMenuSubsection ul li a:focus .tabNavItemInline img#moreButtonArrow {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E");
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li:focus,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li:focus,
+#dropdownNavMenu #lotusNavBar li:focus,
+#dropdownNavMenu #bizCardNavMenu li:focus,
+#dropdownSubMenu .lotusMenuSubsection ul li:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li:focus a,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li:focus a,
+#dropdownNavMenu #lotusNavBar li:focus a,
+#dropdownNavMenu #bizCardNavMenu li:focus a,
+#dropdownSubMenu .lotusMenuSubsection ul li:focus a {
+  color: #595859 !important;
+  border-color: #3C6DF0 !important;
+  background-color: transparent !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:hover,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:hover,
+#dropdownNavMenu #lotusNavBar li a:hover,
+#dropdownNavMenu #bizCardNavMenu li a:hover,
+#dropdownSubMenu .lotusMenuSubsection ul li a:hover {
+  color: #FFFFFF !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li a:hover .tabNavItemInline img#moreButtonArrow,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #lotusNavBar li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownNavMenu #bizCardNavMenu li a:hover .tabNavItemInline img#moreButtonArrow,
+#dropdownSubMenu .lotusMenuSubsection ul li a:hover .tabNavItemInline img#moreButtonArrow {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E");
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li.lotusSelected,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li.lotusSelected,
+#dropdownNavMenu #lotusNavBar li.lotusSelected,
+#dropdownNavMenu #bizCardNavMenu li.lotusSelected,
+#dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected {
+  border-color: #3C6DF0 !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li.lotusSelected:focus,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li.lotusSelected:focus,
+#dropdownNavMenu #lotusNavBar li.lotusSelected:focus,
+#dropdownNavMenu #bizCardNavMenu li.lotusSelected:focus,
+#dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected:focus {
+  border-bottom: 4px solid #3C6DF0 !important;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li.lotusSelected a,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li.lotusSelected a,
+#dropdownNavMenu #lotusNavBar li.lotusSelected a,
+#dropdownNavMenu #bizCardNavMenu li.lotusSelected a,
+#dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected a {
   color: #000000 !important;
-  font-weight: 500;
-  max-width: 70px;
+}
+#tabNavContainer.tabNavTabBar #bizCardNavMenu li.lotusSelected a:hover,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs li.lotusSelected a:hover,
+#dropdownNavMenu #lotusNavBar li.lotusSelected a:hover,
+#dropdownNavMenu #bizCardNavMenu li.lotusSelected a:hover,
+#dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected a:hover {
+  color: #FFFFFF !important;
+}
+
+.tabNavBar {
+  padding-bottom: 23px !important;
+}
+
+.tabNavActionsMenu {
+  margin-top: 15px !important;
+}
+
+#tabNavCommunityName {
+  padding-left: 44px !important;
+}
+
+#lotusMain #dropdownNavMenuContainer,
+#lotusMain #dropdownSubMenuContainer {
+  margin: 12px 20px 18px 10px !important;
+  width: 206px;
+  min-width: 210px;
+}
+#lotusMain #dropdownNavMenuContainer #dropdownNavMenuTitle,
+#lotusMain #dropdownNavMenuContainer #dropdownNavMenu,
+#lotusMain #dropdownSubMenuContainer #dropdownSubMenuTitle,
+#lotusMain #dropdownSubMenuContainer #dropdownSubMenu {
+  margin-left: 13px !important;
+  min-width: 197px !important;
+}
+
+#dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc,
+#dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc {
+  padding-bottom: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  font-weight: 600 !important;
+}
+#dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:focus,
+#dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:focus {
+  border-radius: 2px;
+  outline: none !important;
+}
+
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc {
+  border: 1px solid transparent !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc span[id^=dropdown][id$=MenuIcon],
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc span[id^=dropdown][id$=MenuIcon],
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc span[id^=dropdown][id$=MenuIcon],
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc span[id^=dropdown][id$=MenuIcon] {
+  background-position: 0 0 !important;
+  opacity: 1 !important;
+  position: relative !important;
+  top: 4px !important;
+  background-size: 12px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:focus {
+  border: 1px solid #3C6DF0 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:hover {
+  color: #FFFFFF !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  text-decoration: none !important;
+  border-radius: 2px !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:hover span[id^=dropdown][id$=MenuIcon],
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:hover span[id^=dropdown][id$=MenuIcon],
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc:hover span[id^=dropdown][id$=MenuIcon],
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc:hover span[id^=dropdown][id$=MenuIcon] {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23FFFFFF%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected {
+  position: relative;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:before,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:before,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:before,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  left: -11px;
+  top: -1px;
+  bottom: -1px;
+  height: auto;
+  background-color: #3C6DF0;
+  padding: 0 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu {
+  width: 210px !important;
+  height: auto !important;
+  background-color: #FFFFFF !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul {
+  overflow: auto !important;
+  max-height: 360px;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li {
+  padding: 4px 0 4px 0 !important;
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+  border: 1px solid transparent !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li:hover,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li:hover,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li:hover {
+  border-top-color: #d8d8d8 !important;
+  border-bottom-color: #d8d8d8 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li:focus {
+  border-top-color: #3C6DF0 !important;
+  border-bottom-color: #3C6DF0 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected, #lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected:focus,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected:focus,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected:focus {
+  text-decoration: none !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected a, #lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:focus a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:focus a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected:focus a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected:focus a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected:focus a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li.lotusSelected:focus a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li.lotusSelected:focus a {
+  color: #000000 !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li a {
+  border: 1px solid transparent !important;
+}
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li a,
+#lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu ul#lotusNavBar li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu #bizCardNavMenu li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownNavMenu .lotusMenuSubsection ul li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu ul#lotusNavBar li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu #bizCardNavMenu li a,
+.lotusMain div[id^=dropdown][id$=MenuContainer] #dropdownSubMenu .lotusMenuSubsection ul li a {
+  background-color: transparent !important;
+  color: #595859 !important;
+}
+
+#comments {
+  padding-left: 0px !important;
+}
+#comments .qkrAddComment.lotusForm .cke_contents {
+  width: 100% !important;
+  min-width: 240px !important;
+  background-color: #F3F3F3 !important;
+  border: none !important;
+  border-bottom: 2px solid #3C6DF0 !important;
+}
+#comments .lotusFeeds.lotusMeta {
+  padding-left: 10px;
+}
+#comments .lconnRTE,
+#comments .lotusFormFooter {
+  padding-left: 0 !important;
+}
+#comments .lconnRTE input[type=submit],
+#comments .lotusFormFooter input[type=submit] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+  color: #FFFFFF !important;
+}
+#comments .lconnRTE input[type=submit], #comments .lconnRTE input[type=submit]:hover, #comments .lconnRTE input[type=submit]:active, #comments .lconnRTE input[type=submit]:focus,
+#comments .lotusFormFooter input[type=submit],
+#comments .lotusFormFooter input[type=submit]:hover,
+#comments .lotusFormFooter input[type=submit]:active,
+#comments .lotusFormFooter input[type=submit]:focus {
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+#comments .lconnRTE input[type=submit]:hover, #comments .lconnRTE input[type=submit]:active,
+#comments .lotusFormFooter input[type=submit]:hover,
+#comments .lotusFormFooter input[type=submit]:active {
+  outline: none;
+}
+#comments .lconnRTE input[type=submit]:focus,
+#comments .lotusFormFooter input[type=submit]:focus {
+  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+  outline: none !important;
+}
+.dj_a11y #comments .lconnRTE input[type=submit]:focus, .dijit_a11y #comments .lconnRTE input[type=submit]:focus,
+.dj_a11y #comments .lotusFormFooter input[type=submit]:focus,
+.dijit_a11y #comments .lotusFormFooter input[type=submit]:focus {
+  box-shadow: none !important;
+  outline: 1px solid #3C6DF0 !important;
+  outline-offset: 1px;
+}
+#comments .lconnRTE input[type=submit]:active, #comments .lconnRTE input[type=submit]:hover,
+#comments .lotusFormFooter input[type=submit]:active,
+#comments .lotusFormFooter input[type=submit]:hover {
+  background-color: #FFFFFF !important;
+  color: #3C6DF0 !important;
+  border-color: #3C6DF0 !important;
+}
+
+.lotusui30 div[id^=section_eventcomments_] div[dojoattachpoint=noCommentHintAP] {
+  padding-bottom: 20px;
+}
+.lotusui30 div[id^=section_eventcomments_] div[id$=_commentList] {
+  padding-bottom: 20px;
+}
+.lotusui30 div[id^=section_eventcomments_] div[id$=_commentList] .lotusMeta {
   font-size: 12px !important;
   font-weight: 500 !important;
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:before, .icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:after {
-  content: "";
-  position: absolute;
-  border-bottom: 40px solid #40D5BB;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  top: 16px;
-  left: -14px;
-  transform: rotate(-142deg);
-  z-index: -1;
+.lotusui30 div[id^=section_eventcomments_] div[id$=_commentList] .lotusMeta span.vcard {
+  margin-bottom: 0px;
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:after {
-  left: auto;
-  right: -14px;
-  transform: rotate(142deg);
+.lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink] {
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important;
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:before, .icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:after {
-  top: 14px;
+.lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink], .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:hover, .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:active, .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:focus {
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
-.icSearchResultsPage #contentContainer_results_View > .lotusTable .icSearchTitle > span .lconnSearchIdeaGraduated:after {
-  right: 16px;
+.lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:hover, .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:active {
+  outline: none;
+}
+.lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:focus {
+  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+  outline: none !important;
+}
+.dj_a11y .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:focus, .dijit_a11y .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:focus {
+  box-shadow: none !important;
+  outline: 1px solid #3C6DF0 !important;
+  outline-offset: 1px;
+}
+.lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:active, .lotusui30 div[id^=section_eventcomments_] a[id$=_addCommentLink]:hover {
+  background-color: #3C6DF0 !important;
+  color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+}
+.lotusui30 div[id^=section_eventcomments_] .lotusForm2 {
+  padding-top: 10px;
+}
+.lotusui30 div[id^=section_eventcomments_] .lotusForm2 .lconnRTE [id^=cke_editor] {
+  width: 100%;
+}
+.lotusui30 div[id^=section_eventcomments_] .lotusForm2 .lconnRTE [id^=cke_editor] .cke_contents {
+  width: 100% !important;
+  min-width: 240px !important;
+  border: none !important;
+  border-bottom: 2px solid #3C6DF0 !important;
 }
 
-.lotusColLeft .lotusInfoBox, .lotusColLeft .lotusInfoBox h3 {
-  background: transparent !important;
+#blogCommentPanel #blogAddCommentForm .lotusPostContent {
+  display: inline;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormTitle {
+  padding-top: 0px;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^=cke_editor] {
+  width: 100% !important;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody [id^=cke_editor] .cke_contents {
+  outline: none !important;
+  padding: 0 !important;
+  min-width: 240px !important;
+  background-color: #F3F3F3 !important;
+  border: none !important;
+  border-bottom: 2px solid #3C6DF0 !important;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody input#postCommentAsTrackback {
+  margin-left: 2px;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody label {
+  margin-top: 3px;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint=selectBlogAP] {
+  padding-top: 10px;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormBody div[dojoattachpoint=selectBlogAP] select#postCommentAsTrackbackWeblogSelect {
+  margin-left: 0px !important;
+}
+#blogCommentPanel #blogAddCommentForm .lotusPostContent .lotusFormFooter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#comments div[id^=lconn_wikis_widget_CommentsMentions_] div.lotusMeta, #comments div[id^=lconn_wikis_widget_CommentsMentions_] .lotusMeta > a, #comments div[id^=lconn_wikis_widget_CommentsMentions_] .lotusMeta > span {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+#comments div[id^=lconn_wikis_widget_CommentsMentions_] .lotusMeta > span {
+  margin-bottom: 0px !important;
+}
+
+#body .lconnPickerSourceArea .headerSelector .checkbox {
+  margin-top: 5px !important;
+}
+#body .lconnPickerSourceArea .headerSelector .icon img.lconn-ftype16 {
+  background-position: 0 0 !important;
+  position: relative;
+  top: 5px;
+}
+
+#image_attachmentList .lotusPaging {
+  padding-right: 1rem !important;
+}
+#image_attachmentList .lotusTable tr.lotusSort {
+  border-bottom: 1px solid #3C6DF0;
+}
+
+div[id^=lconn_files_widget_CompactFilePicker] {
+  margin: 20px 0 !important;
+}
+div[id^=lconn_files_widget_CompactFilePicker] a[id^=lconn_share_widget_HelpLauncher] {
+  position: relative !important;
+  bottom: 3px !important;
+  margin-left: 5px !important;
+}
+
+body > div[id*=dialogs_deleteConfirm] {
+  height: auto !important;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #d8d8d8 !important;
+}
+body > div[id*=dialogs_deleteConfirm] * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusDialog.lotusForm2._lotusDelete {
   border: none !important;
 }
-.lotusColLeft .lotusInfoBox {
-  margin: 0 -20px 0 0 !important;
-  padding: 2rem;
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent {
+  padding: 0 !important;
+  position: relative;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent .iconsMessages48 {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=%220 0 24 24%22 height=%2224px%22 width=%2224px%22 x=%220px%22 y=%220px%22 version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath fill=%22%23FF5C49%22 d=%22M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm0 23a11 11 0 1 1 11-11 11 11 0 0 1-11 11z%22%3E%3C/path%3E%3Cpath fill=%22%23FF5C49%22 d=%22M15.9 7.42l-3.88 3.89-3.89-3.89-.71.71 3.89 3.89-3.89 3.88.71.71 3.89-3.89 3.88 3.89.71-.71-3.89-3.88 3.89-3.89-.71-.71%22%3E%3C/path%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat;
+  background-position: left 2px !important;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent #warning {
+  padding: 2rem 2rem 2rem 3rem;
+  display: block;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent .lotusErrorForm {
+  margin-left: 0;
+  border: 1px solid #FF5C49;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent .lotusErrorForm .lotusMessage2 {
+  border: none !important;
+  box-shadow: none !important;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent div[style="clear:both"],
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent br {
+  display: none;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent span[dojoattachpoint=signDirection],
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent > .lotusMeta {
+  display: block;
+  padding: 1rem 0;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent span[dojoattachpoint=signDirection] {
+  position: relative;
+}
+body > div[id*=dialogs_deleteConfirm] .lotusErrorContent > .lotusMeta {
+  font-size: 14px !important;
+  font-weight: 400 !important;
 }
 
-#everythingForm .lconnSearchInputContainer {
-  padding: 15px 10px 15px 0px !important;
+.lotusMeta .lotusDivider {
+  margin-bottom: 0 !important;
+}
+.lotusMeta .lotusPerson.vcard a.menu_drop_icon {
+  margin-left: 3px !important;
+  position: relative;
+  top: 3px !important;
+}
+.lotusMeta .lotusLikeCount {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+.lotusMeta .lotusLikeCount:hover {
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
+.lotusMeta .lotusLikeCount *:not(.lotusAltText) {
+  display: inline-block !important;
+  position: relative !important;
+}
+.lotusMeta .lotusLikeCount .lotusAltText:hover {
+  text-decoration: underline;
+  cursor: pointer !important;
+}
+.lotusMeta .lotusLikeCount img {
+  top: -2px !important;
+  left: 0 !important;
+}
+.lotusMeta span[dojoattachpoint=inlineLikeActions] * {
+  position: relative;
 }
 
-#advancedSearchForm1 .lotusBtn {
+#lotusFrame.lotusCommunities .filesListFilled #scene-body span.lotusDivider {
+  margin-bottom: 0.25rem !important;
+}
+
+.blog .lotusTable .lotusMeta * {
+  margin-bottom: 0 !important;
+}
+.blog .lotusTable .lotusMeta .vcard a.menu_drop_icon {
+  margin-left: 3px !important;
+  position: relative;
+  top: 3px !important;
+}
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta,
+.lotusContent .lotusTags,
+.lotusFilters2 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta span[role=listitem] a,
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta li.lotusTag a.bidiAware,
+.lotusContent .lotusTags span[role=listitem] a,
+.lotusContent .lotusTags li.lotusTag a.bidiAware,
+.lotusFilters2 span[role=listitem] a,
+.lotusFilters2 li.lotusTag a.bidiAware {
+  font-weight: inherit !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta span[role=listitem] a:hover,
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta li.lotusTag a.bidiAware:hover,
+.lotusContent .lotusTags span[role=listitem] a:hover,
+.lotusContent .lotusTags li.lotusTag a.bidiAware:hover,
+.lotusFilters2 span[role=listitem] a:hover,
+.lotusFilters2 li.lotusTag a.bidiAware:hover {
+  color: #000000 !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusFilter,
+.lotusContent .lotusTags .lotusFilter,
+.lotusFilters2 .lotusFilter {
+  color: #000000 !important;
+  border-radius: 0.75rem !important;
+  line-height: 1.5rem !important;
+  font-size: 0.75rem !important;
+  height: 1.5rem !important;
+  padding: 0 1rem !important;
+  width: auto !important;
+  max-width: 100%;
+  display: inline-block !important;
+  vertical-align: middle;
+  margin: 0 !important;
+  font-weight: normal !important;
+  border: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #F3F3F3 !important;
+  vertical-align: middle;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusFilter a,
+.lotusContent .lotusTags .lotusFilter a,
+.lotusFilters2 .lotusFilter a {
+  color: #000000 !important;
+  font-weight: normal !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusFilter:hover,
+.lotusContent .lotusTags .lotusFilter:hover,
+.lotusFilters2 .lotusFilter:hover {
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusFilter:focus,
+.lotusContent .lotusTags .lotusFilter:focus,
+.lotusFilters2 .lotusFilter:focus {
+  text-decoration: underline !important;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusFilter:focus img,
+.lotusContent .lotusTags .lotusFilter:focus img,
+.lotusFilters2 .lotusFilter:focus img {
+  border-bottom: 1px solid currentColor;
+}
+
+.blog.admin.tabbedpage .lotusFilters2 .blogsPaddingRight:after {
+  content: ":";
+}
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta span.vcard, .blog #entries .lotusTable.blogsFixedTable td .lotusMeta span.lotusDivider, .blog #entries .lotusTable.blogsFixedTable td .lotusMeta span[role=listitem] {
+  padding-bottom: 3px;
+}
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta .lotusTags span[role=listitem] {
+  margin-bottom: 3px !important;
+}
+
+.blog #lotusMain table.blogsFixedTable .lotusMeta > span {
+  vertical-align: inherit;
+}
+
+.wikiHeader .lotusMeta, .wikiHeader .lotusLike, .wikiHeader .lotusLike a, .wikiHeader .lotusLikeCount span, .wikiHeader .lotusTags a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+.wikiHeader .lotusLike .lotusLikeCount, .wikiHeader .lotusLike .lotusLikeAction {
+  top: 3px;
+}
+.wikiHeader .lotusLike .lotusLikeCount img {
+  margin-right: 0px;
+}
+
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusMeta, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusMeta a, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusMeta span,
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusTags span, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusTags a.qkrAdd {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusLike .lotusLikeDescription, div#list .lotusTable.lotusFixedTable.qkrFixedWidth tr.lotusDetails td .lotusTags span {
+  color: #595859;
+}
+div#list .lotusTable.lotusFixedTable a.qkrAdd {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+div#list .lotusTable.lotusFixedTable li.lotusFirst {
+  float: none !important;
+}
+div#list .lotusTable.lotusFixedTable .lotusTags > span:not(.lotusHidden),
+div#list .lotusTable.lotusFixedTable li span,
+div#list .lotusTable.lotusFixedTable .lotusFirst > a.lotusPerson,
+div#list .lotusTable.lotusFixedTable li.lotusTags {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  vertical-align: inherit !important;
+}
+
+.wikiHeader #span\.recommendation {
+  margin-bottom: 0;
+}
+.wikiHeader #span\.recommendation .lotusLikeAction,
+.wikiHeader #span\.recommendation .lotusDivider {
+  top: 0 !important;
+}
+.wikiHeader #span\.recommendation .lotusLikeText {
+  top: -3px !important;
+}
+.wikiHeader #span\.recommendation .lotusIconLike {
+  top: -5px !important;
+}
+.wikiHeader .lotusTags > span {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
+  float: none;
+  display: inline-block !important;
+  margin-bottom: 1rem;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags .qkrInlineList {
+  display: inline-block !important;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit] {
   border-radius: 2rem !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -10417,32 +10946,764 @@ input[type=file]:focus, input[type=file] .dijitTextBoxFocused {
   background-color: #3C6DF0 !important;
   border-color: #3C6DF0 !important;
   color: #FFFFFF !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+  font-size: 0.675rem !important;
+  height: 1.5rem !important;
+  box-sizing: border-box !important;
 }
-#advancedSearchForm1 .lotusBtn, #advancedSearchForm1 .lotusBtn:hover, #advancedSearchForm1 .lotusBtn:active, #advancedSearchForm1 .lotusBtn:focus {
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit], .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:hover, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:active, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:focus {
   text-decoration: none !important;
   font-weight: 500 !important;
 }
-#advancedSearchForm1 .lotusBtn:hover, #advancedSearchForm1 .lotusBtn:active {
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:hover, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:active {
   outline: none;
 }
-#advancedSearchForm1 .lotusBtn:focus {
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:focus {
   box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
   outline: none !important;
 }
-.dj_a11y #advancedSearchForm1 .lotusBtn:focus, .dijit_a11y #advancedSearchForm1 .lotusBtn:focus {
+.dj_a11y .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:focus, .dijit_a11y .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:focus {
   box-shadow: none !important;
   outline: 1px solid #3C6DF0 !important;
   outline-offset: 1px;
 }
-#advancedSearchForm1 .lotusBtn:active, #advancedSearchForm1 .lotusBtn:hover {
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:active, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form input[type=submit]:hover {
   background-color: #FFFFFF !important;
   color: #3C6DF0 !important;
   border-color: #3C6DF0 !important;
 }
-
-.lotusMeta > span.searchDateClass {
-  font-size: inherit;
-  margin: 0;
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button] {
+  display: inline-block;
+  border-radius: 2rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  text-align: center !important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap !important;
+  padding: 9px 20px !important;
+  background-image: none !important;
+  margin: 2px 4px 3px 2px !important;
+  background-color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+  color: #3C6DF0 !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+  font-size: 0.675rem !important;
+  height: 1.5rem !important;
+  box-sizing: border-box !important;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button], .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:hover, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:active, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:focus {
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:hover, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:active {
+  outline: none;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:focus {
+  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #3C6DF0 !important;
+  outline: none !important;
+}
+.dj_a11y .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:focus, .dijit_a11y .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:focus {
+  box-shadow: none !important;
+  outline: 1px solid #3C6DF0 !important;
+  outline-offset: 1px;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:active, .lconnWikis table.lotusTable.qkrFixedWidth tr .lotusTags form a[role=button]:hover {
+  background-color: #3C6DF0 !important;
+  color: #FFFFFF !important;
+  border-color: #3C6DF0 !important;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusMeta + .lotusTags > *:not(.lotusFormError) {
+  margin-top: 1rem;
+  vertical-align: text-bottom;
+}
+.lconnWikis table.lotusTable.qkrFixedWidth tr .lotusMeta + .lotusTags > *:not(.lotusFormError).qkrEmpty {
+  margin-left: 0.5rem;
 }
 
-/*# sourceMappingURL=search.css.map */
+.lotusHeader .lotusTags span {
+  margin-right: 0.25rem;
+}
+
+#bookmarkContentAreaSub .lotusMeta span {
+  vertical-align: top !important;
+  line-height: 18px !important;
+  height: 18px !important;
+}
+#bookmarkContentAreaSub .lotusMeta span.lotusTags {
+  vertical-align: top !important;
+}
+#bookmarkContentAreaSub .lotusMeta .lotusDivider {
+  margin-bottom: 4px !important;
+}
+
+#ideationsListContainer .lotusDivider {
+  padding: 5px !important;
+}
+
+#activitiesListTable span {
+  margin-bottom: 0.25rem !important;
+}
+#activitiesListTable span.lotusTags {
+  margin-bottom: 0 !important;
+  padding-bottom: 2px !important;
+}
+#activitiesListTable span span {
+  margin-bottom: 0 !important;
+}
+
+.lotusTitleBar h2.lotusHeading .lotusText a,
+.lotusTitleBar h2.lotusHeading .lotusText a:hover,
+#lotusTitleBar h2,
+#lotusTitleBar h2 a {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #000000 !important;
+}
+
+#pagePlaceBar .lotusInner h2,
+.lotusPlaceBar .lotusInner h2,
+.pagePlaceBar .lotusInner h2,
+#lotusPlaceBar .lotusInner h2 {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #000000 !important;
+  margin-left: 260px !important;
+}
+
+.lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide) {
+  padding-left: 48px !important;
+}
+.lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide) .lotusBreadcrumbs, .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide) #wikiPageHeader {
+  margin-bottom: 16px !important;
+}
+.lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide) #wikiPageHeader {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+#lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus #newCommunityForm {
+  padding-left: 48px !important;
+}
+
+body:not(.catalog), html:not(.catalog-ui-updated) .catalog {
+  position: relative !important;
+}
+body:not(.catalog) #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll), html:not(.catalog-ui-updated) .catalog #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll) {
+  top: -24px !important;
+  padding-top: 32px !important;
+}
+
+.wikiHeader .lotusMeta, .wikiHeader .lotusBtnContainer {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.wikiHeader .lotusMeta {
+  margin-bottom: 10px !important;
+}
+
+.lconnWikis .lotusHeader h1 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.blog .lotusMain {
+  padding-top: 0 !important;
+}
+.blog .lotusContent, .blog #lotusColRight {
+  padding-top: 32px !important;
+}
+.blog #lotusColLeft:not(.wpthemeNarrow) {
+  position: relative !important;
+  top: 4px !important;
+  padding-top: 28px !important;
+}
+.blog .lotusContent {
+  margin-left: 234px !important;
+}
+.blog .lotusHeader,
+.blog .lotusActionBar,
+.blog .lotusPaging,
+.blog .lotusSort {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+}
+.blog #lotusColRight {
+  margin-left: 48px !important;
+}
+.blog #lotusColRight .lotusSection > h2 {
+  padding-left: 0 !important;
+}
+
+.qkrWikiPreview img:not(.lconn-ftype16) {
+  max-width: 100%;
+}
+
+.qkrQuota {
+  margin-right: 0 !important;
+}
+
+.qkrViewControl {
+  position: relative !important;
+  left: 9px !important;
+}
+
+div[id^=lconn_forums_PostForm_] .lotusFormTitle, div[id^=lconn_forums_PostForm_] .lotusFormBody, div[id^=lconn_forums_PostForm_] .lotusFormFooter {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#lotusFrame:not([class$=TopMenuLayout]) #lotusMain #commMayHaveExternals, #lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner h2, #lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner, #lotusFrame .lotusPlaceBar .lotusRightCorner, #lotusFrame .lotusPlaceBar, .lotusui30 #activitiesTitleBar .lotusRightCorner.tabNavPlaceBarRightCorner {
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+#lotusTitleBar .lotusWrapper .lotusRightCorner .lotusInner {
+  padding-top: 22px !important;
+}
+#lotusTitleBar .lotusWrapper .lotusRightCorner .lotusInner .lotusTitleBarContent h2 {
+  line-height: 1.5;
+}
+
+#lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner h2 {
+  margin-left: 288px !important;
+  margin-top: -47px !important;
+}
+@-moz-document url-prefix() {
+  #lotusFrame .lotusPlaceBar .lotusRightCorner .lotusInner h2 {
+    margin-top: 0px !important;
+  }
+}
+
+h2 + div.lotusTitleBarExt > ul.lotusInlinelist.lotusActions:not(#communityActions) {
+  padding: 1rem 1.75rem 0 !important;
+}
+
+h2 + div#communityActionBar,
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  display: block !important;
+  right: 2.5rem !important;
+  padding-top: 1rem !important;
+}
+
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  right: 1.75rem !important;
+}
+
+.lotusPlaceBar .lotusRightCorner .lotusActions li a, .lotusPlaceBar .lotusRightCorner #communityActions li a {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.lotusMain #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+  width: 432px !important;
+  padding: 0;
+  margin: 0 2rem 0 0 !important;
+}
+
+.lotusMain #lotusColBanner[style*="display: none;"] ~ #lotusColLeft.wpthemeNarrow {
+  width: 240px !important;
+}
+
+.lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow {
+  width: 370px !important;
+  margin: 0 30px 0 0 !important;
+}
+
+#commonSearchControlContainer.icSearchBarMode {
+  top: 12px !important;
+  right: 0 !important;
+}
+
+#inviteEntriesFullMembers .lotusCheckbox {
+  margin: 0 4px !important;
+  vertical-align: middle !important;
+}
+
+#RecentUpdatesSection,
+#widget-container-col2statusposts div {
+  padding-left: 0 !important;
+}
+#RecentUpdatesSection h2,
+#widget-container-col2statusposts div h2 {
+  margin: 0 !important;
+  padding-left: 0 !important;
+}
+#RecentUpdatesSection .activityStreamNewsItemContainer,
+#widget-container-col2statusposts div .activityStreamNewsItemContainer {
+  padding-left: 25px !important;
+}
+
+#calendar_event_viewer .eventHeader + .lotusActionBar.lotusBtnContainer {
+  height: auto !important;
+  float: none;
+}
+#calendar_event_viewer .eventHeader + .lotusActionBar.lotusBtnContainer > span {
+  float: none;
+  display: inline-block;
+}
+
+.communities-widget-appearance .lotusWidget_3columnLayoutWithBanner #lotusMainColumns {
+  margin-left: 240px !important;
+}
+
+#Members #wai_memberInviteFormDiv .lotusFormLabel {
+  width: auto !important;
+}
+#Members #wai_memberInviteFormDiv .lotusFormLabel label {
+  white-space: nowrap;
+}
+#Members #wai_memberInviteFormDiv .lotusFormTable .lotusTable {
+  width: 100% !important;
+}
+#Members #memberAddFormDiv .lotusFormTable > tbody > tr > td.lotusFormLabel {
+  width: auto !important;
+}
+#Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable {
+  width: 100% !important;
+  table-layout: fixed;
+}
+#Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable tbody {
+  display: flex;
+}
+#Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable #addMembersWidgetTD {
+  width: 100%;
+}
+#Members #memberAddFormDiv .lotusFormTable > tbody > tr > td > .lotusTable div.memberList {
+  white-space: normal;
+}
+#Members #MembersPanel .lotusForm tr#controlsRow > td + td {
+  padding-bottom: 3.5rem;
+}
+#Members #MembersPanel .lotusForm tr#findRow {
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+#Members #MembersPanel .lotusForm #findLabel,
+#Members #MembersPanel .lotusForm #filterLabel {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+#Members #MembersPanel .lotusForm #filterLabel,
+#Members #MembersPanel .lotusForm span.lotusIndent10 {
+  display: inline-block;
+}
+#Members #MembersPanel .lotusForm #roleFilter {
+  width: 10rem !important;
+}
+#Members #communitiesAddButton {
+  display: none;
+}
+
+.lconnSharedExternalPlaceBar h2 {
+  background: none !important;
+}
+.lconnSharedExternalPlaceBar h2 .comNavInline {
+  background: #fdf4c8 !important;
+}
+
+#lotusFrame:not([class$=TopMenuLayout]) #lotusMain #commMayHaveExternals {
+  margin-left: 288px !important;
+  margin-bottom: 20px !important;
+}
+
+#lotusContent #Members span.lconnIconListSharedExternal {
+  margin: 0 4px 0 6px;
+}
+
+.blog.admin #entryform .wikiPageTable label strong,
+form.lotusForm.qkrEdit .wikiPageTable label strong {
+  font-weight: inherit !important;
+}
+.blog.admin #entryform #title, .blog.admin #entryform #name,
+form.lotusForm.qkrEdit #title,
+form.lotusForm.qkrEdit #name {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em;
+  width: 32em !important;
+  text-overflow: ellipsis;
+  padding-right: 0 !important;
+}
+.blog.admin #entryform #editTitle,
+form.lotusForm.qkrEdit #editTitle {
+  display: none;
+}
+.blog.admin #entryform .entryEditTable tr:nth-child(3), .blog.admin #entryform .entryEditTable tr:nth-child(4),
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(3),
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(4) {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blog.admin #entryform .entryEditTable tr:nth-child(3) td, .blog.admin #entryform .entryEditTable tr:nth-child(4) td,
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(3) td,
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(4) td {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+}
+.blog.admin #entryform .entryEditTable tr:nth-child(3) td label, .blog.admin #entryform .entryEditTable tr:nth-child(4) td label,
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(3) td label,
+form.lotusForm.qkrEdit .entryEditTable tr:nth-child(4) td label {
+  line-height: 38px;
+}
+.blog.admin #entryform #lconn_share0_widget_Tagger_0 > span,
+form.lotusForm.qkrEdit #lconn_share0_widget_Tagger_0 > span {
+  line-height: 38px !important;
+}
+.blog.admin #entryform #qkrAutosaveContainer,
+form.lotusForm.qkrEdit #qkrAutosaveContainer {
+  line-height: 3.25rem;
+}
+.blog.admin #entryform #section_miscControl input[type=checkbox],
+form.lotusForm.qkrEdit #section_miscControl input[type=checkbox] {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+.blog.admin #entryform #section_miscControl input[type=checkbox],
+.blog.admin #entryform #section_miscControl input[type=checkbox] + label,
+.blog.admin #entryform #section_miscControl input[type=checkbox] + script + label,
+form.lotusForm.qkrEdit #section_miscControl input[type=checkbox],
+form.lotusForm.qkrEdit #section_miscControl input[type=checkbox] + label,
+form.lotusForm.qkrEdit #section_miscControl input[type=checkbox] + script + label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blog.admin #entryform #section_miscControl #delayedPub + label + div,
+form.lotusForm.qkrEdit #section_miscControl #delayedPub + label + div {
+  margin-left: 1.65rem !important;
+}
+.blog.admin #entryform #section_miscControl #widget_publishDate,
+form.lotusForm.qkrEdit #section_miscControl #widget_publishDate {
+  position: relative;
+  margin-right: 1rem;
+}
+.blog.admin #entryform #section_miscControl #widget_publishDate.dijitTextBoxDisabled,
+form.lotusForm.qkrEdit #section_miscControl #widget_publishDate.dijitTextBoxDisabled {
+  background: transparent;
+  opacity: 1;
+}
+.blog.admin #entryform #section_miscControl #widget_publishDate.dijitTextBoxDisabled, .blog.admin #entryform #section_miscControl #widget_publishDate.dijitTextBoxDisabled *, .blog.admin #entryform #section_miscControl #widget_publishDate.dijitTextBoxDisabled ~ select,
+form.lotusForm.qkrEdit #section_miscControl #widget_publishDate.dijitTextBoxDisabled,
+form.lotusForm.qkrEdit #section_miscControl #widget_publishDate.dijitTextBoxDisabled *,
+form.lotusForm.qkrEdit #section_miscControl #widget_publishDate.dijitTextBoxDisabled ~ select {
+  color: #969696 !important;
+  cursor: not-allowed !important;
+}
+.blog.admin #entryform #section_miscControl #publishDate,
+form.lotusForm.qkrEdit #section_miscControl #publishDate {
+  padding-bottom: 9px !important;
+}
+.blog.admin #entryform #section_miscControl .dijitDateTextBox,
+form.lotusForm.qkrEdit #section_miscControl .dijitDateTextBox {
+  border: none !important;
+}
+.blog.admin #entryform #section_miscControl .dijitDownArrowButton,
+form.lotusForm.qkrEdit #section_miscControl .dijitDownArrowButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  float: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 version=%221.1%22 x=%220px%22 y=%220px%22 viewBox=%220 0 12 7.5%22%3E%3Cpath fill=%22%23595859%22 d=%22M10.6,0L6,4.7L1.4,0L0,1.4l6,6.1l6-6.1L10.6,0z%22/%3E%3C/svg%3E") !important;
+  background-size: 0.75rem !important;
+  background-position: right 0.4rem !important;
+  background-repeat: no-repeat !important;
+  z-index: 99;
+}
+.blog.admin #entryform #section_miscControl #entryUpdatetime ~ select,
+.blog.admin #entryform #section_miscControl #entryUpdatetime ~ span,
+form.lotusForm.qkrEdit #section_miscControl #entryUpdatetime ~ select,
+form.lotusForm.qkrEdit #section_miscControl #entryUpdatetime ~ span {
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+.blog.admin #entryform #section_miscControl #commentDays,
+form.lotusForm.qkrEdit #section_miscControl #commentDays {
+  width: auto !important;
+  display: inline-block !important;
+  min-width: 0 !important;
+}
+.blog.admin #entryform #section_miscControl #permlink_url_describe,
+form.lotusForm.qkrEdit #section_miscControl #permlink_url_describe {
+  margin-top: 0.5rem;
+  display: block;
+}
+.blog.admin #entryform .pageContentDivStylePadding,
+form.lotusForm.qkrEdit .pageContentDivStylePadding {
+  display: none;
+}
+.blog.admin #entryform #pageDetails #tabContainerId,
+form.lotusForm.qkrEdit #pageDetails #tabContainerId {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.blog.admin #entryform #pageDetails ul.lotusTabs#qkrEditorTabs,
+form.lotusForm.qkrEdit #pageDetails ul.lotusTabs#qkrEditorTabs {
+  width: 100% !important;
+  text-align: right;
+  position: relative !important;
+}
+.blog.admin #entryform #pageDetails ul.lotusTabs#qkrEditorTabs li,
+form.lotusForm.qkrEdit #pageDetails ul.lotusTabs#qkrEditorTabs li {
+  float: none;
+  display: inline-block;
+}
+.blog.admin #entryform #pageDetails ul.lotusTabs#qkrEditorTabs li#qkrRefHide,
+form.lotusForm.qkrEdit #pageDetails ul.lotusTabs#qkrEditorTabs li#qkrRefHide {
+  padding-top: 4px !important;
+}
+.blog.admin #entryform #pageDetails ul.lotusTabs#qkrEditorTabs li#qkrRefHide + li,
+form.lotusForm.qkrEdit #pageDetails ul.lotusTabs#qkrEditorTabs li#qkrRefHide + li {
+  margin-left: 0 !important;
+}
+.blog.admin #entryform .qkrWikiPreview,
+form.lotusForm.qkrEdit .qkrWikiPreview {
+  border-top: 1px solid #d8d8d8;
+}
+.blog.admin #entryform .lotusTabs.aria_toolbar,
+form.lotusForm.qkrEdit .lotusTabs.aria_toolbar {
+  width: 100% !important;
+  text-align: right;
+}
+.blog.admin #entryform .lotusTabs.aria_toolbar li,
+form.lotusForm.qkrEdit .lotusTabs.aria_toolbar li {
+  float: none !important;
+  display: inline-block !important;
+}
+
+.pageContainerDivStyleWidthpageContentDivStyleMargin .lotusActionBar.lotusBtnContainer,
+.pageContainerDivStyleIsCloudMode,
+.pageContainerDivStyleIsNotCloudMode {
+  height: auto !important;
+}
+
+div[id^=lconn_share0_widget_Dialog_] form .lotusDialogContent._qkrDialogCompact {
+  padding: 0 !important;
+}
+
+#lotusInfoBox {
+  margin: 0 !important;
+  padding: 32px !important;
+  padding-top: 0px !important;
+}
+#lotusInfoBox, #lotusInfoBox h3 {
+  border: none !important;
+  background-color: #F3F3F3 !important;
+}
+
+.lotusui30_layout div[role=banner] .lotusTitleBar2Tabs#lotusTitleBar {
+  border-bottom-color: transparent !important;
+}
+.lotusui30_layout div[role=banner] .lotusTitleBar2Tabs#lotusTitleBar ul {
+  border-bottom: 1px solid #d8d8d8;
+  height: 62px !important;
+  margin-left: 232px !important;
+  padding-left: 0 !important;
+}
+.lotusui30_layout div[role=banner] .lotusTitleBar2Tabs#lotusTitleBar .lotusTabInner {
+  text-transform: none;
+}
+.lotusui30_layout .lotusMain .lotusContent {
+  margin-top: 2rem;
+  padding-left: 28px !important;
+}
+.lotusui30_layout .lotusMain .lotusContent .lotusDelete img {
+  margin: 10px 15px 0 0 !important;
+}
+.lotusui30_layout .lotusMain .lotusContent .lotusForm2 .lotusFormTitle .lotusHeading,
+.lotusui30_layout .lotusMain .lotusContent .lotusHeader h1 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding-top: 0;
+}
+.lotusui30_layout .lotusMain .lotusContent .lotusTags {
+  font-size: 12px !important;
+}
+.lotusui30_layout .lotusMain .lotusContent table.dogearTableFix .lotusFirstCell input {
+  margin: 0px 3px !important;
+}
+.lotusui30_layout .lotusMain .lotusContent table.dogearTableFix a[id^=MoreActions] {
+  padding-right: 4px !important;
+}
+.lotusui30_layout .lotusMain .lotusContent table.dogearTableFix span.lotusDivider {
+  margin-bottom: 0.25rem !important;
+}
+.lotusui30_layout .lotusMain .lotusContent table.dogearTableFix span[role=listitem]:not(.vcard):not(.Date) {
+  margin-bottom: 0px !important;
+}
+
+#importDialog .lotusDialogHeader,
+#exportDialog .lotusDialogHeader,
+#manageTagDialog .lotusDialogHeader {
+  margin-bottom: 0 !important;
+}
+#importDialog .lotusDialogContent,
+#exportDialog .lotusDialogContent,
+#manageTagDialog .lotusDialogContent {
+  padding: 15px 32px !important;
+}
+#importDialog .lotusDialogContent input[type=text],
+#exportDialog .lotusDialogContent input[type=text],
+#manageTagDialog .lotusDialogContent input[type=text] {
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  padding-right: 8rem !important;
+}
+#importDialog .lotusDialogContent input[type=text]:focus, #importDialog .lotusDialogContent input[type=text] .dijitTextBoxFocused,
+#exportDialog .lotusDialogContent input[type=text]:focus,
+#exportDialog .lotusDialogContent input[type=text] .dijitTextBoxFocused,
+#manageTagDialog .lotusDialogContent input[type=text]:focus,
+#manageTagDialog .lotusDialogContent input[type=text] .dijitTextBoxFocused {
+  outline: none !important;
+  border-color: #3C6DF0 !important;
+  box-shadow: 0 1px 0 #3C6DF0 !important;
+}
+#importDialog .lotusDialogContent div ul,
+#exportDialog .lotusDialogContent div ul,
+#manageTagDialog .lotusDialogContent div ul {
+  list-style-type: decimal !important;
+  margin: 14px !important;
+}
+
+form#bookmarkletForm .lotusDialogHeader {
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+form#bookmarkletForm table.lotusDialogContent {
+  padding: 0px 20px !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr#lotusTabContainer {
+  margin-top: 0 !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr#lotusTabContainer ul.lotusTabs {
+  bottom: 0 !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr#lotusTabContainer ul.lotusTabs li a {
+  padding: 0.5rem 0.5rem !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr#lotusTabContainer ul.lotusTabs li + li {
+  margin-left: 0.5rem !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr.lotusFormTabContentFirst td.lotusFormFieldRow {
+  padding-top: 4px !important;
+}
+form#bookmarkletForm table.lotusDialogContent tr#communitiesFields select,
+form#bookmarkletForm table.lotusDialogContent tr#activitiesFields select,
+form#bookmarkletForm table.lotusDialogContent tr#blogsFields select {
+  border: 1px solid #d8d8d8 !important;
+}
+form#bookmarkletForm table.lotusDialogContent td.lotusFormFieldRow {
+  padding-bottom: 4px !important;
+  padding-top: 2px !important;
+}
+form#bookmarkletForm table.lotusDialogContent td.lotusFormFieldRow textarea {
+  padding: 4px !important;
+}
+form#bookmarkletForm table.lotusDialogContent td label {
+  padding: 2px !important;
+}
+
+.lotusColLeft {
+  margin: 0px !important;
+  padding: 0 !important;
+}
+.lotusColLeft #lconnTagCloudFilter > h2 a, .lotusColLeft #lconnTagCloudFilter > h2 span,
+.lotusColLeft .lotusSection > h2 a,
+.lotusColLeft .lotusSection > h2 span {
+  font-weight: normal !important;
+  white-space: nowrap;
+}
+.lotusColLeft div.lotusSection.lotusFirst {
+  margin-left: 16px;
+}
+.lotusColLeft div.lotusSection.lotusFirst[aria-labelledby=dogearSubsTitle] {
+  margin-left: 40px;
+}
+.lotusColLeft div.lotusSection#lconnTagCloudFilter,
+.lotusColLeft div.lotusSection[aria-labelledby=dogearPeopleTitle] {
+  margin-left: 40px;
+}
+.lotusColLeft #subscriptionsHolder .vcard {
+  padding-right: 8px !important;
+}
+.lotusColLeft #subsHelpIcon,
+.lotusColLeft #tagHelpIcon,
+.lotusColLeft #peopleHelpIcon {
+  padding-right: 6px !important;
+}
+.lotusColLeft a[id*=_HelpLauncher_] {
+  padding-left: 20px !important;
+}
+
+ul#bookmarksMyUpdateNav li {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  position: relative;
+  min-height: 21px;
+  font-size: 0.875rem;
+  margin: 0 !important;
+}
+ul#bookmarksMyUpdateNav li a {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  padding-left: 28px !important;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box !important;
+  width: 100%;
+  font-weight: 400 !important;
+}
+ul#bookmarksMyUpdateNav li a:hover, ul#bookmarksMyUpdateNav li a:focus {
+  border-bottom: 1px solid transparent !important;
+  border-top: 1px solid transparent !important;
+}
+ul#bookmarksMyUpdateNav li.lotusSelected a {
+  font-weight: 700 !important;
+  padding-left: 26px !important;
+}
+ul#bookmarksMyUpdateNav li:hover, ul#bookmarksMyUpdateNav li:focus {
+  background-color: #d8d8d8 !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+ul#bookmarksMyUpdateNav li.lotusSelected {
+  border: none !important;
+}
+ul#bookmarksMyUpdateNav li.lotusSelected::before {
+  content: "";
+  display: block;
+  box-sizing: border-box !important;
+  width: 4px;
+  height: calc( (14px * 2) + calc(14px * 1.5) );
+  position: absolute;
+  left: auto;
+  margin-top: -14px;
+  right: calc( 240px - 4px );
+  border-left: 4px solid #3C6DF0 !important;
+}
+
+/*# sourceMappingURL=dogear.css.map */

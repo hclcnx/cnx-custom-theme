@@ -1,13 +1,13 @@
 {
-  "name": "Visual Update 1 for IBM Connections",
-  "title": "Visual Update 1 for IBM Connections",
-  "description": "Customizer extension to re-theme IBM Connections.",
+  "name": "Visual Update 1 for HCL Connections",
+  "title": "Visual Update 1 for HCL Connections",
+  "description": "Customizer extension to re-theme HCL Connections.",
   "services": [
     "Customizer"
   ],
   "extensions": [
     {
-      "name": "Visual Update 1 for IBM Connections",
+      "name": "Visual Update 1 for HCL Connections",
       "type": "com.ibm.customizer.ui",
       "path": "global",
       "payload": {

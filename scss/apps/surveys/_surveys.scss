@@ -82,9 +82,6 @@ div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
     padding: 6px 0 8px 0!important;
     margin: 0 !important;
     span.dijitButton.lotusFormButton {
-      .dijitButtonText {
-        font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
-      }
       &.dijitButtonHover {
         background-color: $btn-secondary-fill-hover !important;
         border-color: $btn-secondary-outline-hover !important;
@@ -383,7 +380,6 @@ div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
           border-radius: 2px !important;
           border-color: $brand-01 !important;
           text-align: center;
-          font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
           @include font-size($caption...);
           &:hover {
             background-color: $brand-01;
@@ -467,9 +463,6 @@ div[id^="freedom_widget_common_environment_Dialog"] {
   .lotusDialogFooter {
     span.dijitButton {
       @include btnsecondary;
-      .dijitButtonText {
-        font-family: 'IBM Plex Sans', 'IBM Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
-      }
       &.dijitButtonHover {
         background-color: $btn-secondary-fill-hover !important;
         border-color: $btn-secondary-outline-hover !important;
