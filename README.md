@@ -1,13 +1,13 @@
 ## Visual update 1 for HCL Connections
 
-Visual Update 1 styles HCL Connections with a new, modern, airy, less cluttered appearance. [Learn more about Visual Update 1](https://git.cwp.pnp-hcl.com/ics-design/periscope/blob/master/docs/index.md)
+Visual Update 1 styles HCL Connections with a new, modern, airy, less cluttered appearance. [Learn more about Visual Update 1](https://ibmcnxdev.github.io/cnx-custom-theme/index.html)
 
 ## Download
-**Connections On-premises:** Fork this repository to download the files. [Learn how to create an application.](https://git.cwp.pnp-hcl.com/ics-design/periscope/blob/master/docs/configure.md)
+**Connections On-premises:** Fork this repository to download the files. [Learn how to create an application.](https://ibmcnxdev.github.io/cnx-custom-theme/configure.html)
 
-**Cloud:** You can enable Visual Update 1 in the app catalog. [Learn how to enable this application.](https://git.cwp.pnp-hcl.com/ics-design/periscope/blob/master/docs/about.md)
+**Cloud:** You can enable Visual Update 1 in the app catalog. [Learn how to enable this application.](https://ibmcnxdev.github.io/cnx-custom-theme/about.html)
 
-**Cloud, customize for your company:** Fork this repository to download the files. [Learn more about customizing these files.](https://git.cwp.pnp-hcl.com/ics-design/periscope/blob/master/docs/example.md)
+**Cloud, customize for your company:** Fork this repository to download the files. [Learn more about customizing these files.](https://ibmcnxdev.github.io/cnx-custom-theme/example.html)
 
 
 ## Ask Questions and Report Issues
@@ -23,4 +23,4 @@ Create a new issue in this repository and include the following information.
 - Tag the issue with environment, app, and type.
 
 ### Updates
-Updates will be released here periodically. When an update it released you can see what was included in the [Update History](https://git.cwp.pnp-hcl.com/ics-design/periscope/blob/master/docs/periscope/updatehistory.md) page.
+Updates will be released here periodically. When an update it released you can see what was included in the [Update History](https://ibmcnxdev.github.io/cnx-custom-theme/updatehistory.html) page.
