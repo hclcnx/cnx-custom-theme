@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Create - Visual Update 1 for IBM Connections</title>
+    <title>Create - Visual Update 1 for HCL Connections</title>
   <link rel="stylesheet" type="text/css" href="docs.css">
   <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
 <!--
-	 * © Copyright IBM Corp. 2017, 2018
+	 * © Copyright HCL Technologies Limited 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 <div class="headerContainer subpage">
   <div class="aboutHeader">
     <div class="headText">
-      <h1>Visual Update 1 for IBM Connections</h1>
+      <h1>Visual Update 1 for HCL Connections</h1>
     </div>
   </div>
 </div>
@@ -59,11 +59,8 @@
   <dl>
     <dt>Connections Customizer</dt>
     <dd>
-    <p>In this Visual Update example we use Connections Customizer to apply the new design specification to Connections, simply by overriding CSS. Ensure you have Component Pack and Customizer configured before going forward. Read <a href="https://www.ibm.com/support/knowledgecenter/en/SSYGQH_6.0.0/admin/install/t_comp_pack_customizer_config_over.html" target="_blank">Configuring the Customizer component</a> for more information.</p>
-      <!--cloud specific prereq-->
-      <!--<p>Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p>-->
+      <p>In this Visual Update example we use Connections Customizer to apply the new design specification to Connections, simply by overriding CSS. Ensure you have Component Pack and Customizer configured before going forward. Read <a href="https://help.hcltechsw.com/connections/v6/admin/install/cp_config_customizer_intro.html" target="_blank">Configuring the Customizer component</a> for more information.</p>
     </dd>
-
     <dt>"Verse Theme (Default)" or "Hikari" theme</dt>
     <dd><p>Connections must be set to use one of these default themes: "Verse Theme (Default)" or "Hikari".</p></dd>
   </dl>
@@ -74,11 +71,9 @@
 <p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
 <p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
 
-
-<!--copy to onprem folder-->
 <h2><a class="anchor" name="copy">2. Make files available to Customizer</a></h2>
 <h4>For On-premises customers</h4>
-<p>Follow the instructions to <a href="https://www.ibm.com/support/knowledgecenter/SSYGQH_6.0.0/admin/customize/customize_manage_customizer_apps.html" target="_blank">Manage Connections Customizer apps</a> in the product documentation. In summary you will...</p>
+<p>Follow the instructions to <a href="https://help.hcltechsw.com/connections/v6/admin/customize/customize_manage_customizer_apps.html" target="_blank">Manage Connections Customizer apps</a> in the product documentation. In summary you will...</p>
 <ul>
   <li>Copy all the downloaded files to the 'pv-connections/customizations' directory on the Storage node.</li>
   <li>Import a .json file. A sample .json file can be found in cnx-custom-theme/vu1-include-css.json and was downloaded as part of these application files.</li>
@@ -86,11 +81,11 @@
 
 <h4>For Cloud customers</h4>
 
-  <p>Important: Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer documentation</a> as you complete this step.</p>
+  <p>Important: Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/HCLConnectionsCustomizer.pdf" target="_blank">HCL Connections Customizer documentation</a> as you complete this step.</p>
   <ol>
     <li>Post visual update files into a GitHub repository that can be accessed by Connections Customizer.
       <ul>
-        <li>By default Customizer, via the include-repo property, looks for customizations in a repository in the public IBM Connections GitHub organization (https://github.com/ibmcnxdev). Refer to the IBM Connections Customizer documentation for instructions to create or share a repository.</li>
+        <li>By default Customizer, via the include-repo property, looks for customizations in a repository in the public HCL Connections GitHub organization (https://github.com/ibmcnxdev). Refer to the HCL Connections Customizer documentation for instructions to create or share a repository.</li>
       </ul>
     </li>
     <li>Update SCSS variables to reference your GitHub repository. Open /global/_repoName.scss and update the value of repo-name. Compile the SCSS changes.</li>
@@ -106,14 +101,14 @@
 <h2><a class="anchor" name="orgExt">3. Register the application</a></h2>
 
 <h4>For On-premises customers</h4>
-<p>As an administrator, go to the Apps Manager to register the application. Follow the instructions to <a href="https://www.ibm.com/support/knowledgecenter/SSYGQH_6.0.0/admin/customize/customize_manage_customizer_apps.html" target="_blank">Manage Connections Customizer apps</a> in the product documentation.</p>
+<p>As an administrator, go to the Apps Manager to register the application. Follow the instructions to <a href="https://help.hcltechsw.com/connections/v6/admin/customize/customize_manage_customizer_apps.html" target="_blank">Manage Connections Customizer apps</a> in the product documentation.</p>
 
 <h4>For Cloud customers</h4>
 <p>An administrator can add a Customizer application as an Organization Extension. The Customizer application is defined in a .json file which identifies the extensions that need to be targeted and the actions that need to be performed.</p>
 
 
 <!--<h3>Add this Visual Update example as an extension in Organization Extensions</h3>-->
-<p>Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/IBMConnectionsCustomizer.pdf" target="_blank">IBM Connections Customizer documentation</a> for more information.</p>
+<p>Refer to <a href="https://github.com/ibmcnxdev/customizer/blob/master/docs/HCLConnectionsCustomizer.pdf" target="_blank">HCL Connections Customizer documentation</a> for more information.</p>
 <ol>
   <li>Locate <strong>Admin</strong> in the top navigation and select <strong>Manage Organization</strong>.</li>
   <li>Go to <strong>Organization Extensions</strong>.</li>
@@ -122,49 +117,6 @@
 <li>Replace the .json template with the contents of the cnx-custom-theme/vu1-include-css.json file that you updated with your GitHub repository name.</li>
 <li>Save the changes.</li>
 </ol>
-
-
-
-<!--enable for all or subset of users-->
-<!--
-<h3>Enable for no users or a sub-set of users</h3>
-<p>You can enable the extension for no users or a sub-set of users. This way you control who will see the new visual updates.</p>
-  <p>Enable for no users by adding a fake email address inside "user-email":</p>
-
-  <pre class="code">
-  "payload": {
-    "match": {
-      "user-email": [
-        "userid1@example.com"
-      ]
-    },
-    "include-files":[
-      "periscope.js"
-    ],
-    "include-repo": {
-      "name":"cnx-custom-theme"
-    }
-  },
-  </pre>
-
-<p>Enable for a sub-set of users by adding email addresses inside "user-email":</p>
-<pre class="code">
-"payload": {
-  "match": {
-    "user-email": [
-      "userid1@example.com",
-      "userid2@example.com"
-    ]
-  },
-  "include-files":[
-    "periscope.js"
-  ],
-  "include-repo": {
-    "name":"cnx-custom-theme"
-  }
-},
-</pre>
--->
 
 <!-----update----->
 <h2><a class="anchor" name="update">4. Periodically update with the latest files</a></h2>
@@ -182,7 +134,7 @@
 
 <!--FOOTER CONTAINER-->
 <div class="footerContainer">
-  <p>Copyright 2017, 2018, IBM Corporation</p>
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
 </div>
 <!--END FOOTER CONTAINER-->
 

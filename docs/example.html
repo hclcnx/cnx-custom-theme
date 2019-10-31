@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Customize - Visual Update 1 for IBM Connections</title>
+    <title>Customize - Visual Update 1 for HCL Connections</title>
   <link rel="stylesheet" type="text/css" href="docs.css">
   <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
 <!--
-	 * © Copyright IBM Corp. 2017, 2018
+	 * © Copyright HCL Technologies Limited 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 <div class="headerContainer subpage">
   <div class="aboutHeader">
     <div class="headText">
-      <h1>Visual Update 1 for IBM Connections</h1>
+      <h1>Visual Update 1 for HCL Connections</h1>
     </div>
   </div>
 </div>
@@ -62,7 +62,7 @@
 <dl>
   <dt>Connections Customizer</dt>
   <dd>
-  <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">IBM Connections Customizer documentation</a> for more details.</p></dd>
+  <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">HCL Connections Customizer documentation</a> for more details.</p></dd>
   <dt>Sass compiler</dt>
   <dd>
   <p>This example is written using Sass, which is compiled into CSS that will be injected into pages by Customizer. This example uses Sass to create CSS files and a script that instructs Customizer to return these CSS overrides with responses.</p></dd>
@@ -93,7 +93,6 @@
       <li>/css -- Contains output CSS files after compiling scss</li>
       <li>/docs -- Documentation about this application and the Visual Update 1 application</li>
       <li>/extension -- Contains files used to create Chrome extension</li>
-      <li>/fonts -- Contains IBM Plex font files</li>
       <li>/scss -- SCSS files that contain the style changes
         <ul>
          <li>/apps -- Contains app specific folders
@@ -132,7 +131,7 @@
       <li>/svg -- Copy of SVG images that are streamlined and stored in _icons.scss as variables</li>
       <li>manifest.json -- Used to define Chrome extension</li>
       <li>org-ext.json -- Sample .json file used when adding your customizations as an Organization Extension [DEPRECATED]</li>
-      <li>periscope.js -- Javascript file used with Tampermonkey to indicate which CSS file to laod based on the page you are on.</li>
+      <li>periscope.js -- Javascript file used with Tampermonkey to indicate which CSS file to load based on the page you are on.</li>
       <li>readme.md -- Points to where you can find complete documentation</li>
       <li>tmScript.js -- Tampermonkey script</li>
       <li>vu1-include-css.json -- .json file to use when creating your app in the registry. This tells Customizer what CSS to inject and what repo the files are in. This includes the CSS files directly into pages without use of Javascript, which allows styles to load faster.</li>
@@ -184,7 +183,7 @@
 
 <!--compile-->
 <h3><a class="anchor" name="compile">How to Compile the Scss Files</a></h3>
-  <p>You can use Koala, which is an open source compiler, to compile Scss into CSS. <a href="http://sass-lang.com/" target="_blank">Learn more and install a Sass compiler.</a></p>
+  <p>You can use an open source Sass compiler to compile Scss into CSS. <a href="http://sass-lang.com/" target="_blank">Learn more and install a Sass compiler.</a></p>
   <p>After you install a Sass compiler you can set it to watch the /cnx-custom-theme directory for changes to files in /scss and it will automatically compile and output files to /css. The easiest way to do this is to run a watch command in a terminal window.</p>
   <ol>
     <li>Open terminal and navigate to the /cnx-custom-theme folder.</li>
@@ -212,89 +211,6 @@
   <li>Save the changes and if the compiler is watching it will generate all the css files because _colors.scss is used in all of them.</li>
   <li>Reload the web page to see the changes.</li>
 </ol>
-
-<!--ADD ANOTHER APP-->
-<!--
-<h3>Add another application to style via a specific URL</h3>
-<ul>
-  <li>This application applies visual changes to specific applications and pages within Connections. Customizer manages the URLs, or paths, where customizations are injected.</li>
-</ul>
-<p>Let's say we are trying to add styling to the homepage that is currently not being styled. An overview of the steps are as follows:</p>
-<ol>
-  <li>Create a main homepage.scss file that imports the partials we need.</li>
-  <li>Create an scss partial file for app specific styling.</li>
-  <li>Add the homepage url to periscope.js.</li>
-</ol>
-
-<h4>1. Create a main homepage.scss file that imports the partials</h4>
-<p>Create a homepage.scss file in the /scss folder. You can also duplicate one of the other main scss files to start from. The contents of the file should look something like this:</p>
-<pre class="code">
-  // Prerequite Imports
-  @import "prereqs/prereqs";
-
-  // Component Imports
-  @import "components/components";
-
-  // App Specific Imports
-  @import "apps/homepage/homepage";
-</pre>
-
-<p>The first import loads all predefined scss variables such as colors and mixins. The second import loads all the common components used across applications. If you want to apply only some of them, you can import scss partial files from the /components folder. The last import is for application specific styling, which is covered in the next step.</p>
-
-<h4>2. Create an scss partial file for app specific styling</h4>
-
-<p>Each application typically has some application specific styling. Create an app specific partial file, _homepage.scss, in a /apps/homepage folder. Include app specific styling that applies to pages with /homepage/ in the URL. If it is a component that might later be used on other pages too, it should go under components. Or if it's a styling that exists on every subURL of your Connections application, it would be logical to create the file under the /global folder.</p>
-
-<h4>3. Add the homepage URL to periscope.js</h4>
-<p>The main goal of periscope.js is to detect what method the user is using to load the CSS to Connections and load the relevant CSS files when the user is on certain URLs that were specified within the mappings object. Each key within the mappings object is a CSS file for every url within the array corresponding to the key will load.</p>
-
-<p>Locate the mappings in periscope.js and add the CSS : URL mapping or uncomment one that is already there. In this case "homepage" is already in the file and can be uncommented.</p>
-
-<pre class="code">
-var mappings = {
-  //global is special case where the empty array applies to all the pages.
-  "global":[],
-  "files":["/files/"],
-  "meetings":["/meetings/"],
-  "profiles":["/profiles/",
-              "/mycontacts/",
-              "/contacts/"],
-  "search":["/search/"],
-  "blogs":["/blogs/"],
-//  "activities":["/activities/"],
-//  "communities":["/communities/"],
-//  "home":["/homepage/"],
-  "forums":["/forums/"],
-  "wikis":["/wikis/"],
-  "settings":["/manage/account/user/",
-              "/news/",
-              "/manage/subscribers/showInviteGuestDialog/"]
-};
-</pre>
-<p>So if we want to add the url of homepage to load the homepage.css file, our mappings should look like the following.</p>
-<pre class="code">
-var mappings = {
-  //global is special case where the empty array applies to all the pages.
-  "global":[],
-  "files":["/files/"],
-  "meetings":["/meetings/"],
-  "profiles":["/profiles/",
-              "/mycontacts/",
-              "/contacts/"],
-  "search":["/search/"],
-  "blogs":["/blogs/"],
-//  "activities":["/activities/"],
-//  "communities":["/communities/"],
-  "home":["/homepage/"],
-  "forums":["/forums/"],
-  "wikis":["/wikis/"],
-  "settings":["/manage/account/user/",
-              "/news/",
-              "/manage/subscribers/showInviteGuestDialog/"]
-};
-</pre>
--->
-<!--END ADD ANOTHER APP-->
 
 <!--navbar-->
 <h3>Increase the height of the top navigation bar</li>
@@ -397,7 +313,7 @@ $svg-myIcon:'&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path fill="
 
 <!--FOOTER CONTAINER-->
 <div class="footerContainer">
-  <p>Copyright 2017, 2018, IBM Corporation</p>
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
 </div>
 <!--END FOOTER CONTAINER-->
 

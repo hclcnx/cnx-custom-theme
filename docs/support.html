@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Support - Visual Update 1 for IBM Connections</title>
+    <title>Support - Visual Update 1 for HCL Connections</title>
   <link rel="stylesheet" type="text/css" href="docs.css">
   <link rel="shortcut icon" href="./img/cnx-theme.ico">
 </head>
 <!--
-	 * © Copyright IBM Corp. 2017, 2018
+	 * © Copyright HCL Technologies Limited 2017, 2019
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 <div class="headerContainer subpage">
   <div class="aboutHeader">
     <div class="headText">
-      <h1>Visual Update 1 for IBM Connections</h1>
+      <h1>Visual Update 1 for HCL Connections</h1>
     </div>
   </div>
 </div>
@@ -59,32 +59,25 @@
 </p>
 
 <h2><a class="anchor" name="faq">FAQ</a></h2>
-<h4>Question: Why don't I see any visual updates after I enable Visual Update 1?</h4>
+<h4>Question: Why don't I see visual updates after I enable Visual Update 1?</h4>
 
-<p><span style="font-weight:600;">Answer: </span>Check the following things:
-  <ul>
-    <li>Make sure you have Customizer enabled. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
-    <li>Visual updates are only applied to a sub-set of Connections applications at this time. Look for changes in Files and Profiles. For more information about what apps have updated styles, see <a href="#about">About this Example</a>.</li>
-  </ul>
-</p>
+<p><span style="font-weight:600;">Answer: </span>Check that you also have Customizer enabled.</p>
 
 <h4>Question: Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
-<p>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for IBM Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for HCL Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
 <p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
 
-<p>The App Registry includes the Visual Update 1 for IBM Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for IBM Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for IBM Connections changes.</p>
+<p>The App Registry includes the Visual Update 1 for HCL Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for HCL Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for HCL Connections changes.</p>
 
 <!--apps supported-->
 <h2><a class="anchor" name="supported">Apps supported</a></h2>
-<p>Visual Update 1 for IBM Connections is supported only when the application files are installed and configured as-is, with no change and in which all the following criteria are met: (1) Only the Hakari or Verse Theme (Default) is enabled; (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
+<p>Visual Update 1 for HCL Connections is supported only when the application files are installed and configured as-is, with no change and in which all the following criteria are met: (1) Only the Hakari or Verse Theme (Default) is enabled; (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
 
-<p>Because this application is a customization on top of Connections, PMRs will not be accepted and resolved by IBM. Questions and support requests will be directed to be posted in the support forum located <a href="https://developer.ibm.com/answers/topics/cnx-custom-theme.html">here</a>. The application provider will monitor the forum and address issues as appropriate in subsequent updates to the application files. IBM will not assist with making custom modifications to the open source code provided for this application nor modifications created to add additional customizations in lieu of the Visual Update 1 for Connections.</p>
-
-<p>Bi directional language support is not included in this release. Visual updates applies only to applications stated in official communications and will not extend to custom widgets added to Connections. IBM plans to regularly add improvements to the visual update and will share communications accordingly.</p>
+<p>Bi directional language support is not included in this release. Visual updates applies only to applications stated in official communications and will not extend to custom widgets added to Connections. HCL plans to regularly add improvements to the visual update and will share communications accordingly.</p>
 
 <!--Browsers supported-->
 <h2><a class="anchor" name="browsers">Browsers supported</a></h2>
-<p>Our goal is to support the <a href="http://www-01.ibm.com/support/docview.wss?uid=swg22017033" target="_blank">same browsers Connections supports</a>.</p>
+<p>Our goal is to support the same browsers Connections supports</a>.</p>
 
 <p>However, due to limited resources and the 'as-is' nature of this application, we have not completed thorough cross-browser testing. We test every update on Chrome. We have completed rounds of testing on Firefox, Safari, and Microsoft Internet Explorer 11. Otherwise, we rely on user feedback to identify issues.</p>
 
@@ -92,9 +85,10 @@
 
 <!--Getting support-->
 <h2><a class="anchor" name="getsupport">Getting support</a></h2>
-<p>If you have a question, ask it on <a href="https://developer.ibm.com/answers/topics/cnx-custom-theme.html" target="_blank">dWAnswers</a> and tag it with <a href="https://developer.ibm.com/answers/topics/cnx-custom-theme.html" target="_blank">'cnx-custom-theme'</a>. If you have a Customizer question, tag it with 'customizer'.</p>
-<p>If you have found a reproducible issue in the styling, not Connections functionality, you can open an issue in the <a href="https://github.com/ibmcnxdev/cnx-custom-theme/issues" target="_blank">GitHub repository</a>.
-
+<p>Support for Customizer applications follows the same policy as any other customization to the HCL
+Connections UI. <b>HCL Support can address questions about the customization process, but
+cannot address questions about the particulars of your customization.</b></p>
+<p>If you have a question or have found a reproducible issue in the styling, not Connections functionality, you can open an issue in the <a href="https://github.com/ibmcnxdev/cnx-custom-theme/issues" target="_blank">GitHub repository</a>.</p>
 </div>
 
 <div class="breadcrumb">
@@ -106,7 +100,7 @@
 
 <!--FOOTER CONTAINER-->
 <div class="footerContainer">
-  <p>Copyright 2017, 2018, IBM Corporation</p>
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
 </div>
 <!--END FOOTER CONTAINER-->
 
