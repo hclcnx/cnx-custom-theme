@@ -64,6 +64,20 @@
       "application": "Visual Update 1 for HCL Connections"
     },
     {
+      "name": "Bookmarklet",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/dogear.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "connections",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
       "name": "Communities",
       "type": "com.ibm.customizer.ui",
       "payload": {
@@ -217,7 +231,7 @@
           "name": "cnx-custom-theme"
         }
       },
-      "path": "opensocial",
+      "path": "connections",
       "application": "Visual Update 1 for HCL Connections"
     },
     {
