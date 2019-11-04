@@ -67,7 +67,7 @@ label {
 }
 
 .lotusDialogContent{
-	.lotusFormFieldRow{
+	.lotusFormFieldRow:not([dojoattachpoint=serverTypesList]) {
 		.lotusFormLabel{
 			margin-top:10px!important;
 		}
@@ -221,8 +221,7 @@ li.addressFormLi {
 	padding-right:32px!important;
 }
 
-
-.lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
+body:not(.catalog) .lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
 	margin-top: 1rem !important;
 	font-weight: 500 !important;
 	font-size: $body-mini-font-size !important;
@@ -356,4 +355,11 @@ form[name="surveysCreateForm"] {
       @include font-size($caption...);
     }
   }
+}
+
+body.catalog {
+	input[type=text],
+	input[type=password] {
+		@include textinput;
+	}
 }

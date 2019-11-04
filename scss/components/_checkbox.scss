@@ -1,4 +1,4 @@
-input[type=checkbox]{
+input:not(.xccEllipsis):not([name^="likesAndComments"]):not([name^="allowContentCreation"]):not([value^="personalized"]):not([name^="useProxy"])[type=checkbox] {
   height:16px!important;
 	width:20px!important;
 	//overflow:hidden!important;
@@ -52,7 +52,7 @@ input[type=checkbox]{
     outline-offset: 2px !important;
 	}
 }
-input[type=checkbox]:checked::after,
+input[type=checkbox]:not(.xccEllipsis):checked::after,
 .ic-thumb-widget-flip-card-is-checked .card-back .check,
 .ic-thumb-widget-flip-card-is-checked .card-front .check {
 	border-color:$checkbox-border-checked !important;

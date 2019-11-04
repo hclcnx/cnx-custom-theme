@@ -1,5 +1,5 @@
 // Drop down, select, combo boxes
-select:not([style="display:none"]):not([style="display: none;"]) {
+select:not([style="display:none"]):not([style="display: none;"]):not(.lotusHidden) {
 	@include select;
 }
 // selects in file picker dialogs
@@ -27,7 +27,16 @@ div[id*="SurveysList"] {
 	// Share folder select
 	[id*="_searchSourceDropdown"],
 	[id*="_roleDropdown"] {
-		@include select;
+		&:not(.lotusHidden) {
+			@include select;
+		}
+	}
+}
+
+// File transfer owner
+td[id^="lconn_share_widget_InlineContainer"] {
+	a.lotusFilter {
+		position: inherit !important;
 	}
 }
 

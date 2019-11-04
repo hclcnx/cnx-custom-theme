@@ -96,7 +96,10 @@ div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="myactions"] {
 		margin-top: 0 !important;
 		&.lotusRight {
 			float: right !important;
-			padding: .75rem 0;
+			// better align add a file button on status posts
+			&:not(.ublogActionsList) {
+				padding: .75rem 0;
+			}
 		}
 		&.floatLeft {
 			float: left !important;
@@ -143,7 +146,7 @@ input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
 	@include textinput;
 	width: calc(100% - 30px) !important;
 	min-width: 1rem !important;
-	
+
 	+ .lotusBtnImg {
 		&:hover {
 			opacity: 1 !important;

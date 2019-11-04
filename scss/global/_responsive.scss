@@ -1,4 +1,4 @@
-body.lotusui:not(.cke_editable),
+body.lotusui:not(.cke_editable):not(.lotusBookmarklet),
 body.meetingBody:not(.cke_editable),
 .lotusui30_body .lotusFrame,
 .lotusui30_body .lotusMain,
@@ -347,9 +347,4 @@ div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
   .lotusui30_layout & .lotusColLeft:after {
     border-right-width: 264px !important;
   }
-}
-
-// Disable minwidth on meetings iframe - issue 2141
-.lotusui30_body.scloud3.tundra:not(.compactMode):not(.concord) {
-  min-width: 0 !important;
 }
