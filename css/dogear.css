@@ -11093,12 +11093,11 @@ div#list .lotusTable.lotusFixedTable li.lotusTags {
   padding-left: 48px !important;
 }
 
-body:not(.catalog), html:not(.catalog-ui-updated) .catalog {
-  position: relative !important;
-}
-body:not(.catalog) #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll), html:not(.catalog-ui-updated) .catalog #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll) {
-  top: -24px !important;
+body:not(.catalog) #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll),
+html:not(.catalog-ui-updated) .catalog #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll) {
   padding-top: 32px !important;
+  position: relative !important;
+  top: -24px !important;
 }
 
 .wikiHeader .lotusMeta, .wikiHeader .lotusBtnContainer {
