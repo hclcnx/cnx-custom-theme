@@ -33,11 +33,13 @@
   }
 }
 // 2406 Don't adjust top and padding for wiki left nav with scrollbar.
-body:not(.catalog), html:not(.catalog-ui-updated) .catalog {
-  position:relative!important;
+// 2460 update to fix issue with file dialog scrolling off page
+body:not(.catalog),
+html:not(.catalog-ui-updated) .catalog {
   #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll) {
-    top:-24px!important;
-    padding-top:32px!important;
+    padding-top: 32px !important;
+    position: relative !important;
+    top: -24px !important;
   }
 }
 .wikiHeader{
