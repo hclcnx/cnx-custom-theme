@@ -62,7 +62,7 @@
 <dl>
   <dt>Connections Customizer</dt>
   <dd>
-  <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">HCL Connections Customizer documentation</a> for more details.</p></dd>
+  <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/hclcnx/customizer" target="_blank">HCL Connections Customizer documentation</a> for more details.</p></dd>
   <dt>Sass compiler</dt>
   <dd>
   <p>This example is written using Sass, which is compiled into CSS that will be injected into pages by Customizer. This example uses Sass to create CSS files and a script that instructs Customizer to return these CSS overrides with responses.</p></dd>
@@ -84,7 +84,7 @@
 
 <!-----FILES AND FOLDERS----->
 <h2><a class="anchor" name="included">Files and Folders</a></h2>
-<h4>1. Fork and clone <a href="https://github.com/ibmcnxdev/cnx-custom-theme" target="_blank">ibmcnxdev/cnx-custom-theme</a> files on your local system</h4>
+<h4>1. Fork and clone <a href="https://github.com/hclcnx/cnx-custom-theme" target="_blank">hclcnx/cnx-custom-theme</a> files on your local system</h4>
 <p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
 <p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
 
@@ -141,7 +141,7 @@
     <p>You may have noticed, there are a lot of SCSS files but there are only a few CSS files generated. The point of this is to send less requests to the server and make the load time as fast as possible. The way this is achieved is by placing a "_" (underscore) before every .scss file that we don't want to create a CSS file for. We refer to these "_.scss" files as "partials". The main scss files, such as files, global, meetings, profiles, search, and settings don't have a "_" in front of their file name. The main scss files import "partials" and compile them into large CSS files.</p>
 
     <h4>4. Keep your local clone up to date</h4>
-    <p>Periodically pull updates from ibmcnxdev/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from ibmcnxdev/cnx-custom-theme master branch.</p>
+    <p>Periodically pull updates from hclcnx/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from hclcnx/cnx-custom-theme master branch.</p>
 
 <!-----VIEW VISUAL UPDATES----->
 <h2><a class="anchor" name="test">View the visual updates as you work</a></h2>
