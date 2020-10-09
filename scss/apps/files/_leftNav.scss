@@ -144,7 +144,14 @@ html.lconnFiles.files-enable-simplify-left-nav {
           }
         }
       }
-
+      //Truncate long org Files name
+      .myDriveNavigation .myDriveNormalItem > div {
+        > a#withme span.bidiAware {
+          wbr {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
