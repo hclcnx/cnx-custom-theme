@@ -10349,6 +10349,9 @@ html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft #menu_my
 html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .myDriveNavigation .myDriveNormalItem > div > a#public span.bidiAware wbr {
   display: none;
 }
+html.lconnFiles.files-enable-simplify-left-nav .lotusMain #lotusColLeft .myDriveNavigation .myDriveNormalItem > div > a#withme span.bidiAware wbr {
+  display: none;
+}
 
 .lconnFiles #lotusColLeft.lconnInvisible,
 .lconnFiles #lotusColLeft.lotusHidden {
