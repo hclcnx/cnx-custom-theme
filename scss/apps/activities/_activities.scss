@@ -264,3 +264,11 @@ div[dojoattachpoint="notifyMessageWrapper_AP"] .notifyMessage {
 div[id^="widget_lconn_act_ToDoForm_"][id$="duedate"] {
  border: transparent;
 }
+
+// CNXACT-44
+// While creating activities inside the community app getting weird UI layout
+#communityActivityFormWidget {
+  .lotusFieldWrapper {
+    padding-left: 60px !important;
+  }
+}
