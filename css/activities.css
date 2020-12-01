@@ -11623,11 +11623,11 @@ div[id^=widget_lconn_act_ActivityForm_][id$=duedate] {
   border: none !important;
 }
 
-.lotusui30_layout .lotusMain .lotusContent {
+#activitiesMainRegion {
   margin-top: 2rem;
 }
-.lotusui30_layout .lotusMain .lotusContent .lotusForm2 .lotusFormTitle .lotusHeading,
-.lotusui30_layout .lotusMain .lotusContent .lotusHeader h1 {
+#activitiesMainRegion .lotusForm2 .lotusFormTitle .lotusHeading,
+#activitiesMainRegion .lotusHeader h1 {
   font-size: 20px !important;
   font-weight: 600 !important;
   padding-top: 0;
@@ -11758,6 +11758,11 @@ div[id^=widget_lconn_act_ToDoForm_][id$=duedate] {
 
 #communityActivityFormWidget .lotusFieldWrapper {
   padding-left: 60px !important;
+}
+#communityActivityFormWidget .lotusForm2 .lotusFormTitle .lotusHeading {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding-top: 0;
 }
 
 .lotusui.lotusui30dojo.lotusui30_body .lotusFrame.activities .lotusMain .lotusColLeft,

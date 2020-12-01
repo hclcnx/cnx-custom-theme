@@ -107,9 +107,8 @@ div[id^="widget_lconn_act_ActivityForm_"][id$="duedate"] {
 }
 
 // spacing at the top of activities pages
-.lotusui30_layout .lotusMain .lotusContent { //this overrides hikari styles and doesn't need to be any more specific because the activities style sheet itself keeps the scope on activities pages
+#activitiesMainRegion {
   margin-top: 2rem;
-
   .lotusForm2 .lotusFormTitle .lotusHeading,
   .lotusHeader h1 {
     @include font-size($title...);
@@ -270,5 +269,9 @@ div[id^="widget_lconn_act_ToDoForm_"][id$="duedate"] {
 #communityActivityFormWidget {
   .lotusFieldWrapper {
     padding-left: 60px !important;
+  }
+  .lotusForm2 .lotusFormTitle .lotusHeading {
+    @include font-size($title...);
+    padding-top: 0;
   }
 }
